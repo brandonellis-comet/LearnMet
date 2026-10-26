@@ -4,26 +4,36 @@
     {
       "title": "Aviation weather requirements and minima",
       "lesson": [
-        "Aviation weather support turns observations and forecasts into go or no-go decisions. Legal minima come from the Canadian Aviation Regulations and operator procedures, so confirm them in official documents. The categories below are common conventions used on weather products.",
+        "Aviation weather support turns observations and forecasts into go or no-go decisions. Legal minima come from the Canadian Aviation Regulations and operator procedures, so confirm them in official documents. The categories below come from the NAV CANADA guide and are not legal minima.",
         {
-          "h": "Flight categories (common convention)"
+          "h": "Flight categories (NAV CANADA guide)"
         },
         {
           "list": [
-            "VFR: ceiling above 3,000 ft and visibility above 5 SM.",
-            "MVFR (marginal VFR): ceiling 1,000 to 3,000 ft and/or visibility 3 to 5 SM.",
-            "IFR: ceiling 500 to below 1,000 ft and/or visibility 1 to below 3 SM.",
-            "LIFR (low IFR): ceiling below 500 ft and/or visibility below 1 SM."
+            "VFR: ceiling above 3,000 ft AGL and visibility above 5 SM.",
+            "MVFR (marginal VFR): ceiling 1,000 to 3,000 ft AGL or visibility 3 to 5 SM.",
+            "IFR: ceiling below 1,000 ft AGL or visibility below 3 SM (GFA IFR Outlook).",
+            "LIFR (low IFR): a US convention, ceiling below 500 ft and/or visibility below 1 SM. The NAV CANADA guide does not define LIFR for Canadian products."
           ]
         },
         "The worse of the ceiling and visibility decides the category.",
+        {
+          "h": "VFR minima (Canadian Aviation Regulations)"
+        },
+        {
+          "list": [
+            "s. 602.114, controlled airspace: flight visibility not less than 3 miles, and at least 500 ft vertically and 1 mile horizontally from cloud. In a control zone, reported ground visibility must also be at least 3 miles and the aircraft at least 500 ft above the surface.",
+            "s. 602.115, uncontrolled airspace at or above 1,000 ft AGL: visibility 1 mile by day, 3 miles at night; at least 500 ft vertically and 2,000 ft horizontally from cloud.",
+            "Below 1,000 ft AGL in uncontrolled airspace, fixed-wing: visibility 2 miles by day, 3 at night, clear of cloud."
+          ]
+        },
         {
           "h": "Performance and altitude terms"
         },
         {
           "list": [
             "Pressure altitude: altitude above the standard datum plane of 1013.25 hPa, read when the altimeter is set to 29.92 inHg.",
-            "Density altitude: pressure altitude corrected for non-standard temperature. Hot, high and humid days raise density altitude, which reduces engine power, lift and propeller efficiency. Takeoff rolls get longer and climb is poorer."
+            "Density altitude: pressure altitude corrected for non-standard temperature. Hot, high and humid days raise density altitude, which reduces engine power, lift and propeller efficiency. Takeoff rolls get longer and climb is poorer. NAV CANADA: a takeoff needing 1,000 ft at sea level needs about 2,000 ft at 5,000 ft operational altitude, and a METAR density altitude remark appears only when it is 200 ft or more above aerodrome elevation."
           ]
         },
         {
@@ -32,15 +42,15 @@
         {
           "formula": "Crosswind = wind speed x sin(angle between wind and runway)\nHeadwind  = wind speed x cos(angle)"
         },
-        "Example: 20 kt wind 30 degrees off the runway gives a 10 kt crosswind (20 x 0.5) and about 17 kt headwind. Use magnetic wind when comparing with the runway heading, since METAR winds are true.",
+        "Example: 20 kt wind 30 degrees off the runway gives a 10 kt crosswind (20 x 0.5) and about 17 kt headwind. METAR winds are true, so convert to magnetic before comparing with the runway heading.",
         {
-          "note": "Check the alternates and the forecast trend, not just the current report. Weather may drop below minima by arrival."
+          "note": "Check the alternates and the forecast trend, not just the current report. Weather may drop below minima by arrival. For an alternate, a TAF with BECMG or TEMPO must meet alternate minima, while a PROB group need only meet landing minima (NAV CANADA guide)."
         }
       ],
       "terms": [
         [
           "Ceiling",
-          "Lowest broken or overcast layer, or vertical visibility."
+          "Lowest broken (5 to 7 oktas) or overcast (8 oktas) layer, or vertical visibility."
         ],
         [
           "Density altitude",
@@ -53,7 +63,7 @@
       ],
       "questions": [
         {
-          "q": "Using the common flight category convention, what is a ceiling of 800 ft with 5 SM visibility?",
+          "q": "Using the NAV CANADA guide's flight categories, what is a ceiling of 800 ft with 5 SM visibility?",
           "c": [
             "IFR",
             "VFR",
@@ -61,7 +71,7 @@
             "LIFR"
           ],
           "a": 0,
-          "e": "A ceiling of 500 to below 1,000 ft is IFR. The lower of the two elements decides."
+          "e": "IFR is a ceiling below 1,000 ft AGL or visibility below 3 SM. Either element is enough."
         },
         {
           "q": "A ceiling of 2,000 ft and visibility of 6 SM is:",
@@ -108,26 +118,26 @@
           "e": "Standard setting gives pressure altitude."
         },
         {
-          "q": "VFR flight in controlled airspace requires visibility of at least:",
+          "q": "Under CAR 602.114, what is the minimum flight visibility for VFR flight in controlled airspace?",
           "c": [
-            "3 statute miles in most Class E airspace below 10,000 ft",
-            "No minimum visibility applies inside controlled airspace",
-            "10 statute miles at all levels, whatever the airspace",
-            "1/4 statute mile anywhere, at any altitude and any time"
+            "3 miles",
+            "1 mile",
+            "5 miles",
+            "1/4 mile"
           ],
           "a": 0,
-          "e": "Typical VFR minimums are 3 SM in controlled airspace below 10,000 ft ASL."
+          "e": "CAR 602.114: flight visibility not less than 3 miles, with 500 ft vertical and 1 mile horizontal separation from cloud."
         },
         {
-          "q": "Under US-style flight categories, IFR conditions mean the ceiling is:",
+          "q": "Per the NAV CANADA guide, IFR on the GFA IFR Outlook means:",
           "c": [
-            "500 to below 1,000 ft and/or visibility 1 to below 3 SM",
-            "Below 500 ft and/or visibility below 1 SM",
-            "1,000 to 3,000 ft and/or visibility 3 to 5 SM",
-            "Above 3,000 ft and visibility above 5 SM"
+            "Ceiling below 1,000 ft AGL or visibility below 3 SM",
+            "Ceiling below 500 ft or visibility below 1 SM",
+            "Ceiling 1,000 to 3,000 ft or visibility 3 to 5 SM",
+            "Ceiling above 3,000 ft and visibility above 5 SM"
           ],
           "a": 0,
-          "e": "IFR is 500 to <1,000 ft ceiling and/or 1 to <3 SM; below that is LIFR."
+          "e": "The GFA IFR Outlook gives less than 1,000 ft AGL or less than 3 SM. The 500 ft and 1 SM figures are the US LIFR category."
         },
         {
           "q": "An alternate airport is required when:",
@@ -172,8 +182,43 @@
           ],
           "a": 0,
           "e": "Higher temperature thins the air and raises density altitude."
+        },
+        {
+          "q": "When does a METAR density altitude remark appear, per the NAV CANADA guide?",
+          "c": [
+            "Only when it is 200 ft or more above aerodrome elevation",
+            "Every report, whatever the value",
+            "Only when it is below sea level",
+            "Only on hot summer days"
+          ],
+          "a": 0,
+          "e": "NAV CANADA: the remark appears only when density altitude is 200 ft or more above aerodrome elevation."
+        },
+        {
+          "q": "For an alternate, which TAF groups must meet alternate minima (NAV CANADA guide)?",
+          "c": [
+            "BECMG and TEMPO groups",
+            "PROB groups only",
+            "No group; only the main body counts",
+            "FM groups only, never TEMPO"
+          ],
+          "a": 0,
+          "e": "NAV CANADA: BECMG and TEMPO must meet alternate minima; PROB conditions need only meet landing minima."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NAV CANADA Aviation Weather Services Guide (2017): IFR, MVFR and VFR thresholds, LIFR not defined, oktas, density altitude, alternate rules for TAF groups, UTC",
+          "Canadian Aviation Regulations ss. 602.114 and 602.115: VFR visibility and cloud clearance"
+        ],
+        "unverified": [
+          "Pressure altitude definition, crosswind and headwind trigonometry, and density altitude effects on engine power: standard aviation teaching, not on the pages read (the trigonometry was checked by arithmetic: 20 x sin 30 = 10, 20 x cos 30 = 17.3).",
+          "The ceiling definition: the NAV CANADA guide does not define it; the lesson wording follows standard usage.",
+          "When an alternate is required (CAR 602.121 onward): not checked.",
+          "VFR minima above 1,000 ft AGL for special cases (helicopters, other airspace classes): not covered."
+        ]
+      }
     },
     {
       "title": "Marine weather (sea state, swell, wind waves)",
@@ -192,12 +237,12 @@
         },
         {
           "list": [
-            "Gale warning: winds of 34 to 47 kt.",
-            "Storm warning: 48 to 63 kt.",
-            "Hurricane force wind warning: 64 kt or more."
+            "Gale warning: winds of 34 to 47 kt, excluding gusts.",
+            "Storm warning: 48 to 63 kt, excluding gusts.",
+            "Hurricane force wind warning: 64 kt or more, excluding gusts. It does not mean a hurricane is expected."
           ]
         },
-        "These match Beaufort Force 8 (gale, 34 to 40 kt), Force 10 (storm, 48 to 55 kt) and Force 12 (hurricane, 64 kt and above).",
+        "The Beaufort scale (NWS) gives Force 8 (gale) 34 to 40 kt, Force 10 (storm) 48 to 55 kt and Force 12 (hurricane) 64 kt and above. ECCC also has a Strong Wind category; its threshold was not confirmed here.",
         {
           "h": "Other marine hazards"
         },
@@ -351,8 +396,32 @@
           ],
           "a": 0,
           "e": "Period is measured in seconds between crests."
+        },
+        {
+          "q": "Does an ECCC hurricane force wind warning mean a hurricane is expected?",
+          "c": [
+            "No; it means winds of 64 kt or more, excluding gusts",
+            "Yes; a hurricane is forecast to arrive",
+            "Yes, but only over open ocean",
+            "Only if the pressure is below 960 hPa"
+          ],
+          "a": 0,
+          "e": "ECCC: a Hurricane Force Wind Warning does not suggest that a hurricane is expected."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "ECCC, Canadian marine warning program, chapter 1: gale, storm and hurricane force thresholds, excluding gusts",
+          "NWS Portland, Beaufort scale: Force 8, 10 and 12 ranges",
+          "Significant wave height article: mean of the highest third (H1/3), matches mariner estimates, largest waves about double Hs"
+        ],
+        "unverified": [
+          "Freezing spray criteria and conditions: not on the ECCC page read. Atlantic Canada winter occurrence is not confirmed.",
+          "Swell versus wind waves, fetch and duration, wave steepening against a current, and the claim about shorter-period swell: standard teaching, not confirmed.",
+          "The Strong Wind warning threshold."
+        ]
+      }
     },
     {
       "title": "Weather effects on military operations",
@@ -368,7 +437,8 @@
             "Temperature: cold brings frostbite, hypothermia and equipment problems. Heat brings heat injury and increased water needs. Humidex and wind chill help estimate personnel risk.",
             "Precipitation: reduces visibility, softens ground (trafficability), raises river levels, and affects equipment and comms.",
             "Sea state: limits small boat launch and recovery, replenishment at sea, and helicopter deck operations.",
-            "Illumination: moon phase and cloud cover determine night vision goggle performance."
+            "Illumination: moon phase and cloud cover determine night vision goggle performance.",
+            "ECCC humidex: 30 to 39 some discomfort, 40 to 45 great discomfort (avoid exertion), over 45 dangerous (heat stroke possible). Wind chill levels are in the Severe weather lesson."
           ]
         },
         {
@@ -518,8 +588,30 @@
           ],
           "a": 0,
           "e": "Reduced visibility affects observation, navigation and concealment."
+        },
+        {
+          "q": "What does an ECCC humidex above 45 indicate?",
+          "c": [
+            "Dangerous; heat stroke possible",
+            "Little discomfort",
+            "Some discomfort",
+            "Great discomfort with no real danger"
+          ],
+          "a": 0,
+          "e": "ECCC: 20-29 little discomfort, 30-39 some discomfort, 40-45 great discomfort and avoid exertion, above 45 dangerous with heat stroke possible."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "ECCC, How to use the Humidex: ranges and wording",
+          "ECCC, Wind Chill Index: see the Severe weather lesson"
+        ],
+        "unverified": [
+          "Operational impacts by element, dispersion and stability, night vision illumination, and green/amber/red impact tables: general military meteorology teaching with no public source read. Check against unclassified doctrine you are authorised to use.",
+          "WBGT as a heat stress measure: not checked."
+        ]
+      }
     },
     {
       "title": "Briefing structure and delivery",
@@ -544,7 +636,7 @@
         },
         {
           "list": [
-            "Use UTC (Zulu) time, or state the zone clearly, to avoid confusion. Give local time as well when the audience needs it.",
+            "Use UTC (Zulu) time, or state the zone clearly, to avoid confusion. METAR, TAF and PIREP times are in UTC with a Z suffix (NAV CANADA guide). Give local time as well when the audience needs it.",
             "Use numbers with units, thresholds and times. 'Winds 20 gusting 30 kt from the west from 1800Z' beats 'windy later'.",
             "Show one clear graphic where it helps. Do not read the slide.",
             "Say what you do not know. State confidence in plain terms.",
@@ -696,7 +788,17 @@
           "a": 0,
           "e": "Changes that affect the mission must be passed on."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NAV CANADA Aviation Weather Services Guide (2017): METAR, TAF and PIREP times in UTC with Z"
+        ],
+        "unverified": [
+          "The BLUF structure and delivery habits are briefing practice, not a published standard I could cite. Check your unit's briefing SOP.",
+          "No public Canadian source for the briefing format was found."
+        ]
+      }
     },
     {
       "title": "Climatology of the Atlantic region",
@@ -706,8 +808,8 @@
           "list": [
             "Prevailing flow: westerly, so weather arrives mostly from the west. Cold continental air crosses the region in winter. The ocean moderates temperature, giving milder winters and cooler summers than the interior at the same latitude, especially on the coast.",
             "Storm tracks: winter lows move up the coast or across from the Great Lakes. Nor'easters bring heavy snow, wind and coastal flooding. Rain, snow and freezing rain often mix in the same storm.",
-            "Freezing rain: Atlantic Canada has one of the highest frequencies in Canada, because warm moist air often overruns cold air near the coast.",
-            "Tropical cyclones: threat is greatest from late August to October, peaking around mid-September. Most arrive weakened or post-tropical but can still bring hurricane-force winds, heavy rain and storm surge.",
+            "Freezing rain: most often observed in eastern Canada including the Atlantic provinces, with the St. Lawrence valley a hotspot (ClimateData.ca). Warm moist air overrunning cold air near the coast is the usual mechanism (not confirmed for Atlantic Canada specifically).",
+            "Tropical cyclones: the season runs 1 June to 30 November and ECCC says August and September have the most storms in Atlantic Canada. Atlantic Canada is the most exposed region. Since 1950, 30 hurricanes or strong post-tropical storms have hit land in Canada, about one every 2 to 3 years. Examples: Juan (2003, Halifax), Igor (2010, a Category 1 hurricane in Newfoundland) and Fiona (2022, eastern Nova Scotia, the most damaging storm of any kind in Atlantic Canadian history, over $800 million insured damage).",
             "Fog: very common off Nova Scotia and over the Grand Banks, where warm Gulf Stream air meets the cold Labrador Current. Sea fog is most frequent in spring and summer.",
             "Spring: late and cool near the coast because of cold water. Sea breezes and fog are common.",
             "Autumn: the ocean is at its warmest. Tropical remnants and strong lows increase windy, wet days."
@@ -748,15 +850,15 @@
           "e": "Warm moist air cooling over cold water produces advection fog."
         },
         {
-          "q": "When is the tropical cyclone threat greatest for Atlantic Canada?",
+          "q": "When do most tropical cyclone impacts occur in Atlantic Canada, per ECCC?",
           "c": [
-            "Late August to October",
+            "August and September",
             "December to February",
             "March to April",
             "May to June"
           ],
           "a": 0,
-          "e": "Peak season is mid-September, and storms often arrive in post-tropical form."
+          "e": "ECCC: the season is 1 June to 30 November and August and September have the most storms in Atlantic Canada."
         },
         {
           "q": "What is a typical winter storm track bringing heavy snow and strong northeast winds to the Maritimes?",
@@ -857,7 +959,19 @@
           "a": 0,
           "e": "Warm water meeting cold shelf water creates sharp contrasts."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "ECCC, Hurricanes: frequently asked questions: season dates, August and September most storms, Atlantic Canada most exposed, Juan, Igor and Fiona",
+          "ClimateData.ca, Freezing rain and climate change: freezing rain most often in eastern Canada, St. Lawrence valley hotspot"
+        ],
+        "unverified": [
+          "Prevailing westerlies, ocean moderation, nor'easter tracks, coldest months, Grand Banks fog and the Gulf Stream and Labrador Current contrast, spring and autumn descriptions: general climatology, not checked against ECCC climate normals.",
+          "The earlier claim that peak tropical risk is mid-September was removed (ECCC says August and September).",
+          "The earlier claim that Atlantic Canada has one of the highest freezing rain frequencies in Canada was softened."
+        ]
+      }
     }
   ]
 }

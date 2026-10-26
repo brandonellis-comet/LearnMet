@@ -14,9 +14,9 @@ Rules that do not change:
 
 ## Phase 1: Make the content trustworthy
 
-Status: in progress. Observations, Codes, Severe, Foundations, Wind, Moisture, Air masses and Synoptic checked 2026-10-26 (see `VERIFICATION.md`). One domain remains.
+Status: first pass complete for all nine domains (2026-10-26, see `VERIFICATION.md`). Second pass needed for items marked not confirmed, using MANOBS, MANAIR, the full AIM and ECCC pages that could not be opened.
 
-- [x] Lessons in Observations, Codes, Severe, Foundations, Wind, Moisture, Air masses and Synoptic show the sources checked and the items not confirmed. Other domains still to do.
+- [x] Lessons in all nine domains show the sources checked and the items not confirmed. Other domains still to do.
 - [ ] Check every lesson against MANOBS, MANAIR, the TC AIM MET chapter, the NAV CANADA guide and ECCC pages.
 - [x] Rewrite the warning-criteria lesson and questions around the Impact Guides (done 2026-10-26).
 - [ ] Get review from working Met Techs or forecasters. Use the CFS Met course as a check once enrolled, and keep course material itself out of this repo.

@@ -775,7 +775,7 @@
         {
           "h": "Post-tropical transition"
         },
-        "ECCC: a post-tropical cyclone is one that used to be tropical. Canada adopted the term in 1998 so that potentially dangerous storms could keep their names. Tropical cyclones entering mid-latitudes seldom lose all their tropical traits and can keep moisture and circulation aloft that strengthen the storm (Hazel, 1954). The usual explanation, cooler water and stronger shear giving fronts, a cold core and a larger wind field, was not confirmed on the ECCC page. ECCC examples: Gabrielle 2001 (flooding rain on the Avalon Peninsula), Florence 2006 (hurricane-force winds in southern Newfoundland), Chantal 2007 (flooding in Newfoundland), Noel 2007 (extreme waves and coastal damage in Nova Scotia). News reports describe post-tropical Fiona (2022) causing widespread outages and destroyed homes in Atlantic Canada.",
+        "ECCC: a post-tropical cyclone is one that used to be tropical. Canada adopted the term in 1998 so that potentially dangerous storms could keep their names. Tropical cyclones entering mid-latitudes seldom lose all their tropical traits and can keep moisture and circulation aloft that strengthen the storm (Hazel, 1954). The usual explanation, cooler water and stronger shear giving fronts, a cold core and a larger wind field, was not confirmed on the ECCC page. ECCC examples: Gabrielle 2001 (flooding rain on the Avalon Peninsula), Florence 2006 (hurricane-force winds in southern Newfoundland), Chantal 2007 (flooding in Newfoundland), Noel 2007 (extreme waves and coastal damage in Nova Scotia). ECCC: post-tropical Fiona (2022) hit eastern Nova Scotia and was the most damaging storm of any kind in Atlantic Canadian history, with over $800 million in insured damage; waves also did major damage in southwestern Newfoundland and Labrador.",
         {
           "note": "'Post-tropical' means the structure has changed, not that the hazard has gone."
         }
@@ -933,13 +933,13 @@
         "sources": [
           "ECCC, Learn about hurricanes: post-tropical cyclones: definition, 1998 adoption, examples",
           "ECCC, Canadian Hurricane Centre: Dartmouth, Atlantic Storm Prediction Centre, since 1987",
-          "UNC Asheville ATMS 103, Tropical cyclones: SST above 26.5 C, little vertical shear, surface convergence, 34 kt and 64 kt thresholds (39 and 74 mph), season 1 June to 30 November"
+          "UNC Asheville ATMS 103, Tropical cyclones: SST above 26.5 C, little vertical shear, surface convergence, 34 kt and 64 kt thresholds (39 and 74 mph), season 1 June to 30 November",
+          "ECCC, Hurricanes: frequently asked questions: Fiona (2022) damage"
         ],
         "unverified": [
           "The 50 m warm water depth and the mid-September peak were removed (not confirmed).",
           "Minimum distance of 5 degrees from the equator, the warm core, the right-front quadrant being most dangerous, and Saffir-Simpson category details: standard teaching, not on the pages read.",
-          "Why transition happens (cool water, shear) and the cold-core structure of post-tropical storms: not stated on the ECCC page.",
-          "Fiona (2022) damage described from news headlines, not from ECCC."
+          "Why transition happens (cool water, shear) and the cold-core structure of post-tropical storms: not stated on the ECCC page."
         ]
       }
     }

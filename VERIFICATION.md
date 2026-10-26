@@ -16,7 +16,7 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 | Moisture (moisture). 6 topics | Checked. Icing temperatures, cloud heights, fog winds corrected | 2026-10-26 |
 | Air masses (airmass). 4 topics | Checked. Frontal slopes, shear role in frontogenesis corrected | 2026-10-26 |
 | Synoptic (synoptic). 5 topics | Checked. Post-tropical, derecho, cyclone life span and long-wave wording corrected | 2026-10-26 |
-| Applied | Not yet checked | |
+| Applied (applied). 5 topics | Checked. Flight categories and VFR minima made Canadian | 2026-10-26 |
 
 ## Corrections made on 2026-10-26
 
@@ -96,6 +96,15 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 | Tropical cyclone ingredients | SST warm to 50 m; peak mid-September | Deep warm layer; peak claim removed | UNC Asheville ATMS 103 |
 | Post-tropical | Loses tropical structure, fronts, cold core | ECCC: used to be tropical; term adopted 1998; structure explanation marked unconfirmed; ECCC examples added | ECCC post-tropical page |
 | Canadian Hurricane Centre | "Part of ECCC" | Meteorological Service of Canada, Atlantic Storm Prediction Centre, since 1987 | ECCC |
+| Flight categories | IFR 500 to below 1,000 ft and/or 1 to below 3 SM | IFR: ceiling below 1,000 ft AGL or visibility below 3 SM; LIFR is a US category | NAV CANADA guide |
+| VFR minima | "3 SM in most Class E below 10,000 ft" (US wording) | CARs 602.114 and 602.115 minima added; quiz uses CAR 602.114 | Canadian Aviation Regulations |
+| Density altitude | Basic effects | Added METAR remark rule (200 ft or more) and takeoff roll example | NAV CANADA guide |
+| Alternates | Vague | BECMG and TEMPO must meet alternate minima, PROB landing minima | NAV CANADA guide |
+| Marine warnings | Thresholds only | Excluding gusts; hurricane force warning does not mean a hurricane expected; Beaufort sourced | ECCC marine warning program; NWS |
+| Humidex | Named only | ECCC ranges added | ECCC |
+| Tropical risk season | Peak mid-September; late August to October | August and September most storms; exposure facts and Fiona damage | ECCC hurricane FAQ |
+| Freezing rain (Atlantic) | "One of the highest frequencies in Canada" | Eastern Canada incl. Atlantic provinces, St. Lawrence valley hotspot | ClimateData.ca |
+| Fiona (synoptic) | News headlines | ECCC: eastern Nova Scotia, over $800 million insured damage | ECCC hurricane FAQ |
 
 ## Not confirmed (open items)
 
@@ -109,4 +118,5 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 - Moisture: mixing ratio conservation and wet-bulb ordering, CCN types, lifting mechanisms, cloud appearance descriptions, warm-front cloud sequence, carburettor icing, Nova Scotia fog climatology, AIM MET 2.4 icing text re-check.
 - Air masses: k/w modification and stability, warm front passage changes, warm occlusion, ana and kata fronts, frontal inversion, baroclinic definition, Gulf Stream frontogenesis zone. No Canadian publication on air mass types was found.
 - Synoptic: vorticity definitions and conservation, PVA link to upper divergence, MCS and MCC size criteria, polar lows, lake-effect snow, 5 degree Coriolis limit, warm core, right-front quadrant, Saffir-Simpson categories, why post-tropical transition happens, Fiona details from ECCC.
-- Applied has not been checked yet.
+- Applied: pressure altitude, crosswind trigonometry source, alternate-required rules (CAR 602.121 onward), ceiling definition, freezing spray criteria, Strong Wind warning threshold, WBGT, military impact tables, briefing SOP format, Atlantic climatology details against ECCC climate normals.
+- All domains: this was a first pass. Many sources were US or university material, and the long Canadian manuals (MANOBS chapters 8 to 15, MANAIR, full AIM) could not be opened. A second pass against those is the next accuracy step.
