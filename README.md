@@ -11,6 +11,7 @@ Live at `https://brandonellis-comet.github.io/LearnMet/` once GitHub Pages is en
 | Study | 9 domains, 48 topics. Open a lesson, take a quiz, set your level, keep notes |
 | Tests | Weak-area drill (15 questions from your weakest topics, missed ones first), decoding drills (10 generated METAR or TAF questions, answers after each) and one test per domain. 15 questions, answers shown at the end. Pass mark 75% |
 | Exam | Quarterly exam. 40 questions across all domains, weighted by domain size. Timed (elapsed). Pass mark 75% |
+| Links | Verified free public sources (ECCC, NAV CANADA, Transport Canada, WMO, NOAA, MetEd). Also shown as Further reading on each lesson |
 | Stats | Attempt history, backup (Export / Import) |
 
 Decoding drills are generated on the fly from random practice reports (not real observations) and do not affect topic levels or the review pool.
@@ -40,6 +41,7 @@ Content: 48 lessons and 528 questions (11 per topic) in `content/`. A topic quiz
 | `notes/` | Your own notes by domain (`_template.md`) |
 | `quizzes/` | Extra question banks you write |
 | `reference/` | Cheat sheets (METAR quick reference) |
+| `content/links.json` | Study links and which topics they attach to |
 
 ## Content format
 
@@ -63,6 +65,11 @@ The app must be served over http. Opening `index.html` directly from a file will
 Content was written by Claude as a study aid. It has not been checked against the official CFS Met course, MANOBS, or ECCC/NAV CANADA documents.
 Items most likely to differ from official sources: cloud level heights, ECCC alert criteria (they vary by region), TAF and METAR details, model resolutions.
 When a lesson disagrees with your course material, trust the course material and correct the lesson file.
+
+## Links
+
+Only public, unclassified sources. Each link was opened and checked on 2026-10-26; re-check occasionally, as government pages move. ECCC says its older public alert criteria were replaced by Impact Guides, so the warning-criteria lesson may be out of date.
+Never add links to DWAN or intranet pages, CFS Met course material, or anything restricted or classified.
 
 ## Rules
 

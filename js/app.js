@@ -53,8 +53,10 @@ const saveQuiz = () => lsSet(KEYS.quiz, quiz);
 
 // ---------- Content ----------
 let DATA = [];
+let LINKS = { resources: {}, topics: {} };
 const QBY = {};
 async function loadContent() {
+  try { const lr = await fetch("content/links.json", { cache: "no-cache" }); if (lr.ok) LINKS = await lr.json(); } catch (e) {}
   DATA = await Promise.all(DOMAINS.map(async id => {
     const r = await fetch(`content/${id}.json`, { cache: "no-cache" });
     if (!r.ok) throw new Error("Missing content/" + id + ".json");
@@ -141,7 +143,7 @@ let timer = null;
 function mount(...nodes) { app().replaceChildren(...nodes.flat(Infinity).filter(Boolean)); window.scrollTo(0, 0); }
 
 function navBar(active) {
-  const tabs = [["", "Home"], ["study", "Study"], ["tests", "Tests"], ["exam", "Exam"], ["stats", "Stats"]];
+  const tabs = [["", "Home"], ["study", "Study"], ["tests", "Tests"], ["exam", "Exam"], ["links", "Links"], ["stats", "Stats"]];
   return h("nav", { class: "tabs" }, tabs.map(([href, label]) =>
     h("a", { href: "#/" + href, class: href === active ? "on" : "" }, label)));
 }
@@ -166,6 +168,7 @@ function route() {
     if (v === "weak") return startRun(weakRun());
     if (v === "decode") return startRun(decodeRun(a === "taf" ? "taf" : "metar"));
     if (v === "stats") return viewStats();
+    if (v === "links") return viewLinks();
   } catch (e) { console.error(e); }
   viewHome();
 }
@@ -314,6 +317,8 @@ function viewTopic(did, ti) {
     h("div", { class: "row", style: "margin-bottom:10px" },
       h("span", { class: "muted small", text: stats.s ? `Quiz history: ${stats.s - stats.w}/${stats.s} correct` : "No quiz taken yet" }), btn),
     h("div", { class: "card" }, lesson),
+    (LINKS.topics[tkey(did, ti)] || []).length > 0 && h("div", { class: "card" }, h("h2", { text: "Further reading (free, public)" }),
+      LINKS.topics[tkey(did, ti)].map(id => linkItem(id)), h("div", { class: "muted small", text: "Opens in a new tab. Checked " + (LINKS.checked || "") + "." })),
     t.terms && t.terms.length > 0 && h("div", { class: "card" }, h("h2", { text: "Key terms" }),
       h("dl", { class: "terms" }, t.terms.map(([k, v]) => [h("dt", { text: k }), h("dd", { text: v })]))),
     h("div", { class: "actions" },
@@ -542,6 +547,27 @@ function renderResults() {
     weakTopics.length > 0 && run.type !== "topic" && h("div", { class: "card" }, h("h2", { text: "Review these topics" }),
       weakTopics.map(w => h("div", {}, h("a", { href: `#/topic/${w.d.id}/${w.t.ti}`, text: w.t.title }))),
       h("div", { class: "actions" }, markBtn)));
+}
+
+// ---------- Links ----------
+function linkItem(id) {
+  const r = LINKS.resources[id]; if (!r) return null;
+  return h("div", { class: "link" },
+    h("a", { href: r.url, target: "_blank", rel: "noopener noreferrer", text: r.title }),
+    h("div", { class: "muted small", text: r.org }),
+    h("div", { class: "small", text: r.note }));
+}
+function viewLinks() {
+  const ids = Object.keys(LINKS.resources);
+  const groups = [["Canadian standards and manuals", ["manobs", "manair", "tc-aim-met", "nc-aws"]],
+    ["ECCC public weather", ["eccc-alerts", "eccc-hurricane", "eccc-radar", "project-atm"]],
+    ["Marine", ["eccc-beaufort", "eccc-marine", "eccc-marine-atl", "eccc-marine-nat"]],
+    ["Free courses and references", ["meted", "wmo-ca", "jet", "jet-atm", "jet-global", "jet-clouds", "jet-upper"]]];
+  shell("links",
+    h("h1", { text: "Study links" }),
+    h("div", { class: "sub", text: LINKS.note || "Public sources only." }),
+    groups.map(([t, list]) => h("div", { class: "card" }, h("h2", { text: t }), list.filter(i => ids.includes(i)).map(linkItem))),
+    h("div", { class: "hint", text: "Official CFS Met course material is controlled. It stays out of this public repo; keep it on approved systems." }));
 }
 
 // ---------- Stats ----------
