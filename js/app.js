@@ -255,8 +255,7 @@ function viewHome() {
       h("h2", { text: "Weakest topics" }),
       weak.slice(0, 5).map(w => h("div", { class: "row", style: "margin-bottom:6px" },
         h("a", { class: "grow", href: `#/topic/${w.d.id}/${w.t.ti}`, text: w.t.title }),
-        h("span", { class: "muted small", text: `${Math.round(w.rate * 100)}% missed` })))),
-    h("div", { class: "hint", text: "Content is a study aid written by Claude. Verify against official CFS Met and ECCC course material before relying on it." }));
+        h("span", { class: "muted small", text: `${Math.round(w.rate * 100)}% missed` })))));
 }
 
 // ---------- Study (tracker) ----------
