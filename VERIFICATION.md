@@ -12,7 +12,8 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 | Codes (codes) | Checked. 6 topics | 2026-10-26 |
 | Severe weather (severe). 6 topics | Checked. Several numbers removed as unconfirmed | 2026-10-26 |
 | Foundations (foundations). 5 topics | Checked. Tropopause heights and pressure-level heights corrected | 2026-10-26 |
-| Wind, Moisture, Air masses, Synoptic, Applied | Not yet checked | |
+| Wind (wind). 6 topics | Checked. Backing/veering rule was reversed and is fixed | 2026-10-26 |
+| Moisture, Air masses, Synoptic, Applied | Not yet checked | |
 
 ## Corrections made on 2026-10-26
 
@@ -55,6 +56,14 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 | Thickness | 540 dam rain/snow line as a bare rule | Kept with caveats: other sources use about 522 dam; deep layer is a weak snow indicator | NOAA NWS Houston (Haby) |
 | SALR | "Typically 4 to 7 C per km; smaller in warm air" | About 5 typical, range 3.6 to 9.2 (ICAO via article); direction not confirmed | Lapse rate article citing ICAO |
 | Chinook | Named only | Added belt location and humidity | Canadian Encyclopedia |
+| Thermal wind | Backing = warm advection; veering = cold advection; "winds back ahead of a warm front" | Reversed: backing = cold advection, veering = warm advection (NH). Two quiz answers and the lesson note fixed | Albany ATM 317, Thermal Wind |
+| Friction | 10-20 deg over water, 25-45 over land; speed fractions 1/3-1/2 and 2/3 | About 30 deg over land, less over water, 45+ in mountains; fractions removed | Penn State METEO 3 |
+| Jet stream | "WMO definition 60 kt"; a few km deep; subtropical jet near 200 hPa, stable | FAA AC 00-6A: 50 kt (called arbitrary); 1,000-3,000 mi long, about 100-400 mi wide; subtropical about 13 km at 30 deg; WMO figure unconfirmed | FAA AC 00-6A, LibreTexts |
+| CAT and jets | "Cold-air side and shear zones" | Cold (polar) side in an upper trough, with reason; new question | FAA AC 00-6A |
+| Sea breeze | Starts late morning, peaks mid-afternoon, 10-20 km inland, triggers thunderstorms | Removed; front brings shift, temperature drop, moisture, cloud | NWS training notes |
+| Katabatic / mountain breeze | Treated as the same | Separated; katabatic stronger, can exceed 100 kt | NWS training notes |
+| Chinook | Named only | Up to 20 C rise in 1 hour; compression plus latent heat | NWS training notes |
+| Nova Scotia sea breeze note | Stated as fact | Removed (no source) | |
 
 ## Not confirmed (open items)
 
@@ -64,4 +73,5 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 - dBZ intensity ranges, water vapour band wavelengths, mandatory pressure level list, CSI formula, CIN and lifted index definitions.
 - Severe: supercell/mesocyclone definition, microburst size and approach sequence, blizzard numbers, nocturnal low-level jet details, mountain wave wind speed, Richardson 0.25, watch/warning/advisory definitions, and the Wind, Rain, Snow and Winter storm Impact Guide sections.
 - Foundations: troposphere 80% of mass is derived; ozone altitude, ionosphere location, mesopause coldest, fog spread rule, pressure-tendency rule, SALR direction, 300 hPa label, and the ICAO documents themselves (only secondary articles read).
-- The other five domains (wind, moisture, air masses, synoptic, applied) have not been checked yet.
+- Wind: Coriolis zero at equator and Coriolis parameter, gradient wind, boundary layer depth, diurnal wind cycle, Ferrel cell being indirect, WMO jet definition, jet entrance and exit divergence, and the TC AIM jet stream wording.
+- The other four domains (moisture, air masses, synoptic, applied) have not been checked yet.

@@ -167,7 +167,17 @@
           "a": 0,
           "e": "Coriolis force increases with wind speed and with the sine of latitude."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "Penn State METEO 3, Introductory Meteorology: forces on wind: PGF direction, Coriolis to the right in the Northern Hemisphere, grows with speed and latitude, geostrophic wind parallel to isobars, Buys Ballot's law"
+        ],
+        "unverified": [
+          "Coriolis zero at the equator, Coriolis changing direction but not speed, the Coriolis parameter formula, and 'too small for sea breezes': standard physics, not stated on the page read.",
+          "Source is a university course text, not a Canadian government publication."
+        ]
+      }
     },
     {
       "title": "Geostrophic, gradient and thermal wind",
@@ -187,12 +197,12 @@
         {
           "list": [
             "A strong horizontal temperature gradient means wind increases rapidly with height. This is why jet streams sit above frontal zones.",
-            "Wind turning counterclockwise with height (backing) means warm air advection.",
-            "Wind turning clockwise with height (veering) means cold air advection."
+            "Wind turning counterclockwise with height (backing) means cold air advection.",
+            "Wind turning clockwise with height (veering) means warm air advection."
           ]
         },
         {
-          "note": "Quick check: if the wind backs with height in a sounding, warm air is arriving. Ahead of a warm front, winds typically back with height."
+          "note": "Quick check: if the wind veers (turns clockwise) with height in a sounding, warm air is arriving. If it backs, cold air is arriving."
         }
       ],
       "terms": [
@@ -250,13 +260,13 @@
         {
           "q": "In the Northern Hemisphere, winds that back (turn counterclockwise) with height indicate:",
           "c": [
-            "Warm air advection",
             "Cold air advection",
+            "Warm air advection",
             "No temperature advection",
             "A strengthening ridge only"
           ],
           "a": 0,
-          "e": "Backing with height signals warm advection; veering with height signals cold advection."
+          "e": "Backing with height signals cold advection; veering with height signals warm advection (Albany ATM 317 thermal wind notes)."
         },
         {
           "q": "Why are jet streams found above frontal zones?",
@@ -305,13 +315,13 @@
         {
           "q": "Winds that veer (turn clockwise) with height in the Northern Hemisphere indicate:",
           "c": [
-            "Cold air advection",
             "Warm air advection",
+            "Cold air advection",
             "No temperature advection",
             "Frontolysis only"
           ],
           "a": 0,
-          "e": "Veering with height is the signature of cold advection."
+          "e": "Veering with height is the signature of warm advection in the Northern Hemisphere."
         },
         {
           "q": "In the Northern Hemisphere, cold air lies to the north and warm air to the south. How does a westerly wind change with height?",
@@ -335,7 +345,19 @@
           "a": 0,
           "e": "Local circulations are driven by heating or terrain, while the geostrophic wind is a large-scale balance."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "University at Albany ATM 317, Thermal Wind notes: thermal wind is the vector difference of geostrophic winds, parallel to thickness lines with cold air on the left; backing = cold advection, veering = warm advection",
+          "LibreTexts, Jet streams: thermal wind as vertical shear of the geostrophic wind caused by a horizontal temperature gradient",
+          "Penn State METEO 3: geostrophic wind parallel to isobars"
+        ],
+        "unverified": [
+          "Gradient wind (sub- and supergeostrophic around lows and highs): standard theory, not stated on the pages read.",
+          "Wind speed proportional to pressure gradient and geostrophic balance above the friction layer: partly confirmed (geostrophic definition, 'often close at high altitudes')."
+        ]
+      }
     },
     {
       "title": "Friction and boundary layer winds",
@@ -343,8 +365,8 @@
         "The atmospheric boundary layer is the lowest 1 to 2 km, where surface friction matters. Friction slows the wind. A slower wind feels a weaker Coriolis effect, so the pressure gradient force wins and the wind turns toward lower pressure.",
         {
           "list": [
-            "Surface wind blows across the isobars toward low pressure, typically 10 to 20 degrees over water and 25 to 45 degrees over land.",
-            "Surface wind speed is about one-third to one-half of the geostrophic wind over land, and about two-thirds over open water.",
+            "Surface wind blows across the isobars toward low pressure: about 30 degrees on average over land, less over water, and 45 degrees or more over mountainous terrain (Penn State).",
+            "Friction slows the wind, so surface wind is weaker than the geostrophic wind. The usual fractions (about one-third to one-half over land, two-thirds over water) were not confirmed and were removed.",
             "Surface winds therefore back (turn counterclockwise) relative to the wind above. Wind veers with height through the friction layer."
           ]
         },
@@ -415,7 +437,7 @@
             "It is identical everywhere"
           ],
           "a": 0,
-          "e": "Rougher surfaces produce more friction and a larger angle across the isobars."
+          "e": "Penn State: about 30 degrees on average over land, less over water, 45 degrees or more in mountains. Rougher surfaces turn the wind more."
         },
         {
           "q": "Why do surface gusts often peak in the afternoon?",
@@ -505,7 +527,17 @@
           "a": 0,
           "e": "Friction slows the near-surface air and breaks the geostrophic balance."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "Penn State METEO 3: friction slows the wind; crossing angle about 30 degrees over land, less over water, 45 degrees or more in mountains"
+        ],
+        "unverified": [
+          "Boundary layer depth of 1 to 2 km, diurnal gust cycle, night-time decoupling, surface convergence under lows and divergence under highs: standard teaching, not confirmed on the pages read.",
+          "Speed fractions of surface to geostrophic wind were removed (no source)."
+        ]
+      }
     },
     {
       "title": "General circulation (Hadley, Ferrel, Polar cells)",
@@ -674,17 +706,27 @@
           "a": 0,
           "e": "Hadley and Polar cells are direct; the Ferrel cell is indirect and eddy-driven."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NWS Atmospheric Circulations training notes: three-cell model with highs near 30 and 90 degrees and lows near 0 and 60; ITCZ where NE and SE trades converge; subtropical highs with sinking air and deserts; northeast trades; westerlies; polar easterlies; polar front near 60 degrees as a zone where storms form"
+        ],
+        "unverified": [
+          "Ferrel cell being indirect and eddy-driven, and the doldrums (light winds at the ITCZ): standard teaching, not stated on the page read.",
+          "Exact latitude edges of each cell (0 to 30, 30 to 60, 60 to 90) follow from the pressure belts but are not stated as such."
+        ]
+      }
     },
     {
       "title": "Jet streams",
       "lesson": [
-        "Jet streams are narrow, fast ribbons of wind near the tropopause. By the WMO definition the core winds are at least 60 kt (30 m/s). They are typically thousands of km long, hundreds of km wide, and a few km deep.",
+        "Jet streams are narrow, fast ribbons of wind near the tropopause. FAA AC 00-6A classifies a jet stream as winds of 50 kt or more and calls that figure arbitrary. The WMO figure of 30 m/s (about 60 kt) is not confirmed here. FAA gives lengths of 1,000 to 3,000 miles and widths of roughly 100 to 400 miles, in a narrow, shallow stream.",
         {
           "list": [
-            "Polar front jet: about 250 to 300 hPa (9 to 12 km). Follows the polar front and shifts north and south. This is the jet that steers mid-latitude storms over Canada.",
-            "Subtropical jet: near 200 hPa (about 12 km), at the poleward edge of the Hadley cell. More stable in position.",
-            "Jets are strongest in winter because the equator-to-pole temperature contrast is greatest."
+            "Polar front jet: near 50 to 60 degrees latitude and about 10 km up (roughly 250 to 300 hPa). Follows the polar front and shifts north and south. It moves farther south in winter.",
+            "Subtropical jet: near 30 degrees latitude and about 13 km up, above the tropical high.",
+            "Jets are strongest in winter because the equator-to-pole temperature contrast is greatest. Typical speeds are well above 100 kt in a core (LibreTexts)."
           ]
         },
         {
@@ -698,7 +740,7 @@
         {
           "h": "Aviation and operations"
         },
-        "Flying east with a jet saves time and fuel. Clear-air turbulence (CAT) is common near jet cores, especially on the cold-air side and near strong shear zones.",
+        "Flying east with a jet saves time and fuel. Clear-air turbulence (CAT) is common near jet cores. FAA names the cold (polar) side in an upper trough as a preferred location, because wind speed falls off faster on that side and shear is greater.",
         {
           "note": "Jet streams are found in the 250 hPa and 300 hPa charts. Look for tightly packed isotachs (lines of equal wind speed)."
         }
@@ -714,20 +756,20 @@
         ],
         [
           "CAT",
-          "Clear-air turbulence: turbulence in cloudless air, often near jets."
+          "Clear-air turbulence: turbulence in cloudless air, often near jets, preferred on the polar side in an upper trough (FAA)."
         ]
       ],
       "questions": [
         {
-          "q": "By the WMO definition, what minimum wind speed defines a jet stream?",
+          "q": "What minimum wind speed does FAA AC 00-6A use to classify a jet stream?",
           "c": [
-            "60 kt (30 m/s)",
-            "30 kt (15 m/s)",
-            "100 kt (50 m/s)",
-            "20 kt (10 m/s)"
+            "50 kt",
+            "30 kt",
+            "100 kt",
+            "150 kt"
           ],
           "a": 0,
-          "e": "The WMO definition uses a core speed of at least 30 m/s, about 60 kt."
+          "e": "FAA AC 00-6A: 50 knots or greater, which the text calls arbitrary. The WMO figure of 30 m/s (about 60 kt) is not confirmed here."
         },
         {
           "q": "What is the main cause of jet streams?",
@@ -782,7 +824,7 @@
             "1000 hPa"
           ],
           "a": 0,
-          "e": "The polar front jet is near the tropopause, around 250 to 300 hPa."
+          "e": "The polar front jet is near the tropopause, around 250 to 300 hPa (about 10 km)."
         },
         {
           "q": "A jet core of 120 kt is about how many metres per second?",
@@ -838,8 +880,32 @@
           ],
           "a": 0,
           "e": "The subtropical jet lies at the poleward edge of the Hadley cell, about 30 degrees."
+        },
+        {
+          "q": "Where does FAA AC 00-6A place a preferred location for CAT relative to the jet stream?",
+          "c": [
+            "On the cold (polar) side, in an upper trough",
+            "On the warm side, equatorward of the core",
+            "Only at the surface, below the jet core",
+            "Far from the jet, in the stratosphere"
+          ],
+          "a": 0,
+          "e": "FAA: wind speed falls off faster on the polar side, so shear is greater there."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "FAA Advisory Circular 00-6A, Aviation Weather: jet stream 50 kt minimum, dimensions, winter strength and southward shift, CAT on the cold side",
+          "LibreTexts, Jet streams: polar jet near 50 to 60 degrees and about 10 km; subtropical jet near 30 degrees and about 13 km; stronger in winter; cores often above 100 kt",
+          "Royal Meteorological Society, Jet streams: about 30,000 ft, average about 110 mph, polar jet strongest in winter, flight times"
+        ],
+        "unverified": [
+          "WMO 60 kt (30 m/s) definition: not confirmed on any page read. The TC AIM jet stream wording was not found.",
+          "Entrance and exit region divergence (right entrance, left exit), and that the polar jet steers storms over Canada: standard teaching, not confirmed.",
+          "Isotachs on 250 and 300 hPa charts: not checked."
+        ]
+      }
     },
     {
       "title": "Local winds (sea/land breeze, katabatic, valley)",
@@ -847,16 +913,16 @@
         "Local winds develop when small-scale heating or terrain differences set up their own pressure gradients. They are strongest when the large-scale pressure gradient is weak.",
         {
           "list": [
-            "Sea breeze: by day land heats faster than water, pressure falls over land, and air flows from sea to land (onshore). Starts late morning, peaks mid-afternoon, may reach 10 to 20 km or more inland. The sea breeze front can trigger thunderstorms and bring a sudden drop in temperature and rise in humidity.",
+            "Sea breeze: by day land heats faster than water, pressure falls over land, and air flows from sea to land (onshore). The sea breeze front brings a wind shift, a rapid drop in temperature and higher moisture, and clouds often form along it (NWS). Sea breezes are stronger than land breezes.",
             "Land breeze: at night land cools faster, so air flows from land to sea (offshore). Weaker than the sea breeze.",
             "Valley breeze (anabatic): by day, sun heats slopes and air flows upslope and up-valley.",
-            "Mountain breeze (katabatic): at night, slopes cool and dense air drains downslope and down-valley. Cold air pooling in valleys causes frost and fog.",
-            "Katabatic winds on a large scale occur over ice sheets and glaciers. Winds can be violent.",
-            "Foehn or Chinook: warm, dry downslope wind on the lee of a mountain range (see adiabatic processes). The Chinook affects Alberta."
+            "Mountain breeze: at night, valley walls cool and air flows downslope and down-valley. Cold air pooling in valleys can cause frost and fog.",
+            "Katabatic winds: cold air flowing down a slope under gravity. They are stronger than mountain breezes and can exceed 100 knots (NWS). Large-scale examples occur over ice sheets and glaciers.",
+            "Foehn or Chinook: warm, dry downslope wind on the lee of a mountain range (see adiabatic processes). The Chinook affects Alberta. NWS notes temperature can rise as much as 20 C in 1 hour with a sharp drop in relative humidity. Warming is mainly from compression, plus latent heat released if the air condensed on the windward side."
           ]
         },
         {
-          "note": "Sea breeze days on Nova Scotia's south shore often mean cooler, foggier afternoons on the coast while inland stays warm."
+          "note": "Local winds matter most when the large-scale pressure gradient is weak."
         }
       ],
       "terms": [
@@ -998,8 +1064,30 @@
           ],
           "a": 0,
           "e": "Land-sea contrasts are smaller at night, so land breezes are usually weaker."
+        },
+        {
+          "q": "Per NWS training notes, how do katabatic winds compare with mountain breezes?",
+          "c": [
+            "Stronger, and can exceed 100 knots",
+            "Weaker, never above 10 knots",
+            "The same strength",
+            "Found only over open water"
+          ],
+          "a": 0,
+          "e": "NWS: katabatic winds are driven by cold air flowing down a slope, stronger than mountain breezes, and can exceed 100 knots."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NWS Atmospheric Circulations training notes: sea and land breeze, sea breeze front effects, valley and mountain breezes, katabatic winds, chinook and foehn temperature rise and mechanism",
+          "The Canadian Encyclopedia, Chinook (see Foundations): chinook belt in southern and central Alberta"
+        ],
+        "unverified": [
+          "Sea breeze timing and inland reach, and sea breeze fronts triggering thunderstorms, were removed (no source). The Nova Scotia south-shore note was removed for the same reason.",
+          "Cold-air pooling giving frost and fog, and the term anabatic for the daytime upslope wind: standard teaching, not confirmed on the pages read."
+        ]
+      }
     }
   ]
 }
