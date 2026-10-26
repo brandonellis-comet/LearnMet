@@ -63,7 +63,7 @@ The app must be served over http. Opening `index.html` directly from a file will
 
 ## Accuracy
 
-Observations, Codes, Severe weather, Foundations, Wind and Moisture were checked against public primary sources on 2026-10-26. See `VERIFICATION.md` for corrections and open items. The other three domains are unchecked.
+Observations, Codes, Severe weather, Foundations, Wind, Moisture and Air masses were checked against public primary sources on 2026-10-26. See `VERIFICATION.md` for corrections and open items. The other two domains are unchecked.
 
 Content was written by Claude as a study aid. It has not been checked against the official CFS Met course, MANOBS, or ECCC/NAV CANADA documents.
 Items most likely to differ from official sources: cloud level heights, ECCC alert criteria (they vary by region), TAF and METAR details, model resolutions.

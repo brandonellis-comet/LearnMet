@@ -14,7 +14,8 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 | Foundations (foundations). 5 topics | Checked. Tropopause heights and pressure-level heights corrected | 2026-10-26 |
 | Wind (wind). 6 topics | Checked. Backing/veering rule was reversed and is fixed | 2026-10-26 |
 | Moisture (moisture). 6 topics | Checked. Icing temperatures, cloud heights, fog winds corrected | 2026-10-26 |
-| Air masses, Synoptic, Applied | Not yet checked | |
+| Air masses (airmass). 4 topics | Checked. Frontal slopes, shear role in frontogenesis corrected | 2026-10-26 |
+| Synoptic, Applied | Not yet checked | |
 
 ## Corrections made on 2026-10-26
 
@@ -76,6 +77,14 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 | Fog spread | 2 C or less | Under 5 F (about 3 C); sea fog unlikely above 3 C | NWS Houston/Galveston fog guide |
 | Ice fog | Not covered | -29 C and colder | NWS Houston/Galveston fog guide |
 | Visibility term (fog lesson) | Prominent object definition | Matches MANOBS wording from Observations | MANOBS |
+| Air mass size | "1,000 km or more" | Several hundred to a couple of thousand miles; uniform horizontally, not vertically | Penn State METEO 3 |
+| cP / cA / mP / mT / cT sources | cP "northern Canada and Siberia"; Sahara; Maritimes weather | cP: Canada most common; cA added (Siberia, northern Canada); cT: SW US and northern Mexico; Maritimes claims removed | Penn State METEO 3 |
+| Cold front slope | 1:50 to 1:100 | About 1:100 (warm 1:200); speeds up to 50 km/h and about 20 km/h added | Oklahoma Mesonet; Yu ESS 5; U of Alberta |
+| Cold front passage | Pressure rises "sharply" | Pressure rises (sharply not confirmed) | Oklahoma Mesonet; U of Alberta |
+| Front speed quiz | Speed equals wind component | Replaced with sourced speeds | U of Alberta; Yu ESS 5 |
+| Frontogenesis | "Horizontal wind shear" as a driver; axis of dilatation "close to the front" | Shear only rotates isotherms; 45 degree rule; tilting and diabatic heating | NWS Louisville, Frontogenesis |
+| Cold front weather band | 50 to 100 km | Marked unconfirmed | |
+| Front symbols | Stated in quiz | Confirmed: cold blue triangles, warm red semicircles, occluded purple | NWS WPC |
 
 ## Not confirmed (open items)
 
@@ -87,4 +96,5 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 - Foundations: troposphere 80% of mass is derived; ozone altitude, ionosphere location, mesopause coldest, fog spread rule, pressure-tendency rule, SALR direction, 300 hPa label, and the ICAO documents themselves (only secondary articles read).
 - Wind: Coriolis zero at equator and Coriolis parameter, gradient wind, boundary layer depth, diurnal wind cycle, Ferrel cell being indirect, WMO jet definition, jet entrance and exit divergence, and the TC AIM jet stream wording.
 - Moisture: mixing ratio conservation and wet-bulb ordering, CCN types, lifting mechanisms, cloud appearance descriptions, warm-front cloud sequence, carburettor icing, Nova Scotia fog climatology, AIM MET 2.4 icing text re-check.
-- The other three domains (air masses, synoptic, applied) have not been checked yet.
+- Air masses: k/w modification and stability, warm front passage changes, warm occlusion, ana and kata fronts, frontal inversion, baroclinic definition, Gulf Stream frontogenesis zone. No Canadian publication on air mass types was found.
+- The other two domains (synoptic, applied) have not been checked yet.
