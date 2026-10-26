@@ -10,7 +10,8 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 |--------|--------|------|
 | Observations (obs) | Checked. 5 topics | 2026-10-26 |
 | Codes (codes) | Checked. 6 topics | 2026-10-26 |
-| Foundations, Wind, Moisture, Air masses, Synoptic, Severe, Applied | Not yet checked | |
+| Severe weather (severe). 6 topics | Checked. Several numbers removed as unconfirmed | 2026-10-26 |
+| Foundations, Wind, Moisture, Air masses, Synoptic, Applied | Not yet checked | |
 
 ## Corrections made on 2026-10-26
 
@@ -36,6 +37,14 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 | Surface chart | "Usually every 4 hPa" | 4 hPa from 1000 hPa; four analyses a day | NAV CANADA guide |
 | Upper-air charts | Metres only | Added feet (5,000, 10,000, 18,000, 34,000 ft) and 00/12 UTC | NAV CANADA guide |
 | Drills | Midnight validity coded as 00 at end | Coded 24; issue time set 20 minutes before validity | NAV CANADA guide, AIM |
+| Tornadoes | EF0 105-137 km/h ... EF5 over 322 (US-style) | ECCC: EF0 90-130, EF1 135-175, EF2 180-220, EF3 225-265, EF4 270-310, EF5 315+ | ECCC, Enhanced Fujita scale for wind damage |
+| Wind chill | "-28 and colder, 10 to 30 min" only | Full ECCC table: 10-30, 5-10, 2-5, under 2 minutes; faster in wind over 50 km/h | ECCC, Wind Chill Index |
+| Warning criteria | Hail 2 cm, gusts 90 km/h, rain 50 mm/h, wind 65/90 km/h, blizzard numbers | Lesson and questions rewritten: ECCC replaced the criteria with Impact Guides; colours from the Alert Colour Matrix | ECCC criteria notice (2025-11-26), Impact Guides, How we choose alert colours |
+| Blizzard | 40 km/h, 400 m, 4 h stated as fact | Marked unconfirmed; question now asks which Impact Guide covers blizzards (Visibility) | ECCC Impact Guides |
+| Thunderstorm | Cumulus stage 10-15 min; single cell 30-60 min | Cumulus duration removed; single cell 30-45 min; squall line, pulse storm added | NOAA, Types of Thunderstorms |
+| Microburst | 5-15 min, over 150 km/h | Removed; NOAA pulse-storm downbursts usually under 70 mph | NOAA, Types of Thunderstorms |
+| Wind shear | LLWS = lowest 2,000 ft; "within 1,500 ft" in a quiz answer | AIM sets no height limit for wind shear; question rewritten | TC AIM MET 2.3 |
+| Turbulence | CAT "upper levels"; mountain wave needs 25 kt | CAT above 15,000 ft ASL, not in cumuliform cloud (AIM); 25 kt removed | TC AIM MET 2.2.2 |
 
 ## Not confirmed (open items)
 
@@ -43,4 +52,5 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 - MANAIR chapter 2: TAF amendment thresholds and full coding rules.
 - Occluded and stationary front colours, trough line style, isobar label convention, station model layout.
 - dBZ intensity ranges, water vapour band wavelengths, mandatory pressure level list, CSI formula, CIN and lifted index definitions.
-- The other seven domains have not been checked yet.
+- Severe: supercell/mesocyclone definition, microburst size and approach sequence, blizzard numbers, nocturnal low-level jet details, mountain wave wind speed, Richardson 0.25, watch/warning/advisory definitions, and the Wind, Rain, Snow and Winter storm Impact Guide sections.
+- The other six domains (foundations, wind, moisture, air masses, synoptic, applied) have not been checked yet.

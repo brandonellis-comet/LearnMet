@@ -10,7 +10,7 @@
         },
         {
           "list": [
-            "Cumulus stage: updraft only. Towering cumulus grows. Lasts about 10 to 15 minutes.",
+            "Cumulus stage: updraft only. Towering cumulus grows. NOAA: a downdraft forms within 15 to 20 minutes of the cell starting, and the updraft weakens at 25 to 30 minutes.",
             "Mature stage: updraft and downdraft both present. Heaviest rain, hail, lightning, gusts. The anvil forms at the tropopause.",
             "Dissipating stage: downdraft dominates and cuts off the warm moist inflow. The storm collapses."
           ]
@@ -20,9 +20,10 @@
         },
         {
           "list": [
-            "Single-cell: weak shear, short-lived, about 30 to 60 minutes.",
-            "Multicell: new cells form along the gust front of older ones. Last for hours.",
-            "Supercell: strong shear produces a rotating updraft (mesocyclone). Long-lived. The most likely source of large hail, damaging winds and strong tornadoes."
+            "Single-cell: weak shear, short-lived, generally 30 to 45 minutes. A pulse storm is a single cell with more instability that can give brief downbursts, small to moderate hail and sometimes a weak tornado.",
+            "Multicell cluster: the most common type, with cells at different stages. Each cell lasts about 30 minutes but the cluster can last several hours. New cells form where lift persists (fronts, dry lines, outflow boundaries, higher terrain).",
+            "Squall line (multicell line): outflows merge into a continuous gust front, new cells form on the leading edge and the line moves forward. Straight-line wind damage is common and bow echoes can form. The line weakens if the gust front pulls ahead of it.",
+            "Supercell: a rotating updraft (mesocyclone) in strong shear. Long-lived. Textbook source of the most severe storms."
           ]
         },
         {
@@ -121,15 +122,15 @@
           "e": "The cumulus stage has updraft only; downdrafts begin when precipitation falls."
         },
         {
-          "q": "An air mass thunderstorm typically lasts:",
+          "q": "How long does an ordinary single-cell thunderstorm cell typically last?",
           "c": [
-            "30 to 60 minutes per cell",
-            "6 to 10 hours per cell",
-            "10 to 20 seconds",
+            "Generally 30 to 45 minutes",
+            "About 6 to 10 hours per cell",
+            "Only 10 to 20 seconds",
             "Several days"
           ],
           "a": 0,
-          "e": "Ordinary single cells have short life cycles."
+          "e": "NOAA: single cells in weak shear are short-lived, generally 30 to 45 minutes."
         },
         {
           "q": "Supercell storms are distinguished by:",
@@ -175,7 +176,18 @@
           "a": 0,
           "e": "Rising air cannot penetrate the stable stratosphere and spreads."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NOAA National Weather Service, Types of Thunderstorms (weather.gov/spotterguide/types): single cell, pulse, multicell cluster and line, durations"
+        ],
+        "unverified": [
+          "Supercell and mesocyclone definitions, and shear requirements: the NOAA page does not give them.",
+          "CAPE, charge separation by graupel and ice crystals, thunder, anvil at the tropopause: standard meteorology, not checked against a Canadian publication.",
+          "Cumulus-stage duration was removed (no source found)."
+        ]
+      }
     },
     {
       "title": "Tornadoes and downbursts",
@@ -187,8 +199,8 @@
         {
           "list": [
             "Most strong tornadoes come from supercells. Weaker ones form in squall lines and along boundaries (landspouts).",
-            "Canada rates tornadoes with the Enhanced Fujita (EF) scale, which is based on damage to structures and trees, not on measured wind.",
-            "EF0: 105 to 137 km/h. EF1: 138 to 177. EF2: 178 to 217. EF3: 218 to 266. EF4: 267 to 322. EF5: over 322 km/h."
+            "Canada rates tornadoes with the Enhanced Fujita (EF) scale, introduced by ECCC on 1 April 2013 to replace the F-scale. Ratings come from damage (31 damage indicators, from houses to trees), not from measured wind.",
+            "ECCC wind ranges (rounded to 5 km/h): EF0 90 to 130. EF1 135 to 175. EF2 180 to 220. EF3 225 to 265. EF4 270 to 310. EF5 315 or more."
           ]
         },
         {
@@ -197,8 +209,8 @@
         "A downburst is a strong downdraft from a thunderstorm that hits the ground and spreads outward in a damaging burst of wind.",
         {
           "list": [
-            "Microburst: affected area is less than 4 km across and lasts about 5 to 15 minutes. Peak winds can exceed 150 km/h.",
-            "Macroburst: larger than 4 km, lasts longer.",
+            "Microburst: a small downburst, textbook size under about 4 km across and short-lived. NOAA notes pulse storms give brief downbursts, usually under 70 mph (about 110 km/h).",
+            "Macroburst: larger than a microburst, lasts longer.",
             "Wet microburst: with heavy rain. Dry microburst: little or no rain reaches the ground, often with high-based storms."
           ]
         },
@@ -217,7 +229,7 @@
         ],
         [
           "EF scale",
-          "Enhanced Fujita scale: damage-based rating of tornado intensity."
+          "Enhanced Fujita scale: damage-based rating of tornado intensity. ECCC ranges run from EF0 (90 to 130 km/h) to EF5 (315 km/h or more)."
         ],
         [
           "Microburst",
@@ -345,8 +357,32 @@
           ],
           "a": 0,
           "e": "Radar suggests; spotters and damage surveys confirm."
+        },
+        {
+          "q": "Which wind range does ECCC give for an EF2 tornado?",
+          "c": [
+            "180 to 220 km/h",
+            "135 to 175 km/h",
+            "225 to 265 km/h",
+            "90 to 130 km/h"
+          ],
+          "a": 0,
+          "e": "ECCC: EF0 90-130, EF1 135-175, EF2 180-220, EF3 225-265, EF4 270-310, EF5 315 or more (km/h, rounded to 5)."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "ECCC, Enhanced Fujita scale for wind damage (canada.ca): wind ranges, 31 damage indicators, introduced 1 April 2013",
+          "ECCC Weather Impact Guides, Tornadoes: effects at moderate, high and extreme levels",
+          "NOAA National Weather Service, Types of Thunderstorms: pulse-storm downbursts, bow echo tornadoes weaker than supercell tornadoes"
+        ],
+        "unverified": [
+          "Microburst size (under 4 km) and the headwind, sink, tailwind sequence: standard teaching, not checked against a Canadian publication. Duration and the 150 km/h figure were removed.",
+          "Hook echo and radar signatures: not checked.",
+          "Tornado, funnel cloud and waterspout definitions: not checked against an ECCC glossary."
+        ]
+      }
     },
     {
       "title": "Winter storms and freezing precipitation",
@@ -358,11 +394,11 @@
         {
           "list": [
             "Heavy snow: reduces visibility and blocks roads.",
-            "Blizzard: in Canada, winds of at least 40 km/h with visibility 400 m or less in snow or blowing snow, lasting at least 4 hours.",
-            "Freezing rain: supercooled rain freezes on contact. Ice storms can bring down power lines and trees. See precipitation processes.",
+            "Blizzard: strong wind with snow or blowing snow and very low visibility. ECCC now covers blizzards in its Visibility Impact Guide. The old numeric criteria (wind 40 km/h or more, visibility 400 m or less, 4 hours) are no longer listed on the ECCC page and are not confirmed here.",
+            "Freezing rain: supercooled rain freezes on contact. ECCC's Ice guide scales it from ice on power lines and bridges with some outages (moderate), to damaged lines and widespread outages (high), to collapsed poles and towers with long outages (extreme). See precipitation processes.",
             "Ice pellets: stinging pellets, slippery surfaces.",
             "Snow squalls: sudden, short bursts of intense snow with strong wind and whiteout, typically near a front or lake.",
-            "Wind chill: the cooling effect of wind on exposed skin. In Canada, wind chill values of about -28 and colder carry a frostbite risk for exposed skin within 10 to 30 minutes, and the risk grows quickly as values fall further."
+            "Wind chill (ECCC): -28 to -39, exposed skin can freeze in 10 to 30 minutes. -40 to -47, 5 to 10 minutes. -48 to -54, 2 to 5 minutes. -55 or colder, under 2 minutes. In sustained wind over 50 km/h frostbite can come faster."
           ]
         },
         {
@@ -380,7 +416,7 @@
       "terms": [
         [
           "Blizzard",
-          "Canadian criteria: winds of 40 km/h or more and visibility 400 m or less for at least 4 hours."
+          "Strong wind with snow or blowing snow and very low visibility for a sustained period. ECCC covers it in the Visibility Impact Guide."
         ],
         [
           "Nor'easter",
@@ -388,20 +424,20 @@
         ],
         [
           "Wind chill",
-          "Index of cooling effect of wind on exposed skin."
+          "Index of the cooling effect of wind on exposed skin. ECCC hazard levels run from low (0 to -9) to extreme (-55 or colder)."
         ]
       ],
       "questions": [
         {
-          "q": "What are the Canadian blizzard criteria?",
+          "q": "In ECCC's Impact Guides, which hazard guide covers blizzards?",
           "c": [
-            "Winds of 40 km/h or more and visibility 400 m or less, for at least 4 hours",
-            "Winds of 20 km/h or more and visibility 1 km or less, for at least 1 hour",
-            "Any snowfall of 15 cm in 12 hours with temperatures below -10 C",
-            "Winds of 70 km/h or more with snow falling for at least 24 hours"
+            "Visibility (including blizzards, blowing snow, dust, fog)",
+            "Snow only",
+            "Wind only",
+            "Rain"
           ],
           "a": 0,
-          "e": "Blizzards require both strong wind and very low visibility sustained for several hours."
+          "e": "ECCC lists blizzards under Visibility. There is no separate blizzard guide."
         },
         {
           "q": "Which temperature profile is typical for freezing rain?",
@@ -467,7 +503,7 @@
             "Freezing fog that reduces visibility but brings no wind"
           ],
           "a": 0,
-          "e": "ECCC defines it with winds and reduced visibility over a sustained time."
+          "e": "A blizzard combines strong wind, blowing snow and very low visibility for a sustained time. ECCC handles it under the Visibility Impact Guide."
         },
         {
           "q": "Lake-effect snow occurs when:",
@@ -512,8 +548,32 @@
           ],
           "a": 0,
           "e": "Ice weight plus wind stress can bring lines and trees down."
+        },
+        {
+          "q": "At a wind chill of -45, how fast can exposed skin freeze (ECCC)?",
+          "c": [
+            "5 to 10 minutes",
+            "10 to 30 minutes",
+            "2 to 5 minutes",
+            "Less than 2 minutes"
+          ],
+          "a": 0,
+          "e": "ECCC: -40 to -47 gives 5 to 10 minutes; -28 to -39 gives 10 to 30; -48 to -54 gives 2 to 5; -55 or colder under 2."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "ECCC, Wind chill and the Wind Chill Index (canada.ca): hazard levels and frostbite times",
+          "ECCC Weather Impact Guides: Visibility (including blizzards), Ice (freezing rain, freezing drizzle, flash freeze), Snow squall, Winter storm sections",
+          "ECCC, Criteria for public weather alerts: notice that the criteria were replaced by Impact Guides (modified 2025-11-26)"
+        ],
+        "unverified": [
+          "Blizzard numbers (40 km/h, 400 m, 4 hours): not on any current ECCC page that could be read, so treated as unconfirmed. Questions use the Impact Guide wording instead.",
+          "Snow squall, nor'easter, lake-effect snow, and the temperature profiles for freezing rain and ice pellets: standard meteorology, not checked against a Canadian publication.",
+          "Wind chill formula: not given on the ECCC page."
+        ]
+      }
     },
     {
       "title": "Turbulence (CAT, mechanical, mountain wave)",
@@ -526,15 +586,15 @@
           "list": [
             "Convective (thermal): rising thermals on sunny days over land, and in and near cumulus. Worst in the afternoon.",
             "Mechanical: wind flowing over obstacles such as buildings, trees and hills. Worst at low levels in strong winds, with gusty approach and takeoff.",
-            "Mountain wave: stable air flowing across a ridge produces waves downwind. Needs wind of about 25 kt or more roughly perpendicular to the ridge, with wind increasing with height and a stable layer. Look for lenticular clouds and rotor clouds. Severe turbulence can occur in and below the rotor.",
-            "Clear-air turbulence (CAT): turbulence in cloud-free air, usually at upper levels near jet streams and sharp upper troughs. Caused by strong vertical or horizontal wind shear.",
+            "Mountain wave: stable air flowing across a ridge produces waves downwind. Needs strong wind roughly perpendicular to the ridge, with wind increasing with height and a stable layer (a specific wind speed is not confirmed). Look for lenticular clouds and rotor clouds. Severe turbulence can occur in and below the rotor.",
+            "Clear-air turbulence (CAT): in the TC AIM, turbulence above 15,000 ft ASL that is not associated with cumuliform cloud. Usually near jet streams and sharp upper troughs, from strong vertical or horizontal wind shear.",
             "Wake turbulence: vortices from the wingtips of heavy aircraft."
           ]
         },
         {
           "h": "Shear instability"
         },
-        "The Richardson number compares stability to wind shear. When it falls below about 0.25, shear overcomes stability and Kelvin-Helmholtz waves form. Strong shear with weak stability produces CAT.",
+        "The Richardson number compares stability to wind shear. When it falls below the textbook critical value of about 0.25, shear overcomes stability and Kelvin-Helmholtz waves form. Strong shear with weak stability produces CAT.",
         {
           "h": "Avoidance"
         },
@@ -552,7 +612,7 @@
       "terms": [
         [
           "CAT",
-          "Clear-air turbulence."
+          "Clear-air turbulence. In the TC AIM: above 15,000 ft ASL and not associated with cumuliform cloud."
         ],
         [
           "Lenticular cloud",
@@ -611,7 +671,7 @@
         {
           "q": "What conditions favour a mountain wave?",
           "c": [
-            "Wind of about 25 kt or more across a ridge, increasing with height, with a stable layer",
+            "Strong wind across a ridge, increasing with height, with a stable layer",
             "Light winds blowing parallel to the ridge with a deep unstable layer above it",
             "Calm wind at ridge height and strong thermal heating on the lee slope",
             "Strong winds that decrease with height above a ridge in very unstable air"
@@ -685,12 +745,23 @@
           "a": 0,
           "e": "Rotor circulation beneath lee waves is violent."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "Transport Canada AIM MET 2.2.2: turbulence intensity wording (light, moderate, severe, extreme) and CAT definition"
+        ],
+        "unverified": [
+          "Mountain wave wind speed (25 kt was removed), rotor and lenticular details: standard teaching, not checked against a Canadian publication.",
+          "Richardson number critical value of 0.25: textbook value, not checked.",
+          "Wake turbulence and mechanical turbulence descriptions: not checked."
+        ]
+      }
     },
     {
       "title": "Wind shear and low-level jets",
       "lesson": [
-        "Wind shear is a change in wind speed or direction over a short distance. Low-level wind shear (LLWS) is shear in the lowest 2,000 ft or so above the ground. It is a major hazard on approach and takeoff.",
+        "Wind shear is a change in wind speed or direction over a short distance. The TC AIM sets no height limit for wind shear. Shear near the ground (low-level wind shear, LLWS) is the major hazard on approach and takeoff.",
         {
           "h": "Common causes"
         },
@@ -706,19 +777,19 @@
         {
           "h": "Nocturnal low-level jet"
         },
-        "After sunset the surface layer decouples from the air above because of a nocturnal inversion. Friction no longer holds back the winds a few hundred metres up, and they accelerate. A wind maximum forms at roughly 300 to 1,000 m above the ground, strongest in the early morning. It is common over flat land such as the Great Plains and can also occur near coasts.",
+        "After sunset the surface layer decouples from the air above because of a nocturnal inversion. Friction no longer holds back the winds a few hundred metres up, and they accelerate. A wind maximum forms a few hundred metres above the ground, strongest in the early morning. It is common over flat land such as the Great Plains and can also occur near coasts.",
         {
           "h": "Effects on aircraft"
         },
         "On approach, an aircraft may fly from a strong wind at 500 ft to calm air at the surface. Airspeed drops rapidly and the aircraft sinks below the glide path. Pilots add speed margin and are briefed on reported LLWS.",
         {
-          "note": "Light winds at the surface on a clear night do not mean light winds above. Check the winds at 1,000 to 2,000 ft."
+          "note": "Light winds at the surface on a clear night do not mean light winds above. Check the winds aloft along the approach path."
         }
       ],
       "terms": [
         [
           "LLWS",
-          "Low-level wind shear, within about 2,000 ft of the ground."
+          "Low-level wind shear: wind shear close to the ground, where it affects takeoff and landing. The AIM sets no height limit for wind shear."
         ],
         [
           "Nocturnal inversion",
@@ -731,15 +802,15 @@
       ],
       "questions": [
         {
-          "q": "In what layer is low-level wind shear generally defined?",
+          "q": "What height limit does the TC AIM put on wind shear?",
           "c": [
-            "The lowest 2,000 ft above the ground",
-            "Above 30,000 ft",
-            "Between 10,000 and 20,000 ft",
-            "Only at the surface"
+            "None; wind shear can occur at any height",
+            "Only the lowest 2,000 ft above the ground",
+            "Only above 30,000 ft",
+            "Only within 500 ft of the runway"
           ],
           "a": 0,
-          "e": "LLWS refers to shear affecting approach and takeoff, within about 2,000 ft AGL."
+          "e": "AIM MET 2.3 does not limit wind shear to a height band. Shear near the ground matters most for takeoff and landing."
         },
         {
           "q": "Why does a nocturnal low-level jet form?",
@@ -794,7 +865,7 @@
             "A time interval of several days at a fixed location"
           ],
           "a": 0,
-          "e": "LLWS affects takeoff and landing within about 1,500 ft."
+          "e": "Wind shear is a change in wind speed and/or direction over a short distance."
         },
         {
           "q": "A nocturnal low-level jet usually forms:",
@@ -851,175 +922,210 @@
           "a": 0,
           "e": "Increased airspeed at constant power suggests increasing headwind."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "Transport Canada AIM MET 2.3: wind shear definition and no height limit"
+        ],
+        "unverified": [
+          "Nocturnal low-level jet height, timing and cause: standard teaching, not checked against a Canadian publication. The 300 to 1,000 m range was removed.",
+          "Shear units (knots per 100 ft): not checked.",
+          "Microburst approach sequence and typical LLWS causes: not checked."
+        ]
+      }
     },
     {
-      "title": "Hazard warning criteria (ECCC)",
+      "title": "Weather alerts and Impact Guides (ECCC)",
       "lesson": [
-        "Environment and Climate Change Canada (ECCC) issues public weather alerts. Criteria are set by national and regional standards, and some thresholds vary by province or region, so always confirm the current criteria in the ECCC alerting documents before relying on a specific number.",
+        "ECCC replaced its former public weather alert criteria with Impact Guides. The Canada.ca criteria page now only points to them (page modified 2025-11-26). The old numbers for hail, gusts and rain no longer apply, so do not memorize them.",
         {
-          "h": "Alert terms"
+          "h": "Impact Guides"
         },
         {
           "list": [
-            "Watch: conditions are favourable for the development of the hazard. Be prepared.",
-            "Warning: the hazard is imminent or occurring. Take action.",
-            "Advisory and special weather statement: lower-impact or less certain hazards, or information about an unusual event."
+            "14 hazard guides: coastal flooding and storm surge, cold, frost, heat, hurricanes and tropical storms, ice, rain, snow, snow squall, thunderstorms, tornadoes, visibility, wind, winter storm.",
+            "Blizzards sit under Visibility. Freezing rain sits under Ice.",
+            "Each hazard has three impact levels: moderate, high, extreme. They describe effects on daily life, travel, utilities, land and structures, health and recovery.",
+            "The guides describe effects, not numeric thresholds."
           ]
         },
-        "ECCC alerts also use colour (yellow, orange, red) to show impact and likelihood.",
         {
-          "h": "Example criteria (national guidance)"
+          "h": "How the alert colour is chosen"
+        },
+        "ECCC uses an Alert Colour Matrix that combines impact with forecast confidence (low, moderate, high, very high).",
+        {
+          "list": [
+            "Yellow: moderate impact with high or very high confidence. Also high impact with low or moderate confidence, and extreme impact with low confidence.",
+            "Orange: high impact with high or very high confidence. Also extreme impact with moderate or high confidence.",
+            "Red: extreme impact with very high confidence.",
+            "Low impact: no alert. ECCC may issue a MetNote or special weather statement instead."
+          ]
+        },
+        {
+          "h": "Examples of impact wording"
         },
         {
           "list": [
-            "Severe thunderstorm: any one of hail 2 cm or larger, wind gusts 90 km/h or more, or heavy rain of 50 mm in 1 hour or 75 mm in 3 hours. A tornado alone would trigger a tornado warning.",
-            "Tornado warning: a tornado is occurring or imminent, based on radar signatures or spotters.",
-            "Blizzard: wind 40 km/h or more with visibility 400 m or less for at least 4 hours.",
-            "Freezing rain warning: freezing rain expected to cause significant accumulation of ice. Thresholds depend on region."
+            "Thunderstorms: moderate is difficult driving and damage to roofs, fences and trees. Extreme is destroyed buildings and many trees.",
+            "Tornadoes: high is significant widespread tree damage. Extreme is destroyed homes and collapsed utility towers.",
+            "Ice: extreme is collapsed poles and towers with long, widespread outages."
           ]
         },
         {
-          "note": "Know the difference between a watch and a warning. A watch says 'be ready'. A warning says 'it is happening or about to'."
+          "note": "Colour is impact plus confidence. The page that explains colours does not define watch, warning, advisory or statement, so those terms are not confirmed here."
         }
       ],
       "terms": [
         [
-          "Watch",
-          "Conditions favourable for hazard development."
+          "Impact Guide",
+          "ECCC description of what a hazard can do at moderate, high and extreme levels. Replaced the former alert criteria."
         ],
         [
-          "Warning",
-          "Hazard is occurring or imminent."
+          "Alert Colour Matrix",
+          "ECCC chart that combines impact and forecast confidence to choose yellow, orange or red."
         ],
         [
-          "Special weather statement",
-          "Alert for unusual or less-certain weather."
+          "MetNote / special weather statement",
+          "Product ECCC may issue instead of an alert for low-impact weather."
         ]
       ],
       "questions": [
         {
-          "q": "What does a 'warning' mean in ECCC terminology?",
+          "q": "What replaced ECCC's former public weather alert criteria?",
           "c": [
-            "The hazard is imminent or occurring",
-            "Conditions are favourable for the hazard to develop",
-            "The hazard was cancelled",
-            "A general forecast only"
+            "The Weather Impact Guides",
+            "A national table of hail and gust limits",
+            "Local forecast office rules for each region",
+            "The Beaufort wind scale"
           ],
           "a": 0,
-          "e": "Warnings call for action; watches signal favourable conditions."
+          "e": "ECCC states the Impact Guides replace the previous criteria."
         },
         {
-          "q": "What is the national hail criterion for a severe thunderstorm?",
+          "q": "How many impact levels does each ECCC Impact Guide describe?",
           "c": [
-            "2 cm or larger",
-            "0.5 cm",
-            "5 mm",
-            "10 cm"
+            "Three: moderate, high and extreme",
+            "Two: moderate and extreme only",
+            "Five: minor up to catastrophic",
+            "Four: advisory, watch, warning and statement"
           ],
           "a": 0,
-          "e": "Hail 2 cm or larger meets the national severe thunderstorm criteria."
+          "e": "Each hazard guide has moderate, high and extreme levels."
         },
         {
-          "q": "What wind gust speed meets the national severe thunderstorm criterion?",
+          "q": "What two factors does ECCC's Alert Colour Matrix combine?",
           "c": [
-            "90 km/h or more",
-            "40 km/h",
-            "60 km/h",
-            "120 km/h only"
+            "Impact and forecast confidence",
+            "Wind speed and air temperature",
+            "Hail size and rainfall rate",
+            "Time of year and location"
           ],
           "a": 0,
-          "e": "Gusts of 90 km/h or more are one of the severe thunderstorm triggers."
+          "e": "The colour is found where impact meets confidence on the matrix."
         },
         {
-          "q": "What does a tornado warning mean?",
-          "c": [
-            "A tornado is occurring or imminent",
-            "Tornado conditions might develop later this week",
-            "A tornado is impossible",
-            "A funnel cloud was reported yesterday"
-          ],
-          "a": 0,
-          "e": "Tornado warnings are based on radar signatures or spotter reports of an actual or imminent tornado."
-        },
-        {
-          "q": "A severe thunderstorm can be triggered by heavy rain of:",
-          "c": [
-            "50 mm in 1 hour or 75 mm in 3 hours",
-            "10 mm in 1 hour or 25 mm in 3 hours",
-            "5 mm in 1 hour or 15 mm in 12 hours",
-            "100 mm in 1 hour or 150 mm in 24 hours"
-          ],
-          "a": 0,
-          "e": "Intense rainfall rates are one of the severe thunderstorm criteria."
-        },
-        {
-          "q": "Wind warnings in much of Canada are issued when sustained winds reach about:",
-          "c": [
-            "Sustained 65 km/h or gusts to 90 km/h",
-            "Sustained 15 km/h or gusts to 30 km/h at the station",
-            "Sustained 20 km/h or gusts to 25 km/h for an hour",
-            "Sustained 40 km/h with no gusts reported over six hours"
-          ],
-          "a": 0,
-          "e": "Typical criteria are 65 km/h sustained or 90 km/h gusts, varying by region."
-        },
-        {
-          "q": "Which warning level means severe weather is occurring or imminent?",
-          "c": [
-            "Warning",
-            "Watch",
-            "Advisory",
-            "Statement"
-          ],
-          "a": 0,
-          "e": "A warning means the hazard is occurring or about to occur."
-        },
-        {
-          "q": "A tornado watch means:",
-          "c": [
-            "Conditions are favourable for tornado development",
-            "A tornado has been sighted and is moving toward the area",
-            "A tornado is not possible in the next twenty-four hours",
-            "A tornado has just ended and the threat is now over"
-          ],
-          "a": 0,
-          "e": "A watch indicates favourable conditions; a warning means one is occurring or imminent."
-        },
-        {
-          "q": "The ECCC colour code for the highest alert level is:",
+          "q": "Which alert colour is used for extreme impact with very high confidence?",
           "c": [
             "Red",
             "Yellow",
             "Orange",
-            "Green"
+            "No alert is issued"
           ],
           "a": 0,
-          "e": "Red indicates the most serious level, and orange the next."
+          "e": "Red is extreme impact with very high confidence."
         },
         {
-          "q": "Severe thunderstorm warning criteria include hail of at least:",
+          "q": "Moderate impact with high or very high confidence gives which colour?",
           "c": [
-            "2 cm diameter",
-            "0.5 cm",
-            "1 mm",
-            "5 mm"
+            "Yellow",
+            "Orange",
+            "Red",
+            "No colour; a MetNote only"
           ],
           "a": 0,
-          "e": "Hail of 2 cm or larger is a standard severe criterion."
+          "e": "Yellow covers moderate impact with high or very high confidence."
         },
         {
-          "q": "Freezing rain warnings are issued when:",
+          "q": "Which situation gives an orange alert?",
           "c": [
-            "Freezing rain is expected for several hours or causes significant ice",
-            "Only light drizzle occurs and no ice builds up on surfaces",
-            "Clear skies appear above a layer of shallow fog",
-            "Fog forms and reduces visibility below a quarter mile"
+            "High impact with high or very high confidence",
+            "Low impact with very high confidence",
+            "Extreme impact with low confidence",
+            "Moderate impact with low confidence"
           ],
           "a": 0,
-          "e": "Prolonged freezing rain causing significant accretion triggers warnings."
+          "e": "Extreme impact with low confidence is yellow; high impact with high confidence is orange."
+        },
+        {
+          "q": "For low-impact weather, what may ECCC issue instead of an alert?",
+          "c": [
+            "A MetNote or special weather statement",
+            "A red alert",
+            "A tornado warning",
+            "A hurricane warning"
+          ],
+          "a": 0,
+          "e": "Only moderate, high and extreme impacts receive alerts."
+        },
+        {
+          "q": "Freezing rain falls under which Impact Guide?",
+          "c": [
+            "Ice (freezing rain, freezing drizzle, flash freeze)",
+            "Rain",
+            "Snow",
+            "Winter storm only"
+          ],
+          "a": 0,
+          "e": "ECCC has no separate freezing rain guide; it is in Ice."
+        },
+        {
+          "q": "At the extreme level, the Ice guide describes:",
+          "c": [
+            "Collapsed utility poles and towers with long, widespread outages",
+            "A little ice on bridges with a few outages",
+            "Light frost on exposed surfaces only",
+            "Slippery sidewalks with no outages"
+          ],
+          "a": 0,
+          "e": "Extreme ice means poles and towers collapse and outages last long."
+        },
+        {
+          "q": "At the high level, the Tornadoes guide describes:",
+          "c": [
+            "Significant, widespread tree damage and some critical infrastructure damage",
+            "Only high-sided vehicles being pushed around",
+            "Homes destroyed and utility towers collapsed",
+            "A funnel cloud with no damage at all"
+          ],
+          "a": 0,
+          "e": "Moderate is vehicles pushed around; extreme is homes destroyed and towers collapsed."
+        },
+        {
+          "q": "Do the Impact Guides for thunderstorms give numeric hail or gust thresholds?",
+          "c": [
+            "No; they describe effects, not numbers",
+            "Yes: hail 2 cm and gusts 90 km/h",
+            "Yes, but only for gust speed",
+            "Yes, but only for rainfall"
+          ],
+          "a": 0,
+          "e": "The guides give no hail size, gust speed or rainfall thresholds."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "ECCC, Criteria for public weather alerts (canada.ca): notice of replacement, modified 2025-11-26",
+          "ECCC, Weather Impact Guides (canada.ca): hazards, levels, example wording for Thunderstorms, Tornadoes, Visibility and Ice",
+          "ECCC, How we choose weather alert colours (canada.ca): Alert Colour Matrix"
+        ],
+        "unverified": [
+          "Definitions of watch, warning, advisory and special weather statement: not given on the pages read. The earlier lesson wording was removed.",
+          "Wind, rain, snow and winter storm guide details: only Thunderstorms, Tornadoes, Visibility and Ice were read.",
+          "Regional differences in how alerts are issued: not checked."
+        ]
+      }
     }
   ]
 }
