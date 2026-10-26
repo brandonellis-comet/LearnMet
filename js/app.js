@@ -140,7 +140,12 @@ function bestFor(type, id) {
 // ---------- App shell ----------
 const app = () => document.getElementById("app");
 let timer = null;
-function mount(...nodes) { app().replaceChildren(...nodes.flat(Infinity).filter(Boolean)); window.scrollTo(0, 0); }
+let wideMode = false;
+function mount(...nodes) {
+  const w = document.querySelector(".wrap"); if (w) w.classList.toggle("wide", wideMode);
+  wideMode = false;
+  app().replaceChildren(...nodes.flat(Infinity).filter(Boolean)); window.scrollTo(0, 0);
+}
 
 function navBar(active) {
   const tabs = [["", "Home"], ["study", "Study"], ["tests", "Tests"], ["exam", "Exam"], ["links", "Links"], ["stats", "Stats"]];
@@ -311,7 +316,16 @@ function viewTopic(did, ti) {
   const ta = h("textarea", { class: "note", placeholder: "Notes / notebook ref", rows: 2, value: p.note });
   ta.onchange = () => setP(did, ti, { note: ta.value });
   const stats = topicStats(d, t);
+  const toc = h("aside", { class: "toc", "aria-label": "All topics" }, DATA.map(dd => {
+    const det = h("details", {}, h("summary", { text: dd.title }),
+      dd.topics.map(tt => h("a", { href: `#/topic/${dd.id}/${tt.ti}`, class: (dd.id === did && tt.ti === ti) ? "cur" : "" },
+        h("span", { class: "dot " + getP(dd.id, tt.ti).level }), tt.title)));
+    if (dd.id === did) det.open = true;
+    return det;
+  }));
+  wideMode = true;
   shell("study",
+    h("div", { class: "split" }, toc, h("div", { class: "main" },
     h("div", { class: "small" }, h("a", { href: "#/study/" + did, text: "Study" }), " / ", d.title),
     h("h1", { text: t.title }),
     h("div", { class: "row", style: "margin-bottom:10px" },
@@ -331,7 +345,7 @@ function viewTopic(did, ti) {
     h("div", { class: "actions" },
       prev && h("a", { class: "btn", href: `#/topic/${prev.d.id}/${prev.t.ti}`, text: "Previous" }),
       next && h("a", { class: "btn", href: `#/topic/${next.d.id}/${next.t.ti}`, text: "Next topic" })),
-    h("div", { class: "hint", text: "Study aid written by Claude. Verify against official course material." }));
+    h("div", { class: "hint", text: "Study aid written by Claude. Verify against official course material." }))));
 }
 
 // ---------- Tests ----------

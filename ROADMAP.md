@@ -55,7 +55,9 @@ Open question: confirm which ECCC open data sources can be read from a browser p
 - [ ] Accounts or shared progress; instructor view.
 - [ ] Contributions and review through GitHub.
 - [ ] English and French.
-- [ ] Accessibility and mobile polish.
+- [x] Phone bottom tab bar and desktop topic sidebar (2026-10-26).
+- [ ] Accessibility and further mobile polish.
+- [ ] Sync progress between phone and desktop (short code or QR link first, accounts later). Today it is Export and Import by hand.
 - [ ] Offline use.
 
 ## Phase 6: Governance
