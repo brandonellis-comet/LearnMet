@@ -57,7 +57,7 @@ Open question: confirm which ECCC open data sources can be read from a browser p
 - [ ] English and French.
 - [x] Phone bottom tab bar and desktop topic sidebar (2026-10-26).
 - [ ] Accessibility and further mobile polish.
-- [ ] Sync progress between phone and desktop (short code or QR link first, accounts later). Today it is Export and Import by hand.
+- [ ] Sync progress between phone and desktop (short code or QR link first, accounts later). Today it is Export and Import by hand; Import now merges (newer edit wins per topic, quiz attempts combined, export v3, v1/v2 files still read).
 - [ ] Offline use.
 
 ## Phase 6: Governance

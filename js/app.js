@@ -51,6 +51,36 @@ if (!quiz.q || typeof quiz.q !== "object") quiz.q = {};
 const saveProgress = () => lsSet(KEYS.progress, progress);
 const saveQuiz = () => lsSet(KEYS.quiz, quiz);
 
+// ---------- Merge (Import) ----------
+// Progress: newer edit wins per topic. Attempts: union by uid (legacy ones keyed by when+type+id+score).
+// Per-question stats: record with the newer timestamp wins (counts from the older record are not added).
+const attKey = x => x.uid || [x.when, x.t, x.id, x.score, x.total].join("|");
+function mergeData(inc) {
+  const r = { topics: 0, attempts: 0, qstats: 0 };
+  const ip = inc.progress || {};
+  for (const k of Object.keys(ip)) {
+    const a = progress[k], b = ip[k];
+    if (!b || typeof b !== "object") continue;
+    if (!a || (b.t || 0) > (a.t || 0)) { if (!a || a.level !== b.level || a.note !== b.note) r.topics++; progress[k] = b; }
+  }
+  const iq = inc.quiz || {};
+  if (Array.isArray(iq.attempts)) {
+    const seen = new Set(quiz.attempts.map(attKey));
+    iq.attempts.forEach(x => { if (x && !seen.has(attKey(x))) { quiz.attempts.push(x); seen.add(attKey(x)); r.attempts++; } });
+    quiz.attempts.sort((x, y) => String(x.when).localeCompare(String(y.when)));
+    if (quiz.attempts.length > 300) quiz.attempts = quiz.attempts.slice(-300);
+  }
+  if (iq.q && typeof iq.q === "object") {
+    for (const id of Object.keys(iq.q)) {
+      const a = quiz.q[id], b = iq.q[id];
+      if (!b || typeof b.s !== "number") continue;
+      if (!a || (b.t || 0) > (a.t || 0) || (!a.t && !b.t && b.s > a.s)) { quiz.q[id] = b; r.qstats++; }
+    }
+  }
+  saveProgress(); saveQuiz();
+  return r;
+}
+
 // ---------- Content ----------
 let DATA = [];
 let LINKS = { resources: {}, topics: {} };
@@ -79,7 +109,7 @@ const tkey = (did, ti) => `${did}:${ti}`;
 const getP = (did, ti) => progress[tkey(did, ti)] || { level: "none", note: "" };
 const lvlLabel = id => (LEVELS.find(l => l.id === id) || LEVELS[0]).label;
 function setP(did, ti, patch) {
-  progress[tkey(did, ti)] = { ...getP(did, ti), ...patch };
+  progress[tkey(did, ti)] = { ...getP(did, ti), ...patch, t: Date.now() };
   saveProgress();
 }
 
@@ -503,9 +533,10 @@ function renderResults() {
       const st = quiz.q[it.q.id] || { s: 0, w: 0, c: 0 };
       st.s++;
       if (origPick(it) === it.q.a) st.c = (st.c || 0) + 1; else { st.w++; st.c = 0; }
+      st.t = Date.now();
       quiz.q[it.q.id] = st;
     });
-    const attempt = { t: run.type, id: run.id, when: new Date().toISOString(), score, total, pct, secs, missed: missed.map(m => m.q.id) };
+    const attempt = { uid: Date.now().toString(36) + Math.random().toString(36).slice(2, 7), t: run.type, id: run.id, when: new Date().toISOString(), score, total, pct, secs, missed: missed.map(m => m.q.id) };
     if (run.quarter) attempt.quarter = run.quarter;
     quiz.attempts.push(attempt);
     if (quiz.attempts.length > 300) quiz.attempts = quiz.attempts.slice(-300);
@@ -601,15 +632,14 @@ function viewStats() {
       try {
         const data = JSON.parse(r.result);
         if (!data.progress || typeof data.progress !== "object") throw new Error("bad");
-        progress = data.progress; saveProgress();
-        if (data.quiz && Array.isArray(data.quiz.attempts)) { quiz = { attempts: data.quiz.attempts, q: data.quiz.q || {} }; saveQuiz(); }
-        flash("Imported"); viewStats();
+        const m = mergeData(data);
+        flash(`Merged: ${m.topics} topic(s) updated, ${m.attempts} attempt(s) added`); viewStats();
       } catch (err) { flash("Import failed: not a valid progress file"); }
     };
     r.readAsText(f); e.target.value = "";
   };
   const exp = h("button", { text: "Export", onclick: () => {
-    const blob = new Blob([JSON.stringify({ version: 2, exported: new Date().toISOString(), progress, quiz }, null, 2)], { type: "application/json" });
+    const blob = new Blob([JSON.stringify({ version: 3, exported: new Date().toISOString(), progress, quiz }, null, 2)], { type: "application/json" });
     const a = h("a", { href: URL.createObjectURL(blob), download: "progress.json" }); a.click();
     setTimeout(() => URL.revokeObjectURL(a.href), 1000); flash("Exported progress.json");
   } });
@@ -629,7 +659,7 @@ function viewStats() {
           h("td", { text: `${x.score}/${x.total} (${x.pct}%)` })))))),
     h("h2", { text: "Backup" }),
     h("div", { class: "card" },
-      h("div", { class: "muted small", text: "Progress and quiz history live in this browser only. Export regularly. Send the file to Claude to commit it as progress.json in the repo." }),
+      h("div", { class: "muted small", text: "Progress and quiz history live in this browser only. Import merges: the newer edit wins per topic and quiz history from both devices is combined. Export regularly. Send the file to Claude to commit it as progress.json in the repo." }),
       h("div", { class: "actions" }, exp, h("button", { text: "Import", onclick: () => file.click() }), reset, file)));
 }
 function attLabel(x) {
