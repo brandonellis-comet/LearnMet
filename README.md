@@ -41,6 +41,7 @@ Content: 48 lessons and 528 questions (11 per topic) in `content/`. A topic quiz
 | `notes/` | Your own notes by domain (`_template.md`) |
 | `quizzes/` | Extra question banks you write |
 | `reference/` | Cheat sheets (METAR quick reference) |
+| `ROADMAP.md` | Purpose and planned phases |
 | `content/links.json` | Study links and which topics they attach to |
 
 ## Content format
