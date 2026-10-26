@@ -163,6 +163,7 @@ function route() {
     if (v === "test") return startRun(domainRun(a));
     if (v === "exam") return a === "start" ? startRun(examRun()) : viewExam();
     if (v === "review") return startRun(reviewRun());
+    if (v === "weak") return startRun(weakRun());
     if (v === "decode") return startRun(decodeRun(a === "taf" ? "taf" : "metar"));
     if (v === "stats") return viewStats();
   } catch (e) { console.error(e); }
@@ -208,6 +209,10 @@ function viewHome() {
         h("div", { class: "grow" }, h("h2", { text: "Review missed questions" }),
           h("div", { class: "muted", text: `${pool.length} question${pool.length === 1 ? "" : "s"} waiting. A question clears after two correct answers in a row.` })),
         h("a", { class: "btn", href: "#/review", text: "Start review" }))),
+    weakTopicList().length > 0 && h("div", { class: "card" },
+      h("div", { class: "row" },
+        h("div", { class: "grow" }, h("h2", { text: "Weak-area drill" }), h("div", { class: "muted", text: `${WEAK_LEN} questions from your weakest topics, missed ones first.` })),
+        h("a", { class: "btn primary", href: "#/weak", text: "Start drill" }))),
     weak.length > 0 && h("div", { class: "card" },
       h("h2", { text: "Weakest topics" }),
       weak.slice(0, 5).map(w => h("div", { class: "row", style: "margin-bottom:6px" },
@@ -323,9 +328,9 @@ function viewTopic(did, ti) {
 // ---------- Tests ----------
 function viewTests() {
   shell("tests",
-    h("div", { class: "card" }, h("h2", { text: "Decoding drills" }),
-      h("div", { class: "muted", text: "10 freshly generated reports each time. Practice reading METAR and TAF groups. Answers shown after each question." }),
-      h("div", { class: "actions" }, h("a", { class: "btn primary", href: "#/decode/metar", text: "METAR drill" }), h("a", { class: "btn primary", href: "#/decode/taf", text: "TAF drill" }))),
+    h("div", { class: "card" }, h("h2", { text: "Drills" }),
+      h("div", { class: "muted", text: "Weak-area drill: 15 questions from your weakest topics (appears once you have a weak topic). METAR and TAF drills: 10 generated practice questions each. Answers shown after each question." }),
+      h("div", { class: "actions" }, weakTopicList().length ? h("a", { class: "btn primary", href: "#/weak", text: "Weak-area drill" }) : null, h("a", { class: "btn primary", href: "#/decode/metar", text: "METAR drill" }), h("a", { class: "btn primary", href: "#/decode/taf", text: "TAF drill" }))),
     h("h1", { text: "Domain tests" }),
     h("div", { class: "sub", text: `${DOMAIN_TEST_LEN} questions drawn across the domain. Answers shown at the end. Pass mark ${PASS}%.` }),
     DATA.map(d => {
@@ -389,6 +394,32 @@ function examRun() {
   const qi = quarterInfo();
   return { type: "exam", id: "exam", quarter: qi.label, title: `${qi.pretty} exam`, sub: "Quarterly exam", items: makeItems(qs), immediate: false, start: Date.now() };
 }
+const WEAK_LEN = 15;
+function weakTopicList() {
+  const out = [];
+  DATA.forEach(d => d.topics.forEach(t => {
+    const lvl = (progress[tkey(d.id, t.ti)] || {}).level, st = topicStats(d, t);
+    const rate = st.s ? st.w / st.s : 0;
+    const wt = (lvl === "review" ? 3 : lvl === "learning" ? 2 : 0) + rate * 3;
+    if (wt > 0) out.push({ d, t, wt });
+  }));
+  return out.sort((a, b) => b.wt - a.wt);
+}
+function weakRun() {
+  const topics = weakTopicList().slice(0, 8);
+  if (!topics.length) return null;
+  const cands = [];
+  topics.forEach(x => x.t.qs.forEach(q => {
+    const st = quiz.q[q.id];
+    const qk = !st ? 1 : (st.w > 0 && (st.c || 0) < 2 ? 3 : 0);
+    cands.push({ q, tk: tkey(x.d.id, x.t.ti), k: x.wt + qk + Math.random() * 1.5 });
+  }));
+  cands.sort((a, b) => b.k - a.k);
+  const cap = Math.max(3, Math.ceil(WEAK_LEN / topics.length)), per = {}, picked = [];
+  for (const c of cands) { if ((per[c.tk] || 0) >= cap) continue; per[c.tk] = (per[c.tk] || 0) + 1; picked.push(c.q); if (picked.length >= WEAK_LEN) break; }
+  const names = topics.slice(0, 3).map(x => x.t.title).join("; ");
+  return { type: "weak", id: "weak", title: "Weak-area drill", sub: "Targets: " + names + (topics.length > 3 ? " and more" : ""), items: makeItems(shuffle(picked)), immediate: true };
+}
 function reviewRun() {
   const ids = reviewPool().slice(0, 15);
   if (!ids.length) return null;
@@ -420,7 +451,7 @@ function renderRun() {
   const next = h("button", { class: "primary", text: last ? "Finish" : "Next", disabled: answered ? null : true,
     onclick: () => { if (last) { run.done = true; } else { run.idx++; } renderRun(); } });
   const back = h("button", { text: "Back", disabled: run.idx === 0 || run.immediate ? true : null, onclick: () => { run.idx--; renderRun(); } });
-  const quit = h("a", { class: "btn", href: run.type === "exam" ? "#/exam" : run.type === "decode" ? "#/tests" : "#/study", text: "Quit", onclick: () => { clearInterval(timer); } });
+  const quit = h("a", { class: "btn", href: run.type === "exam" ? "#/exam" : (run.type === "decode" || run.type === "weak") ? "#/tests" : "#/study", text: "Quit", onclick: () => { clearInterval(timer); } });
 
   mount(
     h("div", { class: "small" }, run.sub),
@@ -486,6 +517,7 @@ function renderResults() {
     if (run.type === "topic") startRun(topicRun(run.did, run.ti));
     else if (run.type === "domain") startRun(domainRun(run.id));
     else if (run.type === "exam") startRun(examRun());
+    else if (run.type === "weak") startRun(weakRun());
     else if (run.type === "decode") startRun(decodeRun(run.id));
     else { location.hash = "#/"; }
   } });
@@ -498,7 +530,7 @@ function renderResults() {
       run.type === "exam" && h("div", { class: "muted", style: "margin-top:6px", text: "Time " + fmtTime(secs) }),
       levelMsg && h("div", { class: "muted", style: "margin-top:6px", text: levelMsg }),
       h("div", { class: "actions" }, again,
-        h("a", { class: "btn", href: run.type === "exam" ? "#/exam" : (run.type === "domain" || run.type === "decode") ? "#/tests" : "#/study", text: "Done" }))),
+        h("a", { class: "btn", href: run.type === "exam" ? "#/exam" : (run.type === "domain" || run.type === "decode" || run.type === "weak") ? "#/tests" : "#/study", text: "Done" }))),
     breakdown,
     missed.length === 0 ? h("div", { class: "card" }, "No missed questions.") :
       h("div", { class: "card" }, h("h2", { text: `Missed (${missed.length})` }),

@@ -9,7 +9,7 @@ Live at `https://brandonellis-comet.github.io/LearnMet/` once GitHub Pages is en
 |-----|---------|
 | Home | Overall progress, exam status, next lesson, missed-question review |
 | Study | 9 domains, 48 topics. Open a lesson, take a quiz, set your level, keep notes |
-| Tests | Decoding drills (10 generated METAR or TAF questions, answers after each) and one test per domain. 15 questions, answers shown at the end. Pass mark 75% |
+| Tests | Weak-area drill (15 questions from your weakest topics, missed ones first), decoding drills (10 generated METAR or TAF questions, answers after each) and one test per domain. 15 questions, answers shown at the end. Pass mark 75% |
 | Exam | Quarterly exam. 40 questions across all domains, weighted by domain size. Timed (elapsed). Pass mark 75% |
 | Stats | Attempt history, backup (Export / Import) |
 
