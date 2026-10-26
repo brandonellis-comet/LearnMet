@@ -11,7 +11,7 @@
             "2. Open wave: warm sector develops between a warm front ahead and a cold front behind. Pressure falls and winds increase.",
             "3. Deepening: the cold front moves faster than the warm front and closes on it. The warm sector narrows.",
             "4. Occlusion: the cold front overtakes the warm front. The low is usually at or near its greatest intensity around this time.",
-            "5. Dissipation: the warm air is cut off from the surface, the low fills and weakens. The cyclone becomes cold-cored."
+            "5. Dissipation: the warm air is cut off from the surface, the low fills and weakens. Cold air lies on both sides of the occluded front."
           ]
         },
         {
@@ -21,9 +21,9 @@
         {
           "h": "Rapid development"
         },
-        "Explosive cyclogenesis (a weather bomb) is a fall in central pressure of at least 24 hPa in 24 hours at 60 N, scaled by sin(latitude) at other latitudes. These storms are common off the east coast of North America in winter and are major hazards for Atlantic Canada and the North Atlantic.",
+        "Explosive cyclogenesis (a weather bomb) is a fall in central pressure of at least 24 hPa in 24 hours at 60 N, scaled by sin(latitude) at other latitudes. The threshold is (24 x sin latitude / sin 60) hPa in 24 hours (Sanders and Gyakum, 1980). These storms are mainly a cold-season, maritime event and peak near warm ocean currents such as the Gulf Stream. They are common off the east coast of North America in winter and are major hazards for Atlantic Canada and the North Atlantic.",
         {
-          "note": "Typical life span: a few days. Surface lows generally move in the direction of the 500 hPa flow above them."
+          "note": "Typical life span: several days to a little more than a week. The 500 hPa winds tend to steer surface lows, which move at roughly 16 kt in summer and 27 kt in winter (University of Hawaii text)."
         }
       ],
       "terms": [
@@ -88,13 +88,13 @@
         {
           "q": "In the dissipation stage, an extratropical cyclone:",
           "c": [
-            "Fills and becomes cold-cored",
+            "Is cut off from its warm air supply and weakens",
             "Strengthens rapidly",
             "Becomes a tropical cyclone",
             "Develops a warm core"
           ],
           "a": 0,
-          "e": "Warm air is cut off from the surface and the low fills."
+          "e": "The warm, rising air is cut off from the centre; cold air lies on both sides of the occluded front."
         },
         {
           "q": "Which stage of the cyclone life cycle is marked by the lowest central pressure?",
@@ -162,7 +162,20 @@
           "a": 0,
           "e": "A westward tilt with height allows upper divergence to exceed surface convergence."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NOAA JetStream, Norwegian cyclone model: stages, cold front moves faster than the warm front and overtakes it",
+          "University of Hawaii, Chapter 13 Extratropical cyclones: most intense at the occluded stage, upper low west of surface low, upper divergence exceeding surface convergence, 500 hPa steering, life span, warm sector",
+          "Explosive cyclogenesis (Sanders and Gyakum 1980, via Wikipedia): 24 sin(lat)/sin 60 hPa in 24 h"
+        ],
+        "unverified": [
+          "The idea that the dissipating low becomes 'cold-cored' was replaced with the sourced wording.",
+          "Positive vorticity advection and trough support for development: partly confirmed in the Vorticity topic.",
+          "Source for the bomb threshold is a secondary article citing the original paper."
+        ]
+      }
     },
     {
       "title": "Upper-air patterns (troughs, ridges, cut-off lows)",
@@ -172,7 +185,7 @@
           "list": [
             "Trough: elongated area of low heights with cyclonic curvature. Cold air, rising motion ahead of the axis, cloud and precipitation.",
             "Ridge: elongated area of high heights with anticyclonic curvature. Warm air, sinking motion, fair weather.",
-            "Long waves: 3 to 6 around the hemisphere, slow-moving, set the large-scale pattern.",
+            "Long waves: span roughly 60 to 120 degrees of longitude (so 3 to 6 around the hemisphere), move slowly (10 kt or less) and set the large-scale pattern (NWS).",
             "Short waves: smaller disturbances embedded in the flow, moving quickly with the wind. Each one can trigger surface development."
           ]
         },
@@ -199,7 +212,7 @@
         },
         "At 500 hPa the flow is parallel to the height contours with low heights on the left (Northern Hemisphere). Closer contours mean stronger winds.",
         {
-          "note": "Surface lows tend to track on the downstream side of troughs and beneath the jet axis."
+          "note": "Cyclones tend to strengthen near and just downstream of the long-wave trough axis (NWS)."
         }
       ],
       "terms": [
@@ -337,8 +350,30 @@
           ],
           "a": 0,
           "e": "Persistent ridges suppress cloud and allow heating."
+        },
+        {
+          "q": "About how fast do long waves in the westerlies generally move, per NWS?",
+          "c": [
+            "10 knots or less",
+            "About 30 knots",
+            "About 60 knots",
+            "About 100 knots"
+          ],
+          "a": 0,
+          "e": "NWS: long waves move slowly, 10 knots or less, and the longer the wavelength the slower the wave."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NWS Houston/Galveston, Identifying and forecasting long wave patterns: wave span, speed, omega and Rex blocks, zonal and meridional flow, cold barotropic lows and cut-off lows, cyclones strengthening downstream of the trough axis"
+        ],
+        "unverified": [
+          "Persistence of a block for a week or more, short-wave behaviour, and 500 hPa flow with low heights on the left: standard teaching, not on the page read.",
+          "Weather under ridges and troughs (warm air and fair weather under a ridge): standard teaching.",
+          "Number of long waves is derived from the 60 to 120 degree span (360 / 120 to 360 / 60)."
+        ]
+      }
     },
     {
       "title": "Vorticity and divergence",
@@ -508,7 +543,19 @@
           "a": 0,
           "e": "QG omega depends on vorticity advection change with height and thermal advection."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "theweatherprediction.com (Haby), vorticity: positive vorticity advection causes rising air and negative causes sinking; the omega equation couples thermal advection and vorticity advection",
+          "University of Hawaii, Chapter 13: upper divergence exceeding surface convergence lowers surface pressure"
+        ],
+        "unverified": [
+          "Relative, planetary and absolute vorticity definitions and conservation, and where vorticity maxima sit (base of troughs, cyclonic shear on the left of a jet): standard theory, not on the pages read.",
+          "PVA at 500 hPa linked to upper divergence and falling surface pressure: partly confirmed (PVA gives rising air); the divergence link was not stated on the page read.",
+          "Haby's page is a US forecaster's notes, not a Canadian publication."
+        ]
+      }
     },
     {
       "title": "Mesoscale systems (MCS, squall lines)",
@@ -520,7 +567,7 @@
             "Mesoscale convective complex (MCC): a large, nearly circular MCS identified from cold cloud tops on infrared imagery. Often forms in the evening and lasts into the night.",
             "Squall line: a line of thunderstorms with a continuous gust front, often marked by a shelf cloud, sudden wind shift, temperature drop and heavy rain.",
             "Bow echo: radar signature of a bowed line of storms producing damaging straight-line winds.",
-            "Derecho: a widespread, long-lived windstorm moving across a large area (hundreds of km) with a swath of damaging straight-line winds.",
+            "Derecho: a widespread, long-lived windstorm with a swath of damaging straight-line winds from a fast-moving MCS. The 2025 definition (NOAA/ECCC, via Wikipedia) needs a wind swath at least 400 km long and widespread gusts of at least 93 km/h (58 mph). Mostly April to August in North America.",
             "Gust front: leading edge of cold outflow from thunderstorms. It can arrive well before the rain."
           ]
         },
@@ -535,13 +582,13 @@
           ]
         },
         {
-          "note": "In Atlantic Canada, mesoscale bands in winter storms can produce snowfall rates far greater than those in the surrounding region."
+          "note": "Mesoscale features need radar and satellite to monitor."
         }
       ],
       "terms": [
         [
           "Mesoscale",
-          "Scale of roughly 2 to 2000 km, between local and synoptic."
+          "Scale between local and synoptic, from a few km to several hundred km (the usual quoted range was not confirmed)."
         ],
         [
           "Gust front",
@@ -673,8 +720,31 @@
           ],
           "a": 0,
           "e": "Mesoscale phenomena last from a few hours up to about a day."
+        },
+        {
+          "q": "Under the 2025 NOAA/ECCC-based derecho definition, how long must the wind swath be?",
+          "c": [
+            "At least 400 km (250 miles)",
+            "At least 40 km",
+            "At least 4,000 km",
+            "At least 1 km"
+          ],
+          "a": 0,
+          "e": "The 2025 definition requires a wind swath at least 400 km long, widespread gusts of at least 93 km/h (58 mph), and an MCS moving faster than the mean wind."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NOAA National Weather Service, Types of Thunderstorms: squall line with a continuous gust front, bow echoes",
+          "Derecho article citing the 2025 NOAA/ECCC definition: 400 km swath, 93 km/h gusts, April to August"
+        ],
+        "unverified": [
+          "MCS and MCC size criteria and timing, lake-effect snow, polar lows, sea and lake breeze fronts focusing convection, cold pool behaviour: standard teaching, not confirmed on the pages read.",
+          "The Wikipedia derecho article cites the revised definition (10 May 2025); the NOAA and ECCC pages themselves were not read.",
+          "Mesoscale scale range: the lesson text and term differ in the literature; no source read."
+        ]
+      }
     },
     {
       "title": "Tropical cyclones and post-tropical transition",
@@ -685,7 +755,7 @@
         },
         {
           "list": [
-            "Sea surface temperature of about 26.5 C or warmer through a depth of about 50 m.",
+            "Sea surface temperature above about 26.5 C (80 F), through a deep layer of warm water.",
             "Weak vertical wind shear.",
             "A pre-existing disturbance and a moist mid-troposphere.",
             "Enough Coriolis effect, so generally at least 5 degrees from the equator."
@@ -701,11 +771,11 @@
             "Hurricane: 64 kt (119 km/h) or more. Saffir-Simpson Category 1 starts here."
           ]
         },
-        "Atlantic hurricane season runs 1 June to 30 November, with the peak around mid-September. The Canadian Hurricane Centre, part of ECCC and based in Dartmouth, Nova Scotia, forecasts tropical cyclone impacts for Canada.",
+        "Atlantic hurricane season runs 1 June to 30 November. The Canadian Hurricane Centre is part of the Meteorological Service of Canada (ECCC), in the Atlantic Storm Prediction Centre in Dartmouth, Nova Scotia. It has focused on hurricane prediction since 1987, including post-tropical or transitioning cyclones.",
         {
           "h": "Post-tropical transition"
         },
-        "Over cooler water (north of the Gulf Stream) and in stronger shear, a tropical cyclone loses its tropical structure. It develops fronts, a cold core, and a larger, asymmetric wind field. It is then called post-tropical. It can still be extremely dangerous. The wind field often expands, and rain and surge can remain high. Post-tropical Fiona (2022) caused severe damage in Nova Scotia and Prince Edward Island.",
+        "ECCC: a post-tropical cyclone is one that used to be tropical. Canada adopted the term in 1998 so that potentially dangerous storms could keep their names. Tropical cyclones entering mid-latitudes seldom lose all their tropical traits and can keep moisture and circulation aloft that strengthen the storm (Hazel, 1954). The usual explanation, cooler water and stronger shear giving fronts, a cold core and a larger wind field, was not confirmed on the ECCC page. ECCC examples: Gabrielle 2001 (flooding rain on the Avalon Peninsula), Florence 2006 (hurricane-force winds in southern Newfoundland), Chantal 2007 (flooding in Newfoundland), Noel 2007 (extreme waves and coastal damage in Nova Scotia). News reports describe post-tropical Fiona (2022) causing widespread outages and destroyed homes in Atlantic Canada.",
         {
           "note": "'Post-tropical' means the structure has changed, not that the hazard has gone."
         }
@@ -767,7 +837,7 @@
             "The storm has moved over land and its winds fall below gale force"
           ],
           "a": 0,
-          "e": "The storm has changed structure (often with fronts and a cold core) but may keep strong winds and heavy rain."
+          "e": "ECCC: a post-tropical cyclone used to be tropical. It can remain dangerous, as Gabrielle, Florence, Chantal and Noel showed."
         },
         {
           "q": "When is the Atlantic hurricane season?",
@@ -845,8 +915,33 @@
           ],
           "a": 0,
           "e": "The right side adds forward motion to the rotational wind speed."
+        },
+        {
+          "q": "Per ECCC, why did Canada adopt the term post-tropical in 1998?",
+          "c": [
+            "So potentially dangerous storms could keep their names",
+            "To rank hurricanes by central pressure",
+            "To replace the Saffir-Simpson scale",
+            "To label storms that have fully dissipated"
+          ],
+          "a": 0,
+          "e": "ECCC: the term lets potentially dangerous storms keep their names."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "ECCC, Learn about hurricanes: post-tropical cyclones: definition, 1998 adoption, examples",
+          "ECCC, Canadian Hurricane Centre: Dartmouth, Atlantic Storm Prediction Centre, since 1987",
+          "UNC Asheville ATMS 103, Tropical cyclones: SST above 26.5 C, little vertical shear, surface convergence, 34 kt and 64 kt thresholds (39 and 74 mph), season 1 June to 30 November"
+        ],
+        "unverified": [
+          "The 50 m warm water depth and the mid-September peak were removed (not confirmed).",
+          "Minimum distance of 5 degrees from the equator, the warm core, the right-front quadrant being most dangerous, and Saffir-Simpson category details: standard teaching, not on the pages read.",
+          "Why transition happens (cool water, shear) and the cold-core structure of post-tropical storms: not stated on the ECCC page.",
+          "Fiona (2022) damage described from news headlines, not from ECCC."
+        ]
+      }
     }
   ]
 }

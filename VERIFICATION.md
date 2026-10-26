@@ -15,7 +15,8 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 | Wind (wind). 6 topics | Checked. Backing/veering rule was reversed and is fixed | 2026-10-26 |
 | Moisture (moisture). 6 topics | Checked. Icing temperatures, cloud heights, fog winds corrected | 2026-10-26 |
 | Air masses (airmass). 4 topics | Checked. Frontal slopes, shear role in frontogenesis corrected | 2026-10-26 |
-| Synoptic, Applied | Not yet checked | |
+| Synoptic (synoptic). 5 topics | Checked. Post-tropical, derecho, cyclone life span and long-wave wording corrected | 2026-10-26 |
+| Applied | Not yet checked | |
 
 ## Corrections made on 2026-10-26
 
@@ -85,6 +86,16 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 | Frontogenesis | "Horizontal wind shear" as a driver; axis of dilatation "close to the front" | Shear only rotates isotherms; 45 degree rule; tilting and diabatic heating | NWS Louisville, Frontogenesis |
 | Cold front weather band | 50 to 100 km | Marked unconfirmed | |
 | Front symbols | Stated in quiz | Confirmed: cold blue triangles, warm red semicircles, occluded purple | NWS WPC |
+| Cyclone life span | "A few days" | Several days to a little more than a week; 500 hPa steering, about 16 kt summer and 27 kt winter | Univ. of Hawaii, Chapter 13 |
+| Cyclone dissipation | "Becomes cold-cored" | Warm air cut off; cold air on both sides of the occlusion | Univ. of Hawaii, Chapter 13 |
+| Bomb cyclone | 24 hPa at 60 N | Formula 24 x sin(lat)/sin 60 added; cold-season maritime event near warm currents | Sanders and Gyakum 1980 (via Wikipedia) |
+| Long waves | "3 to 6 around the hemisphere" | Span 60-120 deg of longitude (so 3 to 6); speed 10 kt or less | NWS Houston/Galveston |
+| Surface lows and jet | "Beneath the jet axis" | Strengthen near and just downstream of the long-wave trough axis | NWS Houston/Galveston |
+| Derecho | "Hundreds of km" | 2025 definition: swath 400 km, gusts 93 km/h; April to August | Derecho article citing NOAA/ECCC |
+| Mesoscale note | Atlantic Canada snowfall rate claim | Removed (no source) | |
+| Tropical cyclone ingredients | SST warm to 50 m; peak mid-September | Deep warm layer; peak claim removed | UNC Asheville ATMS 103 |
+| Post-tropical | Loses tropical structure, fronts, cold core | ECCC: used to be tropical; term adopted 1998; structure explanation marked unconfirmed; ECCC examples added | ECCC post-tropical page |
+| Canadian Hurricane Centre | "Part of ECCC" | Meteorological Service of Canada, Atlantic Storm Prediction Centre, since 1987 | ECCC |
 
 ## Not confirmed (open items)
 
@@ -97,4 +108,5 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 - Wind: Coriolis zero at equator and Coriolis parameter, gradient wind, boundary layer depth, diurnal wind cycle, Ferrel cell being indirect, WMO jet definition, jet entrance and exit divergence, and the TC AIM jet stream wording.
 - Moisture: mixing ratio conservation and wet-bulb ordering, CCN types, lifting mechanisms, cloud appearance descriptions, warm-front cloud sequence, carburettor icing, Nova Scotia fog climatology, AIM MET 2.4 icing text re-check.
 - Air masses: k/w modification and stability, warm front passage changes, warm occlusion, ana and kata fronts, frontal inversion, baroclinic definition, Gulf Stream frontogenesis zone. No Canadian publication on air mass types was found.
-- The other two domains (synoptic, applied) have not been checked yet.
+- Synoptic: vorticity definitions and conservation, PVA link to upper divergence, MCS and MCC size criteria, polar lows, lake-effect snow, 5 degree Coriolis limit, warm core, right-front quadrant, Saffir-Simpson categories, why post-tropical transition happens, Fiona details from ECCC.
+- Applied has not been checked yet.
