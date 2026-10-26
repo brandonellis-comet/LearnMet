@@ -317,6 +317,10 @@ function viewTopic(did, ti) {
     h("div", { class: "row", style: "margin-bottom:10px" },
       h("span", { class: "muted small", text: stats.s ? `Quiz history: ${stats.s - stats.w}/${stats.s} correct` : "No quiz taken yet" }), btn),
     h("div", { class: "card" }, lesson),
+    t.verified && h("div", { class: "card" }, h("h2", { text: "Sources checked " + t.verified.date }),
+      h("ul", { class: "srcs" }, t.verified.sources.map(x => h("li", { text: x }))),
+      t.verified.unverified && t.verified.unverified.length > 0 && h("div", { class: "unver" }, h("strong", { text: "Not confirmed against a source: " }),
+        h("ul", { class: "srcs" }, t.verified.unverified.map(x => h("li", { text: x }))))),
     (LINKS.topics[tkey(did, ti)] || []).length > 0 && h("div", { class: "card" }, h("h2", { text: "Further reading (free, public)" }),
       LINKS.topics[tkey(did, ti)].map(id => linkItem(id)), h("div", { class: "muted small", text: "Opens in a new tab. Checked " + (LINKS.checked || "") + "." })),
     t.terms && t.terms.length > 0 && h("div", { class: "card" }, h("h2", { text: "Key terms" }),
@@ -677,7 +681,7 @@ function genMetar() {
   const lowCeil = layers.find(l => l[0] === "BKN" || l[0] === "OVC");
   const ceilTxt = lowCeil ? fmtFt(lowCeil[1] * 100) : "No ceiling (no broken or overcast layer)";
   const cw = [fmtFt(layers[0][1] * 100), fmtFt(layers[layers.length - 1][1] * 100 + 1000), fmtFt((lowCeil ? lowCeil[1] : layers[0][1]) * 1000), fmtFt((lowCeil ? lowCeil[1] : layers[0][1]) * 10), "No ceiling (no broken or overcast layer)", "1,000 ft", "2,500 ft", "6,000 ft"].filter(x => x !== ceilTxt);
-  qs.push(genQ(code, 0, "What is the ceiling?", ceilTxt, cw, "Cloud heights are in hundreds of feet AGL. The ceiling is the lowest BKN or OVC layer (or vertical visibility). FEW and SCT do not make a ceiling."));
+  qs.push(genQ(code, 0, "What is the ceiling?", ceilTxt, cw, "Cloud heights are in hundreds of feet, measured from the aerodrome level at airports. The ceiling is the lowest BKN or OVC layer (or vertical visibility). FEW and SCT do not make a ceiling."));
   const l0 = layers[0];
   qs.push(genQ(code, 0, `What does ${l0[0]}${pad(l0[1], 3)} mean?`, `${cloudWord(l0[0])} at ${l0[1] * 100} ft AGL`,
     types.filter(x => x !== l0[0]).map(x => `${cloudWord(x)} at ${l0[1] * 100} ft AGL`).concat([`${cloudWord(l0[0])} at ${l0[1] * 1000} ft AGL`]), "Cloud group: amount code then height in hundreds of feet AGL."));
@@ -689,25 +693,25 @@ function genMetar() {
   if (wx) qs.push(genQ(code, 0, `What does ${wx[0]} mean?`, wx[1], WX_OPTS.map(w => w[1]).filter(x => x !== wx[1]), "Present weather: - light, none moderate, + heavy; then the type (RA rain, SN snow, DZ drizzle, BR mist, FG fog, TS thunderstorm, SH showers)."));
   const vn = visNum(vis[0]), ceilFt = lowCeil ? lowCeil[1] * 100 : 99999;
   const cat = flightCat(ceilFt, vn), cats = ["VFR", "MVFR", "IFR", "LIFR"];
-  qs.push(genQ(code, 0, "What is the flight category? (VFR: ceiling above 3,000 ft and visibility above 5 SM; MVFR: 1,000 to 3,000 ft or 3 to 5 SM; IFR: 500 to below 1,000 ft or 1 to below 3 SM; LIFR: below 500 ft or below 1 SM.)", cat, cats.filter(c => c !== cat), "Flight category uses the worse of the ceiling and the visibility."));
+  qs.push(genQ(code, 0, "What is the flight category? (NAV CANADA: VFR is ceiling above 3,000 ft and visibility above 5 SM; MVFR is 1,000 to 3,000 ft or 3 to 5 SM; IFR is below 1,000 ft or below 3 SM. Here IFR is split US-style: IFR is 500 to below 1,000 ft or 1 to below 3 SM; LIFR is below 500 ft or below 1 SM.)", cat, cats.filter(c => c !== cat), "Flight category uses the worse of the ceiling and the visibility."));
   return qs;
 }
 
 function genTaf() {
-  const stn = pickOne(DEC_STNS), day = 1 + rnd(27), issue = pickOne([5, 11, 17, 23]);
-  const vStart = pickOne([6, 12, 18, 0]), nd = vStart === 0 ? day + 1 : day;
+  const stn = pickOne(DEC_STNS), day = 1 + rnd(27);
+  const vStart = pickOne([6, 12, 18, 0]), nd = vStart === 0 ? day + 1 : day, issue = (vStart + 23) % 24;
   const endDay = nd + 1;
-  const valid = `${pad(nd, 2)}${pad(vStart, 2)}/${pad(endDay, 2)}${pad(vStart, 2)}`;
+  const valid = vStart === 0 ? `${pad(nd, 2)}00/${pad(nd, 2)}24` : `${pad(nd, 2)}${pad(vStart, 2)}/${pad(endDay, 2)}${pad(vStart, 2)}`;
+  const dh = (abs, isEnd) => { let d = nd + Math.floor(abs / 24), hh = abs % 24; if (isEnd && hh === 0) { d -= 1; hh = 24; } return pad(d, 2) + pad(hh, 2); };
   const d1 = pickOne([8, 12, 18, 24, 27, 30, 33]) * 10, s1 = pickOne([6, 10, 12, 15]);
   const v1 = pickOne(["P6SM", "6SM", "4SM"]), c1 = pickOne(["FEW040", "SCT030", "BKN050", "FEW020 BKN080"]);
   const chgType = pickOne(["BECMG", "TEMPO", "PROB30", "FM"]);
-  const h1 = (vStart + 3 + rnd(6)) % 24, h2 = (h1 + 3) % 24;
-  const chDay = h1 < vStart ? endDay : nd;
-  const chPer = `${pad(chDay, 2)}${pad(h1, 2)}${pad(h2 === 0 ? 24 : h2, 2)}`;
-  const chPerFull = `${pad(chDay, 2)}${pad(h1, 2)}/${pad(chDay, 2)}${pad(h2, 2)}`;
+  const absStart = vStart + 3 + rnd(6), absEnd = absStart + 3;
+  const chPerFull = `${dh(absStart, false)}/${dh(absEnd, true)}`;
+  const fmTime = dh(absStart, false) + "00";
   const d2 = pickOne([18, 24, 30, 33]) * 10, s2 = s1 + pickOne([5, 8, 10]), g2 = s2 + pickOne([8, 10]);
   const chWx = pickOne([["2SM -RA BKN012", "visibility 2 SM in light rain with a broken ceiling at 1,200 ft"], ["1SM -SN OVC008", "visibility 1 SM in light snow with an overcast ceiling at 800 ft"], ["1/2SM FG VV002", "visibility 1/2 SM in fog with vertical visibility 200 ft"], ["3SM BR BKN015", "visibility 3 SM in mist with a broken ceiling at 1,500 ft"]]);
-  const chg = chgType === "FM" ? `FM${pad(chDay, 2)}${pad(h1, 2)}00 ${pad(d2, 3)}${pad(s2, 2)}KT ${chWx[0]}`
+  const chg = chgType === "FM" ? `FM${fmTime} ${pad(d2, 3)}${pad(s2, 2)}KT ${chWx[0]}`
     : chgType === "PROB30" ? `PROB30 ${chPerFull} ${chWx[0]}`
     : `${chgType} ${chPerFull} ${chgType === "BECMG" ? `${pad(d2, 3)}${pad(s2, 2)}G${g2}KT ` : ""}${chWx[0]}`;
   const code = `TAF ${stn} ${pad(day, 2)}${pad(issue, 2)}40Z ${valid} ${pad(d1, 3)}${pad(s1, 2)}KT ${v1} ${c1}\n${chg}`.replace("\\n", "\n");
@@ -725,20 +729,20 @@ function genTaf() {
     ["No ceiling (no broken or overcast layer)", "2,000 ft", "3,000 ft", "4,000 ft", "5,000 ft", "800 ft", "20,000 ft"].filter(x => x !== tCeil),
     "Ceiling is the lowest BKN or OVC layer. FEW and SCT are not ceilings."));
   const meaning = {
-    BECMG: [`conditions change gradually during ${chPerFull.replace("/", " to ")} and stay changed`, "a brief fluctuation lasting under an hour at a time", "a 30% chance of the conditions", "an abrupt change at one time"],
+    BECMG: [`a permanent change over one to four hours, during ${chPerFull.replace("/", " to ")}, and the new conditions persist`, "a brief fluctuation lasting under an hour at a time", "a 30% chance of the conditions", "an abrupt change at one time"],
     TEMPO: [`temporary fluctuations during ${chPerFull.replace("/", " to ")}, each lasting under an hour`, "a gradual, lasting change", "a 30% chance of the conditions", "an abrupt, lasting change"],
     PROB30: [`a 30% chance of ${chWx[1]} during ${chPerFull.replace("/", " to ")}`, "a gradual, lasting change", "a temporary fluctuation under an hour", "a forecast issued 30 minutes after the hour"],
     FM: [`an abrupt, lasting change from the stated time, with ${chWx[1]}`, "a gradual change over several hours", "a temporary fluctuation under an hour", "a 30% chance of the conditions"],
   }[chgType];
   qs.push(genQ(code, 1, `What does the ${chgType === "FM" ? "FM" : chgType} group mean?`, meaning[0], meaning.slice(1).concat(["an amendment to a previous forecast"]),
-    "BECMG: gradual lasting change. TEMPO: temporary fluctuations under an hour each and less than half the period in total. PROB30: 30% chance. FM: abrupt change from the stated time."));
+    "BECMG: gradual lasting change. TEMPO: temporary fluctuations under an hour each and no more than half the period in total. PROB30: 30% chance. FM: abrupt change from the stated time."));
   qs.push(genQ(code, 1, "In the second group, what is the forecast weather and ceiling/visibility?", chWx[1],
     ["clear skies with visibility over 6 SM", "visibility 6 SM in haze with few clouds at 4,000 ft", "visibility 5 SM in light rain with scattered cloud at 3,000 ft", "visibility 1/4 SM in heavy snow with an overcast ceiling at 200 ft"].filter(x => x !== chWx[1]).concat(["visibility 2 SM in light rain with a broken ceiling at 1,500 ft"]).filter(x => x !== chWx[1]).slice(0, 3),
     "Read the visibility, weather and cloud groups in order. VV is vertical visibility into an obscured sky."));
   const vv = chWx[0].includes("VV") ? "IFR" : null;
   const cc = chWx[0].match(/(BKN|OVC|VV)(\d{3})/), ch = cc ? +cc[2] * 100 : 99999, vi = visNum(chWx[0].split(" ")[0]);
   const cat = flightCat(ch, vi), cats = ["VFR", "MVFR", "IFR", "LIFR"];
-  qs.push(genQ(code, 1, "What flight category does the second group forecast? (VFR: ceiling above 3,000 ft and visibility above 5 SM; MVFR: 1,000 to 3,000 ft or 3 to 5 SM; IFR: 500 to below 1,000 ft or 1 to below 3 SM; LIFR: below 500 ft or below 1 SM.)", cat, cats.filter(c => c !== cat), "Use the worse of ceiling and visibility."));
+  qs.push(genQ(code, 1, "What flight category does the second group forecast? (NAV CANADA: VFR is ceiling above 3,000 ft and visibility above 5 SM; MVFR is 1,000 to 3,000 ft or 3 to 5 SM; IFR is below 1,000 ft or below 3 SM. Here IFR is split US-style: IFR is 500 to below 1,000 ft or 1 to below 3 SM; LIFR is below 500 ft or below 1 SM.)", cat, cats.filter(c => c !== cat), "Use the worse of ceiling and visibility."));
   return qs;
 }
 

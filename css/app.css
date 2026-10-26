@@ -103,3 +103,6 @@ th { color: var(--muted); font-weight: 600; }
 .link { padding: 8px 0; border-top: 1px solid var(--line); }
 .link:first-of-type { border-top: 0; }
 .link a { font-weight: 600; }
+
+.srcs { margin: 4px 0 8px; padding-left: 20px; font-size: .9rem; }
+.unver { border-left: 4px solid var(--learn-fg); background: var(--bg); padding: 8px 12px; border-radius: 0 8px 8px 0; font-size: .9rem; }

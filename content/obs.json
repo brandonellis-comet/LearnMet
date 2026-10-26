@@ -7,12 +7,12 @@
         "Surface observations are the base data for analysis, forecasts and verification. Standard exposure rules make observations comparable between stations.",
         {
           "list": [
-            "Temperature and humidity: thermometers in a ventilated, shaded screen (Stevenson screen) about 1.25 to 2 m above the ground, over short grass. The screen keeps out sun and rain but lets air flow through.",
-            "Wind: anemometer and vane at a standard height of 10 m above open, level ground. Direction is reported as the direction the wind comes FROM, in degrees true in METARs.",
+            "Temperature and humidity: thermometer bulbs 1.25 to 2 m above ground level, in a white double-louvered screen (Stevenson screen) over short grass. The screen shields them from direct sunlight, precipitation and heat radiated from the ground, while letting air flow through.",
+            "Wind: wind measurements must be representative of winds 10 m above level terrain. METAR and SPECI report a two-minute mean. Direction is the direction the wind comes FROM, in degrees true.",
             "Pressure: barometer. Station pressure is the pressure at the instrument. Mean sea level pressure (MSLP) is the station pressure reduced to sea level, so stations at different heights can be compared on a chart.",
-            "Visibility: the greatest distance at which a prominent object can be seen and recognized. Measured by observers using markers or by sensors.",
+            "Visibility (aeronautical): the greater of (1) the greatest distance a black object near the ground can be easily recognized, and (2) the greatest distance lights of about 1,000 candela can be seen and identified against an unlit background. It is observed at eye level, 1.5 m above the ground. Canadian land stations report it in statute miles; if the observed value falls between two reportable values the lower one is reported, and 15 SM is the maximum reportable value.",
             "Precipitation: rain gauges (tipping bucket or weighing), snow depth and water equivalent.",
-            "Cloud: observer estimates, or a ceilometer (laser or light pulse that measures cloud base height)."
+            "Cloud: observer estimates, or a laser ceilometer that measures cloud base height (AWOS ceilometers report cloud bases up to 25,000 ft). At airports, heights are measured from the official aerodrome level; elsewhere from ground level at the station."
           ]
         },
         {
@@ -22,11 +22,11 @@
           "list": [
             "QNH: sea level pressure setting. With QNH set, the altimeter reads aerodrome elevation when on the ground and altitude above mean sea level in flight. In North America this is the altimeter setting in inches of mercury (for example A2992).",
             "QFE: setting that makes the altimeter read zero on the aerodrome.",
-            "Standard 1013.25 hPa (29.92 inHg): used above the transition altitude so all aircraft use the same reference."
+            "Standard setting 29.92 inHg (1013.2 hPa): set after entering the standard pressure region, so all aircraft share one reference. In the altimeter setting region the station altimeter setting is used instead (Canadian Aviation Regulations, s. 602.37)."
           ]
         },
         {
-          "note": "Automated stations (AWOS, AWS) report a limited set of elements. A human observer is still needed to verify cloud type and some present weather."
+          "note": "Automated stations report a limited set of elements. An LWIS reports only wind, altimeter setting, temperature and dew point. A METAR AUTO adds visibility, cloud height and coverage, precipitation and obstructions to vision. Systems outside lightning-detection coverage cannot report thunderstorms."
         }
       ],
       "terms": [
@@ -53,7 +53,7 @@
             "On the roof of any building"
           ],
           "a": 0,
-          "e": "WMO standard exposure for wind is 10 m over open terrain."
+          "e": "MANOBS 3.2.2: wind measurements are representative of winds 10 m above level terrain."
         },
         {
           "q": "Why are thermometers housed in a ventilated screen?",
@@ -64,7 +64,7 @@
             "To reduce wind speed so the thermometer is not blown over"
           ],
           "a": 0,
-          "e": "The screen prevents radiation and moisture errors while keeping air moving over the sensor."
+          "e": "A Stevenson screen is a white double-louvered box. It shields thermometers from direct sunlight, precipitation and ground heat radiation while air flows through (MANCLIM)."
         },
         {
           "q": "What does an altimeter read on the ground when QNH is set?",
@@ -108,7 +108,7 @@
             "Only wind and snow, leaving the sunlight to warm them"
           ],
           "a": 0,
-          "e": "Screens shade instruments while allowing airflow."
+          "e": "The screen shields the thermometers from direct sunlight, precipitation and heat radiated from the ground, while air still flows through it (MANCLIM)."
         },
         {
           "q": "Standard anemometer height for surface wind is:",
@@ -119,7 +119,7 @@
             "1 m above the ground, in the middle of the screen"
           ],
           "a": 0,
-          "e": "Standard wind measurements are made at 10 m in open terrain."
+          "e": "MANOBS 3.2.2: wind measurements are representative of winds 10 m above level terrain."
         },
         {
           "q": "Wind direction is reported as the direction the wind is blowing:",
@@ -130,18 +130,18 @@
             "Around"
           ],
           "a": 0,
-          "e": "Wind direction is always where the wind comes from."
+          "e": "Wind direction is the direction the wind comes from, in degrees true (MANOBS 3.2.1 and 3.2.3)."
         },
         {
-          "q": "Visibility is defined as the greatest distance at which:",
+          "q": "For aeronautical purposes, how does MANOBS define visibility?",
           "c": [
-            "A prominent object can be seen and identified",
-            "A light can be detected by an observer, whatever its brightness",
-            "A cloud can be seen and identified in the daytime",
-            "Fog can be detected, even without any marked object"
+            "The greater of the daytime distance a black object is recognized and the night distance lights are identified",
+            "The distance to the farthest cloud base that can be seen from the station",
+            "The average of the distances to the four nearest visibility markers",
+            "The distance at which a white object just blends into the background"
           ],
           "a": 0,
-          "e": "It refers to recognizing objects by day, or lights by night."
+          "e": "MANOBS 4.1.1: the greater of the greatest distance a black object near the ground can be easily recognized, and the greatest distance lights of about 1,000 candela can be seen and identified against an unlit background."
         },
         {
           "q": "Barometric pressure is reduced to sea level to:",
@@ -165,7 +165,21 @@
           "a": 0,
           "e": "Laser or light pulses detect the cloud base."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "MANOBS 8th ed. Amendment 3: 3.2.1 and 3.2.2 (wind), 4.1.1, 4.2 and 4.5.1 (visibility), 7.3.1 (cloud reference level)",
+          "ECCC MANCLIM, Temperature: screen and thermometer exposure",
+          "NAV CANADA Aviation Weather Services Guide (2017): laser ceilometer, AWOS and LWIS",
+          "Transport Canada AIM MET 1.2.4 to 1.2.6: automated systems",
+          "Canadian Aviation Regulations s. 602.37: altimeter setting and standard pressure region"
+        ],
+        "unverified": [
+          "QNH and QFE definitions and MSLP reduction are standard meteorology, not checked against a Canadian publication.",
+          "MANOBS Chapter 8 (air and dew-point temperature) and Chapter 9 (pressure) could not be opened with the tools used."
+        ]
+      }
     },
     {
       "title": "Upper-air soundings and radiosondes",
@@ -173,9 +187,9 @@
         "Upper-air soundings measure the atmosphere above ground. Almost all of the world's upper-air data comes from radiosondes: small instrument packages carried aloft by a hydrogen or helium balloon.",
         {
           "list": [
-            "Launches are made at 00 and 12 UTC worldwide. This lets models and forecasters use a simultaneous global snapshot.",
+            "Standard launch times are 00 and 12 UTC. This gives models and forecasters a simultaneous snapshot of the atmosphere.",
             "A radiosonde measures pressure, temperature and humidity. Wind is derived by tracking the balloon's position, now usually by GPS.",
-            "The balloon rises at about 5 m/s and expands as pressure falls. It bursts at roughly 30 to 35 km, and the instrument parachutes back. Flight takes about 90 minutes to two hours.",
+            "The balloon expands as the pressure falls and eventually bursts, then the instrument parachutes back. NOAA says sondes can reach over 115,000 ft (about 35 km) and flights can last more than two hours.",
             "Data are reported at mandatory pressure levels (for example 1000, 925, 850, 700, 500, 400, 300, 250, 200, 150, 100 hPa) plus significant levels where the profile changes."
           ]
         },
@@ -222,7 +236,7 @@
             "Only when storms approach"
           ],
           "a": 0,
-          "e": "Global synoptic upper-air observations are made at 00 and 12 UTC."
+          "e": "NOAA: most upper-air observations are taken daily at 00Z and 12Z."
         },
         {
           "q": "Which variables does a radiosonde provide?",
@@ -288,7 +302,7 @@
             "Every hour"
           ],
           "a": 0,
-          "e": "Standard synoptic times are 00 and 12 UTC."
+          "e": "NOAA: most upper-air observations are taken daily at 00Z and 12Z."
         },
         {
           "q": "A radiosonde measures:",
@@ -310,7 +324,7 @@
             "About 100 m, where the surface inversion ends"
           ],
           "a": 0,
-          "e": "Burst altitude is typically 25 to 35 km."
+          "e": "NOAA: sondes can reach over 115,000 ft (about 35 km). The balloon bursts as it expands in the thin air."
         },
         {
           "q": "Why are upper-air observations important for forecasting?",
@@ -324,17 +338,27 @@
           "e": "Soundings give the vertical structure used in analyses."
         },
         {
-          "q": "Upper-air winds are reported in:",
+          "q": "How is the wind measured by a modern radiosonde?",
           "c": [
-            "Degrees true and knots",
-            "Degrees magnetic and km/h",
-            "Hectopascals",
-            "Metres per hour"
+            "By tracking the position of the sonde with GPS",
+            "By a cup anemometer carried on the balloon",
+            "By the balloon's rate of rise alone",
+            "By a separate aircraft flying alongside it"
           ],
           "a": 0,
-          "e": "WMO practice uses degrees true and knots in most reports."
+          "e": "NOAA: wind speed and direction are derived by tracking the sonde's position with GPS."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NOAA JetStream, Radiosondes: launch times 00Z and 12Z, measurements, GPS wind, hydrogen or helium balloon, over 115,000 ft, flight over two hours"
+        ],
+        "unverified": [
+          "The list of mandatory pressure levels (1000, 925, 850, 700, 500, 400, 300, 250, 200, 150, 100 hPa) is standard WMO practice from general knowledge, not checked in a fetched source.",
+          "The balloon ascent rate is not given by the NOAA page, so it was removed."
+        ]
+      }
     },
     {
       "title": "Weather radar principles and interpretation",
@@ -343,7 +367,7 @@
         {
           "h": "Reflectivity"
         },
-        "Reflectivity (dBZ) is on a logarithmic scale. Higher values mean more or larger targets. Rough guide: about 20 dBZ light rain or drizzle, 30 to 40 moderate rain, 45 to 55 heavy rain, above about 55 possible hail. These are only guides because snow, hail and the melting layer behave differently.",
+        "Reflectivity (dBZ) is on a logarithmic scale. Higher values mean more or larger targets. Rough guide: about 20 dBZ light rain or drizzle, 30 to 40 moderate rain, 45 to 55 heavy rain, above about 55 possible hail. These are rule-of-thumb values from general radar meteorology, not from an ECCC document, and snow, hail and the melting layer behave differently. ECCC public radar maps show precipitation rate: mm/h for rain and cm/h for snow.",
         {
           "h": "Doppler"
         },
@@ -351,7 +375,7 @@
         {
           "h": "Dual-polarization"
         },
-        "Dual-pol radars send and receive both horizontal and vertical pulses. Extra products help to tell rain from snow and hail, identify debris from tornadoes, and filter out non-weather echoes such as birds, insects and ground clutter.",
+        "Dual-pol radars send and receive both horizontal and vertical pulses. Extra products help to tell rain from snow and hail (ECCC's surface precipitation type product classifies rain, snow, freezing rain, hail and mixed), identify debris from tornadoes, and filter out non-weather echoes such as birds, insects and ground clutter.",
         {
           "h": "Limitations"
         },
@@ -365,7 +389,7 @@
           ]
         },
         {
-          "note": "Canada's operational radars are mostly C-band (about 5 cm wavelength). Always check beam height at distance before trusting low-level echoes."
+          "note": "ECCC reports that its older C-band radars are being replaced by more powerful dual-polarization S-band radars. The composite precipitation-rate map is updated every six minutes and can merge up to 200 radars. Always check beam height at distance before trusting low-level echoes."
         }
       ],
       "terms": [
@@ -399,7 +423,7 @@
           "e": "Doppler radars detect motion toward or away from the radar."
         },
         {
-          "q": "What reflectivity is usually associated with heavy rain and possible hail?",
+          "q": "As a rule of thumb, what reflectivity is usually associated with heavy rain and possible hail?",
           "c": [
             "Above about 50 to 55 dBZ",
             "Below 10 dBZ",
@@ -407,7 +431,7 @@
             "Zero dBZ"
           ],
           "a": 0,
-          "e": "High reflectivity indicates large or numerous targets such as heavy rain or hail."
+          "e": "Rule of thumb only: high reflectivity indicates large or numerous targets such as heavy rain or hail. ECCC public maps use rain rate instead of dBZ."
         },
         {
           "q": "Why might a radar miss shallow precipitation at long range?",
@@ -508,7 +532,18 @@
           "a": 0,
           "e": "Stronger returns mean larger or more numerous targets."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "ECCC, About Canadian weather radar: C-band replaced by S-band dual-pol, six-minute composite, up to 200 radars, mm/h and cm/h scales, surface precipitation type classes",
+          "NAV CANADA Aviation Weather Services Guide (2017): radar scales and update interval for the older network"
+        ],
+        "unverified": [
+          "The dBZ-to-intensity ranges (20, 30 to 40, 45 to 55, above 55) are common rule-of-thumb values, not confirmed in a fetched source.",
+          "The ECCC page does not give the radar wavelength, so the previous 'about 5 cm' figure was removed."
+        ]
+      }
     },
     {
       "title": "Satellite imagery (visible, IR, water vapour)",
@@ -519,8 +554,8 @@
         },
         {
           "list": [
-            "Geostationary: about 36,000 km above the equator, fixed over one spot. Frequent images (every 5 to 15 minutes or faster) of the same region. Poor viewing at high latitudes. Canada is mainly covered by GOES-East.",
-            "Polar-orbiting: about 800 to 850 km up, passes near the poles. Higher resolution and good polar coverage, but fewer passes per day."
+            "Geostationary: about 36,000 km above the equator, fixed over one spot. Frequent images of the same region. Poor viewing at high latitudes. The GOES satellites are geostationary.",
+            "Polar-orbiting: about 850 km up (NAV CANADA gives POES satellites at roughly 850 km, one orbit about every 105 minutes, 14 orbits a day). Higher resolution and good polar coverage, but fewer passes of a given spot."
           ]
         },
         {
@@ -683,7 +718,17 @@
           "a": 0,
           "e": "Bright, lumpy tops signal deep convection."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NAV CANADA Aviation Weather Services Guide (2017): GOES about 36,000 km over the equator; POES about 850 km, 105 minutes per orbit, 14 orbits per day"
+        ],
+        "unverified": [
+          "Water vapour band wavelengths (about 6 to 7 micrometres), channel appearance (dark dry, bright moist) and the interpretation tips are standard satellite meteorology, not checked in a fetched source.",
+          "The previous claim that Canada is mainly covered by GOES-East was removed because it was not confirmed."
+        ]
+      }
     },
     {
       "title": "Reading and plotting a skew-T log-P",
@@ -864,7 +909,16 @@
           "a": 0,
           "e": "Warm nose aloft over sub-zero surface layer."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NWS skew-T log-P guide (weather.gov): isotherms at 45 degrees, dry and moist adiabats slanting lower right to upper left, dashed mixing ratio lines slanting lower left to upper right, definitions of LCL, EL and CAPE"
+        ],
+        "unverified": [
+          "The definitions of CIN, LFC and the lifted index, and the 'warm nose' freezing-rain pattern, are standard meteorology, not checked in a fetched source."
+        ]
+      }
     }
   ]
 }

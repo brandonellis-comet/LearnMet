@@ -1,0 +1,46 @@
+# Verification log
+
+How content is checked: each claim is compared with a public primary source (Canada.ca, NAV CANADA, Transport Canada, NOAA, WMO). Each lesson page shows the sources checked and a list of items not confirmed.
+
+Method limit: the reading tool returns about 100,000 characters per document. For long manuals this means later chapters could not be read. Those items are listed as "not confirmed" and are never presented as verified.
+
+## Status
+
+| Domain | Status | Date |
+|--------|--------|------|
+| Observations (obs) | Checked. 5 topics | 2026-10-26 |
+| Codes (codes) | Checked. 6 topics | 2026-10-26 |
+| Foundations, Wind, Moisture, Air masses, Synoptic, Severe, Applied | Not yet checked | |
+
+## Corrections made on 2026-10-26
+
+| Where | Was | Now | Source |
+|-------|-----|-----|--------|
+| Radar lesson | "Canada's radars are mostly C-band, about 5 cm" | C-band radars being replaced by dual-pol S-band; wavelength removed (not stated) | ECCC, About Canadian weather radar |
+| Radar lesson | No mention of display units | Added: ECCC maps use mm/h (rain) and cm/h (snow); dBZ ranges marked as rule of thumb | ECCC radar page |
+| Visibility | "Greatest distance a prominent object can be seen" | Greater of black-object distance by day and 1,000 candela lights at night; eye level 1.5 m; lower value reported; 15 SM maximum | MANOBS 4.1.1, 4.2, 4.5.1 |
+| Wind | Height only | Two-minute mean, true north, 10 m over level terrain | MANOBS 3.2.1, 3.2.2 |
+| Cloud heights | "Above ground" | From the official aerodrome level at airports | MANOBS 7.3.1 |
+| METAR note | "Tower and ATIS winds are magnetic" | Removed (not confirmed in a Canadian source); METAR winds true | MANOBS 3.2.1 |
+| Radiosonde | Ascent rate 5 m/s; burst 30 to 35 km; 90 min to 2 h | Rate removed (not in source); over 115,000 ft (about 35 km); more than two hours | NOAA JetStream |
+| Radiosonde quiz | Upper-air winds "degrees true and knots, WMO practice" | Replaced with GPS tracking question | NOAA JetStream |
+| Satellite | "Canada mainly covered by GOES-East"; polar 800 to 850 km | Claim removed; about 850 km, 105 min per orbit | NAV CANADA guide |
+| TAF area and validity | "About 5 NM of aerodrome reference point"; "typically 24 or 30 hours" | Within 5 NM of the centre of the runway complex; four times daily; up to 30 hours | AIM MET 1.3.3, 3.1 |
+| TAF TEMPO | "Less than half the period" | No more than half; does not change wind | NAV CANADA guide |
+| TAF BECMG | "Gradual change over the period" | Permanent change over one to four hours | NAV CANADA guide |
+| TAF PROB | "Probability of 30 or 40%" | Probability the condition occurs during the period, not duration; does not change wind | NAV CANADA guide |
+| TAF amendments | "See course documents" | Amend for significant ceiling or visibility change; also wind, weather, freezing precipitation | AIM MET 3.1 |
+| TAF midnight | Not covered | 24 for end at midnight (2912/2924), 00 for start | NAV CANADA guide |
+| Altimeter | "Transition altitude" | Standard pressure region and altimeter setting region | CARs s. 602.37 |
+| Models | "Run by the Canadian Meteorological Centre"; "a few km" | ECCC; GDPS 15 km, 10 days, 2 runs/day; HRDPS 2.5 km, 48 h, up to 4 runs/day | ECCC data catalogue |
+| Surface chart | "Usually every 4 hPa" | 4 hPa from 1000 hPa; four analyses a day | NAV CANADA guide |
+| Upper-air charts | Metres only | Added feet (5,000, 10,000, 18,000, 34,000 ft) and 00/12 UTC | NAV CANADA guide |
+| Drills | Midnight validity coded as 00 at end | Coded 24; issue time set 20 minutes before validity | NAV CANADA guide, AIM |
+
+## Not confirmed (open items)
+
+- MANOBS chapters 8 to 15 (temperature, pressure, SPECI criteria in 11.2.3) could not be read. Ask someone with the full PDF to check these, or check them when in the course.
+- MANAIR chapter 2: TAF amendment thresholds and full coding rules.
+- Occluded and stationary front colours, trough line style, isobar label convention, station model layout.
+- dBZ intensity ranges, water vapour band wavelengths, mandatory pressure level list, CSI formula, CIN and lifted index definitions.
+- The other seven domains have not been checked yet.

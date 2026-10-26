@@ -14,9 +14,9 @@ Rules that do not change:
 
 ## Phase 1: Make the content trustworthy
 
-Status: not started. Do this before growing.
+Status: in progress. Observations and Codes checked 2026-10-26 (see `VERIFICATION.md`). Seven domains remain.
 
-- [ ] Add a source to every lesson and question: publication, section, edition.
+- [x] Lessons in Observations and Codes show the sources checked and the items not confirmed. Other domains still to do.
 - [ ] Check every lesson against MANOBS, MANAIR, the TC AIM MET chapter, the NAV CANADA guide and ECCC pages.
 - [ ] Rewrite the warning-criteria lesson and questions. ECCC says its old public alert criteria were replaced by Impact Guides.
 - [ ] Get review from working Met Techs or forecasters. Use the CFS Met course as a check once enrolled, and keep course material itself out of this repo.

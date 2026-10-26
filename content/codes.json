@@ -15,13 +15,13 @@
           "list": [
             "Station: ICAO identifier (CYHZ is Halifax Stanfield).",
             "Date and time: day of month and UTC time (261200Z is the 26th at 1200 UTC).",
-            "Wind: direction in degrees TRUE, speed in knots, gusts after G (27015G25KT). 00000KT is calm. VRB means variable.",
+            "Wind: a two-minute mean. Direction in degrees TRUE (to the nearest 10), speed in knots, gusts after G (27015G25KT). 00000KT is calm. VRB means variable.",
             "Visibility: statute miles in Canada, with fractions (1/2SM, 1 1/2SM).",
-            "Present weather: intensity (- light, + heavy), then type (RA, SN, FG, BR, TS...).",
-            "Cloud: amount and height in hundreds of feet above ground (BKN020 is broken at 2,000 ft). Amounts: FEW (1 to 2 oktas), SCT (3 to 4), BKN (5 to 7), OVC (8).",
-            "Temperature and dew point in C. M means minus (M03/M05 is -3 and -5).",
+            "Present weather: intensity (- light, + heavy, no symbol for moderate), then type (RA, SN, FG, BR, TS...).",
+            "Cloud: amount and height in hundreds of feet, measured from the aerodrome level at airports (BKN020 is broken at 2,000 ft). Amounts: FEW (more than 0 to 2 oktas), SCT (3 to 4), BKN (5 to 7), OVC (8), SKC (no cloud).",
+            "Temperature and dew point in whole degrees C. M means minus (M03/M05 is -3 and -5).",
             "Altimeter: A followed by inches of mercury without the decimal (A2985 is 29.85).",
-            "Remarks (RMK): extra detail such as cloud layers in oktas (SC6AC2) and sea level pressure (SLP112 is 1011.2 hPa)."
+            "Remarks (RMK): extra detail such as cloud layers in oktas (SC6AC2) and sea level pressure (SLP112 is 1011.2 hPa). To decode: if the three digits start with 7, 8 or 9, put a 9 in front; if they start with 0, 1, 2 or 3, put 10 in front (SLP134 is 1013.4 hPa)."
           ]
         },
         {
@@ -34,7 +34,7 @@
           ]
         },
         {
-          "note": "METAR winds are true. Winds given by the tower or ATIS are magnetic. Remember the difference when converting for runways."
+          "note": "METAR and SPECI winds are in degrees true. Always check whether a wind source is true or magnetic before using it for a runway."
         }
       ],
       "terms": [
@@ -72,7 +72,7 @@
             "Runway heading"
           ],
           "a": 0,
-          "e": "METAR winds are reported in degrees true. Tower and ATIS winds are magnetic."
+          "e": "MANOBS 3.2.1: wind direction is reported with respect to true north in METAR and SPECI."
         },
         {
           "q": "What does 'VV003' mean?",
@@ -94,7 +94,7 @@
             "Visibility of 2.9 miles with cloud at 2,000 ft"
           ],
           "a": 0,
-          "e": "A is followed by inches of mercury with the decimal omitted."
+          "e": "NAV CANADA guide: the letter A prefixes the 4-digit group, which is inches of mercury; A2992 is 29.92 inHg."
         },
         {
           "q": "What defines the ceiling?",
@@ -105,7 +105,7 @@
             "The average height of all the cloud layers in the observation"
           ],
           "a": 0,
-          "e": "FEW and SCT layers do not constitute a ceiling."
+          "e": "MANOBS 7.2.7: ceiling is the lowest layer aloft reported as broken (BKN) or overcast (OVC), or the vertical visibility (VV). FEW and SCT layers do not constitute a ceiling."
         },
         {
           "q": "In a METAR, what does the group 'BKN012' mean?",
@@ -116,7 +116,7 @@
             "Overcast at 1,200 m"
           ],
           "a": 0,
-          "e": "Cloud heights are in hundreds of feet above ground level: 012 = 1,200 ft."
+          "e": "Heights are in hundreds of feet. At airports they are measured from the official aerodrome level (MANOBS 7.3.1). 012 = 1,200 ft."
         },
         {
           "q": "What does '18015G25KT' report?",
@@ -173,12 +173,24 @@
           "a": 0,
           "e": "SPECI reports are special reports after significant changes."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "MANOBS 8th ed. Amendment 3: 2.5 (METAR and SPECI), 3.2.1 (wind, two-minute mean, true), 4.5.1 (visibility in SM), 7.2.7 (ceiling), 7.3.1 (cloud reference level)",
+          "NAV CANADA Aviation Weather Services Guide (2017): METAR decode, oktas ranges, M prefix, A group in inHg, intensity qualifiers, SLP decoding",
+          "Transport Canada AIM MET 1.2.1: METARs hourly on the hour"
+        ],
+        "unverified": [
+          "The SPECI criteria list (MANOBS 11.2.3) could not be opened with the tools used, so the lesson only says SPECIs are issued when conditions cross specified criteria.",
+          "Whether tower and ATIS winds are magnetic was not confirmed in a Canadian publication, so that statement was removed."
+        ]
+      }
     },
     {
       "title": "TAF decoding and amendment criteria",
       "lesson": [
-        "A TAF is an aerodrome forecast. It applies to the area within about 5 nautical miles of the aerodrome reference point. Validity periods are typically 24 or 30 hours, issued several times a day. Check the current NAV CANADA and ECCC documents for exact details.",
+        "A TAF is an aerodrome forecast. It applies to conditions within 5 nautical miles of the centre of the runway complex, depending on local terrain. TAFs are prepared four times daily with a validity of up to 30 hours. Issue times vary by site (they are listed in the CFS), and the next issue time is stated at the end of each TAF. Check current MANAIR and AIM for exact details.",
         {
           "formula": "TAF CYHZ 261140Z 2612/2712 27012KT P6SM FEW040 SCT100\n  FM261800 29015G25KT P6SM SCT040\n  BECMG 2700/2702 31008KT\n  TEMPO 2703/2706 3SM -SHRA BKN015"
         },
@@ -188,22 +200,22 @@
         {
           "list": [
             "Issue time (261140Z) and valid period (2612/2712: from 1200 UTC on the 26th to 1200 UTC on the 27th).",
-            "FM (from): a rapid change. A new complete forecast starting at the stated time replaces everything before it.",
-            "BECMG (becoming): a gradual change over the stated period. After the period, the new conditions persist until changed again.",
-            "TEMPO (temporary): temporary fluctuations lasting less than an hour at a time and, in total, less than half the stated period. Conditions return to the prevailing forecast.",
-            "PROB30 or PROB40: probability of 30 or 40% for the stated conditions."
+            "FM (from): a rapid, permanent change written FM followed by day, hour and minute (FM300130). All forecast elements must be restated, and the new forecast replaces everything before it.",
+            "BECMG (becoming): a permanent change expected over one to four hours, written as a period (BECMG 2906/2908). After the period, the new conditions persist until changed again.",
+            "TEMPO (temporary): temporary fluctuations lasting less than an hour at a time and, in total, no more than half the stated period (TEMPO 1306/1312). TEMPO does not change the wind or wind shear.",
+            "PROB30 or PROB40: the probability that the stated conditions occur during the period. It is not the fraction of the time they last. PROB does not change the wind or wind shear."
           ]
         },
         {
           "h": "Visibility"
         },
-        "P6SM means visibility greater than 6 statute miles.",
+        "P6SM means visibility greater than 6 statute miles. NSW (no significant weather) can be used when significant weather is no longer expected. VV is vertical visibility for an obscured sky.",
         {
           "h": "Amendments"
         },
-        "A forecast is amended when conditions are expected to differ from the forecast in important ways, for example when ceiling or visibility will cross an operationally significant threshold. Look up the specific amendment criteria in your course documents.",
+        "An amended TAF is marked TAF AMD. Per the Transport Canada AIM, forecasts are amended when significant changes in ceiling or visibility occur, and also for significant changes in wind or present weather. They are also amended when freezing precipitation begins or is expected, even if it was not forecast. The exact thresholds are in MANAIR Chapter 2.",
         {
-          "note": "When decoding, read the base forecast first, then apply each change group in order."
+          "note": "When decoding, read the base forecast first, then apply each change group in order. A validity period that ends at midnight UTC is coded 24 (2912/2924); one that begins at midnight is coded 00 (3000/3018). For alternate planning, a TAF with BECMG or TEMPO must meet alternate minima, while PROB conditions need only meet landing minima (NAV CANADA guide)."
         }
       ],
       "terms": [
@@ -213,11 +225,11 @@
         ],
         [
           "BECMG",
-          "Becoming: gradual change over a period."
+          "Becoming: permanent change expected over one to four hours."
         ],
         [
           "TEMPO",
-          "Temporary: short-lived fluctuations."
+          "Temporary: fluctuations under one hour at a time, no more than half the period in total."
         ],
         [
           "P6SM",
@@ -245,7 +257,7 @@
             "A probability of change between thirty and forty percent"
           ],
           "a": 0,
-          "e": "BECMG covers a transition period, after which the new conditions persist."
+          "e": "NAV CANADA guide: BECMG is a permanent change expected over one to four hours. After the period the new conditions persist."
         },
         {
           "q": "What does TEMPO indicate?",
@@ -256,7 +268,7 @@
             "A reduction in visibility only"
           ],
           "a": 0,
-          "e": "TEMPO conditions are temporary and expected to occur for less than half of the stated period in total."
+          "e": "NAV CANADA guide: TEMPO fluctuations last under one hour at a time and cover no more than half the forecast period. TEMPO does not change wind."
         },
         {
           "q": "What does P6SM mean in a TAF?",
@@ -278,7 +290,7 @@
             "Only the runway surface and its immediate approach lights"
           ],
           "a": 0,
-          "e": "TAFs apply to the vicinity of the aerodrome, about a 5 NM radius."
+          "e": "AIM MET 3.1: TAFs relate to conditions within 5 NM of the centre of the runway complex, depending on local terrain."
         },
         {
           "q": "A TAF valid period of '2412/2512' covers:",
@@ -289,7 +301,7 @@
             "24 hours starting at local noon"
           ],
           "a": 0,
-          "e": "The format is DDHH/DDHH in UTC."
+          "e": "The format is DDHH/DDHH in UTC. A period ending at midnight UTC is coded 24 (for example 2912/2924)."
         },
         {
           "q": "What does 'TEMPO' in a TAF indicate?",
@@ -300,7 +312,7 @@
             "The cancellation of the forecast and its replacement"
           ],
           "a": 0,
-          "e": "TEMPO groups cover transient conditions in less than half the period."
+          "e": "NAV CANADA guide: TEMPO is used when the condition lasts under one hour at a time and covers no more than half the period."
         },
         {
           "q": "What does 'BECMG' mean?",
@@ -311,7 +323,7 @@
             "An amendment to the forecast issued after a major change"
           ],
           "a": 0,
-          "e": "BECMG indicates a change over a defined interval."
+          "e": "NAV CANADA guide: BECMG is a permanent change expected over one to four hours."
         },
         {
           "q": "'PROB30' in a TAF signals:",
@@ -322,7 +334,7 @@
             "A visibility of 30 km in the stated period"
           ],
           "a": 0,
-          "e": "PROB gives probability of occurrence of the following conditions."
+          "e": "NAV CANADA guide: PROB30 or PROB40 is the probability that the condition occurs during the period, not the fraction of time it lasts."
         },
         {
           "q": "An amendment (AMD) is issued when:",
@@ -333,7 +345,7 @@
             "Only when winds at the airport are calm for an hour"
           ],
           "a": 0,
-          "e": "Amendments update a forecast that is not valid."
+          "e": "AIM MET 3.1: TAFs are amended when significant changes in ceiling or visibility occur, and also for significant changes in wind or present weather."
         },
         {
           "q": "TAF cloud and visibility values are expressed:",
@@ -346,7 +358,17 @@
           "a": 0,
           "e": "TAF uses the same codes as METAR for wind, visibility and cloud."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "Transport Canada AIM MET 1.3.3 and 3.1: 5 NM radius, four times daily, up to 30 hours, amendment rules",
+          "NAV CANADA Aviation Weather Services Guide (2017): FM, BECMG, TEMPO, PROB, P6SM, NSW, VV, 2400/0000 coding, alternate minima, header and period examples"
+        ],
+        "unverified": [
+          "MANAIR Chapter 2 (the full TAF standards and amendment thresholds) could not be opened with the tools used."
+        ]
+      }
     },
     {
       "title": "Surface analysis and prognostic charts",
@@ -357,9 +379,9 @@
         },
         {
           "list": [
-            "Isobars: lines of equal sea level pressure, usually every 4 hPa. Tight spacing means strong winds. Labels often show only the last two digits (for example 96 is 996 hPa, 04 is 1004 hPa).",
+            "Isobars: lines of equal sea level pressure, analysed at 4 hPa intervals from a 1000 hPa reference value. The national surface analysis is produced four times a day, valid 00, 06, 12 and 18 UTC. Tight spacing means strong winds. Labels often show only the last two digits (for example 96 is 996 hPa, 04 is 1004 hPa).",
             "H and L: high and low centres, with central pressure.",
-            "Fronts: cold (blue triangles), warm (red semicircles), occluded (purple), stationary (alternating).",
+            "Fronts: cold (blue line with barbs), warm (red line with half circles), occluded (usually purple) and stationary (usually alternating red and blue). Check the legend on your chart.",
             "Troughs and ridges: lines of curvature of the isobars.",
             "Station models: plotted observations at each station."
           ]
@@ -485,7 +507,7 @@
             "100 hPa"
           ],
           "a": 0,
-          "e": "Four hPa spacing is standard on many analyses."
+          "e": "NAV CANADA guide: isobars are analysed at 4 hPa intervals from a 1000 hPa reference value."
         },
         {
           "q": "A prog chart shows:",
@@ -499,15 +521,15 @@
           "e": "Prognostic charts show the expected future state."
         },
         {
-          "q": "A trough on the surface is marked by:",
+          "q": "On a Canadian surface analysis, how is a warm front drawn?",
           "c": [
-            "A dashed line",
-            "A heavy blue line",
-            "A circle",
-            "A zigzag line"
+            "As a red line with half circles",
+            "As a blue line with barbs",
+            "As a dashed black line with no symbols",
+            "As a purple line with half circles and barbs"
           ],
           "a": 0,
-          "e": "A trough line is typically dashed."
+          "e": "NAV CANADA guide: fronts are shown as blue lines with barbs (cold front) or red lines with half circles (warm front)."
         },
         {
           "q": "A station model's wind barb shows direction from:",
@@ -520,18 +542,28 @@
           "a": 0,
           "e": "The shaft points into the wind."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NAV CANADA Aviation Weather Services Guide (2017): isobars at 4 hPa from 1000 hPa, analysis times, cold and warm front symbols, SLP decoding rule"
+        ],
+        "unverified": [
+          "Occluded and stationary front colours, the dashed trough line, the last-two-digits isobar labels and the station model layout are common charting practice, not confirmed in a fetched source.",
+          "The NAV CANADA guide's symbol pages are images, so line styles could not be read."
+        ]
+      }
     },
     {
       "title": "Upper-air charts (850, 700, 500, 250 hPa)",
       "lesson": [
-        "Upper-air charts are drawn for constant pressure levels. They show geopotential height (the height at which that pressure is found), temperature, dew point depression and wind.",
+        "Upper-air charts are drawn for constant pressure levels, prepared twice daily at 00 and 12 UTC. They show geopotential height (the height at which that pressure is found), temperature, dew point depression and wind.",
         {
           "list": [
-            "850 hPa (about 1,500 m): low-level temperature and moisture. Warm and cold advection, the 0 C line, low-level jets, and rain versus snow guidance.",
-            "700 hPa (about 3,000 m): mid-level moisture and ascent. Cloud layers, steering of low-level systems, and the capping inversion for convection.",
-            "500 hPa (about 5,500 m): the main steering level. Troughs, ridges, vorticity, and cut-off lows. Closely spaced contours mean strong winds.",
-            "300 and 250 hPa (about 9,000 to 10,400 m): jet streams, upper divergence, tropopause-level features. Isotachs show wind speed maxima."
+            "850 hPa (about 1,500 m, 5,000 ft ASL): low-level temperature and moisture. Warm and cold advection, the 0 C line, low-level jets, and rain versus snow guidance.",
+            "700 hPa (about 3,000 m, 10,000 ft ASL): mid-level moisture and ascent. Cloud layers, steering of low-level systems, and the capping inversion for convection.",
+            "500 hPa (about 5,500 m, 18,000 ft ASL): the main steering level. Troughs, ridges, vorticity, and cut-off lows. Closely spaced contours mean strong winds.",
+            "250 hPa (about 10,400 m, 34,000 ft ASL) and nearby 300 hPa (about 9,000 m): jet streams, upper divergence, tropopause-level features. Isotachs show wind speed maxima."
           ]
         },
         {
@@ -661,7 +693,7 @@
             "3,000 m"
           ],
           "a": 0,
-          "e": "Typical height ranges from 5,400 to 5,700 m."
+          "e": "500 hPa is about 18,000 ft ASL (NAV CANADA guide), roughly 5,500 m."
         },
         {
           "q": "The 700 hPa level is commonly used to assess:",
@@ -685,7 +717,16 @@
           "a": 0,
           "e": "850 hPa temperatures are used for precipitation-type guidance."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NAV CANADA Aviation Weather Services Guide (2017): constant pressure charts at 00Z and 12Z; 850 hPa 5,000 ft, 700 hPa 10,000 ft, 500 hPa 18,000 ft, 250 hPa 34,000 ft ASL; contour spacing and wind speed"
+        ],
+        "unverified": [
+          "Chart-reading tips (advection, dew point depression, use of each level) are standard practice, not checked in a fetched source."
+        ]
+      }
     },
     {
       "title": "Numerical weather prediction (GEM, GFS, ECMWF) and limitations",
@@ -696,12 +737,12 @@
         },
         {
           "list": [
-            "GEM (Global Environmental Multiscale model): run by the Canadian Meteorological Centre of ECCC. Global, regional and high-resolution versions (the high-resolution regional system runs at a few km).",
+            "GEM (Global Environmental Multiscale model): ECCC's atmospheric model. The Global Deterministic Prediction System (GDPS) runs at about 15 km out to 10 days, twice a day. The High Resolution Deterministic Prediction System (HRDPS Continental) runs at about 2.5 km over most of Canada out to 48 hours, up to four times a day.",
             "GFS: the US National Weather Service global model.",
             "ECMWF: the European Centre for Medium-Range Weather Forecasts. Widely regarded as one of the most skillful global models."
           ]
         },
-        "Resolutions and run schedules change as models are upgraded. Check the current documentation.",
+        "Resolutions and run schedules change as models are upgraded. The ECCC figures above were read from ECCC's data catalogue on 2026-10-26. Check the current documentation.",
         {
           "h": "Limitations"
         },
@@ -745,7 +786,7 @@
             "UKMO Unified Model"
           ],
           "a": 0,
-          "e": "The Global Environmental Multiscale model is run at the Canadian Meteorological Centre."
+          "e": "The Global Environmental Multiscale (GEM) model is ECCC's atmospheric model; ECCC's Meteorological Service of Canada produces its forecasts."
         },
         {
           "q": "Why does forecast skill decrease with lead time?",
@@ -800,7 +841,7 @@
             "The UK Met Office in Exeter, England"
           ],
           "a": 0,
-          "e": "GEM stands for Global Environmental Multiscale model."
+          "e": "GEM stands for Global Environmental Multiscale model. It is the atmospheric model used in ECCC's prediction systems."
         },
         {
           "q": "A model ensemble is a set of forecasts that:",
@@ -847,17 +888,27 @@
           "e": "Small errors amplify, limiting predictability."
         },
         {
-          "q": "Which model is generally considered to run on a global grid and a 6-hourly cycle?",
+          "q": "What is the horizontal resolution of ECCC's HRDPS (continental) as listed in ECCC's data catalogue?",
           "c": [
-            "GFS",
-            "A local radar model",
-            "A buoy model",
-            "A station model"
+            "About 2.5 km",
+            "About 15 km",
+            "About 50 km",
+            "About 100 m"
           ],
           "a": 0,
-          "e": "GFS is run four times per day globally."
+          "e": "ECCC's data catalogue lists HRDPS Continental at about 2.5 km, up to 48 hours, up to four runs a day. The global system (GDPS) is 15 km. Resolutions change with upgrades."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "ECCC data catalogue (WIS2), HRDPS Continental: about 2.5 km, up to 48 h, up to four runs per day",
+          "ECCC data catalogue (WIS2), GDPS: 15 km, 10 days, twice a day, GEM as the atmosphere component"
+        ],
+        "unverified": [
+          "GFS and ECMWF descriptions, the ensemble and limitation points, and the 'about two weeks' predictability limit are general knowledge, not checked in a fetched source."
+        ]
+      }
     },
     {
       "title": "Forecast verification and persistence",
@@ -1047,7 +1098,16 @@
           "a": 0,
           "e": "MAE = (2+1+3+0)/4 = 1.5."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NWS Glossary of Forecast Verification Metrics: POD, FAR, bias, MAE, RMSE, skill score, persistence and climatology as reference forecasts"
+        ],
+        "unverified": [
+          "The CSI formula (hits / (hits + misses + false alarms)) is standard but was not stated in the source that was read."
+        ]
+      }
     }
   ]
 }
