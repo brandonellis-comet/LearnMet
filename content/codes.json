@@ -1,0 +1,657 @@
+{
+  "title": "8. Codes, Charts and Forecasting",
+  "topics": [
+    {
+      "title": "METAR / SPECI decoding",
+      "lesson": [
+        "A METAR is the routine hourly aerodrome weather report. A SPECI is a special report issued between hours when conditions change significantly. This is the Canadian format. Always confirm details against the current Manual of Surface Weather Observations (MANOBS) and your course material.",
+        {
+          "formula": "METAR CYHZ 261200Z 27015G25KT 15SM -RA BKN020 OVC060 08/06 A2985 RMK SC6AC2 SLP112"
+        },
+        {
+          "h": "Group by group"
+        },
+        {
+          "list": [
+            "Station: ICAO identifier (CYHZ is Halifax Stanfield).",
+            "Date and time: day of month and UTC time (261200Z is the 26th at 1200 UTC).",
+            "Wind: direction in degrees TRUE, speed in knots, gusts after G (27015G25KT). 00000KT is calm. VRB means variable.",
+            "Visibility: statute miles in Canada, with fractions (1/2SM, 1 1/2SM).",
+            "Present weather: intensity (- light, + heavy), then type (RA, SN, FG, BR, TS...).",
+            "Cloud: amount and height in hundreds of feet above ground (BKN020 is broken at 2,000 ft). Amounts: FEW (1 to 2 oktas), SCT (3 to 4), BKN (5 to 7), OVC (8).",
+            "Temperature and dew point in C. M means minus (M03/M05 is -3 and -5).",
+            "Altimeter: A followed by inches of mercury without the decimal (A2985 is 29.85).",
+            "Remarks (RMK): extra detail such as cloud layers in oktas (SC6AC2) and sea level pressure (SLP112 is 1011.2 hPa)."
+          ]
+        },
+        {
+          "h": "Key terms"
+        },
+        {
+          "list": [
+            "Ceiling: height of the lowest broken or overcast layer, or the vertical visibility when the sky is obscured.",
+            "VV003: obscured sky with vertical visibility of 300 ft."
+          ]
+        },
+        {
+          "note": "METAR winds are true. Winds given by the tower or ATIS are magnetic. Remember the difference when converting for runways."
+        }
+      ],
+      "terms": [
+        [
+          "SPECI",
+          "Special report issued when conditions change significantly between routine METARs."
+        ],
+        [
+          "Ceiling",
+          "Lowest broken or overcast layer, or vertical visibility."
+        ],
+        [
+          "Oktas",
+          "Eighths of the sky covered by cloud."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "In a METAR, what does 'M03/M05' mean?",
+          "c": [
+            "Temperature -3 C, dew point -5 C",
+            "Temperature 3 C, dew point 5 C",
+            "Temperature -5 C, dew point -3 C",
+            "Mist at 3 and 5 km"
+          ],
+          "a": 0,
+          "e": "M indicates a negative value. The first number is temperature, the second is dew point."
+        },
+        {
+          "q": "Wind direction in a METAR is referenced to:",
+          "c": [
+            "True north",
+            "Magnetic north",
+            "Grid north",
+            "Runway heading"
+          ],
+          "a": 0,
+          "e": "METAR winds are reported in degrees true. Tower and ATIS winds are magnetic."
+        },
+        {
+          "q": "What does 'VV003' mean?",
+          "c": [
+            "Obscured sky with a vertical visibility of 300 ft",
+            "Visibility 3 miles with variable winds at 3 kt",
+            "Few clouds at 300 ft above ground with good visibility",
+            "Variable wind direction of 003 degrees at low speed"
+          ],
+          "a": 0,
+          "e": "VV indicates vertical visibility into an obscured sky, in hundreds of feet."
+        },
+        {
+          "q": "An altimeter group reads A2992. What does that mean?",
+          "c": [
+            "29.92 inches of mercury",
+            "2992 hectopascals at sea level",
+            "A pressure altitude of 2,992 feet",
+            "Visibility of 2.9 miles with cloud at 2,000 ft"
+          ],
+          "a": 0,
+          "e": "A is followed by inches of mercury with the decimal omitted."
+        },
+        {
+          "q": "What defines the ceiling?",
+          "c": [
+            "The lowest broken or overcast layer, or the vertical visibility",
+            "The lowest cloud layer reported at any amount, including few",
+            "The highest broken or overcast layer reported by the observer",
+            "The average height of all the cloud layers in the observation"
+          ],
+          "a": 0,
+          "e": "FEW and SCT layers do not constitute a ceiling."
+        }
+      ]
+    },
+    {
+      "title": "TAF decoding and amendment criteria",
+      "lesson": [
+        "A TAF is an aerodrome forecast. It applies to the area within about 5 nautical miles of the aerodrome reference point. Validity periods are typically 24 or 30 hours, issued several times a day. Check the current NAV CANADA and ECCC documents for exact details.",
+        {
+          "formula": "TAF CYHZ 261140Z 2612/2712 27012KT P6SM FEW040 SCT100\n  FM261800 29015G25KT P6SM SCT040\n  BECMG 2700/2702 31008KT\n  TEMPO 2703/2706 3SM -SHRA BKN015"
+        },
+        {
+          "h": "Time and change groups"
+        },
+        {
+          "list": [
+            "Issue time (261140Z) and valid period (2612/2712: from 1200 UTC on the 26th to 1200 UTC on the 27th).",
+            "FM (from): a rapid change. A new complete forecast starting at the stated time replaces everything before it.",
+            "BECMG (becoming): a gradual change over the stated period. After the period, the new conditions persist until changed again.",
+            "TEMPO (temporary): temporary fluctuations lasting less than an hour at a time and, in total, less than half the stated period. Conditions return to the prevailing forecast.",
+            "PROB30 or PROB40: probability of 30 or 40% for the stated conditions."
+          ]
+        },
+        {
+          "h": "Visibility"
+        },
+        "P6SM means visibility greater than 6 statute miles.",
+        {
+          "h": "Amendments"
+        },
+        "A forecast is amended when conditions are expected to differ from the forecast in important ways, for example when ceiling or visibility will cross an operationally significant threshold. Look up the specific amendment criteria in your course documents.",
+        {
+          "note": "When decoding, read the base forecast first, then apply each change group in order."
+        }
+      ],
+      "terms": [
+        [
+          "FM",
+          "From: abrupt, complete change from the stated time."
+        ],
+        [
+          "BECMG",
+          "Becoming: gradual change over a period."
+        ],
+        [
+          "TEMPO",
+          "Temporary: short-lived fluctuations."
+        ],
+        [
+          "P6SM",
+          "Visibility more than 6 statute miles."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "What does an FM group in a TAF indicate?",
+          "c": [
+            "A rapid change with a new complete forecast from the stated time",
+            "A gradual change that develops slowly during the stated period",
+            "A short-lived fluctuation that returns to the previous conditions",
+            "A probability forecast that applies for the next six hours only"
+          ],
+          "a": 0,
+          "e": "FM replaces all previous conditions starting at the stated time."
+        },
+        {
+          "q": "What does BECMG mean?",
+          "c": [
+            "A gradual change during the stated period",
+            "A sudden change that replaces all earlier groups",
+            "A brief fluctuation lasting under an hour each time",
+            "A probability of change between thirty and forty percent"
+          ],
+          "a": 0,
+          "e": "BECMG covers a transition period, after which the new conditions persist."
+        },
+        {
+          "q": "What does TEMPO indicate?",
+          "c": [
+            "Temporary fluctuations, each lasting less than an hour",
+            "A permanent change",
+            "A change that always lasts more than 2 hours",
+            "A reduction in visibility only"
+          ],
+          "a": 0,
+          "e": "TEMPO conditions are temporary and expected to occur for less than half of the stated period in total."
+        },
+        {
+          "q": "What does P6SM mean in a TAF?",
+          "c": [
+            "Visibility greater than 6 statute miles",
+            "Visibility less than 6 statute miles in precipitation",
+            "A six percent probability of reduced visibility",
+            "Pressure falling six hectopascals in the next hour"
+          ],
+          "a": 0,
+          "e": "P means plus, so more than 6 statute miles."
+        },
+        {
+          "q": "What area does a TAF cover?",
+          "c": [
+            "The area within about 5 NM of the aerodrome",
+            "The entire province in which the aerodrome is located",
+            "An area of about 100 NM around the aerodrome",
+            "Only the runway surface and its immediate approach lights"
+          ],
+          "a": 0,
+          "e": "TAFs apply to the vicinity of the aerodrome, about a 5 NM radius."
+        }
+      ]
+    },
+    {
+      "title": "Surface analysis and prognostic charts",
+      "lesson": [
+        "A surface analysis chart shows the observed pattern of pressure, fronts and weather at a fixed time. A prognostic chart ('prog') shows the forecast pattern at a future time.",
+        {
+          "h": "Chart elements"
+        },
+        {
+          "list": [
+            "Isobars: lines of equal sea level pressure, usually every 4 hPa. Tight spacing means strong winds. Labels often show only the last two digits (for example 96 is 996 hPa, 04 is 1004 hPa).",
+            "H and L: high and low centres, with central pressure.",
+            "Fronts: cold (blue triangles), warm (red semicircles), occluded (purple), stationary (alternating).",
+            "Troughs and ridges: lines of curvature of the isobars.",
+            "Station models: plotted observations at each station."
+          ]
+        },
+        {
+          "h": "Station model basics"
+        },
+        {
+          "list": [
+            "Temperature: upper left. Dew point: lower left.",
+            "Pressure: upper right, in tenths of hPa with the leading digit dropped (132 means 1013.2; 987 means 998.7).",
+            "Pressure tendency: lower right.",
+            "Sky cover: the circle at the centre, filled by the amount of cloud cover.",
+            "Wind barb: the staff points toward the direction the wind comes from. Each full barb is 10 kt, half barb 5 kt, pennant (triangle) 50 kt."
+          ]
+        },
+        {
+          "h": "Reading wind from the chart"
+        },
+        "Isobar spacing gives a rough guide to wind speed. Winds blow roughly parallel to the isobars, slightly across them toward lower pressure near the surface. Low pressure on the left in the Northern Hemisphere.",
+        {
+          "note": "A prog is a model-based forecast reviewed by a forecaster. Compare the prog with the latest analysis to check how well the model captured the current situation."
+        }
+      ],
+      "terms": [
+        [
+          "Analysis",
+          "Chart of observed conditions at a specific time."
+        ],
+        [
+          "Prog",
+          "Prognostic chart: forecast of future conditions."
+        ],
+        [
+          "Station model",
+          "Standard arrangement of plotted weather elements around a station."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "What does closely spaced isobars on a surface chart indicate?",
+          "c": [
+            "Strong winds",
+            "Weak winds",
+            "A cold front only",
+            "Clear skies"
+          ],
+          "a": 0,
+          "e": "Closer spacing means a steeper pressure gradient."
+        },
+        {
+          "q": "A station model shows pressure '132'. What is the sea level pressure?",
+          "c": [
+            "1013.2 hPa",
+            "132 hPa",
+            "1132 hPa",
+            "913.2 hPa"
+          ],
+          "a": 0,
+          "e": "The leading 10 is dropped, so 132 means 1013.2 hPa."
+        },
+        {
+          "q": "On a wind barb, what does a pennant (triangle) represent?",
+          "c": [
+            "50 kt",
+            "10 kt",
+            "5 kt",
+            "100 kt"
+          ],
+          "a": 0,
+          "e": "A pennant is 50 kt, a full barb 10 kt, and a half barb 5 kt."
+        },
+        {
+          "q": "What is a prognostic chart?",
+          "c": [
+            "A forecast chart of expected conditions",
+            "A chart of observed conditions",
+            "A satellite picture",
+            "A radar image"
+          ],
+          "a": 0,
+          "e": "Progs show forecast fronts, pressure and weather at a future time."
+        },
+        {
+          "q": "On a wind barb, to which direction does the staff point?",
+          "c": [
+            "The direction the wind is coming from",
+            "The direction the wind is going to",
+            "North always",
+            "The nearest low pressure"
+          ],
+          "a": 0,
+          "e": "Wind direction is always where the wind comes from."
+        }
+      ]
+    },
+    {
+      "title": "Upper-air charts (850, 700, 500, 250 hPa)",
+      "lesson": [
+        "Upper-air charts are drawn for constant pressure levels. They show geopotential height (the height at which that pressure is found), temperature, dew point depression and wind.",
+        {
+          "list": [
+            "850 hPa (about 1,500 m): low-level temperature and moisture. Warm and cold advection, the 0 C line, low-level jets, and rain versus snow guidance.",
+            "700 hPa (about 3,000 m): mid-level moisture and ascent. Cloud layers, steering of low-level systems, and the capping inversion for convection.",
+            "500 hPa (about 5,500 m): the main steering level. Troughs, ridges, vorticity, and cut-off lows. Closely spaced contours mean strong winds.",
+            "300 and 250 hPa (about 9,000 to 10,400 m): jet streams, upper divergence, tropopause-level features. Isotachs show wind speed maxima."
+          ]
+        },
+        {
+          "h": "Reading the chart"
+        },
+        {
+          "list": [
+            "Height contours (in decametres, dam). Flow is parallel to the contours with low heights on the left in the Northern Hemisphere.",
+            "Wind crossing isotherms: if wind blows from warm toward cold, there is warm advection. Cold toward warm is cold advection.",
+            "Dew point depression (temperature minus dew point): a small value (for example 3 C or less) means moist, probably cloud.",
+            "Closely spaced contours mean strong wind, and jets appear where speeds are highest."
+          ]
+        },
+        {
+          "note": "Use 850 for temperature and precipitation type, 700 for moisture and ascent, 500 for the large-scale pattern, and 250 for the jet."
+        }
+      ],
+      "terms": [
+        [
+          "Geopotential height",
+          "Height of a pressure surface above sea level, adjusted for gravity variations."
+        ],
+        [
+          "Dew point depression",
+          "Temperature minus dew point at a point."
+        ],
+        [
+          "Isotach",
+          "Line of equal wind speed."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "Which chart is most commonly used to identify steering flow, troughs and ridges?",
+          "c": [
+            "500 hPa",
+            "850 hPa",
+            "Surface chart",
+            "100 hPa"
+          ],
+          "a": 0,
+          "e": "The 500 hPa level is near the middle of the atmosphere's mass."
+        },
+        {
+          "q": "Which chart is best for locating jet streams?",
+          "c": [
+            "250 hPa",
+            "850 hPa",
+            "700 hPa",
+            "Surface analysis"
+          ],
+          "a": 0,
+          "e": "250 hPa is near the tropopause where jets are strongest."
+        },
+        {
+          "q": "850 hPa charts are especially useful for:",
+          "c": [
+            "Low-level temperature advection and precipitation type",
+            "Locating the jet stream core and upper-level divergence",
+            "Measuring stratospheric ozone and tropopause height",
+            "Finding the position of the tropopause break aloft"
+          ],
+          "a": 0,
+          "e": "They show low-level temperatures and the 0 C line."
+        },
+        {
+          "q": "If wind blows across isotherms from warm toward cold, what is occurring?",
+          "c": [
+            "Warm air advection",
+            "Cold air advection",
+            "No advection",
+            "Frontolysis"
+          ],
+          "a": 0,
+          "e": "Warm air is being carried toward colder air."
+        },
+        {
+          "q": "A small dew point depression on a 700 hPa chart suggests:",
+          "c": [
+            "Moist air, likely cloud",
+            "Very dry air",
+            "Strong winds",
+            "A temperature inversion at 700 hPa only"
+          ],
+          "a": 0,
+          "e": "Small T minus Td means near saturation."
+        }
+      ]
+    },
+    {
+      "title": "Numerical weather prediction (GEM, GFS, ECMWF) and limitations",
+      "lesson": [
+        "Numerical weather prediction (NWP) solves the equations of fluid motion and thermodynamics on a grid to forecast the atmosphere. Forecasters use model output as guidance, not as the final answer.",
+        {
+          "h": "Main global and regional models"
+        },
+        {
+          "list": [
+            "GEM (Global Environmental Multiscale model): run by the Canadian Meteorological Centre of ECCC. Global, regional and high-resolution versions (the high-resolution regional system runs at a few km).",
+            "GFS: the US National Weather Service global model.",
+            "ECMWF: the European Centre for Medium-Range Weather Forecasts. Widely regarded as one of the most skillful global models."
+          ]
+        },
+        "Resolutions and run schedules change as models are upgraded. Check the current documentation.",
+        {
+          "h": "Limitations"
+        },
+        {
+          "list": [
+            "Chaos: tiny errors in the starting state grow over time, so forecast skill falls with lead time. Little skill is expected beyond about two weeks.",
+            "Parameterization: processes smaller than the grid (convection, cloud microphysics, turbulence) are approximated.",
+            "Resolution: coarse models smooth out small features. A high-resolution model can resolve thunderstorms, terrain effects and sea breezes better, but it can also be wrong in more detail.",
+            "Initial conditions: observations are limited, especially over oceans."
+          ]
+        },
+        {
+          "h": "Ensembles"
+        },
+        "An ensemble runs the model many times with slightly different starting conditions or physics. The spread among members shows uncertainty. Tight agreement means higher confidence. Large spread means low confidence and several possible outcomes.",
+        {
+          "note": "Never rely on one model run. Compare models, check trends from run to run, and use ensembles to judge confidence."
+        }
+      ],
+      "terms": [
+        [
+          "NWP",
+          "Numerical weather prediction."
+        ],
+        [
+          "Parameterization",
+          "Representation of processes too small to resolve on the model grid."
+        ],
+        [
+          "Ensemble",
+          "Set of forecasts from slightly different starting conditions or physics."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "Which operational weather model is run by Canada's ECCC?",
+          "c": [
+            "GEM",
+            "GFS",
+            "ECMWF IFS",
+            "UKMO Unified Model"
+          ],
+          "a": 0,
+          "e": "The Global Environmental Multiscale model is run at the Canadian Meteorological Centre."
+        },
+        {
+          "q": "Why does forecast skill decrease with lead time?",
+          "c": [
+            "Small initial errors grow because the atmosphere is chaotic",
+            "Satellites gradually lose accuracy as the forecast period grows",
+            "Observations are removed from the model after the first day",
+            "Computers become slower as the model runs further ahead in time"
+          ],
+          "a": 0,
+          "e": "Chaotic growth of small errors limits predictability."
+        },
+        {
+          "q": "What is the purpose of ensemble forecasting?",
+          "c": [
+            "To estimate forecast uncertainty from multiple runs",
+            "To replace all observations with model data at the initial time",
+            "To raise the model resolution everywhere without extra cost",
+            "To remove all errors from the forecast at long lead times"
+          ],
+          "a": 0,
+          "e": "Spread among members indicates how confident to be."
+        },
+        {
+          "q": "Why are parameterizations needed in NWP?",
+          "c": [
+            "Some processes are smaller than the model grid",
+            "Observations are not available for the whole globe",
+            "Satellite data cannot be used in the model equations",
+            "The equations of motion are not known for large-scale flow"
+          ],
+          "a": 0,
+          "e": "Convection, microphysics and turbulence cannot be resolved directly and are approximated."
+        },
+        {
+          "q": "If ensemble members disagree widely, forecast confidence should be:",
+          "c": [
+            "Low",
+            "High",
+            "Unaffected",
+            "Equal to climatology only"
+          ],
+          "a": 0,
+          "e": "Large spread shows the forecast is sensitive and uncertain."
+        }
+      ]
+    },
+    {
+      "title": "Forecast verification and persistence",
+      "lesson": [
+        "Verification checks how good forecasts are. It guides improvement and shows when to trust or discount a source.",
+        {
+          "h": "Reference forecasts"
+        },
+        {
+          "list": [
+            "Persistence: assume tomorrow will be like today. Very hard to beat for the first few hours in some elements, and a useful baseline.",
+            "Climatology: use the long-term average for the date. A baseline for longer ranges."
+          ]
+        },
+        {
+          "h": "Yes/no event scores (from a contingency table)"
+        },
+        {
+          "list": [
+            "Hits: event forecast and occurred. Misses: not forecast but occurred. False alarms: forecast but did not occur. Correct negatives: neither.",
+            "Probability of detection (POD) = hits / (hits + misses).",
+            "False alarm ratio (FAR) = false alarms / (hits + false alarms).",
+            "Critical success index (CSI) = hits / (hits + misses + false alarms)."
+          ]
+        },
+        {
+          "h": "Continuous variables"
+        },
+        {
+          "list": [
+            "Bias: average error. Shows consistent over or under forecasting.",
+            "Mean absolute error (MAE) and root mean square error (RMSE): size of typical errors. RMSE penalizes big misses more."
+          ]
+        },
+        {
+          "h": "Skill score"
+        },
+        {
+          "formula": "Skill = (score - reference score) / (perfect score - reference score)"
+        },
+        "A positive skill score means the forecast beat the reference. Zero means no better. Negative means worse.",
+        {
+          "h": "Percent correct can mislead"
+        },
+        "For rare events, a forecast of 'no' every day is right most of the time but has no use. Use POD, FAR and CSI for rare events.",
+        {
+          "note": "Verify against what matters to the user: thresholds like ceiling below 1,000 ft, not just average temperature error."
+        }
+      ],
+      "terms": [
+        [
+          "Persistence forecast",
+          "Forecast that current conditions will continue."
+        ],
+        [
+          "POD",
+          "Probability of detection."
+        ],
+        [
+          "FAR",
+          "False alarm ratio."
+        ],
+        [
+          "Skill score",
+          "Improvement over a reference forecast."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "What is a persistence forecast?",
+          "c": [
+            "A forecast that conditions will stay the same as now",
+            "A forecast built from the long-term average for the date",
+            "A forecast made by averaging an ensemble of model runs",
+            "A forecast produced by extrapolating radar echoes forward"
+          ],
+          "a": 0,
+          "e": "Persistence assumes no change from the current state."
+        },
+        {
+          "q": "How is probability of detection (POD) calculated?",
+          "c": [
+            "Hits / (hits + misses)",
+            "False alarms / (hits + false alarms)",
+            "Hits / (hits + false alarms)",
+            "Misses / total"
+          ],
+          "a": 0,
+          "e": "POD is the fraction of observed events that were forecast."
+        },
+        {
+          "q": "How is the false alarm ratio (FAR) calculated?",
+          "c": [
+            "False alarms / (hits + false alarms)",
+            "Hits / (hits + misses)",
+            "Misses / (hits + misses)",
+            "Correct negatives / total"
+          ],
+          "a": 0,
+          "e": "FAR is the fraction of forecast events that did not occur."
+        },
+        {
+          "q": "A positive skill score means the forecast:",
+          "c": [
+            "Beat the reference forecast",
+            "Was perfect",
+            "Was worse than persistence",
+            "Had no errors"
+          ],
+          "a": 0,
+          "e": "Skill is improvement over a chosen reference."
+        },
+        {
+          "q": "Why can 'percent correct' be misleading for rare events like tornadoes?",
+          "c": [
+            "Always forecasting 'no' can score very high while being useless",
+            "The score cannot be computed when events are uncommon",
+            "It gives too much weight to forecasts of false alarms",
+            "It ignores correct negatives and so exaggerates rare events"
+          ],
+          "a": 0,
+          "e": "Rare events make correct negatives dominate the score."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "title": "1. Atmospheric Foundations",
+  "topics": [
+    {
+      "title": "Composition and vertical structure (troposphere to thermosphere)",
+      "lesson": [
+        "Dry air is about 78% nitrogen, 21% oxygen and 0.9% argon. Carbon dioxide is only about 0.04%. Water vapour is the variable gas (roughly 0 to 4% by volume) and it drives most weather. Ozone is a trace gas but it controls the temperature structure of the stratosphere.",
+        {
+          "h": "The layers, from the ground up"
+        },
+        {
+          "list": [
+            "Troposphere: surface to the tropopause. Temperature falls with height (average about 6.5 C per km). Holds roughly 80% of the atmosphere's mass and nearly all weather.",
+            "Stratosphere: tropopause to about 50 km. Temperature rises with height because ozone absorbs ultraviolet radiation. Very stable, little vertical mixing, almost no weather.",
+            "Mesosphere: to about 85 km. Temperature falls again. Coldest part of the atmosphere.",
+            "Thermosphere: above about 85 km. Temperature rises sharply. The ionosphere sits here."
+          ]
+        },
+        "The boundaries are named after the layer below them: tropopause, stratopause, mesopause. The tropopause height varies with latitude and season: about 8 to 10 km near the poles, around 11 km in mid-latitudes, and 16 to 18 km in the tropics. It is lower in winter than in summer.",
+        {
+          "note": "Why it matters: jet streams and the strongest turbulence sit near the tropopause, and thunderstorm tops are capped by it."
+        }
+      ],
+      "terms": [
+        [
+          "Tropopause",
+          "Boundary between the troposphere and stratosphere, where temperature stops decreasing with height."
+        ],
+        [
+          "Ozone layer",
+          "Region of the stratosphere, roughly 15 to 35 km, where most ozone sits and absorbs UV."
+        ],
+        [
+          "Environmental lapse rate",
+          "The actual rate at which temperature changes with height at a given place and time."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "Which layer of the atmosphere contains nearly all weather?",
+          "c": [
+            "Troposphere",
+            "Stratosphere",
+            "Mesosphere",
+            "Thermosphere"
+          ],
+          "a": 0,
+          "e": "The troposphere holds most of the atmosphere's mass and nearly all of its water vapour, so nearly all weather occurs there."
+        },
+        {
+          "q": "Why does temperature increase with height in the stratosphere?",
+          "c": [
+            "Ozone absorbs ultraviolet radiation",
+            "The ground radiates more heat at that height",
+            "Water vapour releases latent heat",
+            "Air pressure rises with height"
+          ],
+          "a": 0,
+          "e": "Ozone absorbs incoming UV radiation and warms the layer. This produces the temperature increase with height."
+        },
+        {
+          "q": "Where is the tropopause typically highest?",
+          "c": [
+            "Over the tropics",
+            "Over mid-latitudes in winter",
+            "Over the poles",
+            "It is the same height everywhere"
+          ],
+          "a": 0,
+          "e": "The tropopause is highest in the tropics (about 16 to 18 km) and lowest near the poles (about 8 to 10 km)."
+        },
+        {
+          "q": "What is the most abundant gas in dry air?",
+          "c": [
+            "Nitrogen",
+            "Oxygen",
+            "Argon",
+            "Carbon dioxide"
+          ],
+          "a": 0,
+          "e": "Nitrogen makes up about 78% of dry air, oxygen about 21%."
+        },
+        {
+          "q": "In which layer does temperature decrease with height AND most mass of the atmosphere reside?",
+          "c": [
+            "Troposphere",
+            "Stratosphere",
+            "Thermosphere",
+            "Ionosphere only"
+          ],
+          "a": 0,
+          "e": "The troposphere has falling temperature with height and about 80% of the atmosphere's mass."
+        }
+      ]
+    },
+    {
+      "title": "Temperature, pressure, humidity relationships",
+      "lesson": [
+        "Three variables describe the state of the air: temperature, pressure and humidity. They are tied together, and most forecasting reasoning starts here.",
+        {
+          "h": "Pressure"
+        },
+        "Pressure at a point is the weight of the column of air above it. It always decreases with height, fastest near the surface. Pressure is measured in hectopascals (hPa), where 1 hPa equals 1 millibar.",
+        {
+          "h": "Temperature, density and the gas law"
+        },
+        {
+          "formula": "p = rho * R * T\n(p = pressure, rho = density, R = 287 J/kg/K for dry air, T in kelvin)"
+        },
+        "At the same pressure, warmer air is less dense, so it tends to rise. Cold air is denser and sinks. This is the basis of convection and of the sea breeze.",
+        {
+          "h": "Humidity and saturation"
+        },
+        {
+          "list": [
+            "Warm air can hold much more water vapour than cold air. The saturation vapour pressure rises roughly 7% for each 1 C of warming.",
+            "Relative humidity (RH) is how close the air is to saturation. Cool the air at constant moisture and RH rises.",
+            "Dew point is the temperature the air must be cooled to (at constant pressure and moisture) to reach saturation. Dew point only changes when moisture is added or removed.",
+            "When temperature equals dew point, RH is 100%. A small temperature-dew point spread means cloud or fog is close."
+          ]
+        },
+        {
+          "note": "Shortcut: a spread of 0 to 2 C with light winds and clear skies at night is a standard fog warning sign."
+        }
+      ],
+      "terms": [
+        [
+          "hPa",
+          "Hectopascal, the standard unit of pressure. Equal to one millibar."
+        ],
+        [
+          "Relative humidity",
+          "Ratio of actual vapour pressure to saturation vapour pressure, as a percentage."
+        ],
+        [
+          "Dew point",
+          "Temperature at which air becomes saturated when cooled at constant pressure and moisture."
+        ],
+        [
+          "Spread",
+          "Temperature minus dew point. Small spread means near saturation."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "Air is cooled at constant pressure with no moisture added or removed. What happens to its relative humidity?",
+          "c": [
+            "It increases",
+            "It decreases",
+            "It stays the same",
+            "It drops to zero"
+          ],
+          "a": 0,
+          "e": "Cooler air can hold less water vapour, so the same vapour content is a larger fraction of saturation and RH rises."
+        },
+        {
+          "q": "What is the dew point?",
+          "c": [
+            "The temperature to which air must be cooled, at constant pressure and moisture, to become saturated",
+            "The temperature at which water in the air first freezes, found by cooling at constant volume",
+            "The temperature at which relative humidity falls to 50% when pressure is held constant",
+            "The lowest air temperature recorded overnight once extra moisture has been added to the air"
+          ],
+          "a": 0,
+          "e": "Dew point is defined by cooling at constant pressure and moisture content until saturation is reached."
+        },
+        {
+          "q": "At the same pressure, how does warm air compare with cold air?",
+          "c": [
+            "Less dense",
+            "More dense",
+            "Same density",
+            "Heavier per unit volume"
+          ],
+          "a": 0,
+          "e": "From the gas law p = rho R T, at constant p a higher T means lower density."
+        },
+        {
+          "q": "On a calm, clear night the temperature is 4 C and the dew point is 3 C. What is the most likely development?",
+          "c": [
+            "Fog formation",
+            "Thunderstorms",
+            "Strong winds",
+            "Clearing and warming"
+          ],
+          "a": 0,
+          "e": "A 1 C spread means the air is nearly saturated. With continued radiational cooling, fog is likely."
+        },
+        {
+          "q": "What does the pressure at a point on the ground represent?",
+          "c": [
+            "The weight of the air column above it",
+            "The temperature of the air above it",
+            "The speed of the wind at that point",
+            "The humidity of the air above it"
+          ],
+          "a": 0,
+          "e": "Atmospheric pressure is the weight of the overlying column of air per unit area."
+        }
+      ]
+    },
+    {
+      "title": "Hydrostatic balance and the standard atmosphere",
+      "lesson": [
+        "On large scales the atmosphere is in hydrostatic balance: the upward pressure gradient force balances gravity. Pressure drops with height at a rate set by air density.",
+        {
+          "formula": "dp/dz = -rho * g"
+        },
+        "Because cold air is denser, pressure falls faster with height in cold air. The layer between two pressure levels is therefore thinner when cold and thicker when warm. This is the hypsometric relationship, and it is why thickness charts work as temperature charts.",
+        {
+          "list": [
+            "1000-500 hPa thickness near 540 dam (5,400 m) is a common rough rain/snow line. Lower values mean colder air. Use it as a guide only.",
+            "Near sea level, pressure falls about 1 hPa for every 8 m (about 30 ft) of height."
+          ]
+        },
+        {
+          "h": "International Standard Atmosphere (ISA)"
+        },
+        {
+          "list": [
+            "Sea level: 1013.25 hPa and 15 C.",
+            "Temperature falls 6.5 C per km (about 2 C per 1,000 ft) up to 11 km, where it is -56.5 C.",
+            "Above 11 km it is isothermal at -56.5 C up to 20 km."
+          ]
+        },
+        {
+          "h": "Approximate heights of standard pressure levels"
+        },
+        {
+          "list": [
+            "850 hPa: about 1,500 m (5,000 ft)",
+            "700 hPa: about 3,000 m (10,000 ft)",
+            "500 hPa: about 5,500 m (18,000 ft)",
+            "300 hPa: about 9,000 m (30,000 ft)",
+            "250 hPa: about 10,400 m (34,000 ft)"
+          ]
+        },
+        {
+          "note": "Real heights vary with the actual temperature. A 500 hPa height of 5,100 m means a cold column; 5,800 m means a warm one."
+        }
+      ],
+      "terms": [
+        [
+          "Hydrostatic balance",
+          "Balance between the vertical pressure gradient force and gravity."
+        ],
+        [
+          "Thickness",
+          "Vertical distance between two pressure levels. Proportional to mean layer temperature."
+        ],
+        [
+          "ISA",
+          "International Standard Atmosphere: a reference profile starting at 15 C and 1013.25 hPa."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "What are the ISA sea-level temperature and pressure?",
+          "c": [
+            "15 C and 1013.25 hPa",
+            "0 C and 1000 hPa",
+            "20 C and 1013.25 hPa",
+            "15 C and 1000 hPa"
+          ],
+          "a": 0,
+          "e": "ISA is defined as 15 C and 1013.25 hPa at mean sea level."
+        },
+        {
+          "q": "What does a warmer layer do to the thickness between two pressure levels?",
+          "c": [
+            "Increases it",
+            "Decreases it",
+            "Leaves it unchanged",
+            "Reverses the pressure gradient"
+          ],
+          "a": 0,
+          "e": "Warm air is less dense, so a greater depth is needed to span the same pressure difference."
+        },
+        {
+          "q": "What is the ISA lapse rate in the troposphere?",
+          "c": [
+            "6.5 C per km",
+            "9.8 C per km",
+            "3 C per km",
+            "1 C per km"
+          ],
+          "a": 0,
+          "e": "ISA uses 6.5 C/km (about 2 C per 1,000 ft) up to 11 km."
+        },
+        {
+          "q": "What does hydrostatic balance mean?",
+          "c": [
+            "The vertical pressure gradient force balances gravity",
+            "Horizontal pressure and Coriolis forces balance",
+            "Pressure is the same at all heights",
+            "Air never moves vertically"
+          ],
+          "a": 0,
+          "e": "In hydrostatic balance the upward pressure gradient force equals the downward force of gravity."
+        },
+        {
+          "q": "About how high is the 500 hPa level in the standard atmosphere?",
+          "c": [
+            "5,500 m (18,000 ft)",
+            "1,500 m (5,000 ft)",
+            "9,000 m (30,000 ft)",
+            "3,000 m (10,000 ft)"
+          ],
+          "a": 0,
+          "e": "500 hPa sits near 5,500 m, which is why it is treated as the mid-troposphere level."
+        }
+      ]
+    },
+    {
+      "title": "Stability and lapse rates (dry, moist, environmental)",
+      "lesson": [
+        "Stability describes whether a displaced parcel of air returns to its starting level or keeps moving. A parcel that is warmer (less dense) than its surroundings rises. A parcel that is cooler sinks.",
+        {
+          "h": "Three lapse rates"
+        },
+        {
+          "list": [
+            "Dry adiabatic lapse rate (DALR): 9.8 C per km (about 3 C per 1,000 ft). A rising unsaturated parcel cools at this rate.",
+            "Saturated (moist) adiabatic lapse rate (SALR): less than the DALR, typically 4 to 7 C per km. Condensation releases latent heat, which offsets some of the cooling. It is smaller in warm moist air and closer to the DALR in cold air.",
+            "Environmental lapse rate (ELR): the actual temperature change with height, measured by soundings. This is the one that varies day to day."
+          ]
+        },
+        {
+          "h": "Stability rules"
+        },
+        {
+          "list": [
+            "ELR less than SALR: absolutely stable.",
+            "ELR greater than DALR: absolutely unstable.",
+            "ELR between SALR and DALR: conditionally unstable. Stable while unsaturated, unstable once saturated and lifted."
+          ]
+        },
+        "An inversion (temperature increasing with height) is very stable. It acts as a lid, trapping moisture, smoke and haze below it.",
+        {
+          "h": "What you see"
+        },
+        {
+          "list": [
+            "Stable air: layered (stratiform) cloud, steady precipitation, poor visibility, smooth flight, fog and smoke trapped.",
+            "Unstable air: heaped (cumuliform) cloud, showers, good visibility outside showers, turbulence."
+          ]
+        }
+      ],
+      "terms": [
+        [
+          "Parcel method",
+          "Compare a lifted parcel's temperature with its surroundings to judge stability."
+        ],
+        [
+          "Inversion",
+          "A layer where temperature increases with height."
+        ],
+        [
+          "Conditional instability",
+          "Stable for unsaturated lift, unstable for saturated lift."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "What is the dry adiabatic lapse rate?",
+          "c": [
+            "9.8 C per km",
+            "6.5 C per km",
+            "4 C per km",
+            "2 C per km"
+          ],
+          "a": 0,
+          "e": "The DALR is about 9.8 C/km (about 3 C per 1,000 ft)."
+        },
+        {
+          "q": "The environmental lapse rate is 12 C per km. What is the atmosphere's stability?",
+          "c": [
+            "Absolutely unstable",
+            "Absolutely stable",
+            "Conditionally unstable",
+            "Neutral"
+          ],
+          "a": 0,
+          "e": "An ELR greater than the DALR (9.8 C/km) means a lifted parcel is always warmer than its surroundings: absolutely unstable."
+        },
+        {
+          "q": "Why is the saturated adiabatic lapse rate smaller than the dry rate?",
+          "c": [
+            "Latent heat released by condensation offsets part of the cooling",
+            "Saturated air is denser, so it expands less and cools more slowly",
+            "Water vapour absorbs outgoing radiation and warms the rising parcel",
+            "Pressure falls more slowly with height inside a cloud than outside it"
+          ],
+          "a": 0,
+          "e": "Condensation releases latent heat into the parcel, so it cools more slowly than a dry parcel."
+        },
+        {
+          "q": "Which weather is most typical of a stable air mass?",
+          "c": [
+            "Layered cloud, poor visibility, steady precipitation",
+            "Towering cumulus, excellent visibility, scattered showers",
+            "Cumulonimbus, gusty winds, thunderstorms with hail",
+            "Cloud-free skies, strong turbulence, unlimited visibility"
+          ],
+          "a": 0,
+          "e": "Stable air resists vertical motion, so cloud forms in layers and haze or fog is trapped near the surface."
+        },
+        {
+          "q": "When is the atmosphere conditionally unstable?",
+          "c": [
+            "ELR is between the saturated and dry adiabatic lapse rates",
+            "ELR is smaller than the saturated adiabatic lapse rate at all levels",
+            "ELR is larger than the dry adiabatic lapse rate throughout the layer",
+            "A strong surface inversion caps the layer and traps moisture below"
+          ],
+          "a": 0,
+          "e": "Between the SALR and DALR, an unsaturated parcel is stable but a saturated one is unstable."
+        }
+      ]
+    },
+    {
+      "title": "Adiabatic processes and potential temperature",
+      "lesson": [
+        "A process is adiabatic if no heat is exchanged with the surroundings. In the atmosphere, vertical motion is nearly adiabatic. A rising parcel meets lower pressure, expands and cools. A sinking parcel is compressed and warms.",
+        {
+          "h": "Potential temperature"
+        },
+        {
+          "formula": "theta = T * (1000 / p)^0.286\n(T in kelvin, p in hPa)"
+        },
+        "Potential temperature (theta) is the temperature a parcel would have if brought dry adiabatically to 1000 hPa. It is conserved in dry adiabatic motion, so it labels an air parcel the way a tag labels a package.",
+        {
+          "list": [
+            "Theta increasing with height: stable.",
+            "Theta constant with height: neutral (well-mixed layer).",
+            "Theta decreasing with height: unstable."
+          ]
+        },
+        {
+          "h": "Lifting condensation level (LCL)"
+        },
+        "The LCL is the height where a lifted parcel becomes saturated and cloud base forms. A quick estimate:",
+        {
+          "formula": "LCL height (m) = 125 * (T - Td)   [T and Td in C]"
+        },
+        "Example: T = 20 C, Td = 12 C gives about 125 x 8 = 1,000 m.",
+        {
+          "h": "Foehn effect"
+        },
+        "Air forced over a mountain cools at the dry rate until saturated, then at the slower moist rate while rain falls out on the windward side. Descending the lee side it warms at the full dry rate. At the same height, the lee side ends up warmer and drier. The Chinook is a Canadian example.",
+        {
+          "note": "Remember: lifting cools, sinking warms. Condensation slows the cooling but never the warming on the way down."
+        }
+      ],
+      "terms": [
+        [
+          "Adiabatic",
+          "Without heat exchange with the surroundings."
+        ],
+        [
+          "Potential temperature",
+          "Temperature a parcel would have if moved dry adiabatically to 1000 hPa."
+        ],
+        [
+          "LCL",
+          "Lifting condensation level: height at which a lifted parcel saturates."
+        ],
+        [
+          "Foehn",
+          "Warm, dry downslope wind caused by adiabatic warming on the lee side of a mountain."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "Why does a rising, unsaturated air parcel cool?",
+          "c": [
+            "It expands as pressure falls",
+            "It loses heat to the ground",
+            "It mixes with colder air",
+            "Radiation carries heat away"
+          ],
+          "a": 0,
+          "e": "Lower pressure aloft lets the parcel expand. Expansion does work and lowers the temperature without heat exchange."
+        },
+        {
+          "q": "For which kind of motion is potential temperature conserved?",
+          "c": [
+            "Dry adiabatic motion",
+            "Any motion",
+            "Only horizontal motion",
+            "Saturated motion with condensation"
+          ],
+          "a": 0,
+          "e": "Potential temperature stays constant for dry adiabatic processes. Condensation adds heat and changes it."
+        },
+        {
+          "q": "Surface temperature is 20 C and dew point is 12 C. Estimate the cloud base from lifting.",
+          "c": [
+            "About 1,000 m",
+            "About 250 m",
+            "About 4,000 m",
+            "About 100 m"
+          ],
+          "a": 0,
+          "e": "LCL is about 125 m per C of spread: 125 x 8 = 1,000 m."
+        },
+        {
+          "q": "What does potential temperature increasing with height indicate?",
+          "c": [
+            "Stable stratification",
+            "Unstable stratification",
+            "Saturated air",
+            "A front at the surface"
+          ],
+          "a": 0,
+          "e": "When theta increases with height, a displaced parcel is pushed back toward its original level: stable."
+        },
+        {
+          "q": "Compared with the windward side at the same height, the lee side of a mountain range during foehn is:",
+          "c": [
+            "Warmer and drier",
+            "Cooler and wetter",
+            "Warmer and wetter",
+            "The same"
+          ],
+          "a": 0,
+          "e": "Moisture is lost as precipitation on the windward side, and the descending air warms at the faster dry rate."
+        }
+      ]
+    }
+  ]
+}

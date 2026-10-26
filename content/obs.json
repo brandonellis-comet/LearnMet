@@ -1,0 +1,540 @@
+{
+  "title": "7. Observations and Instruments",
+  "topics": [
+    {
+      "title": "Surface observing (temperature, pressure, wind, visibility)",
+      "lesson": [
+        "Surface observations are the base data for analysis, forecasts and verification. Standard exposure rules make observations comparable between stations.",
+        {
+          "list": [
+            "Temperature and humidity: thermometers in a ventilated, shaded screen (Stevenson screen) about 1.25 to 2 m above the ground, over short grass. The screen keeps out sun and rain but lets air flow through.",
+            "Wind: anemometer and vane at a standard height of 10 m above open, level ground. Direction is reported as the direction the wind comes FROM, in degrees true in METARs.",
+            "Pressure: barometer. Station pressure is the pressure at the instrument. Mean sea level pressure (MSLP) is the station pressure reduced to sea level, so stations at different heights can be compared on a chart.",
+            "Visibility: the greatest distance at which a prominent object can be seen and recognized. Measured by observers using markers or by sensors.",
+            "Precipitation: rain gauges (tipping bucket or weighing), snow depth and water equivalent.",
+            "Cloud: observer estimates, or a ceilometer (laser or light pulse that measures cloud base height)."
+          ]
+        },
+        {
+          "h": "Altimeter settings"
+        },
+        {
+          "list": [
+            "QNH: sea level pressure setting. With QNH set, the altimeter reads aerodrome elevation when on the ground and altitude above mean sea level in flight. In North America this is the altimeter setting in inches of mercury (for example A2992).",
+            "QFE: setting that makes the altimeter read zero on the aerodrome.",
+            "Standard 1013.25 hPa (29.92 inHg): used above the transition altitude so all aircraft use the same reference."
+          ]
+        },
+        {
+          "note": "Automated stations (AWOS, AWS) report a limited set of elements. A human observer is still needed to verify cloud type and some present weather."
+        }
+      ],
+      "terms": [
+        [
+          "Stevenson screen",
+          "Ventilated white box for housing thermometers."
+        ],
+        [
+          "MSLP",
+          "Mean sea level pressure: station pressure reduced to sea level."
+        ],
+        [
+          "QNH",
+          "Altimeter setting that makes an altimeter read elevation above sea level."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "What is the standard height of an anemometer?",
+          "c": [
+            "10 m above open, level ground",
+            "2 m above the ground",
+            "30 m",
+            "On the roof of any building"
+          ],
+          "a": 0,
+          "e": "WMO standard exposure for wind is 10 m over open terrain."
+        },
+        {
+          "q": "Why are thermometers housed in a ventilated screen?",
+          "c": [
+            "To shield them from sun and rain while allowing air flow",
+            "To keep them warm so readings stay above freezing at night",
+            "To make the readings equal to the temperature of the ground",
+            "To reduce wind speed so the thermometer is not blown over"
+          ],
+          "a": 0,
+          "e": "The screen prevents radiation and moisture errors while keeping air moving over the sensor."
+        },
+        {
+          "q": "What does an altimeter read on the ground when QNH is set?",
+          "c": [
+            "The aerodrome elevation",
+            "Zero",
+            "The pressure altitude",
+            "The density altitude"
+          ],
+          "a": 0,
+          "e": "QNH is the pressure setting that makes the altimeter read elevation above mean sea level."
+        },
+        {
+          "q": "What is mean sea level pressure?",
+          "c": [
+            "Station pressure reduced to sea level",
+            "Pressure measured on a ship only",
+            "Pressure at 500 hPa",
+            "Average of all stations"
+          ],
+          "a": 0,
+          "e": "MSLP allows comparison of stations at different elevations."
+        },
+        {
+          "q": "Which instrument measures cloud base height automatically?",
+          "c": [
+            "Ceilometer",
+            "Psychrometer",
+            "Anemometer",
+            "Pyranometer"
+          ],
+          "a": 0,
+          "e": "A ceilometer uses a laser pulse and timing to measure cloud base height."
+        }
+      ]
+    },
+    {
+      "title": "Upper-air soundings and radiosondes",
+      "lesson": [
+        "Upper-air soundings measure the atmosphere above ground. Almost all of the world's upper-air data comes from radiosondes: small instrument packages carried aloft by a hydrogen or helium balloon.",
+        {
+          "list": [
+            "Launches are made at 00 and 12 UTC worldwide. This lets models and forecasters use a simultaneous global snapshot.",
+            "A radiosonde measures pressure, temperature and humidity. Wind is derived by tracking the balloon's position, now usually by GPS.",
+            "The balloon rises at about 5 m/s and expands as pressure falls. It bursts at roughly 30 to 35 km, and the instrument parachutes back. Flight takes about 90 minutes to two hours.",
+            "Data are reported at mandatory pressure levels (for example 1000, 925, 850, 700, 500, 400, 300, 250, 200, 150, 100 hPa) plus significant levels where the profile changes."
+          ]
+        },
+        {
+          "h": "Uses"
+        },
+        {
+          "list": [
+            "Plot on a skew-T log-P to assess stability, cloud layers, freezing level and inversions.",
+            "Initialize and verify numerical weather prediction models.",
+            "Determine winds aloft and jet streams.",
+            "Calibrate and cross-check satellite measurements."
+          ]
+        },
+        {
+          "h": "Limitations"
+        },
+        "Stations are far apart (hundreds of km) and launch only twice a day, so small features such as thunderstorm outflows are missed. Balloons drift downwind, and the profile is not strictly vertical.",
+        {
+          "note": "Aircraft reports (AMDAR), wind profilers and satellite retrievals fill gaps between launches."
+        }
+      ],
+      "terms": [
+        [
+          "Radiosonde",
+          "Instrument package carried by balloon that transmits profiles of pressure, temperature, humidity and wind."
+        ],
+        [
+          "Mandatory level",
+          "Standard pressure level at which every sounding reports data."
+        ],
+        [
+          "Significant level",
+          "Level where the profile changes character, reported in addition to mandatory levels."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "At which times are routine radiosonde launches made?",
+          "c": [
+            "00 and 12 UTC",
+            "06 and 18 UTC only",
+            "Every hour",
+            "Only when storms approach"
+          ],
+          "a": 0,
+          "e": "Global synoptic upper-air observations are made at 00 and 12 UTC."
+        },
+        {
+          "q": "Which variables does a radiosonde provide?",
+          "c": [
+            "Pressure, temperature, humidity and wind",
+            "Temperature and wind only, without humidity",
+            "Cloud height, visibility and precipitation type",
+            "Radar reflectivity and lightning strike counts"
+          ],
+          "a": 0,
+          "e": "A radiosonde measures pressure, temperature and humidity, and wind is derived from tracking."
+        },
+        {
+          "q": "Why does the balloon eventually burst?",
+          "c": [
+            "It expands as outside pressure drops until it ruptures",
+            "Its gas freezes solid in the cold air near the tropopause",
+            "It is struck by lightning inside high thunderstorm cloud",
+            "The gas leaks out gradually and the balloon cannot rise higher"
+          ],
+          "a": 0,
+          "e": "The gas expands at lower pressure until the balloon reaches its limit."
+        },
+        {
+          "q": "Which of these are standard (mandatory) pressure levels?",
+          "c": [
+            "850 and 500 hPa",
+            "875 and 525 hPa",
+            "950 and 450 hPa",
+            "1100 and 20 hPa"
+          ],
+          "a": 0,
+          "e": "850 and 500 hPa are among the standard mandatory levels."
+        },
+        {
+          "q": "What is a major limitation of radiosonde coverage?",
+          "c": [
+            "Stations are widely spaced and launch only twice a day",
+            "They can measure surface values only and not the upper air",
+            "They are launched only over water and not over land",
+            "They cannot measure temperature in clear air or in cloud"
+          ],
+          "a": 0,
+          "e": "Small, fast-evolving features can occur between stations and launch times."
+        }
+      ]
+    },
+    {
+      "title": "Weather radar principles and interpretation",
+      "lesson": [
+        "A weather radar sends out short pulses of microwave energy and listens for the part scattered back by raindrops, snow, hail and other particles. Time delay gives range. Signal strength gives reflectivity.",
+        {
+          "h": "Reflectivity"
+        },
+        "Reflectivity (dBZ) is on a logarithmic scale. Higher values mean more or larger targets. Rough guide: about 20 dBZ light rain or drizzle, 30 to 40 moderate rain, 45 to 55 heavy rain, above about 55 possible hail. These are only guides because snow, hail and the melting layer behave differently.",
+        {
+          "h": "Doppler"
+        },
+        "Doppler radar measures the radial velocity: the part of the target motion toward or away from the radar. It cannot see motion across the beam. A tight pair of strong inbound and outbound velocities next to each other suggests rotation, such as a mesocyclone.",
+        {
+          "h": "Dual-polarization"
+        },
+        "Dual-pol radars send and receive both horizontal and vertical pulses. Extra products help to tell rain from snow and hail, identify debris from tornadoes, and filter out non-weather echoes such as birds, insects and ground clutter.",
+        {
+          "h": "Limitations"
+        },
+        {
+          "list": [
+            "Beam height rises with range because of the Earth's curvature and beam elevation, so distant low-level precipitation can be overshot.",
+            "Ground clutter and blocking by terrain near the radar.",
+            "Anomalous propagation (AP): beam bends toward the ground in strong inversions, producing false echoes.",
+            "Bright band: melting snowflakes appear as a ring of high reflectivity at the melting level, overestimating rain rate.",
+            "Attenuation: heavy rain can weaken the signal, especially for shorter wavelengths."
+          ]
+        },
+        {
+          "note": "Canada's operational radars are mostly C-band (about 5 cm wavelength). Always check beam height at distance before trusting low-level echoes."
+        }
+      ],
+      "terms": [
+        [
+          "dBZ",
+          "Logarithmic unit of radar reflectivity."
+        ],
+        [
+          "Radial velocity",
+          "Component of motion toward or away from the radar."
+        ],
+        [
+          "Bright band",
+          "Enhanced reflectivity at the melting layer."
+        ],
+        [
+          "Anomalous propagation",
+          "Radar beam bent toward the ground, producing false echoes."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "What does a Doppler radar measure that a conventional radar does not?",
+          "c": [
+            "Radial velocity",
+            "Cloud colour",
+            "Temperature",
+            "Air pressure"
+          ],
+          "a": 0,
+          "e": "Doppler radars detect motion toward or away from the radar."
+        },
+        {
+          "q": "What reflectivity is usually associated with heavy rain and possible hail?",
+          "c": [
+            "Above about 50 to 55 dBZ",
+            "Below 10 dBZ",
+            "Around 20 dBZ",
+            "Zero dBZ"
+          ],
+          "a": 0,
+          "e": "High reflectivity indicates large or numerous targets such as heavy rain or hail."
+        },
+        {
+          "q": "Why might a radar miss shallow precipitation at long range?",
+          "c": [
+            "The beam rises above it due to Earth's curvature",
+            "Rain evaporates completely before the beam reaches it",
+            "The radar signal is absorbed by dry air at long range",
+            "Distant echoes are too bright and saturate the receiver"
+          ],
+          "a": 0,
+          "e": "The beam height increases with distance and can overshoot low clouds and rain."
+        },
+        {
+          "q": "What is the radar 'bright band'?",
+          "c": [
+            "A ring of enhanced reflectivity at the melting level",
+            "A band of heavy snow falling at the edge of the beam",
+            "A thunderstorm signature shown at the radar's maximum range",
+            "A false echo created by ground clutter near the radar"
+          ],
+          "a": 0,
+          "e": "Melting snowflakes are coated in water and reflect strongly."
+        },
+        {
+          "q": "What is a main benefit of dual-polarization radar?",
+          "c": [
+            "It helps identify precipitation type and non-weather targets",
+            "It extends the range of the radar to well over 1000 km",
+            "It measures lightning strikes inside the radar coverage area",
+            "It gives the surface air temperature under each radar echo"
+          ],
+          "a": 0,
+          "e": "Dual-pol variables give particle shape and type information."
+        }
+      ]
+    },
+    {
+      "title": "Satellite imagery (visible, IR, water vapour)",
+      "lesson": [
+        "Satellites provide global coverage, including oceans where there are few surface observations.",
+        {
+          "h": "Orbits"
+        },
+        {
+          "list": [
+            "Geostationary: about 36,000 km above the equator, fixed over one spot. Frequent images (every 5 to 15 minutes or faster) of the same region. Poor viewing at high latitudes. Canada is mainly covered by GOES-East.",
+            "Polar-orbiting: about 800 to 850 km up, passes near the poles. Higher resolution and good polar coverage, but fewer passes per day."
+          ]
+        },
+        {
+          "h": "Channels"
+        },
+        {
+          "list": [
+            "Visible: reflected sunlight. Daytime only. Bright means thick or highly reflective cloud, snow and ice.",
+            "Infrared (IR): thermal radiation emitted by the surface and clouds. Works day and night. Cold (high) cloud tops appear bright in the standard display. Brightness temperature estimates cloud-top height.",
+            "Water vapour (about 6 to 7 micrometres): shows moisture in the upper and mid-troposphere. Dark means dry, bright means moist. Shows jets, troughs, dry slots and upper lows even in cloud-free areas."
+          ]
+        },
+        {
+          "h": "Interpretation tips"
+        },
+        {
+          "list": [
+            "Bright, cold, textured cloud tops with an anvil suggest deep convection.",
+            "A comma-shaped cloud pattern marks a developing mid-latitude cyclone.",
+            "Low cloud and fog are hard to separate from the ground in IR because they are close to surface temperature. Compare visible and IR, or use fog products."
+          ]
+        },
+        {
+          "note": "Visible tells you thickness, IR tells you height, water vapour tells you moisture aloft."
+        }
+      ],
+      "terms": [
+        [
+          "Geostationary",
+          "Orbit that keeps a satellite over a fixed point on the equator."
+        ],
+        [
+          "Brightness temperature",
+          "Temperature a blackbody would have to emit the observed IR radiance."
+        ],
+        [
+          "Dry slot",
+          "Dark wedge of dry air in water vapour imagery wrapping into a cyclone."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "At about what altitude is a geostationary satellite?",
+          "c": [
+            "About 36,000 km",
+            "About 800 km",
+            "About 100 km",
+            "About 3,600 km"
+          ],
+          "a": 0,
+          "e": "Geostationary orbit is about 35,786 km above the equator."
+        },
+        {
+          "q": "Which satellite channel works only in daylight?",
+          "c": [
+            "Visible",
+            "Infrared",
+            "Water vapour",
+            "All of them"
+          ],
+          "a": 0,
+          "e": "Visible imagery depends on reflected sunlight."
+        },
+        {
+          "q": "In standard IR imagery, what do bright cold cloud tops usually indicate?",
+          "c": [
+            "High cloud, possibly deep convection",
+            "Fog or low stratus near the surface",
+            "Warm land with no cloud cover at all",
+            "Open ocean without cloud in the daytime"
+          ],
+          "a": 0,
+          "e": "Colder tops are higher in the atmosphere."
+        },
+        {
+          "q": "What does water vapour imagery show?",
+          "c": [
+            "Moisture in the mid and upper troposphere and flow patterns",
+            "Surface temperature and low-level fog patterns on the ground",
+            "Lightning strikes and the location of tornadoes on the surface",
+            "Cloud thickness and reflected sunlight from daytime clouds"
+          ],
+          "a": 0,
+          "e": "Dark areas are dry and bright areas are moist aloft, which reveals upper-level features."
+        },
+        {
+          "q": "Why is low cloud or fog hard to see in IR imagery?",
+          "c": [
+            "Its temperature is close to the ground's",
+            "It reflects too much sunlight for the sensor",
+            "It is always thinner than the satellite can detect",
+            "Infrared cannot detect water droplets inside cloud"
+          ],
+          "a": 0,
+          "e": "Low cloud tops are nearly as warm as the surface so the contrast is small."
+        }
+      ]
+    },
+    {
+      "title": "Reading and plotting a skew-T log-P",
+      "lesson": [
+        "A skew-T log-P diagram plots a sounding. Pressure is the vertical axis on a log scale. Isotherms are skewed to the right at about 45 degrees. Three families of reference lines are drawn on it.",
+        {
+          "list": [
+            "Isotherms: lines of constant temperature, sloping up to the right.",
+            "Dry adiabats: curved lines sloping up to the left. A lifted unsaturated parcel follows these.",
+            "Moist (saturated) adiabats: curved lines that lean toward the dry adiabats at high levels. Saturated parcels follow these.",
+            "Mixing ratio lines: dashed lines that slope up to the right."
+          ]
+        },
+        {
+          "h": "What to read"
+        },
+        {
+          "list": [
+            "Temperature (right line) and dew point (left line) profiles. When they are close or touch, the layer is moist or in cloud. A wide spread means dry air.",
+            "Inversion: temperature increases with height (the line moves right as you go up).",
+            "Freezing level: where the temperature line crosses 0 C.",
+            "Wind barbs along the side give winds aloft.",
+            "Lifted condensation level (LCL): lift a surface parcel along its dry adiabat and its mixing ratio line from the dew point. They meet at the LCL.",
+            "Level of free convection (LFC): where the lifted parcel becomes warmer than the environment. Equilibrium level (EL): where it is again equal to the environment, near the expected cloud top."
+          ]
+        },
+        {
+          "h": "Instability indices"
+        },
+        {
+          "list": [
+            "CAPE: area between the parcel path and the environment where the parcel is warmer. More area means stronger updrafts.",
+            "CIN: area where the parcel is colder. A cap that inhibits convection.",
+            "Lifted index (LI): environment temperature at 500 hPa minus parcel temperature at 500 hPa. Negative values mean unstable."
+          ]
+        },
+        {
+          "note": "Quick read: dew point near temperature means moisture. Temperature crossing back to the right means an inversion. Large positive area means storms if lift exists."
+        }
+      ],
+      "terms": [
+        [
+          "CAPE",
+          "Positive area on a sounding between the parcel curve and environment."
+        ],
+        [
+          "CIN",
+          "Convective inhibition: negative area that must be overcome for convection."
+        ],
+        [
+          "LFC",
+          "Level of free convection."
+        ],
+        [
+          "EL",
+          "Equilibrium level."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "On a skew-T, CAPE is represented by:",
+          "c": [
+            "The area where the lifted parcel is warmer than the environment",
+            "The area where the parcel is colder than the environment",
+            "The distance between T and Td at the surface",
+            "The slope of isotherms"
+          ],
+          "a": 0,
+          "e": "CAPE is the positive buoyancy area between the parcel path and environment curve."
+        },
+        {
+          "q": "If the dew point line is very close to the temperature line over a layer, that layer is:",
+          "c": [
+            "Moist or in cloud",
+            "Very dry",
+            "An inversion",
+            "Unrelated to moisture"
+          ],
+          "a": 0,
+          "e": "A small spread means near-saturation."
+        },
+        {
+          "q": "How is the LCL found on a skew-T?",
+          "c": [
+            "Where the dry adiabat through the surface temperature meets the mixing ratio line through the surface dew point",
+            "Where the isotherm through the surface dew point meets the moist adiabat at 500 hPa",
+            "Where the temperature line first crosses the 0 C isotherm above the surface",
+            "At the pressure level where the dew point line reaches the left edge of the chart"
+          ],
+          "a": 0,
+          "e": "A lifted unsaturated parcel saturates where those two lines intersect."
+        },
+        {
+          "q": "A negative lifted index indicates:",
+          "c": [
+            "Unstable conditions",
+            "Stable conditions",
+            "No moisture",
+            "A strong inversion"
+          ],
+          "a": 0,
+          "e": "A negative LI means the parcel is warmer than its environment at 500 hPa."
+        },
+        {
+          "q": "How does an inversion appear on a skew-T?",
+          "c": [
+            "The temperature line shifts to the right with increasing height",
+            "The temperature line follows a dry adiabat to the left with height",
+            "The dew point line crosses to the right of the temperature line",
+            "The temperature line is exactly vertical from the surface to 500 hPa"
+          ],
+          "a": 0,
+          "e": "Temperature increasing with height makes the profile lean back toward higher temperatures."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,629 @@
+{
+  "title": "6. Severe and Hazardous Weather",
+  "topics": [
+    {
+      "title": "Thunderstorm structure and life cycle",
+      "lesson": [
+        "A thunderstorm needs three ingredients: moisture, instability and a lifting mechanism. Wind shear decides how organized and long-lived it becomes.",
+        {
+          "h": "Life cycle of an ordinary (single-cell) storm"
+        },
+        {
+          "list": [
+            "Cumulus stage: updraft only. Towering cumulus grows. Lasts about 10 to 15 minutes.",
+            "Mature stage: updraft and downdraft both present. Heaviest rain, hail, lightning, gusts. The anvil forms at the tropopause.",
+            "Dissipating stage: downdraft dominates and cuts off the warm moist inflow. The storm collapses."
+          ]
+        },
+        {
+          "h": "Storm types"
+        },
+        {
+          "list": [
+            "Single-cell: weak shear, short-lived, about 30 to 60 minutes.",
+            "Multicell: new cells form along the gust front of older ones. Last for hours.",
+            "Supercell: strong shear produces a rotating updraft (mesocyclone). Long-lived. The most likely source of large hail, damaging winds and strong tornadoes."
+          ]
+        },
+        {
+          "h": "Related ideas"
+        },
+        {
+          "list": [
+            "CAPE (convective available potential energy): a measure of instability. High CAPE supports strong updrafts and large hail.",
+            "Lightning comes from charge separation, mostly through collisions between graupel and ice crystals in the presence of supercooled water.",
+            "Thunder is the shock wave from the rapid heating of air along the lightning channel."
+          ]
+        },
+        {
+          "note": "No lift, no storm. Look for fronts, sea breeze fronts, outflow boundaries or terrain."
+        }
+      ],
+      "terms": [
+        [
+          "CAPE",
+          "Convective available potential energy: positive buoyant energy available to a rising parcel."
+        ],
+        [
+          "Mesocyclone",
+          "Rotating updraft in a supercell."
+        ],
+        [
+          "Outflow boundary",
+          "Boundary left by cold downdraft air that can trigger new storms."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "Which three ingredients are needed for a thunderstorm?",
+          "c": [
+            "Moisture, instability and a lifting mechanism",
+            "Cold air, strong winds and a front",
+            "Ice, high pressure and calm winds",
+            "Fog, stability and radiation"
+          ],
+          "a": 0,
+          "e": "Without moisture, instability, or lift, deep convection does not occur."
+        },
+        {
+          "q": "Which stage of an ordinary thunderstorm has both updrafts and downdrafts?",
+          "c": [
+            "Mature stage",
+            "Cumulus stage",
+            "Dissipating stage",
+            "None of them"
+          ],
+          "a": 0,
+          "e": "The mature stage has the heaviest precipitation and a coexisting updraft and downdraft."
+        },
+        {
+          "q": "What defines a supercell?",
+          "c": [
+            "A persistent rotating updraft (mesocyclone)",
+            "A line of weak storms",
+            "A storm lasting under 10 minutes",
+            "A storm without precipitation"
+          ],
+          "a": 0,
+          "e": "Rotation within the updraft allows the storm to sustain itself for hours."
+        },
+        {
+          "q": "What dominates the dissipating stage of a thunderstorm?",
+          "c": [
+            "Downdrafts",
+            "Updrafts",
+            "Hail growth",
+            "Rotation"
+          ],
+          "a": 0,
+          "e": "Cold downdraft air spreads out and cuts off warm inflow."
+        },
+        {
+          "q": "How does charge separation in thunderstorms mainly occur?",
+          "c": [
+            "Collisions of graupel and ice crystals in the presence of supercooled water",
+            "Friction between falling raindrops and the ground below cloud base",
+            "Solar heating of the anvil, which splits positive and negative ions",
+            "Dust and sea salt colliding inside the updraft below the freezing level"
+          ],
+          "a": 0,
+          "e": "Riming and collisions in the mixed-phase region transfer charge."
+        }
+      ]
+    },
+    {
+      "title": "Tornadoes and downbursts",
+      "lesson": [
+        {
+          "h": "Tornadoes"
+        },
+        "A tornado is a violently rotating column of air in contact with both the ground and a cloud base. A funnel cloud has the same rotation but does not reach the ground. A waterspout is a tornado over water.",
+        {
+          "list": [
+            "Most strong tornadoes come from supercells. Weaker ones form in squall lines and along boundaries (landspouts).",
+            "Canada rates tornadoes with the Enhanced Fujita (EF) scale, which is based on damage to structures and trees, not on measured wind.",
+            "EF0: 105 to 137 km/h. EF1: 138 to 177. EF2: 178 to 217. EF3: 218 to 266. EF4: 267 to 322. EF5: over 322 km/h."
+          ]
+        },
+        {
+          "h": "Downbursts"
+        },
+        "A downburst is a strong downdraft from a thunderstorm that hits the ground and spreads outward in a damaging burst of wind.",
+        {
+          "list": [
+            "Microburst: affected area is less than 4 km across and lasts about 5 to 15 minutes. Peak winds can exceed 150 km/h.",
+            "Macroburst: larger than 4 km, lasts longer.",
+            "Wet microburst: with heavy rain. Dry microburst: little or no rain reaches the ground, often with high-based storms."
+          ]
+        },
+        {
+          "h": "Aviation hazard"
+        },
+        "On approach, an aircraft meets a strong headwind first (airspeed increases), then strong sink, then a tailwind (airspeed falls rapidly). This sequence has caused major accidents. Avoid thunderstorms by a wide margin, including near the storm's outflow.",
+        {
+          "note": "Damage to the ground tells you the rating. The rating is assigned after the event, not during it."
+        }
+      ],
+      "terms": [
+        [
+          "Funnel cloud",
+          "Rotating cloud extending from a cumuliform base that does not reach the ground."
+        ],
+        [
+          "EF scale",
+          "Enhanced Fujita scale: damage-based rating of tornado intensity."
+        ],
+        [
+          "Microburst",
+          "Localized downburst less than 4 km across."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "Which scale does Canada use to rate tornadoes?",
+          "c": [
+            "Enhanced Fujita (EF) scale",
+            "Saffir-Simpson scale",
+            "Beaufort scale",
+            "Richter scale"
+          ],
+          "a": 0,
+          "e": "EF ratings are assigned from observed damage."
+        },
+        {
+          "q": "What is the size of a microburst?",
+          "c": [
+            "Less than 4 km across",
+            "More than 40 km across",
+            "Exactly 10 km",
+            "A few hundred km"
+          ],
+          "a": 0,
+          "e": "Microbursts are less than 4 km in extent; larger ones are macrobursts."
+        },
+        {
+          "q": "What does an aircraft on approach experience when it flies through a microburst?",
+          "c": [
+            "Headwind increase, then sink, then strong tailwind",
+            "Tailwind increase, then calm air, then a strong headwind",
+            "A steady crosswind with no change in airspeed or sink rate",
+            "A smooth decrease in airspeed with a gradual increase in climb rate"
+          ],
+          "a": 0,
+          "e": "Airspeed first rises, then falls sharply as the aircraft exits into the tailwind."
+        },
+        {
+          "q": "What is the difference between a tornado and a funnel cloud?",
+          "c": [
+            "A tornado reaches the ground; a funnel cloud does not",
+            "A funnel cloud reaches the ground; a tornado stays aloft",
+            "A tornado forms only over water and a funnel cloud only on land",
+            "A funnel cloud always has stronger surface winds than a tornado"
+          ],
+          "a": 0,
+          "e": "A tornado is in contact with the ground; a funnel cloud is not."
+        },
+        {
+          "q": "How is a tornado's EF rating determined?",
+          "c": [
+            "From the damage it caused",
+            "From radar velocity only",
+            "From its width",
+            "From its duration"
+          ],
+          "a": 0,
+          "e": "EF ratings use damage indicators to estimate the wind."
+        }
+      ]
+    },
+    {
+      "title": "Winter storms and freezing precipitation",
+      "lesson": [
+        "Atlantic Canada gets winter storms from lows tracking up the east coast (nor'easters), from lows moving in from the Great Lakes, and from systems that redevelop near Cape Hatteras.",
+        {
+          "h": "Key hazards"
+        },
+        {
+          "list": [
+            "Heavy snow: reduces visibility and blocks roads.",
+            "Blizzard: in Canada, winds of at least 40 km/h with visibility 400 m or less in snow or blowing snow, lasting at least 4 hours.",
+            "Freezing rain: supercooled rain freezes on contact. Ice storms can bring down power lines and trees. See precipitation processes.",
+            "Ice pellets: stinging pellets, slippery surfaces.",
+            "Snow squalls: sudden, short bursts of intense snow with strong wind and whiteout, typically near a front or lake.",
+            "Wind chill: the cooling effect of wind on exposed skin. In Canada, wind chill values of about -28 and colder carry a frostbite risk for exposed skin within 10 to 30 minutes, and the risk grows quickly as values fall further."
+          ]
+        },
+        {
+          "h": "Rain versus snow"
+        },
+        "Precipitation type depends on the temperature profile through the whole column. A thin warm layer near the surface can turn snow into rain. A thin cold layer at the surface under a warm layer aloft produces freezing rain. Surface temperatures near 0 C often mean a messy mix.",
+        {
+          "h": "Nor'easter"
+        },
+        "A coastal low that intensifies off the US east coast and tracks toward the Maritimes, often with heavy snow, strong northeast winds, coastal flooding, and sometimes rain along the shore. Small track changes shift the rain-snow line by tens of kilometres.",
+        {
+          "note": "Marginal temperatures make the forecast hardest. Always check the 850 hPa temperature and the surface temperature together."
+        }
+      ],
+      "terms": [
+        [
+          "Blizzard",
+          "Canadian criteria: winds of 40 km/h or more and visibility 400 m or less for at least 4 hours."
+        ],
+        [
+          "Nor'easter",
+          "Coastal storm with strong northeast winds."
+        ],
+        [
+          "Wind chill",
+          "Index of cooling effect of wind on exposed skin."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "What are the Canadian blizzard criteria?",
+          "c": [
+            "Winds of 40 km/h or more and visibility 400 m or less, for at least 4 hours",
+            "Winds of 20 km/h or more and visibility 1 km or less, for at least 1 hour",
+            "Any snowfall of 15 cm in 12 hours with temperatures below -10 C",
+            "Winds of 70 km/h or more with snow falling for at least 24 hours"
+          ],
+          "a": 0,
+          "e": "Blizzards require both strong wind and very low visibility sustained for several hours."
+        },
+        {
+          "q": "Which temperature profile is typical for freezing rain?",
+          "c": [
+            "Above 0 C aloft, below 0 C near the surface",
+            "Below 0 C throughout",
+            "Above 0 C throughout",
+            "Below 0 C aloft, above 0 C at the surface"
+          ],
+          "a": 0,
+          "e": "Snow melts in the warm layer, then rain supercools in the shallow cold layer."
+        },
+        {
+          "q": "What is a nor'easter?",
+          "c": [
+            "A coastal storm with strong northeast winds",
+            "A tropical storm approaching from the south in summer",
+            "A thunderstorm complex moving in from the northeast",
+            "A sea breeze that blows from the northeast each afternoon"
+          ],
+          "a": 0,
+          "e": "Nor'easters track along the east coast and bring heavy snow or rain with strong NE winds."
+        },
+        {
+          "q": "What is a snow squall?",
+          "c": [
+            "A brief burst of intense snow with strong wind and low visibility",
+            "A long period of light, steady snow with calm winds and good visibility",
+            "A layer of ice that coats surfaces after freezing drizzle overnight",
+            "A thin fog that forms over snow-covered ground on clear nights"
+          ],
+          "a": 0,
+          "e": "Squalls can cause whiteouts and rapid road deterioration."
+        },
+        {
+          "q": "Why are marginal surface temperatures near 0 C a forecast challenge?",
+          "c": [
+            "Small changes shift precipitation between snow, rain and freezing rain",
+            "Precipitation cannot form at all when the surface temperature is near 0 C",
+            "Models cannot represent temperatures when they are close to the freezing mark",
+            "Snow always melts instantly, so no frozen precipitation can reach the ground"
+          ],
+          "a": 0,
+          "e": "Tiny temperature differences change the precipitation type and impacts."
+        }
+      ]
+    },
+    {
+      "title": "Turbulence (CAT, mechanical, mountain wave)",
+      "lesson": [
+        "Turbulence is irregular air motion that causes bumpy flight. Intensity is described as light, moderate, severe or extreme.",
+        {
+          "h": "Types"
+        },
+        {
+          "list": [
+            "Convective (thermal): rising thermals on sunny days over land, and in and near cumulus. Worst in the afternoon.",
+            "Mechanical: wind flowing over obstacles such as buildings, trees and hills. Worst at low levels in strong winds, with gusty approach and takeoff.",
+            "Mountain wave: stable air flowing across a ridge produces waves downwind. Needs wind of about 25 kt or more roughly perpendicular to the ridge, with wind increasing with height and a stable layer. Look for lenticular clouds and rotor clouds. Severe turbulence can occur in and below the rotor.",
+            "Clear-air turbulence (CAT): turbulence in cloud-free air, usually at upper levels near jet streams and sharp upper troughs. Caused by strong vertical or horizontal wind shear.",
+            "Wake turbulence: vortices from the wingtips of heavy aircraft."
+          ]
+        },
+        {
+          "h": "Shear instability"
+        },
+        "The Richardson number compares stability to wind shear. When it falls below about 0.25, shear overcomes stability and Kelvin-Helmholtz waves form. Strong shear with weak stability produces CAT.",
+        {
+          "h": "Avoidance"
+        },
+        {
+          "list": [
+            "Thunderstorms: severe turbulence in and around them. Stay well clear.",
+            "CAT is hard to see. Forecast it from jet stream, shear, and pilot reports.",
+            "Change altitude if turbulence persists."
+          ]
+        },
+        {
+          "note": "Lenticular clouds mean a mountain wave is present. Rotor clouds are the most dangerous part."
+        }
+      ],
+      "terms": [
+        [
+          "CAT",
+          "Clear-air turbulence."
+        ],
+        [
+          "Lenticular cloud",
+          "Smooth lens-shaped cloud that marks the crest of a mountain wave."
+        ],
+        [
+          "Richardson number",
+          "Ratio of stability to shear. Turbulence develops when it falls below about 0.25."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "Clear-air turbulence is usually associated with:",
+          "c": [
+            "Strong wind shear near jet streams and the tropopause",
+            "Low-level fog and haze trapped beneath a surface inversion",
+            "Heated ground over desert regions on hot summer afternoons",
+            "Warm fronts moving slowly across flat terrain at night"
+          ],
+          "a": 0,
+          "e": "CAT develops in cloud-free air where wind shear is strong."
+        },
+        {
+          "q": "What does a lenticular cloud indicate?",
+          "c": [
+            "Mountain waves",
+            "A tornado",
+            "An approaching warm front",
+            "Icing near the ground"
+          ],
+          "a": 0,
+          "e": "Lenticulars form at wave crests in stable air flowing over mountains."
+        },
+        {
+          "q": "What does a Richardson number below about 0.25 indicate?",
+          "c": [
+            "Shear instability that can generate turbulence",
+            "Very stable air in which turbulence cannot develop",
+            "Fog and low stratus forming beneath a surface inversion",
+            "Dry adiabatic conditions with no wind shear in the layer"
+          ],
+          "a": 0,
+          "e": "Shear dominates over stability, so waves break into turbulence."
+        },
+        {
+          "q": "Which turbulence type is typically worst on hot afternoons over land?",
+          "c": [
+            "Convective (thermal) turbulence",
+            "Wake turbulence behind heavy aircraft",
+            "Mountain wave rotor turbulence",
+            "Clear-air turbulence near the jet"
+          ],
+          "a": 0,
+          "e": "Strong surface heating produces vigorous thermals."
+        },
+        {
+          "q": "What conditions favour a mountain wave?",
+          "c": [
+            "Wind of about 25 kt or more across a ridge, increasing with height, with a stable layer",
+            "Light winds blowing parallel to the ridge with a deep unstable layer above it",
+            "Calm wind at ridge height and strong thermal heating on the lee slope",
+            "Strong winds that decrease with height above a ridge in very unstable air"
+          ],
+          "a": 0,
+          "e": "Stable flow across a barrier sets up downwind waves."
+        }
+      ]
+    },
+    {
+      "title": "Wind shear and low-level jets",
+      "lesson": [
+        "Wind shear is a change in wind speed or direction over a short distance. Low-level wind shear (LLWS) is shear in the lowest 2,000 ft or so above the ground. It is a major hazard on approach and takeoff.",
+        {
+          "h": "Common causes"
+        },
+        {
+          "list": [
+            "Thunderstorm outflow and microbursts.",
+            "Fronts, especially fast-moving cold fronts and warm fronts at low level.",
+            "Strong surface inversions: calm at the surface under strong wind just above, typical on clear nights.",
+            "Sea breeze fronts.",
+            "Terrain and obstacles close to the runway."
+          ]
+        },
+        {
+          "h": "Nocturnal low-level jet"
+        },
+        "After sunset the surface layer decouples from the air above because of a nocturnal inversion. Friction no longer holds back the winds a few hundred metres up, and they accelerate. A wind maximum forms at roughly 300 to 1,000 m above the ground, strongest in the early morning. It is common over flat land such as the Great Plains and can also occur near coasts.",
+        {
+          "h": "Effects on aircraft"
+        },
+        "On approach, an aircraft may fly from a strong wind at 500 ft to calm air at the surface. Airspeed drops rapidly and the aircraft sinks below the glide path. Pilots add speed margin and are briefed on reported LLWS.",
+        {
+          "note": "Light winds at the surface on a clear night do not mean light winds above. Check the winds at 1,000 to 2,000 ft."
+        }
+      ],
+      "terms": [
+        [
+          "LLWS",
+          "Low-level wind shear, within about 2,000 ft of the ground."
+        ],
+        [
+          "Nocturnal inversion",
+          "Temperature inversion that forms near the ground at night."
+        ],
+        [
+          "Low-level jet",
+          "Layer of strong winds a few hundred metres above the surface."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "In what layer is low-level wind shear generally defined?",
+          "c": [
+            "The lowest 2,000 ft above the ground",
+            "Above 30,000 ft",
+            "Between 10,000 and 20,000 ft",
+            "Only at the surface"
+          ],
+          "a": 0,
+          "e": "LLWS refers to shear affecting approach and takeoff, within about 2,000 ft AGL."
+        },
+        {
+          "q": "Why does a nocturnal low-level jet form?",
+          "c": [
+            "A surface inversion decouples the surface from the air above, so winds aloft accelerate",
+            "Surface friction increases at night and pushes extra wind into the layer above",
+            "Heat from the sun in the evening accelerates the air a few hundred metres up",
+            "Cold fronts always pass during the night and create a jet along the boundary"
+          ],
+          "a": 0,
+          "e": "Reduced friction above the nocturnal inversion allows winds to speed up."
+        },
+        {
+          "q": "What is a typical cause of wind shear near airports?",
+          "c": [
+            "Thunderstorm outflow",
+            "Cirrus cloud",
+            "High-level haze",
+            "Clear-air frost"
+          ],
+          "a": 0,
+          "e": "Outflow and microbursts create sudden speed and direction changes."
+        },
+        {
+          "q": "A clear, calm night with a strong inversion and strong winds above can produce:",
+          "c": [
+            "Low-level wind shear",
+            "Convective turbulence",
+            "Heavy snow",
+            "Freezing rain"
+          ],
+          "a": 0,
+          "e": "Light surface wind beneath strong wind aloft gives strong shear in a shallow layer."
+        },
+        {
+          "q": "When does the nocturnal low-level jet usually peak?",
+          "c": [
+            "Late night to early morning",
+            "Mid-afternoon after peak heating",
+            "Around noon each day",
+            "Early evening just after sunset"
+          ],
+          "a": 0,
+          "e": "The jet strengthens during the night and often peaks near dawn."
+        }
+      ]
+    },
+    {
+      "title": "Hazard warning criteria (ECCC)",
+      "lesson": [
+        "Environment and Climate Change Canada (ECCC) issues public weather alerts. Criteria are set by national and regional standards, and some thresholds vary by province or region, so always confirm the current criteria in the ECCC alerting documents before relying on a specific number.",
+        {
+          "h": "Alert terms"
+        },
+        {
+          "list": [
+            "Watch: conditions are favourable for the development of the hazard. Be prepared.",
+            "Warning: the hazard is imminent or occurring. Take action.",
+            "Advisory and special weather statement: lower-impact or less certain hazards, or information about an unusual event."
+          ]
+        },
+        "ECCC alerts also use colour (yellow, orange, red) to show impact and likelihood.",
+        {
+          "h": "Example criteria (national guidance)"
+        },
+        {
+          "list": [
+            "Severe thunderstorm: any one of hail 2 cm or larger, wind gusts 90 km/h or more, or heavy rain of 50 mm in 1 hour or 75 mm in 3 hours. A tornado alone would trigger a tornado warning.",
+            "Tornado warning: a tornado is occurring or imminent, based on radar signatures or spotters.",
+            "Blizzard: wind 40 km/h or more with visibility 400 m or less for at least 4 hours.",
+            "Freezing rain warning: freezing rain expected to cause significant accumulation of ice. Thresholds depend on region."
+          ]
+        },
+        {
+          "note": "Know the difference between a watch and a warning. A watch says 'be ready'. A warning says 'it is happening or about to'."
+        }
+      ],
+      "terms": [
+        [
+          "Watch",
+          "Conditions favourable for hazard development."
+        ],
+        [
+          "Warning",
+          "Hazard is occurring or imminent."
+        ],
+        [
+          "Special weather statement",
+          "Alert for unusual or less-certain weather."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "What does a 'warning' mean in ECCC terminology?",
+          "c": [
+            "The hazard is imminent or occurring",
+            "Conditions are favourable for the hazard to develop",
+            "The hazard was cancelled",
+            "A general forecast only"
+          ],
+          "a": 0,
+          "e": "Warnings call for action; watches signal favourable conditions."
+        },
+        {
+          "q": "What is the national hail criterion for a severe thunderstorm?",
+          "c": [
+            "2 cm or larger",
+            "0.5 cm",
+            "5 mm",
+            "10 cm"
+          ],
+          "a": 0,
+          "e": "Hail 2 cm or larger meets the national severe thunderstorm criteria."
+        },
+        {
+          "q": "What wind gust speed meets the national severe thunderstorm criterion?",
+          "c": [
+            "90 km/h or more",
+            "40 km/h",
+            "60 km/h",
+            "120 km/h only"
+          ],
+          "a": 0,
+          "e": "Gusts of 90 km/h or more are one of the severe thunderstorm triggers."
+        },
+        {
+          "q": "What does a tornado warning mean?",
+          "c": [
+            "A tornado is occurring or imminent",
+            "Tornado conditions might develop later this week",
+            "A tornado is impossible",
+            "A funnel cloud was reported yesterday"
+          ],
+          "a": 0,
+          "e": "Tornado warnings are based on radar signatures or spotter reports of an actual or imminent tornado."
+        },
+        {
+          "q": "A severe thunderstorm can be triggered by heavy rain of:",
+          "c": [
+            "50 mm in 1 hour or 75 mm in 3 hours",
+            "10 mm in 1 hour or 25 mm in 3 hours",
+            "5 mm in 1 hour or 15 mm in 12 hours",
+            "100 mm in 1 hour or 150 mm in 24 hours"
+          ],
+          "a": 0,
+          "e": "Intense rainfall rates are one of the severe thunderstorm criteria."
+        }
+      ]
+    }
+  ]
+}

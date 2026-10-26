@@ -1,0 +1,609 @@
+{
+  "title": "2. Wind and Circulation",
+  "topics": [
+    {
+      "title": "Pressure gradient force and Coriolis effect",
+      "lesson": [
+        "Wind is air moving in response to forces. Two forces explain most large-scale wind: the pressure gradient force and the Coriolis effect.",
+        {
+          "h": "Pressure gradient force (PGF)"
+        },
+        "The PGF pushes air from high toward low pressure, perpendicular to the isobars. The closer the isobars, the larger the gradient and the stronger the force. On a chart, tight isobars mean strong wind.",
+        {
+          "h": "Coriolis effect"
+        },
+        {
+          "list": [
+            "An apparent force caused by Earth's rotation. It deflects moving air to the RIGHT in the Northern Hemisphere and to the LEFT in the Southern Hemisphere.",
+            "It changes direction only, never speed.",
+            "It is zero at the equator and greatest at the poles. It grows with wind speed.",
+            "It is too small to matter for small, short-lived motions such as a sea breeze over a few hours."
+          ]
+        },
+        {
+          "formula": "Coriolis parameter  f = 2 * Omega * sin(latitude)"
+        },
+        {
+          "h": "Buys Ballot's law (Northern Hemisphere)"
+        },
+        "Stand with your back to the wind. Low pressure is on your left. This works above the friction layer, where the wind is close to geostrophic.",
+        {
+          "note": "Air does not blow straight from high to low. The Coriolis effect turns it until it flows around the pressure centres."
+        }
+      ],
+      "terms": [
+        [
+          "Isobar",
+          "Line joining points of equal pressure."
+        ],
+        [
+          "Pressure gradient",
+          "Rate of change of pressure with horizontal distance."
+        ],
+        [
+          "Coriolis effect",
+          "Apparent deflection of moving air due to Earth's rotation."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "In which direction does the pressure gradient force act?",
+          "c": [
+            "From high to low pressure, perpendicular to isobars",
+            "From low to high pressure, perpendicular to the isobars",
+            "Parallel to the isobars with high pressure on the right",
+            "Toward the equator along the nearest line of latitude"
+          ],
+          "a": 0,
+          "e": "The PGF points from high to low pressure at right angles to the isobars."
+        },
+        {
+          "q": "In the Northern Hemisphere, the Coriolis effect deflects moving air:",
+          "c": [
+            "To the right",
+            "To the left",
+            "Upward",
+            "Toward the nearest low"
+          ],
+          "a": 0,
+          "e": "Northern Hemisphere deflection is to the right of the direction of motion."
+        },
+        {
+          "q": "What is the Coriolis effect at the equator?",
+          "c": [
+            "Zero",
+            "Maximum",
+            "Half its polar value",
+            "Dependent only on wind direction"
+          ],
+          "a": 0,
+          "e": "It is proportional to sin(latitude), which is zero at the equator."
+        },
+        {
+          "q": "Buys Ballot's law in the Northern Hemisphere: with your back to the wind, where is low pressure?",
+          "c": [
+            "On your left",
+            "On your right",
+            "Directly ahead",
+            "Directly behind"
+          ],
+          "a": 0,
+          "e": "In the Northern Hemisphere low pressure is on the left when your back is to the wind."
+        },
+        {
+          "q": "What does close isobar spacing on a surface chart indicate?",
+          "c": [
+            "Strong winds",
+            "Light winds",
+            "Fronts",
+            "Clear skies"
+          ],
+          "a": 0,
+          "e": "Closely spaced isobars mean a steep pressure gradient, hence a strong wind."
+        }
+      ]
+    },
+    {
+      "title": "Geostrophic, gradient and thermal wind",
+      "lesson": [
+        {
+          "h": "Geostrophic wind"
+        },
+        "Above the friction layer, for straight isobars, the pressure gradient force balances the Coriolis force. The wind then blows parallel to the isobars with low pressure on the left (Northern Hemisphere). Wind speed is proportional to the pressure gradient.",
+        {
+          "h": "Gradient wind"
+        },
+        "Real isobars curve. Around a low, the net force toward the centre must supply the centripetal force, so the gradient wind is slower than the geostrophic wind for the same pressure gradient (subgeostrophic). Around a high, it is faster (supergeostrophic).",
+        {
+          "h": "Thermal wind"
+        },
+        "The thermal wind is not a real wind. It is the vector difference between the geostrophic winds at two levels. It blows parallel to the thickness lines with cold air on the left (Northern Hemisphere).",
+        {
+          "list": [
+            "A strong horizontal temperature gradient means wind increases rapidly with height. This is why jet streams sit above frontal zones.",
+            "Wind turning counterclockwise with height (backing) means warm air advection.",
+            "Wind turning clockwise with height (veering) means cold air advection."
+          ]
+        },
+        {
+          "note": "Quick check: if the wind backs with height in a sounding, warm air is arriving. Ahead of a warm front, winds typically back with height."
+        }
+      ],
+      "terms": [
+        [
+          "Geostrophic wind",
+          "Wind resulting from balance between PGF and Coriolis force, parallel to straight isobars."
+        ],
+        [
+          "Gradient wind",
+          "Wind that also accounts for curvature of the flow."
+        ],
+        [
+          "Thermal wind",
+          "Vector difference of geostrophic wind between two levels, parallel to thickness lines."
+        ],
+        [
+          "Backing / veering",
+          "Counterclockwise / clockwise turning of wind direction."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "In the Northern Hemisphere, the geostrophic wind blows:",
+          "c": [
+            "Parallel to isobars with low pressure on the left",
+            "Across isobars toward low pressure",
+            "Parallel to isobars with low pressure on the right",
+            "From low to high pressure"
+          ],
+          "a": 0,
+          "e": "PGF and Coriolis balance, so flow runs along the isobars with low pressure to the left."
+        },
+        {
+          "q": "Around a low-pressure centre, how does the gradient wind compare with the geostrophic wind for the same pressure gradient?",
+          "c": [
+            "It is weaker (subgeostrophic)",
+            "It is stronger (supergeostrophic)",
+            "It is equal",
+            "It blows across the isobars"
+          ],
+          "a": 0,
+          "e": "Around a low the pressure gradient force must also supply the centripetal force, so the wind is slower than geostrophic."
+        },
+        {
+          "q": "In the Northern Hemisphere the thermal wind blows parallel to thickness lines with:",
+          "c": [
+            "Cold air on the left",
+            "Cold air on the right",
+            "Warm air on the left",
+            "Warm air directly ahead"
+          ],
+          "a": 0,
+          "e": "The thermal wind keeps the cold air to the left, just as the geostrophic wind keeps low pressure to the left."
+        },
+        {
+          "q": "In the Northern Hemisphere, winds that back (turn counterclockwise) with height indicate:",
+          "c": [
+            "Warm air advection",
+            "Cold air advection",
+            "No temperature advection",
+            "A strengthening ridge only"
+          ],
+          "a": 0,
+          "e": "Backing with height signals warm advection; veering with height signals cold advection."
+        },
+        {
+          "q": "Why are jet streams found above frontal zones?",
+          "c": [
+            "A strong horizontal temperature gradient makes wind increase rapidly with height",
+            "Surface friction is weakest along frontal boundaries, so winds aloft strengthen",
+            "Condensation in frontal cloud releases heat that directly accelerates the upper wind",
+            "The Coriolis force is strongest where fronts lie, which speeds up the flow aloft"
+          ],
+          "a": 0,
+          "e": "Thermal wind balance means a large horizontal temperature contrast produces a large increase in wind with height."
+        }
+      ]
+    },
+    {
+      "title": "Friction and boundary layer winds",
+      "lesson": [
+        "The atmospheric boundary layer is the lowest 1 to 2 km, where surface friction matters. Friction slows the wind. A slower wind feels a weaker Coriolis effect, so the pressure gradient force wins and the wind turns toward lower pressure.",
+        {
+          "list": [
+            "Surface wind blows across the isobars toward low pressure, typically 10 to 20 degrees over water and 25 to 45 degrees over land.",
+            "Surface wind speed is about one-third to one-half of the geostrophic wind over land, and about two-thirds over open water.",
+            "Surface winds therefore back (turn counterclockwise) relative to the wind above. Wind veers with height through the friction layer."
+          ]
+        },
+        {
+          "h": "Consequences"
+        },
+        "Around a surface low, the air spirals inward (converges) and rises, which supports cloud and precipitation. Around a surface high it spirals outward (diverges) and air sinks from above, which suppresses cloud.",
+        {
+          "h": "Diurnal cycle"
+        },
+        {
+          "list": [
+            "Daytime: surface heating mixes the boundary layer. Stronger winds aloft are brought down, so gusts peak in the afternoon.",
+            "Night: a surface inversion decouples the surface layer. Surface wind drops while winds just above the inversion can strengthen (see low-level jets)."
+          ]
+        },
+        {
+          "note": "Rougher terrain (forest, cities) gives more friction, less surface wind, and greater turning than open water."
+        }
+      ],
+      "terms": [
+        [
+          "Boundary layer",
+          "Lowest part of the atmosphere directly influenced by surface friction, about 1 to 2 km deep."
+        ],
+        [
+          "Convergence",
+          "Net horizontal inflow of air toward a point."
+        ],
+        [
+          "Divergence",
+          "Net horizontal outflow of air from a point."
+        ],
+        [
+          "Gust",
+          "Brief increase in wind speed above the mean."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "How does the surface wind compare with the geostrophic wind above the friction layer?",
+          "c": [
+            "Slower and turned toward lower pressure",
+            "Faster and parallel to the isobars",
+            "Slower and turned toward higher pressure",
+            "The same speed and direction"
+          ],
+          "a": 0,
+          "e": "Friction slows the wind, weakens Coriolis, and lets the pressure gradient force turn the flow toward low pressure."
+        },
+        {
+          "q": "How does surface air flow around a Northern Hemisphere low?",
+          "c": [
+            "Counterclockwise and inward",
+            "Clockwise and outward",
+            "Clockwise and inward",
+            "Counterclockwise and outward"
+          ],
+          "a": 0,
+          "e": "Northern Hemisphere lows have counterclockwise circulation with inflow (convergence) at the surface."
+        },
+        {
+          "q": "Over which surface is the turning angle between surface wind and isobars generally largest?",
+          "c": [
+            "Rough land",
+            "Open ocean",
+            "Smooth ice",
+            "It is identical everywhere"
+          ],
+          "a": 0,
+          "e": "Rougher surfaces produce more friction and a larger angle across the isobars."
+        },
+        {
+          "q": "Why do surface gusts often peak in the afternoon?",
+          "c": [
+            "Daytime heating mixes faster upper winds down to the surface",
+            "Pressure gradients over land are strongest at noon each day",
+            "Friction between wind and ground is lowest in the afternoon hours",
+            "The Coriolis effect reaches its daily maximum in the early afternoon"
+          ],
+          "a": 0,
+          "e": "Convective mixing during the day transports momentum from aloft downward."
+        },
+        {
+          "q": "What does the air do over a surface high-pressure centre?",
+          "c": [
+            "Diverges at the surface while air sinks from above",
+            "Converges at the surface while air rises through the column",
+            "Stays nearly stationary with no vertical motion above it",
+            "Spirals counterclockwise and inward toward the central pressure"
+          ],
+          "a": 0,
+          "e": "Surface divergence in a high is replaced by sinking air, which suppresses cloud."
+        }
+      ]
+    },
+    {
+      "title": "General circulation (Hadley, Ferrel, Polar cells)",
+      "lesson": [
+        "The sun heats the tropics more than the poles. The atmosphere moves heat poleward in a pattern called the general circulation. In each hemisphere it is simplified into three cells.",
+        {
+          "list": [
+            "Hadley cell (0 to 30 degrees): air rises at the ITCZ near the equator, flows poleward aloft, sinks at about 30 degrees. Surface flow returns toward the equator as the trade winds.",
+            "Ferrel cell (30 to 60 degrees): an indirect, eddy-driven cell. Surface flow is poleward and turned into westerlies.",
+            "Polar cell (60 to 90 degrees): cold air sinks at the pole and flows equatorward as polar easterlies."
+          ]
+        },
+        {
+          "h": "Pressure belts and winds"
+        },
+        {
+          "list": [
+            "ITCZ (near the equator): low pressure, rising air, heavy rain, light winds (doldrums).",
+            "Subtropical highs (about 30 degrees): sinking air, clear skies, deserts. The Azores/Bermuda High affects Atlantic weather.",
+            "Polar front (about 60 degrees): boundary between polar and mid-latitude air. Mid-latitude cyclones form along it.",
+            "Trade winds: from the northeast in the Northern Hemisphere and southeast in the Southern.",
+            "Prevailing westerlies in mid-latitudes. Nova Scotia sits in this belt, so weather mostly arrives from the west."
+          ]
+        },
+        {
+          "note": "The real circulation is not three tidy cells. Waves and eddies carry much of the heat poleward at mid-latitudes. The cells are a teaching model."
+        }
+      ],
+      "terms": [
+        [
+          "ITCZ",
+          "Intertropical Convergence Zone: band of rising air and heavy convection near the equator."
+        ],
+        [
+          "Trade winds",
+          "Steady easterly surface winds between the equator and about 30 degrees."
+        ],
+        [
+          "Westerlies",
+          "Prevailing winds from the west in mid-latitudes."
+        ],
+        [
+          "Polar front",
+          "Boundary between polar and mid-latitude air masses, near 60 degrees."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "Which three cells make up the simplified general circulation in each hemisphere?",
+          "c": [
+            "Hadley, Ferrel and Polar",
+            "Walker, Hadley and Rossby",
+            "Trade, Westerly and Polar",
+            "Tropical, Equatorial and Arctic"
+          ],
+          "a": 0,
+          "e": "The three-cell model has Hadley (tropical), Ferrel (mid-latitude) and Polar cells."
+        },
+        {
+          "q": "The trade winds in the Northern Hemisphere blow from the:",
+          "c": [
+            "Northeast",
+            "Southwest",
+            "Northwest",
+            "Southeast"
+          ],
+          "a": 0,
+          "e": "Trade winds are easterlies; in the Northern Hemisphere they come from the northeast."
+        },
+        {
+          "q": "What conditions characterize the subtropical highs near 30 degrees latitude?",
+          "c": [
+            "Sinking air, clear skies and dry conditions",
+            "Rising air, deep cloud and heavy tropical rainfall",
+            "Strong fronts, frequent cyclones and persistent storm tracks",
+            "Persistent fog, drizzle and light onshore winds all year"
+          ],
+          "a": 0,
+          "e": "The Hadley cell descends near 30 degrees, producing dry, stable conditions and many of the world's deserts."
+        },
+        {
+          "q": "What is the prevailing wind direction over Nova Scotia?",
+          "c": [
+            "Westerly",
+            "Easterly",
+            "Northerly",
+            "Southerly"
+          ],
+          "a": 0,
+          "e": "Nova Scotia lies in the mid-latitude westerlies."
+        },
+        {
+          "q": "Which cell is considered 'indirect' and driven mainly by eddies?",
+          "c": [
+            "Ferrel cell",
+            "Hadley cell",
+            "Polar cell",
+            "Walker cell"
+          ],
+          "a": 0,
+          "e": "The Ferrel cell is driven by mid-latitude eddies rather than direct thermal forcing."
+        }
+      ]
+    },
+    {
+      "title": "Jet streams",
+      "lesson": [
+        "Jet streams are narrow, fast ribbons of wind near the tropopause. By the WMO definition the core winds are at least 60 kt (30 m/s). They are typically thousands of km long, hundreds of km wide, and a few km deep.",
+        {
+          "list": [
+            "Polar front jet: about 250 to 300 hPa (9 to 12 km). Follows the polar front and shifts north and south. This is the jet that steers mid-latitude storms over Canada.",
+            "Subtropical jet: near 200 hPa (about 12 km), at the poleward edge of the Hadley cell. More stable in position.",
+            "Jets are strongest in winter because the equator-to-pole temperature contrast is greatest."
+          ]
+        },
+        {
+          "h": "Why they exist"
+        },
+        "Thermal wind balance: a strong horizontal temperature gradient in the lower atmosphere means wind increases with height until the temperature gradient reverses near the tropopause. The wind then peaks there.",
+        {
+          "h": "Entrance and exit regions"
+        },
+        "Air accelerates into the jet core (entrance) and decelerates out of it (exit). In the Northern Hemisphere, upper-level divergence, and thus rising air, is favoured in the right entrance and left exit regions. Surface cyclones often develop beneath these.",
+        {
+          "h": "Aviation and operations"
+        },
+        "Flying east with a jet saves time and fuel. Clear-air turbulence (CAT) is common near jet cores, especially on the cold-air side and near strong shear zones.",
+        {
+          "note": "Jet streams are found in the 250 hPa and 300 hPa charts. Look for tightly packed isotachs (lines of equal wind speed)."
+        }
+      ],
+      "terms": [
+        [
+          "Jet core",
+          "Axis of maximum wind speed in a jet stream."
+        ],
+        [
+          "Isotach",
+          "Line of equal wind speed."
+        ],
+        [
+          "CAT",
+          "Clear-air turbulence: turbulence in cloudless air, often near jets."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "By the WMO definition, what minimum wind speed defines a jet stream?",
+          "c": [
+            "60 kt (30 m/s)",
+            "30 kt (15 m/s)",
+            "100 kt (50 m/s)",
+            "20 kt (10 m/s)"
+          ],
+          "a": 0,
+          "e": "The WMO definition uses a core speed of at least 30 m/s, about 60 kt."
+        },
+        {
+          "q": "What is the main cause of jet streams?",
+          "c": [
+            "A strong horizontal temperature gradient (thermal wind)",
+            "Surface friction acting on the flow along ocean coastlines",
+            "Mountain ranges forcing the air to speed up as it climbs",
+            "Warm ocean currents heating the air directly beneath the jet"
+          ],
+          "a": 0,
+          "e": "Strong temperature contrast produces strong vertical wind shear, which is largest near the tropopause."
+        },
+        {
+          "q": "In the Northern Hemisphere, where is upper-level divergence favoured around a straight jet?",
+          "c": [
+            "Right entrance and left exit",
+            "Left entrance and right exit",
+            "Directly in the jet core",
+            "Only far from the jet"
+          ],
+          "a": 0,
+          "e": "Right entrance and left exit regions are the divergent quadrants and promote surface cyclogenesis below."
+        },
+        {
+          "q": "Why are jet streams strongest in winter?",
+          "c": [
+            "The equator-to-pole temperature contrast is greatest",
+            "The sun is closer to the Earth during Northern winter",
+            "Surface friction over snow-covered land is much lower",
+            "More cloud forms in winter and releases extra latent heat"
+          ],
+          "a": 0,
+          "e": "A larger temperature gradient gives stronger thermal wind and faster jets."
+        },
+        {
+          "q": "Which chart is best for finding the polar front jet?",
+          "c": [
+            "250 or 300 hPa",
+            "850 hPa",
+            "Surface analysis",
+            "700 hPa"
+          ],
+          "a": 0,
+          "e": "The polar front jet sits near 250 to 300 hPa, close to the tropopause."
+        }
+      ]
+    },
+    {
+      "title": "Local winds (sea/land breeze, katabatic, valley)",
+      "lesson": [
+        "Local winds develop when small-scale heating or terrain differences set up their own pressure gradients. They are strongest when the large-scale pressure gradient is weak.",
+        {
+          "list": [
+            "Sea breeze: by day land heats faster than water, pressure falls over land, and air flows from sea to land (onshore). Starts late morning, peaks mid-afternoon, may reach 10 to 20 km or more inland. The sea breeze front can trigger thunderstorms and bring a sudden drop in temperature and rise in humidity.",
+            "Land breeze: at night land cools faster, so air flows from land to sea (offshore). Weaker than the sea breeze.",
+            "Valley breeze (anabatic): by day, sun heats slopes and air flows upslope and up-valley.",
+            "Mountain breeze (katabatic): at night, slopes cool and dense air drains downslope and down-valley. Cold air pooling in valleys causes frost and fog.",
+            "Katabatic winds on a large scale occur over ice sheets and glaciers. Winds can be violent.",
+            "Foehn or Chinook: warm, dry downslope wind on the lee of a mountain range (see adiabatic processes). The Chinook affects Alberta."
+          ]
+        },
+        {
+          "note": "Sea breeze days on Nova Scotia's south shore often mean cooler, foggier afternoons on the coast while inland stays warm."
+        }
+      ],
+      "terms": [
+        [
+          "Sea breeze front",
+          "Leading edge of the sea breeze, marked by a temperature drop and sometimes cloud lines."
+        ],
+        [
+          "Anabatic wind",
+          "Wind that flows upslope due to daytime heating."
+        ],
+        [
+          "Katabatic wind",
+          "Cold, dense air flowing downslope under gravity."
+        ],
+        [
+          "Chinook",
+          "A foehn wind on the eastern slopes of the Rockies."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "When and in which direction does a sea breeze typically blow?",
+          "c": [
+            "Daytime, from sea to land",
+            "Night, from sea to land",
+            "Daytime, from land to sea",
+            "Night, from land to sea"
+          ],
+          "a": 0,
+          "e": "Daytime land heating draws cooler air in from the sea."
+        },
+        {
+          "q": "What is a katabatic wind?",
+          "c": [
+            "Cold, dense air flowing downslope",
+            "Warm air flowing upslope",
+            "A wind from the sea",
+            "A wind caused by thunderstorms"
+          ],
+          "a": 0,
+          "e": "Katabatic winds are gravity-driven drainage flows of cold air down slopes."
+        },
+        {
+          "q": "Why does a land breeze occur at night?",
+          "c": [
+            "Land cools faster than the sea, so pressure is higher over land",
+            "The sea cools faster than land at night, so pressure is higher over water",
+            "Coriolis deflection reverses sign after sunset and turns the wind offshore",
+            "Fronts usually move offshore at night and push the surface air out to sea"
+          ],
+          "a": 0,
+          "e": "A cooler, denser land surface creates higher pressure than over the warmer sea, driving offshore flow."
+        },
+        {
+          "q": "A valley breeze generally blows:",
+          "c": [
+            "Up the valley during the day",
+            "Down the valley during the day",
+            "Up the valley at night",
+            "Across the valley only"
+          ],
+          "a": 0,
+          "e": "Daytime heating of slopes draws air upslope and up-valley."
+        },
+        {
+          "q": "A Chinook is best described as:",
+          "c": [
+            "A warm, dry downslope wind on the lee side of mountains",
+            "A cold, dense drainage wind flowing off glaciers and ice sheets",
+            "A moist onshore wind that brings fog to the windward coast",
+            "A tropical storm wind that crosses the Rockies in summer"
+          ],
+          "a": 0,
+          "e": "Chinooks are foehn-type winds: air warms by compression as it descends the lee slopes."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,522 @@
+{
+  "title": "5. Synoptic and Mesoscale Systems",
+  "topics": [
+    {
+      "title": "Extratropical cyclone life cycle",
+      "lesson": [
+        "Mid-latitude lows form along the polar front where warm and cold air meet. The classic Norwegian (Bjerknes) model describes their life cycle.",
+        {
+          "list": [
+            "1. Initial disturbance: a small wave on a stationary front.",
+            "2. Open wave: warm sector develops between a warm front ahead and a cold front behind. Pressure falls and winds increase.",
+            "3. Deepening: the cold front moves faster than the warm front and closes on it. The warm sector narrows.",
+            "4. Occlusion: the cold front overtakes the warm front. The low is usually at or near its greatest intensity around this time.",
+            "5. Dissipation: the warm air is cut off from the surface, the low fills and weakens. The cyclone becomes cold-cored."
+          ]
+        },
+        {
+          "h": "What drives development"
+        },
+        "Surface cyclogenesis needs upper-level support. A shortwave trough aloft with divergence ahead of it, positive vorticity advection, and a strong temperature gradient (baroclinic zone) all help. The surface low deepens when upper-level divergence exceeds surface convergence.",
+        {
+          "h": "Rapid development"
+        },
+        "Explosive cyclogenesis (a weather bomb) is a fall in central pressure of at least 24 hPa in 24 hours at 60 N, scaled by sin(latitude) at other latitudes. These storms are common off the east coast of North America in winter and are major hazards for Atlantic Canada and the North Atlantic.",
+        {
+          "note": "Typical life span: a few days. Surface lows generally move in the direction of the 500 hPa flow above them."
+        }
+      ],
+      "terms": [
+        [
+          "Cyclogenesis",
+          "Development or intensification of a low-pressure system."
+        ],
+        [
+          "Warm sector",
+          "Region of warm air between the cold and warm fronts of a cyclone."
+        ],
+        [
+          "Explosive cyclogenesis",
+          "Rapid deepening of at least 24 hPa in 24 h (at 60 N)."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "When does an extratropical cyclone typically reach its greatest intensity?",
+          "c": [
+            "Around the time of occlusion",
+            "At its first appearance as a frontal wave",
+            "After it has fully dissipated",
+            "When the warm sector is widest"
+          ],
+          "a": 0,
+          "e": "Maximum deepening is usually near the start of occlusion, after which the system gradually weakens."
+        },
+        {
+          "q": "What is the general criterion for a 'bomb' cyclone?",
+          "c": [
+            "Central pressure falls 24 hPa or more in 24 hours (at 60 N)",
+            "Central pressure rises 24 hPa or more in 24 hours at any latitude",
+            "Sustained winds reach 120 km/h within the first 24 hours of life",
+            "The cold front travels faster than 24 km/h for 24 hours"
+          ],
+          "a": 0,
+          "e": "The criterion is a 24 hPa fall in 24 hours at 60 N, scaled for other latitudes."
+        },
+        {
+          "q": "Which upper-air feature typically supports surface cyclogenesis?",
+          "c": [
+            "A trough aloft with divergence ahead of it",
+            "A ridge aloft",
+            "A cut-off high",
+            "Uniform zonal flow with no gradient"
+          ],
+          "a": 0,
+          "e": "Upper divergence removes mass from the column and lowers surface pressure."
+        },
+        {
+          "q": "In a developing cyclone, the warm sector lies between:",
+          "c": [
+            "The warm front and the cold front",
+            "Two warm fronts",
+            "Two cold fronts",
+            "The low centre and the high centre"
+          ],
+          "a": 0,
+          "e": "The warm sector is the wedge of warm air between the two fronts."
+        },
+        {
+          "q": "In the dissipation stage, an extratropical cyclone:",
+          "c": [
+            "Fills and becomes cold-cored",
+            "Strengthens rapidly",
+            "Becomes a tropical cyclone",
+            "Develops a warm core"
+          ],
+          "a": 0,
+          "e": "Warm air is cut off from the surface and the low fills."
+        }
+      ]
+    },
+    {
+      "title": "Upper-air patterns (troughs, ridges, cut-off lows)",
+      "lesson": [
+        "The mid-latitude flow aloft is a wavy pattern of troughs and ridges called Rossby waves. They steer surface systems.",
+        {
+          "list": [
+            "Trough: elongated area of low heights with cyclonic curvature. Cold air, rising motion ahead of the axis, cloud and precipitation.",
+            "Ridge: elongated area of high heights with anticyclonic curvature. Warm air, sinking motion, fair weather.",
+            "Long waves: 3 to 6 around the hemisphere, slow-moving, set the large-scale pattern.",
+            "Short waves: smaller disturbances embedded in the flow, moving quickly with the wind. Each one can trigger surface development."
+          ]
+        },
+        {
+          "h": "Flow types"
+        },
+        {
+          "list": [
+            "Zonal: mostly west to east. Fast-moving systems, mild changes.",
+            "Meridional: large north-south swings. Cold outbreaks and warm surges. Systems can slow down."
+          ]
+        },
+        {
+          "h": "Cut-off low and blocking"
+        },
+        {
+          "list": [
+            "Cut-off low: a closed low that separates from the main westerlies. Slow-moving, can persist for days, with cold air aloft, showers and unsettled weather.",
+            "Blocking high (for example an omega block): a strong ridge that stalls the flow. Storms are diverted around it and the same weather can persist for a week or more."
+          ]
+        },
+        {
+          "h": "Reading a chart"
+        },
+        "At 500 hPa the flow is parallel to the height contours with low heights on the left (Northern Hemisphere). Closer contours mean stronger winds.",
+        {
+          "note": "Surface lows tend to track on the downstream side of troughs and beneath the jet axis."
+        }
+      ],
+      "terms": [
+        [
+          "Rossby wave",
+          "Large-scale wave in the mid-latitude westerlies."
+        ],
+        [
+          "Cut-off low",
+          "Closed upper low isolated from the main flow."
+        ],
+        [
+          "Blocking",
+          "A persistent, strong ridge that stalls the normal west-to-east motion."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "What characterizes a cut-off low?",
+          "c": [
+            "A slow-moving closed low detached from the westerly flow, often with persistent unsettled weather",
+            "A fast-moving ridge embedded in the westerlies that brings short spells of clear weather",
+            "A weak surface high that stays over the same area and brings steady clear skies",
+            "A stationary front at the surface that separates two air masses for several days"
+          ],
+          "a": 0,
+          "e": "Cut-off lows can linger for days, bringing cold air aloft and showers."
+        },
+        {
+          "q": "What conditions go with an upper-level ridge?",
+          "c": [
+            "Warm air, sinking motion, fair weather",
+            "Cold air, strong ascent, heavy rain",
+            "Strong jet streaks only",
+            "Tropical cyclones"
+          ],
+          "a": 0,
+          "e": "Ridges are associated with anticyclonic curvature, subsidence and mostly dry weather."
+        },
+        {
+          "q": "At 500 hPa in the Northern Hemisphere, flow is parallel to height contours with:",
+          "c": [
+            "Lower heights on the left",
+            "Lower heights on the right",
+            "Higher heights on the left",
+            "Contours crossing at right angles"
+          ],
+          "a": 0,
+          "e": "Near-geostrophic flow keeps low heights on the left."
+        },
+        {
+          "q": "What is a blocking pattern?",
+          "c": [
+            "A persistent strong ridge that stalls the west-to-east flow",
+            "A mountain range that blocks surface winds and causes rain shadows",
+            "A cold front that has stalled for more than a day over one region",
+            "A strong jet stream that moves faster than the surface storms below"
+          ],
+          "a": 0,
+          "e": "Blocks divert storms and can lock in the same weather for long periods."
+        },
+        {
+          "q": "Long waves in the westerlies typically number:",
+          "c": [
+            "3 to 6 around the hemisphere",
+            "20 to 30 around the hemisphere",
+            "Exactly 12 around the hemisphere",
+            "Only one wave around the hemisphere"
+          ],
+          "a": 0,
+          "e": "Planetary-scale Rossby waves are few, large and slow."
+        }
+      ]
+    },
+    {
+      "title": "Vorticity and divergence",
+      "lesson": [
+        "Vorticity measures local spin. Divergence measures horizontal spreading of air. They link upper-air patterns to surface weather.",
+        {
+          "h": "Vorticity"
+        },
+        {
+          "list": [
+            "Relative vorticity: spin relative to the Earth. Positive means cyclonic (counterclockwise in the Northern Hemisphere).",
+            "Planetary vorticity (f): spin due to Earth's rotation, greater toward the poles.",
+            "Absolute vorticity = relative + planetary. It is roughly conserved in large-scale flow.",
+            "Relative vorticity maxima occur in the base of troughs (curvature) and in cyclonic shear zones on the left side of a jet."
+          ]
+        },
+        {
+          "h": "Advection and vertical motion"
+        },
+        {
+          "list": [
+            "Positive vorticity advection (PVA): higher vorticity moves in. At mid-levels (500 hPa) this is associated with upper divergence and rising motion, which favours cloud, precipitation, and falling surface pressure.",
+            "Negative vorticity advection (NVA): associated with sinking motion and clearing."
+          ]
+        },
+        {
+          "h": "Mass continuity"
+        },
+        "Divergence aloft must be balanced by upward motion beneath it, which draws in air at lower levels (convergence). If upper divergence exceeds surface convergence, surface pressure falls and a low deepens.",
+        {
+          "note": "Stack to remember: upper divergence over surface convergence equals rising air and a developing low."
+        }
+      ],
+      "terms": [
+        [
+          "Vorticity",
+          "Measure of local rotation in a fluid."
+        ],
+        [
+          "PVA",
+          "Positive vorticity advection: movement of higher vorticity air into an area."
+        ],
+        [
+          "Mass continuity",
+          "Principle that air removed by divergence must be replaced by vertical motion and convergence."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "What does positive relative vorticity represent in the Northern Hemisphere?",
+          "c": [
+            "Cyclonic (counterclockwise) rotation",
+            "Anticyclonic (clockwise) rotation",
+            "No rotation",
+            "Strong sinking"
+          ],
+          "a": 0,
+          "e": "Positive vorticity is counterclockwise spin in the Northern Hemisphere."
+        },
+        {
+          "q": "What does PVA at 500 hPa usually indicate?",
+          "c": [
+            "Rising motion that favours cloud and falling surface pressure",
+            "Sinking motion that favours clearing and rising surface pressure",
+            "A stationary front with no vertical motion near the 500 hPa level",
+            "Calm winds at all levels with no change in vertical motion"
+          ],
+          "a": 0,
+          "e": "PVA is linked to upper divergence and ascent."
+        },
+        {
+          "q": "Where are relative vorticity maxima typically found?",
+          "c": [
+            "In the base of troughs and in cyclonic shear zones",
+            "At the crests of ridges and in anticyclonic shear zones",
+            "In the stratosphere above the tropopause over the poles",
+            "Over warm oceans where the sea surface is warmest"
+          ],
+          "a": 0,
+          "e": "Trough curvature and cyclonic shear both add positive vorticity."
+        },
+        {
+          "q": "Divergence aloft over a surface low generally causes:",
+          "c": [
+            "Surface pressure to fall",
+            "Surface pressure to rise",
+            "No change in pressure",
+            "The low to vanish at once"
+          ],
+          "a": 0,
+          "e": "Mass is removed from the column, lowering pressure at the surface."
+        },
+        {
+          "q": "NVA at mid-levels is generally linked to:",
+          "c": [
+            "Sinking motion and clearing",
+            "Rising motion and heavier cloud",
+            "Rapid deepening of a surface low",
+            "Strong convergence and falling pressure"
+          ],
+          "a": 0,
+          "e": "Negative vorticity advection favours subsidence."
+        }
+      ]
+    },
+    {
+      "title": "Mesoscale systems (MCS, squall lines)",
+      "lesson": [
+        "Mesoscale systems range from a few km to several hundred km and last from hours to a day. They are often missed by global models and need radar and satellite to monitor.",
+        {
+          "list": [
+            "Mesoscale convective system (MCS): an organized cluster of thunderstorms that acts as one system, often with a large anvil and stratiform rain area.",
+            "Mesoscale convective complex (MCC): a large, nearly circular MCS identified from cold cloud tops on infrared imagery. Often forms in the evening and lasts into the night.",
+            "Squall line: a line of thunderstorms with a continuous gust front, often marked by a shelf cloud, sudden wind shift, temperature drop and heavy rain.",
+            "Bow echo: radar signature of a bowed line of storms producing damaging straight-line winds.",
+            "Derecho: a widespread, long-lived windstorm moving across a large area (hundreds of km) with a swath of damaging straight-line winds.",
+            "Gust front: leading edge of cold outflow from thunderstorms. It can arrive well before the rain."
+          ]
+        },
+        {
+          "h": "Other mesoscale features"
+        },
+        {
+          "list": [
+            "Sea breeze front and lake breeze fronts: focus convection.",
+            "Lake-effect snow: cold air crossing relatively warm open lake water becomes unstable and produces intense snow bands on the downwind shore.",
+            "Polar lows: small, intense maritime lows in cold air outbreaks over open ocean."
+          ]
+        },
+        {
+          "note": "In Atlantic Canada, mesoscale bands in winter storms can produce snowfall rates far greater than those in the surrounding region."
+        }
+      ],
+      "terms": [
+        [
+          "Mesoscale",
+          "Scale of roughly 2 to 2000 km, between local and synoptic."
+        ],
+        [
+          "Gust front",
+          "Boundary of cold air outflow from a thunderstorm."
+        ],
+        [
+          "Derecho",
+          "Long-lived straight-line wind event associated with a fast-moving MCS."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "What is a gust front?",
+          "c": [
+            "The leading edge of cold outflow from a thunderstorm",
+            "The warm inflow region feeding air into a mature supercell",
+            "The forward edge of the anvil cloud spreading ahead of a storm",
+            "A boundary where sea breeze air meets the land breeze at dawn"
+          ],
+          "a": 0,
+          "e": "Cold downdraft air spreads out at the surface and forms a gust front."
+        },
+        {
+          "q": "How is a derecho best described?",
+          "c": [
+            "A widespread, long-lived straight-line wind event",
+            "A single short-lived tornado with a narrow damage path",
+            "A tropical cyclone that has moved over cold water",
+            "A winter storm with blowing snow and low visibility"
+          ],
+          "a": 0,
+          "e": "Derechos produce damaging winds along a long swath, usually from a fast-moving MCS."
+        },
+        {
+          "q": "What conditions cause lake-effect snow?",
+          "c": [
+            "Cold air passes over relatively warm open water and becomes unstable",
+            "Warm moist air flows over a frozen lake and cools to saturation",
+            "A strong cold front stalls on land and lifts air over the shoreline",
+            "Calm high-pressure conditions allow lake fog to freeze onto the shore"
+          ],
+          "a": 0,
+          "e": "Heat and moisture from the lake destabilize the air and create intense snow bands on the lee shore."
+        },
+        {
+          "q": "What is a squall line?",
+          "c": [
+            "A line of thunderstorms with a gust front and shelf cloud",
+            "A narrow line of fog banks along a sea breeze front at dawn",
+            "A series of calm days between two passing warm fronts",
+            "A frontal wave visible as thin cirrus bands at high level"
+          ],
+          "a": 0,
+          "e": "Squall lines have organized lines of convection with a continuous gust front."
+        },
+        {
+          "q": "A mesoscale convective complex (MCC) is mainly identified by:",
+          "c": [
+            "A large, round cold cloud shield on infrared satellite imagery",
+            "A single funnel cloud descending from a rotating wall cloud",
+            "A hurricane-like eye with a clear centre on visible imagery",
+            "A halo around the sun produced by thin high ice cloud"
+          ],
+          "a": 0,
+          "e": "MCCs are defined by size and shape criteria on IR imagery."
+        }
+      ]
+    },
+    {
+      "title": "Tropical cyclones and post-tropical transition",
+      "lesson": [
+        "Tropical cyclones are warm-core, rotating storms that draw energy from warm ocean water. They threaten Atlantic Canada mostly in late summer and fall, usually in a weakened or transitioning state.",
+        {
+          "h": "Ingredients"
+        },
+        {
+          "list": [
+            "Sea surface temperature of about 26.5 C or warmer through a depth of about 50 m.",
+            "Weak vertical wind shear.",
+            "A pre-existing disturbance and a moist mid-troposphere.",
+            "Enough Coriolis effect, so generally at least 5 degrees from the equator."
+          ]
+        },
+        {
+          "h": "Intensity categories (sustained wind)"
+        },
+        {
+          "list": [
+            "Tropical depression: below 34 kt.",
+            "Tropical storm: 34 to 63 kt.",
+            "Hurricane: 64 kt (119 km/h) or more. Saffir-Simpson Category 1 starts here."
+          ]
+        },
+        "Atlantic hurricane season runs 1 June to 30 November, with the peak around mid-September. The Canadian Hurricane Centre, part of ECCC and based in Dartmouth, Nova Scotia, forecasts tropical cyclone impacts for Canada.",
+        {
+          "h": "Post-tropical transition"
+        },
+        "Over cooler water (north of the Gulf Stream) and in stronger shear, a tropical cyclone loses its tropical structure. It develops fronts, a cold core, and a larger, asymmetric wind field. It is then called post-tropical. It can still be extremely dangerous. The wind field often expands, and rain and surge can remain high. Post-tropical Fiona (2022) caused severe damage in Nova Scotia and Prince Edward Island.",
+        {
+          "note": "'Post-tropical' means the structure has changed, not that the hazard has gone."
+        }
+      ],
+      "terms": [
+        [
+          "Warm core",
+          "Storm structure with the warmest air at the centre, typical of tropical cyclones."
+        ],
+        [
+          "Post-tropical",
+          "A cyclone that has lost its tropical characteristics but remains a significant storm."
+        ],
+        [
+          "Wind shear",
+          "Change in wind speed or direction with height."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "What is the minimum sea surface temperature generally needed for tropical cyclone development?",
+          "c": [
+            "About 26.5 C",
+            "About 10 C",
+            "About 15 C",
+            "About 35 C"
+          ],
+          "a": 0,
+          "e": "Warm water (about 26.5 C or more to considerable depth) provides the heat and moisture."
+        },
+        {
+          "q": "What sustained wind speed is the minimum for a hurricane?",
+          "c": [
+            "64 kt (119 km/h)",
+            "34 kt (63 km/h)",
+            "100 kt",
+            "50 kt"
+          ],
+          "a": 0,
+          "e": "Tropical storm becomes a hurricane at 64 kt sustained winds."
+        },
+        {
+          "q": "What is the core structure of a tropical cyclone?",
+          "c": [
+            "Warm core",
+            "Cold core",
+            "Frontal core",
+            "No defined core"
+          ],
+          "a": 0,
+          "e": "Latent heat release keeps the centre warm."
+        },
+        {
+          "q": "What does 'post-tropical' mean?",
+          "c": [
+            "The system has lost its tropical structure but can remain dangerous",
+            "The storm has dissipated and no longer poses any threat to land",
+            "The storm has weakened to a tropical depression over warm water",
+            "The storm has moved over land and its winds fall below gale force"
+          ],
+          "a": 0,
+          "e": "The storm has changed structure (often with fronts and a cold core) but may keep strong winds and heavy rain."
+        },
+        {
+          "q": "When is the Atlantic hurricane season?",
+          "c": [
+            "1 June to 30 November",
+            "1 January to 30 June",
+            "1 September to 31 December",
+            "1 April to 31 July"
+          ],
+          "a": 0,
+          "e": "The official Atlantic season is June 1 to November 30."
+        }
+      ]
+    }
+  ]
+}
