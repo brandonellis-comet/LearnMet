@@ -4,19 +4,19 @@
     {
       "title": "Composition and vertical structure (troposphere to thermosphere)",
       "lesson": [
-        "Dry air is about 78% nitrogen, 21% oxygen and 0.9% argon. Carbon dioxide is only about 0.04%. Water vapour is the variable gas (roughly 0 to 4% by volume) and it drives most weather. Ozone is a trace gas but it controls the temperature structure of the stratosphere.",
+        "Dry air is about 78.08% nitrogen, 20.95% oxygen and 0.93% argon. Carbon dioxide is only about 0.04%. Water vapour is the variable gas (up to about 4% by volume) and it drives most weather. Ozone is a trace gas but it controls the temperature structure of the stratosphere.",
         {
           "h": "The layers, from the ground up"
         },
         {
           "list": [
-            "Troposphere: surface to the tropopause. Temperature falls with height (average about 6.5 C per km). Holds roughly 80% of the atmosphere's mass and nearly all weather.",
-            "Stratosphere: tropopause to about 50 km. Temperature rises with height because ozone absorbs ultraviolet radiation. Very stable, little vertical mixing, almost no weather.",
-            "Mesosphere: to about 85 km. Temperature falls again. Coldest part of the atmosphere.",
+            "Troposphere: surface to the tropopause. Temperature falls with height (average about 6.5 C per km). Holds roughly 80% of the atmosphere's mass (derived: NOAA gives 19% for the stratosphere) and nearly all weather.",
+            "Stratosphere: tropopause to about 50 km. Temperature rises with height because of heat released as ozone forms and absorbs ultraviolet radiation. Very stable, little vertical mixing, almost no weather.",
+            "Mesosphere: to about 85 km. Temperature falls again.",
             "Thermosphere: above about 85 km. Temperature rises sharply. The ionosphere sits here."
           ]
         },
-        "The boundaries are named after the layer below them: tropopause, stratopause, mesopause. The tropopause height varies with latitude and season: about 8 to 10 km near the poles, around 11 km in mid-latitudes, and 16 to 18 km in the tropics. It is lower in winter than in summer.",
+        "The boundaries are named after the layer below them: tropopause, stratopause, mesopause. The tropopause height varies with latitude. NOAA gives about 6 km at the poles, about 9 km near 50 degrees latitude and 18 to 20 km at the equator. The ISA uses a single value of 11 km.",
         {
           "note": "Why it matters: jet streams and the strongest turbulence sit near the tropopause, and thunderstorm tops are capped by it."
         }
@@ -28,7 +28,7 @@
         ],
         [
           "Ozone layer",
-          "Region of the stratosphere, roughly 15 to 35 km, where most ozone sits and absorbs UV."
+          "Region of the stratosphere where most atmospheric ozone sits. Ozone formation and UV absorption warm the stratosphere."
         ],
         [
           "Environmental lapse rate",
@@ -56,7 +56,7 @@
             "Air pressure rises with height"
           ],
           "a": 0,
-          "e": "Ozone absorbs incoming UV radiation and warms the layer. This produces the temperature increase with height."
+          "e": "NOAA: the stratosphere warms with height because heat is released when ozone forms. Ozone absorbs ultraviolet radiation."
         },
         {
           "q": "Where is the tropopause typically highest?",
@@ -67,7 +67,7 @@
             "It is the same height everywhere"
           ],
           "a": 0,
-          "e": "The tropopause is highest in the tropics (about 16 to 18 km) and lowest near the poles (about 8 to 10 km)."
+          "e": "NOAA: the tropopause is about 18 to 20 km at the equator, about 9 km at 50 degrees latitude and about 6 km at the poles."
         },
         {
           "q": "What is the most abundant gas in dry air?",
@@ -89,7 +89,7 @@
             "Ionosphere only"
           ],
           "a": 0,
-          "e": "The troposphere has falling temperature with height and about 80% of the atmosphere's mass."
+          "e": "The troposphere has falling temperature with height and holds roughly 80% of the atmosphere's mass."
         },
         {
           "q": "About what fraction of the atmosphere's mass lies in the troposphere?",
@@ -100,29 +100,29 @@
             "About 99%"
           ],
           "a": 0,
-          "e": "The troposphere is the densest layer and holds roughly 80% of the atmosphere's mass."
+          "e": "The troposphere holds roughly 80% of the atmosphere's mass. This is derived: NOAA gives 19% of the gases to the stratosphere."
         },
         {
-          "q": "Which part of the atmosphere has the coldest temperatures?",
+          "q": "According to NOAA, about how high does the stratosphere extend?",
           "c": [
-            "The upper mesosphere",
-            "The stratosphere just below the stratopause",
-            "The troposphere at the surface",
-            "The thermosphere at 200 km"
+            "About 50 km",
+            "About 12 km",
+            "About 85 km",
+            "About 600 km"
           ],
           "a": 0,
-          "e": "Temperature falls through the mesosphere to a minimum near the mesopause, about 85 km up."
+          "e": "NOAA: the stratosphere reaches to about 50 km (31 miles). The mesosphere runs to about 85 km and the thermosphere to about 600 km."
         },
         {
-          "q": "Where is most atmospheric ozone found?",
+          "q": "In which layer is most atmospheric ozone found?",
           "c": [
-            "In the stratosphere, roughly 15 to 35 km up",
+            "In the stratosphere",
             "In the troposphere just above the ground",
             "In the mesosphere near 70 km",
             "In the thermosphere near 300 km"
           ],
           "a": 0,
-          "e": "The ozone layer sits in the stratosphere, where ozone absorbs ultraviolet radiation."
+          "e": "The ozone layer sits in the stratosphere. The 15 to 35 km range was not confirmed and was removed."
         },
         {
           "q": "Which atmospheric gas varies most in concentration and drives most weather?",
@@ -136,15 +136,15 @@
           "e": "Water vapour ranges from near zero to about 4% and its phase changes release or absorb latent heat."
         },
         {
-          "q": "About how high is the average mid-latitude tropopause?",
+          "q": "What tropopause height does the International Standard Atmosphere use?",
           "c": [
-            "About 11 km (36,000 ft)",
-            "About 3 km (10,000 ft)",
-            "About 25 km (82,000 ft)",
-            "About 50 km (164,000 ft)"
+            "11 km (36,089 ft)",
+            "3 km (10,000 ft)",
+            "25 km (82,000 ft)",
+            "50 km (164,000 ft)"
           ],
           "a": 0,
-          "e": "The mid-latitude tropopause averages near 11 km, higher in summer and lower in winter."
+          "e": "ISA places the tropopause at 11 km, where the temperature is -56.5 C."
         },
         {
           "q": "What happens to temperature just above the tropopause?",
@@ -155,9 +155,33 @@
             "It drops steadily toward the coldest values of the mesopause"
           ],
           "a": 0,
-          "e": "The lower stratosphere is close to isothermal, and warming begins higher up as ozone absorbs UV."
+          "e": "In the ISA the temperature is constant at -56.5 C from 11 to 20 km."
+        },
+        {
+          "q": "According to NOAA, about how high is the tropopause at the poles?",
+          "c": [
+            "About 6 km",
+            "About 18 km",
+            "About 11 km",
+            "About 30 km"
+          ],
+          "a": 0,
+          "e": "NOAA: about 6 km at the poles, about 9 km near 50 degrees latitude and 18 to 20 km at the equator."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NOAA JetStream, Composition of the atmosphere: gas percentages and water vapour up to about 4%",
+          "NOAA JetStream, Layers of the atmosphere: layer boundaries, temperature trends, tropopause height by latitude, stratosphere share of gases",
+          "ISO 2533:1975 / ICAO Doc 7488 (via the International Standard Atmosphere article): 11 km tropopause"
+        ],
+        "unverified": [
+          "Troposphere share of mass (80%): derived from NOAA's 19% for the stratosphere, not stated directly.",
+          "Ozone concentration in the stratosphere, the ionosphere sitting in the thermosphere, and the mesopause being the coldest region: standard teaching, not confirmed on the pages read.",
+          "The earlier claim that the tropopause is lower in winter was removed (not confirmed)."
+        ]
+      }
     },
     {
       "title": "Temperature, pressure, humidity relationships",
@@ -179,7 +203,7 @@
         },
         {
           "list": [
-            "Warm air can hold much more water vapour than cold air. The saturation vapour pressure rises roughly 7% for each 1 C of warming.",
+            "Warm air can hold much more water vapour than cold air. The saturation vapour pressure rises about 7% for each 1 C of warming (Penn State METEO 300).",
             "Relative humidity (RH) is how close the air is to saturation. Cool the air at constant moisture and RH rises.",
             "Dew point is the temperature the air must be cooled to (at constant pressure and moisture) to reach saturation. Dew point only changes when moisture is added or removed.",
             "When temperature equals dew point, RH is 100%. A small temperature-dew point spread means cloud or fog is close."
@@ -328,8 +352,30 @@
           ],
           "a": 0,
           "e": "At the dew point the air is saturated, and further cooling forces vapour to condense."
+        },
+        {
+          "q": "By about how much does saturation vapour pressure rise for each 1 C of warming?",
+          "c": [
+            "About 7%",
+            "About 1%",
+            "About 20%",
+            "About 50%"
+          ],
+          "a": 0,
+          "e": "Penn State METEO 300: saturation vapour pressure increases by about 7% for every 1 K (1 C)."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "Penn State METEO 300, Fundamentals of Atmospheric Science: saturation vapour pressure rises about 7% per 1 K; dew point definition and dew point never above air temperature"
+        ],
+        "unverified": [
+          "Relative humidity definition, ideal gas law with R = 287 J/kg/K, hPa = mbar: standard physics, not checked on a Canadian publication.",
+          "Fog warning at a spread of 0 to 2 C, and falling pressure with backing wind as a sign of an approaching low or warm front: operational rules of thumb, not confirmed.",
+          "Source is a university course text, not a Canadian government publication."
+        ]
+      }
     },
     {
       "title": "Hydrostatic balance and the standard atmosphere",
@@ -341,8 +387,8 @@
         "Because cold air is denser, pressure falls faster with height in cold air. The layer between two pressure levels is therefore thinner when cold and thicker when warm. This is the hypsometric relationship, and it is why thickness charts work as temperature charts.",
         {
           "list": [
-            "1000-500 hPa thickness near 540 dam (5,400 m) is a common rough rain/snow line. Lower values mean colder air. Use it as a guide only.",
-            "Near sea level, pressure falls about 1 hPa for every 8 m (about 30 ft) of height."
+            "1000-500 hPa thickness near 540 dam (5,400 m) is used as a rough rain/snow line and roughly divides polar from mid-latitude air (NOAA NWS). Other sources put the equal-chance value nearer 522 dam, and the deep layer is a weak snow indicator. The 850-1000 hPa thickness is used for snow probability. Use it as a guide only.",
+            "Near sea level, pressure falls about 1 hPa for every 8 m (about 27 ft) of height. This follows from the hydrostatic equation with ISA sea-level density: 100 Pa / (1.225 x 9.81) = 8.3 m."
           ]
         },
         {
@@ -350,7 +396,7 @@
         },
         {
           "list": [
-            "Sea level: 1013.25 hPa and 15 C.",
+            "Sea level: 1013.25 hPa (101,325 Pa) and 15 C. Defined in ISO 2533:1975 and ICAO Doc 7488.",
             "Temperature falls 6.5 C per km (about 2 C per 1,000 ft) up to 11 km, where it is -56.5 C.",
             "Above 11 km it is isothermal at -56.5 C up to 20 km."
           ]
@@ -360,11 +406,11 @@
         },
         {
           "list": [
-            "850 hPa: about 1,500 m (5,000 ft)",
-            "700 hPa: about 3,000 m (10,000 ft)",
-            "500 hPa: about 5,500 m (18,000 ft)",
-            "300 hPa: about 9,000 m (30,000 ft)",
-            "250 hPa: about 10,400 m (34,000 ft)"
+            "850 hPa: about 1,460 m (4,800 ft)",
+            "700 hPa: about 3,010 m (9,900 ft)",
+            "500 hPa: about 5,570 m (18,300 ft)",
+            "300 hPa: about 9,160 m (30,100 ft)",
+            "250 hPa: about 10,360 m (34,000 ft). Charts label these levels 5,000, 10,000, 18,000 and 34,000 ft."
           ]
         },
         {
@@ -433,13 +479,13 @@
         {
           "q": "About how high is the 500 hPa level in the standard atmosphere?",
           "c": [
-            "5,500 m (18,000 ft)",
+            "About 5,570 m (18,300 ft)",
             "1,500 m (5,000 ft)",
             "9,000 m (30,000 ft)",
             "3,000 m (10,000 ft)"
           ],
           "a": 0,
-          "e": "500 hPa sits near 5,500 m, which is why it is treated as the mid-troposphere level."
+          "e": "500 hPa sits near 5,570 m in the ISA (computed from the ISA equations), which is why it is treated as the mid-troposphere level."
         },
         {
           "q": "What is the ISA temperature at 11 km?",
@@ -466,13 +512,13 @@
         {
           "q": "About how high is the 850 hPa level in the standard atmosphere?",
           "c": [
-            "About 1,500 m (5,000 ft)",
+            "About 1,460 m (4,800 ft)",
             "About 500 m (1,600 ft)",
             "About 3,000 m (10,000 ft)",
             "About 5,500 m (18,000 ft)"
           ],
           "a": 0,
-          "e": "850 hPa is near 1,500 m, a good proxy for low-level temperature and moisture."
+          "e": "850 hPa is near 1,460 m in the ISA, a good proxy for low-level temperature and moisture."
         },
         {
           "q": "Which pressure level sits near 10,400 m (about flight level 340)?",
@@ -483,7 +529,7 @@
             "850 hPa"
           ],
           "a": 0,
-          "e": "250 hPa is the standard jet stream level at about 10.4 km."
+          "e": "250 hPa is near 10,360 m (about 34,000 ft) in the ISA and is a standard jet stream level."
         },
         {
           "q": "A 1000-500 hPa thickness of 5,100 m compared with 5,700 m indicates the 5,100 m layer is:",
@@ -505,9 +551,23 @@
             "About 5 hPa"
           ],
           "a": 0,
-          "e": "Near sea level pressure falls about 1 hPa per 8 m (roughly 1 hPa per 30 ft)."
+          "e": "Near sea level pressure falls about 1 hPa per 8 m (about 27 ft), from the hydrostatic equation with ISA density."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "ISO 2533:1975 and ICAO Doc 7488 (International Standard Atmosphere): sea level 15 C and 101,325 Pa, 6.5 C per km, 11 km at -56.5 C, isothermal 11 to 20 km",
+          "NOAA NWS Houston training page on thickness (Haby): 540 dam and rain/snow, caveats",
+          "Pressure-level heights and 1 hPa per 8 m: computed here from the ISA equations",
+          "NAV CANADA Aviation Weather Services Guide (2017): 5,000, 10,000, 18,000, 34,000 ft chart labels"
+        ],
+        "unverified": [
+          "Hydrostatic equation and hypsometric relationship: standard physics, not checked on a Canadian publication.",
+          "300 hPa as 30,000 ft on charts: not confirmed (the 34,000 ft label was).",
+          "Warm/cold column heights at 500 hPa (5,100 m and 5,800 m): rough illustration."
+        ]
+      }
     },
     {
       "title": "Stability and lapse rates (dry, moist, environmental)",
@@ -519,7 +579,7 @@
         {
           "list": [
             "Dry adiabatic lapse rate (DALR): 9.8 C per km (about 3 C per 1,000 ft). A rising unsaturated parcel cools at this rate.",
-            "Saturated (moist) adiabatic lapse rate (SALR): less than the DALR, typically 4 to 7 C per km. Condensation releases latent heat, which offsets some of the cooling. It is smaller in warm moist air and closer to the DALR in cold air.",
+            "Saturated (moist) adiabatic lapse rate (SALR): less than the DALR. A typical value is around 5 C per km, with a range of about 3.6 to 9.2 C per km quoted from ICAO. It varies strongly with temperature. Condensation releases latent heat, which offsets some of the cooling.",
             "Environmental lapse rate (ELR): the actual temperature change with height, measured by soundings. This is the one that varies day to day."
           ]
         },
@@ -680,7 +740,19 @@
           "a": 0,
           "e": "An ELR smaller than the SALR means a parcel is cooler than its environment in either state: absolutely stable."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "Lapse rate article citing ICAO: DALR 9.8 C/km (about 3 C per 1,000 ft), SALR 3.6 to 9.2 C/km (around 5 typical), stability classes",
+          "UBC ATSC 201 course notes: DALR 9.8 C per km"
+        ],
+        "unverified": [
+          "Source is a secondary article citing ICAO, not the ICAO document itself.",
+          "Whether the SALR is smaller in warm air or cold air: physics says warm moist air is smaller, but the pages read do not state the direction.",
+          "Weather typical of stable and unstable air: standard teaching, not checked on a Canadian publication."
+        ]
+      }
     },
     {
       "title": "Adiabatic processes and potential temperature",
@@ -711,7 +783,7 @@
         {
           "h": "Foehn effect"
         },
-        "Air forced over a mountain cools at the dry rate until saturated, then at the slower moist rate while rain falls out on the windward side. Descending the lee side it warms at the full dry rate. At the same height, the lee side ends up warmer and drier. The Chinook is a Canadian example.",
+        "Air forced over a mountain cools at the dry rate until saturated, then at the slower moist rate while rain falls out on the windward side. Descending the lee side it warms at the full dry rate. At the same height, the lee side ends up warmer and drier. The Chinook is a Canadian example. The Canadian Encyclopedia puts the chinook belt almost entirely in southern and central Alberta, with lee-side relative humidity sometimes down to 25% or less. Part of a chinook's warmth also comes from cold Arctic air being replaced by milder maritime air.",
         {
           "note": "Remember: lifting cools, sinking warms. Condensation slows the cooling but never the warming on the way down."
         }
@@ -856,7 +928,19 @@
           "a": 0,
           "e": "The air gains heat from condensation going up and warms at the full dry rate coming down."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "UBC ATSC 201 course notes: DALR 9.8 C per km, potential temperature exponent Rd/Cp = 0.28571",
+          "Espy's equation (Lifting condensation level article): about 125 m per C of spread, accurate to about 1%",
+          "The Canadian Encyclopedia, Chinook: formation, location, humidity"
+        ],
+        "unverified": [
+          "Potential temperature conservation and stability rules from theta: standard theory, not checked on a Canadian publication.",
+          "The LCL formula is an approximation that needs the dew point at the surface."
+        ]
+      }
     }
   ]
 }

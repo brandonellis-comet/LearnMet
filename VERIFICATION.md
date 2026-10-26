@@ -11,7 +11,8 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 | Observations (obs) | Checked. 5 topics | 2026-10-26 |
 | Codes (codes) | Checked. 6 topics | 2026-10-26 |
 | Severe weather (severe). 6 topics | Checked. Several numbers removed as unconfirmed | 2026-10-26 |
-| Foundations, Wind, Moisture, Air masses, Synoptic, Applied | Not yet checked | |
+| Foundations (foundations). 5 topics | Checked. Tropopause heights and pressure-level heights corrected | 2026-10-26 |
+| Wind, Moisture, Air masses, Synoptic, Applied | Not yet checked | |
 
 ## Corrections made on 2026-10-26
 
@@ -45,6 +46,15 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 | Microburst | 5-15 min, over 150 km/h | Removed; NOAA pulse-storm downbursts usually under 70 mph | NOAA, Types of Thunderstorms |
 | Wind shear | LLWS = lowest 2,000 ft; "within 1,500 ft" in a quiz answer | AIM sets no height limit for wind shear; question rewritten | TC AIM MET 2.3 |
 | Turbulence | CAT "upper levels"; mountain wave needs 25 kt | CAT above 15,000 ft ASL, not in cumuliform cloud (AIM); 25 kt removed | TC AIM MET 2.2.2 |
+| Tropopause | Poles 8-10 km, mid-lat 11, tropics 16-18; lower in winter | NOAA: about 6 km poles, 9 km at 50 deg, 18-20 km equator; ISA uses 11 km; winter claim removed | NOAA JetStream, Layers of the atmosphere; ISO 2533 |
+| Composition | 78 / 21 / 0.9 / 0.04 / 0-4% | 78.08 / 20.95 / 0.93 / 0.042 / up to about 4% | NOAA JetStream |
+| Mesosphere | "Coldest part of the atmosphere" | Removed (not confirmed) | NOAA JetStream |
+| Ozone layer | "Roughly 15 to 35 km" | Range removed (not confirmed) | NOAA JetStream |
+| Pressure levels | 850 = 1,500 m; 500 = 5,500 m; 250 = 10,400 m | 1,460; 5,570; 10,360 m (computed from ISA equations) | ISO 2533 equations |
+| Pressure vs height | 1 hPa per 8 m (about 30 ft) | About 8.3 m (about 27 ft), from hydrostatic equation and ISA density | Computed |
+| Thickness | 540 dam rain/snow line as a bare rule | Kept with caveats: other sources use about 522 dam; deep layer is a weak snow indicator | NOAA NWS Houston (Haby) |
+| SALR | "Typically 4 to 7 C per km; smaller in warm air" | About 5 typical, range 3.6 to 9.2 (ICAO via article); direction not confirmed | Lapse rate article citing ICAO |
+| Chinook | Named only | Added belt location and humidity | Canadian Encyclopedia |
 
 ## Not confirmed (open items)
 
@@ -53,4 +63,5 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 - Occluded and stationary front colours, trough line style, isobar label convention, station model layout.
 - dBZ intensity ranges, water vapour band wavelengths, mandatory pressure level list, CSI formula, CIN and lifted index definitions.
 - Severe: supercell/mesocyclone definition, microburst size and approach sequence, blizzard numbers, nocturnal low-level jet details, mountain wave wind speed, Richardson 0.25, watch/warning/advisory definitions, and the Wind, Rain, Snow and Winter storm Impact Guide sections.
-- The other six domains (foundations, wind, moisture, air masses, synoptic, applied) have not been checked yet.
+- Foundations: troposphere 80% of mass is derived; ozone altitude, ionosphere location, mesopause coldest, fog spread rule, pressure-tendency rule, SALR direction, 300 hPa label, and the ICAO documents themselves (only secondary articles read).
+- The other five domains (wind, moisture, air masses, synoptic, applied) have not been checked yet.
