@@ -163,6 +163,7 @@ function route() {
     if (v === "test") return startRun(domainRun(a));
     if (v === "exam") return a === "start" ? startRun(examRun()) : viewExam();
     if (v === "review") return startRun(reviewRun());
+    if (v === "decode") return startRun(decodeRun(a === "taf" ? "taf" : "metar"));
     if (v === "stats") return viewStats();
   } catch (e) { console.error(e); }
   viewHome();
@@ -322,6 +323,9 @@ function viewTopic(did, ti) {
 // ---------- Tests ----------
 function viewTests() {
   shell("tests",
+    h("div", { class: "card" }, h("h2", { text: "Decoding drills" }),
+      h("div", { class: "muted", text: "10 freshly generated reports each time. Practice reading METAR and TAF groups. Answers shown after each question." }),
+      h("div", { class: "actions" }, h("a", { class: "btn primary", href: "#/decode/metar", text: "METAR drill" }), h("a", { class: "btn primary", href: "#/decode/taf", text: "TAF drill" }))),
     h("h1", { text: "Domain tests" }),
     h("div", { class: "sub", text: `${DOMAIN_TEST_LEN} questions drawn across the domain. Answers shown at the end. Pass mark ${PASS}%.` }),
     DATA.map(d => {
@@ -416,13 +420,13 @@ function renderRun() {
   const next = h("button", { class: "primary", text: last ? "Finish" : "Next", disabled: answered ? null : true,
     onclick: () => { if (last) { run.done = true; } else { run.idx++; } renderRun(); } });
   const back = h("button", { text: "Back", disabled: run.idx === 0 || run.immediate ? true : null, onclick: () => { run.idx--; renderRun(); } });
-  const quit = h("a", { class: "btn", href: run.type === "exam" ? "#/exam" : "#/study", text: "Quit", onclick: () => { clearInterval(timer); } });
+  const quit = h("a", { class: "btn", href: run.type === "exam" ? "#/exam" : run.type === "decode" ? "#/tests" : "#/study", text: "Quit", onclick: () => { clearInterval(timer); } });
 
   mount(
     h("div", { class: "small" }, run.sub),
     h("h1", { text: run.title }),
     h("div", { class: "qmeta" }, h("span", { text: `Question ${run.idx + 1} of ${run.items.length}` }), timerEl),
-    h("div", { class: "card" }, h("p", { class: "qtext", text: q.q }), choices,
+    h("div", { class: "card" }, q.code && h("pre", { class: "code", text: q.code }), h("p", { class: "qtext", text: q.q }), choices,
       reveal && h("div", { class: "explain" },
         h("strong", { text: origPick(it) === q.a ? "Correct. " : "Incorrect. " }), q.e || "")),
     h("div", { class: "actions" }, run.immediate ? null : back, next, quit));
@@ -441,6 +445,7 @@ function renderResults() {
   if (!run.recorded) {
     run.recorded = true;
     items.forEach(it => {
+      if (it.q.gen) return;
       const st = quiz.q[it.q.id] || { s: 0, w: 0, c: 0 };
       st.s++;
       if (origPick(it) === it.q.a) st.c = (st.c || 0) + 1; else { st.w++; st.c = 0; }
@@ -481,6 +486,7 @@ function renderResults() {
     if (run.type === "topic") startRun(topicRun(run.did, run.ti));
     else if (run.type === "domain") startRun(domainRun(run.id));
     else if (run.type === "exam") startRun(examRun());
+    else if (run.type === "decode") startRun(decodeRun(run.id));
     else { location.hash = "#/"; }
   } });
   mount(
@@ -492,7 +498,7 @@ function renderResults() {
       run.type === "exam" && h("div", { class: "muted", style: "margin-top:6px", text: "Time " + fmtTime(secs) }),
       levelMsg && h("div", { class: "muted", style: "margin-top:6px", text: levelMsg }),
       h("div", { class: "actions" }, again,
-        h("a", { class: "btn", href: run.type === "exam" ? "#/exam" : run.type === "domain" ? "#/tests" : "#/study", text: "Done" }))),
+        h("a", { class: "btn", href: run.type === "exam" ? "#/exam" : (run.type === "domain" || run.type === "decode") ? "#/tests" : "#/study", text: "Done" }))),
     breakdown,
     missed.length === 0 ? h("div", { class: "card" }, "No missed questions.") :
       h("div", { class: "card" }, h("h2", { text: `Missed (${missed.length})` }),
@@ -557,6 +563,139 @@ function attLabel(x) {
 }
 
 // ---------- Boot ----------
+// ---------- Decoding drills (generated; practice data only, not real observations) ----------
+function rnd(n) { return Math.floor(Math.random() * n); }
+function pickOne(a) { return a[rnd(a.length)]; }
+function fmtFt(n) { return n.toLocaleString("en-US") + " ft"; }
+function pad(n, w) { return String(n).padStart(w, "0"); }
+function uniq(correct, wrongs) {
+  const out = [correct];
+  wrongs.forEach(w => { if (!out.includes(w)) out.push(w); });
+  let i = 0;
+  while (out.length < 4) out.push("None of the above" + (i++ ? " (" + i + ")" : ""));
+  return out.slice(0, 4);
+}
+function genQ(code, ti, text, correct, wrongs, e) {
+  return { id: "gen:" + Math.random().toString(36).slice(2), gen: true, did: "codes", ti, code, q: text, c: uniq(correct, shuffle(wrongs)), a: 0, e };
+}
+const DEC_STNS = ["CYHZ", "CYAW", "CYQY", "CYYT", "CYSJ", "CYFC", "CYQM", "CYYG"];
+const VIS_OPTS = [["15SM", "15 SM"], ["10SM", "10 SM"], ["6SM", "6 SM"], ["4SM", "4 SM"], ["2 1/2SM", "2 1/2 SM"], ["1SM", "1 SM"], ["1/2SM", "1/2 SM"], ["1/4SM", "1/4 SM"]];
+const WX_OPTS = [["-RA", "light rain"], ["RA", "moderate rain"], ["+RA", "heavy rain"], ["-SN", "light snow"], ["SN", "moderate snow"], ["BR", "mist"], ["FG", "fog"], ["TSRA", "thunderstorm with moderate rain"], ["-DZ", "light drizzle"], ["FZRA", "freezing rain"], ["-SHRA", "light rain showers"], ["BLSN", "blowing snow"]];
+function cloudWord(t) { return { FEW: "few (1/8 to 2/8)", SCT: "scattered (3/8 to 4/8)", BKN: "broken (5/8 to 7/8)", OVC: "overcast (8/8)" }[t]; }
+function flightCat(ceilFt, visSM) {
+  if (ceilFt < 500 || visSM < 1) return "LIFR";
+  if (ceilFt < 1000 || visSM < 3) return "IFR";
+  if (ceilFt <= 3000 || visSM <= 5) return "MVFR";
+  return "VFR";
+}
+function visNum(s) { const m = s.replace("SM", "").trim().split(" "); return m.reduce((t, x) => t + (x.includes("/") ? (+x.split("/")[0]) / (+x.split("/")[1]) : +x), 0); }
+
+function genMetar() {
+  const stn = pickOne(DEC_STNS), day = 1 + rnd(28), hr = rnd(24), min = pickOne([0, 0, 0, 30, 53]);
+  const dir = pickOne([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36]) * 10;
+  const spd = pickOne([3, 5, 8, 10, 12, 15, 18, 20, 25]), gust = Math.random() < 0.4 ? spd + pickOne([8, 10, 12, 15]) : 0;
+  const calm = Math.random() < 0.1, vrb = !calm && spd <= 5 && Math.random() < 0.4;
+  const wind = calm ? "00000KT" : vrb ? `VRB${pad(spd, 2)}KT` : `${pad(dir === 0 ? 360 : dir, 3)}${pad(spd, 2)}${gust ? "G" + gust : ""}KT`;
+  const vis = pickOne(VIS_OPTS), wx = Math.random() < 0.65 ? pickOne(WX_OPTS) : null;
+  const nl = 1 + rnd(2), layers = [];
+  let base = pickOne([5, 8, 12, 20, 30, 45, 80]);
+  const types = ["FEW", "SCT", "BKN", "OVC"];
+  for (let i = 0; i < nl; i++) { layers.push([types[Math.min(3, rnd(4) + i)], base]); base += pickOne([10, 20, 40]); }
+  layers.sort((a, b) => a[1] - b[1]);
+  const t = rnd(35) - 15, dd = t - pickOne([0, 1, 2, 4, 8, 12]);
+  const tf = v => (v < 0 ? "M" : "") + pad(Math.abs(v), 2);
+  const alt = 2950 + rnd(100);
+  const cloudStr = layers.map(l => l[0] + pad(l[1], 3)).join(" ");
+  const code = `METAR ${stn} ${pad(day, 2)}${pad(hr, 2)}${pad(min, 2)}Z ${wind} ${vis[0]}${wx ? " " + wx[0] : ""} ${cloudStr} ${tf(t)}/${tf(dd)} A${alt}`;
+  const qs = [];
+  const windTxt = calm ? "calm" : vrb ? `variable direction at ${spd} kt` : `from ${pad(dir === 0 ? 360 : dir, 3)} degrees at ${spd} kt${gust ? ", gusting " + gust + " kt" : ""}`;
+  const wWrong = [
+    calm ? "from 360 degrees at 5 kt" : `from ${pad(((dir + 90) % 360) || 360, 3)} degrees at ${spd} kt${gust ? ", gusting " + gust + " kt" : ""}`,
+    calm ? "variable at 3 kt" : `from ${pad(dir === 0 ? 360 : dir, 3)} degrees at ${spd + 5} kt`,
+    calm ? "light and variable at 5 kt" : `toward ${pad(dir === 0 ? 360 : dir, 3)} degrees at ${spd} kt`,
+    calm ? "from the north at 3 kt" : `variable direction at ${spd + 2} kt`];
+  qs.push(genQ(code, 0, "What is the wind?", windTxt, wWrong, "Wind: three digits for direction in degrees true (the direction it blows FROM), two for speed in knots, G for gusts. 00000KT is calm; VRB is variable."));
+  qs.push(genQ(code, 0, "What is the visibility?", vis[1], VIS_OPTS.map(v => v[1]).filter(x => x !== vis[1]), "Canadian METAR visibility is in statute miles, so 15SM is 15 miles."));
+  const lowCeil = layers.find(l => l[0] === "BKN" || l[0] === "OVC");
+  const ceilTxt = lowCeil ? fmtFt(lowCeil[1] * 100) : "No ceiling (no broken or overcast layer)";
+  const cw = [fmtFt(layers[0][1] * 100), fmtFt(layers[layers.length - 1][1] * 100 + 1000), fmtFt((lowCeil ? lowCeil[1] : layers[0][1]) * 1000), fmtFt((lowCeil ? lowCeil[1] : layers[0][1]) * 10), "No ceiling (no broken or overcast layer)", "1,000 ft", "2,500 ft", "6,000 ft"].filter(x => x !== ceilTxt);
+  qs.push(genQ(code, 0, "What is the ceiling?", ceilTxt, cw, "Cloud heights are in hundreds of feet AGL. The ceiling is the lowest BKN or OVC layer (or vertical visibility). FEW and SCT do not make a ceiling."));
+  const l0 = layers[0];
+  qs.push(genQ(code, 0, `What does ${l0[0]}${pad(l0[1], 3)} mean?`, `${cloudWord(l0[0])} at ${l0[1] * 100} ft AGL`,
+    types.filter(x => x !== l0[0]).map(x => `${cloudWord(x)} at ${l0[1] * 100} ft AGL`).concat([`${cloudWord(l0[0])} at ${l0[1] * 1000} ft AGL`]), "Cloud group: amount code then height in hundreds of feet AGL."));
+  const td = `temperature ${t} C, dew point ${dd} C`;
+  qs.push(genQ(code, 0, "What are the temperature and dew point?", td,
+    [`temperature ${-t} C, dew point ${-dd} C`, `temperature ${dd} C, dew point ${t} C`, `temperature ${t} C, dew point ${dd + (dd > t - 3 ? -3 : 3)} C`, `temperature ${t + 2} C, dew point ${dd + 2} C`, `temperature ${t + 5} C, dew point ${dd - 1} C`], "Temperature/dew point in whole degrees C. The M prefix means minus. Dew point is never above the temperature."));
+  const aStr = `${(alt / 100).toFixed(2)} inHg`;
+  qs.push(genQ(code, 0, "What is the altimeter setting?", aStr, [`${((alt + 30) / 100).toFixed(2)} inHg`, `${((alt - 40) / 100).toFixed(2)} inHg`, `${(alt / 10).toFixed(1)} hPa`, `${((alt + 100) / 100).toFixed(2)} inHg`], "A followed by four digits gives inches of mercury with an implied decimal point."));
+  if (wx) qs.push(genQ(code, 0, `What does ${wx[0]} mean?`, wx[1], WX_OPTS.map(w => w[1]).filter(x => x !== wx[1]), "Present weather: - light, none moderate, + heavy; then the type (RA rain, SN snow, DZ drizzle, BR mist, FG fog, TS thunderstorm, SH showers)."));
+  const vn = visNum(vis[0]), ceilFt = lowCeil ? lowCeil[1] * 100 : 99999;
+  const cat = flightCat(ceilFt, vn), cats = ["VFR", "MVFR", "IFR", "LIFR"];
+  qs.push(genQ(code, 0, "What is the flight category? (VFR: ceiling above 3,000 ft and visibility above 5 SM; MVFR: 1,000 to 3,000 ft or 3 to 5 SM; IFR: 500 to below 1,000 ft or 1 to below 3 SM; LIFR: below 500 ft or below 1 SM.)", cat, cats.filter(c => c !== cat), "Flight category uses the worse of the ceiling and the visibility."));
+  return qs;
+}
+
+function genTaf() {
+  const stn = pickOne(DEC_STNS), day = 1 + rnd(27), issue = pickOne([5, 11, 17, 23]);
+  const vStart = pickOne([6, 12, 18, 0]), nd = vStart === 0 ? day + 1 : day;
+  const endDay = nd + 1;
+  const valid = `${pad(nd, 2)}${pad(vStart, 2)}/${pad(endDay, 2)}${pad(vStart, 2)}`;
+  const d1 = pickOne([8, 12, 18, 24, 27, 30, 33]) * 10, s1 = pickOne([6, 10, 12, 15]);
+  const v1 = pickOne(["P6SM", "6SM", "4SM"]), c1 = pickOne(["FEW040", "SCT030", "BKN050", "FEW020 BKN080"]);
+  const chgType = pickOne(["BECMG", "TEMPO", "PROB30", "FM"]);
+  const h1 = (vStart + 3 + rnd(6)) % 24, h2 = (h1 + 3) % 24;
+  const chDay = h1 < vStart ? endDay : nd;
+  const chPer = `${pad(chDay, 2)}${pad(h1, 2)}${pad(h2 === 0 ? 24 : h2, 2)}`;
+  const chPerFull = `${pad(chDay, 2)}${pad(h1, 2)}/${pad(chDay, 2)}${pad(h2, 2)}`;
+  const d2 = pickOne([18, 24, 30, 33]) * 10, s2 = s1 + pickOne([5, 8, 10]), g2 = s2 + pickOne([8, 10]);
+  const chWx = pickOne([["2SM -RA BKN012", "visibility 2 SM in light rain with a broken ceiling at 1,200 ft"], ["1SM -SN OVC008", "visibility 1 SM in light snow with an overcast ceiling at 800 ft"], ["1/2SM FG VV002", "visibility 1/2 SM in fog with vertical visibility 200 ft"], ["3SM BR BKN015", "visibility 3 SM in mist with a broken ceiling at 1,500 ft"]]);
+  const chg = chgType === "FM" ? `FM${pad(chDay, 2)}${pad(h1, 2)}00 ${pad(d2, 3)}${pad(s2, 2)}KT ${chWx[0]}`
+    : chgType === "PROB30" ? `PROB30 ${chPerFull} ${chWx[0]}`
+    : `${chgType} ${chPerFull} ${chgType === "BECMG" ? `${pad(d2, 3)}${pad(s2, 2)}G${g2}KT ` : ""}${chWx[0]}`;
+  const code = `TAF ${stn} ${pad(day, 2)}${pad(issue, 2)}40Z ${valid} ${pad(d1, 3)}${pad(s1, 2)}KT ${v1} ${c1}\n${chg}`.replace("\\n", "\n");
+  const qs = [];
+  const pv = x => `${pad(+x.slice(0, 2), 2)}/${x.slice(2, 4)}00Z`;
+  const vs = `day ${nd} at ${pad(vStart, 2)}00 UTC to day ${endDay} at ${pad(vStart, 2)}00 UTC`;
+  qs.push(genQ(code, 1, "What period does this TAF cover?", vs,
+    [`day ${nd} at ${pad(vStart, 2)}00 UTC to day ${nd} at ${pad((vStart + 12) % 24, 2)}00 UTC`, `day ${endDay} at ${pad(vStart, 2)}00 UTC to day ${endDay + 1} at ${pad(vStart, 2)}00 UTC`, `day ${nd} at ${pad(vStart, 2)}00 local to day ${endDay} at ${pad(vStart, 2)}00 local`, `day ${nd} at ${pad((vStart + 6) % 24, 2)}00 UTC to day ${endDay} at ${pad((vStart + 6) % 24, 2)}00 UTC`],
+    "Valid period is DDHH/DDHH in UTC. Most Canadian TAFs cover 24 hours or more."));
+  qs.push(genQ(code, 1, "What is the initial forecast wind?", `from ${pad(d1, 3)} degrees at ${s1} kt`,
+    [`from ${pad((d1 + 90) % 360 || 360, 3)} degrees at ${s1} kt`, `from ${pad(d1, 3)} degrees at ${s1 + 10} kt`, `toward ${pad(d1, 3)} degrees at ${s1} kt`, `from ${pad((d1 + 180) % 360 || 360, 3)} degrees at ${s1} kt`], "TAF winds use the same format as METAR winds."));
+  const lowest = c1.split(" ").find(x => /^(BKN|OVC)/.test(x));
+  const tCeil = lowest ? fmtFt(+lowest.slice(3) * 100) : "No ceiling (no broken or overcast layer)";
+  qs.push(genQ(code, 1, "In the initial forecast, what is the ceiling?", tCeil,
+    ["No ceiling (no broken or overcast layer)", "2,000 ft", "3,000 ft", "4,000 ft", "5,000 ft", "800 ft", "20,000 ft"].filter(x => x !== tCeil),
+    "Ceiling is the lowest BKN or OVC layer. FEW and SCT are not ceilings."));
+  const meaning = {
+    BECMG: [`conditions change gradually during ${chPerFull.replace("/", " to ")} and stay changed`, "a brief fluctuation lasting under an hour at a time", "a 30% chance of the conditions", "an abrupt change at one time"],
+    TEMPO: [`temporary fluctuations during ${chPerFull.replace("/", " to ")}, each lasting under an hour`, "a gradual, lasting change", "a 30% chance of the conditions", "an abrupt, lasting change"],
+    PROB30: [`a 30% chance of ${chWx[1]} during ${chPerFull.replace("/", " to ")}`, "a gradual, lasting change", "a temporary fluctuation under an hour", "a forecast issued 30 minutes after the hour"],
+    FM: [`an abrupt, lasting change from the stated time, with ${chWx[1]}`, "a gradual change over several hours", "a temporary fluctuation under an hour", "a 30% chance of the conditions"],
+  }[chgType];
+  qs.push(genQ(code, 1, `What does the ${chgType === "FM" ? "FM" : chgType} group mean?`, meaning[0], meaning.slice(1).concat(["an amendment to a previous forecast"]),
+    "BECMG: gradual lasting change. TEMPO: temporary fluctuations under an hour each and less than half the period in total. PROB30: 30% chance. FM: abrupt change from the stated time."));
+  qs.push(genQ(code, 1, "In the second group, what is the forecast weather and ceiling/visibility?", chWx[1],
+    ["clear skies with visibility over 6 SM", "visibility 6 SM in haze with few clouds at 4,000 ft", "visibility 5 SM in light rain with scattered cloud at 3,000 ft", "visibility 1/4 SM in heavy snow with an overcast ceiling at 200 ft"].filter(x => x !== chWx[1]).concat(["visibility 2 SM in light rain with a broken ceiling at 1,500 ft"]).filter(x => x !== chWx[1]).slice(0, 3),
+    "Read the visibility, weather and cloud groups in order. VV is vertical visibility into an obscured sky."));
+  const vv = chWx[0].includes("VV") ? "IFR" : null;
+  const cc = chWx[0].match(/(BKN|OVC|VV)(\d{3})/), ch = cc ? +cc[2] * 100 : 99999, vi = visNum(chWx[0].split(" ")[0]);
+  const cat = flightCat(ch, vi), cats = ["VFR", "MVFR", "IFR", "LIFR"];
+  qs.push(genQ(code, 1, "What flight category does the second group forecast? (VFR: ceiling above 3,000 ft and visibility above 5 SM; MVFR: 1,000 to 3,000 ft or 3 to 5 SM; IFR: 500 to below 1,000 ft or 1 to below 3 SM; LIFR: below 500 ft or below 1 SM.)", cat, cats.filter(c => c !== cat), "Use the worse of ceiling and visibility."));
+  return qs;
+}
+
+function decodeRun(kind) {
+  const pool = [];
+  while (pool.length < 10) {
+    const set = shuffle(kind === "taf" ? genTaf() : genMetar());
+    const n = kind === "taf" ? 2 : 3;
+    // one report yields several questions; take a few per report
+    set.slice(0, n).forEach(q => pool.push(q));
+  }
+  const qs = pool.slice(0, 10);
+  return { type: "decode", id: kind, title: kind === "taf" ? "TAF decoding drill" : "METAR decoding drill", sub: "Decoding drill (generated practice reports)", items: makeItems(qs), immediate: true };
+}
+
 (async function boot() {
   mount(h("div", { class: "muted", text: "Loading..." }));
   try { await loadContent(); }
