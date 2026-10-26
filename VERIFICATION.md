@@ -13,7 +13,8 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 | Severe weather (severe). 6 topics | Checked. Several numbers removed as unconfirmed | 2026-10-26 |
 | Foundations (foundations). 5 topics | Checked. Tropopause heights and pressure-level heights corrected | 2026-10-26 |
 | Wind (wind). 6 topics | Checked. Backing/veering rule was reversed and is fixed | 2026-10-26 |
-| Moisture, Air masses, Synoptic, Applied | Not yet checked | |
+| Moisture (moisture). 6 topics | Checked. Icing temperatures, cloud heights, fog winds corrected | 2026-10-26 |
+| Air masses, Synoptic, Applied | Not yet checked | |
 
 ## Corrections made on 2026-10-26
 
@@ -64,6 +65,17 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 | Katabatic / mountain breeze | Treated as the same | Separated; katabatic stronger, can exceed 100 kt | NWS training notes |
 | Chinook | Named only | Up to 20 C rise in 1 hour; compression plus latent heat | NWS training notes |
 | Nova Scotia sea breeze note | Stated as fact | Removed (no source) | |
+| Cloud levels | High above 18,000-20,000 ft; Ns under low | WMO temperate: high 5-13 km (16,500-45,000 ft), middle 2-7 km, low to 2 km; Ns noted as middle (WMO) or low (NAV CANADA guide) | WMO Cloud Atlas; NAV CANADA guide |
+| Rime ice | Stratiform, about -10 to -20 C | Below about -10 C and/or low liquid water | WMO, Aviation hazards: icing |
+| Clear ice | 0 to -10 C | Above about -10 C and/or high liquid water | WMO, Aviation hazards: icing |
+| Icing intensity | Not covered | Light, moderate, severe wording and SIGMET rule added; severe question rewritten | NAV CANADA guide |
+| Supercooled water | "Common 0 to -20 C" | Claim removed; persists as low as -40 C | NWS cloud and precipitation notes |
+| Droplet size | 0.01 mm | 0.02 mm; raindrop 2 mm; 20 micron threshold; hail over 5 mm | NWS cloud and precipitation notes |
+| Ice pellets | "Raindrops refreeze" | Snow partly melts aloft, refreezes below | NWS Goodland |
+| Fog winds | Radiation 2-7 kt, "strong wind lifts it"; 15 kt quiz figure | 2-7 kt thickens, stronger breeze prevents; advection 3-9 kt; upslope over 10-12 kt gives stratus; 15 kt removed | NWS Houston/Galveston fog guide |
+| Fog spread | 2 C or less | Under 5 F (about 3 C); sea fog unlikely above 3 C | NWS Houston/Galveston fog guide |
+| Ice fog | Not covered | -29 C and colder | NWS Houston/Galveston fog guide |
+| Visibility term (fog lesson) | Prominent object definition | Matches MANOBS wording from Observations | MANOBS |
 
 ## Not confirmed (open items)
 
@@ -74,4 +86,5 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 - Severe: supercell/mesocyclone definition, microburst size and approach sequence, blizzard numbers, nocturnal low-level jet details, mountain wave wind speed, Richardson 0.25, watch/warning/advisory definitions, and the Wind, Rain, Snow and Winter storm Impact Guide sections.
 - Foundations: troposphere 80% of mass is derived; ozone altitude, ionosphere location, mesopause coldest, fog spread rule, pressure-tendency rule, SALR direction, 300 hPa label, and the ICAO documents themselves (only secondary articles read).
 - Wind: Coriolis zero at equator and Coriolis parameter, gradient wind, boundary layer depth, diurnal wind cycle, Ferrel cell being indirect, WMO jet definition, jet entrance and exit divergence, and the TC AIM jet stream wording.
-- The other four domains (moisture, air masses, synoptic, applied) have not been checked yet.
+- Moisture: mixing ratio conservation and wet-bulb ordering, CCN types, lifting mechanisms, cloud appearance descriptions, warm-front cloud sequence, carburettor icing, Nova Scotia fog climatology, AIM MET 2.4 icing text re-check.
+- The other three domains (air masses, synoptic, applied) have not been checked yet.

@@ -163,7 +163,18 @@
           "a": 0,
           "e": "Saturation over ice occurs at a slightly higher temperature than over supercooled water."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "Penn State METEO 300: saturation vapour pressure rises about 7% per 1 K; dew point definition",
+          "UCSD SIO 217a ch. 6: dew point and frost point as saturation by isobaric cooling",
+          "NWS cloud and precipitation training notes: saturation vapour pressure over ice is less than over liquid water (so the frost point is higher than the dew point below 0 C: derived)"
+        ],
+        "unverified": [
+          "Mixing ratio and specific humidity being conserved in unsaturated parcels, wet-bulb definition and the Td <= Tw <= T ordering, psychrometer description: standard thermodynamics, not stated on the pages read."
+        ]
+      }
     },
     {
       "title": "Condensation, saturation and lifting mechanisms",
@@ -182,7 +193,7 @@
           "h": "Condensation nuclei"
         },
         "Pure vapour does not condense easily. Cloud condensation nuclei (CCN) such as sea salt, dust and smoke provide surfaces. Salt-rich maritime air has plenty, which is why sea fog forms readily on the coast.",
-        "Cloud droplets can stay liquid well below 0 C. Supercooled water is common between 0 C and about -20 C and may persist to about -40 C. This is the root of aircraft icing.",
+        "Cloud droplets can stay liquid well below 0 C, as low as -40 C (NWS). This supercooled water is the root of aircraft icing.",
         {
           "h": "Four lifting mechanisms"
         },
@@ -334,14 +345,24 @@
           "a": 0,
           "e": "Because saturation vapour pressure is a curve, the mix can be supersaturated."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NWS cloud and precipitation training notes: liquid water can persist as low as -40 C"
+        ],
+        "unverified": [
+          "Cloud condensation nuclei types (sea salt, dust, smoke) and sea salt making sea fog form readily, the four lifting mechanisms, mixing of nearly saturated air, and subsidence not lifting air: standard teaching, not checked on a Canadian publication.",
+          "The earlier claim that supercooled water is most common between 0 and -20 C was removed (no source)."
+        ]
+      }
     },
     {
       "title": "Cloud classification and genera",
       "lesson": [
-        "Clouds are classified by form (stratiform, cumuliform, cirriform) and by height of the base. Ten basic types (genera) cover all clouds. Heights below are approximate for mid-latitudes; check the exact definitions in your course material.",
+        "Clouds are classified by form (stratiform, cumuliform, cirriform) and by height of the base. Ten basic types (genera) cover all clouds. Heights below are the WMO temperate-region levels, which are the heights where each genus occurs most often.",
         {
-          "h": "High (about 5 to 13 km, above 18,000 to 20,000 ft)"
+          "h": "High (temperate regions: 5 to 13 km, 16,500 to 45,000 ft)"
         },
         {
           "list": [
@@ -351,7 +372,7 @@
           ]
         },
         {
-          "h": "Middle (about 2 to 7 km)"
+          "h": "Middle (temperate regions: 2 to 7 km, 6,500 to 23,000 ft)"
         },
         {
           "list": [
@@ -360,13 +381,13 @@
           ]
         },
         {
-          "h": "Low (surface to about 2 km)"
+          "h": "Low (surface to 2 km, 6,500 ft)"
         },
         {
           "list": [
             "Stratus (St): uniform grey layer, drizzle possible. Fog that has lifted.",
             "Stratocumulus (Sc): lumpy layer, common over the Atlantic.",
-            "Nimbostratus (Ns): thick, dark layer with steady rain or snow, often extends into middle levels.",
+            "Nimbostratus (Ns): thick, dark layer with steady rain or snow. WMO places it in the middle level, NAV CANADA's guide lists it with low cloud, and it often spans both.",
             "Cumulus (Cu): heaped, flat base, fair weather to towering.",
             "Cumulonimbus (Cb): very deep convective cloud from low levels to the tropopause. Thunderstorms, hail, anvil top."
           ]
@@ -510,17 +531,39 @@
           ],
           "a": 0,
           "e": "Stable moist flow over cool water produces low layer cloud."
+        },
+        {
+          "q": "What is the WMO temperate-region height range for high cloud?",
+          "c": [
+            "5 to 13 km (16,500 to 45,000 ft)",
+            "2 to 7 km (6,500 to 23,000 ft)",
+            "Surface to 2 km (0 to 6,500 ft)",
+            "10 to 20 km (33,000 to 65,000 ft)"
+          ],
+          "a": 0,
+          "e": "WMO Cloud Atlas: high 5-13 km, middle 2-7 km, low surface to 2 km in temperate regions."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "WMO International Cloud Atlas, Useful concepts: ten genera and level heights for polar, temperate and tropical regions",
+          "NAV CANADA Aviation Weather Services Guide (2017): cloud types grouped by level (Ns listed with low)"
+        ],
+        "unverified": [
+          "Descriptions of each cloud (halo, dim sun disc, drizzle, lenticular and so on), the warm front sequence Ci-Cs-As-Ns, and cumulus congestus: standard teaching, not checked on a Canadian publication.",
+          "Mid-level or low status of Nimbostratus differs between WMO and the NAV CANADA guide."
+        ]
+      }
     },
     {
       "title": "Precipitation processes (warm rain, ice crystal)",
       "lesson": [
-        "Cloud droplets (about 0.01 mm) are far too small to fall. Precipitation needs droplets to grow a million times in volume by one of two processes.",
+        "Cloud droplets (about 0.02 mm across) are far too small to fall. A typical raindrop is about 2 mm across, roughly a million times the volume, so droplets must grow enormously by one of two processes (NWS).",
         {
           "h": "Collision-coalescence (warm rain)"
         },
-        "In clouds warmer than 0 C, larger droplets fall faster, collide with smaller ones, and merge. Needs a deep cloud with strong updraft and lots of liquid water. Dominant in the tropics and in warm maritime clouds.",
+        "In clouds warmer than 0 C, larger droplets fall faster, collide with smaller ones, and merge. NWS: at least a few droplets must be as large as 20 microns. Needs a deep cloud with strong updraft and lots of liquid water. Dominant in the tropics and in warm maritime clouds.",
         {
           "h": "Bergeron-Findeisen (ice crystal) process"
         },
@@ -531,9 +574,9 @@
         {
           "list": [
             "Rain, drizzle (drops smaller than 0.5 mm), snow, graupel (rimed snow pellets).",
-            "Hail: layered ice from strong cumulonimbus updrafts.",
-            "Ice pellets (sleet): raindrops refreeze in a deep cold layer near the surface.",
-            "Freezing rain: supercooled raindrops freeze on contact. It needs a warm layer aloft and a shallow below-freezing layer at the ground. Very hazardous."
+            "Hail: layered ice from strong cumulonimbus updrafts, with diameters over 5 mm (NWS). Graupel (snow pellets) is under 5 mm.",
+            "Ice pellets (sleet): snow partly melts in a warm layer aloft, then refreezes in the cold air below (NWS).",
+            "Freezing rain: supercooled raindrops freeze on contact. It needs a deep warm layer aloft over a shallow below-freezing layer at the ground (NWS). Very hazardous."
           ]
         },
         {
@@ -676,7 +719,17 @@
           "a": 0,
           "e": "A deep cold layer refreezes the drops before they land."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NWS cloud and precipitation training notes: droplet and raindrop sizes, 20 micron threshold, Bergeron mechanism, drizzle under 0.5 mm, hail over 5 mm, graupel under 5 mm",
+          "NWS Goodland, Winter weather types: freezing rain and sleet temperature layers"
+        ],
+        "unverified": [
+          "Collision-coalescence dominating in the tropics and needing a deep cloud with strong updraft, and most mid-latitude rain starting as snow: standard teaching, not stated on the pages read."
+        ]
+      }
     },
     {
       "title": "Fog types and formation",
@@ -689,9 +742,10 @@
           "list": [
             "Radiation fog: clear skies, light winds, moist air, long nights. The ground cools by radiation and chills the air above to the dew point. Forms at night in valleys, burns off after sunrise. Common inland in fall.",
             "Advection fog: warm moist air moves over a colder surface and is cooled to saturation. Sea fog is the classic case. Over Nova Scotia's south shore and the Grand Banks it is frequent in spring and summer, when warm southerly flow crosses cold ocean water. Can persist day and night.",
-            "Upslope fog: moist air forced up rising terrain cools adiabatically.",
+            "Upslope fog: moist air forced up rising terrain cools adiabatically. NWS: upslope winds over about 10 to 12 kt usually give stratus rather than fog.",
             "Steam fog (sea smoke): very cold air over warm water. Water evaporates into the air and condenses immediately. Seen over lakes and the ocean in winter.",
-            "Precipitation (frontal) fog: rain falling into cooler air evaporates, saturating the layer near the surface. Common ahead of warm fronts."
+            "Precipitation (frontal) fog: rain falling into cooler air evaporates, saturating the layer near the surface. Common ahead of warm fronts.",
+            "Ice fog: forms in extremely cold arctic air, -29 C and colder (NWS)."
           ]
         },
         {
@@ -699,19 +753,19 @@
         },
         {
           "list": [
-            "Small temperature-dew point spread and falling temperature.",
-            "Light wind (about 2 to 7 kt) favours radiation fog. Strong wind lifts it into stratus.",
-            "Advection fog requires a warm moist flow over a cold surface."
+            "Small temperature-dew point spread: NWS says fog forms when the spread is under 5 F (about 3 C), and sea fog is unlikely if it is over 3 C. Falling temperature also favours fog.",
+            "Light wind (about 2 to 7 kt) thickens radiation fog. A stronger breeze prevents it by mixing in drier air from aloft. Fog lifts to stratus when the lapse rate approaches dry adiabatic (NWS).",
+            "Advection fog requires a warm moist flow over a cold surface, favoured by light winds of about 3 to 9 kt (NWS)."
           ]
         },
         {
-          "note": "Wind speed is the main separator: calm to light for radiation fog, moderate onshore flow for sea fog."
+          "note": "Wind helps separate the types: about 2 to 7 kt for radiation fog and about 3 to 9 kt for advection fog."
         }
       ],
       "terms": [
         [
           "Visibility",
-          "Greatest distance at which objects can be seen and recognized."
+          "In Canadian observations, the greater of the distance a black object near the ground can be recognized and the distance 1,000 candela lights can be seen (MANOBS). See the Observations lesson."
         ],
         [
           "Sea smoke",
@@ -801,29 +855,29 @@
           "e": "In Canadian reports BR is used for visibility from 5/8 SM to 6 SM."
         },
         {
-          "q": "Winds above about 15 kt tend to convert radiation fog into:",
+          "q": "What does a stronger breeze do to radiation fog formation?",
           "c": [
-            "Low stratus cloud",
-            "A clear sky",
-            "Steam fog",
-            "Haze"
+            "Prevents it, by mixing in drier air from aloft",
+            "Always thickens it into a deeper layer",
+            "Has no effect on radiation fog",
+            "Turns it into steam fog"
           ],
           "a": 0,
-          "e": "Stronger mixing lifts the fog layer into stratus."
+          "e": "NWS: a stronger breeze prevents radiation fog because of mixing with drier air aloft."
         },
         {
           "q": "Fog is most likely when the temperature-dew point spread is:",
           "c": [
-            "2 C or less",
+            "About 3 C or less",
             "5 to 8 C",
             "10 C or more",
             "20 C or more"
           ],
           "a": 0,
-          "e": "A very small spread means the air is nearly saturated."
+          "e": "NWS: fog forms when the spread is under 5 F (about 3 C)."
         },
         {
-          "q": "Why can advection fog persist in strong onshore winds?",
+          "q": "Why can advection fog persist as long as the wind continues?",
           "c": [
             "Warm moist air keeps flowing over cold water",
             "Radiational cooling increases at night",
@@ -843,8 +897,31 @@
           ],
           "a": 0,
           "e": "It needs a large temperature difference with colder air above warmer water."
+        },
+        {
+          "q": "Per NWS, at what temperature does ice fog form?",
+          "c": [
+            "-29 C (-20 F) and colder",
+            "0 C and colder",
+            "-10 C and colder",
+            "-60 C and colder"
+          ],
+          "a": 0,
+          "e": "NWS: ice fog forms in extremely cold, arctic air, -29 C (-20 F) and colder."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NAV CANADA Aviation Weather Services Guide (2017): FG is visibility under 5/8 SM, BR is 5/8 to 6 SM",
+          "NWS Houston/Galveston fog guide: fog types, wind speeds, spread rules, dissipation, ice fog"
+        ],
+        "unverified": [
+          "Sea fog being frequent on Nova Scotia's south shore and the Grand Banks in spring and summer, and radiation fog being common inland in fall: climatology, not checked here.",
+          "The earlier 15 kt wind figure for converting radiation fog to stratus was removed (no source).",
+          "Description of each fog type is from a US training guide, not a Canadian publication."
+        ]
+      }
     },
     {
       "title": "Icing and its causes",
@@ -855,9 +932,19 @@
         },
         {
           "list": [
-            "Rime ice: small droplets freeze instantly, trapping air. Opaque, white, rough and brittle. Common in stratiform cloud at temperatures of about -10 to -20 C.",
-            "Clear ice: large drops spread before freezing. Smooth, hard, transparent and heavy. Found at 0 to about -10 C, in cumuliform cloud, and in freezing rain. More dangerous.",
-            "Mixed ice: combination of both."
+            "Rime ice: small supercooled droplets freeze instantly, trapping air. Rough, milky, opaque. Tends to form at low temperatures (below about -10 C) and/or low liquid water content (WMO).",
+            "Clear ice: large supercooled drops freeze relatively slowly. Glossy, clear or translucent, dense and heavy. Tends to form at warmer temperatures (above about -10 C) and/or high liquid water content (WMO). More dangerous.",
+            "Mixed ice: both at the same time."
+          ]
+        },
+        {
+          "h": "Intensity (NAV CANADA guide)"
+        },
+        {
+          "list": [
+            "Light: a problem only if flight in it is prolonged (over 1 hour).",
+            "Moderate: de-icing or anti-icing equipment, or diversion, is necessary.",
+            "Severe: immediate diversion is necessary. A SIGMET for icing is issued only for severe."
           ]
         },
         {
@@ -954,15 +1041,15 @@
           "e": "Moving out of the supercooled water zone, usually to warmer or clear air, stops further accumulation."
         },
         {
-          "q": "In which temperature range is supercooled water most commonly found in clouds?",
+          "q": "According to the NWS, how low can liquid water in a cloud persist?",
           "c": [
-            "0 to about -20 C",
-            "0 to +10 C",
-            "-40 to -60 C",
-            "Above 10 C"
+            "As low as -40 C",
+            "Only down to -10 C",
+            "Only down to -20 C",
+            "Not below 0 C"
           ],
           "a": 0,
-          "e": "Supercooled water is most common between 0 and about -20 C."
+          "e": "NWS: supercooled liquid water can persist as low as -40 C."
         },
         {
           "q": "What effect does ice on the wing leading edge have?",
@@ -976,15 +1063,15 @@
           "e": "Ice disturbs the airflow, reduces lift and increases weight and drag."
         },
         {
-          "q": "Severe icing means:",
+          "q": "What does the NAV CANADA guide say is necessary in severe icing?",
           "c": [
-            "Accumulation is so fast that de-icing equipment cannot control it",
-            "Ice is visible on the aircraft but does not affect performance",
-            "Ice forms only on the ground and never builds up in flight",
-            "Ice forms only in clear air and has no effect on the engine"
+            "Immediate diversion",
+            "De-icing equipment alone, with no diversion",
+            "Nothing, if flight is under 1 hour",
+            "Only a pilot report after landing"
           ],
           "a": 0,
-          "e": "In severe icing an immediate diversion is required."
+          "e": "NAV CANADA guide: light, a problem if prolonged over 1 hour; moderate, de-icing or anti-icing or diversion; severe, immediate diversion."
         },
         {
           "q": "Frost on the wings before takeoff must be:",
@@ -1018,8 +1105,32 @@
           ],
           "a": 0,
           "e": "Without liquid water there is nothing to freeze on the aircraft."
+        },
+        {
+          "q": "Per the WMO, rime ice tends to form at:",
+          "c": [
+            "Low temperatures (below about -10 C) and/or low liquid water content",
+            "Only in freezing rain with large drops",
+            "Only at temperatures from 0 to -5 C",
+            "Only above 0 C in clear air"
+          ],
+          "a": 0,
+          "e": "WMO: rime forms at low temperatures and/or low liquid water content; clear ice at warmer temperatures and/or high liquid water content."
         }
-      ]
+      ],
+      "verified": {
+        "date": "2026-10-26",
+        "sources": [
+          "NAV CANADA Aviation Weather Services Guide (2017): rime, clear and mixed ice definitions; light, moderate, severe wording; SIGMET only for severe",
+          "WMO, Aviation hazards: icing: rime below about -10 C and/or low liquid water; clear above about -10 C and/or high liquid water; freezing drizzle and rain",
+          "NWS cloud and precipitation training notes: liquid water persists as low as -40 C"
+        ],
+        "unverified": [
+          "Carburettor icing (outside temperatures up to about 20 C) and frost deposition: standard aviation teaching, not confirmed on the pages read.",
+          "The AIM MET 2.4 icing text was read earlier but not re-checked line by line in this pass.",
+          "Escape by changing altitude, and which cloud types have the highest liquid water: standard teaching."
+        ]
+      }
     }
   ]
 }
