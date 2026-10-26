@@ -96,6 +96,72 @@
           ],
           "a": 0,
           "e": "Dew point reflects moisture content (unchanged). Warmer air has a higher es, so RH drops."
+        },
+        {
+          "q": "The dry-bulb temperature is 12 C and the wet-bulb is 8 C. Where is the dew point most likely?",
+          "c": [
+            "Below 8 C",
+            "Between 8 and 12 C",
+            "Above 12 C",
+            "Exactly 8 C"
+          ],
+          "a": 0,
+          "e": "For unsaturated air Td < Tw < T."
+        },
+        {
+          "q": "What are the usual units of mixing ratio?",
+          "c": [
+            "Grams of vapour per kilogram of dry air",
+            "Hectopascals of vapour pressure per kilometre of height",
+            "Percent of the saturation value at the same temperature",
+            "Degrees Celsius of dew point depression for each metre"
+          ],
+          "a": 0,
+          "e": "Mixing ratio is the mass of vapour per mass of dry air, typically g/kg."
+        },
+        {
+          "q": "Air is warmed at constant pressure with no moisture added. What happens to the vapour pressure?",
+          "c": [
+            "It stays constant",
+            "It increases",
+            "It decreases",
+            "It doubles"
+          ],
+          "a": 0,
+          "e": "Vapour pressure depends on moisture content, not on temperature."
+        },
+        {
+          "q": "Saturated air is cooled further. What happens?",
+          "c": [
+            "Excess vapour condenses into liquid",
+            "Relative humidity drops below 100%",
+            "The dew point rises above the temperature",
+            "Evaporation exceeds condensation"
+          ],
+          "a": 0,
+          "e": "Cooling saturated air removes capacity, so the excess vapour condenses."
+        },
+        {
+          "q": "Which instrument gives dry-bulb and wet-bulb temperatures?",
+          "c": [
+            "A psychrometer",
+            "A barograph",
+            "An anemometer",
+            "A ceilometer"
+          ],
+          "a": 0,
+          "e": "A psychrometer has two thermometers, one with a wetted wick."
+        },
+        {
+          "q": "Below 0 C, how does the frost point compare with the dew point?",
+          "c": [
+            "Slightly higher",
+            "Slightly lower",
+            "Equal",
+            "Far lower"
+          ],
+          "a": 0,
+          "e": "Saturation over ice occurs at a slightly higher temperature than over supercooled water."
         }
       ]
     },
@@ -201,6 +267,72 @@
           ],
           "a": 0,
           "e": "Converging air has nowhere to go but up."
+        },
+        {
+          "q": "Orographic lifting is air forced to rise over:",
+          "c": [
+            "Hills, mountains or other high terrain",
+            "A sea breeze front",
+            "A layer of colder air at a front",
+            "A region of convergent winds"
+          ],
+          "a": 0,
+          "e": "Orographic means caused by terrain."
+        },
+        {
+          "q": "Which of these cools air to saturation WITHOUT lifting?",
+          "c": [
+            "Radiational cooling at night",
+            "Adiabatic expansion as the air rises over a hill or mountain",
+            "Frontal ascent over a wedge of colder air near the surface",
+            "Orographic ascent along the windward slope of a mountain range"
+          ],
+          "a": 0,
+          "e": "Radiation removes heat from the surface layer without any vertical motion."
+        },
+        {
+          "q": "Why are sea salt particles important in cloud formation?",
+          "c": [
+            "They act as cloud condensation nuclei",
+            "They prevent condensation by keeping the air supersaturated",
+            "They absorb sunlight and warm the surrounding cloud layer",
+            "They cool the sea surface and lower the dew point of the air"
+          ],
+          "a": 0,
+          "e": "Salt particles are hygroscopic and attract water vapour."
+        },
+        {
+          "q": "Convergence of surface winds typically leads to:",
+          "c": [
+            "Upward motion",
+            "Downward motion",
+            "No vertical motion",
+            "Surface cooling only"
+          ],
+          "a": 0,
+          "e": "Mass that flows in must rise."
+        },
+        {
+          "q": "Which lifting mechanism comes from daytime heating of the ground?",
+          "c": [
+            "Convection (thermals)",
+            "Frontal lifting",
+            "Orographic lifting",
+            "Subsidence"
+          ],
+          "a": 0,
+          "e": "Heated ground warms the air above it, which rises as thermals."
+        },
+        {
+          "q": "Why can mixing two nearly saturated air masses produce cloud?",
+          "c": [
+            "The saturation curve is non-linear, so the mixture can exceed saturation",
+            "Mixing always releases latent heat and warms the mixture past saturation",
+            "Mixing lowers the pressure of both parcels below the saturation value",
+            "Mixing removes condensation nuclei so drops grow faster by collision"
+          ],
+          "a": 0,
+          "e": "Because saturation vapour pressure is a curve, the mix can be supersaturated."
         }
       ]
     },
@@ -312,6 +444,72 @@
           ],
           "a": 0,
           "e": "Altostratus is thick enough to dim the sun but not to hide it completely, and it lacks the halo of cirrostratus."
+        },
+        {
+          "q": "Which of these clouds is made mostly of ice crystals?",
+          "c": [
+            "Cirrus",
+            "Stratus",
+            "Stratocumulus",
+            "Fair-weather cumulus"
+          ],
+          "a": 0,
+          "e": "Cirrus forms at very cold levels, where cloud is made of ice."
+        },
+        {
+          "q": "What is cumulus congestus?",
+          "c": [
+            "A towering cumulus that can grow into cumulonimbus",
+            "A thin, high cloud made of ice crystals that produces halos",
+            "A layer of low stratus formed by cooling in light winds",
+            "A lens-shaped cloud that forms in the crest of a mountain wave"
+          ],
+          "a": 0,
+          "e": "Congestus is a vigorous growing cumulus with great vertical depth."
+        },
+        {
+          "q": "Which cloud commonly produces drizzle?",
+          "c": [
+            "Stratus",
+            "Cirrus",
+            "Altocumulus",
+            "Fair-weather cumulus"
+          ],
+          "a": 0,
+          "e": "Stratus is a low, uniform layer of fine droplets."
+        },
+        {
+          "q": "Altostratus belongs to which level?",
+          "c": [
+            "Middle level",
+            "High level",
+            "Low level",
+            "It is not classified by level"
+          ],
+          "a": 0,
+          "e": "The 'alto' prefix means middle level."
+        },
+        {
+          "q": "Which cloud has a smooth lens shape and marks mountain waves?",
+          "c": [
+            "Altocumulus lenticularis",
+            "Cirrostratus",
+            "Nimbostratus",
+            "Cumulonimbus calvus"
+          ],
+          "a": 0,
+          "e": "Lenticular clouds form at the crests of stationary waves."
+        },
+        {
+          "q": "Which cloud type is common over cold Atlantic water in a moist, stable onshore flow?",
+          "c": [
+            "Stratocumulus or stratus",
+            "Cumulonimbus, because the cold sea heats the air above it",
+            "Cirrus only, because the stable air stops all low cloud forming",
+            "Altocumulus lenticularis, since the sea acts like a mountain range"
+          ],
+          "a": 0,
+          "e": "Stable moist flow over cool water produces low layer cloud."
         }
       ]
     },
@@ -411,6 +609,72 @@
           ],
           "a": 0,
           "e": "Strong updrafts keep stones aloft where they accumulate layers of ice."
+        },
+        {
+          "q": "Drizzle drops have a diameter smaller than about:",
+          "c": [
+            "0.5 mm",
+            "5 mm",
+            "0.05 mm",
+            "2 mm"
+          ],
+          "a": 0,
+          "e": "Drizzle drops are under about 0.5 mm; larger drops are rain."
+        },
+        {
+          "q": "What does hail growth require?",
+          "c": [
+            "Strong updrafts holding stones in supercooled water",
+            "Calm, stable air with a deep layer of warm, moist cloud",
+            "Warm clouds only, with no ice and no supercooled water",
+            "A fog layer at the ground with very light surface winds"
+          ],
+          "a": 0,
+          "e": "Updrafts recycle stones through supercooled water so layers of ice build up."
+        },
+        {
+          "q": "In the Bergeron process, which grow at the expense of which?",
+          "c": [
+            "Ice crystals grow at the expense of supercooled droplets",
+            "Droplets grow at the expense of ice crystals in mixed cloud",
+            "Hailstones grow at the expense of the surrounding rain drops",
+            "Fog droplets grow at the expense of the cloud base layer"
+          ],
+          "a": 0,
+          "e": "Vapour moves from droplets to the lower-pressure environment over ice."
+        },
+        {
+          "q": "What is graupel?",
+          "c": [
+            "A soft ice pellet formed by riming of snow crystals",
+            "A frozen raindrop with a clear, solid ice structure",
+            "A large hailstone that has fallen from a cumulonimbus anvil",
+            "A frost deposit that forms on cold surfaces on clear nights"
+          ],
+          "a": 0,
+          "e": "Supercooled droplets freeze onto a snow crystal and build a pellet."
+        },
+        {
+          "q": "Which precipitation falls as liquid but freezes on contact with the surface?",
+          "c": [
+            "Freezing rain",
+            "Ice pellets",
+            "Snow grains",
+            "Hail"
+          ],
+          "a": 0,
+          "e": "Freezing rain is supercooled liquid that freezes when it hits a cold surface."
+        },
+        {
+          "q": "A deep warm layer aloft above a deep cold layer near the ground typically gives:",
+          "c": [
+            "Ice pellets",
+            "Freezing rain",
+            "Heavy snow only",
+            "Rain"
+          ],
+          "a": 0,
+          "e": "A deep cold layer refreezes the drops before they land."
         }
       ]
     },
@@ -513,6 +777,72 @@
           ],
           "a": 0,
           "e": "Rain adds moisture to the air near the surface, which can saturate and form fog."
+        },
+        {
+          "q": "When does radiation fog normally dissipate?",
+          "c": [
+            "Shortly after sunrise as heating warms the surface layer",
+            "As the sun sets and the surface begins to cool again",
+            "When the wind drops to calm and the sky stays clear all day",
+            "When the dew point rises 5 C above the air temperature"
+          ],
+          "a": 0,
+          "e": "Solar heating warms the air and evaporates the fog."
+        },
+        {
+          "q": "Mist is reported when visibility is:",
+          "c": [
+            "Between 5/8 and 6 statute miles",
+            "Less than 5/8 statute mile",
+            "More than 6 statute miles",
+            "Exactly 1 statute mile"
+          ],
+          "a": 0,
+          "e": "In Canadian reports BR is used for visibility from 5/8 SM to 6 SM."
+        },
+        {
+          "q": "Winds above about 15 kt tend to convert radiation fog into:",
+          "c": [
+            "Low stratus cloud",
+            "A clear sky",
+            "Steam fog",
+            "Haze"
+          ],
+          "a": 0,
+          "e": "Stronger mixing lifts the fog layer into stratus."
+        },
+        {
+          "q": "Fog is most likely when the temperature-dew point spread is:",
+          "c": [
+            "2 C or less",
+            "5 to 8 C",
+            "10 C or more",
+            "20 C or more"
+          ],
+          "a": 0,
+          "e": "A very small spread means the air is nearly saturated."
+        },
+        {
+          "q": "Why can advection fog persist in strong onshore winds?",
+          "c": [
+            "Warm moist air keeps flowing over cold water",
+            "Radiational cooling increases at night",
+            "Winds are calm",
+            "The ground cools the air"
+          ],
+          "a": 0,
+          "e": "As long as the air keeps crossing a cold surface it keeps cooling."
+        },
+        {
+          "q": "Sea smoke occurs most often:",
+          "c": [
+            "In winter, when very cold air flows over open water",
+            "On calm summer nights when the sea is cooler than the air",
+            "When warm, moist air crosses a cold sea surface in spring",
+            "Over dry desert areas in the afternoon after strong heating"
+          ],
+          "a": 0,
+          "e": "It needs a large temperature difference with colder air above warmer water."
         }
       ]
     },
@@ -622,6 +952,72 @@
           ],
           "a": 0,
           "e": "Moving out of the supercooled water zone, usually to warmer or clear air, stops further accumulation."
+        },
+        {
+          "q": "In which temperature range is supercooled water most commonly found in clouds?",
+          "c": [
+            "0 to about -20 C",
+            "0 to +10 C",
+            "-40 to -60 C",
+            "Above 10 C"
+          ],
+          "a": 0,
+          "e": "Supercooled water is most common between 0 and about -20 C."
+        },
+        {
+          "q": "What effect does ice on the wing leading edge have?",
+          "c": [
+            "Lift decreases and drag increases",
+            "Lift increases",
+            "Drag decreases",
+            "There is no effect on lift"
+          ],
+          "a": 0,
+          "e": "Ice disturbs the airflow, reduces lift and increases weight and drag."
+        },
+        {
+          "q": "Severe icing means:",
+          "c": [
+            "Accumulation is so fast that de-icing equipment cannot control it",
+            "Ice is visible on the aircraft but does not affect performance",
+            "Ice forms only on the ground and never builds up in flight",
+            "Ice forms only in clear air and has no effect on the engine"
+          ],
+          "a": 0,
+          "e": "In severe icing an immediate diversion is required."
+        },
+        {
+          "q": "Frost on the wings before takeoff must be:",
+          "c": [
+            "Removed completely before takeoff",
+            "Ignored since it does not change airflow",
+            "Left alone because it blows off during the takeoff roll",
+            "Reduced by taxiing slowly"
+          ],
+          "a": 0,
+          "e": "Even thin frost can spoil lift, so it must be removed."
+        },
+        {
+          "q": "Which cloud typically has the highest liquid water content and large drops?",
+          "c": [
+            "Cumulonimbus or towering cumulus",
+            "Cirrus, because high ice crystal clouds hold the most water",
+            "Cirrostratus, because it covers a large area of the sky",
+            "Thin altostratus, because it forms in a stable layer aloft"
+          ],
+          "a": 0,
+          "e": "Strong updrafts carry plenty of liquid water above the freezing level."
+        },
+        {
+          "q": "Where is structural icing least likely?",
+          "c": [
+            "In cloud-free air at temperatures below -40 C",
+            "In freezing rain at the surface at temperatures just below zero",
+            "In supercooled towering cumulus at about -10 C",
+            "In stratocumulus at -8 C with a high liquid water content"
+          ],
+          "a": 0,
+          "e": "Without liquid water there is nothing to freeze on the aircraft."
         }
       ]
     }

@@ -95,6 +95,72 @@
           ],
           "a": 0,
           "e": "Warm air is cut off from the surface and the low fills."
+        },
+        {
+          "q": "Which stage of the cyclone life cycle is marked by the lowest central pressure?",
+          "c": [
+            "Occluded (mature) stage",
+            "Initial wave stage",
+            "Incipient stage",
+            "Dissipating after fully filled"
+          ],
+          "a": 0,
+          "e": "Maximum intensity commonly occurs near the time of occlusion."
+        },
+        {
+          "q": "The Norwegian cyclone model begins with a wave on a:",
+          "c": [
+            "Stationary front",
+            "Warm sector high",
+            "Dry line",
+            "Tropical wave"
+          ],
+          "a": 0,
+          "e": "A small wave on a quasi-stationary polar front starts cyclogenesis."
+        },
+        {
+          "q": "A deepening cyclone means central pressure:",
+          "c": [
+            "Is falling",
+            "Is rising",
+            "Is steady",
+            "Is the same as the high"
+          ],
+          "a": 0,
+          "e": "Deepening means the central pressure decreases."
+        },
+        {
+          "q": "Rapid cyclogenesis, often called a bomb, is a pressure fall of about:",
+          "c": [
+            "24 hPa in 24 hours at 60 degrees latitude",
+            "1 hPa in 24 hours at any latitude, however slowly it moves",
+            "5 hPa in 24 hours, as measured near the centre of the low",
+            "100 hPa in 24 hours, a value seen only in tropical storms"
+          ],
+          "a": 0,
+          "e": "Bombogenesis is defined as about 24 hPa in 24 h at 60 N, scaled by latitude."
+        },
+        {
+          "q": "Cyclones in the Atlantic region tend to move generally toward the:",
+          "c": [
+            "Northeast",
+            "Southwest",
+            "South",
+            "West"
+          ],
+          "a": 0,
+          "e": "Mid-latitude storm tracks run west to east, often toward the northeast along the coast."
+        },
+        {
+          "q": "The surface low is located relative to the upper trough as it develops. Strengthening occurs when the upper trough is:",
+          "c": [
+            "West of the surface low (tilting back with height)",
+            "Directly over the surface low, with no tilt in the vertical",
+            "East of the surface low, tilting forward with height",
+            "Absent altogether, since development is driven only at the surface"
+          ],
+          "a": 0,
+          "e": "A westward tilt with height allows upper divergence to exceed surface convergence."
         }
       ]
     },
@@ -205,6 +271,72 @@
           ],
           "a": 0,
           "e": "Planetary-scale Rossby waves are few, large and slow."
+        },
+        {
+          "q": "A ridge in the upper flow is generally associated with:",
+          "c": [
+            "Warm air, fair weather and subsidence",
+            "Cold air and storms",
+            "Frontogenesis and heavy rain",
+            "Strong convergence at the surface"
+          ],
+          "a": 0,
+          "e": "Ridges support high pressure and drier, sinking air."
+        },
+        {
+          "q": "A cut-off low is:",
+          "c": [
+            "A closed low separated from the main westerlies",
+            "A low that moves rapidly along with the main jet stream",
+            "A surface low that has moved out over the open water",
+            "A trough that leads a ridge by about a thousand kilometres"
+          ],
+          "a": 0,
+          "e": "Cut-off lows detach from the flow and may stay in place for days."
+        },
+        {
+          "q": "A Rex block comprises:",
+          "c": [
+            "A high poleward of a low",
+            "A low poleward of a high",
+            "Two highs side by side",
+            "A single trough"
+          ],
+          "a": 0,
+          "e": "A Rex block has a high to the north and a low to the south."
+        },
+        {
+          "q": "At 500 hPa, a short-wave trough is best described as:",
+          "c": [
+            "A small-scale disturbance moving quickly in the flow",
+            "A stationary planetary-scale wave that changes very slowly",
+            "A surface boundary separating two different air masses",
+            "A tropical wave moving westward in the trade wind flow"
+          ],
+          "a": 0,
+          "e": "Short waves move quickly and trigger local development."
+        },
+        {
+          "q": "What does an omega block look like?",
+          "c": [
+            "A high flanked by lows, resembling the Greek letter",
+            "A single deep trough with a strong jet stream on its east side",
+            "A jet streak with divergence on its left exit region",
+            "A line of thunderstorms curving around a surface low"
+          ],
+          "a": 0,
+          "e": "The ridge with troughs on both sides resembles the Greek letter omega."
+        },
+        {
+          "q": "Weather beneath a persistent upper ridge often includes:",
+          "c": [
+            "Dry, stable weather and possible heat or poor air quality",
+            "Heavy continuous snow with rapid temperature drops and gales",
+            "A steady stream of fast-moving lows with fronts every day",
+            "Frequent tornadoes and severe thunderstorms across the region"
+          ],
+          "a": 0,
+          "e": "Persistent ridges suppress cloud and allow heating."
         }
       ]
     },
@@ -309,6 +441,72 @@
           ],
           "a": 0,
           "e": "Negative vorticity advection favours subsidence."
+        },
+        {
+          "q": "Positive vorticity advection (PVA) typically leads to:",
+          "c": [
+            "Upward motion and falling surface pressure",
+            "Subsidence, clearing skies and rising surface pressure",
+            "No vertical motion, since vorticity does not affect vertical motion",
+            "Rapid dissipation of the trough and the end of the system"
+          ],
+          "a": 0,
+          "e": "PVA ahead of a trough enhances upward motion."
+        },
+        {
+          "q": "The flow ahead of an upper trough tends to show:",
+          "c": [
+            "Divergence aloft and rising motion",
+            "Convergence aloft and sinking motion",
+            "No divergence",
+            "Uniform vorticity"
+          ],
+          "a": 0,
+          "e": "East of the trough axis, divergence aloft supports ascent."
+        },
+        {
+          "q": "Cyclonic vorticity in the Northern Hemisphere has a rotation sense of:",
+          "c": [
+            "Counterclockwise",
+            "Clockwise",
+            "No rotation",
+            "Variable"
+          ],
+          "a": 0,
+          "e": "Cyclonic is counterclockwise in the Northern Hemisphere."
+        },
+        {
+          "q": "Upper-level divergence is stronger than low-level convergence. Surface pressure will:",
+          "c": [
+            "Fall",
+            "Rise",
+            "Remain steady",
+            "Oscillate"
+          ],
+          "a": 0,
+          "e": "Net mass removal from the column lowers surface pressure."
+        },
+        {
+          "q": "Where is vorticity maximum typically found?",
+          "c": [
+            "At the base of a trough",
+            "At the crest of a ridge",
+            "In the middle of a high",
+            "At the equator"
+          ],
+          "a": 0,
+          "e": "Curvature vorticity peaks at the trough axis."
+        },
+        {
+          "q": "In quasi-geostrophic thinking, ascent is forced by:",
+          "c": [
+            "Differential vorticity advection and temperature advection",
+            "Surface friction acting on the lower layers of the atmosphere only",
+            "Radiative cooling of the upper troposphere at night alone",
+            "Pure orographic lift with no link to upper-level flow"
+          ],
+          "a": 0,
+          "e": "QG omega depends on vorticity advection change with height and thermal advection."
         }
       ]
     },
@@ -409,6 +607,72 @@
           ],
           "a": 0,
           "e": "MCCs are defined by size and shape criteria on IR imagery."
+        },
+        {
+          "q": "A squall line is:",
+          "c": [
+            "A line of active thunderstorms, often ahead of a cold front",
+            "A single isolated storm cell with a very short life cycle",
+            "A tropical wave moving across the Atlantic in late summer",
+            "A sea breeze front that moves a few kilometres inland"
+          ],
+          "a": 0,
+          "e": "Squall lines are narrow bands of intense convection."
+        },
+        {
+          "q": "A mesoscale convective complex is identified by:",
+          "c": [
+            "Large, long-lived, near-circular cloud shield",
+            "A narrow plume of cloud from a single large thunderstorm",
+            "A single anvil that lasts for only about thirty minutes",
+            "A clear sky and light winds across a wide region"
+          ],
+          "a": 0,
+          "e": "An MCC has a cold cloud shield over a large area lasting many hours."
+        },
+        {
+          "q": "What is a bow echo on radar?",
+          "c": [
+            "A bow-shaped line of storms associated with damaging straight-line winds",
+            "A circular rain band spiralling around the centre of a hurricane",
+            "A hail signature showing large stones inside a single cell",
+            "A tornado hook echo at the rear flank of a supercell"
+          ],
+          "a": 0,
+          "e": "Bow echoes mark strong rear-inflow and wind damage."
+        },
+        {
+          "q": "The gust front is:",
+          "c": [
+            "The leading edge of outflow cooled by evaporation and downdrafts",
+            "The leading edge of the warm sector ahead of a cold front",
+            "A frontal occlusion where cold air overtakes the warm front",
+            "A high-level jet core on the polar side of the storm"
+          ],
+          "a": 0,
+          "e": "Storm outflow forms a mini cold front called a gust front."
+        },
+        {
+          "q": "A cold pool beneath an MCS:",
+          "c": [
+            "Helps trigger new convection along its leading edge",
+            "Prevents all new cells from forming near the system",
+            "Warms the surface and weakens the outflow boundary",
+            "Removes the shear and ends the organized convection"
+          ],
+          "a": 0,
+          "e": "The cold pool lifts warm air at its edge and sustains the system."
+        },
+        {
+          "q": "Typical timescale of mesoscale systems is:",
+          "c": [
+            "Hours to a day",
+            "Weeks",
+            "Seconds",
+            "Months"
+          ],
+          "a": 0,
+          "e": "Mesoscale phenomena last from a few hours up to about a day."
         }
       ]
     },
@@ -515,6 +779,72 @@
           ],
           "a": 0,
           "e": "The official Atlantic season is June 1 to November 30."
+        },
+        {
+          "q": "The Saffir-Simpson scale classifies hurricanes by:",
+          "c": [
+            "Sustained wind speed",
+            "Central pressure only",
+            "Rainfall totals",
+            "Size"
+          ],
+          "a": 0,
+          "e": "Categories 1 to 5 are based on sustained winds."
+        },
+        {
+          "q": "A hurricane in the Atlantic needs sea surface temperatures of at least about:",
+          "c": [
+            "26.5 C",
+            "10 C",
+            "15 C",
+            "40 C"
+          ],
+          "a": 0,
+          "e": "Tropical cyclones need about 26.5 C or warmer water to develop."
+        },
+        {
+          "q": "What happens when a hurricane moves over cold water or land?",
+          "c": [
+            "It weakens due to lost heat and moisture supply",
+            "It strengthens, because the cold water adds fuel to the storm",
+            "It stays unchanged, since it is not tied to its energy source",
+            "It always speeds up and turns cold-core within the hour"
+          ],
+          "a": 0,
+          "e": "Warm water drives the storm; without it, the storm decays."
+        },
+        {
+          "q": "Post-tropical transition means the system becomes:",
+          "c": [
+            "Cold-core with frontal characteristics",
+            "Warm-core and smaller, with a more compact eye",
+            "A tornado-producing mesoscale convective system",
+            "A stationary front lying along the old storm track"
+          ],
+          "a": 0,
+          "e": "Transitioning storms acquire frontal structure and a cold core."
+        },
+        {
+          "q": "In Canada, the Canadian Hurricane Centre is located in:",
+          "c": [
+            "Dartmouth, Nova Scotia",
+            "Vancouver, British Columbia",
+            "Edmonton, Alberta",
+            "Gander, Newfoundland"
+          ],
+          "a": 0,
+          "e": "The CHC operates from the Atlantic Storm Prediction Centre in Dartmouth."
+        },
+        {
+          "q": "The most dangerous part of a Northern Hemisphere hurricane is usually the:",
+          "c": [
+            "Right-front quadrant",
+            "Left-rear quadrant",
+            "Left-front quadrant",
+            "The eye"
+          ],
+          "a": 0,
+          "e": "The right side adds forward motion to the rotational wind speed."
         }
       ]
     }

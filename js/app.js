@@ -4,6 +4,7 @@
 // ---------- Config ----------
 const DOMAINS = ["foundations", "wind", "moisture", "airmass", "synoptic", "severe", "obs", "codes", "applied"];
 const PASS = 75;            // pass mark, percent
+const TOPIC_QUIZ_LEN = 6;
 const DOMAIN_TEST_LEN = 15; // questions per domain test
 const EXAM_LEN = 40;        // questions per quarterly exam
 const LEVELS = [
@@ -365,7 +366,9 @@ function makeItems(qs) { return qs.map(q => ({ q, order: shuffle(q.c.map((_, i) 
 function topicRun(did, ti) {
   const d = domainOf(did), t = d && d.topics[ti];
   if (!t || !t.qs.length) return null;
-  return { type: "topic", id: tkey(did, ti), did, ti, title: t.title, sub: d.title, items: makeItems(shuffle(t.qs)), immediate: true };
+  const score = q => { const st = quiz.q[q.id]; return (!st || st.s === 0 ? 3 : (st.w > 0 && (st.c || 0) < 2 ? 2 : 1)) + Math.random(); };
+  const pick = t.qs.map(q => ({ q, k: score(q) })).sort((a, b) => b.k - a.k).slice(0, TOPIC_QUIZ_LEN).map(x => x.q);
+  return { type: "topic", id: tkey(did, ti), did, ti, title: t.title, sub: d.title, items: makeItems(shuffle(pick)), immediate: true };
 }
 function domainRun(did) {
   const d = domainOf(did); if (!d) return null;

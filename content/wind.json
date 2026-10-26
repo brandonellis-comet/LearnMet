@@ -100,6 +100,72 @@
           ],
           "a": 0,
           "e": "Closely spaced isobars mean a steep pressure gradient, hence a strong wind."
+        },
+        {
+          "q": "In the Southern Hemisphere the Coriolis effect deflects moving air:",
+          "c": [
+            "To the left of its direction of motion",
+            "To the right of its direction of motion",
+            "Toward the nearest high pressure",
+            "Straight upward"
+          ],
+          "a": 0,
+          "e": "The Southern Hemisphere deflection is opposite to the Northern Hemisphere: to the left."
+        },
+        {
+          "q": "Which statement about the Coriolis effect is correct?",
+          "c": [
+            "It changes the direction of motion but not the speed",
+            "It speeds up air that flows poleward and slows air flowing toward the equator",
+            "It is strongest at the equator and falls to zero at the poles",
+            "It acts only on air above the boundary layer, not near the ground"
+          ],
+          "a": 0,
+          "e": "Coriolis acts at right angles to the motion, so it cannot change speed."
+        },
+        {
+          "q": "Isobars 4 hPa apart are 100 km apart in one area and 200 km apart in another. Where is the pressure gradient force larger?",
+          "c": [
+            "Where they are 100 km apart, by a factor of two",
+            "Where they are 200 km apart, by a factor of two",
+            "They are the same in both areas",
+            "Neither, because spacing does not affect the force"
+          ],
+          "a": 0,
+          "e": "The gradient is pressure change per distance: 4/100 is twice 4/200."
+        },
+        {
+          "q": "Why is geostrophic balance not valid near the equator?",
+          "c": [
+            "The Coriolis effect goes to zero",
+            "Pressure gradients disappear",
+            "Friction is much larger there",
+            "Temperature gradients dominate"
+          ],
+          "a": 0,
+          "e": "Coriolis is proportional to the sine of latitude and vanishes at 0 degrees."
+        },
+        {
+          "q": "Stand with your back to the wind in the Northern Hemisphere and low pressure is on your left. Which rule is this?",
+          "c": [
+            "Buys Ballot's law",
+            "Boyle's law",
+            "Newton's second law",
+            "Dalton's law"
+          ],
+          "a": 0,
+          "e": "Buys Ballot's law locates pressure systems from the wind direction."
+        },
+        {
+          "q": "Which factor does the Coriolis force depend on?",
+          "c": [
+            "Wind speed and latitude",
+            "Temperature and humidity only",
+            "Altitude above sea level only",
+            "Cloud cover and precipitation"
+          ],
+          "a": 0,
+          "e": "Coriolis force increases with wind speed and with the sine of latitude."
         }
       ]
     },
@@ -202,6 +268,72 @@
           ],
           "a": 0,
           "e": "Thermal wind balance means a large horizontal temperature contrast produces a large increase in wind with height."
+        },
+        {
+          "q": "Above the friction layer, the wind blows:",
+          "c": [
+            "Nearly parallel to the isobars",
+            "Straight from high to low pressure",
+            "Perpendicular to the isobars",
+            "Opposite to the pressure gradient force"
+          ],
+          "a": 0,
+          "e": "Above the friction layer the wind is close to geostrophic and follows the isobars."
+        },
+        {
+          "q": "Around a high-pressure centre the gradient wind compared with the geostrophic wind (same gradient) is:",
+          "c": [
+            "Faster (supergeostrophic)",
+            "Slower (subgeostrophic)",
+            "Equal",
+            "Zero"
+          ],
+          "a": 0,
+          "e": "Around highs the force balance allows a stronger wind for the same pressure gradient."
+        },
+        {
+          "q": "The thermal wind blows parallel to which lines?",
+          "c": [
+            "Thickness lines (mean layer temperature)",
+            "Surface isobars, because the thermal wind is just the surface wind",
+            "Frontal boundaries on the surface chart and nothing else",
+            "Jet axis wind maxima at the 250 hPa level only"
+          ],
+          "a": 0,
+          "e": "Thermal wind follows the thickness lines, with cold air on the left in the Northern Hemisphere."
+        },
+        {
+          "q": "Winds that veer (turn clockwise) with height in the Northern Hemisphere indicate:",
+          "c": [
+            "Cold air advection",
+            "Warm air advection",
+            "No temperature advection",
+            "Frontolysis only"
+          ],
+          "a": 0,
+          "e": "Veering with height is the signature of cold advection."
+        },
+        {
+          "q": "In the Northern Hemisphere, cold air lies to the north and warm air to the south. How does a westerly wind change with height?",
+          "c": [
+            "It increases with height",
+            "It decreases with height",
+            "It stays the same",
+            "It reverses to easterly at once"
+          ],
+          "a": 0,
+          "e": "A north-south temperature gradient gives westerly thermal wind, so westerlies strengthen aloft."
+        },
+        {
+          "q": "Which of these winds is best approximated by balance between the pressure gradient force and the Coriolis force?",
+          "c": [
+            "Geostrophic wind",
+            "Sea breeze",
+            "Katabatic wind",
+            "Mountain-valley wind"
+          ],
+          "a": 0,
+          "e": "Local circulations are driven by heating or terrain, while the geostrophic wind is a large-scale balance."
         }
       ]
     },
@@ -306,6 +438,72 @@
           ],
           "a": 0,
           "e": "Surface divergence in a high is replaced by sinking air, which suppresses cloud."
+        },
+        {
+          "q": "Compared with open water, friction effects over forested terrain are:",
+          "c": [
+            "Greater, giving slower surface winds turned more across the isobars",
+            "Smaller, giving faster surface winds that blow nearly parallel to the isobars",
+            "Identical, because roughness does not change speed or direction at all",
+            "Reversed, so the surface wind blows toward higher pressure over forest"
+          ],
+          "a": 0,
+          "e": "Rougher surfaces slow the wind more and increase its turning toward low pressure."
+        },
+        {
+          "q": "A typical depth of the planetary boundary layer is:",
+          "c": [
+            "About 1 to 2 km",
+            "About 10 to 20 km",
+            "About 100 to 200 m",
+            "About 30 to 50 km"
+          ],
+          "a": 0,
+          "e": "The boundary layer, where friction acts, is typically a kilometre or two deep."
+        },
+        {
+          "q": "On a clear night with a strong surface inversion, surface winds usually:",
+          "c": [
+            "Decrease while winds a few hundred metres up may increase",
+            "Increase because of strong mixing from the winds aloft all night",
+            "Reverse direction completely as the inversion forms after sunset",
+            "Match the geostrophic wind exactly because friction vanishes at night"
+          ],
+          "a": 0,
+          "e": "The inversion decouples the surface layer so winds near the ground drop."
+        },
+        {
+          "q": "Surface convergence beneath a low leads to:",
+          "c": [
+            "Rising air, cloud and precipitation",
+            "Sinking air and clear skies",
+            "No vertical motion",
+            "A strong subsidence inversion"
+          ],
+          "a": 0,
+          "e": "Air that flows inward has nowhere to go but up."
+        },
+        {
+          "q": "A pilot descends toward the surface in the Northern Hemisphere through the friction layer. How does the wind direction usually change?",
+          "c": [
+            "It backs (turns counterclockwise) as height decreases",
+            "It veers (turns clockwise) as height decreases",
+            "It stays exactly the same",
+            "It reverses by 180 degrees"
+          ],
+          "a": 0,
+          "e": "Friction turns the wind toward low pressure, which means backing as you approach the ground."
+        },
+        {
+          "q": "What most reduces surface wind speed compared with the geostrophic wind?",
+          "c": [
+            "Surface friction",
+            "Latent heat release",
+            "The Coriolis force",
+            "Solar radiation"
+          ],
+          "a": 0,
+          "e": "Friction slows the near-surface air and breaks the geostrophic balance."
         }
       ]
     },
@@ -409,6 +607,72 @@
           ],
           "a": 0,
           "e": "The Ferrel cell is driven by mid-latitude eddies rather than direct thermal forcing."
+        },
+        {
+          "q": "Which describes the ITCZ?",
+          "c": [
+            "Rising air, deep convection, heavy rain and light winds",
+            "Sinking air, clear dry weather and strong steady trade winds",
+            "Persistent low stratus and fog with light drizzle all year",
+            "Polar easterlies meeting the westerlies with frequent fronts"
+          ],
+          "a": 0,
+          "e": "The ITCZ is the equatorial zone of convergence and deep convection."
+        },
+        {
+          "q": "The polar easterlies blow from the:",
+          "c": [
+            "East toward the mid-latitudes",
+            "West toward the mid-latitudes, steered by the jet stream aloft",
+            "South toward the pole, then curving back into the westerlies",
+            "North toward the equator, becoming the northeast trade winds"
+          ],
+          "a": 0,
+          "e": "Polar easterlies flow from the east at high latitudes."
+        },
+        {
+          "q": "Why do many deserts lie near 30 degrees latitude?",
+          "c": [
+            "Dry air sinks in the descending branch of the Hadley cell",
+            "Moist air rises there from the ITCZ and drops its rain nearby",
+            "Polar-front storms cross the area every few days in the winter",
+            "Cold ocean currents alone cool the coast and prevent any rainfall"
+          ],
+          "a": 0,
+          "e": "Sinking air warms and dries, suppressing cloud and rain."
+        },
+        {
+          "q": "In the Northern Hemisphere, Coriolis turns the equatorward surface flow of the Hadley cell into:",
+          "c": [
+            "The northeast trade winds",
+            "The southeast trade winds",
+            "The prevailing westerlies",
+            "The polar easterlies"
+          ],
+          "a": 0,
+          "e": "Equatorward flow is turned to the right and becomes the northeast trades."
+        },
+        {
+          "q": "Where is the polar front typically located?",
+          "c": [
+            "Near 60 degrees latitude",
+            "Near the equator",
+            "Near 30 degrees latitude",
+            "At the poles"
+          ],
+          "a": 0,
+          "e": "The polar front separates polar and mid-latitude air near 60 degrees."
+        },
+        {
+          "q": "Which of these cells is NOT thermally direct?",
+          "c": [
+            "The Ferrel cell",
+            "The Hadley cell",
+            "The Polar cell",
+            "All three are thermally direct"
+          ],
+          "a": 0,
+          "e": "Hadley and Polar cells are direct; the Ferrel cell is indirect and eddy-driven."
         }
       ]
     },
@@ -508,6 +772,72 @@
           ],
           "a": 0,
           "e": "The polar front jet sits near 250 to 300 hPa, close to the tropopause."
+        },
+        {
+          "q": "At about which pressure level is the polar front jet usually strongest?",
+          "c": [
+            "250 to 300 hPa",
+            "850 hPa",
+            "700 hPa",
+            "1000 hPa"
+          ],
+          "a": 0,
+          "e": "The polar front jet is near the tropopause, around 250 to 300 hPa."
+        },
+        {
+          "q": "A jet core of 120 kt is about how many metres per second?",
+          "c": [
+            "About 62 m/s",
+            "About 120 m/s",
+            "About 30 m/s",
+            "About 220 m/s"
+          ],
+          "a": 0,
+          "e": "1 kt is 0.514 m/s, so 120 kt is about 62 m/s."
+        },
+        {
+          "q": "Where is clear-air turbulence most likely?",
+          "c": [
+            "Near jet cores and strong shear zones",
+            "In the middle of a stable high",
+            "Near the surface in fog",
+            "Above 30 km in the stratosphere"
+          ],
+          "a": 0,
+          "e": "CAT is associated with strong vertical and horizontal wind shear near jets."
+        },
+        {
+          "q": "Why does an eastbound flight from Halifax to London benefit from the jet stream?",
+          "c": [
+            "The jet flows from west to east, giving a tailwind",
+            "The jet flows from east to west, giving a tailwind",
+            "The jet flows north to south, giving a crosswind only",
+            "The jet exists only at the equator"
+          ],
+          "a": 0,
+          "e": "Mid-latitude jets blow from the west, so eastbound flights get a tailwind."
+        },
+        {
+          "q": "How does the Northern Hemisphere jet stream usually change from winter to summer?",
+          "c": [
+            "It weakens and shifts poleward",
+            "It strengthens and moves toward the equator",
+            "It disappears entirely",
+            "It reverses direction"
+          ],
+          "a": 0,
+          "e": "A weaker temperature contrast in summer gives a weaker jet at a higher latitude."
+        },
+        {
+          "q": "Near which latitude is the subtropical jet found?",
+          "c": [
+            "About 30 degrees",
+            "About 60 degrees",
+            "At the equator",
+            "At the pole"
+          ],
+          "a": 0,
+          "e": "The subtropical jet lies at the poleward edge of the Hadley cell, about 30 degrees."
         }
       ]
     },
@@ -602,6 +932,72 @@
           ],
           "a": 0,
           "e": "Chinooks are foehn-type winds: air warms by compression as it descends the lee slopes."
+        },
+        {
+          "q": "What does the arrival of a sea breeze front at a coastal station usually bring?",
+          "c": [
+            "A drop in temperature, a rise in humidity and a wind shift",
+            "A rise in temperature, a drop in humidity and no wind shift",
+            "No change in temperature, humidity or wind direction at all",
+            "Heavy snow and falling visibility with a strong easterly gale"
+          ],
+          "a": 0,
+          "e": "Cooler marine air replaces the warm land air."
+        },
+        {
+          "q": "When are sea breezes strongest?",
+          "c": [
+            "When the land-sea temperature contrast is large and the gradient wind is weak",
+            "When it is cloudy and windy and the land is cooler than the sea",
+            "When a strong offshore gradient wind blows against the coast",
+            "When the land-sea temperature contrast is small and the sky is overcast"
+          ],
+          "a": 0,
+          "e": "Strong sunshine and a weak large-scale wind let the local circulation dominate."
+        },
+        {
+          "q": "A mountain breeze at night blows:",
+          "c": [
+            "Downslope and down-valley",
+            "Upslope and up-valley",
+            "Always from the sea",
+            "Parallel to the coast"
+          ],
+          "a": 0,
+          "e": "Cooled slope air drains downhill at night."
+        },
+        {
+          "q": "What does cold air pooling in valley bottoms on clear, calm nights produce?",
+          "c": [
+            "Frost and fog in low areas",
+            "Higher temperatures in the valley",
+            "Strong winds on the valley floor",
+            "Thunderstorms"
+          ],
+          "a": 0,
+          "e": "Cold dense air collects in low ground and often reaches saturation."
+        },
+        {
+          "q": "Which local wind is associated with the eastern slopes of the Rocky Mountains?",
+          "c": [
+            "Chinook",
+            "Bora",
+            "Mistral",
+            "Sirocco"
+          ],
+          "a": 0,
+          "e": "The Chinook is the foehn wind of the Rockies."
+        },
+        {
+          "q": "Compared with a sea breeze, a land breeze is generally:",
+          "c": [
+            "Weaker, since the night-time temperature contrast is smaller",
+            "Stronger, since nights are colder and the contrast is much larger",
+            "About equal in strength, since both are driven by the same contrast",
+            "Possible only in winter, when the land is colder than the sea"
+          ],
+          "a": 0,
+          "e": "Land-sea contrasts are smaller at night, so land breezes are usually weaker."
         }
       ]
     }

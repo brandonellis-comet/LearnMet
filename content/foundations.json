@@ -90,6 +90,72 @@
           ],
           "a": 0,
           "e": "The troposphere has falling temperature with height and about 80% of the atmosphere's mass."
+        },
+        {
+          "q": "About what fraction of the atmosphere's mass lies in the troposphere?",
+          "c": [
+            "About 80%",
+            "About 50%",
+            "About 20%",
+            "About 99%"
+          ],
+          "a": 0,
+          "e": "The troposphere is the densest layer and holds roughly 80% of the atmosphere's mass."
+        },
+        {
+          "q": "Which part of the atmosphere has the coldest temperatures?",
+          "c": [
+            "The upper mesosphere",
+            "The stratosphere just below the stratopause",
+            "The troposphere at the surface",
+            "The thermosphere at 200 km"
+          ],
+          "a": 0,
+          "e": "Temperature falls through the mesosphere to a minimum near the mesopause, about 85 km up."
+        },
+        {
+          "q": "Where is most atmospheric ozone found?",
+          "c": [
+            "In the stratosphere, roughly 15 to 35 km up",
+            "In the troposphere just above the ground",
+            "In the mesosphere near 70 km",
+            "In the thermosphere near 300 km"
+          ],
+          "a": 0,
+          "e": "The ozone layer sits in the stratosphere, where ozone absorbs ultraviolet radiation."
+        },
+        {
+          "q": "Which atmospheric gas varies most in concentration and drives most weather?",
+          "c": [
+            "Water vapour",
+            "Argon",
+            "Nitrogen",
+            "Oxygen"
+          ],
+          "a": 0,
+          "e": "Water vapour ranges from near zero to about 4% and its phase changes release or absorb latent heat."
+        },
+        {
+          "q": "About how high is the average mid-latitude tropopause?",
+          "c": [
+            "About 11 km (36,000 ft)",
+            "About 3 km (10,000 ft)",
+            "About 25 km (82,000 ft)",
+            "About 50 km (164,000 ft)"
+          ],
+          "a": 0,
+          "e": "The mid-latitude tropopause averages near 11 km, higher in summer and lower in winter."
+        },
+        {
+          "q": "What happens to temperature just above the tropopause?",
+          "c": [
+            "It stays nearly constant, then increases with height",
+            "It rises sharply at once, by about 30 C in the first kilometre",
+            "It keeps falling at the same 6.5 C per km rate as below",
+            "It drops steadily toward the coldest values of the mesopause"
+          ],
+          "a": 0,
+          "e": "The lower stratosphere is close to isothermal, and warming begins higher up as ozone absorbs UV."
         }
       ]
     },
@@ -196,6 +262,72 @@
           ],
           "a": 0,
           "e": "Atmospheric pressure is the weight of the overlying column of air per unit area."
+        },
+        {
+          "q": "Air at 18 C has a dew point of 15 C. What is the temperature-dew point spread?",
+          "c": [
+            "3 C",
+            "33 C",
+            "15 C",
+            "18 C"
+          ],
+          "a": 0,
+          "e": "Spread = temperature minus dew point = 18 - 15 = 3 C."
+        },
+        {
+          "q": "Air at 25 C has a dew point of 25 C. What is its relative humidity?",
+          "c": [
+            "100%",
+            "50%",
+            "25%",
+            "0%"
+          ],
+          "a": 0,
+          "e": "When temperature equals dew point the air is saturated."
+        },
+        {
+          "q": "Station pressure falls steadily for several hours as cloud thickens and the wind backs. What is most likely approaching?",
+          "c": [
+            "A low-pressure system or warm front",
+            "Building high pressure with clearing skies",
+            "A stationary ridge with light winds",
+            "A sea breeze from the north"
+          ],
+          "a": 0,
+          "e": "Falling pressure with thickening cloud and backing wind is the classic sign of an approaching low or warm front."
+        },
+        {
+          "q": "Which relation links pressure, density and temperature of air?",
+          "c": [
+            "The ideal gas law",
+            "Buys Ballot's law",
+            "The hydrostatic equation",
+            "The geostrophic relation"
+          ],
+          "a": 0,
+          "e": "The ideal gas law, p = rho R T, ties the three variables together."
+        },
+        {
+          "q": "A pressure of 1000 hPa equals how many kilopascals?",
+          "c": [
+            "100 kPa",
+            "10 kPa",
+            "1000 kPa",
+            "1 kPa"
+          ],
+          "a": 0,
+          "e": "1 hPa = 100 Pa, so 1000 hPa = 100,000 Pa = 100 kPa."
+        },
+        {
+          "q": "Moist air is cooled until its temperature reaches the dew point. What happens next?",
+          "c": [
+            "Condensation begins as cloud, fog or dew",
+            "Evaporation speeds up",
+            "Relative humidity falls to 50%",
+            "The dew point rises above the air temperature"
+          ],
+          "a": 0,
+          "e": "At the dew point the air is saturated, and further cooling forces vapour to condense."
         }
       ]
     },
@@ -308,6 +440,72 @@
           ],
           "a": 0,
           "e": "500 hPa sits near 5,500 m, which is why it is treated as the mid-troposphere level."
+        },
+        {
+          "q": "What is the ISA temperature at 11 km?",
+          "c": [
+            "-56.5 C",
+            "-15 C",
+            "0 C",
+            "-100 C"
+          ],
+          "a": 0,
+          "e": "ISA falls 6.5 C per km from 15 C to -56.5 C at 11 km, then stays constant to 20 km."
+        },
+        {
+          "q": "Using the ISA lapse rate of 6.5 C per km, what is the ISA temperature at 3,000 m?",
+          "c": [
+            "-4.5 C",
+            "-19.5 C",
+            "+4.5 C",
+            "-15 C"
+          ],
+          "a": 0,
+          "e": "15 - (3 x 6.5) = 15 - 19.5 = -4.5 C."
+        },
+        {
+          "q": "About how high is the 850 hPa level in the standard atmosphere?",
+          "c": [
+            "About 1,500 m (5,000 ft)",
+            "About 500 m (1,600 ft)",
+            "About 3,000 m (10,000 ft)",
+            "About 5,500 m (18,000 ft)"
+          ],
+          "a": 0,
+          "e": "850 hPa is near 1,500 m, a good proxy for low-level temperature and moisture."
+        },
+        {
+          "q": "Which pressure level sits near 10,400 m (about flight level 340)?",
+          "c": [
+            "250 hPa",
+            "500 hPa",
+            "700 hPa",
+            "850 hPa"
+          ],
+          "a": 0,
+          "e": "250 hPa is the standard jet stream level at about 10.4 km."
+        },
+        {
+          "q": "A 1000-500 hPa thickness of 5,100 m compared with 5,700 m indicates the 5,100 m layer is:",
+          "c": [
+            "Colder on average",
+            "Warmer on average",
+            "Drier but equally warm",
+            "More stable but the same temperature"
+          ],
+          "a": 0,
+          "e": "Thickness is proportional to the mean temperature of the layer."
+        },
+        {
+          "q": "Near sea level, about how much does pressure fall for each 8 m of height gained?",
+          "c": [
+            "About 1 hPa",
+            "About 10 hPa",
+            "About 0.1 hPa",
+            "About 5 hPa"
+          ],
+          "a": 0,
+          "e": "Near sea level pressure falls about 1 hPa per 8 m (roughly 1 hPa per 30 ft)."
         }
       ]
     },
@@ -415,6 +613,72 @@
           ],
           "a": 0,
           "e": "Between the SALR and DALR, an unsaturated parcel is stable but a saturated one is unstable."
+        },
+        {
+          "q": "A parcel at 20 C is lifted 1,000 m dry adiabatically. What is its temperature?",
+          "c": [
+            "About 10 C",
+            "About 14 C",
+            "About 20 C",
+            "About 0 C"
+          ],
+          "a": 0,
+          "e": "Dry adiabatic cooling is 9.8 C per km, so 20 - 9.8 = about 10 C."
+        },
+        {
+          "q": "Temperature is 15 C at the surface and 18 C at 500 m. What does this layer represent?",
+          "c": [
+            "An inversion",
+            "An unstable layer",
+            "A dry adiabatic layer",
+            "An isothermal layer"
+          ],
+          "a": 0,
+          "e": "Temperature increasing with height is an inversion."
+        },
+        {
+          "q": "Which type of layer is the most stable?",
+          "c": [
+            "An inversion",
+            "A dry adiabatic layer",
+            "A layer where ELR exceeds the DALR",
+            "A super-adiabatic layer over hot ground"
+          ],
+          "a": 0,
+          "e": "An inversion strongly resists any vertical motion."
+        },
+        {
+          "q": "A parcel is displaced upward in a stable atmosphere. What does it do?",
+          "c": [
+            "It is cooler than its surroundings and sinks back",
+            "It is warmer than its surroundings and keeps rising",
+            "It stays at the new level",
+            "It warms by compression and accelerates"
+          ],
+          "a": 0,
+          "e": "In stable air an upward-displaced parcel is denser than the environment and returns."
+        },
+        {
+          "q": "What visibility is typical in unstable air away from showers?",
+          "c": [
+            "Good, because haze is mixed upward",
+            "Poor, with haze trapped near the ground",
+            "Poor, with widespread fog at night",
+            "Poor, with persistent drizzle and stratus"
+          ],
+          "a": 0,
+          "e": "Unstable air mixes pollutants and moisture to high levels, so visibility away from precipitation is usually good."
+        },
+        {
+          "q": "The ELR is 5 C per km, the SALR is 6 C per km and the DALR is 9.8 C per km. What is the stability?",
+          "c": [
+            "Absolutely stable",
+            "Absolutely unstable",
+            "Conditionally unstable",
+            "Neutral"
+          ],
+          "a": 0,
+          "e": "An ELR smaller than the SALR means a parcel is cooler than its environment in either state: absolutely stable."
         }
       ]
     },
@@ -525,6 +789,72 @@
           ],
           "a": 0,
           "e": "Moisture is lost as precipitation on the windward side, and the descending air warms at the faster dry rate."
+        },
+        {
+          "q": "Surface temperature is 25 C and dew point is 13 C. Estimate the lifting condensation level.",
+          "c": [
+            "About 1,500 m",
+            "About 300 m",
+            "About 3,000 m",
+            "About 750 m"
+          ],
+          "a": 0,
+          "e": "LCL is about 125 x (T - Td) = 125 x 12 = 1,500 m."
+        },
+        {
+          "q": "Why does a descending air parcel warm?",
+          "c": [
+            "It is compressed as pressure increases",
+            "It absorbs heat from the ground",
+            "It releases latent heat",
+            "It mixes with warmer air at the same level"
+          ],
+          "a": 0,
+          "e": "Sinking air meets higher pressure and is compressed, which warms it adiabatically."
+        },
+        {
+          "q": "Which description fits an adiabatic process?",
+          "c": [
+            "No heat is exchanged with the surroundings",
+            "Temperature stays constant throughout",
+            "Pressure stays constant throughout",
+            "Volume stays constant throughout"
+          ],
+          "a": 0,
+          "e": "Adiabatic means no heat exchange with the surroundings."
+        },
+        {
+          "q": "Potential temperature is constant with height through a layer. What is the layer's stability?",
+          "c": [
+            "Neutral (well mixed)",
+            "Absolutely stable",
+            "Absolutely unstable",
+            "An inversion"
+          ],
+          "a": 0,
+          "e": "Constant theta means neutral stability, as in a well-mixed afternoon boundary layer."
+        },
+        {
+          "q": "A saturated parcel and a dry parcel are lifted the same distance. How do their temperature changes compare?",
+          "c": [
+            "The saturated parcel cools less because of latent heat",
+            "The saturated parcel cools more because condensation absorbs heat",
+            "They cool at exactly the same rate",
+            "The saturated parcel warms because of condensation"
+          ],
+          "a": 0,
+          "e": "Condensation releases latent heat, so the saturated parcel cools at the smaller moist adiabatic rate."
+        },
+        {
+          "q": "Why is the lee side of a mountain warmer during a foehn?",
+          "c": [
+            "Latent heat added on the windward side, then dry warming on descent",
+            "Solar heating of the lee slopes, which are bare of cloud all day",
+            "Friction between the strong wind and the rough lee slope surface",
+            "Cold air drains away from the summit and is replaced by warm air"
+          ],
+          "a": 0,
+          "e": "The air gains heat from condensation going up and warms at the full dry rate coming down."
         }
       ]
     }

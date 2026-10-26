@@ -98,6 +98,72 @@
           ],
           "a": 0,
           "e": "A ceilometer uses a laser pulse and timing to measure cloud base height."
+        },
+        {
+          "q": "A Stevenson screen protects thermometers from:",
+          "c": [
+            "Direct sunlight, precipitation and ground reflection",
+            "Wind and pressure changes, while allowing sunlight to reach them",
+            "Humidity and wind, but it must be sealed from the air",
+            "Only wind and snow, leaving the sunlight to warm them"
+          ],
+          "a": 0,
+          "e": "Screens shade instruments while allowing airflow."
+        },
+        {
+          "q": "Standard anemometer height for surface wind is:",
+          "c": [
+            "10 m above ground",
+            "2 m above the ground, level with a standard thermometer",
+            "50 m above the ground, clear of nearby obstacles",
+            "1 m above the ground, in the middle of the screen"
+          ],
+          "a": 0,
+          "e": "Standard wind measurements are made at 10 m in open terrain."
+        },
+        {
+          "q": "Wind direction is reported as the direction the wind is blowing:",
+          "c": [
+            "From",
+            "To",
+            "Across",
+            "Around"
+          ],
+          "a": 0,
+          "e": "Wind direction is always where the wind comes from."
+        },
+        {
+          "q": "Visibility is defined as the greatest distance at which:",
+          "c": [
+            "A prominent object can be seen and identified",
+            "A light can be detected by an observer, whatever its brightness",
+            "A cloud can be seen and identified in the daytime",
+            "Fog can be detected, even without any marked object"
+          ],
+          "a": 0,
+          "e": "It refers to recognizing objects by day, or lights by night."
+        },
+        {
+          "q": "Barometric pressure is reduced to sea level to:",
+          "c": [
+            "Allow comparison between stations at different elevations",
+            "Make the readings more accurate at each individual station",
+            "Remove the effect of temperature error in the barometer",
+            "Measure the wind speed at the surface more reliably"
+          ],
+          "a": 0,
+          "e": "Reduction removes the effect of station elevation."
+        },
+        {
+          "q": "A ceilometer measures:",
+          "c": [
+            "Cloud base height",
+            "Wind speed",
+            "Visibility only",
+            "Rainfall"
+          ],
+          "a": 0,
+          "e": "Laser or light pulses detect the cloud base."
         }
       ]
     },
@@ -201,6 +267,72 @@
           ],
           "a": 0,
           "e": "Small, fast-evolving features can occur between stations and launch times."
+        },
+        {
+          "q": "A radiosonde is carried aloft by:",
+          "c": [
+            "A balloon",
+            "An aircraft",
+            "A rocket",
+            "A satellite"
+          ],
+          "a": 0,
+          "e": "Weather balloons lift the instrument package."
+        },
+        {
+          "q": "Radiosondes are normally released at:",
+          "c": [
+            "00 and 12 UTC",
+            "06 and 18 local only",
+            "Noon only",
+            "Every hour"
+          ],
+          "a": 0,
+          "e": "Standard synoptic times are 00 and 12 UTC."
+        },
+        {
+          "q": "A radiosonde measures:",
+          "c": [
+            "Pressure, temperature and humidity, with wind from tracking",
+            "Rainfall and snowfall only, with wind from the ground station",
+            "Visibility and cloud base only, from a laser on the balloon",
+            "Lightning strikes and ozone, with wind taken from the ground"
+          ],
+          "a": 0,
+          "e": "Wind is derived from tracking the balloon."
+        },
+        {
+          "q": "A balloon bursts at about:",
+          "c": [
+            "30 km or higher",
+            "3 km, where the air is too thin for the balloon to float",
+            "1 km, once the first cloud layer is reached",
+            "About 100 m, where the surface inversion ends"
+          ],
+          "a": 0,
+          "e": "Burst altitude is typically 25 to 35 km."
+        },
+        {
+          "q": "Why are upper-air observations important for forecasting?",
+          "c": [
+            "They provide initial conditions for models and stability data",
+            "They measure the ground temperature at each station only",
+            "They only support the military and have no use for models",
+            "They measure visibility and cloud for the next hour only"
+          ],
+          "a": 0,
+          "e": "Soundings give the vertical structure used in analyses."
+        },
+        {
+          "q": "Upper-air winds are reported in:",
+          "c": [
+            "Degrees true and knots",
+            "Degrees magnetic and km/h",
+            "Hectopascals",
+            "Metres per hour"
+          ],
+          "a": 0,
+          "e": "WMO practice uses degrees true and knots in most reports."
         }
       ]
     },
@@ -309,6 +441,72 @@
           ],
           "a": 0,
           "e": "Dual-pol variables give particle shape and type information."
+        },
+        {
+          "q": "Radar reflectivity is expressed in:",
+          "c": [
+            "dBZ",
+            "hPa",
+            "kt",
+            "mm"
+          ],
+          "a": 0,
+          "e": "dBZ is a logarithmic measure of returned power."
+        },
+        {
+          "q": "The Doppler effect allows radar to measure:",
+          "c": [
+            "Radial velocity toward or away from the radar",
+            "Temperature and humidity along the beam path from the antenna",
+            "Pressure and cloud type in the sample volume",
+            "Cloud colour and drop size distribution of the echo"
+          ],
+          "a": 0,
+          "e": "Frequency shift gives motion along the beam."
+        },
+        {
+          "q": "Ground clutter appears as:",
+          "c": [
+            "Stationary echoes near the radar",
+            "Moving bands that travel with the wind across the display",
+            "Hook shapes on the edge of a rotating storm cell",
+            "Clear air patterns that appear on calm, clear days"
+          ],
+          "a": 0,
+          "e": "Terrain and buildings return signals."
+        },
+        {
+          "q": "The radar beam rises with distance because of:",
+          "c": [
+            "Earth's curvature and beam elevation",
+            "Wind blowing the beam upward as it travels away",
+            "Cloud layers refracting the beam toward the sky",
+            "Temperature of the air at the radar antenna only"
+          ],
+          "a": 0,
+          "e": "The beam rises above the ground as it travels."
+        },
+        {
+          "q": "Bright band on radar marks:",
+          "c": [
+            "The melting layer",
+            "Hail",
+            "Ground clutter",
+            "Birds"
+          ],
+          "a": 0,
+          "e": "Melting snow coats with water and gives high reflectivity."
+        },
+        {
+          "q": "Higher dBZ values generally indicate:",
+          "c": [
+            "Heavier precipitation or larger hydrometeors",
+            "Lighter precipitation or smaller drops in the beam",
+            "No precipitation, since the echo is only clutter",
+            "Only snow, since rain always gives a low reading"
+          ],
+          "a": 0,
+          "e": "Stronger returns mean larger or more numerous targets."
         }
       ]
     },
@@ -418,6 +616,72 @@
           ],
           "a": 0,
           "e": "Low cloud tops are nearly as warm as the surface so the contrast is small."
+        },
+        {
+          "q": "In IR satellite imagery, colder cloud tops appear:",
+          "c": [
+            "Brighter or whiter (enhanced)",
+            "Darker, because the cold tops emit more radiation to space",
+            "Invisible, since cold cloud does not show up in infrared",
+            "The same shade as the warm surface beneath them"
+          ],
+          "a": 0,
+          "e": "Cold tops emit less radiation and show as bright in standard IR."
+        },
+        {
+          "q": "Visible imagery is available:",
+          "c": [
+            "Only during daylight",
+            "At night only",
+            "Always",
+            "Only in winter"
+          ],
+          "a": 0,
+          "e": "Visible light needs sunshine."
+        },
+        {
+          "q": "Water vapour imagery shows:",
+          "c": [
+            "Moisture in the upper and middle troposphere",
+            "Ground temperature and sea ice cover over polar regions",
+            "Cloud colour and drop size at the cloud tops",
+            "Sea ice only, with no information on the atmosphere"
+          ],
+          "a": 0,
+          "e": "It highlights dry and moist regions aloft."
+        },
+        {
+          "q": "Which imagery best identifies fog at night?",
+          "c": [
+            "Fog/low cloud IR difference products",
+            "Visible imagery, since it shows low cloud best at night",
+            "Water vapour imagery, since fog is full of vapour",
+            "Radar imagery, since fog returns a strong echo"
+          ],
+          "a": 0,
+          "e": "Night microphysics channels distinguish fog."
+        },
+        {
+          "q": "Geostationary satellites orbit at roughly:",
+          "c": [
+            "36,000 km",
+            "800 km",
+            "1,000 km",
+            "400 km"
+          ],
+          "a": 0,
+          "e": "They hover over the equator at about 35,786 km."
+        },
+        {
+          "q": "A bright, textured cloud in visible imagery often indicates:",
+          "c": [
+            "Thick, tall convective cloud",
+            "Thin cirrus, which looks smooth and dark in visible imagery",
+            "Clear sky over a dark ocean with no cloud at all",
+            "Fog only, which looks smooth and flat in the image"
+          ],
+          "a": 0,
+          "e": "Bright, lumpy tops signal deep convection."
         }
       ]
     },
@@ -533,6 +797,72 @@
           ],
           "a": 0,
           "e": "Temperature increasing with height makes the profile lean back toward higher temperatures."
+        },
+        {
+          "q": "On a skew-T, isotherms are drawn:",
+          "c": [
+            "Slanting from lower left to upper right",
+            "Vertically, from the bottom of the chart to the top",
+            "Horizontally, from the left side to the right side",
+            "As curved lines that follow the moist adiabats upward"
+          ],
+          "a": 0,
+          "e": "The skew gives the diagram its name."
+        },
+        {
+          "q": "The dewpoint curve lying close to the temperature curve indicates:",
+          "c": [
+            "Moist, near saturated layers",
+            "Very dry air with a large temperature-dew point spread",
+            "A strong inversion capping a layer of warm air",
+            "A cold front passing through the sounding level"
+          ],
+          "a": 0,
+          "e": "Small spread means near saturation."
+        },
+        {
+          "q": "The LCL on a skew-T is found where:",
+          "c": [
+            "Dry adiabat from the surface temp meets the mixing ratio line from surface dew point",
+            "Where two isotherms cross on the chart at the surface",
+            "Where the dry adiabat meets the freezing level",
+            "Where the isobars cross the surface temperature line"
+          ],
+          "a": 0,
+          "e": "Lifted parcel reaches saturation at that intersection."
+        },
+        {
+          "q": "An area of positive buoyancy on a skew-T lies:",
+          "c": [
+            "Between the parcel curve and the environment, parcel warmer",
+            "Where the parcel curve is colder than the environment curve",
+            "Below the surface, between the two isotherm lines",
+            "Between two isotherms drawn at the same pressure"
+          ],
+          "a": 0,
+          "e": "Positive area gives CAPE."
+        },
+        {
+          "q": "An inversion on a skew-T appears as:",
+          "c": [
+            "A section where temperature increases with height",
+            "A vertical line where temperature does not change with height",
+            "A steep drop in temperature with height at the surface",
+            "A closed loop on the right side of the diagram"
+          ],
+          "a": 0,
+          "e": "The temperature curve leans right with height."
+        },
+        {
+          "q": "A sounding with temperature below 0 C through a deep layer and warm layer above indicates:",
+          "c": [
+            "Potential for freezing rain or ice pellets",
+            "Hot, dry weather with a deep well-mixed boundary layer",
+            "Fog only, with no precipitation and a shallow stable layer",
+            "Nothing useful, since the temperature curve is not significant"
+          ],
+          "a": 0,
+          "e": "Warm nose aloft over sub-zero surface layer."
         }
       ]
     }

@@ -106,6 +106,72 @@
           ],
           "a": 0,
           "e": "FEW and SCT layers do not constitute a ceiling."
+        },
+        {
+          "q": "In a METAR, what does the group 'BKN012' mean?",
+          "c": [
+            "Broken cloud layer with base at 1,200 ft",
+            "Broken cloud layer with base at 12,000 ft",
+            "Few clouds at 120 ft",
+            "Overcast at 1,200 m"
+          ],
+          "a": 0,
+          "e": "Cloud heights are in hundreds of feet above ground level: 012 = 1,200 ft."
+        },
+        {
+          "q": "What does '18015G25KT' report?",
+          "c": [
+            "Wind from 180 degrees at 15 kt, gusting 25 kt",
+            "Wind from 150 degrees at 18 kt, gusting 25 kt",
+            "Wind toward 180 degrees at 15 kt",
+            "Wind from 180 degrees at 25 kt, gusting 15 kt"
+          ],
+          "a": 0,
+          "e": "Direction (3 digits), speed (2 digits), G, gust, then unit."
+        },
+        {
+          "q": "A METAR shows temperature/dew point group '03/M01'. What are the values?",
+          "c": [
+            "Temperature +3 C, dew point -1 C",
+            "Temperature -3 C, dew point +1 C",
+            "Temperature +3 C, dew point +1 C",
+            "Temperature 3 C, dew point 0 C"
+          ],
+          "a": 0,
+          "e": "The M prefix means minus."
+        },
+        {
+          "q": "Which group in a METAR shows the altimeter setting in inches of mercury?",
+          "c": [
+            "A2992",
+            "Q1013",
+            "RMK",
+            "CAVOK"
+          ],
+          "a": 0,
+          "e": "In Canada and the US, altimeter is reported as A followed by four digits."
+        },
+        {
+          "q": "What does 'VRB05KT' indicate?",
+          "c": [
+            "Variable wind direction at 5 kt",
+            "Wind from 050 degrees at 5 kt",
+            "Calm winds",
+            "Wind from the north at 5 kt"
+          ],
+          "a": 0,
+          "e": "VRB is used for light, variable winds."
+        },
+        {
+          "q": "A SPECI is issued when:",
+          "c": [
+            "Significant changes meet specified criteria between routine reports",
+            "Every hour on the hour, whatever the weather at the station",
+            "Only at midnight, when the observer changes shift",
+            "Only when winds exceed 50 kt at the observing site"
+          ],
+          "a": 0,
+          "e": "SPECI reports are special reports after significant changes."
         }
       ]
     },
@@ -213,6 +279,72 @@
           ],
           "a": 0,
           "e": "TAFs apply to the vicinity of the aerodrome, about a 5 NM radius."
+        },
+        {
+          "q": "A TAF valid period of '2412/2512' covers:",
+          "c": [
+            "1200 UTC on the 24th to 1200 UTC on the 25th",
+            "2400 UTC on the 12th to 2500 UTC on the 12th",
+            "1200 UTC on the 12th to 1200 UTC on the 25th",
+            "24 hours starting at local noon"
+          ],
+          "a": 0,
+          "e": "The format is DDHH/DDHH in UTC."
+        },
+        {
+          "q": "What does 'TEMPO' in a TAF indicate?",
+          "c": [
+            "Temporary fluctuations lasting less than one hour at a time, under half the period",
+            "A permanent change that lasts for the rest of the valid period",
+            "A change with a 50% probability of occurring in the period",
+            "The cancellation of the forecast and its replacement"
+          ],
+          "a": 0,
+          "e": "TEMPO groups cover transient conditions in less than half the period."
+        },
+        {
+          "q": "What does 'BECMG' mean?",
+          "c": [
+            "A gradual change to new conditions",
+            "A temporary change lasting less than an hour at a time",
+            "A calm period with winds below 3 kt at the airport",
+            "An amendment to the forecast issued after a major change"
+          ],
+          "a": 0,
+          "e": "BECMG indicates a change over a defined interval."
+        },
+        {
+          "q": "'PROB30' in a TAF signals:",
+          "c": [
+            "A 30% probability of the stated conditions",
+            "A 30-minute delay before the change in conditions begins",
+            "A wind speed of 30 kt in the stated period",
+            "A visibility of 30 km in the stated period"
+          ],
+          "a": 0,
+          "e": "PROB gives probability of occurrence of the following conditions."
+        },
+        {
+          "q": "An amendment (AMD) is issued when:",
+          "c": [
+            "Forecast conditions no longer represent expected weather",
+            "At the start of each new valid period in the forecast",
+            "At random times chosen by the forecaster on shift",
+            "Only when winds at the airport are calm for an hour"
+          ],
+          "a": 0,
+          "e": "Amendments update a forecast that is not valid."
+        },
+        {
+          "q": "TAF cloud and visibility values are expressed:",
+          "c": [
+            "In a similar manner to METAR",
+            "In metres and kilometres, unlike the METAR format",
+            "In kilometres only, with cloud in metres above sea level",
+            "In inches of mercury for pressure and feet for visibility"
+          ],
+          "a": 0,
+          "e": "TAF uses the same codes as METAR for wind, visibility and cloud."
         }
       ]
     },
@@ -321,6 +453,72 @@
           ],
           "a": 0,
           "e": "Wind direction is always where the wind comes from."
+        },
+        {
+          "q": "On a surface analysis, closely spaced isobars indicate:",
+          "c": [
+            "Strong winds",
+            "Light winds",
+            "No wind",
+            "Fog"
+          ],
+          "a": 0,
+          "e": "Tight pressure gradient means strong wind."
+        },
+        {
+          "q": "An H on the chart denotes:",
+          "c": [
+            "A centre of high pressure",
+            "A hurricane with sustained winds above 64 kt",
+            "A maximum of humidity at the surface in the warm sector",
+            "A region of hail reported in the last hour"
+          ],
+          "a": 0,
+          "e": "H marks high-pressure centres."
+        },
+        {
+          "q": "Isobars on a surface chart are usually drawn every:",
+          "c": [
+            "4 hPa",
+            "50 hPa",
+            "0.1 hPa",
+            "100 hPa"
+          ],
+          "a": 0,
+          "e": "Four hPa spacing is standard on many analyses."
+        },
+        {
+          "q": "A prog chart shows:",
+          "c": [
+            "The forecast positions of systems and weather",
+            "Past weather only, as observed during the last six hours",
+            "Radar echoes and lightning strikes for the last hour",
+            "Station models only, with no forecast information"
+          ],
+          "a": 0,
+          "e": "Prognostic charts show the expected future state."
+        },
+        {
+          "q": "A trough on the surface is marked by:",
+          "c": [
+            "A dashed line",
+            "A heavy blue line",
+            "A circle",
+            "A zigzag line"
+          ],
+          "a": 0,
+          "e": "A trough line is typically dashed."
+        },
+        {
+          "q": "A station model's wind barb shows direction from:",
+          "c": [
+            "The shaft pointing toward where the wind blows from",
+            "The shaft pointing toward where the wind is going",
+            "The flags only, with the shaft showing the speed",
+            "The dots at the end, which point in the wind direction"
+          ],
+          "a": 0,
+          "e": "The shaft points into the wind."
         }
       ]
     },
@@ -420,6 +618,72 @@
           ],
           "a": 0,
           "e": "Small T minus Td means near saturation."
+        },
+        {
+          "q": "850 hPa charts are most useful for:",
+          "c": [
+            "Low-level temperature advection and moisture",
+            "The jet stream core winds and tropopause height",
+            "Ozone levels and the height of the tropopause",
+            "Fog and visibility near the surface at each station"
+          ],
+          "a": 0,
+          "e": "850 hPa is about 1.5 km."
+        },
+        {
+          "q": "500 hPa charts show height contours in:",
+          "c": [
+            "Decametres",
+            "Hectopascals",
+            "Knots",
+            "Degrees"
+          ],
+          "a": 0,
+          "e": "500 hPa heights are in dam (e.g., 552)."
+        },
+        {
+          "q": "The jet stream is best identified on the:",
+          "c": [
+            "250 hPa chart",
+            "850 hPa chart",
+            "1000 hPa chart",
+            "Surface chart"
+          ],
+          "a": 0,
+          "e": "250 hPa corresponds to jet level."
+        },
+        {
+          "q": "Typical 500 hPa height in mid-latitudes is around:",
+          "c": [
+            "5,500 m",
+            "1,500 m",
+            "9,000 m",
+            "3,000 m"
+          ],
+          "a": 0,
+          "e": "Typical height ranges from 5,400 to 5,700 m."
+        },
+        {
+          "q": "The 700 hPa level is commonly used to assess:",
+          "c": [
+            "Mid-level moisture and vertical motion",
+            "Sea level pressure and the position of surface fronts",
+            "Ground temperature and visibility at the surface",
+            "Fog formation and low cloud near the ground"
+          ],
+          "a": 0,
+          "e": "700 hPa is near 3 km."
+        },
+        {
+          "q": "Temperature on 850 hPa of 0 C helps estimate:",
+          "c": [
+            "Rain or snow potential in the lower atmosphere",
+            "Hail size in a thunderstorm and the strength of the updraft",
+            "Visibility and the cloud colour at each station",
+            "The height of the tropopause and the jet stream position"
+          ],
+          "a": 0,
+          "e": "850 hPa temperatures are used for precipitation-type guidance."
         }
       ]
     },
@@ -526,6 +790,72 @@
           ],
           "a": 0,
           "e": "Large spread shows the forecast is sensitive and uncertain."
+        },
+        {
+          "q": "The GEM model is run by:",
+          "c": [
+            "Environment and Climate Change Canada",
+            "The National Oceanic and Atmospheric Administration (NOAA)",
+            "The European Centre for Medium-Range Weather Forecasts",
+            "The UK Met Office in Exeter, England"
+          ],
+          "a": 0,
+          "e": "GEM stands for Global Environmental Multiscale model."
+        },
+        {
+          "q": "A model ensemble is a set of forecasts that:",
+          "c": [
+            "Start from slightly different conditions",
+            "Use identical starting data and give identical results",
+            "Use only observations from the last hour at the surface",
+            "Use satellite data only, with no model physics at all"
+          ],
+          "a": 0,
+          "e": "Ensembles represent forecast uncertainty."
+        },
+        {
+          "q": "Model resolution refers to:",
+          "c": [
+            "Grid spacing",
+            "Time of run",
+            "Number of stations",
+            "Data format"
+          ],
+          "a": 0,
+          "e": "Finer grids resolve smaller features."
+        },
+        {
+          "q": "Model output statistics (MOS) are used to:",
+          "c": [
+            "Correct systematic model biases",
+            "Run the model at a finer grid than the global run",
+            "Draw fronts and pressure centres on a surface chart",
+            "Measure the wind speed and direction at a station"
+          ],
+          "a": 0,
+          "e": "MOS uses statistics to calibrate model output."
+        },
+        {
+          "q": "A limitation of NWP is:",
+          "c": [
+            "Chaos and initial condition errors grow with time",
+            "Models contain no physics and cannot represent clouds",
+            "Models predict perfectly out to ten days at all scales",
+            "Models use only one variable, so errors never grow"
+          ],
+          "a": 0,
+          "e": "Small errors amplify, limiting predictability."
+        },
+        {
+          "q": "Which model is generally considered to run on a global grid and a 6-hourly cycle?",
+          "c": [
+            "GFS",
+            "A local radar model",
+            "A buoy model",
+            "A station model"
+          ],
+          "a": 0,
+          "e": "GFS is run four times per day globally."
         }
       ]
     },
@@ -650,6 +980,72 @@
           ],
           "a": 0,
           "e": "Rare events make correct negatives dominate the score."
+        },
+        {
+          "q": "Persistence forecasting assumes:",
+          "c": [
+            "Future weather will be the same as current",
+            "Weather is random, so no forecast beats chance",
+            "Weather always changes within the next six hours",
+            "Models are perfect, so persistence adds nothing"
+          ],
+          "a": 0,
+          "e": "Persistence is a basic benchmark."
+        },
+        {
+          "q": "A forecast has 40 hits, 10 misses and 20 false alarms. What is the probability of detection (POD)?",
+          "c": [
+            "0.80",
+            "0.67",
+            "0.33",
+            "0.57"
+          ],
+          "a": 0,
+          "e": "POD = hits / (hits + misses) = 40/50 = 0.80."
+        },
+        {
+          "q": "Using hits 40, misses 10, false alarms 20, what is the false alarm ratio (FAR)?",
+          "c": [
+            "0.33",
+            "0.80",
+            "0.20",
+            "0.57"
+          ],
+          "a": 0,
+          "e": "FAR = false alarms / (hits + false alarms) = 20/60 = 0.33."
+        },
+        {
+          "q": "Using hits 40, misses 10, false alarms 20, what is the critical success index (CSI)?",
+          "c": [
+            "0.57",
+            "0.80",
+            "0.33",
+            "0.67"
+          ],
+          "a": 0,
+          "e": "CSI = hits / (hits + misses + false alarms) = 40/70 = 0.57."
+        },
+        {
+          "q": "Forecast errors of +2, -1, +3, 0 degrees give a bias of:",
+          "c": [
+            "+1.0 degrees",
+            "+6 degrees",
+            "0 degrees",
+            "-1.0 degrees"
+          ],
+          "a": 0,
+          "e": "Bias is the mean error: (2-1+3+0)/4 = 1.0."
+        },
+        {
+          "q": "Forecast errors of +2, -1, +3, 0 degrees give a mean absolute error (MAE) of:",
+          "c": [
+            "1.5 degrees",
+            "1.0 degrees",
+            "6 degrees",
+            "0.5 degrees"
+          ],
+          "a": 0,
+          "e": "MAE = (2+1+3+0)/4 = 1.5."
         }
       ]
     }

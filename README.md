@@ -13,7 +13,7 @@ Live at `https://brandonellis-comet.github.io/LearnMet/` once GitHub Pages is en
 | Exam | Quarterly exam. 40 questions across all domains, weighted by domain size. Timed (elapsed). Pass mark 75% |
 | Stats | Attempt history, backup (Export / Import) |
 
-Content: 48 lessons and 240 questions (5 per topic) in `content/`.
+Content: 48 lessons and 528 questions (11 per topic) in `content/`. A topic quiz draws 6 of the topic's questions, favouring ones you have not seen or have missed.
 
 ## How scoring feeds the tracker
 

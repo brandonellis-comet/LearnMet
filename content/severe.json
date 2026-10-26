@@ -108,6 +108,72 @@
           ],
           "a": 0,
           "e": "Riming and collisions in the mixed-phase region transfer charge."
+        },
+        {
+          "q": "Which stage of a thunderstorm cell is dominated by an updraft?",
+          "c": [
+            "Cumulus stage",
+            "Mature stage",
+            "Dissipating stage",
+            "Anvil stage"
+          ],
+          "a": 0,
+          "e": "The cumulus stage has updraft only; downdrafts begin when precipitation falls."
+        },
+        {
+          "q": "An air mass thunderstorm typically lasts:",
+          "c": [
+            "30 to 60 minutes per cell",
+            "6 to 10 hours per cell",
+            "10 to 20 seconds",
+            "Several days"
+          ],
+          "a": 0,
+          "e": "Ordinary single cells have short life cycles."
+        },
+        {
+          "q": "Supercell storms are distinguished by:",
+          "c": [
+            "A persistent rotating updraft (mesocyclone)",
+            "Weak updrafts only, with a short life of about five minutes",
+            "A short life, no rotation and very little precipitation",
+            "Absence of rain and an anvil that lacks any overshooting top"
+          ],
+          "a": 0,
+          "e": "Strong shear sustains a rotating updraft."
+        },
+        {
+          "q": "CAPE measures:",
+          "c": [
+            "Energy available for convection",
+            "The height of the cloud top above sea level",
+            "The amount of wind shear between the surface and 6 km",
+            "The friction between the wind and the earth's surface"
+          ],
+          "a": 0,
+          "e": "Convective available potential energy is the buoyant energy of a parcel."
+        },
+        {
+          "q": "Which element is NOT needed for deep convection?",
+          "c": [
+            "Strong surface high pressure",
+            "Moisture in the lower layers of the atmosphere",
+            "Instability, where the lapse rate exceeds the moist adiabat",
+            "A lifting mechanism such as a front or heated ground"
+          ],
+          "a": 0,
+          "e": "Deep convection needs moisture, instability and lift."
+        },
+        {
+          "q": "The anvil of a cumulonimbus is formed when the updraft:",
+          "c": [
+            "Reaches the stable tropopause and spreads out",
+            "Meets a warm front and is deflected sideways at low levels",
+            "Falls below the freezing level and begins to melt",
+            "Collapses entirely when the downdraft cuts it off"
+          ],
+          "a": 0,
+          "e": "Rising air cannot penetrate the stable stratosphere and spreads."
         }
       ]
     },
@@ -213,6 +279,72 @@
           ],
           "a": 0,
           "e": "EF ratings use damage indicators to estimate the wind."
+        },
+        {
+          "q": "Tornado intensity in Canada is rated with the:",
+          "c": [
+            "Enhanced Fujita scale",
+            "Saffir-Simpson scale",
+            "Beaufort scale",
+            "Richter scale"
+          ],
+          "a": 0,
+          "e": "Damage-based EF scale is used in Canada."
+        },
+        {
+          "q": "A downburst is:",
+          "c": [
+            "A strong downdraft that spreads outward at the surface",
+            "A rising current of warm air that forms over heated ground",
+            "A tornado that has lifted off the ground but still rotates",
+            "A funnel cloud that never reaches the surface or does damage"
+          ],
+          "a": 0,
+          "e": "Downbursts produce straight-line wind damage."
+        },
+        {
+          "q": "A microburst has a damage path of:",
+          "c": [
+            "4 km or less",
+            "100 km",
+            "500 km",
+            "1,000 km"
+          ],
+          "a": 0,
+          "e": "Microbursts are less than 4 km across; macrobursts exceed it."
+        },
+        {
+          "q": "Why are microbursts dangerous to aircraft on approach?",
+          "c": [
+            "Sudden shift from headwind to tailwind reduces lift",
+            "Sudden shift from tailwind to headwind adds lift and speed",
+            "Heavy rain reduces visibility only, with no effect on lift",
+            "Icing on the wings from supercooled drops at low level"
+          ],
+          "a": 0,
+          "e": "A rapid headwind loss near the ground can cause a loss of performance."
+        },
+        {
+          "q": "A hook echo on radar suggests:",
+          "c": [
+            "A possible tornado-producing supercell",
+            "A gentle rain shower with light winds and no organized structure",
+            "A snow squall passing the station with strong gusts",
+            "Ground clutter from nearby hills returning a stable echo"
+          ],
+          "a": 0,
+          "e": "Hook shapes mark the mesocyclone's region."
+        },
+        {
+          "q": "The most reliable way to confirm a tornado is:",
+          "c": [
+            "Visual or damage confirmation",
+            "A single satellite image",
+            "Surface temperature",
+            "A barograph trace"
+          ],
+          "a": 0,
+          "e": "Radar suggests; spotters and damage surveys confirm."
         }
       ]
     },
@@ -314,6 +446,72 @@
           ],
           "a": 0,
           "e": "Tiny temperature differences change the precipitation type and impacts."
+        },
+        {
+          "q": "Freezing rain differs from ice pellets because freezing rain:",
+          "c": [
+            "Freezes on impact with the surface",
+            "Freezes before reaching the surface",
+            "Is solid snow",
+            "Falls only in clear air"
+          ],
+          "a": 0,
+          "e": "Ice pellets are already frozen when they arrive."
+        },
+        {
+          "q": "A blizzard involves:",
+          "c": [
+            "Strong wind, blowing snow and low visibility for hours",
+            "Light snow and calm winds persisting for several hours",
+            "Rain falling on frozen ground and freezing on contact",
+            "Freezing fog that reduces visibility but brings no wind"
+          ],
+          "a": 0,
+          "e": "ECCC defines it with winds and reduced visibility over a sustained time."
+        },
+        {
+          "q": "Lake-effect snow occurs when:",
+          "c": [
+            "Cold air crosses warmer open water",
+            "Warm air crosses colder water or ice and forms fog",
+            "Winds are calm and the sky is clear over the lake",
+            "A front stalls over the lake with a deep layer of warm air"
+          ],
+          "a": 0,
+          "e": "Heat and moisture from the lake destabilize the air."
+        },
+        {
+          "q": "What temperature profile gives ice pellets?",
+          "c": [
+            "Warm layer aloft and a deep sub-zero layer below",
+            "Cold air through the whole depth from cloud top to the ground",
+            "Warm air through the whole depth from cloud base to the ground",
+            "An isothermal layer at 0 C from the surface to 3 km"
+          ],
+          "a": 0,
+          "e": "Raindrops refreeze in a deep cold layer."
+        },
+        {
+          "q": "Snow squalls are:",
+          "c": [
+            "Intense, short-lived snowfall with strong gusts",
+            "Steady snow for most of a day with very light winds",
+            "Large hail falling from a thunderstorm in winter",
+            "Drizzle that freezes on contact and builds a glaze"
+          ],
+          "a": 0,
+          "e": "They cut visibility quickly."
+        },
+        {
+          "q": "What worsens ice accretion on power lines in freezing rain?",
+          "c": [
+            "Wind loading",
+            "Warm air",
+            "Rain turning to drizzle only",
+            "Fog only"
+          ],
+          "a": 0,
+          "e": "Ice weight plus wind stress can bring lines and trees down."
         }
       ]
     },
@@ -420,6 +618,72 @@
           ],
           "a": 0,
           "e": "Stable flow across a barrier sets up downwind waves."
+        },
+        {
+          "q": "Clear-air turbulence is most often associated with:",
+          "c": [
+            "Jet stream shear",
+            "Fog layers",
+            "Warm sectors",
+            "High pressure centres"
+          ],
+          "a": 0,
+          "e": "Strong shear near jets causes CAT."
+        },
+        {
+          "q": "Mountain wave turbulence is most severe:",
+          "c": [
+            "On the lee side, downstream of the ridge",
+            "On the windward side, upstream of the ridge, close to the surface",
+            "Over open water far from any terrain and any ridge",
+            "Over flat terrain beneath a strong subsidence inversion"
+          ],
+          "a": 0,
+          "e": "Lee waves and rotors form downwind."
+        },
+        {
+          "q": "Mechanical turbulence is caused by:",
+          "c": [
+            "Wind flowing over rough terrain or obstacles",
+            "Convection from strongly heated ground in the afternoon",
+            "Jet stream shear at the tropopause in clear air",
+            "Solar radiation heating the surface in bright sunshine"
+          ],
+          "a": 0,
+          "e": "Obstacles disturb airflow near the surface."
+        },
+        {
+          "q": "Thermal turbulence is strongest:",
+          "c": [
+            "On sunny afternoons over heated land",
+            "At night over water, when winds are calm and the air is stable",
+            "In stable air beneath a strong, low-level inversion",
+            "Inside a surface inversion on a clear, calm morning"
+          ],
+          "a": 0,
+          "e": "Daytime heating drives thermals."
+        },
+        {
+          "q": "Moderate turbulence can cause:",
+          "c": [
+            "Changes in altitude or attitude and strain against belts",
+            "No effect on the aircraft or its occupants at all",
+            "Only a slight bump that is barely noticeable to crew",
+            "Structural failure of the airframe in nearly every case"
+          ],
+          "a": 0,
+          "e": "Moderate turbulence makes walking difficult and unsecured items shift."
+        },
+        {
+          "q": "A rotor cloud is associated with:",
+          "c": [
+            "Severe turbulence under mountain waves",
+            "Calm air and unlimited visibility in the lee of the ridge",
+            "Icing only, with no turbulence or vertical motion",
+            "Dense fog trapped in the valley below the ridge crest"
+          ],
+          "a": 0,
+          "e": "Rotor circulation beneath lee waves is violent."
         }
       ]
     },
@@ -520,6 +784,72 @@
           ],
           "a": 0,
           "e": "The jet strengthens during the night and often peaks near dawn."
+        },
+        {
+          "q": "Low-level wind shear is the change of wind over:",
+          "c": [
+            "A short distance in the vertical or horizontal near the ground",
+            "Hundreds of kilometres in the horizontal across a frontal zone",
+            "The whole depth of the troposphere from surface to tropopause",
+            "A time interval of several days at a fixed location"
+          ],
+          "a": 0,
+          "e": "LLWS affects takeoff and landing within about 1,500 ft."
+        },
+        {
+          "q": "A nocturnal low-level jet usually forms:",
+          "c": [
+            "Above a nighttime inversion",
+            "At noon, when the surface is heated and mixing is strongest",
+            "Over the ocean only, well away from any coast",
+            "In the stratosphere above the tropopause in winter"
+          ],
+          "a": 0,
+          "e": "Decoupled flow above the inversion accelerates."
+        },
+        {
+          "q": "Wind shear on approach from tailwind to headwind causes:",
+          "c": [
+            "An increase in airspeed and lift",
+            "A decrease in airspeed and a loss of lift on the approach",
+            "No change at all in airspeed, lift or sink rate",
+            "A drop in lift only, with airspeed unchanged"
+          ],
+          "a": 0,
+          "e": "A gain in headwind raises airspeed relative to the air."
+        },
+        {
+          "q": "Which weather commonly causes LLWS?",
+          "c": [
+            "Thunderstorm outflows, fronts and inversions",
+            "Light haze and clear skies with no wind at the surface",
+            "Clear, calm days with a deep well-mixed boundary layer",
+            "Stratus with no wind and a uniform temperature profile"
+          ],
+          "a": 0,
+          "e": "Frontal passages, gust fronts and inversions change wind sharply."
+        },
+        {
+          "q": "The unit of wind shear is often expressed as:",
+          "c": [
+            "Knots per 100 ft",
+            "Hectopascals per km",
+            "Degrees Celsius per km",
+            "Metres squared"
+          ],
+          "a": 0,
+          "e": "Shear is wind change over distance."
+        },
+        {
+          "q": "A pilot reports airspeed gain of 20 kt on short final. This indicates:",
+          "c": [
+            "A possible shear to a headwind",
+            "A possible shear to a tailwind that reduces airspeed",
+            "Icing on the pitot tube giving a falsely high reading",
+            "A compass error caused by a magnetic disturbance"
+          ],
+          "a": 0,
+          "e": "Increased airspeed at constant power suggests increasing headwind."
         }
       ]
     },
@@ -622,6 +952,72 @@
           ],
           "a": 0,
           "e": "Intense rainfall rates are one of the severe thunderstorm criteria."
+        },
+        {
+          "q": "Wind warnings in much of Canada are issued when sustained winds reach about:",
+          "c": [
+            "Sustained 65 km/h or gusts to 90 km/h",
+            "Sustained 15 km/h or gusts to 30 km/h at the station",
+            "Sustained 20 km/h or gusts to 25 km/h for an hour",
+            "Sustained 40 km/h with no gusts reported over six hours"
+          ],
+          "a": 0,
+          "e": "Typical criteria are 65 km/h sustained or 90 km/h gusts, varying by region."
+        },
+        {
+          "q": "Which warning level means severe weather is occurring or imminent?",
+          "c": [
+            "Warning",
+            "Watch",
+            "Advisory",
+            "Statement"
+          ],
+          "a": 0,
+          "e": "A warning means the hazard is occurring or about to occur."
+        },
+        {
+          "q": "A tornado watch means:",
+          "c": [
+            "Conditions are favourable for tornado development",
+            "A tornado has been sighted and is moving toward the area",
+            "A tornado is not possible in the next twenty-four hours",
+            "A tornado has just ended and the threat is now over"
+          ],
+          "a": 0,
+          "e": "A watch indicates favourable conditions; a warning means one is occurring or imminent."
+        },
+        {
+          "q": "The ECCC colour code for the highest alert level is:",
+          "c": [
+            "Red",
+            "Yellow",
+            "Orange",
+            "Green"
+          ],
+          "a": 0,
+          "e": "Red indicates the most serious level, and orange the next."
+        },
+        {
+          "q": "Severe thunderstorm warning criteria include hail of at least:",
+          "c": [
+            "2 cm diameter",
+            "0.5 cm",
+            "1 mm",
+            "5 mm"
+          ],
+          "a": 0,
+          "e": "Hail of 2 cm or larger is a standard severe criterion."
+        },
+        {
+          "q": "Freezing rain warnings are issued when:",
+          "c": [
+            "Freezing rain is expected for several hours or causes significant ice",
+            "Only light drizzle occurs and no ice builds up on surfaces",
+            "Clear skies appear above a layer of shallow fog",
+            "Fog forms and reduces visibility below a quarter mile"
+          ],
+          "a": 0,
+          "e": "Prolonged freezing rain causing significant accretion triggers warnings."
         }
       ]
     }
