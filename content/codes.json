@@ -853,8 +853,8 @@
           "list": [
             "Isobars: lines of equal sea level pressure, analysed at 4 hPa intervals from a 1000 hPa reference value. The national surface analysis is produced four times a day, valid 00, 06, 12 and 18 UTC. Tight spacing means strong winds. Labels often show only the last two digits (for example 96 is 996 hPa, 04 is 1004 hPa).",
             "H and L: high and low centres, with central pressure.",
-            "Fronts: cold (blue line with barbs), warm (red line with half circles), occluded (usually purple) and stationary (usually alternating red and blue). Check the legend on your chart.",
-            "Troughs and ridges: lines of curvature of the isobars.",
+            "Fronts (MANAIR GFA symbols): cold front is blue with triangles; warm front is red with semicircles; stationary front alternates a red semicircle and a blue triangle on opposite sides. The GFA also uses a trowal (blue dashes with red ticks) and upper fronts, drawn hollow. Check the legend on any other chart.",
+            "Troughs: on the GFA a surface trough is a dashed magenta line and an upper trough is a double dashed magenta line. Troughs and ridges are lines of curvature of the isobars.",
             "Station models: plotted observations at each station."
           ]
         },
@@ -874,6 +874,23 @@
           "h": "Reading wind from the chart"
         },
         "Isobar spacing gives a rough guide to wind speed. Winds blow roughly parallel to the isobars, slightly across them toward lower pressure near the surface. Low pressure on the left in the Northern Hemisphere.",
+        {
+          "h": "GFA symbols (MANAIR C.2)"
+        },
+        {
+          "list": [
+            "Low or tropical depression: L with central pressure. High: H with central pressure.",
+            "Movement: an arrow with the speed in knots in a box.",
+            "Tropical cyclone: a storm symbol and a hurricane symbol (filled), plus a post-tropical symbol (L).",
+            "Organized cloud: brown scalloped outline. Obstruction to vision: dashed orange outline.",
+            "Continuous precipitation: solid green (rain, drizzle, snow) or solid red (freezing rain, freezing drizzle, ice pellets), stippled.",
+            "Intermittent precipitation or showers: dashed green or dashed red, hatched.",
+            "Icing: blue outline, stippled (denser for severe). Turbulence: red outline, hatched; lower-level and higher-level hatch directions differ, and severe is denser.",
+            "Freezing level: dashed contour with boxed height (SFC, 25, 50). AFL marks an above-freezing layer, shown with its top over its base.",
+            "Surface wind is shown with a barb and a boxed gust (G60). A low-level jet is shown with arrows and a box (L LVL JET 50KT).",
+            "Volcano and radioactive release have their own symbols."
+          ]
+        },
         {
           "note": "A prog is a model-based forecast reviewed by a forecaster. Compare the prog with the latest analysis to check how well the model captured the current situation."
         }
@@ -1013,17 +1030,96 @@
           ],
           "a": 0,
           "e": "The shaft points into the wind."
+        },
+        {
+          "q": "On the GFA, what colour and symbol is a cold front?",
+          "c": [
+            "Blue with triangles",
+            "Red with semicircles",
+            "Purple with triangles and semicircles",
+            "Black with triangles"
+          ],
+          "a": 0,
+          "e": "MANAIR C.2."
+        },
+        {
+          "q": "On the GFA, how is a warm front drawn?",
+          "c": [
+            "Red with semicircles",
+            "Blue with triangles",
+            "Green with semicircles",
+            "Orange with triangles"
+          ],
+          "a": 0,
+          "e": "MANAIR C.2."
+        },
+        {
+          "q": "A GFA surface trough is drawn as:",
+          "c": [
+            "A dashed magenta line",
+            "A solid blue line",
+            "A solid red line",
+            "A dashed black line"
+          ],
+          "a": 0,
+          "e": "MANAIR C.2. An upper trough is a double dashed magenta line."
+        },
+        {
+          "q": "How does the GFA show moderate or severe icing?",
+          "c": [
+            "Blue outline, stippled; denser for severe",
+            "Red outline, hatched",
+            "Green outline, stippled",
+            "Orange dashed outline"
+          ],
+          "a": 0,
+          "e": "MANAIR C.2."
+        },
+        {
+          "q": "How does the GFA show turbulence?",
+          "c": [
+            "Red outline, hatched; denser for severe",
+            "Blue outline, stippled",
+            "Green dashed outline",
+            "Brown scalloped outline"
+          ],
+          "a": 0,
+          "e": "MANAIR C.2."
+        },
+        {
+          "q": "A solid red stippled area on the GFA indicates:",
+          "c": [
+            "Continuous freezing rain, freezing drizzle or ice pellets",
+            "Moderate icing",
+            "Intermittent snow showers",
+            "Severe turbulence"
+          ],
+          "a": 0,
+          "e": "MANAIR C.2: continuous precipitation in red is freezing precipitation."
+        },
+        {
+          "q": "What does a dashed green hatched area on the GFA show?",
+          "c": [
+            "Intermittent rain, drizzle or snow, or showers",
+            "Continuous rain",
+            "Freezing rain",
+            "Obstruction to vision"
+          ],
+          "a": 0,
+          "e": "MANAIR C.2."
         }
       ],
       "verified": {
         "date": "2026-10-27",
         "sources": [
           "NAV CANADA Aviation Weather Services Guide (2017): isobars at 4 hPa from 1000 hPa, analysis times, cold and warm front symbols, SLP decoding rule",
-          "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.1.4 (GFA isobars solid black, every 4 hPa from 1000 hPa)"
+          "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.1.4 (GFA isobars solid black, every 4 hPa from 1000 hPa)",
+          "MANAIR 8th ed. Am. 3 Appendix C.2 and C.3 symbol pages (rendered and read as images, 2026-10-27)"
         ],
         "unverified": [
-          "Occluded and stationary front colours, the dashed trough line, the last-two-digits isobar labels and the station model layout are common charting practice, not confirmed in a fetched source.",
-          "The NAV CANADA guide's symbol pages are images, so line styles could not be read."
+          "Occluded fronts do not appear in the GFA symbol list; colours for occluded fronts on other analysis charts are not confirmed here.",
+          "Station model layout (temperature, dew point, pressure, tendency positions) and last-two-digits isobar labels are common charting practice, not confirmed in a fetched source.",
+          "The national surface analysis symbols may differ from GFA symbols; only GFA symbols were read."
         ]
       }
     },
@@ -1655,6 +1751,15 @@
           ]
         },
         {
+          "h": "GFA corrections (MANAIR C.3)"
+        },
+        {
+          "list": [
+            "A GFA is corrected for: unforecast weather not requiring an AIRMET, forecast weather that fails to occur, or a significant error.",
+            "Unforecast phenomena that justify correction include: widespread BKN or OVC with base between 1,000 and 5,000 ft AGL; widespread visibility between 3 and 6 SM; widespread mean surface wind of 20 to 30 kt, or peak gust of 30 kt or more."
+          ]
+        },
+        {
           "note": "Always check current SIGMETs and AIRMETs together with the GFA. Both amend it automatically."
         }
       ],
@@ -2029,15 +2134,37 @@
           ],
           "a": 0,
           "e": "MANAIR 3.2. Temperatures are never forecast for 3,000 ft."
+        },
+        {
+          "q": "Which unforecast condition can trigger a GFA correction but is below AIRMET criteria?",
+          "c": [
+            "Widespread mean surface wind of 20 to 30 kt",
+            "Widespread wind over 40 kt",
+            "Severe icing",
+            "Moderate turbulence"
+          ],
+          "a": 0,
+          "e": "MANAIR C.3."
+        },
+        {
+          "q": "Widespread BKN or OVC cloud with a base in what range can trigger a GFA correction?",
+          "c": [
+            "1,000 to 5,000 ft AGL",
+            "Below 200 ft AGL",
+            "10,000 to 15,000 ft ASL",
+            "Above FL240"
+          ],
+          "a": 0,
+          "e": "MANAIR C.3."
         }
       ],
       "verified": {
         "date": "2026-10-27",
         "sources": [
-          "MANAIR 8th ed. Am. 3 (March 2024, full PDF): Ch. 3 (FB), Ch. 4 (GFA), Ch. 5 (SIGMET), Ch. 6 (AIRMET) and Appendices D and E tables"
+          "MANAIR 8th ed. Am. 3 (March 2024, full PDF): Ch. 3 (FB), Ch. 4 (GFA), Ch. 5 (SIGMET), Ch. 6 (AIRMET) and Appendices D and E tables",
+          "MANAIR 8th ed. Am. 3 Appendix C.2 and C.3 symbol pages (rendered and read as images, 2026-10-27)"
         ],
         "unverified": [
-          "MANAIR Appendix C GFA symbol images were not checked visually.",
           "WS SIGMET coordinate and text formats, WMO headers and FIR letter rules are not taught here.",
           "Sig Wx prognostic charts (MANAIR Ch. 7) have no lesson yet."
         ]
