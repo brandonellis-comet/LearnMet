@@ -2969,6 +2969,417 @@
           "Definitions are paraphrased, not copied. Crown-copyright wording is in the manual."
         ]
       }
+    },
+    {
+      "title": "Aviation weather products and observation programs (NAV CANADA guide)",
+      "lesson": [
+        "The NAV CANADA Aviation Weather Services Guide sorts weather information into alphanumeric data and graphic products, and into current weather (what has occurred) and forecast weather (the most likely future conditions). This topic paraphrases its product tables. Where it differs from MANAIR (2024), MANAIR is treated as the standard.",
+        {
+          "h": "Alphanumeric products"
+        },
+        {
+          "list": [
+            "SIGMET: as required, valid up to 4 hours; volcanic ash and tropical cyclone SIGMETs valid 6 hours.",
+            "AIRMET: as required, up to 4 hours, valid until updated, cancelled or a new GFA is issued. Covers phenomena up to and including 24,000 ft that were not already in the GFA.",
+            "PIREP: when received from a pilot. METAR: on the hour, Canadian. SPECI: when required.",
+            "TAF: forecast conditions within 5 nautical miles of the aerodrome. See the CFS for issue times; normally updated every 6 hours, more often at larger airports.",
+            "FB (winds and temperatures aloft): low levels 3,000, 6,000, 9,000, 12,000 and 18,000 ft; high levels FL240, 300, 340, 390, 450 and 530. The guide says twice daily from 00Z or 12Z data, valid 24 hours. MANAIR says four times daily from 00, 06, 12 and 18 UTC data, with FBCN31, 33 and 35 as the 6, 12 and 24 hour forecasts.",
+            "Space Weather Advisory: event-based, for airspace under NAV CANADA responsibility. It covers GNSS navigation and satellite-based surveillance, HF radio communications, and radiation exposure at FL250 and above."
+          ]
+        },
+        {
+          "h": "Graphic products"
+        },
+        {
+          "list": [
+            "Surface analysis chart: four times daily, valid 00, 06, 12, 18Z. Covers all of Canada, Alaska and the northern US: MSL pressure, fronts and detailed station plots.",
+            "Upper air analysis chart: twice daily, valid 00Z and 12Z. North American coverage at 850 hPa (5,000 ft), 700 hPa (10,000 ft), 500 hPa (18,000 ft) and 250 hPa (34,000 ft): height, wind, temperature and moisture.",
+            "GFA: four times daily at 00, 06, 12, 18Z, each valid 12 hours with an additional 12-hour IFR outlook. Seven regional charts, GFACN31 Pacific, 32 Prairies, 33 Ontario/Quebec, 34 Atlantic, 35 Yukon, 36 Nunavut, 37 Arctic. Weather up to and including 24,000 ft, as three Clouds and Weather charts and three Icing, Turbulence and Freezing Level charts.",
+            "Local Graphic Forecast (LGF): issued four times daily at 15Z, 18Z, 21Z and 00Z, each valid 6 hours; the last includes an outlook for the next morning. Local coverage of specific areas (for example the West Coast VFR LGF). Depicts weather below 10,000 ft and supplements the GFA.",
+            "Significant Weather Prognosis chart: four times daily, valid 00, 06, 12, 18Z. High-level FL250 to 600 (400 to 70 hPa), mid-level FL100 to 250 (700 to 400 hPa), North Atlantic surface to FL250 (SFC to 400 hPa). MANAIR gives FL240 for the mid-level and North Atlantic tops.",
+            "Turbulence Forecast chart: moderate and severe turbulence (jet stream and convective) between FL280 and FL430, national and North Atlantic coverage.",
+            "Upper Level Wind and Temperature chart: FL240, FL340, FL390 and FL450. Volcanic Ash Forecast chart: as required, depicting the expected ash cloud (plume)."
+          ]
+        },
+        {
+          "h": "Imagery and supplementary products"
+        },
+        {
+          "list": [
+            "Weather radar imagery: updated every 10 minutes (guide table), composite or single-site, precipitation intensity or echo tops, line of sight within a limited horizontal range. ECCC says its S-band product is produced every 6 minutes.",
+            "Satellite imagery: GOES images updated every 30 minutes; POES images about every 6 hours. Infrared and visible.",
+            "Weather cameras: images updated every 10 minutes, fixed viewing angles, colour pictures with date and time superimposed and the local METAR shown if available."
+          ]
+        },
+        {
+          "h": "Surface observation programs"
+        },
+        {
+          "list": [
+            "Canada has more than 230 surface weather observation sites. Data are collected by a human observer or a suite of automated sensors and coded into observations.",
+            "METAR is the routine observation on the hour. SPECI is issued at other times for a significant weather change. If a METAR or SPECI is produced by automated sensors it is marked AUTO in the body.",
+            "SAWR (Supplementary Aviation Weather Reporting Station): an aviation weather site that gives additional or limited observations. Unlike a fully staffed station it operates only in specific hours on a reduced schedule.",
+            "METAR: taken by qualified human observers. METAR AUTO: taken by a stand-alone AWOS with enhancements; examples are NAV CANADA AWOS and DND AWOS. LWIS: automated hourly report of wind speed, direction, temperature, dew point and altimeter setting. AUTO (system): reports a variety of elements but does not meet the requirements to produce a METAR, SPECI or LWIS report.",
+            "WxCam: a NAV CANADA aviation weather camera, images through the CFPS landing page every 10 minutes. Webcam: camera not belonging to NAV CANADA.",
+            "Hours of coverage appear as, for example, METAR 09-21Z; 24-hour sites show H24 (METAR H24, METAR AUTO H24, LWIS H24); mixed programs show METAR 12-20Z O/T LWIS.",
+            "Some sites broadcast the latest observation by automated voice on VHF; the frequency is in the COMM box (examples given: COMM AWOS 124.7, COMM AUTO 122.025)."
+          ]
+        },
+        {
+          "h": "AWOS and LWIS"
+        },
+        {
+          "list": [
+            "AWOS: full suite of sensors for cloud base height, sky cover, visibility, temperature, dew point, wind velocity, altimeter setting, precipitation occurrence, type, amount and intensity, and icing.",
+            "LWIS: more basic, measuring only wind, altimeter setting, temperature and dew point. AWOS and LWIS may have a voice generation module.",
+            "AWOS enhancements: thunderstorm reporting within the Canadian Lightning Detection Network area; ice-resistant anemometer (AWOS and LWIS); density altitude; laser ceilometer reporting cloud bases up to 25,000 ft; improved obstructions to vision (HZ, BR, FG, FZFG, BLSN); RVR where RVR sensors are installed; remarks when data are missing.",
+            "AWOS outside lightning network coverage gets no lightning data, so it cannot report thunderstorm or lightning activity.",
+            "AWOS lightning reporting by distance: TS if lightning is detected at 6 SM or less; VCTS if detected from more than 6 to 10 SM; LTNG DIST (with octant direction in remarks, for example LTNG DIST NE, S, SW) if from more than 10 to 30 SM; LTNG DIST ALL QUADS if detected in four or more octants."
+          ]
+        },
+        {
+          "h": "Missing-data remarks"
+        },
+        {
+          "list": [
+            "CLD MISG sky condition; ICG MISG icing; PCPN MISG precipitation; PRES MISG pressure (altimeter); RVR MISG; T MISG temperature; TD MISG dew point; TS/LTNG TEMPO UNAVBL thunderstorm or lightning data unavailable; VIS MISG; WND MISG; WX MISG weather data."
+          ]
+        }
+      ],
+      "terms": [
+        [
+          "SAWR",
+          "Supplementary Aviation Weather Reporting Station: aviation observing site giving additional or limited observations on a reduced schedule."
+        ],
+        [
+          "AWOS",
+          "Automated Weather Observation System with a full sensor suite."
+        ],
+        [
+          "LWIS",
+          "Limited Weather Information System: wind, altimeter setting, temperature, dew point only."
+        ],
+        [
+          "METAR AUTO",
+          "METAR or SPECI taken by a stand-alone AWOS."
+        ],
+        [
+          "LGF",
+          "Local Graphic Forecast: local forecast chart below 10,000 ft that supplements the GFA."
+        ],
+        [
+          "WxCam",
+          "NAV CANADA aviation weather camera with images every 10 minutes."
+        ],
+        [
+          "H24",
+          "Site operating 24 hours a day."
+        ],
+        [
+          "CFPS",
+          "Website where NAV CANADA aviation weather products, imagery and camera images are available."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "Per the NAV CANADA guide, a SIGMET is normally valid up to:",
+          "c": [
+            "4 hours (6 hours for volcanic ash and tropical cyclone)",
+            "12 hours",
+            "24 hours",
+            "2 hours for all types"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide product table. Matches MANAIR."
+        },
+        {
+          "q": "Up to what height does an AIRMET cover specified weather?",
+          "c": [
+            "Up to and including 24,000 ft",
+            "10,000 ft",
+            "FL450",
+            "FL600"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide: AIRMET coverage up to and including 24,000 ft."
+        },
+        {
+          "q": "The NAV CANADA guide describes a TAF as forecasting conditions within:",
+          "c": [
+            "5 nautical miles of the aerodrome",
+            "10 nautical miles of the aerodrome",
+            "25 statute miles",
+            "The whole FIR"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide."
+        },
+        {
+          "q": "Which are the high levels in the guide's FB product?",
+          "c": [
+            "FL240, 300, 340, 390, 450, 530",
+            "FL100, 150, 200",
+            "FL180 and FL240 only",
+            "FL600 and above"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide. Low levels are 3,000 to 18,000 ft."
+        },
+        {
+          "q": "Where does the guide say the surface analysis chart covers?",
+          "c": [
+            "All of Canada, Alaska and the northern US",
+            "North America and Europe",
+            "Canada only",
+            "The Northern Hemisphere"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide."
+        },
+        {
+          "q": "How often is the upper air analysis chart valid?",
+          "c": [
+            "Twice daily, 00Z and 12Z",
+            "Four times daily",
+            "Hourly",
+            "Once daily at 18Z"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide."
+        },
+        {
+          "q": "How is a GFA issued per the guide?",
+          "c": [
+            "Four times daily, valid 12 hours with a 12-hour IFR outlook",
+            "Twice daily, valid 24 hours",
+            "Hourly",
+            "Once daily, valid 6 hours"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide product table."
+        },
+        {
+          "q": "The Local Graphic Forecast (LGF) depicts weather:",
+          "c": [
+            "Below 10,000 ft, tailored to local need",
+            "Above FL250",
+            "Over the whole country",
+            "Only IFR conditions"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide: it supplements the GFA."
+        },
+        {
+          "q": "LGF charts are issued at:",
+          "c": [
+            "15Z, 18Z, 21Z and 00Z, valid 6 hours",
+            "00Z and 12Z, valid 24 hours",
+            "03Z, 09Z, 15Z, 21Z",
+            "Every hour"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide. The last LGF includes an outlook for the next morning."
+        },
+        {
+          "q": "The Turbulence Forecast chart depicts moderate and severe turbulence between:",
+          "c": [
+            "FL280 and FL430",
+            "FL100 and FL240",
+            "The surface and FL100",
+            "FL450 and FL600"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide."
+        },
+        {
+          "q": "A Space Weather Advisory covers radiation exposure at:",
+          "c": [
+            "FL250 and above",
+            "FL100 and above",
+            "The surface",
+            "Below 10,000 ft"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide. Other domains: GNSS and satellite-based surveillance, HF radio."
+        },
+        {
+          "q": "How often are radar images updated per the NAV CANADA product table?",
+          "c": [
+            "Every 10 minutes",
+            "Every 6 minutes",
+            "Every 30 minutes",
+            "Hourly"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide table. ECCC says the S-band composite is every 6 minutes."
+        },
+        {
+          "q": "Per the guide, GOES images update every ___ and POES about every ___.",
+          "c": [
+            "30 minutes; 6 hours",
+            "10 minutes; 1 hour",
+            "6 hours; 30 minutes",
+            "1 hour; 12 hours"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide product table."
+        },
+        {
+          "q": "How often do NAV CANADA weather camera images update?",
+          "c": [
+            "Every 10 minutes",
+            "Every 30 minutes",
+            "Hourly",
+            "Every 6 minutes"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide."
+        },
+        {
+          "q": "About how many surface weather observation sites does Canada have, per the guide?",
+          "c": [
+            "More than 230",
+            "About 50",
+            "About 1,000",
+            "More than 2,300"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide."
+        },
+        {
+          "q": "What is a SAWR?",
+          "c": [
+            "An aviation observing site giving additional or limited observations on a reduced schedule",
+            "A fully staffed 24-hour station",
+            "A satellite receiver",
+            "A radar site"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide."
+        },
+        {
+          "q": "Which elements does an LWIS measure?",
+          "c": [
+            "Wind, altimeter setting, temperature and dew point",
+            "Wind and visibility only",
+            "Everything an AWOS measures",
+            "Cloud and precipitation only"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide. AWOS has the full sensor suite."
+        },
+        {
+          "q": "What does AUTO in the body of a METAR mean?",
+          "c": [
+            "The report was produced by a suite of automated sensors",
+            "The report was amended",
+            "The report is a forecast",
+            "The report is delayed"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide."
+        },
+        {
+          "q": "An AWOS outside the Canadian Lightning Detection Network coverage area:",
+          "c": [
+            "Cannot report thunderstorm or lightning activity",
+            "Reports TS automatically",
+            "Uses a laser ceilometer instead",
+            "Sends only SPECIs"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide METAR AUTO description."
+        },
+        {
+          "q": "On an AWOS, TS is reported when lightning is detected at:",
+          "c": [
+            "6 SM or less",
+            "More than 10 SM",
+            "More than 6 to 10 SM",
+            "30 SM or more"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide: VCTS is more than 6 to 10 SM."
+        },
+        {
+          "q": "On an AWOS, LTNG DIST is reported for lightning detected from:",
+          "c": [
+            "More than 10 to 30 SM",
+            "6 SM or less",
+            "More than 6 to 10 SM",
+            "More than 30 SM"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide. Direction is given by octant in remarks."
+        },
+        {
+          "q": "LTNG DIST ALL QUADS means lightning was detected in:",
+          "c": [
+            "Four or more octants",
+            "One octant",
+            "All quadrants within 6 SM",
+            "The vicinity only"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide."
+        },
+        {
+          "q": "Up to what height can an AWOS laser ceilometer report cloud bases?",
+          "c": [
+            "25,000 ft",
+            "12,000 ft",
+            "6,000 ft",
+            "40,000 ft"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide."
+        },
+        {
+          "q": "Which obstructions to vision can an AWOS report with improved capability?",
+          "c": [
+            "HZ, BR, FG, FZFG and BLSN",
+            "Only FG",
+            "FU and DU",
+            "Only BR"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide."
+        },
+        {
+          "q": "What does H24 mean in a coverage listing?",
+          "c": [
+            "The site operates 24 hours a day",
+            "Hourly update",
+            "Observation at 24Z",
+            "Height 24 m"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide, for example METAR H24, LWIS H24."
+        },
+        {
+          "q": "In a METAR remark, TD MISG means:",
+          "c": [
+            "Dew point data missing",
+            "Temperature data missing",
+            "Thunderstorm data missing",
+            "Time data missing"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide. T MISG is temperature missing."
+        }
+      ],
+      "verified": {
+        "date": "2026-10-27",
+        "sources": [
+          "NAV CANADA Aviation Weather Services Guide, Aviation Weather Information, Weather Product Summary, Aviation Weather Observation Products, AWOS and LWIS, and missing-data remarks pages (guide pages 7 to 12; screenshots supplied by the user, 2026-10-27)"
+        ],
+        "unverified": [
+          "The guide's FB entry (twice daily, 00Z or 12Z data, valid 24 hours) differs from MANAIR Ch. 3 (four times daily, FBCN31, 33, 35 as 6, 12, 24 hour forecasts). MANAIR is treated as the standard.",
+          "The guide's Upper Level Wind and Temperature chart and Turbulence Forecast chart rows list valid times inconsistently ('twice daily' with four or two valid times); the issue pattern is not taught as fact.",
+          "The guide edition date is not shown. The AWOS enhancement table's Y marks were read from a screenshot.",
+          "AWOS lightning distances (6, 10, 30 SM) are from this guide only and have not been compared with MANOBS."
+        ]
+      }
     }
   ]
 }

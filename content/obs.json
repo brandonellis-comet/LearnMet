@@ -863,13 +863,14 @@
           "NAV CANADA Aviation Weather Services Guide (2017): radar scales and update interval for the older network",
           "ECCC, About Canadian weather radar (canada.ca, page last modified 2026-07-24): network table, update interval, products, limitations",
           "NOAA JetStream: Radar Images: Reflectivity (dBZ table, scale), Dual Polarization (ZDR, CC, debris), Radar Beams (beam height, refraction, AP) (US source, fetched 2026-10-27)",
-          "NAV CANADA Aviation Weather Services Guide, Weather Radar page (guide pages 24 and 25; screenshots supplied by the user, 2026-10-27): confirms radar intensity and echo tops products, rain 300 mm/h and snow 40 cm/h scales, about 150 NM range, composite advantage, does not show cloud cover"
+          "NAV CANADA Aviation Weather Services Guide, Weather Radar page (guide pages 24 and 25; screenshots supplied by the user, 2026-10-27): confirms radar intensity and echo tops products, rain 300 mm/h and snow 40 cm/h scales, about 150 NM range, composite advantage, does not show cloud cover",
+          "NAV CANADA guide Weather Imagery and Supplementary Products table (screenshot, 2026-10-27): radar imagery updated every 10 minutes"
         ],
         "unverified": [
           "dBZ ranges are from a US NOAA table and apply to US radars. ECCC publishes rain rate, not dBZ ranges; Canadian radar wavelength is not stated on the ECCC page.",
           "Doppler radial velocity, the cross-beam limit and mesocyclone velocity couplet appearance: not confirmed in a fetched source (the NOAA velocity page fetched did not cover it).",
           "Bright band and attenuation statements are standard radar meteorology, not confirmed in a fetched source. The anomalous propagation cause 'strong inversion' was removed because the source describes density decrease with height instead.",
-          "NAV CANADA guide product table (radar images every 10 minutes) is from a fetch summary only; the page was not in the screenshots. The guide's 150 NM range and the ECCC S-band km ranges are different measures and were not reconciled."
+          "The NAV CANADA product table gives radar images every 10 minutes (guide page 13), while ECCC says the S-band composite is every 6 minutes; the 10-minute figure may describe the older network. The guide's 150 NM range and ECCC's km ranges are different measures and were not reconciled."
         ]
       }
     },
@@ -1199,13 +1200,13 @@
           "NOAA JetStream, Weather Satellites: geostationary 35,786 km, polar about 833 km, 14.1 orbits per day",
           "NOAA/NESDIS ABI Quick Guides, Bands 8, 9 and 10 (6.2, 6.9, 7.3 micrometres; layers sensed; uses)",
           "NWS, Three types of satellite imagery and Satellite Imagery Overview for Pilots (Front, Oct 2008): visible, IR and water vapour interpretation (US sources)",
-          "NAV CANADA Aviation Weather Services Guide, Satellite Imagery page (guide page 25 to 26; screenshots supplied by the user, 2026-10-27): GOES about 36,000 km, POES with HRPT about 850 km, 105 minutes, 14 orbits a day, west shift about 2 time zones, VIS and IR table, consult a briefer; example image GOES-East IR C13 dated 2026-05-15"
+          "NAV CANADA Aviation Weather Services Guide, Satellite Imagery page (guide page 25 to 26; screenshots supplied by the user, 2026-10-27): GOES about 36,000 km, POES with HRPT about 850 km, 105 minutes, 14 orbits a day, west shift about 2 time zones, VIS and IR table, consult a briefer; example image GOES-East IR C13 dated 2026-05-15",
+          "NAV CANADA guide Weather Imagery and Supplementary Products table (screenshot, 2026-10-27): GOES images every 30 minutes, POES about every 6 hours"
         ],
         "unverified": [
           "Sources for channel interpretation are US NWS pages. A Canadian source for visible, IR and water vapour interpretation (ECCC, NAV CANADA guide pages 30 and 31) is not yet confirmed.",
           "Which GOES satellites currently cover Canada: the guide's own example is a GOES-East image (2026-05-15), but coverage of western Canada is not confirmed. The NOAA page fetched was dated 2023. The standard greyscale convention (white is cold in IR) and the comma cloud and anvil statements are standard practice, not confirmed.",
-          "The upper-level water vapour layer height differs between NWS sources (about 15,000 to 30,000 ft; above 20,000 ft MSL); a single figure is not given here.",
-          "NAV CANADA guide product table (GOES images every 30 minutes, POES about every 6 hours) is from a fetch summary only; that page was not in the screenshots."
+          "The upper-level water vapour layer height differs between NWS sources (about 15,000 to 30,000 ft; above 20,000 ft MSL); a single figure is not given here."
         ]
       }
     },
