@@ -2,21 +2,29 @@
 
 How content is checked: each claim is compared with a public primary source (Canada.ca, NAV CANADA, Transport Canada, NOAA, WMO). Each lesson page shows the sources checked and a list of items not confirmed.
 
-Method limit: the reading tool returns about 100,000 characters per document. For long manuals this means later chapters could not be read. Those items are listed as "not confirmed" and are never presented as verified.
+Sources and how they were read:
+- Public web pages read with the fetch tool. A fetch summary is treated as unconfirmed until the page text or a screenshot of it has been seen.
+- Screenshots supplied by the owner (ECCC alert pages, TC AIM, NAV CANADA guide, MANAIR Ch. 7). Screenshot text is treated as primary text.
+- Full PDFs read locally: MANOBS 8th ed. Am. 3 and MANAIR 8th ed. Am. 3 (March 2024).
+- Anything not confirmed is listed on the lesson page under "not confirmed" and in the open items below. It is never presented as verified.
 
-## Status
+Standing rule: accuracy notices stay on every page until the owner says otherwise.
 
-| Domain | Status | Date |
-|--------|--------|------|
-| Observations (obs) | Checked. 5 topics | 2026-10-26 |
-| Codes (codes) | Checked. 7 topics. TAF rewritten and GFA/SIGMET/AIRMET/FB topic added from MANAIR | 2026-10-27 |
-| Severe weather (severe). 6 topics | Checked. Several numbers removed as unconfirmed | 2026-10-26 |
-| Foundations (foundations). 5 topics | Checked. Tropopause heights and pressure-level heights corrected | 2026-10-26 |
-| Wind (wind). 6 topics | Checked. Backing/veering rule was reversed and is fixed | 2026-10-26 |
-| Moisture (moisture). 6 topics | Checked. Icing temperatures, cloud heights, fog winds corrected | 2026-10-26 |
-| Air masses (airmass). 4 topics | Checked. Frontal slopes, shear role in frontogenesis corrected | 2026-10-26 |
-| Synoptic (synoptic). 5 topics | Checked. Post-tropical, derecho, cyclone life span and long-wave wording corrected | 2026-10-26 |
-| Applied (applied). 5 topics | Checked. Flight categories and VFR minima made Canadian | 2026-10-26 |
+Study aid only. Crown-copyright and NAV CANADA text is paraphrased and linked, not copied. No controlled or intranet material is used.
+
+## Status (as of 2026-10-27; 833 questions)
+
+| Domain | Topics | Questions | Status | Last checked |
+|--------|--------|-----------|--------|--------------|
+| Observations (obs) | 5 | 91 | Surface observing checked against MANOBS. Radar and satellite re-checked against ECCC, NOAA, NWS and the NAV CANADA guide | 2026-10-27 |
+| Codes (codes) | 9 | 214 | METAR, TAF, GFA/SIGMET/AIRMET/FB, MANAIR Ch. 7 and 8, NAV CANADA product tables, ECCC analysis page. Station model from NOAA only | 2026-10-27 |
+| Severe weather (severe) | 6 | 141 | Turbulence, wind shear, ECCC alerts and Impact Guides checked against AIM, MANAIR and ECCC pages. Others first pass | 2026-10-27 |
+| Moisture (moisture) | 6 | 98 | Icing topic checked against AIM, MANAIR and AIR (incl. carburettor icing). Others first pass | 2026-10-27 |
+| Applied (applied) | 5 | 59 | Aviation minima, flight categories and marine topics updated; others first pass | 2026-10-27 |
+| Foundations (foundations) | 5 | 57 | First pass. Tropopause and pressure-level heights corrected | 2026-10-26 |
+| Wind (wind) | 6 | 68 | First pass. Backing/veering rule was reversed and is fixed | 2026-10-26 |
+| Air masses (airmass) | 4 | 47 | First pass. Frontal slopes and shear role in frontogenesis corrected | 2026-10-26 |
+| Synoptic (synoptic) | 5 | 58 | First pass. Post-tropical, derecho, cyclone life span and long-wave wording corrected | 2026-10-26 |
 
 ## Corrections made on 2026-10-26
 
@@ -85,7 +93,7 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 | Front speed quiz | Speed equals wind component | Replaced with sourced speeds | U of Alberta; Yu ESS 5 |
 | Frontogenesis | "Horizontal wind shear" as a driver; axis of dilatation "close to the front" | Shear only rotates isotherms; 45 degree rule; tilting and diabatic heating | NWS Louisville, Frontogenesis |
 | Cold front weather band | 50 to 100 km | Marked unconfirmed | |
-| Front symbols | Stated in quiz | Confirmed: cold blue triangles, warm red semicircles, occluded purple | NWS WPC |
+| Front symbols | Stated in quiz | Cold blue triangles, warm red semicircles, occluded purple confirmed for US charts (NWS WPC). The Canadian GFA has no occluded symbol (see 2026-10-27) | NWS WPC |
 | Cyclone life span | "A few days" | Several days to a little more than a week; 500 hPa steering, about 16 kt summer and 27 kt winter | Univ. of Hawaii, Chapter 13 |
 | Cyclone dissipation | "Becomes cold-cored" | Warm air cut off; cold air on both sides of the occlusion | Univ. of Hawaii, Chapter 13 |
 | Bomb cyclone | 24 hPa at 60 N | Formula 24 x sin(lat)/sin 60 added; cold-season maritime event near warm currents | Sanders and Gyakum 1980 (via Wikipedia) |
@@ -106,20 +114,61 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 | Freezing rain (Atlantic) | "One of the highest frequencies in Canada" | Eastern Canada incl. Atlantic provinces, St. Lawrence valley hotspot | ClimateData.ca |
 | Fiona (synoptic) | News headlines | ECCC: eastern Nova Scotia, over $800 million insured damage | ECCC hurricane FAQ |
 
+## Corrections and additions made on 2026-10-27
+
+| Where | Was | Now | Source |
+|-------|-----|-----|--------|
+| TAF lesson | BECMG "1 to 4 h"; TEMPO and PROB do not carry wind | BECMG normally 2 h or less, never over 4 h; TEMPO and PROB may carry wind; issue, update and amendment thresholds rewritten | MANAIR Ch. 2 |
+| GFA, SIGMET, AIRMET, FB | No topic | New topic: GFA issue times and domains, SIGMET (WS 4 h, WV and WC 6 h), AIRMET (4 h, to FL240, only if not in GFA), FB code rules | MANAIR Ch. 3 to 6 |
+| Front symbols (surface/GFA) | "Occluded usually purple" | Removed. GFA has no occluded symbol. Colours confirmed: cold blue triangles, warm red semicircles, stationary alternating | MANAIR Appendix C.2 |
+| GFA symbols | Not covered | Added legend (L/H, movement, tropical cyclone, organized cloud, obstruction to vision, troughs) | MANAIR Appendix C |
+| Station model | Pressure tendency "lower right" | Centre right (lower right is past weather). Layout confirmed from a US source only | NOAA JetStream, Surface Weather Plots |
+| Isobar labels | "Often last two digits" | Traditionally last two digits (examples 24, 08, 92); US source | NOAA JetStream |
+| Sig Wx charts | NAV CANADA guide only | MANAIR Ch. 7 content added: CAN SIG WX issue and valid times, NAT SIG WX, content rules, CB/TCU/ACC imply turbulence and icing, >50% chance wording, XX base, motion above 5 kt. MANAIR gives tops as FL240; guide says FL250 | MANAIR Ch. 7 |
+| Guide versus MANAIR | Not noted | Differences recorded: surface wind and gust criteria, layer summation versus LYRS, QS versus STNR, turbulence labels, freezing level colour, Sig Wx tops, FB issue pattern. MANAIR 2024 treated as the standard | NAV CANADA guide; MANAIR |
+| MANAIR terms | None | New topic from Chapter 8 definitions (ceiling, FL, AOR, MWO, CMAC, validity terms, organizations) | MANAIR Ch. 8 |
+| Turbulence | Lenticular clouds always present in mountain wave | AIM: there may be no lenticular clouds. Added intensity terms, frequency terms, CAT above 15,000 ft, radar cannot detect turbulence, AIR detail | TC AIM MET 2.2.2; AIR 1.5, 2.7 to 2.10 |
+| Wind shear | General | MANAIR WS group guidelines and AIM MET 2.3, AIR 2.8 microburst details | MANAIR; TC AIM |
+| Icing | Types and temperatures only | MANAIR and AIM intensity, rime/clear/mixed, reporting; AIR in-flight and freezing rain; ground icing and de/anti-icing fluids; carburettor icing | MANAIR; TC AIM MET and AIR 2.3, 2.12 |
+| Carburettor icing | "Up to about 20 C" misread | 20 C is the MOGAS difference; chart invalid on MOGAS | TC AIM AIR Figure 2.2 |
+| ECCC alerts | Warning criteria in older form | All 14 Impact Guides; Frost moderate only (earlier "three impact levels for each hazard" removed); hurricane definitions (tropical storm 63 to 117 km/h, hurricane 118 km/h or more) | ECCC Impact Guides |
+| ECCC alert types and colours | Not covered | Warnings, advisories, watches; yellow circle, orange diamond, red triangle; colour matrix cell by cell; statements are not alerts and not coloured; marine warnings separate | ECCC alert colour pages |
+| Polygon and Alert Ready | Not covered | Polygon severe thunderstorm and tornado warnings from 11 to 12 Aug 2026; Alert Ready only for tornado warnings and severe thunderstorm warnings with gusts 130 km/h or more or hail 7 cm or more | ECCC backgrounder; screenshots |
+| MetNotes and CAP | Not covered | MetNotes description; CAP Information Sheet 3 (March 2016) forms and sectors; its selected-areas list is from 2016 and its currency is unconfirmed | ECCC pages; CAP |
+| Radar dBZ | "20 light, 30 to 40 moderate, 45 to 55 heavy, over 55 hail" | NOAA table: above 65 extremely heavy, 50 to 65 heavy, 40 to 50 moderate, 20 to 40 light; scale -35 to +85; labelled US guidance | NOAA JetStream |
+| Anomalous propagation | "Beam bends toward the ground in strong inversions" | Superrefraction and ducting causing false echoes; "inversion" removed | NOAA JetStream, Radar Beams |
+| Radar (new) | Basic | ZDR, correlation coefficient, debris signature, beam height examples, ECCC S-band versus C-band table, products and cautions, NAV CANADA guide scales (rain 300 mm/h, snow 40 cm/h, about 150 NM) | ECCC; NOAA; NAV CANADA guide |
+| Satellite | "Water vapour about 6 to 7 micrometres" | 6.2, 6.9 and 7.3 micrometres; orbit figures (35,786 km; about 833 km NOAA, 850 km guide); visible, IR and water vapour interpretation from NWS | NOAA/NESDIS; NWS; NAV CANADA guide |
+| Surface analysis | Not covered | ECCC page: four analyses a day, Preliminary and Complete versions; Surface Analysis (Preliminary, Canadian coverage), Upper Air Analysis, Snow Depth, Sea Surface Temperature and Sea Ice Cover map products to be decommissioned by end of 2026 (use MSC AniMet) | ECCC analysis charts page |
+| Products and observation programs | None | New topic: product issue times and coverage, imagery update intervals, observation programs (METAR, METAR AUTO, LWIS, AUTO, SAWR, WxCam), AWOS and LWIS capabilities and lightning rules, MISG remarks | NAV CANADA guide |
+| MANOBS | Many items | Lessons updated from the full PDF (wind, visibility, RVR, present weather, sky condition, temperature, pressure, remarks, METAR and SPECI coding) | MANOBS 8th ed. Am. 3 |
+
+Guide edition: the NAV CANADA guide shows no edition date, but its satellite page has an example image dated 2026-05-15, so it has been updated since then. Older entries labelled "(2017)" are not supported and should be relabelled once the edition is confirmed.
+
 ## Not confirmed (open items)
 
-- MANOBS (8th ed. Am. 3, full PDF, 2026-10-27): read cover to cover except chapter 15 detail (synoptic code groups) and the appendix 4 altimeter/UNICOM text. Checked and added to the lessons: wind (3), visibility (4), RVR (5), present weather, fog, mist, precipitation intensity and definitions (6, 13), sky condition and cloud base table (7), temperature and pressure (8, 9), remarks (10), METAR coding (11.2.2), SPECI criteria (11.2.3), AUTO SPECI (12.2.7), glossary (13), appendix 1 and 2. MANOBS Part B (synoptic code, chapters 14 and 15) has no matching lesson yet; if a synoptic code topic is added it must be built from chapter 15.
-- Still not confirmed from MANOBS: the ceiling footnote on the 400, 200 and 100 ft SPECI values, QFE and the MSLP reduction method (MANOBS only names the WMO method), and how ATIS and tower broadcasts fall under the magnetic-wind voice exception (12.2.1).
-- MANAIR (8th ed. Am. 3, March 2024, full PDF, 2026-10-27): read Ch. 2 (TAF), 3 (FB), 4 (GFA), 5 (SIGMET), 6 (AIRMET), parts of 7 and 8, and the SIGMET/AIRMET appendix tables. Corrections made: BECMG is normally 2 h or less and never over 4 h (was "1 to 4 h"); TEMPO and PROB groups may carry wind (old text said they do not); TAF issue, update and amendment thresholds rewritten from Ch. 2; fog ceiling wording corrected. Added: GFA, SIGMET, AIRMET and FB winds aloft topic; MANAIR turbulence, icing and wind shear definitions.
-- Still not confirmed from MANAIR: Ch. 7 Sig Wx prognostic charts (no lesson), Appendix C symbol images, WMO header and FIR letter rules, and 2400/0000 coding and alternate-minima treatment (NAV CANADA guide).
-- MANAIR chapter 2: TAF amendment thresholds and full coding rules.
-- Occluded and stationary front colours, trough line style, isobar label convention, station model layout.
-- dBZ intensity ranges, water vapour band wavelengths, mandatory pressure level list, CSI formula, CIN and lifted index definitions.
-- Severe: supercell/mesocyclone definition, microburst size and approach sequence, blizzard numbers, nocturnal low-level jet details, mountain wave wind speed, Richardson 0.25, watch/warning/advisory definitions, and the Wind, Rain, Snow and Winter storm Impact Guide sections.
-- Foundations: troposphere 80% of mass is derived; ozone altitude, ionosphere location, mesopause coldest, fog spread rule, pressure-tendency rule, SALR direction, 300 hPa label, and the ICAO documents themselves (only secondary articles read).
-- Wind: Coriolis zero at equator and Coriolis parameter, gradient wind, boundary layer depth, diurnal wind cycle, Ferrel cell being indirect, WMO jet definition, jet entrance and exit divergence, and the TC AIM jet stream wording.
-- Moisture: mixing ratio conservation and wet-bulb ordering, CCN types, lifting mechanisms, cloud appearance descriptions, warm-front cloud sequence, carburettor icing, Nova Scotia fog climatology, AIM MET 2.4 icing text re-check.
+Open
+- ECCC selected-areas hazard sheets (CAP Information Sheet 3, 2016 list): currency unconfirmed. ECCC has been asked; awaiting a reply.
+- Regional alert practice, and whether Alert Ready thresholds define warning criteria.
+- Station model layout, last-two-digit isobar labels, and temperature units on Canadian charts: confirmed from US NOAA sources only. A Canadian source has not been found.
+- Occluded front colours on charts other than the GFA; national analysis symbols versus GFA symbols.
+- MANOBS: ceiling footnote on the 400, 200 and 100 ft SPECI values; QFE and the MSLP reduction method; how ATIS and tower broadcasts fall under the magnetic-wind voice exception (12.2.1). MANOBS Part B (synoptic code, chapters 14 and 15) has no lesson; build it from chapter 15 if added.
+- MANAIR: WMO header and FIR letter rules; WS SIGMET coordinate formats; Sig Wx symbol shapes described only in images; volcanic ash and radioactive release symbols; Upper-Level Sig Wx (FL250 to FL600) comes from the NAV CANADA guide only.
+- NAV CANADA guide: edition date; the AWOS enhancement Y marks (read from a screenshot); the Upper Level Wind and Turbulence Forecast chart rows list valid times inconsistently; AWOS lightning distances (6, 10, 30 SM) not compared with MANOBS; radar 10-minute interval versus ECCC 6 minutes (likely older network).
+- Turbulence: rotor cloud, Richardson number 0.25, mechanical and convective definitions, "extreme" turbulence undefined, mountain wave stable-layer wording.
+- Carburettor icing: exact zone boundaries on Figure 2.2 were read visually. Rime and clear split at -10 C (WMO) versus AIM wording.
+- Radar: Doppler radial velocity and the rotation signature, bright band, attenuation (standard practice, no fetched source). Canadian radar wavelength (not stated by ECCC).
+- Satellite: Canadian source for visible, IR and water vapour interpretation; greyscale convention; comma cloud and anvil statements; which GOES satellites cover western Canada.
+- Not yet checked against a Canadian source: military and briefing topics (no public source expected), climatology of the Atlantic region against ECCC normals.
+
+Carried from the first pass (2026-10-26), not yet revisited
+- Severe: supercell and mesocyclone definition, microburst size and approach sequence, blizzard numbers, nocturnal low-level jet details.
+- Foundations: troposphere 80% of mass (derived), ozone altitude, ionosphere location, mesopause coldest, pressure-tendency rule, SALR direction, 300 hPa label, ICAO documents (only secondary articles read).
+- Wind: Coriolis parameter, gradient wind, boundary layer depth, diurnal wind cycle, Ferrel cell, WMO jet definition, jet entrance and exit divergence.
+- Moisture: mixing ratio conservation and wet-bulb ordering, CCN types, lifting mechanisms, cloud appearance descriptions, warm-front cloud sequence, Nova Scotia fog climatology.
 - Air masses: k/w modification and stability, warm front passage changes, warm occlusion, ana and kata fronts, frontal inversion, baroclinic definition, Gulf Stream frontogenesis zone. No Canadian publication on air mass types was found.
-- Synoptic: vorticity definitions and conservation, PVA link to upper divergence, MCS and MCC size criteria, polar lows, lake-effect snow, 5 degree Coriolis limit, warm core, right-front quadrant, Saffir-Simpson categories, why post-tropical transition happens, Fiona details from ECCC.
-- Applied: pressure altitude, crosswind trigonometry source, alternate-required rules (CAR 602.121 onward), ceiling definition, freezing spray criteria, Strong Wind warning threshold, WBGT, military impact tables, briefing SOP format, Atlantic climatology details against ECCC climate normals.
-- All domains: this was a first pass. Many sources were US or university material, and the long Canadian manuals (MANOBS chapters 8 to 15, MANAIR, full AIM) could not be opened. A second pass against those is the next accuracy step.
+- Synoptic: vorticity definitions and conservation, PVA link to upper divergence, MCS and MCC size criteria, polar lows, lake-effect snow, 5 degree Coriolis limit, warm core, right-front quadrant, Saffir-Simpson categories, why post-tropical transition happens, Fiona details.
+- Applied: pressure altitude, crosswind trigonometry source, alternate-required rules (CAR 602.121 onward), freezing spray criteria, Strong Wind warning threshold, WBGT, military impact tables, briefing SOP format.
+- CAPE and CIN, CSI formula, lifted index definitions, mandatory pressure level list.
+
+Next accuracy step: a second pass with working Met Techs and the remaining Canadian manuals. All domains other than those marked above were a first pass using many US and university sources.
