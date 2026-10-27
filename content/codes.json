@@ -2541,7 +2541,7 @@
         ],
         "unverified": [
           "WS SIGMET coordinate and text formats, WMO headers and FIR letter rules are not taught here.",
-          "The NAV CANADA guide edition date was not shown; where it differs from MANAIR 2024 (wind and gust criteria, layer summation, QS versus STNR, freezing level colour, turbulence labels), MANAIR is treated as the current standard.",
+          "The NAV CANADA guide edition date was not shown; where it differs from MANAIR 2024 (wind and gust criteria, layer summation, QS versus STNR, freezing level colour, turbulence labels), MANAIR is treated as the current standard. The guide's satellite page shows an image dated 2026-05-15, so it includes 2026 content; the edition date itself is still not shown.",
           "Sig Wx symbol shapes (turbulence, icing, tropical cyclone) were seen in screenshots but are not described in text here. Volcanic ash and radioactive release symbols are not taught. The Upper-Level chart (FL250 to FL600) is from the NAV CANADA guide only; MANAIR Ch. 7 covers CAN and NAT charts."
         ]
       }
