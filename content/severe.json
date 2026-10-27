@@ -1237,11 +1237,26 @@
           "list": [
             "Thunderstorms: moderate is difficult driving and damage to roofs, fences and trees. Extreme is destroyed buildings and many trees.",
             "Tornadoes: high is significant widespread tree damage. Extreme is destroyed homes and collapsed utility towers.",
-            "Ice: extreme is collapsed poles and towers with long, widespread outages."
+            "Ice: extreme is collapsed poles and towers with long, widespread outages.",
+            "Wind: high is some roof damage and small to medium trees snapped. Extreme is structural damage to homes and high-sided vehicles tipped or flipped.",
+            "Rain: high is widespread overland flooding with some washouts and landslides. Extreme is major roads, highways or bridges washed out and dams, dikes or pumps compromised.",
+            "Snow: high is dangerous travel and roofs at increased risk of collapse. Extreme is travel extremely unsafe or impossible and residents snowed in.",
+            "Winter storm: high is widespread road closures with vehicles and passengers stranded. Extreme is stranding for long periods and prolonged, widespread outages."
           ]
         },
         {
-          "note": "Colour is impact plus confidence. The page that explains colours does not define watch, warning, advisory or statement, so those terms are not confirmed here."
+          "h": "Alert classes (CAP overview, 2016)"
+        },
+        {
+          "list": [
+            "ECCC's CAP overview names four classes: warning, watch, advisory and statement.",
+            "Warning is more urgent than advisory, and advisory ranks above statement. The document says the ranking is loose.",
+            "A watch generally describes conditions favourable for development of a hazardous event, not the event itself.",
+            "These class terms appear in the headline of the CAP message."
+          ]
+        },
+        {
+          "note": "Colour is impact plus confidence. The 2016 CAP overview predates the colour system, so how classes and colours map today is not confirmed here."
         }
       ],
       "terms": [
@@ -1379,19 +1394,76 @@
           ],
           "a": 0,
           "e": "The guides give no hail size, gust speed or rainfall thresholds."
+        },
+        {
+          "q": "Do the Wind, Rain, Snow and Winter storm Impact Guides give numeric thresholds?",
+          "c": [
+            "No; they describe effects only",
+            "Yes, gust speeds in km/h",
+            "Yes, rainfall amounts in mm",
+            "Yes, snowfall amounts in cm"
+          ],
+          "a": 0,
+          "e": "The guides list effects for each level, with no numbers."
+        },
+        {
+          "q": "Which impact is listed at the extreme level of the Wind guide?",
+          "c": [
+            "Structural damage to homes and high-sided vehicles tipped or flipped",
+            "Larger tree branches broken",
+            "Minor travel delays from debris",
+            "Some short term utility outages"
+          ],
+          "a": 0,
+          "e": "The first two are extreme wording. Branches and minor delays are moderate."
+        },
+        {
+          "q": "Which is listed at the high level of the Rain guide?",
+          "c": [
+            "Widespread overland flooding, with some washouts and landslides",
+            "Basement flooding only",
+            "Dams and dikes compromised",
+            "Major roads washed out"
+          ],
+          "a": 0,
+          "e": "Dams compromised and major washouts are extreme; basement flooding is moderate."
+        },
+        {
+          "q": "In ECCC's CAP overview, what does a watch generally describe?",
+          "c": [
+            "Conditions favourable for development of a hazardous event, not the event itself",
+            "A hazardous event already occurring",
+            "The end of a warning",
+            "Only winter hazards"
+          ],
+          "a": 0,
+          "e": "This is the CAP overview wording for a watch."
+        },
+        {
+          "q": "Which Impact Guide level says roofs are at increased risk of collapsing under snow?",
+          "c": [
+            "High level of the Snow guide",
+            "Moderate level of the Snow guide",
+            "Extreme level of the Rain guide",
+            "Moderate level of the Wind guide"
+          ],
+          "a": 0,
+          "e": "Listed at the high level of the Snow guide."
         }
       ],
       "verified": {
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "sources": [
           "ECCC, Criteria for public weather alerts (canada.ca): notice of replacement, modified 2025-11-26",
           "ECCC, Weather Impact Guides (canada.ca): hazards, levels, example wording for Thunderstorms, Tornadoes, Visibility and Ice",
-          "ECCC, How we choose weather alert colours (canada.ca): Alert Colour Matrix"
+          "ECCC, How we choose weather alert colours (canada.ca): Alert Colour Matrix",
+          "ECCC, Weather Impact Guides (canada.ca), re-read 2026-10-27: Wind, Rain, Snow and Winter storm wording; no numeric thresholds",
+          "ECCC, CAP General Overview (June 2016): warning, watch, advisory and statement classes"
         ],
         "unverified": [
-          "Definitions of watch, warning, advisory and special weather statement: not given on the pages read. The earlier lesson wording was removed.",
-          "Wind, rain, snow and winter storm guide details: only Thunderstorms, Tornadoes, Visibility and Ice were read.",
-          "Regional differences in how alerts are issued: not checked."
+          "Current mapping of warning, watch, advisory and statement to colours: the CAP overview is from 2016 and predates the colour system.",
+          "Regional differences in how alerts are issued: not checked.",
+          "Hurricane, coastal flooding, cold, heat, frost and snow squall guides: not read."
         ]
       }
     }
