@@ -1123,6 +1123,32 @@
           ]
         },
         {
+          "h": "AIM airframe icing (AIR 2.12.3)"
+        },
+        {
+          "list": [
+            "For ice to form in flight the OAT must be at or below freezing with visible moisture. The AIM lists three types: rime, clear and frost.",
+            "Rime is commonly found in stratiform cloud: granular, opaque, pebbly, forming at low temperatures with a low concentration of small supercooled droplets. It adheres to leading edges and is easily removed by de-icing systems.",
+            "Clear ice is commonly found in cumuliform cloud: glossy, smooth and hard, spreading back from the impingement area. It forms at or just below 0 C with a high concentration of large supercooled droplets. It is the most serious form because it adheres firmly and is hard to remove.",
+            "In-flight frost can form when descending from below-freezing air into a layer of warm, moist air. It can restrict vision on the windshield.",
+            "Effects: reduced lift, increased drag and weight, higher stall speed, reduced thrust, control restrictions, and possible compressor stall if ice is ingested. A stall can occur before the stall warning activates.",
+            "Freezing rain and drizzle classically come from warm air over cold air, found near warm fronts and trowals. A climb into the warm air is the classic escape.",
+            "Non-classical freezing drizzle has been found at temperatures down to -10 C at altitudes up to 15,000 ft ASL with no warm layer aloft. Climbing remains the preferred escape, but warm air may not be available.",
+            "Clues to large supercooled droplets: ice farther aft than normal on unheated surfaces, ice on non-heated spinners, rivulets on windows, and unexpected differences in airspeed or climb rate."
+          ]
+        },
+        {
+          "h": "Ground icing (AIR 2.12.2)"
+        },
+        {
+          "list": [
+            "Clean aircraft concept: takeoff is prohibited when frost, ice or snow adheres to any critical surface.",
+            "Frost, ice or snow of medium to coarse sandpaper roughness on the leading edge and upper wing can reduce lift by as much as 30% and increase drag by 40%.",
+            "Cold soaking: fuel in the wing tanks can make the wing skin colder than ambient air, so clear ice can form even in drizzle or rain at temperatures from +8 to +14 C.",
+            "Type I fluids: at least 80% glycol, unthickened, very limited anti-icing protection. Type II fluids: at least 50% glycol, minimum freeze point -32 C, thickened and longer holdover; for aircraft with rotation speeds above 100 KIAS. Holdover times are guidelines only."
+          ]
+        },
+        {
           "list": [
             "GFA icing types: RIME, MX (mixed) and CLR (clear).",
             "GFA depicts only moderate or severe non-convective icing, as a blue line with stippling (denser for severe). Light icing goes in the comments box.",
@@ -1377,6 +1403,83 @@
           ],
           "a": 0,
           "e": "AIM MET 2.4."
+        },
+        {
+          "q": "In the AIM, which ice type forms at or just below 0 C with large supercooled droplets?",
+          "c": [
+            "Clear ice",
+            "Rime ice",
+            "Hoar frost",
+            "Frost on the ground"
+          ],
+          "a": 0,
+          "e": "AIM AIR 2.12.3.1."
+        },
+        {
+          "q": "In which cloud type is rime ice commonly found, per the AIM?",
+          "c": [
+            "Stratiform",
+            "Cumuliform",
+            "Cirrus",
+            "Only fog"
+          ],
+          "a": 0,
+          "e": "AIM AIR 2.12.3.1. Clear ice is commonly found in cumuliform cloud."
+        },
+        {
+          "q": "Where are freezing rain and drizzle typically found, per the AIM?",
+          "c": [
+            "Near warm fronts and trowals",
+            "Only behind cold fronts",
+            "Only over water",
+            "Only in thunderstorms"
+          ],
+          "a": 0,
+          "e": "AIM AIR 2.12.3.5."
+        },
+        {
+          "q": "What is the classic escape from freezing rain aloft?",
+          "c": [
+            "Climb into the warm air",
+            "Descend",
+            "Turn off anti-icing",
+            "Increase power in the same layer"
+          ],
+          "a": 0,
+          "e": "AIM AIR 2.12.3.5. Non-classical freezing drizzle may lack a warm layer; climbing is still preferred."
+        },
+        {
+          "q": "By how much can frost or ice of coarse sandpaper roughness reduce wing lift?",
+          "c": [
+            "As much as 30%",
+            "About 5%",
+            "About 60%",
+            "It does not affect lift"
+          ],
+          "a": 0,
+          "e": "AIM AIR 2.12.2: reduce lift up to 30% and increase drag by 40%."
+        },
+        {
+          "q": "Why can clear ice form on a wing at +8 to +14 C?",
+          "c": [
+            "Cold-soaked fuel in the wing tanks chills the wing skin",
+            "Supercooled rain at those temperatures",
+            "The AIM says it cannot",
+            "Because of carburettor ice"
+          ],
+          "a": 0,
+          "e": "AIM AIR 2.12.2 cold-soaking phenomenon, in drizzle or rain."
+        },
+        {
+          "q": "Which de-icing fluid has the higher minimum glycol content, per the AIM?",
+          "c": [
+            "Type I (at least 80%)",
+            "Type II (at least 50%)",
+            "Both are equal",
+            "Neither contains glycol"
+          ],
+          "a": 0,
+          "e": "AIM AIR 2.12.2."
         }
       ],
       "verified": {
@@ -1387,13 +1490,13 @@
           "NWS cloud and precipitation training notes: liquid water persists as low as -40 C",
           "MANOBS 8th ed. Am. 3 (full PDF): 13.2.10 (glaze, rime, hoar frost); 6.6.2.3 to 6.6.2.4 (freezing precipitation and ice accretion indicator)",
           "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.2.1 (GFA icing types, depiction and intensity definitions), 5.8.3.2, D.5 and E.5 (SIGMET SEV, AIRMET MOD)",
-          "TC AIM 2026-2 MET (tc.canada.ca, fetched 2026-10-27): 2.4, Tables 2.3 and 2.4, 4.12, 5.2(e); TC AIM 2026-2 AIR (tc.canada.ca, fetched 2026-10-27, summarised read): 2.7.2"
+          "TC AIM 2026-2 AIR (screenshots supplied by the user, 2026-10-27): 2.12.2, 2.12.3 (in-flight and ground icing), 2.7 (thunderstorm icing)"
         ],
         "unverified": [
           "Carburettor icing (outside temperatures up to about 20 C) and frost deposition: standard aviation teaching, not confirmed on the pages read.",
           "Escape by changing altitude, and which cloud types have the highest liquid water: standard teaching.",
-          "AIM text on frost, freezing rain, icing temperature ranges and ground icing was not in the retrieved MET text; AIR 2.12 icing sections were not retrieved.",
-          "The -15 C level advice in thunderstorms was read from a summarised version of AIR."
+          "AIR 2.3 carburettor icing was not in the pages read; the carburettor temperature statement stays unconfirmed.",
+          "The rime/clear temperature split at about -10 C (WMO) differs in wording from the AIM (low temperature versus at or just below 0 C); both are given."
         ]
       }
     }
