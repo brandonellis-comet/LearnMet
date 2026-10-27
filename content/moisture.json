@@ -1138,6 +1138,17 @@
           ]
         },
         {
+          "h": "Carburettor icing (AIM AIR 2.3)"
+        },
+        {
+          "list": [
+            "A common cause of general aviation accidents. Fuel-injected engines have very few induction system icing accidents.",
+            "Most carburettor icing engine failures happen during normal cruise, possibly because pilots forget it can occur at high power settings as well as in descents with reduced power.",
+            "Most accidents involve a pilot who did not fully understand the aircraft's carburettor heat system. Systems differ, so an AME on type can explain it.",
+            "When carburettor heat is applied, expect a rough-running engine for a minute or so as the ice melts, loosens and is ingested."
+          ]
+        },
+        {
           "h": "Ground icing (AIR 2.12.2)"
         },
         {
@@ -1480,6 +1491,39 @@
           ],
           "a": 0,
           "e": "AIM AIR 2.12.2."
+        },
+        {
+          "q": "When do most carburettor icing engine failures happen, per the AIM?",
+          "c": [
+            "During normal cruise",
+            "During takeoff only",
+            "On the ground",
+            "Only in descents"
+          ],
+          "a": 0,
+          "e": "AIM AIR 2.3."
+        },
+        {
+          "q": "What should a pilot expect after selecting carburettor heat with ice present?",
+          "c": [
+            "A rough-running engine for a minute or so",
+            "An immediate smooth engine",
+            "Engine shutdown",
+            "A power increase"
+          ],
+          "a": 0,
+          "e": "AIM AIR 2.3."
+        },
+        {
+          "q": "Which engines have very few induction system icing accidents, per the AIM?",
+          "c": [
+            "Fuel-injected engines",
+            "Carburetted engines",
+            "Piston engines with no heat system",
+            "All engines equally"
+          ],
+          "a": 0,
+          "e": "AIM AIR 2.3."
         }
       ],
       "verified": {
@@ -1490,13 +1534,14 @@
           "NWS cloud and precipitation training notes: liquid water persists as low as -40 C",
           "MANOBS 8th ed. Am. 3 (full PDF): 13.2.10 (glaze, rime, hoar frost); 6.6.2.3 to 6.6.2.4 (freezing precipitation and ice accretion indicator)",
           "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.2.1 (GFA icing types, depiction and intensity definitions), 5.8.3.2, D.5 and E.5 (SIGMET SEV, AIRMET MOD)",
-          "TC AIM 2026-2 AIR (screenshots supplied by the user, 2026-10-27): 2.12.2, 2.12.3 (in-flight and ground icing), 2.7 (thunderstorm icing)"
+          "TC AIM 2026-2 AIR (screenshots supplied by the user, 2026-10-27): 2.12.2, 2.12.3 (in-flight and ground icing), 2.7 (thunderstorm icing)",
+          "TC AIM 2026-2 AIR 2.3 carburetor icing (screenshot supplied by the user, 2026-10-27)"
         ],
         "unverified": [
           "Carburettor icing (outside temperatures up to about 20 C) and frost deposition: standard aviation teaching, not confirmed on the pages read.",
           "Escape by changing altitude, and which cloud types have the highest liquid water: standard teaching.",
-          "AIR 2.3 carburettor icing was not in the pages read; the carburettor temperature statement stays unconfirmed.",
-          "The rime/clear temperature split at about -10 C (WMO) differs in wording from the AIM (low temperature versus at or just below 0 C); both are given."
+          "The rime/clear temperature split at about -10 C (WMO) differs in wording from the AIM (low temperature versus at or just below 0 C); both are given.",
+          "Carburettor icing temperature range (up to about 20 C or higher) is not on the AIR 2.3 page shown; the page gives no temperatures."
         ]
       }
     }
