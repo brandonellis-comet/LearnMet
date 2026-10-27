@@ -1308,6 +1308,21 @@
           ]
         },
         {
+          "h": "Polygon warnings (from August 2026)"
+        },
+        {
+          "list": [
+            "ECCC now issues severe thunderstorm and tornado warnings to only the area most likely to see the highest impacts, outlined by a shape called a polygon. News reports date the start to 11 August 2026; ECCC's backgrounder is dated 12 August 2026.",
+            "As a storm moves, forecasters can reshape, split or merge the polygon, which triggers notifications along its path. Overlapping warnings for different threats are possible.",
+            "Only those two warning types use polygons. Other alerts such as rain and heat, and severe thunderstorm and tornado watches, stay on the broader predetermined alert zones. Rollout is gradual.",
+            "Warning text is semi-automated and produced in English and French at the same time.",
+            "Alert Ready (TV, radio, wireless) is issued only for tornado warnings and for severe thunderstorm warnings with wind gusts of 130 km/h or more or hail of 7 cm (baseball size) or more. Wireless alerts target recipients by polygon.",
+            "WeatherCAN: on Android, notifications only when you or a saved location is inside the polygon. On Apple devices, notifications also when a polygon is within your alert zone even if you are outside; these say 'nearby'.",
+            "ECCC shares polygon data and zone data with alerting partners so third-party apps can transition on their own schedules.",
+            "The colour system from November 2025 is unchanged."
+          ]
+        },
+        {
           "note": "Colour is impact plus confidence. A colour on a warning, advisory or watch tells you the level of impact possible in your area."
         }
       ],
@@ -1820,6 +1835,50 @@
           ],
           "a": 0,
           "e": "ECCC MetNotes page."
+        },
+        {
+          "q": "Which ECCC warnings use polygons (from August 2026)?",
+          "c": [
+            "Severe thunderstorm and tornado warnings",
+            "All warnings",
+            "Heat and rain warnings",
+            "Winter storm warnings"
+          ],
+          "a": 0,
+          "e": "ECCC backgrounder, 12 Aug 2026."
+        },
+        {
+          "q": "Do severe thunderstorm and tornado watches use polygons?",
+          "c": [
+            "No; they remain zone-based",
+            "Yes",
+            "Only at night",
+            "Only in the Prairies"
+          ],
+          "a": 0,
+          "e": "ECCC: watches remain zone-based."
+        },
+        {
+          "q": "For which severe thunderstorm warnings does ECCC issue Alert Ready alerts?",
+          "c": [
+            "Wind gusts of 130 km/h or more, or hail of 7 cm or more",
+            "Any severe thunderstorm warning",
+            "Gusts of 90 km/h or more",
+            "Hail of 2 cm or more"
+          ],
+          "a": 0,
+          "e": "ECCC backgrounder. Alert Ready is also issued for tornado warnings."
+        },
+        {
+          "q": "What can forecasters do with a polygon as a storm moves?",
+          "c": [
+            "Reshape, split or merge it",
+            "Nothing; it is fixed at issue",
+            "Only delete it",
+            "Only extend it by 1 hour"
+          ],
+          "a": 0,
+          "e": "ECCC backgrounder."
         }
       ],
       "verified": {
@@ -1836,11 +1895,15 @@
           "ECCC canada.ca How we choose weather alert colours (screenshots supplied by the user, 2026-10-27): Alert Colour Matrix figure, levels of impact, factors, forecast confidence",
           "ECCC, Weather Alerts (canada.ca/en/services/environment/weather/severeweather/weather-alerts.html), fetched 2026-10-27: definitions of warning, watch, advisory and special weather statement; three alert types; statements not colour-coded",
           "The Weather Network, 26 Nov 2025 (secondary): statements have no colour code; confirms ECCC wording",
-          "ECCC MetNotes page (canada.ca, screenshots supplied by the user, 2026-10-27): purpose, valid time, location, notifications"
+          "ECCC MetNotes page (canada.ca, screenshots supplied by the user, 2026-10-27): purpose, valid time, location, notifications",
+          "ECCC backgrounder, New targeted warnings for severe thunderstorms and tornadoes (canada.ca, 12 Aug 2026), fetched 2026-10-27",
+          "CP24 and Global News, 11 Aug 2026 (secondary): polygon system start, scope, unchanged colour system"
         ],
         "unverified": [
           "The selected-areas list is from March 2016 and may have changed. The sheet does not say which areas.",
-          "How regional offices apply criteria in practice: not in public sources read."
+          "How regional offices apply criteria in practice: not in public sources read.",
+          "Canadian Press article link supplied by the user could not be fetched; the CP24 and Global News versions were read instead.",
+          "Whether the Alert Ready thresholds (130 km/h, 7 cm) apply to Alert Ready only or also define the warning criteria: criteria for issuing the warning itself are not given."
         ]
       }
     }
