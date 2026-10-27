@@ -2545,6 +2545,430 @@
           "Sig Wx symbol shapes (turbulence, icing, tropical cyclone) were seen in screenshots but are not described in text here. Volcanic ash and radioactive release symbols are not taught. The Upper-Level chart (FL250 to FL600) is from the NAV CANADA guide only; MANAIR Ch. 7 covers CAN and NAT charts."
         ]
       }
+    },
+    {
+      "title": "MANAIR definitions (Chapter 8)",
+      "lesson": [
+        "MANAIR Chapter 8 defines the terms the manual uses. The manual notes they may not suit general use, so some differ from everyday meaning. This topic paraphrases them. The wording in the manual itself is the reference.",
+        {
+          "h": "Products and reports"
+        },
+        {
+          "list": [
+            "TAF and aerodrome advisory: both are in TAF code. An advisory is for aerodromes that do not fully meet ECCC observing standards.",
+            "METAR is actual weather at a place and time, normally on the hour. SPECI is issued when a significant change is observed.",
+            "GFA: chart forecast of the most probable conditions from the surface to 24,000 ft. SIGMET and AIRMET: MWO messages on specified hazardous weather. An AIRMET covers weather not already in the GFA.",
+            "Forecast, prognostic chart and PIREP round out the product terms (see the term list)."
+          ]
+        },
+        {
+          "h": "Height and airspace terms"
+        },
+        {
+          "list": [
+            "Altitude is measured from mean sea level; height is measured from a specified datum such as the ground.",
+            "Flight level is hundreds of feet on the 1013.25 hPa (29.92 inHg) datum, so it is not necessarily true altitude.",
+            "Canada's AOR is the seven domestic FIRs plus the Gander Oceanic FIR/CTA. A FIR extends upward from the surface; a CTA is controlled airspace extending upward from a specified height."
+          ]
+        },
+        {
+          "h": "Ceiling"
+        },
+        "Ceiling is the lesser of two heights: the base of the lowest cloud layer whose summation amount is more than 4/8 of the sky, or the vertical visibility in a surface-based layer that completely obscures the sky.",
+        {
+          "note": "Do not mix up period of validity (the span a forecast covers), period of coverage (the span a TAF program covers daily) and part-period (a segment of the validity period)."
+        },
+        {
+          "h": "Organizations"
+        },
+        {
+          "list": [
+            "ECCC: federal department providing meteorological information to Canadians. MSC is its component that provides science, policy and service support, coordinates national standards for the aviation weather program for TC and NAV CANADA, and prepares aviation products for DND.",
+            "NAV CANADA: private, non-share capital corporation that owns and runs Canada's civil air navigation system. It is responsible for aviation weather services in Canadian airspace, specifies where and how often observations and forecasts are made, and disseminates them.",
+            "Transport Canada (TC): federal regulator of civil aviation. CARs: rules under the Aeronautics Act, in force since 10 October 1996.",
+            "DND: department with authority and responsibility to provide and arrange meteorological services for military aviation operations and training.",
+            "ICAO: UN specialized agency developing principles and techniques of international air navigation. WMO: UN specialized agency, the UN system's authoritative voice on the atmosphere."
+          ]
+        },
+        {
+          "h": "Forecast service roles"
+        },
+        {
+          "list": [
+            "An MWO keeps a continuous watch over its area and is responsible for SIGMET, AIRMET and information on volcanic activity and radioactive release. A CMAC fulfils the MWO role.",
+            "CCMEP supplies analyses and NWP guidance to the forecast production centres.",
+            "An AMF is a meteorologist meeting the WMO-No. 1083 competency standards for aeronautical meteorology, continuously and actively responsible for the content of an aviation forecast service."
+          ]
+        }
+      ],
+      "terms": [
+        [
+          "Aerodrome forecast (TAF)",
+          "Forecast in TAF code for a designated aerodrome, usually routine: a concise statement of expected conditions for a specified period."
+        ],
+        [
+          "Aerodrome advisory",
+          "Forecast in TAF code for an aerodrome that does not fully meet ECCC weather observing standards."
+        ],
+        [
+          "METAR",
+          "Aerodrome routine meteorological report: actual conditions at a place and time as observed from the ground. Normally taken and sent on the hour."
+        ],
+        [
+          "SPECI",
+          "Aviation selected special weather report, issued when a weather change significant to aviation is observed."
+        ],
+        [
+          "Graphic Area Forecast (GFA)",
+          "Chart-form forecast of the most probable conditions from the surface to 24,000 ft over an area at a specified time."
+        ],
+        [
+          "SIGMET",
+          "Message from a meteorological watch office warning of occurring or expected specified weather that may affect aircraft safety, and its development in time and space."
+        ],
+        [
+          "AIRMET",
+          "Message from an MWO on specified weather that may affect safety and was not already in the GFA, with its development in time and space."
+        ],
+        [
+          "Prognostic chart",
+          "Forecast of one or more meteorological elements for a specified time or period and surface or airspace, drawn on a chart."
+        ],
+        [
+          "Pilot report (PIREP)",
+          "Report by a pilot of weather conditions encountered in flight."
+        ],
+        [
+          "Ceiling",
+          "Lesser of: height above ground or water of the base of the lowest cloud layer whose summation amount exceeds half the sky (more than 4/8), or the vertical visibility in a surface-based layer that completely obscures the sky."
+        ],
+        [
+          "Flight level (FL)",
+          "Standard nominal altitude in hundreds of feet, calculated from the standard pressure datum 1013.25 hPa (29.92 inHg). Not necessarily true altitude."
+        ],
+        [
+          "Altitude, height, ASL, AGL",
+          "Altitude is vertical distance measured from mean sea level. Height is vertical distance from a specified datum, for example the ground. ASL and AGL give feet above sea level or ground level."
+        ],
+        [
+          "Area of Responsibility (AOR)",
+          "Area where Canada provides aviation weather forecast services to civil aviation: the seven domestic FIRs plus the Gander Oceanic FIR/CTA."
+        ],
+        [
+          "Flight Information Region (FIR)",
+          "Airspace of defined dimensions from the surface upward in which flight information and alerting services are provided."
+        ],
+        [
+          "Control area (CTA)",
+          "Controlled airspace extending upward from a specified height above the surface."
+        ],
+        [
+          "Period of validity",
+          "Span of time a forecast covers (also valid period). A forecast stays valid only until another forecast, amended or cancelled, is issued for the same area or aerodrome."
+        ],
+        [
+          "Period of coverage",
+          "Span of time a TAF program covers daily."
+        ],
+        [
+          "Part-period",
+          "A portion or segment of a forecast's period of validity."
+        ],
+        [
+          "Abbreviated English",
+          "English using approved MSC abbreviations from the Manual of Word Abbreviations (MANAB)."
+        ],
+        [
+          "Plain English",
+          "Non-abbreviated English in a telegraphic format meant to convey weather information to aviation efficiently."
+        ],
+        [
+          "MWO",
+          "Meteorological watch office: keeps continuous watch over conditions affecting flight in its area. Responsible for SIGMET and AIRMET and for information on volcanic activity and radioactive release."
+        ],
+        [
+          "CMAC",
+          "Canadian Meteorological Aviation Centre: produces aviation forecasts and monitors conditions affecting flight in Canada. It fulfils the MWO role."
+        ],
+        [
+          "CCMEP",
+          "Canadian Centre for Meteorological and Environmental Prediction: the MSC component that assimilates weather data and produces analyses, forecasts and NWP guidance."
+        ],
+        [
+          "AMF",
+          "Aeronautical Meteorological Forecaster: a meteorologist meeting at least the WMO-No. 1083 competency standards for aeronautical meteorology who is continuously and actively responsible for the content of an aviation weather forecast service."
+        ],
+        [
+          "WAFS",
+          "World Area Forecast System: satellite broadcast through which World Area Forecast Centres provide aviation weather, supervised by ICAO under Annex 3."
+        ],
+        [
+          "Alternate aerodrome",
+          "Aerodrome an aircraft may go to when it is impossible or inadvisable to proceed to or land at the intended aerodrome."
+        ],
+        [
+          "AWOS",
+          "Automated Weather Observation System: sensors and systems that electronically collect and disseminate meteorological data."
+        ],
+        [
+          "Weather station",
+          "Establishment responsible for observing and reporting weather. May be human, fully automated or both, with complete or partial parameters."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "In MANAIR, how is a ceiling defined?",
+          "c": [
+            "Lowest layer covering more than 4/8, or vertical visibility in a surface-based obscuring layer",
+            "Lowest layer of any cloud, whatever the amount",
+            "Height of the lowest broken layer, ignoring obscuration",
+            "Height of the highest overcast layer in the area"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8: the lesser of the base of the lowest layer with summation amount over 4/8, or vertical visibility in a surface-based layer that completely obscures the sky."
+        },
+        {
+          "q": "MANAIR defines altitude as the vertical distance measured from:",
+          "c": [
+            "Mean sea level",
+            "The aerodrome elevation",
+            "The ground below the aircraft",
+            "The 1013.25 hPa datum"
+          ],
+          "a": 0,
+          "e": "Altitude is from mean sea level. Height is from a specified datum such as the ground."
+        },
+        {
+          "q": "A flight level is calculated from which pressure datum?",
+          "c": [
+            "1013.25 hPa (29.92 inHg)",
+            "1000 hPa",
+            "The local altimeter setting",
+            "The station pressure"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8: standard datum 1013.25 hPa, so FL is not necessarily true altitude."
+        },
+        {
+          "q": "An AIRMET advises of specified weather that:",
+          "c": [
+            "Was not already included in the GFA",
+            "Affects only military aircraft",
+            "Occurs only above FL240",
+            "Is already shown on the Sig Wx chart"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8 AIRMET definition."
+        },
+        {
+          "q": "What is the GFA's vertical coverage in MANAIR's definition?",
+          "c": [
+            "Surface to 24,000 ft",
+            "Surface to 10,000 ft",
+            "FL100 to FL450",
+            "Surface to FL600"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8: the GFA describes the most probable conditions between the surface and 24,000 ft."
+        },
+        {
+          "q": "An aerodrome advisory is issued for an aerodrome that:",
+          "c": [
+            "Does not fully meet ECCC weather observing standards",
+            "Is closed to traffic",
+            "Has no runway",
+            "Is outside Canada"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8. It is in TAF code like a TAF."
+        },
+        {
+          "q": "METAR observations are normally taken and sent:",
+          "c": [
+            "On the hour",
+            "Every 30 minutes at 15 and 45 past",
+            "Every 6 hours",
+            "Only when weather changes"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8. SPECI covers significant changes."
+        },
+        {
+          "q": "When is a SPECI issued, per MANAIR?",
+          "c": [
+            "When a weather change significant to aviation is observed",
+            "At each half hour",
+            "Only on request",
+            "Only when a SIGMET is in force"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8."
+        },
+        {
+          "q": "Which organization is responsible for aviation weather services in Canadian airspace and specifies where observations and forecasts are made?",
+          "c": [
+            "NAV CANADA",
+            "Transport Canada",
+            "DND",
+            "ICAO"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8: NAV CANADA, which also disseminates the information."
+        },
+        {
+          "q": "Which body coordinates national standards for the aviation weather program for TC and NAV CANADA?",
+          "c": [
+            "MSC",
+            "CCMEP",
+            "WMO",
+            "CMAC"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8: MSC, which also prepares aviation products for DND."
+        },
+        {
+          "q": "Which body leads provision of meteorological services for military aviation?",
+          "c": [
+            "DND",
+            "ECCC",
+            "NAV CANADA",
+            "Transport Canada"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8: DND has the authority and responsibility to provide and arrange these services."
+        },
+        {
+          "q": "What does an MWO have responsibility for?",
+          "c": [
+            "SIGMET, AIRMET, and volcanic and radioactive release information",
+            "Issuing TAFs only",
+            "Operating all air traffic control",
+            "Writing the CARs"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8."
+        },
+        {
+          "q": "Which centre fulfils the MWO role in Canada?",
+          "c": [
+            "The CMAC",
+            "The CCMEP",
+            "The AMF",
+            "WAFS"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8: a CMAC fulfils the role of an MWO."
+        },
+        {
+          "q": "CCMEP is the part of MSC that:",
+          "c": [
+            "Assimilates data and produces NWP guidance",
+            "Issues SIGMETs",
+            "Regulates civil aviation",
+            "Runs the air navigation system"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8."
+        },
+        {
+          "q": "MANAIR's Area of Responsibility consists of:",
+          "c": [
+            "The seven domestic FIRs plus the Gander Oceanic FIR/CTA",
+            "All of North America",
+            "Only the Gander Oceanic FIR",
+            "The ten provinces"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8."
+        },
+        {
+          "q": "Period of coverage refers to:",
+          "c": [
+            "The span of time a TAF program covers daily",
+            "The span a forecast encompasses",
+            "A segment of the validity period",
+            "The span between issues of a SIGMET"
+          ],
+          "a": 0,
+          "e": "The span a forecast encompasses is the period of validity. A segment of it is a part-period."
+        },
+        {
+          "q": "A forecast remains valid until:",
+          "c": [
+            "Another forecast is issued for the same area or aerodrome",
+            "Exactly 24 hours pass",
+            "The next METAR",
+            "The next sunrise"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8, period of validity: valid until a regular, amended or cancelled forecast replaces it."
+        },
+        {
+          "q": "MANAB is the:",
+          "c": [
+            "Manual of word abbreviations",
+            "Manual of observing standards",
+            "Manual of aviation forecasts",
+            "Manual of air regulations"
+          ],
+          "a": 0,
+          "e": "MANOBS is the observing standards manual; MANAIR is the aviation forecast manual."
+        },
+        {
+          "q": "Which term means non-abbreviated English in telegraphic format?",
+          "c": [
+            "Plain English",
+            "Abbreviated English",
+            "TAF code",
+            "MANAB"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8."
+        },
+        {
+          "q": "The CARs came into force in:",
+          "c": [
+            "1996",
+            "1976",
+            "2006",
+            "1986"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8: 10 October 1996, replacing the Air Regulations and Air Navigation Orders."
+        },
+        {
+          "q": "An AMF is a meteorologist who:",
+          "c": [
+            "Meets WMO-No. 1083 competencies and is responsible for forecast service content",
+            "Operates the AWOS",
+            "Controls air traffic",
+            "Issues the CARs"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8."
+        },
+        {
+          "q": "Which defines an alternate aerodrome?",
+          "c": [
+            "Where an aircraft may go if landing at the intended aerodrome is impossible or inadvisable",
+            "Any aerodrome with a TAF",
+            "The aerodrome of departure",
+            "An aerodrome used only by helicopters"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 8."
+        }
+      ],
+      "verified": {
+        "date": "2026-10-27",
+        "sources": [
+          "MANAIR 8th ed. Am. 3 (March 2024, full PDF), Chapter 8 Definitions, read in full and paraphrased"
+        ],
+        "unverified": [
+          "The manual states that the definitions may not suit general use. Meanings here apply to MANAIR only; they have not been compared with MANOBS or ICAO Annex 3 wording.",
+          "Definitions are paraphrased, not copied. Crown-copyright wording is in the manual."
+        ]
+      }
     }
   ]
 }
