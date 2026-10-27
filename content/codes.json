@@ -1760,6 +1760,53 @@
           ]
         },
         {
+          "h": "NAV CANADA guide additions"
+        },
+        {
+          "list": [
+            "GFA domains are numbered GFACN31 to GFACN37. GFACN33 is Ontario-Quebec. GFACN37 (the far north) is on request only.",
+            "Flight categories used in the GFA IFR outlook: IFR is ceiling under 1,000 ft AGL or visibility under 3 SM. MVFR is ceiling 1,000 to 3,000 ft AGL or visibility 3 to 5 SM. VFR is ceiling above 3,000 ft AGL and visibility above 5 SM.",
+            "The IFR outlook covers an additional 12 hours beyond the GFA valid period.",
+            "Surface-based layers use OBSCD: LCL OBSCD CIG 3-5 AGL means local obscured ceilings between 300 and 500 ft AGL.",
+            "Obstructions to vision are mentioned only when visibility is forecast to be 6 SM or less. Visibility may be given as a range, for example 2-4 SM -SHRA.",
+            "Dashed orange encloses obscuring phenomena other than precipitation (for example haze). Dashed red encloses intermittent freezing precipitation.",
+            "Turbulence depiction: red outline; light positive cross-hatching is moderate low-level, dense positive is severe low-level, light negative is moderate high-level, dense negative is severe high-level.",
+            "Freezing level contours are dashed, starting at SFC and at 2,500 ft intervals (the guide describes them as red; MANAIR text says only 'dashed')."
+          ]
+        },
+        {
+          "h": "Where the NAV CANADA guide and MANAIR differ"
+        },
+        {
+          "list": [
+            "Surface wind: the guide says wind is included only if 20 kt or more, or gusts to 30 kt or more. MANAIR 4.9.1.5 says barbs for mean wind of 20 kt or more, with gusts shown when 10 kt or more above the mean. MANAIR (2024) is the newer standard.",
+            "Cloud layers: the guide says summation amount is not used and each organized layer is considered individually. MANAIR says layers less than 2,000 ft apart are combined and marked LYRS. MANAIR is the newer standard.",
+            "Slow-moving fronts: the guide's example uses QS (quasi-stationary) when movement is under 5 kt; MANAIR uses STNR.",
+            "Turbulence cause labels: the guide lists MECH, LLWS, LEE WV, LLJ, CAT; MANAIR lists MECH, L LVL WS, MTW (the 2026 AIM uses LEE WV), L LVL JET, CAT."
+          ]
+        },
+        {
+          "h": "Significant weather (Sig Wx) prognostic charts (NAV CANADA guide)"
+        },
+        {
+          "list": [
+            "Mid-Level Sig Wx: FL100 to FL250 (700 to 400 mb). Upper-Level Sig Wx: FL250 to FL600 (400 to 70 mb). North Atlantic Sig Wx: surface to FL250.",
+            "Jet stream on the Upper-Level chart carries two numbers: the first is the forecast depth above the jet maximum, preceded by plus; the second is the depth below it, preceded by minus.",
+            "Symbols include: moderate and severe turbulence, light, moderate and severe icing, thunderstorm, severe line squall, tropical storm, hurricane, and dust or sand storm. An abbreviation for turbulence or icing type goes below the symbol (for example CAT or MXD).",
+            "Cloud bases and tops are shown as in the GFA convention. Sig Wx front symbols include warm front, cold front, occlusion, quasi-stationary front, upper trough, trough line, trough of warm air aloft, and the 0 C isotherm height in hundreds of feet."
+          ]
+        },
+        {
+          "h": "US differences (NAV CANADA guide)"
+        },
+        {
+          "list": [
+            "The US produces convective SIGMETs and Center Weather Advisories.",
+            "The US area forecast (FA) is valid 12 hours with an additional 6-hour outlook and uses a low IFR (LIFR) category: ceilings under 500 ft or visibility under 1 SM.",
+            "Transcribed Weather Broadcasts (TWEB) are extensively used in the US."
+          ]
+        },
+        {
           "note": "Always check current SIGMETs and AIRMETs together with the GFA. Both amend it automatically."
         }
       ],
@@ -2156,17 +2203,119 @@
           ],
           "a": 0,
           "e": "MANAIR C.3."
+        },
+        {
+          "q": "Which GFA domain covers Ontario and Quebec?",
+          "c": [
+            "GFACN33",
+            "GFACN31",
+            "GFACN35",
+            "GFACN37"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide: the GFACN33 title box reads Ontario-Quebec."
+        },
+        {
+          "q": "Which GFA domain is issued on request only?",
+          "c": [
+            "GFACN37",
+            "GFACN31",
+            "GFACN34",
+            "GFACN36"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide map."
+        },
+        {
+          "q": "Under the GFA flight categories, MVFR is:",
+          "c": [
+            "Ceiling 1,000 to 3,000 ft AGL or visibility 3 to 5 SM",
+            "Ceiling under 1,000 ft AGL",
+            "Ceiling above 3,000 ft AGL and visibility above 5 SM",
+            "Visibility under 3 SM only"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide IFR outlook table."
+        },
+        {
+          "q": "In the GFA IFR outlook, IFR means:",
+          "c": [
+            "Ceiling under 1,000 ft AGL or visibility under 3 SM",
+            "Ceiling under 500 ft or visibility under 1 SM",
+            "Ceiling under 3,000 ft and visibility under 5 SM",
+            "Any precipitation"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide. LIFR is a US category, ceilings under 500 ft or visibility under 1 SM."
+        },
+        {
+          "q": "What does LCL OBSCD CIG 3-5 AGL mean?",
+          "c": [
+            "Local obscured ceilings between 300 and 500 ft AGL",
+            "Locally 3 to 5 SM visibility",
+            "Local ceilings of 3,000 to 5,000 ft",
+            "A cloud layer at 3 to 5 oktas"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide."
+        },
+        {
+          "q": "What does a dashed orange border mean in the NAV CANADA guide?",
+          "c": [
+            "Obscuring phenomena other than precipitation (for example haze)",
+            "Continuous precipitation",
+            "Freezing precipitation",
+            "Icing"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide border key."
+        },
+        {
+          "q": "On the Upper-Level Sig Wx chart, how is jet stream depth shown?",
+          "c": [
+            "A plus number for depth above the maximum and a minus number for depth below",
+            "One number for the total depth",
+            "Only the speed",
+            "Colour only"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide."
+        },
+        {
+          "q": "Which flight levels does the Mid-Level Sig Wx chart cover?",
+          "c": [
+            "FL100 to FL250 (700 to 400 mb)",
+            "FL250 to FL600",
+            "Surface to FL100",
+            "FL450 to FL600"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide. Upper-Level is FL250 to FL600 (400 to 70 mb)."
+        },
+        {
+          "q": "Which is a US difference listed by NAV CANADA?",
+          "c": [
+            "The US produces convective SIGMETs and Center Weather Advisories",
+            "The US has no area forecast",
+            "The US does not report visibility",
+            "The US uses kilometres for visibility"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide, US Differences."
         }
       ],
       "verified": {
         "date": "2026-10-27",
         "sources": [
           "MANAIR 8th ed. Am. 3 (March 2024, full PDF): Ch. 3 (FB), Ch. 4 (GFA), Ch. 5 (SIGMET), Ch. 6 (AIRMET) and Appendices D and E tables",
-          "MANAIR 8th ed. Am. 3 Appendix C.2 and C.3 symbol pages (rendered and read as images, 2026-10-27)"
+          "MANAIR 8th ed. Am. 3 Appendix C.2 and C.3 symbol pages (rendered and read as images, 2026-10-27)",
+          "NAV CANADA Aviation Weather Services Guide, GFA, Sig Wx and US differences pages (screenshots supplied by the user, 2026-10-27; edition date not shown, example charts dated 2002 and 2009)"
         ],
         "unverified": [
           "WS SIGMET coordinate and text formats, WMO headers and FIR letter rules are not taught here.",
-          "Sig Wx prognostic charts (MANAIR Ch. 7) have no lesson yet."
+          "Sig Wx prognostic charts (MANAIR Ch. 7) have no lesson yet.",
+          "The NAV CANADA guide edition date was not shown; where it differs from MANAIR 2024 (wind and gust criteria, layer summation, QS versus STNR, freezing level colour, turbulence labels), MANAIR is treated as the current standard.",
+          "MANAIR Chapter 7 (Sig Wx charts) was not used for the Sig Wx block; the block comes from the NAV CANADA guide only."
         ]
       }
     }
