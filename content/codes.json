@@ -873,7 +873,7 @@
         {
           "h": "Reading wind from the chart"
         },
-        "Isobar spacing gives a rough guide to wind speed. Winds blow roughly parallel to the isobars, slightly across them toward lower pressure near the surface. Low pressure on the left in the Northern Hemisphere.",
+        "Isobar spacing gives a rough guide to wind speed. Winds blow roughly parallel to the isobars, slightly across them toward lower pressure near the surface. Low pressure on the left in the Northern Hemisphere. NAV CANADA guide: winds tend to veer and increase with altitude, and above about 3,000 ft AGL they blow roughly parallel to the isobars. Fronts advance in the direction of the barbs or semicircles. A front that is not advancing is quasi-stationary. A trowal is a trough of warm air aloft.",
         {
           "h": "GFA symbols (MANAIR C.2)"
         },
@@ -1107,6 +1107,17 @@
           ],
           "a": 0,
           "e": "MANAIR C.2."
+        },
+        {
+          "q": "In the NAV CANADA guide, what is a TROWAL?",
+          "c": [
+            "A trough of warm air aloft",
+            "A trough of cold air at the surface",
+            "A warm front at the surface",
+            "A dissipating cold front"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide, surface analysis chart page."
         }
       ],
       "verified": {
@@ -1114,7 +1125,8 @@
         "sources": [
           "NAV CANADA Aviation Weather Services Guide (2017): isobars at 4 hPa from 1000 hPa, analysis times, cold and warm front symbols, SLP decoding rule",
           "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.1.4 (GFA isobars solid black, every 4 hPa from 1000 hPa)",
-          "MANAIR 8th ed. Am. 3 Appendix C.2 and C.3 symbol pages (rendered and read as images, 2026-10-27)"
+          "MANAIR 8th ed. Am. 3 Appendix C.2 and C.3 symbol pages (rendered and read as images, 2026-10-27)",
+          "NAV CANADA Aviation Weather Services Guide, Surface Analysis Chart page (screenshot supplied by the user, 2026-10-27): 4 times daily at 00, 06, 12, 18Z; isobars 4 hPa from 1000 hPa; winds above 3,000 ft AGL roughly parallel to isobars; trowal definition. Example chart dated 2003."
         ],
         "unverified": [
           "Occluded fronts do not appear in the GFA symbol list; colours for occluded fronts on other analysis charts are not confirmed here.",
@@ -1126,7 +1138,7 @@
     {
       "title": "Upper-air charts (850, 700, 500, 250 hPa)",
       "lesson": [
-        "Upper-air charts are drawn for constant pressure levels, prepared twice daily at 00 and 12 UTC. They show geopotential height (the height at which that pressure is found), temperature, dew point depression and wind.",
+        "Upper-air charts are drawn for constant pressure levels, prepared twice daily at 00 and 12 UTC. They show geopotential height (the height at which that pressure is found), temperature, dew point depression and wind. Data come from radiosonde balloons, supplemented by aircraft reports and, in remote regions, satellite-derived winds (NAV CANADA guide).",
         {
           "list": [
             "850 hPa (about 1,500 m, 5,000 ft ASL): low-level temperature and moisture. Warm and cold advection, the 0 C line, low-level jets, and rain versus snow guidance.",
@@ -1140,6 +1152,7 @@
         },
         {
           "list": [
+            "Each chart is for one pressure level. What varies is the height of that level: it is lower where the air is cold and dense and higher where it is warm. Contours join points of equal height and are analysed like isobars: the closer the spacing, the stronger the wind.",
             "Height contours (in decametres, dam). Flow is parallel to the contours with low heights on the left in the Northern Hemisphere.",
             "Wind crossing isotherms: if wind blows from warm toward cold, there is warm advection. Cold toward warm is cold advection.",
             "Dew point depression (temperature minus dew point): a small value (for example 3 C or less) means moist, probably cloud.",
@@ -1285,12 +1298,35 @@
           ],
           "a": 0,
           "e": "850 hPa temperatures are used for precipitation-type guidance."
+        },
+        {
+          "q": "On a constant pressure chart, the height of the pressure level is lower where the air is:",
+          "c": [
+            "Cold and dense",
+            "Warm and light",
+            "Moist and unstable",
+            "Dry and calm"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide: cold, dense air gives a lower pressure-level height than warm, less dense air."
+        },
+        {
+          "q": "Which data feed the upper-air (constant pressure) analyses in the NAV CANADA guide?",
+          "c": [
+            "Radiosondes, plus aircraft reports and satellite winds",
+            "Surface stations only",
+            "Radar echoes only",
+            "Pilot forecasts only"
+          ],
+          "a": 0,
+          "e": "NAV CANADA guide: radiosonde data supplemented by aircraft reports and satellite-derived winds in remote regions."
         }
       ],
       "verified": {
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "sources": [
-          "NAV CANADA Aviation Weather Services Guide (2017): constant pressure charts at 00Z and 12Z; 850 hPa 5,000 ft, 700 hPa 10,000 ft, 500 hPa 18,000 ft, 250 hPa 34,000 ft ASL; contour spacing and wind speed"
+          "NAV CANADA Aviation Weather Services Guide (2017): constant pressure charts at 00Z and 12Z; 850 hPa 5,000 ft, 700 hPa 10,000 ft, 500 hPa 18,000 ft, 250 hPa 34,000 ft ASL; contour spacing and wind speed",
+          "NAV CANADA Aviation Weather Services Guide, Upper Air Analysis Charts page (screenshot supplied by the user, 2026-10-27): levels and heights, 00Z/12Z, data sources, contour behaviour"
         ],
         "unverified": [
           "Chart-reading tips (advection, dew point depression, use of each level) are standard practice, not checked in a fetched source."
@@ -1786,14 +1822,24 @@
           ]
         },
         {
-          "h": "Significant weather (Sig Wx) prognostic charts (NAV CANADA guide)"
+          "h": "Significant weather (Sig Wx) prognostic charts (MANAIR Ch. 7, NAV CANADA guide)"
         },
         {
           "list": [
-            "Mid-Level Sig Wx: FL100 to FL250 (700 to 400 mb). Upper-Level Sig Wx: FL250 to FL600 (400 to 70 mb). North Atlantic Sig Wx: surface to FL250.",
-            "Jet stream on the Upper-Level chart carries two numbers: the first is the forecast depth above the jet maximum, preceded by plus; the second is the depth below it, preceded by minus.",
-            "Symbols include: moderate and severe turbulence, light, moderate and severe icing, thunderstorm, severe line squall, tropical storm, hurricane, and dust or sand storm. An abbreviation for turbulence or icing type goes below the symbol (for example CAT or MXD).",
-            "Cloud bases and tops are shown as in the GFA convention. Sig Wx front symbols include warm front, cold front, occlusion, quasi-stationary front, upper trough, trough line, trough of warm air aloft, and the 0 C isotherm height in hundreds of feet."
+            "Purpose: Sig Wx charts show the most probable forecast conditions over large areas and are designed mainly for preflight planning. The CMACs issue two: the Canadian chart (CAN SIG WX) and the North Atlantic chart (NAT SIG WX). The GFA is a separate product.",
+            "CAN SIG WX (MANAIR 7.3.1): mid-levels, 700 to 400 hPa (FL100 to FL240). Issued four times a day at about 0210, 0815, 1425 and 1940 UTC, valid 12, 18, 00 and 06 UTC (about 10 hours ahead). Covers the seven GFA domains.",
+            "NAT SIG WX (MANAIR 7.3.2): surface to 400 hPa (surface to FL240). Valid 00 and 12 UTC, transmitted at about 1315 and 0115 UTC. Covers north-eastern North America, the North Atlantic between 30 and 70 degrees north (including Greenland) and part of western Europe.",
+            "Units and map: speeds in knots, heights in hundreds of feet, pressure in hPa, times in UTC. Polar stereographic projection true at 60 degrees north (WMO No. 49 requirement). Background shows provincial, federal and territorial boundaries, oceans, coastlines and major lakes.",
+            "Content: surface pressure centres and fronts, areas of significant cloud, turbulence and icing, and freezing levels. Tropical cyclones, volcanic ash and radioactive releases are added when applicable.",
+            "Cloud: scalloped outline labelled NCC hh/hh. N is BKN or OVC. CC is the cloud type, or LYR for several layers. hh/hh is the top and base in hundreds of feet ASL. XX means the base is below the 700 hPa level.",
+            "Turbulence: a symbol (moderate or severe) with hh/hh top and base. A turbulence forecast means more than 50% chance of encountering turbulence somewhere in the area.",
+            "Icing: a symbol (moderate or severe) with hh/hh top and base, XX for a base below 700 hPa.",
+            "CB, thunderstorms, TCU and ACC automatically imply moderate or severe turbulence and icing. Where one is forecast, no turbulence or icing symbol is used.",
+            "Freezing levels: dashed lines every 5,000 ft, labelled in hundreds of feet ASL.",
+            "Pressure centres: L or H with central pressure in hPa. Tropical cyclones: a tropical storm symbol or a filled hurricane symbol with the official name.",
+            "Motion: the mean direction and speed (kt) of pressure centres, fronts and trowals is added when the speed is above 5 kt. Values are six-hour means centred on the valid time.",
+            "NAV CANADA guide only: Upper-Level Sig Wx covers FL250 to FL600 (400 to 70 mb). Jet stream depth is shown as a plus number (depth above the maximum) and a minus number (depth below). Its symbol list also names thunderstorm, severe line squall, and dust or sand storm, and a CAT or MXD abbreviation under turbulence or icing symbols.",
+            "MANAIR gives the mid-level and North Atlantic tops as FL240 (400 hPa). The NAV CANADA guide gives FL250. MANAIR 2024 is treated as the current standard."
           ]
         },
         {
@@ -2284,13 +2330,13 @@
         {
           "q": "Which flight levels does the Mid-Level Sig Wx chart cover?",
           "c": [
-            "FL100 to FL250 (700 to 400 mb)",
-            "FL250 to FL600",
-            "Surface to FL100",
-            "FL450 to FL600"
+            "FL100 to about FL240 (700 to 400 hPa)",
+            "FL250 to FL600 (400 to 70 hPa)",
+            "Surface to FL100 (1000 to 700 hPa)",
+            "FL450 to FL600 (150 to 70 hPa)"
           ],
           "a": 0,
-          "e": "NAV CANADA guide. Upper-Level is FL250 to FL600 (400 to 70 mb)."
+          "e": "MANAIR 7.3.1.1: 700 to 400 hPa, FL100 to FL240 (the guide says FL250). Upper-Level (guide only) is FL250 to FL600."
         },
         {
           "q": "Which is a US difference listed by NAV CANADA?",
@@ -2302,6 +2348,105 @@
           ],
           "a": 0,
           "e": "NAV CANADA guide, US Differences."
+        },
+        {
+          "q": "At roughly what times is the CAN SIG WX issued?",
+          "c": [
+            "0210, 0815, 1425 and 1940 UTC",
+            "0000, 0600, 1200 and 1800 UTC",
+            "0530, 1130, 1730 and 2330 UTC",
+            "0100, 0700, 1300 and 1900 UTC"
+          ],
+          "a": 0,
+          "e": "MANAIR 7.3.1.2. Valid 12, 18, 00 and 06 UTC, about 10 hours later."
+        },
+        {
+          "q": "A Sig Wx chart shows a turbulence symbol over an area. What does that forecast imply?",
+          "c": [
+            "More than 50% chance of turbulence somewhere in the area",
+            "Turbulence everywhere in the area",
+            "Severe turbulence only",
+            "Turbulence only at the area edges"
+          ],
+          "a": 0,
+          "e": "MANAIR 7.3.1.6: more than 50% chance of encountering turbulence somewhere within the area."
+        },
+        {
+          "q": "On the CAN SIG WX, CB is forecast in an area. What applies to turbulence and icing?",
+          "c": [
+            "Moderate or severe turbulence and icing are implied; no symbol is drawn",
+            "Only light turbulence is implied",
+            "Turbulence is implied but icing is not",
+            "A separate turbulence symbol is always added"
+          ],
+          "a": 0,
+          "e": "MANAIR 7.3.1.6 notes: CB, thunderstorms, TCU or ACC automatically imply moderate or severe turbulence and icing."
+        },
+        {
+          "q": "On a Sig Wx cloud label, what does XX mean as a base?",
+          "c": [
+            "Base below the 700 hPa level",
+            "Base at the surface",
+            "Base unknown",
+            "Base above 400 hPa"
+          ],
+          "a": 0,
+          "e": "MANAIR 7.3.1.6: XX indicates a base below the 700 hPa level."
+        },
+        {
+          "q": "How are freezing levels drawn on the Sig Wx charts?",
+          "c": [
+            "Dashed lines every 5,000 ft labelled in hundreds of feet ASL",
+            "Solid lines every 1,000 ft in metres",
+            "Dotted lines every 2,000 ft in AGL",
+            "Shaded bands labelled in degrees"
+          ],
+          "a": 0,
+          "e": "MANAIR 7.3.1.6 item 4."
+        },
+        {
+          "q": "When is forecast motion added to a pressure centre or front on a Sig Wx chart?",
+          "c": [
+            "When the speed is above 5 kt",
+            "Always",
+            "Only above 15 kt",
+            "Only for lows"
+          ],
+          "a": 0,
+          "e": "MANAIR 7.3.1.6 note. Direction and speed are six-hour means centred at the valid time."
+        },
+        {
+          "q": "When is the NAT SIG WX valid?",
+          "c": [
+            "00 and 12 UTC",
+            "06 and 18 UTC",
+            "00, 06, 12 and 18 UTC",
+            "12 UTC only"
+          ],
+          "a": 0,
+          "e": "MANAIR 7.3.2.2. Transmitted at about 1315 and 0115 UTC."
+        },
+        {
+          "q": "Which map projection do the Sig Wx charts use?",
+          "c": [
+            "Polar stereographic true at 60 degrees north",
+            "Mercator true at the equator",
+            "Lambert conformal at 45 degrees north",
+            "Plate carree"
+          ],
+          "a": 0,
+          "e": "MANAIR 7.3.1.5, per WMO No. 49 Volume II."
+        },
+        {
+          "q": "In a Sig Wx cloud label NCC hh/hh, what does LYR in place of CC mean?",
+          "c": [
+            "Multiple vertical cloud layers",
+            "Layered stratus only",
+            "Low cloud with rain",
+            "A lifting layer"
+          ],
+          "a": 0,
+          "e": "MANAIR 7.3.1.6: CC is the cloud type, or LYR for multiple vertical layers."
         }
       ],
       "verified": {
@@ -2309,13 +2454,13 @@
         "sources": [
           "MANAIR 8th ed. Am. 3 (March 2024, full PDF): Ch. 3 (FB), Ch. 4 (GFA), Ch. 5 (SIGMET), Ch. 6 (AIRMET) and Appendices D and E tables",
           "MANAIR 8th ed. Am. 3 Appendix C.2 and C.3 symbol pages (rendered and read as images, 2026-10-27)",
-          "NAV CANADA Aviation Weather Services Guide, GFA, Sig Wx and US differences pages (screenshots supplied by the user, 2026-10-27; edition date not shown, example charts dated 2002 and 2009)"
+          "NAV CANADA Aviation Weather Services Guide, GFA, Sig Wx and US differences pages (screenshots supplied by the user, 2026-10-27; edition date not shown, example charts dated 2002 and 2009)",
+          "MANAIR 8th ed. Am. 3 Chapter 7 (7.1 to 7.3.2.6, Figures 8 and 9; page screenshots supplied by the user, 2026-10-27)"
         ],
         "unverified": [
           "WS SIGMET coordinate and text formats, WMO headers and FIR letter rules are not taught here.",
-          "Sig Wx prognostic charts (MANAIR Ch. 7) have no lesson yet.",
           "The NAV CANADA guide edition date was not shown; where it differs from MANAIR 2024 (wind and gust criteria, layer summation, QS versus STNR, freezing level colour, turbulence labels), MANAIR is treated as the current standard.",
-          "MANAIR Chapter 7 (Sig Wx charts) was not used for the Sig Wx block; the block comes from the NAV CANADA guide only."
+          "Sig Wx symbol shapes (turbulence, icing, tropical cyclone) were seen in screenshots but are not described in text here. Volcanic ash and radioactive release symbols are not taught. The Upper-Level chart (FL250 to FL600) is from the NAV CANADA guide only; MANAIR Ch. 7 covers CAN and NAT charts."
         ]
       }
     }
