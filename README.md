@@ -8,14 +8,14 @@ Live at `https://brandonellis-comet.github.io/LearnMet/` once GitHub Pages is en
 | Tab | Purpose |
 |-----|---------|
 | Home | Overall progress, exam status, next lesson, missed-question review |
-| Study | 9 domains, 48 topics. Open a lesson, take a quiz, set your level, keep notes |
+| Study | 9 domains, 51 topics. Open a lesson, take a quiz, set your level, keep notes |
 | Tests | Weak-area drill (15 questions from your weakest topics, missed ones first), decoding drills (10 generated METAR or TAF questions, answers after each) and one test per domain. 15 questions, answers shown at the end. Pass mark 75% |
 | Exam | Quarterly exam. 40 questions across all domains, weighted by domain size. Timed (elapsed). Pass mark 75% |
 | Links | Verified free public sources (ECCC, NAV CANADA, Transport Canada, WMO, NOAA, MetEd). Also shown as Further reading on each lesson |
 | Stats | Attempt history, backup (Export / Import) |
 
 Decoding drills are generated on the fly from random practice reports (not real observations) and do not affect topic levels or the review pool.
-Content: 48 lessons and 528 questions (11 per topic) in `content/`. A topic quiz draws 6 of the topic's questions, favouring ones you have not seen or have missed.
+Content: 51 lessons and 833 questions in `content/` (the number per topic varies). A topic quiz draws 6 of the topic's questions, favouring ones you have not seen or have missed.
 
 ## How scoring feeds the tracker
 
@@ -63,10 +63,15 @@ The app must be served over http. Opening `index.html` directly from a file will
 
 ## Accuracy
 
-All nine domains were checked against public sources on 2026-10-26 (first pass). Many sources are US or university material, and some items remain unconfirmed. Each lesson lists what was checked and what was not. See `VERIFICATION.md` for corrections and open items.
+Content was written by Claude as a study aid and is checked against public sources only. It is not an official reference. Each lesson page lists what was checked and what was not confirmed, and those notices stay until the owner removes them.
 
-Content was written by Claude as a study aid. It has not been checked against the official CFS Met course, MANOBS, or ECCC/NAV CANADA documents.
-Items most likely to differ from official sources: cloud level heights, ECCC alert criteria (they vary by region), TAF and METAR details, model resolutions.
+Status as of 2026-10-27 (details in `VERIFICATION.md`):
+- Checked against the Canadian manuals and official pages: METAR and TAF (MANOBS, MANAIR), GFA, SIGMET, AIRMET, winds aloft and Sig Wx charts (MANAIR), turbulence, wind shear and icing (MANAIR, TC AIM), ECCC alerts and Impact Guides, radar (ECCC), the NAV CANADA product tables and observation programs.
+- First pass only: foundations, wind, air masses and synoptic, plus parts of moisture, severe and applied. Many of those sources are US or university material.
+- Station model layout and isobar label convention are confirmed from US sources only.
+- Not used or checked: the official CFS Met course, military and briefing material (no public source), and anything controlled.
+- Where the NAV CANADA guide and MANAIR differ, the lesson says so and MANAIR (March 2024) is treated as the standard.
+
 When a lesson disagrees with your course material, trust the course material and correct the lesson file.
 
 ## Links
