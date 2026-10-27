@@ -1091,7 +1091,7 @@
         },
         {
           "list": [
-            "Carburettor icing: can occur at outside temperatures well above freezing (up to about 20 C or higher) with high humidity, because vaporization and pressure drop cool the carburettor.",
+            "Carburettor icing: can occur well above freezing in humid air, because vaporization and pressure drop cool the carburettor. The AIM chart (Figure 2.2) shows the temperature and relative humidity range that could induce it; its icing zones reach well above 0 C at high humidity.",
             "Frost on the ground: forms by deposition when the surface is below 0 C. Must be removed before takeoff."
           ]
         },
@@ -1145,7 +1145,9 @@
             "A common cause of general aviation accidents. Fuel-injected engines have very few induction system icing accidents.",
             "Most carburettor icing engine failures happen during normal cruise, possibly because pilots forget it can occur at high power settings as well as in descents with reduced power.",
             "Most accidents involve a pilot who did not fully understand the aircraft's carburettor heat system. Systems differ, so an AME on type can explain it.",
-            "When carburettor heat is applied, expect a rough-running engine for a minute or so as the ice melts, loosens and is ingested."
+            "When carburettor heat is applied, expect a rough-running engine for a minute or so as the ice melts, loosens and is ingested.",
+            "AIM Figure 2.2 intensity key: serious icing at any power; moderate icing at cruise power and serious at descent power; serious icing at descent power; light icing at cruise or descent power.",
+            "The chart is not valid when operating on MOGAS. MOGAS is more volatile and more susceptible to carburettor icing; in severe cases ice may form at OATs up to 20 C higher than with AVGAS."
           ]
         },
         {
@@ -1524,6 +1526,28 @@
           ],
           "a": 0,
           "e": "AIM AIR 2.3."
+        },
+        {
+          "q": "Is the AIM carburettor icing chart valid when operating on MOGAS?",
+          "c": [
+            "No; MOGAS is more susceptible and ice may form at OATs up to 20 C higher than with AVGAS",
+            "Yes, identical to AVGAS",
+            "Only below 0 C",
+            "Only at cruise power"
+          ],
+          "a": 0,
+          "e": "AIM AIR 2.3, note under Figure 2.2."
+        },
+        {
+          "q": "Which fuel is more susceptible to carburettor icing, per the AIM?",
+          "c": [
+            "MOGAS, because of its higher volatility",
+            "AVGAS",
+            "Both equally",
+            "Jet fuel only"
+          ],
+          "a": 0,
+          "e": "AIM AIR 2.3 note."
         }
       ],
       "verified": {
@@ -1535,13 +1559,14 @@
           "MANOBS 8th ed. Am. 3 (full PDF): 13.2.10 (glaze, rime, hoar frost); 6.6.2.3 to 6.6.2.4 (freezing precipitation and ice accretion indicator)",
           "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.2.1 (GFA icing types, depiction and intensity definitions), 5.8.3.2, D.5 and E.5 (SIGMET SEV, AIRMET MOD)",
           "TC AIM 2026-2 AIR (screenshots supplied by the user, 2026-10-27): 2.12.2, 2.12.3 (in-flight and ground icing), 2.7 (thunderstorm icing)",
-          "TC AIM 2026-2 AIR 2.3 carburetor icing (screenshot supplied by the user, 2026-10-27)"
+          "TC AIM 2026-2 AIR 2.3 carburetor icing (screenshot supplied by the user, 2026-10-27)",
+          "TC AIM 2026-2 AIR 2.3, Figure 2.2 and MOGAS note (screenshot supplied by the user, 2026-10-27)"
         ],
         "unverified": [
           "Carburettor icing (outside temperatures up to about 20 C) and frost deposition: standard aviation teaching, not confirmed on the pages read.",
           "Escape by changing altitude, and which cloud types have the highest liquid water: standard teaching.",
           "The rime/clear temperature split at about -10 C (WMO) differs in wording from the AIM (low temperature versus at or just below 0 C); both are given.",
-          "Carburettor icing temperature range (up to about 20 C or higher) is not on the AIR 2.3 page shown; the page gives no temperatures."
+          "Exact temperature and humidity boundaries of the AIM carburettor icing zones: the figure was read visually, not as text; check Figure 2.2 for exact limits."
         ]
       }
     }
