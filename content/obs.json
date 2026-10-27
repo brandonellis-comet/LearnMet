@@ -427,7 +427,13 @@
         {
           "h": "Reflectivity"
         },
-        "Reflectivity (dBZ) is on a logarithmic scale. Higher values mean more or larger targets. Rough guide: about 20 dBZ light rain or drizzle, 30 to 40 moderate rain, 45 to 55 heavy rain, above about 55 possible hail. These are rule-of-thumb values from general radar meteorology, not from an ECCC document, and snow, hail and the melting layer behave differently. ECCC public radar maps show precipitation rate: mm/h for rain and cm/h for snow.",
+        "Reflectivity (Z) is measured in mm6/m3. Because raw values vary so widely, radar applies a logarithmic scale, giving dBZ. The scale runs from about -35 to +85 dBZ. Higher values mean more or larger targets. ECCC public radar maps show precipitation rate instead: mm/h for rain and cm/h for snow.",
+        {
+          "list": [
+            "NOAA JetStream guide (US, not ECCC): above 65 dBZ extremely heavy precipitation including water-coated hail. 50 to 65: heavy precipitation, possibly some hail. 40 to 50: moderate. 20 to 40: light. 0 to 20: very light precipitation or general clutter. -35 to 0: extremely light (drizzle or snow).",
+            "NOAA marks the 20 to 40 and 40 to 50 rows as general guidelines: heavy rainfall does not always match them. Warm tropical rain contains little or no hail, so reflectivity is often lower than the rain rate suggests."
+          ]
+        },
         {
           "h": "Doppler"
         },
@@ -435,21 +441,40 @@
         {
           "h": "Dual-polarization"
         },
-        "Dual-pol radars send and receive both horizontal and vertical pulses. Extra products help to tell rain from snow and hail (ECCC's surface precipitation type product classifies rain, snow, freezing rain, hail and mixed), identify debris from tornadoes, and filter out non-weather echoes such as birds, insects and ground clutter.",
+        "Dual-pol radars send and receive both horizontal and vertical pulses. ECCC says its S-band dual-pol radars help distinguish precipitation types, reduce false echoes from birds and insects, improve quantitative precipitation estimates and help detect icing conditions for aircraft. ECCC's surface precipitation type product classifies rain, snow, freezing rain, hail and mixed.",
+        {
+          "list": [
+            "Differential reflectivity (ZDR, dB): compares horizontal and vertical power. Near 0 dB suggests round or tumbling targets such as hail. Above 0 suggests flattened drops such as large raindrops. Below 0 suggests vertically elongated particles such as ice crystals or snowflakes (NOAA).",
+            "Correlation coefficient (CC, 0 to 1): how similar the sampled targets are. Low is below 0.80, moderate 0.80 to 0.97, high above 0.97. Birds, insects, buildings, smoke and mixed precipitation give lower CC than uniform rain or snow (NOAA).",
+            "Tornado debris signature: a significant drop in CC at the same place as a strong rotational velocity couplet. Debris must be lofted high enough to be sampled, so no CC drop does not rule a tornado out (NOAA)."
+          ]
+        },
         {
           "h": "Limitations"
         },
         {
           "list": [
-            "Beam height rises with range because of the Earth's curvature and beam elevation, so distant low-level precipitation can be overshot.",
-            "Ground clutter and blocking by terrain near the radar.",
-            "Anomalous propagation (AP): beam bends toward the ground in strong inversions, producing false echoes.",
+            "Beam height rises with range. NOAA examples: about 1,300 ft above ground at 20 miles and about 11,600 ft at 98 miles for the radars cited. The beam also widens by about 1,000 ft per 10 miles, nearly 2 miles wide at 100 miles. Distant low-level precipitation can be overshot.",
+            "Subrefraction: the beam bends less than normal, so the radar overshoots objects it would normally detect and may under-report intensity.",
+            "Superrefraction: the beam is closer to the ground than normal and storm intensity can be overestimated. Extreme superrefraction causes ducting and false echoes called anomalous propagation (AP), for example roads or railways showing up on the display.",
+            "Ground clutter: stationary echoes near the radar from terrain and buildings.",
             "Bright band: melting snowflakes appear as a ring of high reflectivity at the melting level, overestimating rain rate.",
             "Attenuation: heavy rain can weaken the signal, especially for shorter wavelengths."
           ]
         },
         {
-          "note": "ECCC reports that its older C-band radars are being replaced by more powerful dual-polarization S-band radars. The composite precipitation-rate map is updated every six minutes and can merge up to 200 radars. Always check beam height at distance before trusting low-level echoes."
+          "h": "ECCC network (About Canadian weather radar)"
+        },
+        {
+          "list": [
+            "Older C-band radars are being replaced by more powerful S-band dual-pol radars (Canadian Weather Radar Replacement Program, launched 2017). C-band: single polarization, Doppler coverage 113 km, maximum coverage 256 km, new product every 10 minutes, 24 scans. S-band: dual polarization, Doppler coverage 240 km, maximum 330 km (raw data only), every 6 minutes, 17 scans.",
+            "The precipitation-rate mosaic covers Canada and the US at 1 km resolution, updates every 6 minutes and can merge up to 200 radars. Palettes come in 8 or 14 colours.",
+            "DPQPE (dual-pol quantitative precipitation estimate) uses the lowest sweep, 0.4 degrees for most S-band radars. SPTP (surface precipitation type) has five classes: rain, snow, freezing rain, hail, mixed.",
+            "ECCC cautions: do not compare intensity and SPTP pixel by pixel; the intensity composite uses a maximum-value approach where radars overlap; interpolated values should not be treated as real observations; SPTP uses only the nearest radar plus model data, so some echoes may be removed."
+          ]
+        },
+        {
+          "note": "Always check beam height at distance before trusting low-level echoes."
         }
       ],
       "terms": [
@@ -468,6 +493,22 @@
         [
           "Anomalous propagation",
           "Radar beam bent toward the ground, producing false echoes."
+        ],
+        [
+          "ZDR",
+          "Differential reflectivity: power comparison between horizontal and vertical channels, in dB."
+        ],
+        [
+          "Correlation coefficient",
+          "Unitless 0 to 1 measure of how similar the sampled targets are."
+        ],
+        [
+          "DPQPE",
+          "ECCC dual-pol quantitative precipitation estimate."
+        ],
+        [
+          "SPTP",
+          "ECCC surface precipitation type composite."
         ]
       ],
       "questions": [
@@ -485,13 +526,13 @@
         {
           "q": "As a rule of thumb, what reflectivity is usually associated with heavy rain and possible hail?",
           "c": [
-            "Above about 50 to 55 dBZ",
+            "About 50 to 65 dBZ, extremely heavy above 65",
             "Below 10 dBZ",
             "Around 20 dBZ",
             "Zero dBZ"
           ],
           "a": 0,
-          "e": "Rule of thumb only: high reflectivity indicates large or numerous targets such as heavy rain or hail. ECCC public maps use rain rate instead of dBZ."
+          "e": "NOAA JetStream table (US guidance): 50 to 65 heavy, possibly some hail; above 65 extremely heavy including water-coated hail. ECCC public maps use rain rate."
         },
         {
           "q": "Why might a radar miss shallow precipitation at long range?",
@@ -591,17 +632,164 @@
           ],
           "a": 0,
           "e": "Stronger returns mean larger or more numerous targets."
+        },
+        {
+          "q": "Approximately what range does the dBZ scale cover?",
+          "c": [
+            "-35 to +85 dBZ",
+            "0 to 20 dBZ",
+            "0 to 1000 dBZ",
+            "-5 to +10 dBZ"
+          ],
+          "a": 0,
+          "e": "NOAA JetStream, Radar Images: Reflectivity."
+        },
+        {
+          "q": "Using the NOAA table, 20 to 40 dBZ corresponds to:",
+          "c": [
+            "Light precipitation",
+            "Moderate precipitation",
+            "Heavy precipitation",
+            "Hail only"
+          ],
+          "a": 0,
+          "e": "NOAA: 40 to 50 moderate, 50 to 65 heavy. Guidelines only."
+        },
+        {
+          "q": "ZDR near 0 dB suggests targets that are:",
+          "c": [
+            "Round or tumbling, such as hail",
+            "Flattened, such as large raindrops",
+            "Vertically elongated, such as snowflakes",
+            "Non-existent"
+          ],
+          "a": 0,
+          "e": "NOAA: above 0 flattened drops; below 0 vertically elongated particles."
+        },
+        {
+          "q": "A low correlation coefficient (below 0.80) most suggests:",
+          "c": [
+            "Non-meteorological echoes or mixed precipitation",
+            "Uniform light rain",
+            "Uniform snow",
+            "Clear air"
+          ],
+          "a": 0,
+          "e": "NOAA: birds, buildings, insects, smoke and mixed precipitation lower CC."
+        },
+        {
+          "q": "A tornado debris signature is a CC drop that coincides with:",
+          "c": [
+            "A strong rotational velocity couplet",
+            "A bright band",
+            "A high ZDR value",
+            "A radar blind spot"
+          ],
+          "a": 0,
+          "e": "NOAA: a significant CC drop with a strong rotational velocity couplet. CC confirms, but does not predict, tornadoes."
+        },
+        {
+          "q": "Superrefraction causes the radar beam to:",
+          "c": [
+            "Travel closer to the ground and may cause AP",
+            "Bend upward and overshoot storms",
+            "Stop transmitting",
+            "Widen to nothing"
+          ],
+          "a": 0,
+          "e": "NOAA, Radar Beams. Subrefraction causes overshooting."
+        },
+        {
+          "q": "About how much does a radar beam widen per 10 miles of travel (NOAA)?",
+          "c": [
+            "About 1,000 ft",
+            "About 100 ft",
+            "About 10,000 ft",
+            "About 10 ft"
+          ],
+          "a": 0,
+          "e": "NOAA: nearly 2 miles wide at 100 miles."
+        },
+        {
+          "q": "How often does the ECCC S-band radar produce a new product, compared with the old C-band?",
+          "c": [
+            "Every 6 minutes versus every 10 minutes",
+            "Every 10 minutes versus every 6 minutes",
+            "Hourly versus every 30 minutes",
+            "Both every 30 minutes"
+          ],
+          "a": 0,
+          "e": "ECCC, About Canadian weather radar comparison table."
+        },
+        {
+          "q": "What Doppler coverage range does ECCC give for S-band radars?",
+          "c": [
+            "240 km",
+            "113 km",
+            "330 km",
+            "50 km"
+          ],
+          "a": 0,
+          "e": "ECCC: C-band Doppler coverage 113 km; S-band 240 km; 330 km is the maximum raw-data coverage."
+        },
+        {
+          "q": "ECCC's DPQPE product is based on:",
+          "c": [
+            "The lowest sweep (0.4 degrees for most S-band radars)",
+            "The highest sweep",
+            "An average of all sweeps",
+            "Satellite rain rates"
+          ],
+          "a": 0,
+          "e": "ECCC, About Canadian weather radar."
+        },
+        {
+          "q": "How many precipitation types does ECCC's SPTP classify?",
+          "c": [
+            "Five",
+            "Two",
+            "Three",
+            "Nine"
+          ],
+          "a": 0,
+          "e": "ECCC: rain, snow, freezing rain, hail, mixed."
+        },
+        {
+          "q": "ECCC says interpolated values on the radar composite:",
+          "c": [
+            "Should not be treated as real observations",
+            "Are verified by satellite",
+            "Are accurate to 1 mm/h",
+            "Replace raw data"
+          ],
+          "a": 0,
+          "e": "ECCC, About Canadian weather radar, limitations."
+        },
+        {
+          "q": "How does ECCC show snow on its precipitation-rate maps?",
+          "c": [
+            "cm/h",
+            "mm/h",
+            "dBZ",
+            "hPa"
+          ],
+          "a": 0,
+          "e": "ECCC: rain in mm/h, snow in cm/h, using two reflectivity-to-rate relationships."
         }
       ],
       "verified": {
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "sources": [
           "ECCC, About Canadian weather radar: C-band replaced by S-band dual-pol, six-minute composite, up to 200 radars, mm/h and cm/h scales, surface precipitation type classes",
-          "NAV CANADA Aviation Weather Services Guide (2017): radar scales and update interval for the older network"
+          "NAV CANADA Aviation Weather Services Guide (2017): radar scales and update interval for the older network",
+          "ECCC, About Canadian weather radar (canada.ca, page last modified 2026-07-24): network table, update interval, products, limitations",
+          "NOAA JetStream: Radar Images: Reflectivity (dBZ table, scale), Dual Polarization (ZDR, CC, debris), Radar Beams (beam height, refraction, AP) (US source, fetched 2026-10-27)"
         ],
         "unverified": [
-          "The dBZ-to-intensity ranges (20, 30 to 40, 45 to 55, above 55) are common rule-of-thumb values, not confirmed in a fetched source.",
-          "The ECCC page does not give the radar wavelength, so the previous 'about 5 cm' figure was removed."
+          "dBZ ranges are from a US NOAA table and apply to US radars. ECCC publishes rain rate, not dBZ ranges; Canadian radar wavelength is not stated on the ECCC page.",
+          "Doppler radial velocity, the cross-beam limit and mesocyclone velocity couplet appearance: not confirmed in a fetched source (the NOAA velocity page fetched did not cover it).",
+          "Bright band and attenuation statements are standard radar meteorology, not confirmed in a fetched source. The anomalous propagation cause 'strong inversion' was removed because the source describes density decrease with height instead.",
+          "NAV CANADA guide (fetch summary only, not yet confirmed by screenshots): radar detection range about 150 NM, images every 10 minutes, rain scale up to 300 mm/h, radar does not show cloud cover. These describe the older network and conflict with the ECCC S-band figures above."
         ]
       }
     },
@@ -614,8 +802,8 @@
         },
         {
           "list": [
-            "Geostationary: about 36,000 km above the equator, fixed over one spot. Frequent images of the same region. Poor viewing at high latitudes. The GOES satellites are geostationary.",
-            "Polar-orbiting: about 850 km up (NAV CANADA gives POES satellites at roughly 850 km, one orbit about every 105 minutes, 14 orbits a day). Higher resolution and good polar coverage, but fewer passes of a given spot."
+            "Geostationary: about 35,786 km (22,236 mi) above the equator, fixed over one spot. Frequent images of the same region. Poor viewing at high latitudes. The GOES satellites are geostationary.",
+            "Polar-orbiting: about 833 km (520 mi) up per NOAA, 850 km per NAV CANADA, about 14 orbits a day. Higher resolution and good polar coverage, but fewer passes of a given spot."
           ]
         },
         {
@@ -623,9 +811,10 @@
         },
         {
           "list": [
-            "Visible: reflected sunlight. Daytime only. Bright means thick or highly reflective cloud, snow and ice.",
-            "Infrared (IR): thermal radiation emitted by the surface and clouds. Works day and night. Cold (high) cloud tops appear bright in the standard display. Brightness temperature estimates cloud-top height.",
-            "Water vapour (about 6 to 7 micrometres): shows moisture in the upper and mid-troposphere. Dark means dry, bright means moist. Shows jets, troughs, dry slots and upper lows even in cloud-free areas."
+            "Visible: reflected sunlight, daytime only. Clouds appear white, the ground grey and water dark. Snow-covered ground also looks white and can be mistaken for cloud or fog; looping helps because clouds move and snow does not. Visible can show low fog and stratus that IR misses, if higher cloud does not cover them. It shows developing thunderstorms in their earliest stages, before radar detects them (NWS).",
+            "Infrared (IR): heat radiated by clouds and the surface. Day and night. Clouds are colder than land and water, so they stand out. Strong to severe thunderstorms normally have very cold tops. Colder temperatures are often enhanced with colours. Low stratus and fog are often hard to identify in IR.",
+            "Water vapour: moisture in the upper atmosphere. Brightest or whitest areas are the most humid and dark areas are dry. Looped imagery shows jet streams and upper troughs even in clear areas, and a stream of water vapour crossing a mountain range at a near right angle may indicate mountain wave turbulence (NWS).",
+            "GOES water vapour bands: 6.2 micrometres (upper level), 6.9 (mid level), 7.3 (lower level, senses down to about 500 to 750 hPa in cloud-free areas). Each senses the mean temperature of a layer of moisture; layer height varies with the temperature and moisture profile. Optically dense cloud blocks the view of lower moisture."
           ]
         },
         {
@@ -633,13 +822,14 @@
         },
         {
           "list": [
-            "Bright, cold, textured cloud tops with an anvil suggest deep convection.",
-            "A comma-shaped cloud pattern marks a developing mid-latitude cyclone.",
-            "Low cloud and fog are hard to separate from the ground in IR because they are close to surface temperature. Compare visible and IR, or use fog products."
+            "Very cold, bright cloud tops fit strong to severe thunderstorms. A textured anvil is a common deep-convection sign (anvil appearance not confirmed in the sources used).",
+            "A comma-shaped cloud pattern marks a developing mid-latitude cyclone (standard practice, not confirmed in the sources used).",
+            "Low cloud and fog are hard to separate from the ground in IR because they are close to surface temperature. Compare visible and IR, or use the night fog product, which combines two IR channels and shows fog and low cloud as dark areas.",
+            "NAV CANADA advises most pilots to consult a briefer before using satellite products for flight planning."
           ]
         },
         {
-          "note": "Visible tells you thickness, IR tells you height, water vapour tells you moisture aloft."
+          "note": "Visible shows reflected sunlight (daytime only). IR shows radiated heat, so cloud-top temperature, day and night. Water vapour shows upper-level moisture."
         }
       ],
       "terms": [
@@ -777,16 +967,109 @@
           ],
           "a": 0,
           "e": "Bright, lumpy tops signal deep convection."
+        },
+        {
+          "q": "Which GOES ABI band is the upper-level water vapour band?",
+          "c": [
+            "6.2 micrometres",
+            "7.3 micrometres",
+            "10.3 micrometres",
+            "0.64 micrometres"
+          ],
+          "a": 0,
+          "e": "NOAA/NESDIS quick guides: Band 8 is 6.2, Band 9 is 6.9, Band 10 is 7.3 micrometres."
+        },
+        {
+          "q": "Which water vapour band can sense farthest down into the mid-troposphere (about 500 to 750 hPa) in cloud-free areas?",
+          "c": [
+            "7.3 micrometres",
+            "6.2 micrometres",
+            "6.9 micrometres",
+            "3.9 micrometres"
+          ],
+          "a": 0,
+          "e": "NOAA/NESDIS Band 10 quick guide."
+        },
+        {
+          "q": "On water vapour imagery, the whitest areas show:",
+          "c": [
+            "The highest humidity",
+            "The driest air",
+            "The warmest surface",
+            "The thickest ice"
+          ],
+          "a": 0,
+          "e": "NWS: highest humidities are the whitest, dry regions dark."
+        },
+        {
+          "q": "Why can visible imagery confuse snow cover with cloud?",
+          "c": [
+            "Snow-covered ground also looks white",
+            "Snow emits infrared like cloud",
+            "Snow is invisible",
+            "Snow is darker than cloud"
+          ],
+          "a": 0,
+          "e": "NWS: looping helps because clouds move and snow does not."
+        },
+        {
+          "q": "Roughly how high is a polar-orbiting weather satellite per NOAA?",
+          "c": [
+            "About 833 km",
+            "About 35,786 km",
+            "About 100 km",
+            "About 3,000 km"
+          ],
+          "a": 0,
+          "e": "NOAA JetStream: about 520 miles, 14.1 orbits a day. NAV CANADA gives 850 km."
+        },
+        {
+          "q": "A stream of water vapour crossing a mountain range at a near right angle may indicate:",
+          "c": [
+            "Potential mountain wave turbulence",
+            "A thunderstorm",
+            "Fog",
+            "Freezing rain"
+          ],
+          "a": 0,
+          "e": "NWS, Satellite Imagery Overview for Pilots."
+        },
+        {
+          "q": "Satellite imagery can show developing thunderstorms:",
+          "c": [
+            "Before radar detects them",
+            "Only after radar does",
+            "Only at night",
+            "Never"
+          ],
+          "a": 0,
+          "e": "NWS: satellite sees developing thunderstorms in their earliest stages, before radar."
+        },
+        {
+          "q": "In the NWS description, strong to severe thunderstorms normally have tops that are:",
+          "c": [
+            "Very cold",
+            "Warmer than the ground",
+            "The same as the ground",
+            "Invisible in IR"
+          ],
+          "a": 0,
+          "e": "NWS, Three types of satellite imagery."
         }
       ],
       "verified": {
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "sources": [
-          "NAV CANADA Aviation Weather Services Guide (2017): GOES about 36,000 km over the equator; POES about 850 km, 105 minutes per orbit, 14 orbits per day"
+          "NAV CANADA Aviation Weather Services Guide (2017): GOES about 36,000 km over the equator; POES about 850 km, 105 minutes per orbit, 14 orbits per day",
+          "NOAA JetStream, Weather Satellites: geostationary 35,786 km, polar about 833 km, 14.1 orbits per day",
+          "NOAA/NESDIS ABI Quick Guides, Bands 8, 9 and 10 (6.2, 6.9, 7.3 micrometres; layers sensed; uses)",
+          "NWS, Three types of satellite imagery and Satellite Imagery Overview for Pilots (Front, Oct 2008): visible, IR and water vapour interpretation (US sources)"
         ],
         "unverified": [
-          "Water vapour band wavelengths (about 6 to 7 micrometres), channel appearance (dark dry, bright moist) and the interpretation tips are standard satellite meteorology, not checked in a fetched source.",
-          "The previous claim that Canada is mainly covered by GOES-East was removed because it was not confirmed."
+          "Sources for channel interpretation are US NWS pages. A Canadian source for visible, IR and water vapour interpretation (ECCC, NAV CANADA guide pages 30 and 31) is not yet confirmed.",
+          "NAV CANADA guide (fetch summary only, not yet confirmed by screenshots): GOES images every 30 minutes, POES about every 6 hours, VIS and IR available on the AWWS, 'consult a briefer'.",
+          "Which GOES satellites currently cover Canada (the NOAA page fetched was dated 2023 and did not say) is not confirmed. The standard greyscale convention (white is cold in IR) and the comma cloud and anvil statements are standard practice, not confirmed.",
+          "The upper-level water vapour layer height differs between NWS sources (about 15,000 to 30,000 ft; above 20,000 ft MSL); a single figure is not given here."
         ]
       }
     },
