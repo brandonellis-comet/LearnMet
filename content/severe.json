@@ -1214,7 +1214,7 @@
           "list": [
             "14 hazard guides: coastal flooding and storm surge, cold, frost, heat, hurricanes and tropical storms, ice, rain, snow, snow squall, thunderstorms, tornadoes, visibility, wind, winter storm.",
             "Blizzards sit under Visibility. Freezing rain sits under Ice.",
-            "Each hazard has three impact levels: moderate, high, extreme. They describe effects on daily life, travel, utilities, land and structures, health and recovery.",
+            "Most hazards have three impact levels: moderate, high, extreme. Frost has only a moderate level. They describe effects on daily life, travel, utilities, land and structures, health and recovery.",
             "The guides describe effects, not numeric thresholds."
           ]
         },
@@ -1241,7 +1241,13 @@
             "Wind: high is some roof damage and small to medium trees snapped. Extreme is structural damage to homes and high-sided vehicles tipped or flipped.",
             "Rain: high is widespread overland flooding with some washouts and landslides. Extreme is major roads, highways or bridges washed out and dams, dikes or pumps compromised.",
             "Snow: high is dangerous travel and roofs at increased risk of collapse. Extreme is travel extremely unsafe or impossible and residents snowed in.",
-            "Winter storm: high is widespread road closures with vehicles and passengers stranded. Extreme is stranding for long periods and prolonged, widespread outages."
+            "Winter storm: high is widespread road closures with vehicles and passengers stranded. Extreme is stranding for long periods and prolonged, widespread outages.",
+            "Hurricanes and tropical storms: high is major damage to buildings and widespread utility outages. Extreme is widespread building destruction and risk of life-threatening injury. The guide defines a tropical storm as 63 to 117 km/h winds and a hurricane as 118 km/h or more.",
+            "Coastal flooding and storm surge: moderate is some overland and basement flooding and shoreline erosion in sensitive areas. Extreme is travel routes impassable, widespread flooding and dikes or pumping infrastructure compromised.",
+            "Cold: moderate is risk of frostnip, frostbite or hypothermia without protection and pipes freezing or bursting. Extreme is a severe risk of cold injury and travel or outdoor activity not safe.",
+            "Heat: moderate is increased risk of illness or death and brownouts. Extreme is an extreme risk of illness or death and excess demand on utilities.",
+            "Frost: moderate only, widespread damage to plants or crops.",
+            "Snow squall: high is dangerous travel with stranded vehicles and roofs at risk of collapse. Extreme is very dangerous or impassable routes and long-stranded vehicles."
           ]
         },
         {
@@ -1449,6 +1455,61 @@
           ],
           "a": 0,
           "e": "Listed at the high level of the Snow guide."
+        },
+        {
+          "q": "Which Impact Guide has only a moderate level?",
+          "c": [
+            "Frost",
+            "Cold",
+            "Heat",
+            "Wind"
+          ],
+          "a": 0,
+          "e": "The Frost guide lists only widespread damage to plants or crops at the moderate level."
+        },
+        {
+          "q": "How does the Hurricanes and tropical storms guide define a hurricane?",
+          "c": [
+            "Coastal winds of 118 km/h or more",
+            "Winds of 63 to 117 km/h",
+            "Winds of 90 km/h or more",
+            "Winds of 74 km/h or more"
+          ],
+          "a": 0,
+          "e": "The guide gives 63 to 117 km/h for a tropical storm and 118 km/h or more for a hurricane."
+        },
+        {
+          "q": "Which impact appears at the moderate level of the Cold guide?",
+          "c": [
+            "Risk of frostnip, frostbite or hypothermia, and pipes freezing or bursting",
+            "Travel or outdoor activities not safe",
+            "Widespread tree and vegetation damage",
+            "Outdoor work suspended"
+          ],
+          "a": 0,
+          "e": "The other three are extreme or high wording."
+        },
+        {
+          "q": "Which is extreme-level wording in the Coastal flooding/storm surge guide?",
+          "c": [
+            "Dams, dikes and pumping infrastructure compromised or destroyed",
+            "Some basement flooding",
+            "Water over banks in yards",
+            "Coastal shoreline erosion in sensitive areas"
+          ],
+          "a": 0,
+          "e": "The other three are moderate wording."
+        },
+        {
+          "q": "Do the Cold and Heat Impact Guides give temperature or Humidex thresholds?",
+          "c": [
+            "No; they mention wind chill and Humidex but give no thresholds",
+            "Yes, -40 C and 40 C",
+            "Yes, a Humidex of 40",
+            "Yes, a wind chill of -30"
+          ],
+          "a": 0,
+          "e": "The guides state impacts only; no thresholds."
         }
       ],
       "verified": {
@@ -1458,12 +1519,12 @@
           "ECCC, Weather Impact Guides (canada.ca): hazards, levels, example wording for Thunderstorms, Tornadoes, Visibility and Ice",
           "ECCC, How we choose weather alert colours (canada.ca): Alert Colour Matrix",
           "ECCC, Weather Impact Guides (canada.ca), re-read 2026-10-27: Wind, Rain, Snow and Winter storm wording; no numeric thresholds",
-          "ECCC, CAP General Overview (June 2016): warning, watch, advisory and statement classes"
+          "ECCC, CAP General Overview (June 2016): warning, watch, advisory and statement classes",
+          "ECCC, Weather Impact Guides, re-read 2026-10-27: Hurricanes and tropical storms, Coastal flooding, Cold, Heat, Frost and Snow squall wording; Frost has a moderate level only"
         ],
         "unverified": [
           "Current mapping of warning, watch, advisory and statement to colours: the CAP overview is from 2016 and predates the colour system.",
-          "Regional differences in how alerts are issued: not checked.",
-          "Hurricane, coastal flooding, cold, heat, frost and snow squall guides: not read."
+          "Regional differences in how alerts are issued: not checked."
         ]
       }
     }
