@@ -44,6 +44,9 @@
         },
         "Example: 20 kt wind 30 degrees off the runway gives a 10 kt crosswind (20 x 0.5) and about 17 kt headwind. METAR winds are true, so convert to magnetic before comparing with the runway heading.",
         {
+          "note": "Different documents use different IFR/VFR thresholds. For automatic SPECIs, MANOBS 12.2.7 uses a 1,000 ft ceiling and 1 SM visibility as the IFR/VFR thresholds (plus 2,500 ft for ceiling and the aerodrome alternate minima), while the NAV CANADA GFA IFR Outlook uses below 1,000 ft or below 3 SM. Know which one a product uses."
+        },
+        {
           "note": "Check the alternates and the forecast trend, not just the current report. Weather may drop below minima by arrival. For an alternate, a TAF with BECMG or TEMPO must meet alternate minima, while a PROB group need only meet landing minima (NAV CANADA guide)."
         }
       ],
@@ -207,11 +210,12 @@
         }
       ],
       "verified": {
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "sources": [
           "NAV CANADA Aviation Weather Services Guide (2017): IFR, MVFR and VFR thresholds, LIFR not defined, oktas, density altitude, alternate rules for TAF groups, UTC",
           "Canadian Aviation Regulations ss. 602.114 and 602.115: VFR visibility and cloud clearance",
-          "MANOBS 8th ed. Am. 3 (full PDF): 7.2.7 ceiling definition (lowest BKN or OVC layer, or vertical visibility)"
+          "MANOBS 8th ed. Am. 3 (full PDF): 7.2.7 ceiling definition (lowest BKN or OVC layer, or vertical visibility)",
+          "MANOBS 8th ed. Am. 3 (full PDF): 12.2.7 (AUTO SPECI thresholds), 7.2.7 (ceiling)"
         ],
         "unverified": [
           "Pressure altitude definition, crosswind and headwind trigonometry, and density altitude effects on engine power: standard aviation teaching, not on the pages read (the trigonometry was checked by arithmetic: 20 x sin 30 = 10, 20 x cos 30 = 17.3).",
@@ -410,11 +414,12 @@
         }
       ],
       "verified": {
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "sources": [
           "ECCC, Canadian marine warning program, chapter 1: gale, storm and hurricane force thresholds, excluding gusts",
           "NWS Portland, Beaufort scale: Force 8, 10 and 12 ranges",
-          "Significant wave height article: mean of the highest third (H1/3), matches mariner estimates, largest waves about double Hs"
+          "Significant wave height article: mean of the highest third (H1/3), matches mariner estimates, largest waves about double Hs",
+          "MANOBS 8th ed. Am. 3 (full PDF): Table 3-1 (Beaufort scale: force 8 gale 34 to 40 kt, force 10 storm 48 to 55, force 12 hurricane 64 or more)"
         ],
         "unverified": [
           "Freezing spray criteria and conditions: not on the ECCC page read. Atlantic Canada winter occurrence is not confirmed.",

@@ -108,7 +108,8 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 
 ## Not confirmed (open items)
 
-- MANOBS (8th ed. Am. 3, full PDF, 2026-10-27): chapters 6 (tornado/funnel/thunderstorm definitions), 7.2.7 (ceiling), 8, 9 and 11.2.3 (SPECI) now checked and added to the lessons. Chapters 10, 12 to 15 (remarks, automatic systems, glossary, synoptic code) not yet compared with the lessons.
+- MANOBS (8th ed. Am. 3, full PDF, 2026-10-27): read cover to cover except chapter 15 detail (synoptic code groups) and the appendix 4 altimeter/UNICOM text. Checked and added to the lessons: wind (3), visibility (4), RVR (5), present weather, fog, mist, precipitation intensity and definitions (6, 13), sky condition and cloud base table (7), temperature and pressure (8, 9), remarks (10), METAR coding (11.2.2), SPECI criteria (11.2.3), AUTO SPECI (12.2.7), glossary (13), appendix 1 and 2. MANOBS Part B (synoptic code, chapters 14 and 15) has no matching lesson yet; if a synoptic code topic is added it must be built from chapter 15.
+- Still not confirmed from MANOBS: the ceiling footnote on the 400, 200 and 100 ft SPECI values, QFE and the MSLP reduction method (MANOBS only names the WMO method), and how ATIS and tower broadcasts fall under the magnetic-wind voice exception (12.2.1).
 - MANAIR chapter 2: TAF amendment thresholds and full coding rules.
 - Occluded and stationary front colours, trough line style, isobar label convention, station model layout.
 - dBZ intensity ranges, water vapour band wavelengths, mandatory pressure level list, CSI formula, CIN and lifted index definitions.

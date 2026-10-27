@@ -37,6 +37,16 @@
           ]
         },
         {
+          "h": "Thunderstorm observing (MANOBS 6.4 and 6.5)"
+        },
+        {
+          "list": [
+            "Definition: a local storm produced by a cumulonimbus, always accompanied by lightning and thunder, usually with strong gusts, heavy rain, and sometimes hail. Lightning may not be visible.",
+            "A thunderstorm is reported at the station when thunder is first heard, or overhead lightning is seen and noise might mask thunder. It is treated as ended when 15 minutes pass without activity. No intensity is assigned.",
+            "Lightning remarks: OCNL (less than 1 flash per minute), FRQ (1 to 6 per minute), CONS (more than 6 per minute); types LTGCG, LTGIC, LTGCC, or LTNG if undetermined; and direction from the station."
+          ]
+        },
+        {
           "note": "No lift, no storm. Look for fronts, sea breeze fronts, outflow boundaries or terrain."
         }
       ],
@@ -175,13 +185,36 @@
           ],
           "a": 0,
           "e": "Rising air cannot penetrate the stable stratosphere and spreads."
+        },
+        {
+          "q": "Lightning is described as FRQ in a METAR remark when flashes occur at about:",
+          "c": [
+            "1 to 6 per minute",
+            "Fewer than 1 per minute",
+            "More than 6 per minute",
+            "1 per 10 minutes"
+          ],
+          "a": 0,
+          "e": "MANOBS 6.5.2.1: OCNL less than one flash per minute, FRQ one to six, CONS more than six."
+        },
+        {
+          "q": "When does an observer record the end of a thunderstorm?",
+          "c": [
+            "After 15 minutes with no thunderstorm activity",
+            "As soon as the rain stops",
+            "After 5 minutes of silence",
+            "When the anvil leaves the sky"
+          ],
+          "a": 0,
+          "e": "MANOBS 6.4.2.2: when thunderstorm activity has not occurred in the last 15 minutes, it is recorded as having ended 15 minutes before."
         }
       ],
       "verified": {
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "sources": [
           "NOAA National Weather Service, Types of Thunderstorms (weather.gov/spotterguide/types): single cell, pulse, multicell cluster and line, durations",
-          "MANOBS 8th ed. Am. 3 (full PDF): 6.4 thunderstorm definition and reporting (thunder heard or overhead lightning; ends after 15 minutes)"
+          "MANOBS 8th ed. Am. 3 (full PDF): 6.4 thunderstorm definition and reporting (thunder heard or overhead lightning; ends after 15 minutes)",
+          "MANOBS 8th ed. Am. 3 (full PDF): 6.4 and 6.5 (thunderstorm and lightning definitions and reporting), 13.2.17"
         ],
         "unverified": [
           "Supercell and mesocyclone definitions, and shear requirements: the NOAA page does not give them.",
@@ -219,6 +252,15 @@
           "h": "Aviation hazard"
         },
         "On approach, an aircraft meets a strong headwind first (airspeed increases), then strong sink, then a tailwind (airspeed falls rapidly). This sequence has caused major accidents. Avoid thunderstorms by a wide margin, including near the storm's outflow.",
+        {
+          "h": "Observing and reporting (MANOBS 6.3)"
+        },
+        {
+          "list": [
+            "MANOBS definitions: a tornado is a rotating column of air extending from the base of a cumuliform cloud (usually cumulonimbus), often visible as a condensation funnel in contact with the ground and/or a circulating dust or debris cloud. A waterspout is a tornado over water, normally small and weak, below cumulonimbus or towering cumulus. A cold-air funnel is a funnel cloud, rarely a small weak tornado, that can develop from a small shower or thunderstorm when the air aloft is unusually cold.",
+            "Coding: +FC for a tornado (over land) or waterspout (over water) within sight; FC for a funnel cloud. A tornado or waterspout is not reported if the vortex does not reach the ground, or the observer is unsure it does; then FC is reported. TORNADO, FUNNEL CLOUD or WATERSPOUT is spelled out in the remarks. No intensity is given."
+          ]
+        },
         {
           "note": "Damage to the ground tells you the rating. The rating is assigned after the event, not during it."
         }
@@ -369,6 +411,28 @@
           ],
           "a": 0,
           "e": "ECCC: EF0 90-130, EF1 135-175, EF2 180-220, EF3 225-265, EF4 270-310, EF5 315 or more (km/h, rounded to 5)."
+        },
+        {
+          "q": "An observer sees a funnel but is not sure it reaches the ground. What is reported?",
+          "c": [
+            "FC (funnel cloud) with its direction",
+            "+FC (tornado)",
+            "TS only",
+            "Nothing until it touches down"
+          ],
+          "a": 0,
+          "e": "MANOBS 6.3.2 item 4: a tornado or waterspout is not reported when the observer is not sure the vortex reaches the ground; funnel cloud (FC) and its direction are reported."
+        },
+        {
+          "q": "In a METAR, which code reports a tornado within sight?",
+          "c": [
+            "+FC",
+            "FC",
+            "TORN",
+            "+TS"
+          ],
+          "a": 0,
+          "e": "MANOBS 6.3.2: +FC for a tornado or waterspout, FC for a funnel cloud."
         }
       ],
       "verified": {
@@ -377,7 +441,8 @@
           "ECCC, Enhanced Fujita scale for wind damage (canada.ca): wind ranges, 31 damage indicators, introduced 1 April 2013",
           "ECCC Weather Impact Guides, Tornadoes: effects at moderate, high and extreme levels",
           "NOAA National Weather Service, Types of Thunderstorms: pulse-storm downbursts, bow echo tornadoes weaker than supercell tornadoes",
-          "MANOBS 8th ed. Am. 3 (full PDF): 6.3 tornado, waterspout and funnel cloud definitions"
+          "MANOBS 8th ed. Am. 3 (full PDF): 6.3 tornado, waterspout and funnel cloud definitions",
+          "MANOBS 8th ed. Am. 3 (full PDF): 6.3 (tornado, waterspout, funnel cloud definitions and coding), 13.2.5 and 13.2.18 to 13.2.19"
         ],
         "unverified": [
           "Microburst size (under 4 km) and the headwind, sink, tailwind sequence: standard teaching, not checked against a Canadian publication. Duration and the 150 km/h figure were removed.",

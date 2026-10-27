@@ -387,9 +387,22 @@
           "list": [
             "Stratus (St): uniform grey layer, drizzle possible. Fog that has lifted.",
             "Stratocumulus (Sc): lumpy layer, common over the Atlantic.",
-            "Nimbostratus (Ns): thick, dark layer with steady rain or snow. WMO places it in the middle level, NAV CANADA's guide lists it with low cloud, and it often spans both.",
+            "Nimbostratus (Ns): thick, dark layer with steady rain or snow. WMO places it in the middle level, NAV CANADA's guide lists it with low cloud, and it often spans both. MANOBS Table 7-1 gives its base as near the surface to 6,500 ft.",
             "Cumulus (Cu): heaped, flat base, fair weather to towering.",
             "Cumulonimbus (Cb): very deep convective cloud from low levels to the tropopause. Thunderstorms, hail, anvil top."
+          ]
+        },
+        {
+          "h": "Approximate cloud base heights (MANOBS Table 7-1)"
+        },
+        {
+          "list": [
+            "Cirrus, cirrocumulus, cirrostratus: 20,000 to 39,000 ft (cirrus averages about 29,000 ft in summer and 26,000 ft in winter).",
+            "Altocumulus, altocumulus castellanus, altostratus: above 6,500 to 20,000 ft (altostratus averages about 8,000 ft when no sun or moon is visible).",
+            "Nimbostratus: near the surface to 6,500 ft.",
+            "Stratocumulus: 500 to 6,500 ft.",
+            "Stratus: near the surface to 1,500 ft, usually below 1,000 ft.",
+            "Cumulus, towering cumulus, cumulonimbus: usually 1,500 to 6,500 ft, up to 10,000 ft or higher. The highest bases occur in summer in very dry air. Cirriform cloud in the high Arctic may be at very low levels."
           ]
         },
         {
@@ -542,17 +555,50 @@
           ],
           "a": 0,
           "e": "WMO Cloud Atlas: high 5-13 km, middle 2-7 km, low surface to 2 km in temperate regions."
+        },
+        {
+          "q": "According to MANOBS, stratus bases are usually below:",
+          "c": [
+            "1,000 ft",
+            "5,000 ft",
+            "10,000 ft",
+            "500 ft"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 7-1: stratus base from near the surface to 1,500 ft, usually below 1,000 ft."
+        },
+        {
+          "q": "MANOBS gives the base of nimbostratus as:",
+          "c": [
+            "Near the surface to 6,500 ft",
+            "20,000 to 39,000 ft",
+            "Above 6,500 to 20,000 ft",
+            "1,500 to 6,500 ft only"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 7-1."
+        },
+        {
+          "q": "MANOBS gives the base of cirrus, cirrocumulus and cirrostratus as:",
+          "c": [
+            "20,000 to 39,000 ft",
+            "6,500 to 20,000 ft",
+            "1,500 to 6,500 ft",
+            "Near the surface to 6,500 ft"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 7-1."
         }
       ],
       "verified": {
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "sources": [
           "WMO International Cloud Atlas, Useful concepts: ten genera and level heights for polar, temperate and tropical regions",
-          "NAV CANADA Aviation Weather Services Guide (2017): cloud types grouped by level (Ns listed with low)"
+          "NAV CANADA Aviation Weather Services Guide (2017): cloud types grouped by level (Ns listed with low)",
+          "MANOBS 8th ed. Am. 3 (full PDF): Table 7-1 (cloud definitions and base heights), Table 7-3 (abbreviations)"
         ],
         "unverified": [
-          "Descriptions of each cloud (halo, dim sun disc, drizzle, lenticular and so on), the warm front sequence Ci-Cs-As-Ns, and cumulus congestus: standard teaching, not checked on a Canadian publication.",
-          "Mid-level or low status of Nimbostratus differs between WMO and the NAV CANADA guide."
+          "The warm front sequence Ci-Cs-As-Ns, lenticular clouds and cumulus congestus are standard teaching, not checked on a Canadian publication. Cloud definitions for the other genera (halo from cirrostratus, no halo from altostratus, drizzle from stratus) match MANOBS Table 7-1."
         ]
       }
     },
@@ -577,6 +623,19 @@
             "Hail: layered ice from strong cumulonimbus updrafts, with diameters over 5 mm (NWS). Graupel (snow pellets) is under 5 mm.",
             "Ice pellets (sleet): snow partly melts in a warm layer aloft, then refreezes in the cold air below (NWS).",
             "Freezing rain: supercooled raindrops freeze on contact. It needs a deep warm layer aloft over a shallow below-freezing layer at the ground (NWS). Very hazardous."
+          ]
+        },
+        {
+          "h": "Precipitation types (MANOBS glossary 13.2.13 to 13.2.15)"
+        },
+        {
+          "list": [
+            "Drizzle: fine drops under 0.5 mm; rain: drops larger than 0.5 mm, or smaller widely scattered drops.",
+            "Freezing rain and freezing drizzle: drops that freeze on impact with the ground or objects near the surface.",
+            "Snow grains: small white opaque grains under 1 mm that do not bounce, falling in small quantity from stratus or fog, never as a shower.",
+            "Snow pellets: white opaque, brittle, about 2 to 5 mm, bounce and break up, always showery.",
+            "Ice pellets: transparent or translucent, 5 mm or less, frozen raindrops or largely melted snowflakes refrozen near the ground.",
+            "Small hail: under 5 mm, snow pellets encased in ice, always from showers of cumulonimbus. Hail: 5 to 50 mm or more, in layers of clear and translucent ice, generally in severe thunderstorms."
           ]
         },
         {
@@ -718,13 +777,47 @@
           ],
           "a": 0,
           "e": "A deep cold layer refreezes the drops before they land."
+        },
+        {
+          "q": "MANOBS defines hail as ice particles with a diameter of:",
+          "c": [
+            "5 mm to 50 mm or more",
+            "Under 2 mm",
+            "1 to 3 mm",
+            "Over 100 mm only"
+          ],
+          "a": 0,
+          "e": "MANOBS 13.2.14: hail 5 mm to 50 mm or sometimes more. Smaller stones are small hail."
+        },
+        {
+          "q": "Which precipitation always occurs in showers and bounces when it hits hard ground?",
+          "c": [
+            "Snow pellets",
+            "Snow grains",
+            "Drizzle",
+            "Ice crystals"
+          ],
+          "a": 0,
+          "e": "MANOBS 13.2.14: snow pellets always occur in showers, are brittle, and bounce and often break up on hard ground."
+        },
+        {
+          "q": "Snow grains are best described as:",
+          "c": [
+            "Very small opaque grains under 1 mm that do not bounce",
+            "Clear frozen raindrops of 5 mm or less",
+            "Branched star-shaped crystals",
+            "Brittle white pellets of 2 to 5 mm"
+          ],
+          "a": 0,
+          "e": "MANOBS 13.2.14: snow grains are fairly flat or elongated, generally under 1 mm, and never fall as a shower."
         }
       ],
       "verified": {
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "sources": [
           "NWS cloud and precipitation training notes: droplet and raindrop sizes, 20 micron threshold, Bergeron mechanism, drizzle under 0.5 mm, hail over 5 mm, graupel under 5 mm",
-          "NWS Goodland, Winter weather types: freezing rain and sleet temperature layers"
+          "NWS Goodland, Winter weather types: freezing rain and sleet temperature layers",
+          "MANOBS 8th ed. Am. 3 (full PDF): 6.6 and 13.2.13 to 13.2.15 (precipitation definitions)"
         ],
         "unverified": [
           "Collision-coalescence dominating in the tropics and needing a deep cloud with strong updraft, and most mid-latitude rain starting as snow: standard teaching, not stated on the pages read."
@@ -734,7 +827,7 @@
     {
       "title": "Fog types and formation",
       "lesson": [
-        "Fog is cloud at ground level. It is reported when visibility is below 1 km (5/8 statute mile). Mist (BR) is a less dense obstruction.",
+        "Fog is cloud at ground level. In Canadian reports it is coded FG when visibility at the surface is 1/2 SM or less. Mist (BR) is a less dense obstruction, 5/8 to 6 SM (MANOBS 6.7).",
         {
           "h": "Types"
         },
@@ -756,6 +849,18 @@
             "Small temperature-dew point spread: NWS says fog forms when the spread is under 5 F (about 3 C), and sea fog is unlikely if it is over 3 C. Falling temperature also favours fog.",
             "Light wind (about 2 to 7 kt) thickens radiation fog. A stronger breeze prevents it by mixing in drier air from aloft. Fog lifts to stratus when the lapse rate approaches dry adiabatic (NWS).",
             "Advection fog requires a warm moist flow over a cold surface, favoured by light winds of about 3 to 9 kt (NWS)."
+          ]
+        },
+        {
+          "h": "Fog terms in METAR (MANOBS 6.7 and 6.8)"
+        },
+        {
+          "list": [
+            "Freezing fog (FZFG): fog at -0.1 to -30.0 C with visibility 1/2 SM or less. Mostly supercooled droplets that deposit rime or glaze.",
+            "Shallow fog (MIFG): low fog that does not obstruct visibility at eye level (1.5 m). Usually with clear sky or thin high cloud.",
+            "Fog patches (BCFG): fog at least 1.5 m deep covering less than 50% of the ground in view.",
+            "Fog covering part of the aerodrome (PRFG): a fog bank covering at least 50% of the ground, with the apparent visibility inside it 1/2 SM or less.",
+            "These three are 'additional phenomena' reported when the prevailing visibility is greater than 6 SM."
           ]
         },
         {
@@ -813,13 +918,13 @@
         {
           "q": "What is the reporting threshold for fog?",
           "c": [
-            "Visibility less than 1 km (5/8 SM)",
-            "Visibility less than 10 km",
-            "Visibility less than 5 km",
-            "Visibility less than 100 m"
+            "Visibility 1/2 SM or less",
+            "Visibility 3 SM or less",
+            "Visibility 6 SM or less",
+            "Visibility 1 SM or less"
           ],
           "a": 0,
-          "e": "Fog is reported when visibility drops below 1 km; mist is between 5/8 SM and 6 SM in Canadian reports."
+          "e": "MANOBS 6.7.1.1: fog is reported when prevailing visibility is reduced to 1/2 mi. or less at the surface. Mist is 5/8 to 6 mi."
         },
         {
           "q": "Rain evaporating into cool air below a warm front can produce:",
@@ -908,13 +1013,36 @@
           ],
           "a": 0,
           "e": "NWS: ice fog forms in extremely cold, arctic air, -29 C (-20 F) and colder."
+        },
+        {
+          "q": "MIFG in a METAR means:",
+          "c": [
+            "Shallow fog that does not obstruct visibility at eye level",
+            "Fog covering most of the sky",
+            "Freezing fog",
+            "Fog in the vicinity"
+          ],
+          "a": 0,
+          "e": "MANOBS 6.8.1.3: low-lying fog that does not obstruct visibility at 1.5 m."
+        },
+        {
+          "q": "BCFG covers what share of the ground in view?",
+          "c": [
+            "Less than 50%",
+            "50% or more",
+            "All of it",
+            "Exactly one quarter"
+          ],
+          "a": 0,
+          "e": "MANOBS 6.8.1.1: fog at least 1.5 m deep covering less than 50% of the ground normally visible."
         }
       ],
       "verified": {
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "sources": [
           "NAV CANADA Aviation Weather Services Guide (2017): FG is visibility under 5/8 SM, BR is 5/8 to 6 SM",
-          "NWS Houston/Galveston fog guide: fog types, wind speeds, spread rules, dissipation, ice fog"
+          "NWS Houston/Galveston fog guide: fog types, wind speeds, spread rules, dissipation, ice fog",
+          "MANOBS 8th ed. Am. 3 (full PDF): 6.7 and 6.8 (fog, mist, freezing fog, MIFG, BCFG, PRFG), 13.2.9 (obstructions to vision)"
         ],
         "unverified": [
           "Sea fog being frequent on Nova Scotia's south shore and the Grand Banks in spring and summer, and radiation fog being common inland in fall: climatology, not checked here.",
@@ -964,6 +1092,16 @@
           "list": [
             "Carburettor icing: can occur at outside temperatures well above freezing (up to about 20 C or higher) with high humidity, because vaporization and pressure drop cool the carburettor.",
             "Frost on the ground: forms by deposition when the surface is below 0 C. Must be removed before takeoff."
+          ]
+        },
+        {
+          "h": "Deposits (MANOBS 13.2.10)"
+        },
+        {
+          "list": [
+            "Glaze: a coating of ice, generally clear and smooth, formed by freezing of a film of supercooled water from rain, drizzle or fog. Denser, harder and more transparent than rime or frost.",
+            "Rime: a white or milky, opaque, granular deposit from rapid freezing of supercooled drops on contact with an object.",
+            "Hoar frost: interlocking ice crystals formed by direct sublimation when air with a below-freezing dew point is cooled to saturation."
           ]
         },
         {
@@ -1116,14 +1254,26 @@
           ],
           "a": 0,
           "e": "WMO: rime forms at low temperatures and/or low liquid water content; clear ice at warmer temperatures and/or high liquid water content."
+        },
+        {
+          "q": "MANOBS describes glaze as a deposit that is:",
+          "c": [
+            "Generally clear and smooth, denser and harder than rime",
+            "White, milky and granular",
+            "Made of interlocking crystals formed by sublimation",
+            "Soft and easily brushed off"
+          ],
+          "a": 0,
+          "e": "MANOBS 13.2.10: glaze is a coating of ice, generally clear and smooth, formed by freezing of supercooled water; rime is milky and granular; hoar frost forms by sublimation."
         }
       ],
       "verified": {
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "sources": [
           "NAV CANADA Aviation Weather Services Guide (2017): rime, clear and mixed ice definitions; light, moderate, severe wording; SIGMET only for severe",
           "WMO, Aviation hazards: icing: rime below about -10 C and/or low liquid water; clear above about -10 C and/or high liquid water; freezing drizzle and rain",
-          "NWS cloud and precipitation training notes: liquid water persists as low as -40 C"
+          "NWS cloud and precipitation training notes: liquid water persists as low as -40 C",
+          "MANOBS 8th ed. Am. 3 (full PDF): 13.2.10 (glaze, rime, hoar frost); 6.6.2.3 to 6.6.2.4 (freezing precipitation and ice accretion indicator)"
         ],
         "unverified": [
           "Carburettor icing (outside temperatures up to about 20 C) and frost deposition: standard aviation teaching, not confirmed on the pages read.",

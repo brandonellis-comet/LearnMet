@@ -8,7 +8,7 @@
         {
           "list": [
             "Temperature and humidity: thermometer bulbs 1.25 to 2 m above ground level, in a white double-louvered screen (Stevenson screen) over short grass. The screen shields them from direct sunlight, precipitation and heat radiated from the ground, while letting air flow through.",
-            "Wind: wind measurements must be representative of winds 10 m above level terrain. METAR and SPECI report a two-minute mean. Direction is the direction the wind comes FROM, in degrees true.",
+            "Wind: wind measurements must be representative of winds 10 m above level terrain. METAR and SPECI report a two-minute mean. Direction is the direction the wind comes FROM, in degrees true to the nearest 10 (MANOBS 3.2.3), and instruments must work up to at least 100 kt. Siting: at least 10 times the height of any obstruction away.",
             "Pressure: barometer. Station pressure is the pressure at the instrument. Mean sea level pressure (MSLP) is the station pressure reduced to sea level, so stations at different heights can be compared on a chart.",
             "Visibility (aeronautical): the greater of (1) the greatest distance a black object near the ground can be easily recognized, and (2) the greatest distance lights of about 1,000 candela can be seen and identified against an unlit background. It is observed at eye level, 1.5 m above the ground. Canadian land stations report it in statute miles; if the observed value falls between two reportable values the lower one is reported, and 15 SM is the maximum reportable value.",
             "Precipitation: rain gauges (tipping bucket or weighing), snow depth and water equivalent.",
@@ -201,6 +201,28 @@
           ],
           "a": 0,
           "e": "MANOBS 9.2.1: PRESFR for falling, PRESRR for rising at 2.0 hPa per hour or more."
+        },
+        {
+          "q": "How far from an obstruction should wind instruments be sited if possible?",
+          "c": [
+            "At least 10 times the height of the obstruction",
+            "At least twice the height",
+            "At least 100 m regardless of height",
+            "Directly beside it for shelter"
+          ],
+          "a": 0,
+          "e": "MANOBS 3.2.2: representative of winds 10 m above level terrain at a distance equal to at least 10 times the height of any object from that object."
+        },
+        {
+          "q": "Wind direction in a METAR is rounded to the nearest:",
+          "c": [
+            "10 degrees",
+            "1 degree",
+            "5 degrees",
+            "45 degrees"
+          ],
+          "a": 0,
+          "e": "MANOBS 3.2.1 and 3.2.3: the nearest ten degrees, three digits, true."
         }
       ],
       "verified": {
@@ -211,7 +233,8 @@
           "NAV CANADA Aviation Weather Services Guide (2017): laser ceilometer, AWOS and LWIS",
           "Transport Canada AIM MET 1.2.4 to 1.2.6: automated systems",
           "Canadian Aviation Regulations s. 602.37: altimeter setting and standard pressure region",
-          "MANOBS 8th ed. Amendment 3 (full PDF): 8.3 (temperature and dew point reporting), 9.1.3 and 9.2 (pressure units, QNH rounding, PRESRR/PRESFR, SLP)"
+          "MANOBS 8th ed. Amendment 3 (full PDF): 8.3 (temperature and dew point reporting), 9.1.3 and 9.2 (pressure units, QNH rounding, PRESRR/PRESFR, SLP)",
+          "MANOBS 8th ed. Am. 3 (full PDF): 3.2.1 to 3.2.3 (wind reporting and siting), 13.2.1 and 13.2.8 (altimeter setting and mean sea level pressure glossary)"
         ],
         "unverified": [
           "QFE and the standard-setting wording are standard aviation teaching and are not in MANOBS; the Canadian altimeter setting rules in CAR 602.37 were checked earlier. The MSLP reduction method is not described in MANOBS 9.2."

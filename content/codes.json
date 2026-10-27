@@ -52,7 +52,35 @@
           ]
         },
         {
-          "note": "METAR and SPECI winds are in degrees true. Always check whether a wind source is true or magnetic before using it for a runway."
+          "h": "Coding rules (MANOBS chapters 3 to 7, 11)"
+        },
+        {
+          "list": [
+            "Wind direction: nearest 10 degrees true, three digits, north is 360, calm is 000. Calm: mean speed under 2 kt may be reported calm and 1 kt or less must be (00000KT). Speed in knots, two digits under 100 kt, three at 100 kt and over.",
+            "Gusts (G): reported when, in the last 10 minutes, the highest peak is at least 5 kt above the current two-minute mean AND at least 15 kt. A gust is the maximum speed averaged over no more than 5 seconds.",
+            "Squall (SQ in present weather): speed rises 15 kt or more over the previous two-minute mean, the peak lasts at least 2 minutes, the one-minute mean reaches at least 20 kt, and speed then drops at least 5 kt. The peak is reported as a gust.",
+            "VRB: used when speed is under 3 kt. At higher speeds only if direction varies 180 degrees or more or no single direction can be found. If direction varies 60 degrees or more but under 180 and the mean is 3 kt or more, the two extremes are given clockwise (240V350).",
+            "Prevailing visibility: the greatest value common to sectors covering half or more of the horizon circle, observed at eye level (1.5 m). Reportable values: 0 to 3/4 SM in eighths, 1 to 2 1/2 SM in quarters, then 3 to 15 SM in whole miles, then 5 SM steps if markers exist. A value between two reportable values is reported as the lower one. Visibility is not reduced because of darkness alone, and binoculars are not used.",
+            "Present weather thresholds: fog (FG) when visibility is 1/2 SM or less; mist (BR) from 5/8 to 6 SM; freezing fog (FZFG) at -0.1 to -30.0 C with visibility 1/2 SM or less; haze, smoke and dust haze when visibility is 6 SM or less; blowing snow, dust and sand when visibility is 6 SM or less and they are the only cause. VC (vicinity) means within 5 SM but not at the station.",
+            "Rain intensity by rate of fall: light 2.5 mm/h or less, moderate 2.6 to 7.5, heavy 7.6 or more. Snow, snow grains, snow pellets, drizzle and freezing drizzle by visibility: light 5/8 SM or more; moderate 1/2 or 3/8 SM when alone; heavy 1/4 SM or less when alone. Tornado, waterspout, funnel cloud and thunderstorm carry no intensity.",
+            "Sky: amount is the summation of layers at and below that layer. CB and TCU of any amount are always in the remarks, and in the cloud group when they are the predominant type. Heights are in 100 ft steps to 10,000 ft and 1,000 ft steps above. A height between values is reported as the lower value; an amount between values as the greater.",
+            "RVR: included only when at least one RVR is 6,000 ft or less or visibility is 1 SM or less. 10-minute mean, range M300 (below 300 ft) to P6000 (above 6,000 ft). Reported in 100 ft steps to 1,200 ft, 200 ft steps to 3,000 ft, 500 ft steps to 6,000 ft.",
+            "Timing: a METAR is on the hour; a SPECI is timed at the element that triggered it and should go out within 5 minutes. A correction is marked CCA, then CCB, and so on. A late hourly report carries OBS TAKEN +tt."
+          ]
+        },
+        {
+          "h": "Automatic stations: AUTO SPECI (MANOBS 12.2.7)"
+        },
+        {
+          "list": [
+            "Wind shift of 45 degrees or more in under 15 minutes ending at 10 kt or more, or the two-minute mean speed rising 10 kt or more.",
+            "Ceiling (lowest BKN or OVC, or vertical visibility) crossing 2,500 ft, 1,000 ft (the IFR/VFR threshold), or the aerodrome alternate minima; or a layer aloft below 1,000 ft where none was reported.",
+            "Visibility crossing the no-alternate IFR limit, 1 SM (the IFR/VFR threshold), or the aerodrome alternate minima.",
+            "Any change in freezing precipitation intensity; onset or end of hail, freezing fog, freezing rain, rain, snow, thunderstorms or heavy precipitation; onset or end of any precipitation of at least light intensity; onset or end of ice accretion."
+          ]
+        },
+        {
+          "note": "METAR and SPECI winds are in degrees true (MANOBS 3.2.1). The exception in MANOBS 12.2.1 is voice communication supporting take-off or landing in the Southern Domestic Airspace, where wind direction is given in tens of degrees magnetic. Always check whether a wind source is true or magnetic before using it for a runway."
         }
       ],
       "terms": [
@@ -256,6 +284,149 @@
           ],
           "a": 0,
           "e": "MANOBS 11.2.3.2: obstruction to vision criterion is freezing fog beginning or ending."
+        },
+        {
+          "q": "A two-minute mean wind of 1 kt is reported as:",
+          "c": [
+            "Calm, 00000KT",
+            "VRB01KT",
+            "01001KT",
+            "Light and variable"
+          ],
+          "a": 0,
+          "e": "MANOBS 3.2.4: a mean wind of 1 kt or less shall be reported as calm."
+        },
+        {
+          "q": "Which pair of conditions must both be met in the last 10 minutes to report gusts?",
+          "c": [
+            "Peak at least 5 kt above the two-minute mean and at least 15 kt",
+            "Peak at least 10 kt above the mean and at least 20 kt",
+            "Peak at least 3 kt above the mean and at least 10 kt",
+            "Peak at least 15 kt above the mean and at least 25 kt"
+          ],
+          "a": 0,
+          "e": "MANOBS 3.3.1: the highest peak is at least 5 kt higher than the current two-minute average and at least 15 kt."
+        },
+        {
+          "q": "VRB is used for wind direction when the speed is:",
+          "c": [
+            "Under 3 kt",
+            "Under 10 kt",
+            "Exactly 5 kt",
+            "Over 20 kt"
+          ],
+          "a": 0,
+          "e": "MANOBS 3.3.4: VRB when speed is less than 3 kt. At higher speeds only if the variation is 180 degrees or more or no single direction can be determined."
+        },
+        {
+          "q": "Wind direction varies between 240 and 350 degrees over 10 minutes with a mean of 8 kt. How is it reported?",
+          "c": [
+            "Two extremes clockwise: 240V350",
+            "VRB08KT",
+            "Mean direction only",
+            "00000KT"
+          ],
+          "a": 0,
+          "e": "MANOBS 3.3.5: a variation of 60 degrees or more but under 180, with a mean of 3 kt or more, is reported as the two extreme directions in clockwise order."
+        },
+        {
+          "q": "The observed visibility falls between two reportable values. Which is reported?",
+          "c": [
+            "The lower value",
+            "The higher value",
+            "The nearest value",
+            "The mean of the two"
+          ],
+          "a": 0,
+          "e": "MANOBS 4.5.1.1: the lower value shall be reported."
+        },
+        {
+          "q": "What is the prevailing visibility?",
+          "c": [
+            "The greatest value common to sectors covering half or more of the horizon circle",
+            "The lowest visibility seen in any direction",
+            "The average of visibility in all directions",
+            "The visibility in the direction of the active runway"
+          ],
+          "a": 0,
+          "e": "MANOBS 4.2: the maximum visibility value common to sectors comprising one-half or more of the horizon circle."
+        },
+        {
+          "q": "Mist (BR) is reported when the prevailing visibility is:",
+          "c": [
+            "5/8 to 6 SM",
+            "1/2 SM or less",
+            "1/4 SM or less",
+            "Over 6 SM"
+          ],
+          "a": 0,
+          "e": "MANOBS 6.7.1.3. Fog (FG) is reported at 1/2 SM or less (6.7.1.1)."
+        },
+        {
+          "q": "Freezing fog (FZFG) is reported at temperatures of:",
+          "c": [
+            "-0.1 to -30.0 C with visibility 1/2 SM or less",
+            "Below 0 C with visibility 3 SM or less",
+            "0 to 5 C with visibility 1/2 SM or less",
+            "Any temperature with visibility under 1 SM"
+          ],
+          "a": 0,
+          "e": "MANOBS 6.7.1.2. Below -30.0 C it needs clear physical evidence of ice accretion from fog."
+        },
+        {
+          "q": "What rate of fall defines heavy rain in a Canadian METAR?",
+          "c": [
+            "7.6 mm/h or more",
+            "2.6 mm/h or more",
+            "5.0 mm/h or more",
+            "15 mm/h or more"
+          ],
+          "a": 0,
+          "e": "MANOBS 6.6.2.5.2: light 2.5 mm/h or less, moderate 2.6 to 7.5, heavy 7.6 or more."
+        },
+        {
+          "q": "The vicinity qualifier VC is used for phenomena observed:",
+          "c": [
+            "Within 5 SM but not at the station",
+            "Within 25 SM of the station",
+            "Anywhere in sight",
+            "At the station only"
+          ],
+          "a": 0,
+          "e": "MANOBS 6.7.1.8: within 5 mi. or less but not occurring at the point of observation."
+        },
+        {
+          "q": "Cumulonimbus or towering cumulus observed at any amount must:",
+          "c": [
+            "Always be reported in the remarks",
+            "Only be reported if overhead",
+            "Be reported only when BKN or OVC",
+            "Be left out of the METAR"
+          ],
+          "a": 0,
+          "e": "MANOBS 7.3 item 5: CB and TCU of any amount shall always be reported in the remark."
+        },
+        {
+          "q": "The RVR group is included in a METAR when at least one RVR is:",
+          "c": [
+            "6,000 ft or less, or visibility is 1 SM or less",
+            "Under 1,000 ft only",
+            "Below 3,000 ft, or visibility is 3 SM or less",
+            "Under 600 ft"
+          ],
+          "a": 0,
+          "e": "MANOBS 5.2: included when at least one RVR reports 6 000 ft or less, or prevailing visibility is 1 mi. or less."
+        },
+        {
+          "q": "How is the first correction to a METAR marked?",
+          "c": [
+            "CCA",
+            "COR",
+            "AMD",
+            "RTD"
+          ],
+          "a": 0,
+          "e": "MANOBS 11.2.2.5: CC followed by an incrementing letter, CCA for the first correction, CCB for the second."
         }
       ],
       "verified": {
@@ -264,11 +435,12 @@
           "MANOBS 8th ed. Amendment 3: 2.5 (METAR and SPECI), 3.2.1 (wind, two-minute mean, true), 4.5.1 (visibility in SM), 7.2.7 (ceiling), 7.3.1 (cloud reference level)",
           "NAV CANADA Aviation Weather Services Guide (2017): METAR decode, oktas ranges, M prefix, A group in inHg, intensity qualifiers, SLP decoding",
           "Transport Canada AIM MET 1.2.1: METARs hourly on the hour",
-          "MANOBS 8th ed. Amendment 3 (full PDF): 11.2.3.1 to 11.2.3.11 (SPECI criteria), 3.3.3 (wind shift), 8.3 and 9.2 (temperature and QNH format)"
+          "MANOBS 8th ed. Amendment 3 (full PDF): 11.2.3.1 to 11.2.3.11 (SPECI criteria), 3.3.3 (wind shift), 8.3 and 9.2 (temperature and QNH format)",
+          "MANOBS 8th ed. Am. 3 (full PDF): 2.8 to 2.9 (times, SPECI timing), 3.2 to 3.3 (wind), 4.2 and 4.5 (visibility), 5.2 (RVR), 6.6 to 6.7 (intensity, fog, mist, VC), 7.3 (sky), 11.2.2 (coding), 12.2.1 (magnetic wind for voice), 12.2.7 (AUTO SPECI)"
         ],
         "unverified": [
           "Footnote marking on the 4, 2 and 1 (hundreds of ft) ceiling values: the PDF text shows the marker but the matching note printed under visibility is the only note text found, so the ceiling wording above follows it by analogy.",
-          "Whether tower and ATIS winds are magnetic: MANOBS reports winds in true degrees; the statement about tower and ATIS winds is not in MANOBS and was removed."
+          "The tower and ATIS magnetic-wind statement was removed. MANOBS 12.2.1 gives magnetic direction only for voice communication supporting take-off or landing in the Southern Domestic Airspace; how ATIS and tower broadcasts are classed under it was not checked."
         ]
       }
     },
