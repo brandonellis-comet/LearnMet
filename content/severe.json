@@ -652,9 +652,9 @@
           "list": [
             "Convective (thermal): rising thermals on sunny days over land, and in and near cumulus. Worst in the afternoon.",
             "Mechanical: wind flowing over obstacles such as buildings, trees and hills. Worst at low levels in strong winds, with gusty approach and takeoff.",
-            "Mountain wave: stable air flowing across a ridge produces waves downwind. Needs strong wind roughly perpendicular to the ridge, with wind increasing with height and a stable layer (a specific wind speed is not confirmed). Look for lenticular clouds and rotor clouds. Severe turbulence can occur in and below the rotor.",
+            "Mountain wave: stable air flowing across a ridge produces waves downwind. The AIM (AIR 1.5.6) says waves typically form when winds exceed about 50 kt and cross the range within 30 degrees of perpendicular, extending about 100 NM downwind. Look for lenticular and rotor clouds (not covered in the AIM text read). Downdrafts are strongest near summit height, up to about 5,000 ft/min on the lee of high ranges, and flight in the wave can feel smooth (AIR 1.5.7).",
             "Clear-air turbulence (CAT): in the TC AIM, turbulence above 15,000 ft ASL that is not associated with cumuliform cloud. Usually near jet streams and sharp upper troughs, from strong vertical or horizontal wind shear.",
-            "Wake turbulence: vortices from the wingtips of heavy aircraft."
+            "Wake turbulence: vortices from the wingtips of heavy aircraft. Strongest when the aircraft is heavy, clean and slow, with little dissipation in the first 2 minutes. Generated from rotation to nosewheel touchdown (AIR 2.9)."
           ]
         },
         {
@@ -666,7 +666,7 @@
         },
         {
           "list": [
-            "Thunderstorms: severe turbulence in and around them. Stay well clear.",
+            "Thunderstorms: severe turbulence can extend up to 20 NM from a severe storm and beneath it even with little visible sign. The AIM advises avoiding severe storms by at least 20 NM, and calls storms with tops at 35,000 ft or higher severe (AIR 2.7).",
             "CAT is hard to see. Forecast it from jet stream, shear, and pilot reports.",
             "Change altitude if turbulence persists."
           ]
@@ -686,6 +686,22 @@
         },
         {
           "h": "How it is forecast (MANAIR)"
+        },
+        {
+          "h": "AIM reporting terms (MET 2.2.2)"
+        },
+        {
+          "list": [
+            "Light: slight, momentary erratic changes in altitude or attitude, or slight rhythmic bumpiness reported as 'light chop'.",
+            "Moderate: greater than light; altitude or attitude changes occur but the aircraft stays in positive control. Usually airspeed variations. Sharp bumps without major altitude change are 'moderate chop'.",
+            "Severe: large abrupt changes in altitude or attitude and large airspeed variations; the aircraft may be momentarily out of control.",
+            "Extreme is listed as a reportable intensity (MET 2.2.1) but not defined in Table 2.2.",
+            "Frequency: occasional is less than one third of the time, intermittent one third to two thirds, continuous more than two thirds.",
+            "High-level turbulence (normally above 15,000 ft ASL) not associated with cumuliform cloud is reported as CAT.",
+            "Weather radar cannot detect turbulence.",
+            "A report should include location, UTC time, intensity, in or near cloud, altitude, aircraft type, and duration where applicable.",
+            "The 2026 AIM GFA text labels turbulence causes MECH, L LVL WS, LEE WV, L LVL JET and CAT. MANAIR 2024 lists the lee wave type as MTW."
+          ]
         },
         {
           "list": [
@@ -918,19 +934,78 @@
           ],
           "a": 0,
           "e": "MANAIR 4.9.2.2 lists CAT, MECH, MTW, L LVL JET and L LVL WS."
+        },
+        {
+          "q": "In the AIM, 'intermittent' turbulence means:",
+          "c": [
+            "One third to two thirds of the time",
+            "Less than one third of the time",
+            "More than two thirds of the time",
+            "Exactly half the time"
+          ],
+          "a": 0,
+          "e": "AIM MET 2.2.2: occasional is less than 1/3, intermittent is 1/3 to 2/3, continuous is more than 2/3."
+        },
+        {
+          "q": "How does the AIM treat 'moderate chop'?",
+          "c": [
+            "Sharp bumps without major altitude change",
+            "Large abrupt altitude changes",
+            "Slight rhythmic bumpiness",
+            "Loss of control"
+          ],
+          "a": 0,
+          "e": "AIM MET 2.2.2. Slight rhythmic bumpiness is light chop."
+        },
+        {
+          "q": "Can weather radar detect turbulence?",
+          "c": [
+            "No",
+            "Yes, any turbulence",
+            "Yes, but only clear-air turbulence",
+            "Only over water"
+          ],
+          "a": 0,
+          "e": "AIM MET 1.3.9.1: these radars cannot detect turbulence."
+        },
+        {
+          "q": "Roughly how far from a severe thunderstorm can severe turbulence extend, per the AIM?",
+          "c": [
+            "Up to 20 NM",
+            "Up to 5 NM",
+            "Up to 50 NM",
+            "Only within the cloud"
+          ],
+          "a": 0,
+          "e": "AIM AIR 2.7.1. Avoid severe storms by at least 20 NM."
+        },
+        {
+          "q": "The AIM gives approximate mountain wave formation conditions of:",
+          "c": [
+            "Winds above about 50 kt within 30 degrees of perpendicular to the range",
+            "Any wind over 10 kt parallel to the range",
+            "Winds above 25 kt from any direction",
+            "Calm winds over high terrain"
+          ],
+          "a": 0,
+          "e": "AIM AIR 1.5.6, summarised read."
         }
       ],
       "verified": {
         "date": "2026-10-27",
         "sources": [
           "Transport Canada AIM MET 2.2.2: turbulence intensity wording (light, moderate, severe, extreme) and CAT definition",
-          "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.2.2 (turbulence intensity definitions, GFA types, L LVL JET), 5.8.3.2 and D.5 (SIGMET SEV only), 6.8.3.2 and E.5 (AIRMET MOD only)"
+          "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.2.2 (turbulence intensity definitions, GFA types, L LVL JET), 5.8.3.2 and D.5 (SIGMET SEV only), 6.8.3.2 and E.5 (AIRMET MOD only)",
+          "TC AIM 2026-2 MET (tc.canada.ca, fetched 2026-10-27): 2.2.1, 2.2.2 Table 2.2 (intensity, chop, frequency), 1.3.9.1, 4.12 (GFA labels, L LVL JET)",
+          "TC AIM 2026-2 AIR (tc.canada.ca, fetched 2026-10-27, summarised read): 1.5.6 to 1.5.7 (mountain waves), 2.7 (thunderstorm turbulence), 2.9 (wake turbulence)"
         ],
         "unverified": [
-          "Mountain wave wind speed, rotor and lenticular details: standard teaching, not checked against a Canadian publication.",
+          "Mountain wave, thunderstorm and wake turbulence numbers were read from a summarised version of AIR; confirm against the page text.",
+          "AIR 2.10 (clear-air turbulence) was not in the text retrieved.",
+          "Rotor and lenticular cloud details: not in the AIM text read.",
           "Richardson number critical value of 0.25: textbook value, not checked.",
-          "Wake turbulence and mechanical turbulence descriptions beyond the MANAIR type list: not checked.",
-          "The TC AIM 'extreme' category is in the earlier AIM source; MANAIR uses light, moderate and severe only."
+          "Mechanical and convective turbulence descriptions: not defined in the AIM text read.",
+          "The TC AIM 'extreme' category is not defined in the text read."
         ]
       }
     },
@@ -971,6 +1046,16 @@
             "Vector magnitude exceeding 40 kt within 1,000 ft AGL.",
             "Vector magnitude exceeding 50 kt within 1,500 ft AGL.",
             "A pilot report of loss or gain of indicated airspeed of 20 kt or more within 1,500 ft AGL."
+          ]
+        },
+        {
+          "h": "AIM details (MET 2.3 and AIR 2.8)"
+        },
+        {
+          "list": [
+            "Intense downdrafts, typically from thunderstorms, create wind shear that is hazardous on approach, landing and takeoff (MET 2.3).",
+            "Ground instruments do not measure wind shear at Canadian aerodromes, so it is usually identified from pilot reports (MET 2.3).",
+            "Microburst (AIR 2.8): wind shear may be severe within 1,000 ft AGL. About 1 NM across at 2,000 ft AGL, surface spread about 2 to 2.5 NM. Vertical winds up to 6,000 ft/min and surface winds up to 45 kt (90 kt shear). Usually 15 minutes or less, with peak winds lasting 2 to 4 minutes; multiple microbursts are common."
           ]
         },
         {
@@ -1188,18 +1273,42 @@
           ],
           "a": 0,
           "e": "MANAIR 4.8 (legend box standard phrases)."
+        },
+        {
+          "q": "How is wind shear usually identified at Canadian aerodromes, per the AIM?",
+          "c": [
+            "Pilot reports, since ground instruments do not measure it",
+            "Ground wind shear sensors at every aerodrome",
+            "Weather radar alone",
+            "Surface temperature"
+          ],
+          "a": 0,
+          "e": "AIM MET 2.3."
+        },
+        {
+          "q": "How long do peak microburst winds usually last, per the AIM?",
+          "c": [
+            "2 to 4 minutes",
+            "30 to 60 minutes",
+            "Under 10 seconds",
+            "About 2 hours"
+          ],
+          "a": 0,
+          "e": "AIM AIR 2.8, summarised read: usually 15 minutes or less overall."
         }
       ],
       "verified": {
         "date": "2026-10-27",
         "sources": [
           "Transport Canada AIM MET 2.3: wind shear definition and no height limit",
-          "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 2.6.9 (WS group and four guidelines), 5.8.3.2 (SIGMET SEV only), 4.8 (legend phrase)"
+          "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 2.6.9 (WS group and four guidelines), 5.8.3.2 (SIGMET SEV only), 4.8 (legend phrase)",
+          "TC AIM 2026-2 MET (tc.canada.ca, fetched 2026-10-27): 2.3 (wind shear)",
+          "TC AIM 2026-2 AIR (tc.canada.ca, fetched 2026-10-27, summarised read): 2.8 (microburst numbers)"
         ],
         "unverified": [
           "Nocturnal low-level jet height, timing and cause: standard teaching, not checked against a Canadian publication.",
           "Shear units (knots per 100 ft): not checked.",
-          "Microburst approach sequence and typical LLWS causes: not checked."
+          "Microburst numbers were read from a summarised version of AIR 2.8; confirm against the page text."
         ]
       }
     },

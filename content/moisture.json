@@ -1070,6 +1070,7 @@
         },
         {
           "list": [
+            "Trace (AIM Table 2.3): ice becomes perceptible; the rate of accumulation is slightly greater than the rate of sublimation. Not hazardous, even without de-icing or anti-icing, unless encountered for over 1 hour.",
             "Light: a problem only if flight in it is prolonged (over 1 hour).",
             "Moderate: de-icing or anti-icing equipment, or diversion, is necessary.",
             "Severe: immediate diversion is necessary. A SIGMET for icing is issued only for severe."
@@ -1109,6 +1110,17 @@
         },
         {
           "h": "Forecasting icing (MANAIR)"
+        },
+        {
+          "h": "AIM icing reporting (MET 2.4)"
+        },
+        {
+          "list": [
+            "Report icing to ATS and, if IFR, request a new routing or altitude if icing will be a hazard.",
+            "Include aircraft identification and type, location, UTC time, intensity, icing type, altitude or flight level, and indicated airspeed.",
+            "The AIM defines three types: rime (rough, milky, opaque, instantaneous freezing of small supercooled droplets), clear (glossy, clear or translucent, relatively slow freezing of large supercooled droplets) and mixed (both at once).",
+            "In thunderstorms, the AIM advises limiting critical icing by penetrating below the freezing level or above the -15 C level (AIR 2.7.2, summarised read)."
+          ]
         },
         {
           "list": [
@@ -1332,6 +1344,39 @@
           ],
           "a": 0,
           "e": "MANAIR 4.9.2.1: numerator is the top, denominator the base, hundreds of feet ASL."
+        },
+        {
+          "q": "What is 'trace' icing in the AIM?",
+          "c": [
+            "Ice becomes perceptible; not hazardous unless encountered for over 1 hour",
+            "Ice that needs immediate diversion",
+            "Ice only on the ground",
+            "Ice that never needs reporting"
+          ],
+          "a": 0,
+          "e": "AIM Table 2.3."
+        },
+        {
+          "q": "What should a pilot do if icing will be a hazard under IFR?",
+          "c": [
+            "Report it to ATS and request a new routing or altitude",
+            "Ignore it if light",
+            "Climb into cloud",
+            "Only report it after landing"
+          ],
+          "a": 0,
+          "e": "AIM MET 2.4."
+        },
+        {
+          "q": "Which items belong in an AIM icing report?",
+          "c": [
+            "Aircraft identification and type, location, UTC time, intensity, type, altitude and indicated airspeed",
+            "Pilot name only",
+            "Cloud colour",
+            "Fuel remaining"
+          ],
+          "a": 0,
+          "e": "AIM MET 2.4."
         }
       ],
       "verified": {
@@ -1341,12 +1386,14 @@
           "WMO, Aviation hazards: icing: rime below about -10 C and/or low liquid water; clear above about -10 C and/or high liquid water; freezing drizzle and rain",
           "NWS cloud and precipitation training notes: liquid water persists as low as -40 C",
           "MANOBS 8th ed. Am. 3 (full PDF): 13.2.10 (glaze, rime, hoar frost); 6.6.2.3 to 6.6.2.4 (freezing precipitation and ice accretion indicator)",
-          "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.2.1 (GFA icing types, depiction and intensity definitions), 5.8.3.2, D.5 and E.5 (SIGMET SEV, AIRMET MOD)"
+          "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.2.1 (GFA icing types, depiction and intensity definitions), 5.8.3.2, D.5 and E.5 (SIGMET SEV, AIRMET MOD)",
+          "TC AIM 2026-2 MET (tc.canada.ca, fetched 2026-10-27): 2.4, Tables 2.3 and 2.4, 4.12, 5.2(e); TC AIM 2026-2 AIR (tc.canada.ca, fetched 2026-10-27, summarised read): 2.7.2"
         ],
         "unverified": [
           "Carburettor icing (outside temperatures up to about 20 C) and frost deposition: standard aviation teaching, not confirmed on the pages read.",
           "Escape by changing altitude, and which cloud types have the highest liquid water: standard teaching.",
-          "The AIM MET 2.4 icing text was read earlier but not re-checked line by line; MANAIR intensity wording matches the NAV CANADA guide."
+          "AIM text on frost, freezing rain, icing temperature ranges and ground icing was not in the retrieved MET text; AIR 2.12 icing sections were not retrieved.",
+          "The -15 C level advice in thunderstorms was read from a summarised version of AIR."
         ]
       }
     }
