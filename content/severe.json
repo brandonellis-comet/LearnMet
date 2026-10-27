@@ -1270,14 +1270,15 @@
         },
         {
           "list": [
-            "Every type of alert (warnings, advisories and watches) now has a colour when issued. Colours move yellow, orange, red as potential risk increases.",
+            "ECCC states the three types of alerts are warnings, advisories and watches. Each appears on a yellow, orange or red banner, which moves yellow to orange to red as potential risk increases.",
             "Yellow: hazardous weather may cause damage, disruption or health impacts. Impacts are moderate, localized and/or short-term. Yellow is the most common.",
             "Orange: severe weather is likely to cause significant damage, disruption or health impacts. Impacts are major, widespread and/or may last a few days. Orange is uncommon.",
             "Red: very dangerous and possibly life-threatening weather will cause extreme damage and disruption. Impacts are extensive, widespread and prolonged. Red is rare.",
             "Symbols differ by colour: yellow is a circle, orange a diamond, red a triangle, each with an exclamation mark.",
             "The same weather can have different impacts depending on timing, location and population, which is why the colour is tied to impact.",
             "Marine warnings and watches are a separate program (Canadian Marine Warning Program). They do not use colours and keep a single-tier warning system.",
-            "Older CAP overview (2016): a watch generally describes conditions favourable for a hazardous event, not the event itself. Warning ranks above advisory, which ranks above statement, loosely."
+            "Current ECCC definitions: a warning is an urgent message that severe weather is happening or will happen (act now). A watch is issued when conditions are favourable for the development of severe weather (get ready). An advisory is for specific weather events that are less severe but still significant (act now).",
+            "Special weather statements are for information only. They are not alerts and are not colour-coded. They flag unusual or inconvenient conditions and add detail beyond usual forecasts."
           ]
         },
         {
@@ -1285,7 +1286,7 @@
         },
         {
           "list": [
-            "When an event meets warning criteria, forecasters issue an alert message in bulletin form: the warning, watch, advisory or statement. Updates and endings generate further messages.",
+            "In 2016 CAP terms, when an event meets warning criteria forecasters issue a bulletin containing the warning, watch, advisory or statement. Updates and endings generate further messages. (Current ECCC wording says statements are not alerts.)",
             "Audience sectors: public (all warnings and watches), public (all advisories and statements), marine (shorter-duration convective warnings and advisories), aviation (none planned).",
             "Each program within ECCC sets the criteria and update frequency for its warnings.",
             "Alerts issued for selected areas only (jurisdiction of the responsible program): arctic outflow, blowing snow, dust storm, flash freeze, freezing drizzle, frost, snow squall, storm surge, wind (including location-specific wind warnings), plus marine squall and waterspout.",
@@ -1632,15 +1633,15 @@
           "e": "Per CAP Information Sheet 3, footnote 3."
         },
         {
-          "q": "According to CAP Information Sheet 3, which forms can an alert message take?",
+          "q": "According to current ECCC wording, which are the three types of alerts?",
           "c": [
-            "Warning, watch, advisory or statement",
-            "Warning only",
-            "Yellow, orange or red only",
-            "Warning and statement only"
+            "Warnings, advisories and watches",
+            "Warnings, watches and statements",
+            "Yellow, orange and red",
+            "Warnings, advisories and statements"
           ],
           "a": 0,
-          "e": "The sheet says alerts contain the warning, watch, advisory or statement."
+          "e": "ECCC: the three alert types are warnings, advisories and watches. Special weather statements are information only and not alerts."
         },
         {
           "q": "Which hazard is NOT flagged 'for selected areas' in CAP Information Sheet 3?",
@@ -1729,6 +1730,39 @@
           ],
           "a": 0,
           "e": "ECCC lists these three; forecasters decide the confidence level."
+        },
+        {
+          "q": "Are special weather statements colour-coded alerts?",
+          "c": [
+            "No; they are information only, not alerts, and not colour-coded",
+            "Yes, always yellow",
+            "Yes, grey",
+            "Yes, same as advisories"
+          ],
+          "a": 0,
+          "e": "ECCC: statements are for information only; weather statements are not colour-coded."
+        },
+        {
+          "q": "How does ECCC describe a watch?",
+          "c": [
+            "Issued when conditions are favourable for the development of severe weather",
+            "Severe weather is happening now",
+            "A less severe but significant event",
+            "Information only"
+          ],
+          "a": 0,
+          "e": "ECCC weather alerts page."
+        },
+        {
+          "q": "How does ECCC describe an advisory?",
+          "c": [
+            "For specific weather events that are less severe but still significant",
+            "Urgent message that severe weather is happening",
+            "Information only",
+            "Conditions favourable for development"
+          ],
+          "a": 0,
+          "e": "ECCC weather alerts page."
         }
       ],
       "verified": {
@@ -1742,12 +1776,14 @@
           "ECCC, Weather Impact Guides, re-read 2026-10-27: Hurricanes and tropical storms, Coastal flooding, Cold, Heat, Frost and Snow squall wording; Frost has a moderate level only",
           "ECCC canada.ca weather alert colours page (screenshots supplied by the user, 2026-10-27): alert types with colours, colour descriptions, symbols, marine warnings",
           "ECCC, Environment Canada and the Common Alerting Protocol, Information Sheet 3, v2.0, 1 March 2016 (pages supplied by the user as screenshots, 2026-10-27): alert forms, sectors, selected-area alerts, 2013 temperature consolidation",
-          "ECCC canada.ca How we choose weather alert colours (screenshots supplied by the user, 2026-10-27): Alert Colour Matrix figure, levels of impact, factors, forecast confidence"
+          "ECCC canada.ca How we choose weather alert colours (screenshots supplied by the user, 2026-10-27): Alert Colour Matrix figure, levels of impact, factors, forecast confidence",
+          "ECCC, Weather Alerts (canada.ca/en/services/environment/weather/severeweather/weather-alerts.html), fetched 2026-10-27: definitions of warning, watch, advisory and special weather statement; three alert types; statements not colour-coded",
+          "The Weather Network, 26 Nov 2025 (secondary): statements have no colour code; confirms ECCC wording"
         ],
         "unverified": [
-          "Whether the 'statement' form is still used with the colour system: confirmed in the 2016 CAP sheet, but not named on the current colour page.",
           "The selected-areas list is from March 2016 and may have changed. The sheet does not say which areas.",
-          "How regional offices apply criteria in practice: not in public sources read."
+          "How regional offices apply criteria in practice: not in public sources read.",
+          "MetNote definition: not given on the ECCC pages read."
         ]
       }
     }
