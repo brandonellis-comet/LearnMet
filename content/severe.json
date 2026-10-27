@@ -1221,13 +1221,28 @@
         {
           "h": "How the alert colour is chosen"
         },
-        "ECCC uses an Alert Colour Matrix that combines impact with forecast confidence (low, moderate, high, very high).",
+        "ECCC uses an Alert Colour Matrix: forecast confidence (low, moderate, high, very high) on one axis and weather impact (low, moderate, high, extreme) on the other. Where they meet gives the colour. Confidence comes from current observations, weather prediction models and forecaster expertise; the forecaster decides the level.",
         {
           "list": [
-            "Yellow: moderate impact with high or very high confidence. Also high impact with low or moderate confidence, and extreme impact with low confidence.",
-            "Orange: high impact with high or very high confidence. Also extreme impact with moderate or high confidence.",
-            "Red: extreme impact with very high confidence.",
-            "Low impact: no alert. ECCC may issue a MetNote or special weather statement instead."
+            "Very high confidence: moderate impact is yellow, high is orange, extreme is red.",
+            "High confidence: moderate impact is yellow, high and extreme are orange.",
+            "Moderate confidence: moderate impact is no alert, high is yellow, extreme is orange.",
+            "Low confidence: moderate impact is no alert, high and extreme are yellow.",
+            "Low impact: no alert at any confidence. ECCC may issue a MetNote or special weather statement instead.",
+            "Example from ECCC: with very high confidence in a thunderstorm, moderate impact gives yellow, high gives orange, extreme gives red."
+          ]
+        },
+        {
+          "h": "Impact levels (ECCC)"
+        },
+        {
+          "list": [
+            "Alerts are issued for only three impact levels: moderate, high and extreme.",
+            "Impact levels describe effects on travel delays, utilities disruption, damage to property, danger to health and time for society to recover.",
+            "Not every impact listed in a guide must occur for that level to apply.",
+            "Impacts listed at lower levels also apply at higher levels, even if not repeated.",
+            "The guides give primary impacts for the average person in the forecast area. They exclude secondary impacts such as business or school closures.",
+            "The same weather can have different impacts depending on location, existing conditions (such as snow already on the ground), timing and vulnerability of the area or people."
           ]
         },
         {
@@ -1637,6 +1652,83 @@
           ],
           "a": 0,
           "e": "Blizzard has no note; the others do."
+        },
+        {
+          "q": "With moderate forecast confidence, which impact level first gives a yellow alert?",
+          "c": [
+            "High",
+            "Moderate",
+            "Low",
+            "Extreme only"
+          ],
+          "a": 0,
+          "e": "Moderate confidence: moderate impact has no alert, high is yellow, extreme is orange."
+        },
+        {
+          "q": "High forecast confidence and extreme impact gives which colour?",
+          "c": [
+            "Orange",
+            "Red",
+            "Yellow",
+            "No alert"
+          ],
+          "a": 0,
+          "e": "Red needs extreme impact with very high confidence."
+        },
+        {
+          "q": "Very high confidence and high impact gives:",
+          "c": [
+            "Orange",
+            "Yellow",
+            "Red",
+            "No alert"
+          ],
+          "a": 0,
+          "e": "Matrix: very high confidence, high impact is orange."
+        },
+        {
+          "q": "Low forecast confidence with moderate impact gives:",
+          "c": [
+            "No alert",
+            "Yellow",
+            "Orange",
+            "Red"
+          ],
+          "a": 0,
+          "e": "The moderate-impact cell is blank at low and moderate confidence."
+        },
+        {
+          "q": "Do the Impact Guides include secondary impacts such as school or business closures?",
+          "c": [
+            "No; they list primary impacts for the average person",
+            "Yes, they list all closures",
+            "Only at the extreme level",
+            "Only for wind"
+          ],
+          "a": 0,
+          "e": "ECCC safety information note."
+        },
+        {
+          "q": "Must every impact listed in a guide occur for that impact level to apply?",
+          "c": [
+            "No",
+            "Yes",
+            "Only at moderate",
+            "Only at extreme"
+          ],
+          "a": 0,
+          "e": "ECCC: not all potential impacts need to occur."
+        },
+        {
+          "q": "Which sources inform ECCC's forecast confidence?",
+          "c": [
+            "Current observations, weather prediction models and forecaster expertise",
+            "Models only",
+            "Satellite imagery only",
+            "Public reports only"
+          ],
+          "a": 0,
+          "e": "ECCC lists these three; forecasters decide the confidence level."
         }
       ],
       "verified": {
@@ -1649,10 +1741,10 @@
           "ECCC, CAP General Overview (June 2016): warning, watch, advisory and statement classes",
           "ECCC, Weather Impact Guides, re-read 2026-10-27: Hurricanes and tropical storms, Coastal flooding, Cold, Heat, Frost and Snow squall wording; Frost has a moderate level only",
           "ECCC canada.ca weather alert colours page (screenshots supplied by the user, 2026-10-27): alert types with colours, colour descriptions, symbols, marine warnings",
-          "ECCC, Environment Canada and the Common Alerting Protocol, Information Sheet 3, v2.0, 1 March 2016 (pages supplied by the user as screenshots, 2026-10-27): alert forms, sectors, selected-area alerts, 2013 temperature consolidation"
+          "ECCC, Environment Canada and the Common Alerting Protocol, Information Sheet 3, v2.0, 1 March 2016 (pages supplied by the user as screenshots, 2026-10-27): alert forms, sectors, selected-area alerts, 2013 temperature consolidation",
+          "ECCC canada.ca How we choose weather alert colours (screenshots supplied by the user, 2026-10-27): Alert Colour Matrix figure, levels of impact, factors, forecast confidence"
         ],
         "unverified": [
-          "Alert Colour Matrix details were read from the earlier web page, not the screenshots.",
           "Whether the 'statement' form is still used with the colour system: confirmed in the 2016 CAP sheet, but not named on the current colour page.",
           "The selected-areas list is from March 2016 and may have changed. The sheet does not say which areas.",
           "How regional offices apply criteria in practice: not in public sources read."
