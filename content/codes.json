@@ -3380,6 +3380,739 @@
           "AWOS lightning distances (6, 10, 30 SM) are from this guide only and have not been compared with MANOBS."
         ]
       }
+    },
+    {
+      "title": "Synoptic code SYNOP (MANOBS Part B)",
+      "lesson": [
+        "The synoptic code (SYNOP) is the international WMO code for surface observations from land stations, staffed or automatic. MANOBS Part B covers it in chapters 14 and 15 and refers to WMO Manual on Codes No. 306. Part B is not a regulatory document used in aviation safety regulations, so changes to it are not put through the Transport Canada consultation process. This topic paraphrases chapters 14 and 15 of MANOBS 8th ed., Amendment 3.",
+        {
+          "h": "Purpose and schedule"
+        },
+        {
+          "list": [
+            "Synoptic reports are made at least four times a day, at 0000, 0600, 1200 and 1800 UTC (main synoptic hours). A complete report can hold more than 20 pieces of information, including pressure from barometer readings taken at the same moment worldwide.",
+            "The barometer is always read at the hour. All other elements are observed, recorded and coded in the 10 minutes before the hour (start 15 minutes before in difficult weather). Stations follow this schedule unless the ADM gives special permission.",
+            "Intermediate synoptic reports are also taken at some stations; their precipitation group covers 3 hours and sits in Section 3."
+          ]
+        },
+        {
+          "h": "Structure of the code"
+        },
+        {
+          "list": [
+            "Six sections numbered 0 to 5, made of five-figure groups. Most groups start with a fixed indicator figure (1, 2, 3 and so on), so omitting one group does not change how the others are identified.",
+            "Main Canadian messages normally contain Sections 0, 1 and 3. Section 5 (national daily data) is added once daily to the 0600 UTC message. Section 2 (sea stations) follows MANMAR. Section 4 is not used in Canada.",
+            "The message ends with the separation signal = attached to the last group. Missing data are written X and sent as a solidus (/).",
+            "Section 0: AAXX identifies a land-station report; YYGGiw is the day, hour and wind indicator; IIiii is the block and station number. The communications computer normally inserts the first two groups. The date of the 0000 UTC report is the day just beginning.",
+            "Section 1 order: iR ix h VV, N dd ff, (00fff), 1snTTT, 2snTdTdTd, 3P0P0P0P0, 4PPPP, 5appp, 6RRRtR, 7wwW1W2, 8NhCLCMCH, 9GGgg."
+          ]
+        },
+        {
+          "h": "Section 0 and Section 1 indicators"
+        },
+        {
+          "list": [
+            "iw (wind indicator): 0 estimated m/s, 1 anemometer m/s, 3 estimated knots, 4 anemometer knots. Canadian land stations use 4 (inserted by the computer).",
+            "Block number: Canadian land stations use 71 or 73. The station number comes from METSTAT.",
+            "iR (precipitation group indicator): 1 means group 6RRRtR is in Section 1 (main hours); 2 means it is in Section 3 (intermediate hours); 4 means precipitation is not normally measured. Codes 0 and 3 are not used in Canada.",
+            "ix (station type): staffed 1 (7-group included), 2 (omitted, nothing significant), 3 (omitted, not observed); automatic 4, 5, 6, 7. Automatic stations currently use 5, 6 or 7.",
+            "Inclusion rules in Section 1: iRixhVV, Nddff, 1snTTT, 2snTdTdTd, 3P0, 4PPPP, 5appp and 6RRRtR are always included (5appp whenever the 3-hour tendency is available). 00fff only if wind is 99 kt or more. 7wwW1W2 only if significant present or past weather was observed. 8NhCLCMCH only if cloud was observed."
+          ]
+        },
+        {
+          "h": "Height, visibility, cloud and wind groups"
+        },
+        {
+          "list": [
+            "h: base of the lowest cloud, in code figures 0 to 9 (0 is under 50 m, 4 is 300 to under 600 m, 9 is above 2500 m or no cloud). / means sky completely obscured. If only CH cloud is present, h is 9.",
+            "VV: code figures for visibility (00 is 0, 16 is 1 mile, 48 is 3, 58 is 5, 59 is 6, 74 is 15). If the visibility falls between two code figures, use the lower: 20 miles is 80, 30 miles is 83. When an hourly and a synoptic observation are taken together and prevailing visibility is 15+, VV is 74. Codes 90 to 99 only on special instruction from the ADM.",
+            "N: total cloud in oktas. 7 means 7 oktas or more but not 8; 9 means sky completely obscured; / means indiscernible or not observed. Cloud seen through partial obscuration is counted as though the obscuration did not exist. A mackerel sky (AC or SC perlucidus) is at most 7.",
+            "dd: 10-minute mean wind direction from true north in tens of degrees: 00 calm, 09 east, 18 south, 27 west, 36 north.",
+            "ff: 10-minute mean speed in knots. At 99 kt or more, ff is 99 and the extra group 00fff gives the actual speed (an east wind of 118 kt is N0999 00118). The conversion table from mph to knots (10 mph is 9 kt, 34 mph is 30 kt) is not reversible."
+          ]
+        },
+        {
+          "h": "Temperature and pressure groups"
+        },
+        {
+          "list": [
+            "1snTTT and 2snTdTdTd: sn is 0 for 0 C or above and 1 for below 0; the value is the absolute temperature in tenths of a degree. Examples: 15.3 C is 10153; -15.3 C is 11153; -0.9 C is 11009; 0.0 C is 10000; dew point -10.0 is 21100.",
+            "3P0P0P0P0 (main reports only): station-level pressure. Below 1000.0 hPa code it directly (987.2 is 39872). At 1000.0 or above, drop the thousands digit (1012.4 is 30124).",
+            "4PPPP: mean sea-level pressure in tenths of hPa, same rule (996.2 is 49962; 1015.4 is 40154).",
+            "5appp: 3-hour tendency. a is the characteristic (0 to 8; 4 steady; 0 to 3 pressure now same or higher than 3 hours ago; 5 to 8 same or lower), ppp the net change in tenths of hPa (11.2 is 112; 9.3 is 093; 0.8 is 008)."
+          ]
+        },
+        {
+          "h": "Precipitation groups (6RRRtR)"
+        },
+        {
+          "list": [
+            "RRR: 000 is 0 mm; 001 to 988 are whole millimetres; 989 is 989 mm or more; 990 is trace; 992 to 999 are 0.2 to 0.9 mm (991 is not used in Canada); /// is not measured. Amounts above 1.0 mm are rounded to the nearest whole millimetre.",
+            "tR: duration of the period. 1 is 6 hours (always at stations making main observations every 6 hours), 2 is 12, 3 is 18, 4 is 24, 5 is 1 hour, 6 is 2, 7 is 3, 8 is 9 and 9 is 15 hours. Intermediate reports use 5 to 9.",
+            "Main hours put the group in Section 1 (iR 1). Intermediate hours put it in Section 3 (iR 2)."
+          ]
+        },
+        {
+          "h": "Present and past weather (7wwW1W2)"
+        },
+        {
+          "list": [
+            "ww covers phenomena occurring at observation time or in the preceding 60 minutes (thunder up to 75 minutes). Codes 00 to 49 are used when no precipitation is occurring at the station; 50 to 99 when it is. The first digit is one of ten categories.",
+            "If more than one ww code applies, choose the highest, except that 17 is preferred over 20 to 49. Codes 20 to 27 and 29 are never used when precipitation is occurring at the station. In MANOBS, slight means light.",
+            "Key codes: 13 lightning seen, no thunder; 17 thunder heard within 15 minutes, no precipitation at the station; 19 funnel cloud, waterspout or tornado (for a tornado, the plain word TORNADO is the last group of Section 3); 29 thunderstorm in the preceding hour but none now; 95 thunderstorm with rain or snow; 96 thunderstorm with hail or snow pellets. Codes 97 and 99 are no longer used in Canada.",
+            "Drizzle, rain and snow: 50 and 51 slight drizzle (intermittent, continuous), 60 and 61 slight rain, 62 and 63 moderate rain, 64 and 65 heavy rain, 70 to 75 snow, 80 to 82 rain showers, 85 and 86 snow showers. Freezing rain is 66 (slight) and 67 (moderate or heavy).",
+            "A thunderstorm is in progress at the station when thunder is heard in the 15 minutes before the observation, or overhead lightning is seen in that time and noise might prevent hearing thunder.",
+            "W1W2 (past weather): 0, 1, 2 describe cloud amount (N 4 or less; more than half part of the period; more than half throughout), 3 sandstorm, dust storm or blowing snow, 4 fog, 5 drizzle, 6 rain, 7 snow, 8 showers, 9 thunderstorm. The period normally runs from the previous synoptic observation to when the present weather began, at most 6 hours at main hours. W1 differs from ww where possible. If there was a break in the weather watch over 30 minutes, W1W2 may be XX."
+          ]
+        },
+        {
+          "h": "Cloud groups (8NhCLCMCH) and 9GGgg"
+        },
+        {
+          "list": [
+            "The 8-group is omitted when the sky is clear (N = 0) or completely obscured with no cloud visible.",
+            "Nh is the total amount of CL cloud, or of CM cloud if there is no CL; if only CH is present, Nh is 0. There is no height limit: convective cloud based at 12,000 ft still counts as CL.",
+            "CL priority: if cumulonimbus is present, CL is 9 when the top of at least one is clearly fibrous or striated, otherwise 3. Without cumulonimbus the order is 4 (stratocumulus formed by spreading cumulus), 8, 2, then 1, 5, 6 or 7 by which type predominates.",
+            "9GGgg gives the actual observation time when it differs by more than 10 minutes from the scheduled hour GG."
+          ]
+        },
+        {
+          "h": "Section 3 (regional and national exchange)"
+        },
+        {
+          "list": [
+            "Always included in Canadian land-station reports. Main reports always carry 333, 1snTxTxTx (maximum temperature), 2snTnTnTn (minimum) and 7R24R24R24R24 (24-hour precipitation).",
+            "Maximum temperature: at 1200 UTC the 24-hour maximum ending 6 hours earlier (0600); at 1800 and 0000 UTC the previous 12 hours; at 0600 UTC the previous 24 hours.",
+            "Minimum temperature: at 1200 UTC the previous 12 hours; at 1800 and 0600 UTC the previous 24 hours; at 0000 UTC the previous 18 hours.",
+            "4E'sss: state of the ground and depth of snow or ice, included when solid precipitation is on the ground and precipitation has occurred since the last main report (and at 1200 UTC whenever it is on the ground). Ice from freezing precipitation alone is excluded. E' 0 to 9 describes cover (7 is an even layer of loose dry snow covering the ground). sss is whole centimetres: 997 is trace (under 0.5 cm), 998 is snow cover not continuous.",
+            "7R24: tenths of mm for the 24 hours. Nil is 70000, trace 79999, 25.3 mm is 70253, 999.8 mm or more is 79998.",
+            "Special groups: 909Rtdc gives when precipitation began or ended (Rt) and its duration and character (dc), used whenever 6RRRtR is coded and RRR is not 000; 931ss gives the depth of newly fallen snow in whole centimetres (up to 55; at the Regional Director General's discretion, four staffed observations a day, 1 cm or more).",
+            "Rt: 1 is less than 1 hour ago, 2 is 1 to 2 hours, up to 6 for 5 to 6 hours, 7 is 6 to 12 hours, 8 is more than 12 hours, 9 unknown. dc: 0 to 3 for one period of precipitation (under 1 hour, 1 to 3, 3 to 6, over 6 hours) and 4 to 7 for two or more periods. Periods separated by 15 minutes or more count as separate."
+          ]
+        },
+        {
+          "h": "Section 5 (national daily data, 0600 UTC)"
+        },
+        {
+          "list": [
+            "Sent once daily as the last section of the 0600 UTC message, for the 24 hours ending at 0600 UTC.",
+            "1ssss: snowfall in tenths of cm (0.6 cm is 10006; trace 19999; none 10000; not measured 1////). 2swswswsw: water equivalent of the snowfall in tenths of mm (trace 29999; none 20000).",
+            "3dmdmfmfm: direction and speed of the maximum wind, reported only when it exceeds 16 kt (mean or gust). 4fhftftfi: hundreds digit, time of occurrence and speed range of the maximum two-minute mean: 0 is 16 kt or less, 1 is 17 to 27, 2 is 28 to 33, 3 is 34 kt or more."
+          ]
+        }
+      ],
+      "terms": [
+        [
+          "SYNOP",
+          "International WMO code for surface synoptic observations from land stations."
+        ],
+        [
+          "Main synoptic hours",
+          "0000, 0600, 1200 and 1800 UTC."
+        ],
+        [
+          "AAXX",
+          "Message type identifier for land-station synoptic reports."
+        ],
+        [
+          "Okta",
+          "One eighth of the sky; unit for cloud amount N."
+        ],
+        [
+          "Station-level pressure",
+          "Pressure at the station, coded in group 3P0P0P0P0."
+        ],
+        [
+          "Mean sea-level pressure",
+          "Pressure reduced to sea level, coded in group 4PPPP."
+        ],
+        [
+          "Pressure tendency",
+          "Change in pressure over the previous 3 hours, coded in 5appp."
+        ],
+        [
+          "Present weather (ww)",
+          "Weather occurring at observation time or in the preceding hour, code table 4677."
+        ],
+        [
+          "Past weather (W1W2)",
+          "Weather during the period since the previous synoptic report, code table 4561."
+        ],
+        [
+          "909Rtdc",
+          "Special group giving when precipitation began or ended and its duration and character."
+        ],
+        [
+          "931ss",
+          "Special group giving the depth of newly fallen snow in whole centimetres."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "At which times are main synoptic observations made?",
+          "c": [
+            "0000, 0600, 1200 and 1800 UTC",
+            "0000 and 1200 UTC only",
+            "Every hour",
+            "0300, 0900, 1500 and 2100 UTC"
+          ],
+          "a": 0,
+          "e": "MANOBS 14.2.4. Pressure and tendency are read at the hour; other elements in the 10 minutes before."
+        },
+        {
+          "q": "When is the barometer read for a synoptic observation?",
+          "c": [
+            "At the hour",
+            "10 minutes before the hour",
+            "15 minutes after the hour",
+            "Whenever convenient"
+          ],
+          "a": 0,
+          "e": "MANOBS 14.2.4."
+        },
+        {
+          "q": "How many sections does the synoptic code have?",
+          "c": [
+            "Six, numbered 0 to 5",
+            "Three",
+            "Four",
+            "Ten"
+          ],
+          "a": 0,
+          "e": "MANOBS 14.2. Section 2 is for sea stations and Section 4 is not used in Canada."
+        },
+        {
+          "q": "Which sections do main Canadian land-station messages normally contain?",
+          "c": [
+            "0, 1 and 3",
+            "0 and 2",
+            "1, 2 and 4",
+            "3, 4 and 5 only"
+          ],
+          "a": 0,
+          "e": "MANOBS 14.2.3. Section 5 is added once daily at 0600 UTC."
+        },
+        {
+          "q": "What character ends a synoptic message?",
+          "c": [
+            "The separation signal =",
+            "A full stop",
+            "The letters NNNN",
+            "A solidus"
+          ],
+          "a": 0,
+          "e": "MANOBS 14.2.3.1. Missing data are written X and sent as /."
+        },
+        {
+          "q": "What does iw = 4 mean at Canadian land stations?",
+          "c": [
+            "Wind speed from an anemometer, in knots",
+            "Estimated wind in knots",
+            "Anemometer wind in m/s",
+            "Estimated wind in m/s"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-1."
+        },
+        {
+          "q": "What block numbers do Canadian land stations use?",
+          "c": [
+            "71 or 73",
+            "10 or 20",
+            "40 or 41",
+            "99"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.2.5.1."
+        },
+        {
+          "q": "In the Canadian code, iR = 1 means:",
+          "c": [
+            "The 6RRRtR group is in Section 1 (main hours)",
+            "The group is omitted because precipitation is zero",
+            "The group is in Section 3",
+            "Precipitation is not measured"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-2. iR 2 puts it in Section 3 at intermediate hours."
+        },
+        {
+          "q": "Which Section 1 group is included only when wind speed is 99 kt or more?",
+          "c": [
+            "00fff",
+            "6RRRtR",
+            "5appp",
+            "3P0P0P0P0"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.3.2. ff is coded 99 and fff gives the speed."
+        },
+        {
+          "q": "How is -15.3 C coded in group 1snTTT?",
+          "c": [
+            "11153",
+            "10153",
+            "11530",
+            "11015"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-10. sn is 1 for negative temperatures."
+        },
+        {
+          "q": "How is 0.0 C coded in group 1snTTT?",
+          "c": [
+            "10000",
+            "11000",
+            "10001",
+            "11001"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-10: sn is 0 for 0 C or positive."
+        },
+        {
+          "q": "How is a sea-level pressure of 1015.4 hPa coded in group 4PPPP?",
+          "c": [
+            "40154",
+            "41015",
+            "41154",
+            "40015"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-14. At 1000 hPa or more, omit the thousands digit."
+        },
+        {
+          "q": "How is a sea-level pressure of 996.2 hPa coded?",
+          "c": [
+            "49962",
+            "40962",
+            "49620",
+            "49996"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-14."
+        },
+        {
+          "q": "How is a station pressure of 1012.4 hPa coded in group 3P0P0P0P0?",
+          "c": [
+            "30124",
+            "31012",
+            "30012",
+            "31124"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-13."
+        },
+        {
+          "q": "How is a station pressure of 987.2 hPa coded in group 3P0P0P0P0?",
+          "c": [
+            "39872",
+            "30872",
+            "39720",
+            "30987"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-12."
+        },
+        {
+          "q": "A net 3-hour pressure change of 0.8 hPa is coded ppp =",
+          "c": [
+            "008",
+            "080",
+            "800",
+            "0.8"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-16. Tenths of hPa, always without a decimal point."
+        },
+        {
+          "q": "In the 5appp group, a = 4 means pressure was:",
+          "c": [
+            "Steady (same as 3 hours ago)",
+            "Increasing steadily",
+            "Decreasing steadily",
+            "Higher after rising then falling"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-15."
+        },
+        {
+          "q": "In the synoptic code, dd = 27 means the wind is from:",
+          "c": [
+            "West (270 degrees true)",
+            "East",
+            "South",
+            "North"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.3.4.2. 09 east, 18 south, 36 north."
+        },
+        {
+          "q": "In SYNOP, what averaging period applies to wind direction and speed (dd and ff)?",
+          "c": [
+            "10 minutes",
+            "2 minutes",
+            "1 minute",
+            "1 hour"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.3.4.2 and 15.3.4.3. The METAR wind uses a two-minute mean."
+        },
+        {
+          "q": "An east wind of 118 kt is coded:",
+          "c": [
+            "N0999 00118",
+            "N0918 00099",
+            "N9918 00118",
+            "N0911 80000"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.3.5.2."
+        },
+        {
+          "q": "How is a total cloud amount of 7 oktas or more but not 8 coded in N?",
+          "c": [
+            "7",
+            "8",
+            "6",
+            "9"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-6. N = 9 means sky completely obscured."
+        },
+        {
+          "q": "N = 9 means:",
+          "c": [
+            "Sky completely obscured by fog or other phenomena",
+            "9 oktas of cloud",
+            "Cloud cover indiscernible for other reasons",
+            "No cloud"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-6. / means indiscernible for other reasons or not observed."
+        },
+        {
+          "q": "A mackerel sky (AC or SC perlucidus) covering the whole sky is reported with N of at most:",
+          "c": [
+            "7",
+            "8",
+            "9",
+            "4"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.3.4.1.1: breaks between the elements always exist."
+        },
+        {
+          "q": "A prevailing visibility of exactly 20 miles is coded VV =",
+          "c": [
+            "80",
+            "81",
+            "74",
+            "79"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-5 note: use the lower code figure (30 miles is 83)."
+        },
+        {
+          "q": "An hourly and a synoptic observation are taken together with prevailing visibility 15+. VV is:",
+          "c": [
+            "74",
+            "80",
+            "99",
+            "15"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-5 note (2)."
+        },
+        {
+          "q": "When only CH cloud is present, h is coded:",
+          "c": [
+            "9",
+            "0",
+            "/",
+            "1"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-4 note (2)."
+        },
+        {
+          "q": "Which ww codes are used when no precipitation is occurring at the station?",
+          "c": [
+            "00 to 49",
+            "50 to 99",
+            "10 to 19 only",
+            "90 to 99"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.3.12.2. 50 to 99 are used when precipitation is occurring."
+        },
+        {
+          "q": "If more than one ww code applies, which is chosen?",
+          "c": [
+            "The highest, except that 17 is preferred over 20 to 49",
+            "The lowest",
+            "The first observed",
+            "The one with the most precipitation"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.3.12.2."
+        },
+        {
+          "q": "ww = 17 means:",
+          "c": [
+            "Thunder heard within 15 minutes, no precipitation at the station",
+            "Thunderstorm with rain",
+            "Lightning seen, no thunder",
+            "Thunderstorm in the past hour"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.3.12.2.2. 13 is lightning without thunder; 29 is a thunderstorm in the preceding hour."
+        },
+        {
+          "q": "Which ww code is used for lightning seen with no thunder heard?",
+          "c": [
+            "13",
+            "17",
+            "29",
+            "95"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.3.12.2.2."
+        },
+        {
+          "q": "ww = 96 means:",
+          "c": [
+            "Thunderstorm with hail or snow pellets in progress",
+            "Thunderstorm with rain or snow",
+            "Thunderstorm with dust storm",
+            "Showers of hail"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.3.12.2.2. 95 is with rain or snow; 97 and 99 are no longer used in Canada."
+        },
+        {
+          "q": "If a tornado is within sight, what is added to the report?",
+          "c": [
+            "The plain word TORNADO as the last group of Section 3",
+            "Code 19 only",
+            "A separate SPECI",
+            "Nothing"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.5.2 and 15.3.12.2."
+        },
+        {
+          "q": "Which ww code is slight continuous rain?",
+          "c": [
+            "61",
+            "60",
+            "63",
+            "65"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.3.12.2.2. 60 is intermittent slight rain; 63 is moderate continuous."
+        },
+        {
+          "q": "In W1W2, past weather code 4 is:",
+          "c": [
+            "Fog, freezing fog or thick haze",
+            "Rain",
+            "Snow",
+            "Thunderstorm"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-19. 6 is rain, 7 snow, 9 thunderstorm."
+        },
+        {
+          "q": "Past weather W1W2 normally covers a maximum of how long at main synoptic hours?",
+          "c": [
+            "6 hours",
+            "3 hours",
+            "12 hours",
+            "24 hours"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.3.12.3.1."
+        },
+        {
+          "q": "RRR = 990 means:",
+          "c": [
+            "Trace of precipitation",
+            "0.9 mm",
+            "990 mm",
+            "Not measured"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-17. 992 to 999 are 0.2 to 0.9 mm; /// is not measured."
+        },
+        {
+          "q": "Which RRR code is not used in Canada?",
+          "c": [
+            "991",
+            "990",
+            "992",
+            "000"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-17 note (1)."
+        },
+        {
+          "q": "A precipitation amount of 0.4 mm is coded RRR =",
+          "c": [
+            "994",
+            "004",
+            "040",
+            "990"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-17."
+        },
+        {
+          "q": "At a station making main synoptic observations every six hours, tR is coded:",
+          "c": [
+            "1",
+            "5",
+            "7",
+            "4"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-18 note (1): 1 is the 6 hours preceding the observation."
+        },
+        {
+          "q": "In group 7R24R24R24R24, 25.3 mm in 24 hours is coded:",
+          "c": [
+            "70253",
+            "72530",
+            "70025",
+            "72053"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-27. Nil is 70000; trace is 79999."
+        },
+        {
+          "q": "At 1200 UTC, the maximum temperature in Section 3 covers:",
+          "c": [
+            "The 24-hour period ending 6 hours earlier (0600)",
+            "The previous 12 hours",
+            "The previous 18 hours",
+            "The previous 3 hours"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.5.4.3. At 1800 and 0000 UTC it covers the previous 12 hours."
+        },
+        {
+          "q": "At 0000 UTC, the minimum temperature covers:",
+          "c": [
+            "The previous 18 hours",
+            "The previous 12 hours",
+            "The previous 24 hours",
+            "The previous 6 hours"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.5.5.3. At 1200 UTC it covers 12 hours; at 1800 and 0600 UTC, 24 hours."
+        },
+        {
+          "q": "In group 4E'sss, sss = 997 means:",
+          "c": [
+            "Trace of snow, under 0.5 cm",
+            "997 cm",
+            "Not continuous snow cover",
+            "Measurement impossible"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-25. 998 is snow cover not continuous."
+        },
+        {
+          "q": "E' = 7 means:",
+          "c": [
+            "Even layer of loose dry snow covering the ground completely",
+            "Ground mostly covered by ice",
+            "Uneven layer of compact snow",
+            "Deep drifts"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-24. 9 is deep drifts of 50 cm or more."
+        },
+        {
+          "q": "What does group 909Rtdc report?",
+          "c": [
+            "When precipitation began or ended and its duration and character",
+            "Depth of new snow",
+            "State of the ground",
+            "Maximum wind"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.5.9. 931ss reports newly fallen snow depth."
+        },
+        {
+          "q": "Rt = 1 means precipitation began or ended:",
+          "c": [
+            "Less than 1 hour ago",
+            "1 to 2 hours ago",
+            "6 to 12 hours ago",
+            "Unknown"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-29. If a choice exists, use the smaller code figure."
+        },
+        {
+          "q": "When is Section 5 sent?",
+          "c": [
+            "Once daily, at 0600 UTC, for the 24 hours ending then",
+            "At every main hour",
+            "At 1200 UTC only",
+            "Hourly"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.7.2."
+        },
+        {
+          "q": "A snowfall trace in group 1ssss is coded:",
+          "c": [
+            "19999",
+            "10000",
+            "10001",
+            "1////"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.7.4.2. No snowfall is 10000; not measured is 1////."
+        },
+        {
+          "q": "In group 4fhftftfi, fi = 2 means the maximum two-minute mean wind was:",
+          "c": [
+            "28 to 33 kt",
+            "17 to 27 kt",
+            "34 kt or more",
+            "16 kt or less"
+          ],
+          "a": 0,
+          "e": "MANOBS Table 15-34."
+        },
+        {
+          "q": "Group 9GGgg is included when the actual observation time differs from the scheduled hour by more than:",
+          "c": [
+            "10 minutes",
+            "5 minutes",
+            "30 minutes",
+            "1 hour"
+          ],
+          "a": 0,
+          "e": "MANOBS 15.3.14.2."
+        }
+      ],
+      "verified": {
+        "date": "2026-10-27",
+        "sources": [
+          "MANOBS 8th ed. Am. 3 (September 2026, full PDF), Part B: Chapter 14 (synoptic code general description) and Chapter 15 (detailed description) read in full for the groups taught; Chapter 1 note on Part B status"
+        ],
+        "unverified": [
+          "Part B is described as referencing WMO Manual on Codes No. 306 Volume I.1; the WMO manual itself was not consulted.",
+          "MANOBS names the code FM 12-XIV Ext. SYNOP in chapters 14 and 15 but FM 12-XI SYNOP in chapter 1.3.1. Treated as an internal inconsistency in the manual.",
+          "Table 15-8 has a note that dd = 99 (variable) cannot be used, while 15.3.4.2 says 99 is not used when wind speed is above 5 kt. The two statements were not reconciled.",
+          "Not taught: full present weather list (only key codes), full CL, CM and CH code tables and their priority lists (only the CL priority order is summarized), the example weather sequences (15.3.12.3.5), the Section 3 rainfall details beyond the groups listed, and the codes for Section 2 (MANMAR).",
+          "The visibility table is in miles; code figures 90 to 99 (yards and nautical miles) are only taught as 'special instruction from the ADM'.",
+          "Whether stations still make intermediate synoptic observations (and which) was not checked."
+        ]
+      }
     }
   ]
 }

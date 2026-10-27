@@ -12,12 +12,12 @@ Standing rule: accuracy notices stay on every page until the owner says otherwis
 
 Study aid only. Crown-copyright and NAV CANADA text is paraphrased and linked, not copied. No controlled or intranet material is used.
 
-## Status (as of 2026-10-27; 833 questions)
+## Status (as of 2026-10-27; 883 questions)
 
 | Domain | Topics | Questions | Status | Last checked |
 |--------|--------|-----------|--------|--------------|
 | Observations (obs) | 5 | 91 | Surface observing checked against MANOBS. Radar and satellite re-checked against ECCC, NOAA, NWS and the NAV CANADA guide | 2026-10-27 |
-| Codes (codes) | 9 | 214 | METAR, TAF, GFA/SIGMET/AIRMET/FB, MANAIR Ch. 7 and 8, NAV CANADA product tables, ECCC analysis page. Station model from NOAA only | 2026-10-27 |
+| Codes (codes) | 10 | 264 | METAR, TAF, SYNOP (MANOBS Part B), GFA/SIGMET/AIRMET/FB, MANAIR Ch. 7 and 8, NAV CANADA product tables, ECCC analysis page. Station model from NOAA only | 2026-10-27 |
 | Severe weather (severe) | 6 | 141 | Turbulence, wind shear, ECCC alerts and Impact Guides checked against AIM, MANAIR and ECCC pages. Others first pass | 2026-10-27 |
 | Moisture (moisture) | 6 | 98 | Icing topic checked against AIM, MANAIR and AIR (incl. carburettor icing). Others first pass | 2026-10-27 |
 | Applied (applied) | 5 | 59 | Aviation minima, flight categories and marine topics updated; others first pass | 2026-10-27 |
@@ -141,6 +141,7 @@ Study aid only. Crown-copyright and NAV CANADA text is paraphrased and linked, n
 | Satellite | "Water vapour about 6 to 7 micrometres" | 6.2, 6.9 and 7.3 micrometres; orbit figures (35,786 km; about 833 km NOAA, 850 km guide); visible, IR and water vapour interpretation from NWS | NOAA/NESDIS; NWS; NAV CANADA guide |
 | Surface analysis | Not covered | ECCC page: four analyses a day, Preliminary and Complete versions; Surface Analysis (Preliminary, Canadian coverage), Upper Air Analysis, Snow Depth, Sea Surface Temperature and Sea Ice Cover map products to be decommissioned by end of 2026 (use MSC AniMet) | ECCC analysis charts page |
 | Products and observation programs | None | New topic: product issue times and coverage, imagery update intervals, observation programs (METAR, METAR AUTO, LWIS, AUTO, SAWR, WxCam), AWOS and LWIS capabilities and lightning rules, MISG remarks | NAV CANADA guide |
+| Synoptic code | No topic | New topic from MANOBS Part B chapters 14 and 15: schedule, section structure, Section 0 and 1 groups, present and past weather rules, Section 3 and Section 5 groups, coding examples | MANOBS 8th ed. Am. 3 |
 | MANOBS | Many items | Lessons updated from the full PDF (wind, visibility, RVR, present weather, sky condition, temperature, pressure, remarks, METAR and SPECI coding) | MANOBS 8th ed. Am. 3 |
 
 Guide edition: the NAV CANADA guide shows no edition date, but its satellite page has an example image dated 2026-05-15, so it has been updated since then. Older entries labelled "(2017)" are not supported and should be relabelled once the edition is confirmed.
@@ -152,7 +153,8 @@ Open
 - Regional alert practice, and whether Alert Ready thresholds define warning criteria.
 - Station model layout, last-two-digit isobar labels, and temperature units on Canadian charts: confirmed from US NOAA sources only. A Canadian source has not been found.
 - Occluded front colours on charts other than the GFA; national analysis symbols versus GFA symbols.
-- MANOBS: ceiling footnote on the 400, 200 and 100 ft SPECI values; QFE and the MSLP reduction method; how ATIS and tower broadcasts fall under the magnetic-wind voice exception (12.2.1). MANOBS Part B (synoptic code, chapters 14 and 15) has no lesson; build it from chapter 15 if added.
+- MANOBS: ceiling footnote on the 400, 200 and 100 ft SPECI values; QFE and the MSLP reduction method; how ATIS and tower broadcasts fall under the magnetic-wind voice exception (12.2.1). MANOBS Part B now has a lesson (SYNOP); see the SYNOP open items below.
+- SYNOP (MANOBS Part B): WMO No. 306 not consulted; MANOBS calls the code FM 12-XIV Ext. in Ch. 14 to 15 but FM 12-XI in 1.3.1; Table 15-8 note says dd = 99 cannot be used while 15.3.4.2 limits it to speeds of 5 kt or less; the full ww list, CL, CM and CH tables and the example sequences are not taught; intermediate synoptic hours not checked.
 - MANAIR: WMO header and FIR letter rules; WS SIGMET coordinate formats; Sig Wx symbol shapes described only in images; volcanic ash and radioactive release symbols; Upper-Level Sig Wx (FL250 to FL600) comes from the NAV CANADA guide only.
 - NAV CANADA guide: edition date; the AWOS enhancement Y marks (read from a screenshot); the Upper Level Wind and Turbulence Forecast chart rows list valid times inconsistently; AWOS lightning distances (6, 10, 30 SM) not compared with MANOBS; radar 10-minute interval versus ECCC 6 minutes (likely older network).
 - Turbulence: rotor cloud, Richardson number 0.25, mechanical and convective definitions, "extreme" turbulence undefined, mountain wave stable-layer wording.
