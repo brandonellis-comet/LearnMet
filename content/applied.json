@@ -210,11 +210,11 @@
         "date": "2026-10-26",
         "sources": [
           "NAV CANADA Aviation Weather Services Guide (2017): IFR, MVFR and VFR thresholds, LIFR not defined, oktas, density altitude, alternate rules for TAF groups, UTC",
-          "Canadian Aviation Regulations ss. 602.114 and 602.115: VFR visibility and cloud clearance"
+          "Canadian Aviation Regulations ss. 602.114 and 602.115: VFR visibility and cloud clearance",
+          "MANOBS 8th ed. Am. 3 (full PDF): 7.2.7 ceiling definition (lowest BKN or OVC layer, or vertical visibility)"
         ],
         "unverified": [
           "Pressure altitude definition, crosswind and headwind trigonometry, and density altitude effects on engine power: standard aviation teaching, not on the pages read (the trigonometry was checked by arithmetic: 20 x sin 30 = 10, 20 x cos 30 = 17.3).",
-          "The ceiling definition: the NAV CANADA guide does not define it; the lesson wording follows standard usage.",
           "When an alternate is required (CAR 602.121 onward): not checked.",
           "VFR minima above 1,000 ft AGL for special cases (helicopters, other airspace classes): not covered."
         ]

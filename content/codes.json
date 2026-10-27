@@ -34,6 +34,24 @@
           ]
         },
         {
+          "h": "SPECI criteria (MANOBS 11.2.3, minimum requirements)"
+        },
+        {
+          "list": [
+            "Ceiling: falls below, or rises to equal or exceed, 1500, 1000, 500, 400, 300, 200 or 100 ft (coded 15, 10, 5, 4, 3, 2, 1). The 400, 200 and 100 ft values carry a footnote; the matching visibility note limits its marked values to aerodromes with approved precision approaches. Service providers may add limits.",
+            "Visibility: prevailing visibility falls below, or rises to equal or exceed, 3, 1 1/2, 1, 3/4, 1/2 or 1/4 SM. The 3/4 and 1/4 SM values apply only at aerodromes with approved precision approaches, down to the lowest published minima.",
+            "Sky condition: a layer aloft is observed below 1,000 ft and none was reported below 1,000 ft in the previous report.",
+            "Obstruction to vision: freezing fog begins or ends.",
+            "Tornado, waterspout or funnel cloud: observed, reported from a reliable source, or disappears from sight.",
+            "Thunderstorm: begins, or ends (15 minutes without thunderstorm activity).",
+            "Precipitation: freezing rain, freezing drizzle, ice pellets, rain, rain showers, drizzle, snow, snow showers, snow grains, hail, small hail or snow pellets begin, end or change intensity; ice crystals begin or end. Up to 15 minutes of leeway after precipitation ends.",
+            "Temperature (designated sites only, listed in MANOBS Appendix 1): rounded temperature rises 5 C or more from a previous value of 20 C or higher, or falls to a reported value of 2 C or lower.",
+            "Wind: two-minute mean speed suddenly at least doubles and exceeds 30 kt; a wind shift occurs (45 degrees or more in under 15 minutes, steady direction, 10 kt or more afterwards); or significant low-level wind shear along the takeoff or approach path at 1,500 ft AGL and below.",
+            "Volcanic eruption observed.",
+            "Also: on request of a forecast centre or ATS, on the observer's initiative, on notification of an aircraft accident, or on local criteria set by the service provider."
+          ]
+        },
+        {
           "note": "METAR and SPECI winds are in degrees true. Always check whether a wind source is true or magnetic before using it for a runway."
         }
       ],
@@ -172,18 +190,85 @@
           ],
           "a": 0,
           "e": "SPECI reports are special reports after significant changes."
+        },
+        {
+          "q": "A SPECI is required when the prevailing visibility decreases to less than which of these values?",
+          "c": [
+            "3 SM",
+            "6 SM",
+            "10 SM",
+            "5 SM"
+          ],
+          "a": 0,
+          "e": "MANOBS 11.2.3.4: the first visibility value is 3 mi., then 1 1/2, 1, 3/4, 1/2 and 1/4."
+        },
+        {
+          "q": "Which ceiling value, in feet, is a SPECI criterion?",
+          "c": [
+            "1,500 ft",
+            "2,500 ft",
+            "5,000 ft",
+            "3,500 ft"
+          ],
+          "a": 0,
+          "e": "MANOBS 11.2.3.1 lists 1500, 1000, 500, 400, 300, 200 and 100 ft."
+        },
+        {
+          "q": "How long after thunderstorm activity stops is a SPECI required for the end of the thunderstorm?",
+          "c": [
+            "15 minutes",
+            "5 minutes",
+            "30 minutes",
+            "60 minutes"
+          ],
+          "a": 0,
+          "e": "MANOBS 11.2.3.6: the thunderstorm ends when 15 minutes pass without thunderstorm activity."
+        },
+        {
+          "q": "Which temperature change prompts a SPECI at a designated site?",
+          "c": [
+            "A fall to a reported 2 C or lower",
+            "A fall of 1 C in an hour",
+            "A rise to any value above 0 C",
+            "A rise of 2 C from a previous 10 C"
+          ],
+          "a": 0,
+          "e": "MANOBS 11.2.3.8: a decrease to 2 C or lower, or a rise of 5 C or more from a previous value of 20 C or higher."
+        },
+        {
+          "q": "What wind change meets the SPECI criterion for speed?",
+          "c": [
+            "Two-minute mean at least doubles and exceeds 30 kt",
+            "Any gust above 15 kt",
+            "Speed rises by 5 kt in 10 minutes",
+            "Speed exceeds 20 kt for one minute"
+          ],
+          "a": 0,
+          "e": "MANOBS 11.2.3.9."
+        },
+        {
+          "q": "Which of these does a SPECI require when it begins or ends?",
+          "c": [
+            "Freezing fog",
+            "Mist",
+            "Haze",
+            "Smoke"
+          ],
+          "a": 0,
+          "e": "MANOBS 11.2.3.2: obstruction to vision criterion is freezing fog beginning or ending."
         }
       ],
       "verified": {
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "sources": [
           "MANOBS 8th ed. Amendment 3: 2.5 (METAR and SPECI), 3.2.1 (wind, two-minute mean, true), 4.5.1 (visibility in SM), 7.2.7 (ceiling), 7.3.1 (cloud reference level)",
           "NAV CANADA Aviation Weather Services Guide (2017): METAR decode, oktas ranges, M prefix, A group in inHg, intensity qualifiers, SLP decoding",
-          "Transport Canada AIM MET 1.2.1: METARs hourly on the hour"
+          "Transport Canada AIM MET 1.2.1: METARs hourly on the hour",
+          "MANOBS 8th ed. Amendment 3 (full PDF): 11.2.3.1 to 11.2.3.11 (SPECI criteria), 3.3.3 (wind shift), 8.3 and 9.2 (temperature and QNH format)"
         ],
         "unverified": [
-          "The SPECI criteria list (MANOBS 11.2.3) could not be opened with the tools used, so the lesson only says SPECIs are issued when conditions cross specified criteria.",
-          "Whether tower and ATIS winds are magnetic was not confirmed in a Canadian publication, so that statement was removed."
+          "Footnote marking on the 4, 2 and 1 (hundreds of ft) ceiling values: the PDF text shows the marker but the matching note printed under visibility is the only note text found, so the ceiling wording above follows it by analogy.",
+          "Whether tower and ATIS winds are magnetic: MANOBS reports winds in true degrees; the statement about tower and ATIS winds is not in MANOBS and was removed."
         ]
       }
     },

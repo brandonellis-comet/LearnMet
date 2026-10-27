@@ -108,7 +108,7 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 
 ## Not confirmed (open items)
 
-- MANOBS chapters 8 to 15 (temperature, pressure, SPECI criteria in 11.2.3) could not be read. Ask someone with the full PDF to check these, or check them when in the course.
+- MANOBS (8th ed. Am. 3, full PDF, 2026-10-27): chapters 6 (tornado/funnel/thunderstorm definitions), 7.2.7 (ceiling), 8, 9 and 11.2.3 (SPECI) now checked and added to the lessons. Chapters 10, 12 to 15 (remarks, automatic systems, glossary, synoptic code) not yet compared with the lessons.
 - MANAIR chapter 2: TAF amendment thresholds and full coding rules.
 - Occluded and stationary front colours, trough line style, isobar label convention, station model layout.
 - dBZ intensity ranges, water vapour band wavelengths, mandatory pressure level list, CSI formula, CIN and lifted index definitions.

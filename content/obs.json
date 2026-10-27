@@ -22,7 +22,11 @@
           "list": [
             "QNH: sea level pressure setting. With QNH set, the altimeter reads aerodrome elevation when on the ground and altitude above mean sea level in flight. In North America this is the altimeter setting in inches of mercury (for example A2992).",
             "QFE: setting that makes the altimeter read zero on the aerodrome.",
-            "Standard setting 29.92 inHg (1013.2 hPa): set after entering the standard pressure region, so all aircraft share one reference. In the altimeter setting region the station altimeter setting is used instead (Canadian Aviation Regulations, s. 602.37)."
+            "Standard setting 29.92 inHg (1013.2 hPa): set after entering the standard pressure region, so all aircraft share one reference. In the altimeter setting region the station altimeter setting is used instead (Canadian Aviation Regulations, s. 602.37).",
+            "Reporting temperature and dew point (MANOBS 8.3): rounded to the nearest whole degree Celsius; a value ending in 0.5 rounds up to the warmer degree; single digits are written with a leading 0 (06); below 0 C the value is preceded by M (M02).",
+            "Pressure units (MANOBS 9.1.3): station and sea level pressure are in hPa; altimeter setting is in hundredths of inches of mercury.",
+            "Altimeter setting (MANOBS 9.2): QNH is rounded DOWN to the nearest hundredth of an inch of mercury and reported as four digits after the letter A. Sensors are accurate to within 0.02 inHg and aviation barometers have two or more independent sensors.",
+            "Sea level pressure (SLP) is reported as the last three digits of the hPa value including tenths. Remarks PRESRR or PRESFR are used when station pressure is rising or falling by 2.0 hPa per hour or more."
           ]
         },
         {
@@ -164,20 +168,53 @@
           ],
           "a": 0,
           "e": "Laser or light pulses detect the cloud base."
+        },
+        {
+          "q": "How is the altimeter setting rounded in a Canadian METAR?",
+          "c": [
+            "Down to the nearest hundredth of an inch of mercury",
+            "Up to the nearest tenth of an inch",
+            "To the nearest whole hPa",
+            "To the nearest 0.5 inHg"
+          ],
+          "a": 0,
+          "e": "MANOBS 9.2: QNH is rounded down to the nearest whole hundredth of an inch of mercury."
+        },
+        {
+          "q": "An observed temperature of 4.5 C is reported as:",
+          "c": [
+            "05",
+            "04",
+            "4",
+            "M05"
+          ],
+          "a": 0,
+          "e": "MANOBS 8.3: values involving 0.5 C round up to the warmer degree, and single digits take a leading 0."
+        },
+        {
+          "q": "Which remark is used when station pressure falls by 2.0 hPa per hour or more?",
+          "c": [
+            "PRESFR",
+            "PRESRR",
+            "PRESFAL",
+            "LOWPRES"
+          ],
+          "a": 0,
+          "e": "MANOBS 9.2.1: PRESFR for falling, PRESRR for rising at 2.0 hPa per hour or more."
         }
       ],
       "verified": {
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "sources": [
           "MANOBS 8th ed. Amendment 3: 3.2.1 and 3.2.2 (wind), 4.1.1, 4.2 and 4.5.1 (visibility), 7.3.1 (cloud reference level)",
           "ECCC MANCLIM, Temperature: screen and thermometer exposure",
           "NAV CANADA Aviation Weather Services Guide (2017): laser ceilometer, AWOS and LWIS",
           "Transport Canada AIM MET 1.2.4 to 1.2.6: automated systems",
-          "Canadian Aviation Regulations s. 602.37: altimeter setting and standard pressure region"
+          "Canadian Aviation Regulations s. 602.37: altimeter setting and standard pressure region",
+          "MANOBS 8th ed. Amendment 3 (full PDF): 8.3 (temperature and dew point reporting), 9.1.3 and 9.2 (pressure units, QNH rounding, PRESRR/PRESFR, SLP)"
         ],
         "unverified": [
-          "QNH and QFE definitions and MSLP reduction are standard meteorology, not checked against a Canadian publication.",
-          "MANOBS Chapter 8 (air and dew-point temperature) and Chapter 9 (pressure) could not be opened with the tools used."
+          "QFE and the standard-setting wording are standard aviation teaching and are not in MANOBS; the Canadian altimeter setting rules in CAR 602.37 were checked earlier. The MSLP reduction method is not described in MANOBS 9.2."
         ]
       }
     },

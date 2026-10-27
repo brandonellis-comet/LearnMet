@@ -180,7 +180,8 @@
       "verified": {
         "date": "2026-10-26",
         "sources": [
-          "NOAA National Weather Service, Types of Thunderstorms (weather.gov/spotterguide/types): single cell, pulse, multicell cluster and line, durations"
+          "NOAA National Weather Service, Types of Thunderstorms (weather.gov/spotterguide/types): single cell, pulse, multicell cluster and line, durations",
+          "MANOBS 8th ed. Am. 3 (full PDF): 6.4 thunderstorm definition and reporting (thunder heard or overhead lightning; ends after 15 minutes)"
         ],
         "unverified": [
           "Supercell and mesocyclone definitions, and shear requirements: the NOAA page does not give them.",
@@ -371,16 +372,16 @@
         }
       ],
       "verified": {
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "sources": [
           "ECCC, Enhanced Fujita scale for wind damage (canada.ca): wind ranges, 31 damage indicators, introduced 1 April 2013",
           "ECCC Weather Impact Guides, Tornadoes: effects at moderate, high and extreme levels",
-          "NOAA National Weather Service, Types of Thunderstorms: pulse-storm downbursts, bow echo tornadoes weaker than supercell tornadoes"
+          "NOAA National Weather Service, Types of Thunderstorms: pulse-storm downbursts, bow echo tornadoes weaker than supercell tornadoes",
+          "MANOBS 8th ed. Am. 3 (full PDF): 6.3 tornado, waterspout and funnel cloud definitions"
         ],
         "unverified": [
           "Microburst size (under 4 km) and the headwind, sink, tailwind sequence: standard teaching, not checked against a Canadian publication. Duration and the 150 km/h figure were removed.",
-          "Hook echo and radar signatures: not checked.",
-          "Tornado, funnel cloud and waterspout definitions: not checked against an ECCC glossary."
+          "Hook echo and radar signatures: not checked."
         ]
       }
     },
