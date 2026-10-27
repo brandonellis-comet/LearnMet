@@ -851,7 +851,7 @@
         },
         {
           "list": [
-            "Isobars: lines of equal sea level pressure, analysed at 4 hPa intervals from a 1000 hPa reference value. The national surface analysis is produced four times a day, valid 00, 06, 12 and 18 UTC. Tight spacing means strong winds. Labels often show only the last two digits (for example 96 is 996 hPa, 04 is 1004 hPa).",
+            "Isobars: lines of equal sea level pressure, analysed at 4 hPa intervals from a 1000 hPa reference value. The national surface analysis is produced four times a day, valid 00, 06, 12 and 18 UTC. Tight spacing means strong winds. Labels traditionally show only the last two digits (NOAA JetStream examples: 24 is 1024 hPa, 08 is 1008, 92 is 992; so 96 is 996 and 04 is 1004).",
             "H and L: high and low centres, with central pressure.",
             "Fronts (MANAIR GFA symbols): cold front is blue with triangles; warm front is red with semicircles; stationary front alternates a red semicircle and a blue triangle on opposite sides. The GFA also uses a trowal (blue dashes with red ticks) and upper fronts, drawn hollow. Check the legend on any other chart.",
             "Troughs: on the GFA a surface trough is a dashed magenta line and an upper trough is a double dashed magenta line. Troughs and ridges are lines of curvature of the isobars.",
@@ -864,10 +864,12 @@
         {
           "list": [
             "Temperature: upper left. Dew point: lower left.",
-            "Pressure: upper right, in tenths of hPa with the leading digit dropped (132 means 1013.2; 987 means 998.7).",
-            "Pressure tendency: lower right.",
-            "Sky cover: the circle at the centre, filled by the amount of cloud cover.",
-            "Wind barb: the staff points toward the direction the wind comes from. Each full barb is 10 kt, half barb 5 kt, pennant (triangle) 50 kt."
+            "Pressure: upper right, mean sea level pressure in tenths of hPa with the decimal point and the leading 9 or 10 dropped. Add the 9 or 10 that gives a value closest to 1000 (998 is 999.8; 024 is 1002.4).",
+            "Pressure tendency: centre right. A number (3-hour change in tenths of hPa) and a trend symbol.",
+            "Sky cover: the circle at the centre, filled by the amount of cloud cover (eighths).",
+            "Visibility and present weather: second row, left side. Present weather is plotted only when precipitation or reduced visibility is occurring. Past weather (previous 6 hours, excluding the last hour): lower right.",
+            "Wind: lines extend from the sky cover circle, the longest pointing toward where the wind comes from. Full barb 10 kt, half barb 5 kt, pennant (flag) 50 kt. A circle alone is calm.",
+            "Source note: this layout is the NOAA (US) plot. The US plots temperature in F; Canadian charts use C. The Canadian layout was not found in a Canadian source."
           ]
         },
         {
@@ -1139,6 +1141,28 @@
           ],
           "a": 0,
           "e": "ECCC analysis charts page, screenshot 2026-10-27."
+        },
+        {
+          "q": "On the NOAA station plot, where is the pressure tendency plotted?",
+          "c": [
+            "Centre right",
+            "Lower right",
+            "Upper left",
+            "Lower left"
+          ],
+          "a": 0,
+          "e": "NOAA JetStream: centre right, as a 3-hour change number and trend symbol. Lower right is past weather."
+        },
+        {
+          "q": "A station plot shows pressure 024. What is the sea level pressure?",
+          "c": [
+            "1002.4 hPa",
+            "902.4 hPa",
+            "1024 hPa",
+            "992.4 hPa"
+          ],
+          "a": 0,
+          "e": "Add the 9 or 10 that gives a value closest to 1000: 1002.4."
         }
       ],
       "verified": {
@@ -1148,12 +1172,13 @@
           "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.1.4 (GFA isobars solid black, every 4 hPa from 1000 hPa)",
           "MANAIR 8th ed. Am. 3 Appendix C.2 and C.3 symbol pages (rendered and read as images, 2026-10-27)",
           "NAV CANADA Aviation Weather Services Guide, Surface Analysis Chart page (screenshot supplied by the user, 2026-10-27): 4 times daily at 00, 06, 12, 18Z; isobars 4 hPa from 1000 hPa; winds above 3,000 ft AGL roughly parallel to isobars; trowal definition. Example chart dated 2003.",
-          "ECCC Analysis charts page, weather.gc.ca (screenshots supplied by the user, 2026-10-27): four daily analyses, product list, decommissioning notice. The page is an index; it does not show the chart legend."
+          "ECCC Analysis charts page, weather.gc.ca (screenshots supplied by the user, 2026-10-27): four daily analyses, product list, decommissioning notice. The page is an index; it does not show the chart legend.",
+          "NOAA JetStream, Surface Weather Plots (2026-10-27 fetch): station plot positions and pressure coding. NOAA JetStream, Surface Air Pressure Map: isobars traditionally labelled with the last two digits (examples 24, 08, 92)."
         ],
         "unverified": [
           "Occluded fronts do not appear in the GFA symbol list; colours for occluded fronts on other analysis charts are not confirmed here.",
-          "Station model layout (temperature, dew point, pressure, tendency positions) and last-two-digits isobar labels are common charting practice, not confirmed in a fetched source.",
-          "The national surface analysis symbols may differ from GFA symbols; only GFA symbols were read."
+          "The national surface analysis symbols may differ from GFA symbols; only GFA symbols were read.",
+          "Station model layout and the two-digit isobar labels are confirmed from US NOAA sources only. A Canadian source (ECCC or NAV CANADA) showing the same layout and units (C) was not found."
         ]
       }
     },
