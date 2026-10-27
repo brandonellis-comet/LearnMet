@@ -1266,6 +1266,19 @@
           ]
         },
         {
+          "h": "Alert forms and where they apply (CAP Information Sheet 3, March 2016)"
+        },
+        {
+          "list": [
+            "When an event meets warning criteria, forecasters issue an alert message in bulletin form: the warning, watch, advisory or statement. Updates and endings generate further messages.",
+            "Audience sectors: public (all warnings and watches), public (all advisories and statements), marine (shorter-duration convective warnings and advisories), aviation (none planned).",
+            "Each program within ECCC sets the criteria and update frequency for its warnings.",
+            "Alerts issued for selected areas only (jurisdiction of the responsible program): arctic outflow, blowing snow, dust storm, flash freeze, freezing drizzle, frost, snow squall, storm surge, wind (including location-specific wind warnings), plus marine squall and waterspout.",
+            "No 'selected areas' note: blizzard, freezing rain, hurricane, rainfall, snowfall, thunderstorm, tornado, tropical storm, weather, winter storm.",
+            "In 2013 temperature hazards such as wind chill, heat wave and high humidity were consolidated into two alerts: extreme cold and heat. The detail goes in the message text."
+          ]
+        },
+        {
           "note": "Colour is impact plus confidence. A colour on a warning, advisory or watch tells you the level of impact possible in your area."
         }
       ],
@@ -1580,6 +1593,50 @@
           ],
           "a": 0,
           "e": "Yellow circle, orange diamond, red triangle."
+        },
+        {
+          "q": "Which hazard alert is issued for selected areas only, per CAP Information Sheet 3 (2016)?",
+          "c": [
+            "Snow squall",
+            "Tornado",
+            "Thunderstorm",
+            "Winter storm"
+          ],
+          "a": 0,
+          "e": "Snow squall carries the 'for selected areas' note. Tornado, thunderstorm and winter storm do not."
+        },
+        {
+          "q": "In 2013 ECCC consolidated wind chill, heat wave and high humidity alerts into:",
+          "c": [
+            "Two alerts: extreme cold and heat",
+            "One alert called weather",
+            "Three alerts: cold wave, heat wave, humidex",
+            "Marine alerts"
+          ],
+          "a": 0,
+          "e": "Per CAP Information Sheet 3, footnote 3."
+        },
+        {
+          "q": "According to CAP Information Sheet 3, which forms can an alert message take?",
+          "c": [
+            "Warning, watch, advisory or statement",
+            "Warning only",
+            "Yellow, orange or red only",
+            "Warning and statement only"
+          ],
+          "a": 0,
+          "e": "The sheet says alerts contain the warning, watch, advisory or statement."
+        },
+        {
+          "q": "Which hazard is NOT flagged 'for selected areas' in CAP Information Sheet 3?",
+          "c": [
+            "Blizzard",
+            "Dust storm",
+            "Flash freeze",
+            "Storm surge"
+          ],
+          "a": 0,
+          "e": "Blizzard has no note; the others do."
         }
       ],
       "verified": {
@@ -1591,12 +1648,14 @@
           "ECCC, Weather Impact Guides (canada.ca), re-read 2026-10-27: Wind, Rain, Snow and Winter storm wording; no numeric thresholds",
           "ECCC, CAP General Overview (June 2016): warning, watch, advisory and statement classes",
           "ECCC, Weather Impact Guides, re-read 2026-10-27: Hurricanes and tropical storms, Coastal flooding, Cold, Heat, Frost and Snow squall wording; Frost has a moderate level only",
-          "ECCC canada.ca weather alert colours page (screenshots supplied by the user, 2026-10-27): alert types with colours, colour descriptions, symbols, marine warnings"
+          "ECCC canada.ca weather alert colours page (screenshots supplied by the user, 2026-10-27): alert types with colours, colour descriptions, symbols, marine warnings",
+          "ECCC, Environment Canada and the Common Alerting Protocol, Information Sheet 3, v2.0, 1 March 2016 (pages supplied by the user as screenshots, 2026-10-27): alert forms, sectors, selected-area alerts, 2013 temperature consolidation"
         ],
         "unverified": [
-          "Regional differences in how alerts are issued: not checked.",
-          "Definition and current status of 'statement' as an alert class: not on the colour page; the 2016 CAP overview ranking is older.",
-          "Alert Colour Matrix details were read from the earlier web page, not the screenshots."
+          "Alert Colour Matrix details were read from the earlier web page, not the screenshots.",
+          "Whether the 'statement' form is still used with the colour system: confirmed in the 2016 CAP sheet, but not named on the current colour page.",
+          "The selected-areas list is from March 2016 and may have changed. The sheet does not say which areas.",
+          "How regional offices apply criteria in practice: not in public sources read."
         ]
       }
     }
