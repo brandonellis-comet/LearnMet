@@ -1295,6 +1295,19 @@
           ]
         },
         {
+          "h": "MetNotes (ECCC)"
+        },
+        {
+          "list": [
+            "Short notes written by ECCC meteorologists that add context to weather forecasts: possible impacts, an early heads-up on severe weather, or information for people attending outdoor events.",
+            "Issued any time meteorologists think extra context will improve public understanding of the forecast and its potential impacts.",
+            "Valid time is shown at the top: from one hour up to one week. 'Now' means it is happening now and will end later. A future valid time means the conditions will occur between the stated hours.",
+            "Found on the weather website (local forecast page, below the forecast icons and above the text forecasts) and in the WeatherCAN app (bottom of the screen, on the Now, Hourly or 7 Day tab matching the valid period).",
+            "MetNotes do not trigger a notification. They are not warnings, only additional information related to the forecast.",
+            "They are posted only for a specified period and disappear when it ends."
+          ]
+        },
+        {
           "note": "Colour is impact plus confidence. A colour on a warning, advisory or watch tells you the level of impact possible in your area."
         }
       ],
@@ -1763,6 +1776,50 @@
           ],
           "a": 0,
           "e": "ECCC weather alerts page."
+        },
+        {
+          "q": "What is a MetNote?",
+          "c": [
+            "A short ECCC meteorologist note adding context to a forecast",
+            "A colour-coded alert",
+            "A SIGMET",
+            "A marine warning"
+          ],
+          "a": 0,
+          "e": "ECCC MetNotes page."
+        },
+        {
+          "q": "Does a MetNote trigger a notification on the WeatherCAN app?",
+          "c": [
+            "No",
+            "Yes, always",
+            "Yes, for red only",
+            "Yes, for outdoor events"
+          ],
+          "a": 0,
+          "e": "ECCC: MetNotes appear in the app but do not trigger notifications. They are not warnings."
+        },
+        {
+          "q": "How long can a MetNote's valid time range?",
+          "c": [
+            "From one hour up to one week",
+            "Up to 24 hours",
+            "Up to 48 hours",
+            "Always 7 days"
+          ],
+          "a": 0,
+          "e": "ECCC MetNotes page."
+        },
+        {
+          "q": "A MetNote shows a valid time of 'Now'. What does that mean?",
+          "c": [
+            "It is happening now and will end sometime in the future",
+            "It is valid for one week",
+            "It has been cancelled",
+            "It is for a future time"
+          ],
+          "a": 0,
+          "e": "ECCC MetNotes page."
         }
       ],
       "verified": {
@@ -1778,12 +1835,12 @@
           "ECCC, Environment Canada and the Common Alerting Protocol, Information Sheet 3, v2.0, 1 March 2016 (pages supplied by the user as screenshots, 2026-10-27): alert forms, sectors, selected-area alerts, 2013 temperature consolidation",
           "ECCC canada.ca How we choose weather alert colours (screenshots supplied by the user, 2026-10-27): Alert Colour Matrix figure, levels of impact, factors, forecast confidence",
           "ECCC, Weather Alerts (canada.ca/en/services/environment/weather/severeweather/weather-alerts.html), fetched 2026-10-27: definitions of warning, watch, advisory and special weather statement; three alert types; statements not colour-coded",
-          "The Weather Network, 26 Nov 2025 (secondary): statements have no colour code; confirms ECCC wording"
+          "The Weather Network, 26 Nov 2025 (secondary): statements have no colour code; confirms ECCC wording",
+          "ECCC MetNotes page (canada.ca, screenshots supplied by the user, 2026-10-27): purpose, valid time, location, notifications"
         ],
         "unverified": [
           "The selected-areas list is from March 2016 and may have changed. The sheet does not say which areas.",
-          "How regional offices apply criteria in practice: not in public sources read.",
-          "MetNote definition: not given on the ECCC pages read."
+          "How regional offices apply criteria in practice: not in public sources read."
         ]
       }
     }
