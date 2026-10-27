@@ -875,6 +875,16 @@
         },
         "Isobar spacing gives a rough guide to wind speed. Winds blow roughly parallel to the isobars, slightly across them toward lower pressure near the surface. Low pressure on the left in the Northern Hemisphere. NAV CANADA guide: winds tend to veer and increase with altitude, and above about 3,000 ft AGL they blow roughly parallel to the isobars. Fronts advance in the direction of the barbs or semicircles. A front that is not advancing is quasi-stationary. A trowal is a trough of warm air aloft.",
         {
+          "h": "ECCC analysis chart page (weather.gc.ca)"
+        },
+        {
+          "list": [
+            "Surface analysis (mean sea level pressure) is posted four times daily for 00, 06, 12 and 18 UTC, in two versions: Preliminary (Canadian coverage) and Complete (Northern Hemispheric coverage).",
+            "Analyses are built from reports by hundreds of stations, ships and aircraft in Canada, the US and elsewhere, received at the CMC.",
+            "Notice on the page: the Surface Analysis (Preliminary, Canadian coverage), Upper Air Analysis, Snow Depth, Sea Surface Temperature and Sea Ice Cover map products are to be decommissioned by the end of 2026. ECCC points users to MSC AniMet, which draws maps from MSC open data."
+          ]
+        },
+        {
           "h": "GFA symbols (MANAIR C.2)"
         },
         {
@@ -1118,6 +1128,17 @@
           ],
           "a": 0,
           "e": "NAV CANADA guide, surface analysis chart page."
+        },
+        {
+          "q": "Which versions of the ECCC surface analysis (MSLP) are posted on weather.gc.ca?",
+          "c": [
+            "Preliminary (Canadian coverage) and Complete (Northern Hemisphere)",
+            "Canadian and US coverage only",
+            "Hourly and daily",
+            "Land and marine"
+          ],
+          "a": 0,
+          "e": "ECCC analysis charts page, screenshot 2026-10-27."
         }
       ],
       "verified": {
@@ -1126,7 +1147,8 @@
           "NAV CANADA Aviation Weather Services Guide (2017): isobars at 4 hPa from 1000 hPa, analysis times, cold and warm front symbols, SLP decoding rule",
           "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.1.4 (GFA isobars solid black, every 4 hPa from 1000 hPa)",
           "MANAIR 8th ed. Am. 3 Appendix C.2 and C.3 symbol pages (rendered and read as images, 2026-10-27)",
-          "NAV CANADA Aviation Weather Services Guide, Surface Analysis Chart page (screenshot supplied by the user, 2026-10-27): 4 times daily at 00, 06, 12, 18Z; isobars 4 hPa from 1000 hPa; winds above 3,000 ft AGL roughly parallel to isobars; trowal definition. Example chart dated 2003."
+          "NAV CANADA Aviation Weather Services Guide, Surface Analysis Chart page (screenshot supplied by the user, 2026-10-27): 4 times daily at 00, 06, 12, 18Z; isobars 4 hPa from 1000 hPa; winds above 3,000 ft AGL roughly parallel to isobars; trowal definition. Example chart dated 2003.",
+          "ECCC Analysis charts page, weather.gc.ca (screenshots supplied by the user, 2026-10-27): four daily analyses, product list, decommissioning notice. The page is an index; it does not show the chart legend."
         ],
         "unverified": [
           "Occluded fronts do not appear in the GFA symbol list; colours for occluded fronts on other analysis charts are not confirmed here.",
@@ -1145,6 +1167,18 @@
             "700 hPa (about 3,000 m, 10,000 ft ASL): mid-level moisture and ascent. Cloud layers, steering of low-level systems, and the capping inversion for convection.",
             "500 hPa (about 5,500 m, 18,000 ft ASL): the main steering level. Troughs, ridges, vorticity, and cut-off lows. Closely spaced contours mean strong winds.",
             "250 hPa (about 10,400 m, 34,000 ft ASL) and nearby 300 hPa (about 9,000 m): jet streams, upper divergence, tropopause-level features. Isotachs show wind speed maxima."
+          ]
+        },
+        {
+          "h": "ECCC upper air analysis products (weather.gc.ca)"
+        },
+        {
+          "list": [
+            "250 hPa: geopotential height and wind velocity.",
+            "500 hPa: geopotential height and 1000-500 hPa thickness.",
+            "700 hPa: geopotential height, temperature and dew point depression.",
+            "850 hPa: geopotential height and temperature.",
+            "These ECCC map products are listed for decommissioning by the end of 2026 (MSC AniMet is the suggested replacement)."
           ]
         },
         {
@@ -1320,13 +1354,36 @@
           ],
           "a": 0,
           "e": "NAV CANADA guide: radiosonde data supplemented by aircraft reports and satellite-derived winds in remote regions."
+        },
+        {
+          "q": "Which fields does the ECCC 700 hPa analysis page list?",
+          "c": [
+            "Height, temperature and dew point depression",
+            "Height and wind velocity",
+            "Height and 1000-500 hPa thickness",
+            "Height and temperature only"
+          ],
+          "a": 0,
+          "e": "ECCC Analysis charts page, Upper Air Analysis list."
+        },
+        {
+          "q": "The ECCC 500 hPa analysis is listed with which thickness?",
+          "c": [
+            "1000-500 hPa",
+            "850-700 hPa",
+            "700-500 hPa",
+            "1000-850 hPa"
+          ],
+          "a": 0,
+          "e": "ECCC Analysis charts page."
         }
       ],
       "verified": {
         "date": "2026-10-27",
         "sources": [
           "NAV CANADA Aviation Weather Services Guide (2017): constant pressure charts at 00Z and 12Z; 850 hPa 5,000 ft, 700 hPa 10,000 ft, 500 hPa 18,000 ft, 250 hPa 34,000 ft ASL; contour spacing and wind speed",
-          "NAV CANADA Aviation Weather Services Guide, Upper Air Analysis Charts page (screenshot supplied by the user, 2026-10-27): levels and heights, 00Z/12Z, data sources, contour behaviour"
+          "NAV CANADA Aviation Weather Services Guide, Upper Air Analysis Charts page (screenshot supplied by the user, 2026-10-27): levels and heights, 00Z/12Z, data sources, contour behaviour",
+          "ECCC Analysis charts page, weather.gc.ca (screenshots, 2026-10-27): fields listed for each level; decommissioning notice"
         ],
         "unverified": [
           "Chart-reading tips (advection, dew point depression, use of each level) are standard practice, not checked in a fetched source."
