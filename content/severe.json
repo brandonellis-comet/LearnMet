@@ -1251,18 +1251,22 @@
           ]
         },
         {
-          "h": "Alert classes (CAP overview, 2016)"
+          "h": "Alert types and colours"
         },
         {
           "list": [
-            "ECCC's CAP overview names four classes: warning, watch, advisory and statement.",
-            "Warning is more urgent than advisory, and advisory ranks above statement. The document says the ranking is loose.",
-            "A watch generally describes conditions favourable for development of a hazardous event, not the event itself.",
-            "These class terms appear in the headline of the CAP message."
+            "Every type of alert (warnings, advisories and watches) now has a colour when issued. Colours move yellow, orange, red as potential risk increases.",
+            "Yellow: hazardous weather may cause damage, disruption or health impacts. Impacts are moderate, localized and/or short-term. Yellow is the most common.",
+            "Orange: severe weather is likely to cause significant damage, disruption or health impacts. Impacts are major, widespread and/or may last a few days. Orange is uncommon.",
+            "Red: very dangerous and possibly life-threatening weather will cause extreme damage and disruption. Impacts are extensive, widespread and prolonged. Red is rare.",
+            "Symbols differ by colour: yellow is a circle, orange a diamond, red a triangle, each with an exclamation mark.",
+            "The same weather can have different impacts depending on timing, location and population, which is why the colour is tied to impact.",
+            "Marine warnings and watches are a separate program (Canadian Marine Warning Program). They do not use colours and keep a single-tier warning system.",
+            "Older CAP overview (2016): a watch generally describes conditions favourable for a hazardous event, not the event itself. Warning ranks above advisory, which ranks above statement, loosely."
           ]
         },
         {
-          "note": "Colour is impact plus confidence. The 2016 CAP overview predates the colour system, so how classes and colours map today is not confirmed here."
+          "note": "Colour is impact plus confidence. A colour on a warning, advisory or watch tells you the level of impact possible in your area."
         }
       ],
       "terms": [
@@ -1510,6 +1514,72 @@
           ],
           "a": 0,
           "e": "The guides state impacts only; no thresholds."
+        },
+        {
+          "q": "Which alert types now carry a colour?",
+          "c": [
+            "Warnings, advisories and watches",
+            "Warnings only",
+            "Warnings and watches only",
+            "Marine warnings"
+          ],
+          "a": 0,
+          "e": "ECCC: every type of weather alert now has a colour when issued."
+        },
+        {
+          "q": "What does a yellow alert indicate?",
+          "c": [
+            "Moderate, localized and/or short-term impacts",
+            "Major, widespread impacts lasting a few days",
+            "Extensive, prolonged life-threatening impacts",
+            "No impact expected"
+          ],
+          "a": 0,
+          "e": "The other two describe orange and red."
+        },
+        {
+          "q": "Which alert colour is described as rare?",
+          "c": [
+            "Red",
+            "Orange",
+            "Yellow",
+            "Marine warnings"
+          ],
+          "a": 0,
+          "e": "ECCC: yellow most common, orange uncommon, red rare."
+        },
+        {
+          "q": "Which alert colour describes impacts that are major, widespread and/or may last a few days?",
+          "c": [
+            "Orange",
+            "Yellow",
+            "Red",
+            "Green"
+          ],
+          "a": 0,
+          "e": "ECCC orange description."
+        },
+        {
+          "q": "Do Canadian marine weather warnings use colour-coded alerts?",
+          "c": [
+            "No; they use a separate single-tier warning program",
+            "Yes, the same colours",
+            "Yes, but only red",
+            "Yes, but only yellow and orange"
+          ],
+          "a": 0,
+          "e": "ECCC: marine warnings are part of the Canadian Marine Warning Program and are not colour-coded."
+        },
+        {
+          "q": "What symbol shape goes with an orange alert?",
+          "c": [
+            "Diamond",
+            "Circle",
+            "Triangle",
+            "Square"
+          ],
+          "a": 0,
+          "e": "Yellow circle, orange diamond, red triangle."
         }
       ],
       "verified": {
@@ -1520,11 +1590,13 @@
           "ECCC, How we choose weather alert colours (canada.ca): Alert Colour Matrix",
           "ECCC, Weather Impact Guides (canada.ca), re-read 2026-10-27: Wind, Rain, Snow and Winter storm wording; no numeric thresholds",
           "ECCC, CAP General Overview (June 2016): warning, watch, advisory and statement classes",
-          "ECCC, Weather Impact Guides, re-read 2026-10-27: Hurricanes and tropical storms, Coastal flooding, Cold, Heat, Frost and Snow squall wording; Frost has a moderate level only"
+          "ECCC, Weather Impact Guides, re-read 2026-10-27: Hurricanes and tropical storms, Coastal flooding, Cold, Heat, Frost and Snow squall wording; Frost has a moderate level only",
+          "ECCC canada.ca weather alert colours page (screenshots supplied by the user, 2026-10-27): alert types with colours, colour descriptions, symbols, marine warnings"
         ],
         "unverified": [
-          "Current mapping of warning, watch, advisory and statement to colours: the CAP overview is from 2016 and predates the colour system.",
-          "Regional differences in how alerts are issued: not checked."
+          "Regional differences in how alerts are issued: not checked.",
+          "Definition and current status of 'statement' as an alert class: not on the colour page; the 2016 CAP overview ranking is older.",
+          "Alert Colour Matrix details were read from the earlier web page, not the screenshots."
         ]
       }
     }
