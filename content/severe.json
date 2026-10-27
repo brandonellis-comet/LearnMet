@@ -673,6 +673,29 @@
         },
         {
           "note": "Lenticular clouds mean a mountain wave is present. Rotor clouds are the most dangerous part."
+        },
+        {
+          "h": "Intensity (MANAIR 4.9.2.2)"
+        },
+        {
+          "list": [
+            "Light (LGT): momentary, slight erratic changes in altitude and/or attitude (pitch, roll, yaw).",
+            "Moderate (MOD): similar to light but greater. Altitude/attitude changes occur, but the aircraft stays in positive control at all times. Usually changes indicated airspeed.",
+            "Severe (SEV): large, abrupt changes in altitude/attitude. Usually large variations in indicated airspeed. The aircraft may be momentarily out of control."
+          ]
+        },
+        {
+          "h": "How it is forecast (MANAIR)"
+        },
+        {
+          "list": [
+            "GFA types of turbulence: CAT, MECH (mechanical), MTW (lee waves), L LVL JET and L LVL WS.",
+            "The GFA depicts only moderate or severe NON-CONVECTIVE turbulence. Light turbulence goes in the comments box.",
+            "Turbulence layers are written as a fraction: top over base, in hundreds of feet ASL.",
+            "A low-level jet (L LVL JET) is included in the GFA at 50 kt or more. It may be included at 35 to 45 kt if the forecaster expects significant turbulence or shear. Rounded to the nearest 5 kt.",
+            "SIGMET: SEV TURB only. AIRMET: MOD TURB only. Both refer only to low-level turbulence with strong surface winds, rotor streaming, and high-level CAT (SIGMET) or CAT near jet streams (AIRMET). Turbulence is never used for convective clouds.",
+            "The GFA legend states: CB, TCU and ACC imply significant turbulence and icing."
+          ]
         }
       ],
       "terms": [
@@ -687,6 +710,14 @@
         [
           "Richardson number",
           "Ratio of stability to shear. Turbulence develops when it falls below about 0.25."
+        ],
+        [
+          "L LVL JET",
+          "Low-level jet. In the GFA when 50 kt or more (35 to 45 kt at the forecaster's judgment)."
+        ],
+        [
+          "MECH",
+          "Mechanical turbulence (GFA turbulence type)."
         ]
       ],
       "questions": [
@@ -810,17 +841,96 @@
           ],
           "a": 0,
           "e": "Rotor circulation beneath lee waves is violent."
+        },
+        {
+          "q": "Which turbulence intensity can leave the aircraft momentarily out of control (MANAIR)?",
+          "c": [
+            "Severe",
+            "Moderate",
+            "Light",
+            "Extreme only"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.9.2.2: severe turbulence causes large abrupt changes and the aircraft may be momentarily out of control."
+        },
+        {
+          "q": "In MANAIR, how is moderate turbulence distinguished from light?",
+          "c": [
+            "Greater intensity; altitude/attitude changes occur but the aircraft remains in positive control, and airspeed usually changes",
+            "Any change in indicated airspeed, which also occurs in light turbulence",
+            "It is judged only by the type of aircraft affected",
+            "Turbulence lasting more than one hour continuously"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.9.2.2 definition of MOD."
+        },
+        {
+          "q": "Where is light turbulence given on the GFA?",
+          "c": [
+            "In the comments box",
+            "As a red hatched area",
+            "As a blue stippled area",
+            "It is never mentioned"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.9.2.2: only MOD and SEV are depicted; light goes in the comments box."
+        },
+        {
+          "q": "A low-level jet is shown in the GFA when it reaches at least:",
+          "c": [
+            "50 kt (35 to 45 kt if significant turbulence or shear is expected)",
+            "25 kt, since any wind maximum is plotted",
+            "75 kt, the criterion for jet streams",
+            "100 kt measured at 3,000 ft AGL"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.9.2.2."
+        },
+        {
+          "q": "Which turbulence intensity does a SIGMET cover?",
+          "c": [
+            "Severe only",
+            "Light and moderate",
+            "Moderate only",
+            "Moderate and severe"
+          ],
+          "a": 0,
+          "e": "MANAIR 5.8.3.2: TURB, only SEV. AIRMETs cover only MOD."
+        },
+        {
+          "q": "Turbulence in the GFA, SIGMET or AIRMET sense is NOT used for:",
+          "c": [
+            "Convective clouds",
+            "Clear-air turbulence near jet streams",
+            "Rotor streaming",
+            "Low-level turbulence with strong surface winds"
+          ],
+          "a": 0,
+          "e": "MANAIR D.5 and E.5 notes: turbulence shall not be used in connection with convective clouds."
+        },
+        {
+          "q": "Which is NOT a GFA turbulence type?",
+          "c": [
+            "Wake",
+            "CAT",
+            "MECH",
+            "MTW"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.9.2.2 lists CAT, MECH, MTW, L LVL JET and L LVL WS."
         }
       ],
       "verified": {
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "sources": [
-          "Transport Canada AIM MET 2.2.2: turbulence intensity wording (light, moderate, severe, extreme) and CAT definition"
+          "Transport Canada AIM MET 2.2.2: turbulence intensity wording (light, moderate, severe, extreme) and CAT definition",
+          "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.2.2 (turbulence intensity definitions, GFA types, L LVL JET), 5.8.3.2 and D.5 (SIGMET SEV only), 6.8.3.2 and E.5 (AIRMET MOD only)"
         ],
         "unverified": [
-          "Mountain wave wind speed (25 kt was removed), rotor and lenticular details: standard teaching, not checked against a Canadian publication.",
+          "Mountain wave wind speed, rotor and lenticular details: standard teaching, not checked against a Canadian publication.",
           "Richardson number critical value of 0.25: textbook value, not checked.",
-          "Wake turbulence and mechanical turbulence descriptions: not checked."
+          "Wake turbulence and mechanical turbulence descriptions beyond the MANAIR type list: not checked.",
+          "The TC AIM 'extreme' category is in the earlier AIM source; MANAIR uses light, moderate and severe only."
         ]
       }
     },
@@ -850,6 +960,27 @@
         "On approach, an aircraft may fly from a strong wind at 500 ft to calm air at the surface. Airspeed drops rapidly and the aircraft sinks below the glide path. Pilots add speed margin and are briefed on reported LLWS.",
         {
           "note": "Light winds at the surface on a clear night do not mean light winds above. Check the winds aloft along the approach path."
+        },
+        {
+          "h": "Forecast guidelines (MANAIR 2.6.9)"
+        },
+        "In a TAF, non-convective low-level wind shear within 1,500 ft AGL is coded as a WS group. It is included when the forecaster has strong evidence of significant shear that could adversely affect aircraft. These guidelines are at the forecaster's discretion:",
+        {
+          "list": [
+            "Vector magnitude exceeding 25 kt within 500 ft AGL.",
+            "Vector magnitude exceeding 40 kt within 1,000 ft AGL.",
+            "Vector magnitude exceeding 50 kt within 1,500 ft AGL.",
+            "A pilot report of loss or gain of indicated airspeed of 20 kt or more within 1,500 ft AGL."
+          ]
+        },
+        {
+          "list": [
+            "Format: WSh(3 digits)/dddffKT, for example WS015/24045KT. Height is in hundreds of feet AGL; the wind is at that height. No gusts in this group.",
+            "Wind shear cannot be satisfactorily observed from the ground. Aircraft reports and radiosondes are the only available evidence.",
+            "WS is not part of the international TAF code. It is used in North American TAFs.",
+            "A SIGMET for L LVL WS is issued only for severe shear.",
+            "The GFA legend states: CB implies L LVL WS."
+          ]
         }
       ],
       "terms": [
@@ -864,6 +995,10 @@
         [
           "Low-level jet",
           "Layer of strong winds a few hundred metres above the surface."
+        ],
+        [
+          "WS group",
+          "TAF group for non-convective low-level wind shear within 1,500 ft AGL: WShhh/dddffKT."
         ]
       ],
       "questions": [
@@ -987,15 +1122,82 @@
           ],
           "a": 0,
           "e": "Increased airspeed at constant power suggests increasing headwind."
+        },
+        {
+          "q": "In a TAF, the WS group refers to non-convective wind shear within:",
+          "c": [
+            "1,500 ft AGL",
+            "500 ft AGL",
+            "3,000 ft AGL",
+            "5,000 ft ASL"
+          ],
+          "a": 0,
+          "e": "MANAIR 2.6.9."
+        },
+        {
+          "q": "Which is a MANAIR guideline for significant low-level wind shear?",
+          "c": [
+            "Vector magnitude over 40 kt within 1,000 ft AGL",
+            "Vector magnitude over 10 kt within 1,500 ft AGL",
+            "A 5 kt airspeed change reported by a pilot",
+            "Any gusty surface wind"
+          ],
+          "a": 0,
+          "e": "MANAIR 2.6.9 lists >25 kt/500 ft, >40 kt/1,000 ft, >50 kt/1,500 ft, and a PIREP of 20 kt IAS loss or gain within 1,500 ft."
+        },
+        {
+          "q": "How would wind shear at 1,500 ft AGL with a 240 degree, 45 kt wind be coded in a TAF?",
+          "c": [
+            "WS015/24045KT",
+            "WS150/24045KT",
+            "WS15/240045",
+            "WS015/045240KT"
+          ],
+          "a": 0,
+          "e": "Format WShhh/dddffKT: height in hundreds of feet AGL, then direction and speed (MANAIR 2.6.9)."
+        },
+        {
+          "q": "Why is TAF wind shear forecasting difficult?",
+          "c": [
+            "It cannot be satisfactorily observed from the ground; only aircraft reports and radiosondes give evidence",
+            "There are no wind observations at airports",
+            "TAFs only cover convective weather, so shear is excluded",
+            "Shear never occurs below 1,500 ft AGL"
+          ],
+          "a": 0,
+          "e": "MANAIR 2.6.9."
+        },
+        {
+          "q": "A SIGMET for low-level wind shear (L LVL WS) is issued for:",
+          "c": [
+            "Severe shear only",
+            "Any shear",
+            "Moderate shear",
+            "Shear above FL240 only"
+          ],
+          "a": 0,
+          "e": "MANAIR 5.8.3.2: L LVL WS only SEV."
+        },
+        {
+          "q": "The GFA legend statement 'CB IMPLIES L LVL WS' means:",
+          "c": [
+            "Cumulonimbus clouds imply low-level wind shear",
+            "Cloud base is lowered by wind shear",
+            "Convective bases are low level",
+            "Cold front boundaries imply shear"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.8 (legend box standard phrases)."
         }
       ],
       "verified": {
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "sources": [
-          "Transport Canada AIM MET 2.3: wind shear definition and no height limit"
+          "Transport Canada AIM MET 2.3: wind shear definition and no height limit",
+          "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 2.6.9 (WS group and four guidelines), 5.8.3.2 (SIGMET SEV only), 4.8 (legend phrase)"
         ],
         "unverified": [
-          "Nocturnal low-level jet height, timing and cause: standard teaching, not checked against a Canadian publication. The 300 to 1,000 m range was removed.",
+          "Nocturnal low-level jet height, timing and cause: standard teaching, not checked against a Canadian publication.",
           "Shear units (knots per 100 ft): not checked.",
           "Microburst approach sequence and typical LLWS causes: not checked."
         ]

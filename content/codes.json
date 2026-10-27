@@ -447,30 +447,65 @@
     {
       "title": "TAF decoding and amendment criteria",
       "lesson": [
-        "A TAF is an aerodrome forecast. It applies to conditions within 5 nautical miles of the centre of the runway complex, depending on local terrain. TAFs are prepared four times daily with a validity of up to 30 hours. Issue times vary by site (they are listed in the CFS), and the next issue time is stated at the end of each TAF. Check current MANAIR and AIM for exact details.",
+        "A TAF is the forecaster's best judgment of the most probable weather at an aerodrome and its most probable time of occurrence (MANAIR 2.1). It relates to conditions for flight operations within six statute miles (roughly five nautical miles) of the centre of the runway complex, depending on local terrain. Certain phenomena expected in the vicinity are also included. All times are UTC.",
         {
           "formula": "TAF CYHZ 261140Z 2612/2712 27012KT P6SM FEW040 SCT100\n  FM261800 29015G25KT P6SM SCT040\n  BECMG 2700/2702 31008KT\n  TEMPO 2703/2706 3SM -SHRA BKN015"
         },
         {
-          "h": "Time and change groups"
+          "h": "Issue, validity and updates (MANAIR 2.4, 2.8)"
         },
         {
           "list": [
-            "Issue time (261140Z) and valid period (2612/2712: from 1200 UTC on the 26th to 1200 UTC on the 27th).",
-            "FM (from): a rapid, permanent change written FM followed by day, hour and minute (FM300130). All forecast elements must be restated, and the new forecast replaces everything before it.",
-            "BECMG (becoming): a permanent change expected over one to four hours, written as a period (BECMG 2906/2908). After the period, the new conditions persist until changed again.",
-            "TEMPO (temporary): temporary fluctuations lasting less than an hour at a time and, in total, no more than half the stated period (TEMPO 1306/1312). TEMPO does not change the wind or wind shear.",
-            "PROB30 or PROB40: the probability that the stated conditions occur during the period. It is not the fraction of the time they last. PROB does not change the wind or wind shear."
+            "Issue time (261140Z) is when the forecast is released. A TAF should be sent as close as possible to, and no later than, 20 minutes before its period of validity begins.",
+            "Valid period 2612/2712: from 1200 UTC on the 26th to 1200 UTC on the 27th. A TAF is valid from the moment it is issued until it is amended, replaced by the next TAF, or its period ends. A new TAF cancels the previous one.",
+            "TAFs are normally scheduled six hours after the previous issue and never more than seven hours after.",
+            "Updated TAFs (requested by NAV CANADA for major aerodromes, usually with 24 or 30 hour TAFs) are issued about three hours after each regular TAF. They replace the previous TAF without extending its validity.",
+            "Airports without 24-hour observing need two consecutive hourly observations before issuing. With fewer, a nil TAF is issued (TAF CYTS 051640Z NIL, with NO OBS or INSUFFICIENT OBS in remarks)."
           ]
         },
         {
-          "h": "Visibility"
+          "h": "Wind, visibility, weather, cloud (MANAIR 2.6)"
         },
-        "P6SM means visibility greater than 6 statute miles. NSW (no significant weather) can be used when significant weather is no longer expected. VV is vertical visibility for an obscured sky.",
         {
-          "h": "Amendments"
+          "list": [
+            "Every TAF describes at least wind, visibility, weather and cloud.",
+            "Wind: direction to the nearest 10 degrees true, speed in knots. A gust group is added only when the maximum is forecast to exceed the mean by 10 kt or more (32020G30KT). VRB is normally used only at 3 kt or less (or in strong convective activity). North 20 kt is 36020KT, calm is 00000KT, 100 kt or more uses three digits.",
+            "Low level wind shear (WSh x h x h x /dddffKT): non-convective shear within 1,500 ft AGL, included when the forecaster has strong evidence. Guidelines: vector difference over 25 kt within 500 ft, over 40 kt within 1,000 ft, over 50 kt within 1,500 ft, or a pilot report of a 20 kt or greater airspeed change within 1,500 ft. The group is not part of the international code (Canada filed a difference with ICAO).",
+            "Visibility is in statute miles: eighths to 3/4 SM, quarters to 2 1/2 SM, then 3, 4, 5, 6 SM, then P6SM for more than 6 SM. Unlike a METAR, a TAF never goes above P6SM.",
+            "Obscurations (BR, FG, HZ, FU and so on) are forecast whenever visibility is expected to be 6 SM or less; volcanic ash is always forecast. In a TAF, FG means visibility under 5/8 SM and BR means 5/8 SM or more.",
+            "Up to three weather groups. The group is omitted if no significant weather is expected. DZ and IC cannot be combined with other precipitation; RA, SN, SG, PL, GR and GS can (SNRA, PLSN). MI, BC and PR are used only with FG and only with P6SM visibility.",
+            "VC is used for FG, TS, SH, DS, SS, FC, PO, BL phenomena and VA expected 6 to 10 SM from the centre of the runway complex. At the four hubs (CYYZ, CYVR, CYUL, CYYC) VCTS can describe organized storms within about 45 SM of the terminal area.",
+            "Cloud: amounts SKC, FEW, SCT, BKN, OVC are cumulative. A maximum of three significant layers, except CB, which is always forecast when expected. TCU and ACC are never forecast. Heights are in hundreds of feet above ground: 100 ft steps to 1,500 ft, 500 ft steps to 3,000 ft, 1,000 ft steps above. VV is used for an obscured sky; SKC replaces cloud after a change if cloud is no longer expected.",
+            "When a significant change is forecast (one that would need an amendment), the whole weather group is repeated, including the visibility and unchanged weather such as BR. If an element is unchanged after BECMG or TEMPO, it is left out."
+          ]
         },
-        "An amended TAF is marked TAF AMD. Per the Transport Canada AIM, forecasts are amended when significant changes in ceiling or visibility occur, and also for significant changes in wind or present weather. They are also amended when freezing precipitation begins or is expected, even if it was not forecast. The exact thresholds are in MANAIR Chapter 2.",
+        {
+          "h": "Change groups (MANAIR 2.6.14 to 2.6.16)"
+        },
+        {
+          "list": [
+            "FM (from): a permanent change, typically over an hour or less, written FM followed by day, hour and minute (FM300130). All forecast elements are restated and it supersedes everything before it. Forecasters are encouraged to use FM rather than BECMG, and minutes are encouraged for timing precision.",
+            "BECMG (becoming): a gradual, permanent change that normally lasts no more than 2 hours and never more than 4 (BECMG 2906/2908). Keep it for one or at most two changing elements; use FM when more than two change. Normally one BECMG per part period, at most two when only one element changes at a time.",
+            "TEMPO (temporary): a fluctuation expected to last less than one hour each time and, if recurring, to cover no more than half of the stated period (TEMPO 1306/1312). Only changed elements are listed. Wind can be included (example: TEMPO 1520/1523 VRB25G45KT 1SM TSRAGS). Normally one TEMPO per part period, at most two with no BECMG or PROB, one element each and no overlap.",
+            "PROB30 or PROB40: the only probabilities allowed. It gives the probability that the alternative value occurs. Under 30% is not forecast; 50% or more is written as BECMG, TEMPO or FM. PROB is used for thunderstorms and associated phenomena, freezing precipitation, ice pellets, snow grains, low level wind shear, and ceiling or visibility thresholds important to aircraft. One PROB per part period. PROB30 TEMPO and PROB BECMG are not allowed.",
+            "Thunderstorm wording (MANAIR Table 3): a TSRA in the main body means 60 to 100% at the airport, TEMPO TSRA 40 to 60%, PROB40 TSRA 40%, PROB30 TSRA 30%, TEMPO VCTS about 20%.",
+            "NSW (no significant weather) replaces the weather group after TEMPO or BECMG when significant weather ends. It is not used in the initial period."
+          ]
+        },
+        {
+          "h": "Amendments (MANAIR 2.9)"
+        },
+        {
+          "list": [
+            "An amended TAF is marked TAF AMD and covers the rest of the original validity. The forecaster has the responsibility and authority to amend, and should amend proactively when the TAF no longer represents existing or expected weather. A correction is handled as an amendment.",
+            "Category rule: amend when actual or expected conditions fall in a different weather category from the forecast. The category is set by the lower of ceiling or visibility. Thresholds: ceiling 2,500 ft and visibility 6 SM; ceiling 1,000 ft and visibility 3 SM (VFR/IFR); the aerodrome's alternate limits; its IFR approach limits; and any additional limits from other responsible parties (published in MANAIR Appendix A). Deteriorating: either ceiling or visibility crossing is enough. Improving: both must cross.",
+            "No amendment is needed for ceiling or visibility changes when forecast and observed values are both below the lowest landing minima, provided those minima are not higher than 1,000 ft / 3 SM.",
+            "Always amend, whatever the visibility or duration, for thunderstorms, hail, tornado, funnel cloud or waterspout; freezing precipitation, freezing fog, ice pellets or snow grains; sandstorm, dust storm or squalls, whenever not forecast or no longer expected. Volcanic ash always.",
+            "Rain, snow, snow pellets, ice crystals or drizzle: amend only if visibility drops under 6 SM (or was forecast under 6 SM and is no longer expected). Obscurations and blowing snow likewise: only if visibility is under 6 SM.",
+            "Wind: amend when the observed speed is double or half the forecast and either value is over 15 kt, or the difference is 20 kt or more; or when the observed direction differs by 45 degrees or more at speeds over 15 kt. Amend for low level wind shear not forecast, or forecast and no longer expected.",
+            "Cancellation: an existing TAF is cancelled by an amendment (CNL, with the same validity as the last TAF and the reason in remarks) when two consecutive hourly observations are missing or a critical AWOS element is missing or wrong for two hours and cannot be inferred. Service is reinstated after one VFR observation or two consecutive below-VFR observations."
+          ]
+        },
         {
           "note": "When decoding, read the base forecast first, then apply each change group in order. A validity period that ends at midnight UTC is coded 24 (2912/2924); one that begins at midnight is coded 00 (3000/3018). For alternate planning, a TAF with BECMG or TEMPO must meet alternate minima, while PROB conditions need only meet landing minima (NAV CANADA guide)."
         }
@@ -478,19 +513,31 @@
       "terms": [
         [
           "FM",
-          "From: abrupt, complete change from the stated time."
+          "From: a permanent change with a new complete forecast from the stated time."
         ],
         [
           "BECMG",
-          "Becoming: permanent change expected over one to four hours."
+          "Becoming: gradual permanent change, normally up to 2 hours and never over 4."
         ],
         [
           "TEMPO",
           "Temporary: fluctuations under one hour at a time, no more than half the period in total."
         ],
         [
+          "PROB30 / PROB40",
+          "Probability of the alternative condition. No other probability values are allowed."
+        ],
+        [
           "P6SM",
-          "Visibility more than 6 statute miles."
+          "Visibility more than 6 statute miles. The highest value a TAF uses."
+        ],
+        [
+          "NSW",
+          "No significant weather: replaces the weather group when it ends after a change group."
+        ],
+        [
+          "WS",
+          "Low level wind shear group, non-convective, within 1,500 ft AGL."
         ]
       ],
       "questions": [
@@ -514,18 +561,18 @@
             "A probability of change between thirty and forty percent"
           ],
           "a": 0,
-          "e": "NAV CANADA guide: BECMG is a permanent change expected over one to four hours. After the period the new conditions persist."
+          "e": "MANAIR 2.6.16.2: a gradual, permanent change; the period normally does not exceed two hours and never exceeds four."
         },
         {
           "q": "What does TEMPO indicate?",
           "c": [
             "Temporary fluctuations, each lasting less than an hour",
-            "A permanent change",
+            "A permanent change that replaces the main forecast",
             "A change that always lasts more than 2 hours",
-            "A reduction in visibility only"
+            "A reduction in visibility only, never in cloud"
           ],
           "a": 0,
-          "e": "NAV CANADA guide: TEMPO fluctuations last under one hour at a time and cover no more than half the forecast period. TEMPO does not change wind."
+          "e": "MANAIR 2.6.15: TEMPO is used when the change lasts less than one hour each time and, if recurring, covers no more than half of the stated period."
         },
         {
           "q": "What does P6SM mean in a TAF?",
@@ -547,7 +594,7 @@
             "Only the runway surface and its immediate approach lights"
           ],
           "a": 0,
-          "e": "AIM MET 3.1: TAFs relate to conditions within 5 NM of the centre of the runway complex, depending on local terrain."
+          "e": "MANAIR 2.1: conditions for flight operations within six statute miles (roughly five nautical miles) of the centre of the runway complex, depending on local terrain."
         },
         {
           "q": "A TAF valid period of '2412/2512' covers:",
@@ -569,7 +616,7 @@
             "The cancellation of the forecast and its replacement"
           ],
           "a": 0,
-          "e": "NAV CANADA guide: TEMPO is used when the condition lasts under one hour at a time and covers no more than half the period."
+          "e": "MANAIR 2.6.15: under one hour each time and no more than half the period in total."
         },
         {
           "q": "What does 'BECMG' mean?",
@@ -580,7 +627,7 @@
             "An amendment to the forecast issued after a major change"
           ],
           "a": 0,
-          "e": "NAV CANADA guide: BECMG is a permanent change expected over one to four hours."
+          "e": "MANAIR 2.6.16.2: a gradual, permanent change; the period normally does not exceed two hours and never exceeds four."
         },
         {
           "q": "'PROB30' in a TAF signals:",
@@ -602,7 +649,7 @@
             "Only when winds at the airport are calm for an hour"
           ],
           "a": 0,
-          "e": "AIM MET 3.1: TAFs are amended when significant changes in ceiling or visibility occur, and also for significant changes in wind or present weather."
+          "e": "MANAIR 2.9: a TAF is amended when conditions are no longer representative of actual or expected weather, using the category and phenomenon criteria in 2.9.5."
         },
         {
           "q": "TAF cloud and visibility values are expressed:",
@@ -613,17 +660,185 @@
             "In inches of mercury for pressure and feet for visibility"
           ],
           "a": 0,
-          "e": "TAF uses the same codes as METAR for wind, visibility and cloud."
+          "e": "Same style of codes as METAR, but a TAF visibility tops out at P6SM and a TAF forecasts at most three cloud layers plus CB (MANAIR 2.6.10 and 2.6.13)."
+        },
+        {
+          "q": "What is the longest a BECMG period may last?",
+          "c": [
+            "4 hours",
+            "1 hour",
+            "6 hours",
+            "12 hours"
+          ],
+          "a": 0,
+          "e": "MANAIR 2.6.16.2: normally no more than 2 hours and never more than 4."
+        },
+        {
+          "q": "Which probability values are allowed in a TAF?",
+          "c": [
+            "30 and 40 only",
+            "10, 20 and 30",
+            "30, 40 and 50",
+            "Any multiple of 10"
+          ],
+          "a": 0,
+          "e": "MANAIR 2.6.14: only PROB30 and PROB40. Under 30% is not forecast; 50% or more uses BECMG, TEMPO or FM."
+        },
+        {
+          "q": "Gusts are added to a TAF wind when the maximum is forecast to exceed the mean speed by:",
+          "c": [
+            "10 kt or more",
+            "5 kt or more",
+            "15 kt or more",
+            "20 kt or more"
+          ],
+          "a": 0,
+          "e": "MANAIR 2.6.8: when the maximum wind speed will exceed the mean by 10 kt or more (for example 32020G30KT)."
+        },
+        {
+          "q": "What is the highest visibility value a TAF uses?",
+          "c": [
+            "P6SM",
+            "15SM",
+            "10SM",
+            "P15SM"
+          ],
+          "a": 0,
+          "e": "MANAIR 2.6.10: whole miles up to 6 SM, then P6SM for more than 6 SM."
+        },
+        {
+          "q": "Which cloud type is never forecast in a TAF?",
+          "c": [
+            "Towering cumulus (TCU)",
+            "Cumulonimbus (CB), which is always forecast",
+            "Stratus, when the ceiling is low",
+            "Altostratus, when it forms a ceiling"
+          ],
+          "a": 0,
+          "e": "MANAIR 2.6.13.1: TCU and ACC shall not be forecast. Only CB is forecast."
+        },
+        {
+          "q": "A TAF must be transmitted no later than how long before its period of validity begins?",
+          "c": [
+            "20 minutes",
+            "60 minutes",
+            "5 minutes",
+            "2 hours"
+          ],
+          "a": 0,
+          "e": "MANAIR 2.4: as close as possible to, but not later than, 20 minutes before the beginning of validity."
+        },
+        {
+          "q": "A TAF is normally scheduled for update how long after the previous issue?",
+          "c": [
+            "Six hours",
+            "Three hours",
+            "Twelve hours",
+            "Twenty-four hours"
+          ],
+          "a": 0,
+          "e": "MANAIR 2.4: normally six hours after the previous issue and never more than seven hours."
+        },
+        {
+          "q": "A TAF forecasts a ceiling of 2,000 ft and 4 SM, and the actual weather becomes 900 ft and 5 SM. Is an amendment required?",
+          "c": [
+            "Yes, the ceiling crossed the 1,000 ft IFR threshold",
+            "No, visibility is still 4 SM or more",
+            "No, only visibility matters",
+            "Only if the wind changes"
+          ],
+          "a": 0,
+          "e": "MANAIR 2.9.5.1: the category is set by the lower of ceiling and visibility, and in deteriorating conditions either crossing the threshold changes the category."
+        },
+        {
+          "q": "An unforecast thunderstorm is observed at the aerodrome. A TAF amendment is:",
+          "c": [
+            "Always required",
+            "Required only if visibility is under 3 SM",
+            "Required only if it lasts over an hour",
+            "Not required for the first 30 minutes"
+          ],
+          "a": 0,
+          "e": "MANAIR 2.9.5.2: thunderstorms, hail, tornado, funnel clouds and waterspouts require an amendment with no exception for visibility or duration."
+        },
+        {
+          "q": "Rain begins and visibility stays at 6 SM or more. Is a TAF amendment needed for the onset of rain?",
+          "c": [
+            "No",
+            "Yes, always",
+            "Only if the rain is heavy",
+            "Only at hub airports"
+          ],
+          "a": 0,
+          "e": "MANAIR 2.9.5.2 item 3: no need to amend when visibility remains 6 SM or greater before and after the onset of rain, snow, snow pellets, ice crystals or drizzle."
+        },
+        {
+          "q": "When does the wind speed criterion require a TAF amendment?",
+          "c": [
+            "The difference is 20 kt or more, or it is double or half and either value exceeds 15 kt",
+            "Any change of 5 kt between the TAF and the observation",
+            "Any gust reported in the observation, whatever the mean",
+            "Only if the observed wind exceeds 30 kt"
+          ],
+          "a": 0,
+          "e": "MANAIR 2.9.5.3."
+        },
+        {
+          "q": "A TAF is cancelled when:",
+          "c": [
+            "Two consecutive hourly observations are missing",
+            "One hourly observation is late",
+            "The METAR is AUTO",
+            "The wind changes direction"
+          ],
+          "a": 0,
+          "e": "MANAIR 2.10.1: if two consecutive hourly observations cannot be obtained the TAF is cancelled."
+        },
+        {
+          "q": "How is a cancelled TAF issued?",
+          "c": [
+            "As an amended TAF with CNL and a reason in remarks",
+            "As a new regular TAF marked NIL",
+            "By removing the weather groups",
+            "By deleting the forecast without a message"
+          ],
+          "a": 0,
+          "e": "MANAIR 2.10: cancellation is by an amended TAF with CNL and the validity of the last issued TAF; the reason is in the remarks."
+        },
+        {
+          "q": "MANAIR Table 3 reads a TSRA group in the main body of a TAF as roughly what probability at the airport?",
+          "c": [
+            "60 to 100%",
+            "40 to 60%",
+            "30%",
+            "About 20%"
+          ],
+          "a": 0,
+          "e": "MANAIR Table 3: main body TSRA 60 to 100%, TEMPO TSRA 40 to 60%, PROB40 40%, PROB30 30%, TEMPO VCTS about 20%."
+        },
+        {
+          "q": "Which statement about TEMPO groups is correct?",
+          "c": [
+            "Wind can be included, for example TEMPO 1520/1523 VRB25G45KT",
+            "TEMPO groups can never contain wind",
+            "TEMPO changes are permanent",
+            "TEMPO must start with a probability"
+          ],
+          "a": 0,
+          "e": "MANAIR 2.6.15 and Example 7."
         }
       ],
       "verified": {
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "sources": [
-          "Transport Canada AIM MET 1.3.3 and 3.1: 5 NM radius, four times daily, up to 30 hours, amendment rules",
-          "NAV CANADA Aviation Weather Services Guide (2017): FM, BECMG, TEMPO, PROB, P6SM, NSW, VV, 2400/0000 coding, alternate minima, header and period examples"
+          "MANAIR 8th ed. Am. 3 (full PDF, March 2024) Chapter 2: 2.1 to 2.12 (definition, issue and validity, symbolic form, coding, change groups, PROB, remarks, advisories, updates, amendments, cancellation, examples)",
+          "Transport Canada AIM MET 1.3.3 and 3.1: radius, amendment rules (superseded in detail by MANAIR)",
+          "NAV CANADA Aviation Weather Services Guide (2017): 2400/0000 validity coding and alternate minima treatment of BECMG, TEMPO and PROB"
         ],
         "unverified": [
-          "MANAIR Chapter 2 (the full TAF standards and amendment thresholds) could not be opened with the tools used."
+          "The 2400/0000 coding of validity times and the alternate-minima treatment of BECMG, TEMPO and PROB come from the NAV CANADA guide, not MANAIR Chapter 2.",
+          "MANAIR Appendix A holds the aerodrome-specific alternate and approach limits and bulletin headers; they change by MANAIR Circular and were not copied into the lesson.",
+          "The earlier statement that TEMPO and PROB do not change wind was removed. MANAIR allows wind in TEMPO (Example 7) and PROB for low level wind shear."
         ]
       }
     },
@@ -801,9 +1016,10 @@
         }
       ],
       "verified": {
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "sources": [
-          "NAV CANADA Aviation Weather Services Guide (2017): isobars at 4 hPa from 1000 hPa, analysis times, cold and warm front symbols, SLP decoding rule"
+          "NAV CANADA Aviation Weather Services Guide (2017): isobars at 4 hPa from 1000 hPa, analysis times, cold and warm front symbols, SLP decoding rule",
+          "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.1.4 (GFA isobars solid black, every 4 hPa from 1000 hPa)"
         ],
         "unverified": [
           "Occluded and stationary front colours, the dashed trough line, the last-two-digits isobar labels and the station model layout are common charting practice, not confirmed in a fetched source.",
@@ -1363,6 +1579,467 @@
         ],
         "unverified": [
           "The CSI formula (hits / (hits + misses + false alarms)) is standard but was not stated in the source that was read."
+        ]
+      }
+    },
+    {
+      "title": "GFA, SIGMET, AIRMET and winds aloft (FB)",
+      "lesson": [
+        "These are the main Canadian aviation hazard products. The source is MANAIR (Manual of Standards and Procedures for Aviation Weather Forecasts, ECCC).",
+        {
+          "h": "GFA (Graphic Area Forecast)"
+        },
+        {
+          "list": [
+            "Six charts: clouds and weather, and icing/turbulence/freezing level, each at T+0, T+6 and T+12 hours. The last clouds and weather chart also has a 12-hour IFR outlook (hours 12 to 24).",
+            "Issued at 2330, 0530, 1130 and 1730 UTC, valid 00, 06, 12 and 18 UTC. Seven domains. Covers the surface to 24,000 ft.",
+            "Units: heights ASL unless noted, ceilings AGL. Wind direction is true. Visibility in SM. Time in UTC.",
+            "Standard phrases: HGTS ASL UNLS NOTED / CB TCU AND ACC IMPLY SIG TURB AND ICE / CB IMPLIES L LVL WS."
+          ]
+        },
+        {
+          "h": "GFA clouds and weather chart"
+        },
+        {
+          "list": [
+            "Organized BKN or OVC cloud is enclosed in a brown scalloped line. Cirrus is not mentioned.",
+            "Layers less than 2,000 ft apart are combined (LYRS). Layers 2,000 ft or more apart are each stated.",
+            "Convective clouds (CU, TCU, ACC, CB) are always indicated, with tops even above 24,000 ft.",
+            "Convective qualifiers: ISOL 25% or less, OCNL over 25% to 50%, FRQ over 50%. Non-convective: LCA 25% or less, PTCHY over 25% to 50%, XTNSV over 50%.",
+            "Visibility is always given; over 6 SM is P6SM. Areas of 6 SM or less are enclosed by a dashed orange line.",
+            "Continuous precipitation: solid green line, stippled; red for freezing precipitation. Convective or intermittent: dashed green, hatched.",
+            "Isobars: solid black, every 4 hPa from 1000 hPa (this chart only).",
+            "Strong winds: wind barbs where mean wind is 20 kt or more. Gusts are shown when 10 kt or more above the mean.",
+            "Synoptic features moving 5 kt or more get an arrow and speed. Slower is STNR."
+          ]
+        },
+        {
+          "h": "GFA icing, turbulence and freezing level chart"
+        },
+        "Moderate and severe non-convective icing (blue) and turbulence (red), with base and top as a fraction (top over base, hundreds of feet ASL). Freezing level is a dashed contour. See the icing and turbulence topics.",
+        {
+          "h": "SIGMET"
+        },
+        {
+          "list": [
+            "Types: WS (TS, TURB, ICE, MTW, L LVL WS, DS, SS, RDOACT CLD), WV (volcanic ash), WC (tropical cyclone). Covers up to FL600.",
+            "One phenomenon per SIGMET. Criteria: FRQ or SQL TS (hail and tornado/waterspout as needed); SEV TURB; SEV ICE (with or without FZRA); SEV MTW; SEV L LVL WS; HVY DS; HVY SS; RDOACT CLD; VA; TC with 10-minute mean surface wind of 34 kt (63 km/h) or more.",
+            "WS: valid 4 hours, issued up to 4 hours ahead, updated every 4 hours. WV and WC: valid 6 hours, issued up to 12 hours ahead, updated every 6 hours.",
+            "OBS means a recent observation (normally within 2 hours, never more than 3). FCST means the phenomenon is expected or strongly indicated by guidance.",
+            "A forecast-event SIGMET is issued only for first appearance in Canadian airspace. A phenomenon moving between Canadian FIRs is treated as ongoing.",
+            "Must be cancelled when the phenomenon ends or is no longer expected. A SIGMET is issued regardless of whether it is in the GFA."
+          ]
+        },
+        {
+          "h": "AIRMET"
+        },
+        {
+          "list": [
+            "For specified phenomena up to FL240 that are NOT already in the GFA.",
+            "Phenomena: widespread surface wind over 30 kt; widespread visibility under 3 SM and/or BKN or OVC below 1,000 ft AGL; ISOL or OCNL TS (TCU also if FRQ); MOD TURB; MOD ICE; MOD MTW. Widespread means 50% or more of the area.",
+            "Valid 4 hours, issued up to 4 hours ahead, updated every 4 hours. It does not cancel itself at the end of validity.",
+            "Cancel when the phenomenon ends, when it strengthens to SIGMET criteria, or when a new GFA includes it.",
+            "Once issued, a SIGMET or AIRMET automatically amends the current GFA."
+          ]
+        },
+        {
+          "h": "Winds and temperatures aloft (FB)"
+        },
+        {
+          "list": [
+            "Model-based, issued four times daily from 00, 06, 12 and 18 UTC data. FBCN31, FBCN33 and FBCN35 are the 6, 12 and 24 hour forecasts.",
+            "Levels: 3,000 (omitted when terrain is above 1,500 ft), 6,000, 9,000, 12,000 and 18,000 ft ASL. No temperature at 3,000 ft. The US NWS issues 24,000 to 53,000 ft.",
+            "Code ddfftt: direction in tens of degrees true, speed in knots, temperature in degrees C.",
+            "100 to 199 kt: subtract 100 from the speed and add 50 to the direction digits (240 deg at 130 kt = 7430). Over 199 kt is coded as 199. Under 5 kt is 9900.",
+            "Temperature sign is shown below 24,000 ft; above that, temperatures are negative and no sign is written."
+          ]
+        },
+        {
+          "note": "Always check current SIGMETs and AIRMETs together with the GFA. Both amend it automatically."
+        }
+      ],
+      "terms": [
+        [
+          "GFA",
+          "Graphic Area Forecast: six charts covering surface to 24,000 ft."
+        ],
+        [
+          "SIGMET",
+          "Warning of severe hazards. WS, WV (ash) and WC (tropical cyclone)."
+        ],
+        [
+          "AIRMET",
+          "Advisory of moderate hazards not already in the GFA."
+        ],
+        [
+          "OBS / FCST",
+          "Observed or forecast status of the phenomenon in a SIGMET or AIRMET."
+        ],
+        [
+          "FB",
+          "Winds and temperatures aloft forecast, digital form."
+        ],
+        [
+          "LYRS",
+          "Layers combined when separated by less than 2,000 ft."
+        ],
+        [
+          "XTNSV / PTCHY / LCA",
+          "GFA coverage: over 50%, over 25% to 50%, 25% or less."
+        ]
+      ],
+      "questions": [
+        {
+          "q": "How many charts make up a GFA?",
+          "c": [
+            "Six",
+            "Three",
+            "Four",
+            "Twelve"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.1: two charts each at T+0, T+6 and T+12."
+        },
+        {
+          "q": "At what times is the GFA issued?",
+          "c": [
+            "2330, 0530, 1130 and 1730 UTC",
+            "00, 06, 12 and 18 UTC exactly",
+            "0300, 0900, 1500 and 2100 UTC",
+            "Hourly"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.3. It is valid 00, 06, 12 and 18 UTC."
+        },
+        {
+          "q": "What altitude range does the GFA cover?",
+          "c": [
+            "Surface to 24,000 ft",
+            "Surface to FL600",
+            "FL240 to FL600",
+            "Surface to 10,000 ft"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.2."
+        },
+        {
+          "q": "GFA heights are above what reference unless stated?",
+          "c": [
+            "Sea level",
+            "Ground level",
+            "Pressure level 1013 hPa",
+            "Flight level 180"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.9.1.2.3: HGTS ASL UNLS NOTED. Ceilings are AGL."
+        },
+        {
+          "q": "What does XTNSV mean on the GFA?",
+          "c": [
+            "More than 50% coverage",
+            "25% or less",
+            "More than 25% up to 50%",
+            "Extending to the surface"
+          ],
+          "a": 0,
+          "e": "MANAIR Table 8."
+        },
+        {
+          "q": "OCNL in a GFA convective description means coverage of:",
+          "c": [
+            "Over 25% and up to 50%",
+            "25% or less of the area",
+            "More than 50% of the area",
+            "More than 75% of the area"
+          ],
+          "a": 0,
+          "e": "MANAIR Table 7."
+        },
+        {
+          "q": "Cloud layers in the GFA are described as LYRS when separated by:",
+          "c": [
+            "Less than 2,000 ft",
+            "2,000 ft or more",
+            "Less than 500 ft",
+            "Exactly 1,000 ft"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.9.1.2.1."
+        },
+        {
+          "q": "GFA isobars are drawn:",
+          "c": [
+            "Every 4 hPa from 1000 hPa",
+            "Every 2 hPa from 1013 hPa",
+            "Every 5 hPa from 1000 hPa",
+            "Every 8 hPa from 1000 hPa"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.9.1.4. Isobars are on the clouds and weather chart only."
+        },
+        {
+          "q": "GFA strong surface wind is shown where the mean wind is at least:",
+          "c": [
+            "20 kt",
+            "10 kt",
+            "30 kt",
+            "15 kt"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.9.1.5. Gusts are shown when 10 kt or more above the mean."
+        },
+        {
+          "q": "What colour line encloses continuous freezing precipitation on the GFA?",
+          "c": [
+            "Red",
+            "Green",
+            "Blue",
+            "Orange"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.9.1.3.1: green for continuous precipitation, red for freezing."
+        },
+        {
+          "q": "A dashed orange line on the GFA encloses:",
+          "c": [
+            "Visibility restricted to 6 SM or less",
+            "Convective or intermittent precipitation only",
+            "The freezing level, drawn as a dashed contour",
+            "Turbulence layers, drawn with cross-hatching"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.9.1.3.3."
+        },
+        {
+          "q": "What is the validity period of a WS SIGMET?",
+          "c": [
+            "4 hours",
+            "6 hours",
+            "2 hours",
+            "12 hours"
+          ],
+          "a": 0,
+          "e": "MANAIR Table 13. WV and WC are 6 hours."
+        },
+        {
+          "q": "A volcanic ash SIGMET is valid for:",
+          "c": [
+            "6 hours",
+            "4 hours",
+            "12 hours",
+            "24 hours"
+          ],
+          "a": 0,
+          "e": "MANAIR 5.8.2.2."
+        },
+        {
+          "q": "A WC SIGMET can be issued up to how far ahead of the start of validity?",
+          "c": [
+            "12 hours",
+            "4 hours",
+            "2 hours",
+            "24 hours"
+          ],
+          "a": 0,
+          "e": "MANAIR Table 13: lead time 12 h for WV and WC; 4 h for WS."
+        },
+        {
+          "q": "Which wind speed qualifies a tropical cyclone for a SIGMET?",
+          "c": [
+            "34 kt (63 km/h) or more, 10-minute mean surface wind",
+            "50 kt sustained wind at 10 m",
+            "64 kt (hurricane force) 10-minute mean",
+            "25 kt 1-minute mean surface wind"
+          ],
+          "a": 0,
+          "e": "MANAIR D.5."
+        },
+        {
+          "q": "How many phenomena can one SIGMET cover?",
+          "c": [
+            "One",
+            "Two",
+            "As many as needed",
+            "Three"
+          ],
+          "a": 0,
+          "e": "MANAIR D.5 note 1."
+        },
+        {
+          "q": "Which thunderstorm descriptions qualify for a SIGMET?",
+          "c": [
+            "FRQ or SQL",
+            "ISOL or OCNL only",
+            "SCT or BKN coverage only",
+            "Any thunderstorm in a METAR"
+          ],
+          "a": 0,
+          "e": "MANAIR 5.8.3.2. ISOL and OCNL TS are AIRMET criteria."
+        },
+        {
+          "q": "For SIGMET and AIRMET, 'recent' observation (OBS) normally means within:",
+          "c": [
+            "2 hours, and never more than 3 hours before issue",
+            "The latest METAR only, issued within 30 minutes",
+            "Within 6 hours and never more than 12 hours",
+            "Any time in the previous 24 hours"
+          ],
+          "a": 0,
+          "e": "MANAIR 5.8.3.3 and 6.8.3.3 notes."
+        },
+        {
+          "q": "An AIRMET is issued for a phenomenon:",
+          "c": [
+            "Not already included in the GFA",
+            "Always, whether or not it is in the GFA",
+            "Only above FL240",
+            "Only for tropical cyclones"
+          ],
+          "a": 0,
+          "e": "MANAIR 6.1 and Ch. 6, relationship to GFA."
+        },
+        {
+          "q": "What is the upper limit of the AIRMET domain?",
+          "c": [
+            "FL240",
+            "FL600",
+            "FL100",
+            "FL450"
+          ],
+          "a": 0,
+          "e": "MANAIR 6.2. SIGMET goes to FL600."
+        },
+        {
+          "q": "Which is an AIRMET criterion?",
+          "c": [
+            "Widespread surface wind over 30 kt",
+            "Surface wind of 20 kt over a small area",
+            "Severe turbulence over mountains",
+            "Severe icing in freezing rain"
+          ],
+          "a": 0,
+          "e": "MANAIR 6.8.3.2. Severe turbulence and icing are SIGMET criteria."
+        },
+        {
+          "q": "In MANAIR, 'widespread' for an AIRMET means:",
+          "c": [
+            "50% or more of the area",
+            "25% or less",
+            "Any part of the area",
+            "75% or more"
+          ],
+          "a": 0,
+          "e": "MANAIR E.5 note 1."
+        },
+        {
+          "q": "How long is an AIRMET valid?",
+          "c": [
+            "4 hours",
+            "6 hours",
+            "2 hours",
+            "12 hours"
+          ],
+          "a": 0,
+          "e": "MANAIR 6.8.2.2."
+        },
+        {
+          "q": "Does an AIRMET cancel itself when its validity period ends?",
+          "c": [
+            "No, it must be cancelled",
+            "Yes",
+            "Only at 0000Z",
+            "Only if replaced by a GFA"
+          ],
+          "a": 0,
+          "e": "MANAIR 6.8.6: an AIRMET does not cancel itself automatically."
+        },
+        {
+          "q": "If severe turbulence in a SIGMET weakens to moderate, and the GFA did not forecast it:",
+          "c": [
+            "Cancel the SIGMET and issue an AIRMET",
+            "Keep the SIGMET open until its validity expires",
+            "Issue nothing, since moderate is below all criteria",
+            "Amend the GFA only and cancel nothing"
+          ],
+          "a": 0,
+          "e": "MANAIR Ch. 5 and Ch. 6, relationship to AIRMET and SIGMET (the AIRMET is issued only if the phenomenon was not in the current GFA)."
+        },
+        {
+          "q": "The four daily FB winds-aloft forecasts are based on data from:",
+          "c": [
+            "00, 06, 12 and 18 UTC",
+            "03, 09, 15 and 21 UTC",
+            "00 and 12 UTC only",
+            "Every hour"
+          ],
+          "a": 0,
+          "e": "MANAIR 3.3."
+        },
+        {
+          "q": "Which level is NOT given in the CCMEP FB forecast?",
+          "c": [
+            "24,000 ft",
+            "6,000 ft",
+            "9,000 ft",
+            "18,000 ft"
+          ],
+          "a": 0,
+          "e": "MANAIR 3.2. CCMEP gives 3,000 to 18,000 ft; the NWS gives 24,000 ft and above."
+        },
+        {
+          "q": "In the FB code, 7430 means:",
+          "c": [
+            "240 degrees at 130 kt",
+            "740 degrees at 30 kt",
+            "74 degrees at 30 kt",
+            "240 degrees at 30 kt"
+          ],
+          "a": 0,
+          "e": "MANAIR 3.4: for 100 to 199 kt, add 50 to the direction and subtract 100 from the speed. 74 minus 50 is 24, and 30 plus 100 is 130."
+        },
+        {
+          "q": "In the FB code, 9900 means:",
+          "c": [
+            "Wind speed under 5 kt",
+            "Wind 99 kt",
+            "Calm and no temperature",
+            "Missing data"
+          ],
+          "a": 0,
+          "e": "MANAIR 3.4."
+        },
+        {
+          "q": "FB wind direction is referenced to:",
+          "c": [
+            "True north",
+            "Magnetic north",
+            "Grid north",
+            "Compass north"
+          ],
+          "a": 0,
+          "e": "MANAIR 3.4."
+        },
+        {
+          "q": "Is the 3,000 ft level always forecast in FB?",
+          "c": [
+            "No, it is omitted when terrain is above 1,500 ft",
+            "Yes, at every station so low-level winds are always available",
+            "Only at night when low-level jets are expected",
+            "Only at stations below sea level"
+          ],
+          "a": 0,
+          "e": "MANAIR 3.2. Temperatures are never forecast for 3,000 ft."
+        }
+      ],
+      "verified": {
+        "date": "2026-10-27",
+        "sources": [
+          "MANAIR 8th ed. Am. 3 (March 2024, full PDF): Ch. 3 (FB), Ch. 4 (GFA), Ch. 5 (SIGMET), Ch. 6 (AIRMET) and Appendices D and E tables"
+        ],
+        "unverified": [
+          "MANAIR Appendix C GFA symbol images were not checked visually.",
+          "WS SIGMET coordinate and text formats, WMO headers and FIR letter rules are not taught here.",
+          "Sig Wx prognostic charts (MANAIR Ch. 7) have no lesson yet."
         ]
       }
     }

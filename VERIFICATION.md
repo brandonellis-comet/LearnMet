@@ -9,7 +9,7 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 | Domain | Status | Date |
 |--------|--------|------|
 | Observations (obs) | Checked. 5 topics | 2026-10-26 |
-| Codes (codes) | Checked. 6 topics | 2026-10-26 |
+| Codes (codes) | Checked. 7 topics. TAF rewritten and GFA/SIGMET/AIRMET/FB topic added from MANAIR | 2026-10-27 |
 | Severe weather (severe). 6 topics | Checked. Several numbers removed as unconfirmed | 2026-10-26 |
 | Foundations (foundations). 5 topics | Checked. Tropopause heights and pressure-level heights corrected | 2026-10-26 |
 | Wind (wind). 6 topics | Checked. Backing/veering rule was reversed and is fixed | 2026-10-26 |
@@ -110,6 +110,8 @@ Method limit: the reading tool returns about 100,000 characters per document. Fo
 
 - MANOBS (8th ed. Am. 3, full PDF, 2026-10-27): read cover to cover except chapter 15 detail (synoptic code groups) and the appendix 4 altimeter/UNICOM text. Checked and added to the lessons: wind (3), visibility (4), RVR (5), present weather, fog, mist, precipitation intensity and definitions (6, 13), sky condition and cloud base table (7), temperature and pressure (8, 9), remarks (10), METAR coding (11.2.2), SPECI criteria (11.2.3), AUTO SPECI (12.2.7), glossary (13), appendix 1 and 2. MANOBS Part B (synoptic code, chapters 14 and 15) has no matching lesson yet; if a synoptic code topic is added it must be built from chapter 15.
 - Still not confirmed from MANOBS: the ceiling footnote on the 400, 200 and 100 ft SPECI values, QFE and the MSLP reduction method (MANOBS only names the WMO method), and how ATIS and tower broadcasts fall under the magnetic-wind voice exception (12.2.1).
+- MANAIR (8th ed. Am. 3, March 2024, full PDF, 2026-10-27): read Ch. 2 (TAF), 3 (FB), 4 (GFA), 5 (SIGMET), 6 (AIRMET), parts of 7 and 8, and the SIGMET/AIRMET appendix tables. Corrections made: BECMG is normally 2 h or less and never over 4 h (was "1 to 4 h"); TEMPO and PROB groups may carry wind (old text said they do not); TAF issue, update and amendment thresholds rewritten from Ch. 2; fog ceiling wording corrected. Added: GFA, SIGMET, AIRMET and FB winds aloft topic; MANAIR turbulence, icing and wind shear definitions.
+- Still not confirmed from MANAIR: Ch. 7 Sig Wx prognostic charts (no lesson), Appendix C symbol images, WMO header and FIR letter rules, and 2400/0000 coding and alternate-minima treatment (NAV CANADA guide).
 - MANAIR chapter 2: TAF amendment thresholds and full coding rules.
 - Occluded and stationary front colours, trough line style, isobar label convention, station model layout.
 - dBZ intensity ranges, water vapour band wavelengths, mandatory pressure level list, CSI formula, CIN and lifted index definitions.

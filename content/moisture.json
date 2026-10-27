@@ -1106,6 +1106,18 @@
         },
         {
           "note": "Anti-icing and de-icing equipment may not handle severe icing. If in doubt, avoid. A change of altitude to warmer air or out of cloud is the standard escape."
+        },
+        {
+          "h": "Forecasting icing (MANAIR)"
+        },
+        {
+          "list": [
+            "GFA icing types: RIME, MX (mixed) and CLR (clear).",
+            "GFA depicts only moderate or severe non-convective icing, as a blue line with stippling (denser for severe). Light icing goes in the comments box.",
+            "Layers are a fraction: top over base, hundreds of feet ASL.",
+            "Intensity is judged by effect on the aircraft, not measured. Light: prolonged flight (over 1 hour) without de-icing may cause a problem. Moderate: even short encounters are potentially hazardous; de-icing or anti-icing must be used or divert. Severe: de-icing fails to control the hazard; immediate diversion.",
+            "SIGMET: SEV ICE, with or without freezing rain (FZRA). AIRMET: MOD ICE. Neither applies to icing in convective clouds."
+          ]
         }
       ],
       "terms": [
@@ -1265,6 +1277,61 @@
           ],
           "a": 0,
           "e": "MANOBS 13.2.10: glaze is a coating of ice, generally clear and smooth, formed by freezing of supercooled water; rime is milky and granular; hoar frost forms by sublimation."
+        },
+        {
+          "q": "Which are the GFA icing types?",
+          "c": [
+            "RIME, MX and CLR",
+            "LGT, MOD and SEV",
+            "FZRA, FZDZ and PL",
+            "HOAR, GLAZE and RIME"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.9.2.1."
+        },
+        {
+          "q": "Where does the GFA show light icing?",
+          "c": [
+            "In the comments box",
+            "As a blue stippled area",
+            "As a red hatched area",
+            "It is not mentioned anywhere"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.9.2.1."
+        },
+        {
+          "q": "How does MANAIR define severe icing?",
+          "c": [
+            "De-icing or anti-icing equipment fails to reduce or control the hazard; immediate diversion is necessary",
+            "Ice that stays on the wings for more than one hour of flight",
+            "Any ice accretion caused by freezing rain at any rate",
+            "Ice that forms only inside cumulonimbus clouds"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.9.2.1."
+        },
+        {
+          "q": "A SIGMET for icing is issued for:",
+          "c": [
+            "Severe icing, with or without freezing rain",
+            "Light icing in any cloud type",
+            "Moderate icing in layer cloud only",
+            "Frost on the ground before takeoff"
+          ],
+          "a": 0,
+          "e": "MANAIR 5.8.3.2 and D.5."
+        },
+        {
+          "q": "A GFA icing layer depicted as 80 over 20 means:",
+          "c": [
+            "Top 8,000 ft ASL, base 2,000 ft ASL",
+            "Base 8,000 ft, top 2,000 ft",
+            "Top 80 ft, base 20 ft AGL",
+            "Eight to two oktas"
+          ],
+          "a": 0,
+          "e": "MANAIR 4.9.2.1: numerator is the top, denominator the base, hundreds of feet ASL."
         }
       ],
       "verified": {
@@ -1273,12 +1340,13 @@
           "NAV CANADA Aviation Weather Services Guide (2017): rime, clear and mixed ice definitions; light, moderate, severe wording; SIGMET only for severe",
           "WMO, Aviation hazards: icing: rime below about -10 C and/or low liquid water; clear above about -10 C and/or high liquid water; freezing drizzle and rain",
           "NWS cloud and precipitation training notes: liquid water persists as low as -40 C",
-          "MANOBS 8th ed. Am. 3 (full PDF): 13.2.10 (glaze, rime, hoar frost); 6.6.2.3 to 6.6.2.4 (freezing precipitation and ice accretion indicator)"
+          "MANOBS 8th ed. Am. 3 (full PDF): 13.2.10 (glaze, rime, hoar frost); 6.6.2.3 to 6.6.2.4 (freezing precipitation and ice accretion indicator)",
+          "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.2.1 (GFA icing types, depiction and intensity definitions), 5.8.3.2, D.5 and E.5 (SIGMET SEV, AIRMET MOD)"
         ],
         "unverified": [
           "Carburettor icing (outside temperatures up to about 20 C) and frost deposition: standard aviation teaching, not confirmed on the pages read.",
-          "The AIM MET 2.4 icing text was read earlier but not re-checked line by line in this pass.",
-          "Escape by changing altitude, and which cloud types have the highest liquid water: standard teaching."
+          "Escape by changing altitude, and which cloud types have the highest liquid water: standard teaching.",
+          "The AIM MET 2.4 icing text was read earlier but not re-checked line by line; MANAIR intensity wording matches the NAV CANADA guide."
         ]
       }
     }
