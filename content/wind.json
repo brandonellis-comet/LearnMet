@@ -171,11 +171,12 @@
       "verified": {
         "date": "2026-10-26",
         "sources": [
-          "Penn State METEO 3, Introductory Meteorology: forces on wind: PGF direction, Coriolis to the right in the Northern Hemisphere, grows with speed and latitude, geostrophic wind parallel to isobars, Buys Ballot's law"
+          "Penn State METEO 3, Introductory Meteorology: forces on wind: PGF direction, Coriolis to the right in the Northern Hemisphere, grows with speed and latitude, geostrophic wind parallel to isobars, Buys Ballot's law",
+          "AMS Glossary, Coriolis parameter: f = 2 Omega sin(latitude); zero at the equator follows from the formula (the page does not state it)"
         ],
         "unverified": [
-          "Coriolis zero at the equator, Coriolis changing direction but not speed, the Coriolis parameter formula, and 'too small for sea breezes': standard physics, not stated on the page read.",
-          "Source is a university course text, not a Canadian government publication."
+          "Source is a university course text, not a Canadian government publication.",
+          "Coriolis zero at the equator is derived from the AMS formula. Coriolis changing direction but not speed, and 'too small for sea breezes': standard physics, not stated on any page read. Single source for the formula (AMS); consistent with the Penn State page already used."
         ]
       }
     },
@@ -351,21 +352,23 @@
         "sources": [
           "University at Albany ATM 317, Thermal Wind notes: thermal wind is the vector difference of geostrophic winds, parallel to thickness lines with cold air on the left; backing = cold advection, veering = warm advection",
           "LibreTexts, Jet streams: thermal wind as vertical shear of the geostrophic wind caused by a horizontal temperature gradient",
-          "Penn State METEO 3: geostrophic wind parallel to isobars"
+          "Penn State METEO 3: geostrophic wind parallel to isobars",
+          "AMS Glossary, Gradient wind: cyclonic curvature is subgeostrophic, anticyclonic is supergeostrophic",
+          "University at Albany ATM 316, Balanced flow: same statements for the same pressure gradient (two sources agree)"
         ],
         "unverified": [
-          "Gradient wind (sub- and supergeostrophic around lows and highs): standard theory, not stated on the pages read.",
-          "Wind speed proportional to pressure gradient and geostrophic balance above the friction layer: partly confirmed (geostrophic definition, 'often close at high altitudes')."
+          "Wind speed proportional to pressure gradient and geostrophic balance above the friction layer: partly confirmed (geostrophic definition, 'often close at high altitudes').",
+          "Wind speed proportional to pressure gradient is true for geostrophic flow only. Gradient wind curvature effects are now confirmed by two sources (AMS, Albany)."
         ]
       }
     },
     {
       "title": "Friction and boundary layer winds",
       "lesson": [
-        "The atmospheric boundary layer is the lowest 1 to 2 km, where surface friction matters. Friction slows the wind. A slower wind feels a weaker Coriolis effect, so the pressure gradient force wins and the wind turns toward lower pressure.",
+        "The atmospheric boundary layer is the lowest part of the troposphere, in direct contact with the surface, where friction and turbulence matter. It has no fixed depth: from tens of metres under strongly stable conditions to several kilometres in strongly convective conditions (AMS Glossary). Friction slows the wind. A slower wind feels a weaker Coriolis effect, so the pressure gradient force wins and the wind turns toward lower pressure.",
         {
           "list": [
-            "Surface wind blows across the isobars toward low pressure: about 30 degrees on average over land, less over water, and 45 degrees or more over mountainous terrain (Penn State).",
+            "Surface wind blows across the isobars toward low pressure: about 30 degrees on average over land (Penn State), less over water, and 45 degrees or more over mountainous terrain (Penn State). Albany gives about 20 to 40 degrees over land and 10 to 20 degrees over water.",
             "Friction slows the wind, so surface wind is weaker than the geostrophic wind. The usual fractions (about one-third to one-half over land, two-thirds over water) were not confirmed and were removed.",
             "Surface winds therefore back (turn counterclockwise) relative to the wind above. Wind veers with height through the friction layer."
           ]
@@ -379,8 +382,8 @@
         },
         {
           "list": [
-            "Daytime: surface heating mixes the boundary layer. Stronger winds aloft are brought down, so gusts peak in the afternoon.",
-            "Night: a surface inversion decouples the surface layer. Surface wind drops while winds just above the inversion can strengthen (see low-level jets)."
+            "Daytime: surface heating drives vigorous turbulence in a mixed layer that deepens over the day (AMS Glossary). Stronger winds aloft are brought down, so gusts peak in the afternoon (standard teaching).",
+            "Night: near sunset turbulence weakens and the bottom of the layer becomes a stable boundary layer over the cooled surface (AMS Glossary). Surface wind drops while winds just above can strengthen (see low-level jets)."
           ]
         },
         {
@@ -473,15 +476,15 @@
           "e": "Rougher surfaces slow the wind more and increase its turning toward low pressure."
         },
         {
-          "q": "A typical depth of the planetary boundary layer is:",
+          "q": "Which statement about the depth of the atmospheric boundary layer is correct?",
           "c": [
-            "About 1 to 2 km",
-            "About 10 to 20 km",
-            "About 100 to 200 m",
-            "About 30 to 50 km"
+            "It varies from tens of metres when stable to several km when convective",
+            "It is a fixed 1 to 2 km layer everywhere at all times",
+            "It is always about 100 m deep because friction is limited to that",
+            "It extends up to the tropopause at all latitudes and seasons"
           ],
           "a": 0,
-          "e": "The boundary layer, where friction acts, is typically a kilometre or two deep."
+          "e": "AMS Glossary: the top of the layer, the inversion height, changes with time and place, from tens of metres in strongly stable conditions to several km in convective ones."
         },
         {
           "q": "On a clear night with a strong surface inversion, surface winds usually:",
@@ -531,11 +534,13 @@
       "verified": {
         "date": "2026-10-26",
         "sources": [
-          "Penn State METEO 3: friction slows the wind; crossing angle about 30 degrees over land, less over water, 45 degrees or more in mountains"
+          "Penn State METEO 3: friction slows the wind; crossing angle about 30 degrees over land, less over water, 45 degrees or more in mountains",
+          "AMS Glossary, Atmospheric boundary layer: no fixed depth, tens of metres to several km; mixed layer deepens by day; stable layer at night",
+          "University at Albany, SHW Ch. 7: friction turns the wind 20 to 40 degrees over land and 10 to 20 degrees over water (agrees with Penn State's 30 degree average)"
         ],
         "unverified": [
-          "Boundary layer depth of 1 to 2 km, diurnal gust cycle, night-time decoupling, surface convergence under lows and divergence under highs: standard teaching, not confirmed on the pages read.",
-          "Speed fractions of surface to geostrophic wind were removed (no source)."
+          "Speed fractions of surface to geostrophic wind were removed (no source).",
+          "Afternoon gust peak, and surface convergence under lows and divergence under highs: standard teaching, not confirmed on the pages read (Albany says friction weakens surface highs and lows)."
         ]
       }
     },
@@ -710,18 +715,19 @@
       "verified": {
         "date": "2026-10-26",
         "sources": [
-          "NWS Atmospheric Circulations training notes: three-cell model with highs near 30 and 90 degrees and lows near 0 and 60; ITCZ where NE and SE trades converge; subtropical highs with sinking air and deserts; northeast trades; westerlies; polar easterlies; polar front near 60 degrees as a zone where storms form"
+          "NWS Atmospheric Circulations training notes: three-cell model with highs near 30 and 90 degrees and lows near 0 and 60; ITCZ where NE and SE trades converge; subtropical highs with sinking air and deserts; northeast trades; westerlies; polar easterlies; polar front near 60 degrees as a zone where storms form",
+          "Colorado State, Global circulation notes: Ferrel cell indirect and eddy-driven (rises near 60, sinks near 30), ITCZ as rising branch of the Hadley cell, doldrums near the equator, trade winds either side"
         ],
         "unverified": [
-          "Ferrel cell being indirect and eddy-driven, and the doldrums (light winds at the ITCZ): standard teaching, not stated on the page read.",
-          "Exact latitude edges of each cell (0 to 30, 30 to 60, 60 to 90) follow from the pressure belts but are not stated as such."
+          "Exact latitude edges of each cell (0 to 30, 30 to 60, 60 to 90) follow from the pressure belts but are not stated as such.",
+          "Ferrel cell and doldrums now sourced to Colorado State notes (single new source; consistent with the NWS notes already used). The Colorado State page did not describe the polar cell."
         ]
       }
     },
     {
       "title": "Jet streams",
       "lesson": [
-        "Jet streams are narrow, fast ribbons of wind near the tropopause. FAA AC 00-6A classifies a jet stream as winds of 50 kt or more and calls that figure arbitrary. The WMO figure of 30 m/s (about 60 kt) is not confirmed here. FAA gives lengths of 1,000 to 3,000 miles and widths of roughly 100 to 400 miles, in a narrow, shallow stream.",
+        "Jet streams are narrow, fast ribbons of wind near the tropopause. FAA AC 00-6A classifies a jet stream as winds of 50 kt or more and calls that figure arbitrary. The AMS Glossary also marks a jet on upper-level charts where the wind is reliably at least 50 kt. The WMO figure of 30 m/s (about 60 kt) is still not confirmed. FAA gives lengths of 1,000 to 3,000 miles and widths of roughly 100 to 400 miles, in a narrow, shallow stream.",
         {
           "list": [
             "Polar front jet: near 50 to 60 degrees latitude and about 10 km up (roughly 250 to 300 hPa). Follows the polar front and shifts north and south. It moves farther south in winter.",
@@ -736,7 +742,7 @@
         {
           "h": "Entrance and exit regions"
         },
-        "Air accelerates into the jet core (entrance) and decelerates out of it (exit). In the Northern Hemisphere, upper-level divergence, and thus rising air, is favoured in the right entrance and left exit regions. Surface cyclones often develop beneath these.",
+        "Air accelerates into the jet core (entrance) and decelerates out of it (exit). In the Northern Hemisphere, upper-level divergence and rising air are favoured in the right entrance and left exit regions; convergence and sinking air are in the left entrance and right exit regions (NWS Louisville, MetEd, EUMeTrain, University at Albany all agree). Surface cyclones are favoured beneath the right entrance and left exit. In a jet streak at the base of a trough, the strongest divergence is in the left exit region on the northeast side of the trough, where strong surface cyclones develop (Albany).",
         {
           "h": "Aviation and operations"
         },
@@ -898,12 +904,14 @@
         "sources": [
           "FAA Advisory Circular 00-6A, Aviation Weather: jet stream 50 kt minimum, dimensions, winter strength and southward shift, CAT on the cold side",
           "LibreTexts, Jet streams: polar jet near 50 to 60 degrees and about 10 km; subtropical jet near 30 degrees and about 13 km; stronger in winter; cores often above 100 kt",
-          "Royal Meteorological Society, Jet streams: about 30,000 ft, average about 110 mph, polar jet strongest in winter, flight times"
+          "Royal Meteorological Society, Jet streams: about 30,000 ft, average about 110 mph, polar jet strongest in winter, flight times",
+          "AMS Glossary, Jet stream: marked on upper-level charts at 50 kt or more (agrees with FAA AC 00-6A)",
+          "NWS Louisville, Jet streaks: upper divergence at the right entrance; MetEd jet streak circulation lab: divergence right entrance and left exit, convergence left entrance and right exit; EUMeTrain: cyclogenesis favoured at left exit and right entrance; University at Albany SHW Ch. 7: same quadrant pattern"
         ],
         "unverified": [
           "WMO 60 kt (30 m/s) definition: not confirmed on any page read. The TC AIM jet stream wording was not found.",
-          "Entrance and exit region divergence (right entrance, left exit), and that the polar jet steers storms over Canada: standard teaching, not confirmed.",
-          "Isotachs on 250 and 300 hPa charts: not checked."
+          "Isotachs on 250 and 300 hPa charts: not checked.",
+          "The jet stream entrance and exit pattern now has four agreeing public sources (NWS Louisville, MetEd, EUMeTrain, Albany). Not checked in a Canadian publication. That the polar jet steers storms over Canada: standard teaching."
         ]
       }
     },
@@ -915,7 +923,7 @@
           "list": [
             "Sea breeze: by day land heats faster than water, pressure falls over land, and air flows from sea to land (onshore). The sea breeze front brings a wind shift, a rapid drop in temperature and higher moisture, and clouds often form along it (NWS). Sea breezes are stronger than land breezes.",
             "Land breeze: at night land cools faster, so air flows from land to sea (offshore). Weaker than the sea breeze.",
-            "Valley breeze (anabatic): by day, sun heats slopes and air flows upslope and up-valley.",
+            "Valley breeze: by day, sun heats slopes and air flows upslope and up-valley. The upslope flow on the heated slopes is called anabatic (AMS Glossary).",
             "Mountain breeze: at night, valley walls cool and air flows downslope and down-valley. Cold air pooling in valleys can cause frost and fog.",
             "Katabatic winds: cold air flowing down a slope under gravity. They are stronger than mountain breezes and can exceed 100 knots (NWS). Large-scale examples occur over ice sheets and glaciers.",
             "Foehn or Chinook: warm, dry downslope wind on the lee of a mountain range (see adiabatic processes). The Chinook affects Alberta. NWS notes temperature can rise as much as 20 C in 1 hour with a sharp drop in relative humidity. Warming is mainly from compression, plus latent heat released if the air condensed on the windward side."
@@ -1081,11 +1089,12 @@
         "date": "2026-10-26",
         "sources": [
           "NWS Atmospheric Circulations training notes: sea and land breeze, sea breeze front effects, valley and mountain breezes, katabatic winds, chinook and foehn temperature rise and mechanism",
-          "The Canadian Encyclopedia, Chinook (see Foundations): chinook belt in southern and central Alberta"
+          "The Canadian Encyclopedia, Chinook (see Foundations): chinook belt in southern and central Alberta",
+          "AMS Glossary, Anabatic wind: upslope wind driven by daytime slope heating, typically 3 to 5 m/s, daytime part of mountain-valley systems; katabatic is the cooled counterpart"
         ],
         "unverified": [
           "Sea breeze timing and inland reach, and sea breeze fronts triggering thunderstorms, were removed (no source). The Nova Scotia south-shore note was removed for the same reason.",
-          "Cold-air pooling giving frost and fog, and the term anabatic for the daytime upslope wind: standard teaching, not confirmed on the pages read."
+          "Anabatic is now confirmed (AMS). Cold-air pooling giving frost and fog in valleys: standard teaching, not confirmed on any page read. Note the lesson labels the valley breeze 'anabatic'; AMS describes anabatic as upslope flow, so up-valley is a loose extension."
         ]
       }
     }

@@ -176,7 +176,8 @@
           "NOAA JetStream, Layers of the atmosphere: layer boundaries, temperature trends, tropopause height by latitude, stratosphere share of gases",
           "ISO 2533:1975 / ICAO Doc 7488 (via the International Standard Atmosphere article): 11 km tropopause",
           "UCAR SciEd, Layers of the atmosphere: layer tops, ozone in stratosphere, coldest temperatures (about -90 C) near top of mesosphere, ionosphere in parts of mesosphere and thermosphere, 99% of water vapour in troposphere",
-          "SKYbrary, Troposphere: 75% of atmospheric mass, tropopause about 11 km"
+          "SKYbrary, Troposphere: 75% of atmospheric mass, tropopause about 11 km",
+          "WCIA Weather 101, Layers of the atmosphere (TV station, secondary): 75% of atmospheric mass in the troposphere (agrees with SKYbrary)"
         ],
         "unverified": [
           "Mesopause named explicitly as the coldest region: UCAR says coldest temperatures are near the top of the mesosphere (same place). Lesson now says so.",

@@ -12,6 +12,9 @@ Standing rule: accuracy notices stay on every page until the owner says otherwis
 
 Study aid only. Crown-copyright and NAV CANADA text is paraphrased and linked, not copied. No controlled or intranet material is used.
 
+## Cross-check rule (from 2026-10-27)
+Every new claim needs two independent sources or is flagged single-source. New claims are compared with the lesson text and the sources already logged. Conflicts are recorded below, and the more authoritative source wins (Canadian government over US government over university or media).
+
 ## Status (as of 2026-10-27; 895 questions)
 
 | Domain | Topics | Questions | Status | Last checked |
@@ -22,7 +25,7 @@ Study aid only. Crown-copyright and NAV CANADA text is paraphrased and linked, n
 | Moisture (moisture) | 6 | 109 | Icing topic checked against AIM, MANAIR and AIR (incl. carburettor icing). Others first pass | 2026-10-27 |
 | Applied (applied) | 5 | 59 | Aviation minima, flight categories and marine topics updated; others first pass | 2026-10-27 |
 | Foundations (foundations) | 5 | 58 | Partly hardened 2026-10-27: layers (UCAR, SKYbrary), SALR (Haby), pressure-level heights (Navy table). Rest first pass | 2026-10-27 |
-| Wind (wind) | 6 | 68 | First pass. Backing/veering rule was reversed and is fixed | 2026-10-26 |
+| Wind (wind) | 6 | 68 | Partly hardened 2026-10-27: jet streak quadrants (4 sources), gradient wind (2), boundary layer depth (AMS), Ferrel/ITCZ, anabatic. Rest first pass | 2026-10-26 |
 | Air masses (airmass) | 4 | 47 | First pass. Frontal slopes and shear role in frontogenesis corrected | 2026-10-26 |
 | Synoptic (synoptic) | 5 | 58 | First pass. Post-tropical, derecho, cyclone life span and long-wave wording corrected | 2026-10-26 |
 
@@ -118,6 +121,13 @@ Study aid only. Crown-copyright and NAV CANADA text is paraphrased and linked, n
 
 | Where | Was | Now | Source |
 |-------|-----|-----|--------|
+| Troposphere share of mass | About 80% (derived) | About 75% | SKYbrary, WCIA Weather 101 (two sources; WCIA is a TV station) |
+| Boundary layer depth | Lowest 1 to 2 km; quiz answer "1 to 2 km" | No fixed depth: tens of metres (stable) to several km (convective); quiz rewritten | AMS Glossary (single source) |
+| Jet stream definition | FAA 50 kt; WMO 60 kt unconfirmed | Unchanged. AMS also marks a jet at 50 kt on charts. WMO 60 kt still not confirmed | FAA AC 00-6A, AMS Glossary |
+| Jet streak quadrants | Right entrance and left exit divergent (one source) | Confirmed by four sources; convergence in left entrance and right exit added | NWS Louisville, MetEd, EUMeTrain, Univ. at Albany |
+| Surface wind turning | About 30 degrees over land (Penn State) | Kept. Albany range 20 to 40 land, 10 to 20 water added; consistent | Penn State, Univ. at Albany |
+| Saturated lapse rate | Direction with temperature unconfirmed | About 4 to 5 C/km in very warm humid air, near dry rate in cold air | Haby (single source; AMS gives only the formula) |
+| Valley breeze label | Valley breeze called anabatic | Anabatic applies to upslope flow on heated slopes | AMS Glossary |
 | TAF lesson | BECMG "1 to 4 h"; TEMPO and PROB do not carry wind | BECMG normally 2 h or less, never over 4 h; TEMPO and PROB may carry wind; issue, update and amendment thresholds rewritten | MANAIR Ch. 2 |
 | GFA, SIGMET, AIRMET, FB | No topic | New topic: GFA issue times and domains, SIGMET (WS 4 h, WV and WC 6 h), AIRMET (4 h, to FL240, only if not in GFA), FB code rules | MANAIR Ch. 3 to 6 |
 | Front symbols (surface/GFA) | "Occluded usually purple" | Removed. GFA has no occluded symbol. Colours confirmed: cold blue triangles, warm red semicircles, stationary alternating | MANAIR Appendix C.2 |
