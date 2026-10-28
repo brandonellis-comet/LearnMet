@@ -611,9 +611,24 @@
         },
         "In clouds warmer than 0 C, larger droplets fall faster, collide with smaller ones, and merge. NWS: at least a few droplets must be as large as 20 microns. Needs a deep cloud with strong updraft and lots of liquid water. Dominant in the tropics and in warm maritime clouds.",
         {
-          "h": "Bergeron-Findeisen (ice crystal) process"
+          "h": "Wegener-Bergeron-Findeisen (WBF) process"
         },
-        "In mixed clouds containing supercooled water and ice, the saturation vapour pressure over ice is lower than over water. Vapour therefore moves from droplets to ice crystals, which grow quickly and fall. Most mid-latitude rain starts as snow that melts on the way down.",
+        "Mixed-phase cloud: supercooled liquid droplets and ice crystals exist together below 0 C. The WBF process is how the ice crystals grow at the droplets' expense.",
+        {
+          "list": [
+            "1. Saturation vapour pressure over ice is lower than over liquid water at the same temperature.",
+            "2. Air that is just saturated for water is therefore supersaturated for ice.",
+            "3. Ice crystals grow by deposition (vapour to ice, no liquid stage).",
+            "4. Vapour is used up, the air drops below water saturation, and the supercooled droplets evaporate.",
+            "5. Vapour keeps moving from droplets to crystals. The crystals grow large enough to fall as snow (or melt into rain on the way down).",
+            "Result: cloud glaciates and precipitates. Needs far more droplets than ice crystals so each crystal can grow big."
+          ]
+        },
+        "Ice nuclei freeze water at warmer temperatures than the roughly -35 C needed without them, so supercooled droplets can persist well below 0 C. That is why aircraft icing (supercooled liquid) occurs in clouds colder than freezing.",
+        "Origin: Wegener (1911) proposed ice growth at the expense of liquid water, Bergeron (1922, presented 1933) applied it to clouds, Findeisen (late 1930s) refined it.",
+        {
+          "note": "Memory line: ice has lower vapour pressure, so vapour moves to the ice. Crystals grow, droplets shrink."
+        },
         {
           "h": "Precipitation types"
         },
@@ -648,8 +663,20 @@
           "Merging of colliding cloud droplets."
         ],
         [
-          "Bergeron process",
-          "Growth of ice crystals at the expense of supercooled droplets."
+          "Wegener-Bergeron-Findeisen (WBF) process",
+          "Ice crystals grow by deposition at the expense of supercooled droplets in mixed-phase cloud, because saturation vapour pressure is lower over ice than over water. Also called the Bergeron or ice crystal process."
+        ],
+        [
+          "Supercooled water",
+          "Liquid water below 0 C."
+        ],
+        [
+          "Mixed-phase cloud",
+          "Cloud containing both supercooled liquid droplets and ice crystals."
+        ],
+        [
+          "Deposition",
+          "Water vapour changing directly to ice."
         ],
         [
           "Graupel",
@@ -810,6 +837,94 @@
           ],
           "a": 0,
           "e": "MANOBS 13.2.14: snow grains are fairly flat or elongated, generally under 1 mm, and never fall as a shower."
+        },
+        {
+          "q": "In a mixed-phase cloud, what happens to supercooled droplets under the WBF process?",
+          "c": [
+            "They evaporate while ice crystals grow",
+            "They freeze in place",
+            "They grow by collecting ice crystals",
+            "They are unaffected until 0 C"
+          ],
+          "a": 0,
+          "e": "Air is subsaturated for water but supersaturated for ice, so droplets evaporate and the vapour deposits on crystals."
+        },
+        {
+          "q": "The WBF process requires which cloud condition?",
+          "c": [
+            "Supercooled water and ice crystals together",
+            "Temperatures above 0 C",
+            "Only liquid droplets",
+            "Only ice crystals"
+          ],
+          "a": 0,
+          "e": "It is a mixed-phase process. Without both phases there is no vapour exchange."
+        },
+        {
+          "q": "What is the vapour-to-ice change with no liquid stage called?",
+          "c": [
+            "Deposition",
+            "Condensation",
+            "Sublimation",
+            "Riming"
+          ],
+          "a": 0,
+          "e": "Deposition is vapour to ice. Sublimation is the reverse (ice to vapour)."
+        },
+        {
+          "q": "The three names in the WBF process are:",
+          "c": [
+            "Wegener, Bergeron, Findeisen",
+            "Wegener, Beaufort, Fujita",
+            "Bergeron, Coriolis, Findeisen",
+            "Wegener, Bjerknes, Fahrenheit"
+          ],
+          "a": 0,
+          "e": "Wegener (1911), Bergeron (1922/1933), Findeisen (late 1930s)."
+        },
+        {
+          "q": "Why can the WBF process produce snow that reaches the ground as rain?",
+          "c": [
+            "Crystals grow aloft, then melt falling through warmer air",
+            "Droplets freeze at the surface",
+            "Ice evaporates and recondenses",
+            "It only works in warm clouds"
+          ],
+          "a": 0,
+          "e": "Most mid-latitude rain starts as ice crystals that melt on the way down."
+        },
+        {
+          "q": "Why do crystals need to be few relative to droplets?",
+          "c": [
+            "Each crystal then gets enough vapour to grow large enough to fall",
+            "Droplets would otherwise freeze solid",
+            "Crystals would melt",
+            "Too many crystals warm the cloud"
+          ],
+          "a": 0,
+          "e": "With many crystals the vapour is shared out and none grows large."
+        },
+        {
+          "q": "Which is true of saturation vapour pressure at -10 C?",
+          "c": [
+            "Lower over ice than over water",
+            "Higher over ice than over water",
+            "Equal over ice and water",
+            "Zero over ice"
+          ],
+          "a": 0,
+          "e": "This difference drives the WBF process."
+        },
+        {
+          "q": "Which precipitation process works only in clouds colder than 0 C?",
+          "c": [
+            "WBF (ice crystal) process",
+            "Collision-coalescence",
+            "Condensation",
+            "Evaporation"
+          ],
+          "a": 0,
+          "e": "Collision-coalescence is the warm-cloud process."
         }
       ],
       "verified": {
@@ -817,10 +932,12 @@
         "sources": [
           "NWS cloud and precipitation training notes: droplet and raindrop sizes, 20 micron threshold, Bergeron mechanism, drizzle under 0.5 mm, hail over 5 mm, graupel under 5 mm",
           "NWS Goodland, Winter weather types: freezing rain and sleet temperature layers",
-          "MANOBS 8th ed. Am. 3 (full PDF): 6.6 and 13.2.13 to 13.2.15 (precipitation definitions)"
+          "MANOBS 8th ed. Am. 3 (full PDF): 6.6 and 13.2.13 to 13.2.15 (precipitation definitions)",
+          "Wikipedia, Wegener-Bergeron-Findeisen process (secondary source, via fetch summary): attributions and years, mixed-phase mechanism, ice nuclei freezing warmer than about -35 C, droplets must outnumber crystals"
         ],
         "unverified": [
-          "Collision-coalescence dominating in the tropics and needing a deep cloud with strong updraft, and most mid-latitude rain starting as snow: standard teaching, not stated on the pages read."
+          "Collision-coalescence dominating in the tropics and needing a deep cloud with strong updraft, and most mid-latitude rain starting as snow: standard teaching, not stated on the pages read.",
+          "WBF process: only a secondary source (Wikipedia) was checked. Not yet confirmed in a Canadian or primary text (MANOBS, MANAIR, CFS course material). The aircraft-icing link and the statement that most mid-latitude rain starts as ice follow standard teaching. Temperature of the largest vapour-pressure difference (commonly quoted near -12 to -15 C) is deliberately not stated until sourced."
         ]
       }
     },

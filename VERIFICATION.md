@@ -12,14 +12,14 @@ Standing rule: accuracy notices stay on every page until the owner says otherwis
 
 Study aid only. Crown-copyright and NAV CANADA text is paraphrased and linked, not copied. No controlled or intranet material is used.
 
-## Status (as of 2026-10-27; 883 questions)
+## Status (as of 2026-10-27; 891 questions)
 
 | Domain | Topics | Questions | Status | Last checked |
 |--------|--------|-----------|--------|--------------|
 | Observations (obs) | 5 | 91 | Surface observing checked against MANOBS. Radar and satellite re-checked against ECCC, NOAA, NWS and the NAV CANADA guide | 2026-10-27 |
 | Codes (codes) | 10 | 264 | METAR, TAF, SYNOP (MANOBS Part B), GFA/SIGMET/AIRMET/FB, MANAIR Ch. 7 and 8, NAV CANADA product tables, ECCC analysis page. Station model from NOAA only | 2026-10-27 |
 | Severe weather (severe) | 6 | 141 | Turbulence, wind shear, ECCC alerts and Impact Guides checked against AIM, MANAIR and ECCC pages. Others first pass | 2026-10-27 |
-| Moisture (moisture) | 6 | 98 | Icing topic checked against AIM, MANAIR and AIR (incl. carburettor icing). Others first pass | 2026-10-27 |
+| Moisture (moisture) | 6 | 106 | Icing topic checked against AIM, MANAIR and AIR (incl. carburettor icing). Others first pass | 2026-10-27 |
 | Applied (applied) | 5 | 59 | Aviation minima, flight categories and marine topics updated; others first pass | 2026-10-27 |
 | Foundations (foundations) | 5 | 57 | First pass. Tropopause and pressure-level heights corrected | 2026-10-26 |
 | Wind (wind) | 6 | 68 | First pass. Backing/veering rule was reversed and is fixed | 2026-10-26 |
@@ -154,6 +154,7 @@ Open
 - Station model layout, last-two-digit isobar labels, and temperature units on Canadian charts: confirmed from US NOAA sources only. A Canadian source has not been found.
 - Occluded front colours on charts other than the GFA; national analysis symbols versus GFA symbols.
 - MANOBS: QFE and the MSLP reduction method; how ATIS and tower broadcasts fall under the magnetic-wind voice exception (12.2.1). MANOBS Part B now has a lesson (SYNOP); see the SYNOP open items below.
+- WBF process (moisture, Precipitation processes): added 2026-10-27 from a secondary source only (Wikipedia via fetch). Needs a Canadian or primary text before the notice can come off; temperature of peak vapour-pressure difference intentionally omitted.
 - MANOBS 11.2.3.1 (Amendment 3) source gap: the markers on the 400, 200 and 100 ft ceiling SPECI values have no footnote text; they link to the service-provider additional-limits bullet. The precision-approach note is linked only from the 3/4 and 1/4 SM visibility values. Lesson reworded to say so. Resolution needs ECCC or NAV CANADA.
 - SYNOP (MANOBS Part B): WMO No. 306 not consulted; MANOBS calls the code FM 12-XIV Ext. in Ch. 14 to 15 but FM 12-XI in 1.3.1; Table 15-8 note says dd = 99 cannot be used while 15.3.4.2 limits it to speeds of 5 kt or less; the full ww list, CL, CM and CH tables and the example sequences are not taught; intermediate synoptic hours not checked.
 - MANAIR: WMO header and FIR letter rules; WS SIGMET coordinate formats; Sig Wx symbol shapes described only in images; volcanic ash and radioactive release symbols; Upper-Level Sig Wx (FL250 to FL600) comes from the NAV CANADA guide only.
