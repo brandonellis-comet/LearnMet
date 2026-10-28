@@ -624,8 +624,18 @@
             "Result: cloud glaciates and precipitates. Needs far more droplets than ice crystals so each crystal can grow big."
           ]
         },
-        "Ice nuclei freeze water at warmer temperatures than the roughly -35 C needed without them, so supercooled droplets can persist well below 0 C. That is why aircraft icing (supercooled liquid) occurs in clouds colder than freezing.",
+        "Pure water droplets freeze only near -40 C, but ice nuclei start freezing some droplets at warmer temperatures (most natural nuclei activate near -10 C). Supercooled droplets therefore persist in clouds well below 0 C, commonly from 0 C to about -20 C or colder. That is also why aircraft icing (supercooled liquid) occurs in clouds colder than freezing.",
         "Origin: Wegener (1911) proposed ice growth at the expense of liquid water, Bergeron (1922, presented 1933) applied it to clouds, Findeisen (late 1930s) refined it.",
+        {
+          "h": "Numbers to know"
+        },
+        {
+          "list": [
+            "Ice crystal growth by this process peaks at about -12 C (AMS Glossary).",
+            "Air just saturated for water is this relative humidity with respect to ice: 0 C 100%, -5 C 105%, -10 C 110%, -15 C 115%, -20 C 121%. The gap widens as it gets colder.",
+            "Droplets must grow about a million times in volume to become raindrops."
+          ]
+        },
         {
           "note": "Memory line: ice has lower vapour pressure, so vapour moves to the ice. Crystals grow, droplets shrink."
         },
@@ -925,6 +935,39 @@
           ],
           "a": 0,
           "e": "Collision-coalescence is the warm-cloud process."
+        },
+        {
+          "q": "At about what temperature does ice crystal growth by the Bergeron-Findeisen process peak (AMS Glossary)?",
+          "c": [
+            "-12 C",
+            "-2 C",
+            "-30 C",
+            "-40 C"
+          ],
+          "a": 0,
+          "e": "AMS Glossary: supercooled drops are common between about 0 C and -20 C, and ice crystal growth peaks near -12 C."
+        },
+        {
+          "q": "Air saturated with respect to water at -10 C has about what relative humidity with respect to ice?",
+          "c": [
+            "110%",
+            "100%",
+            "90%",
+            "121%"
+          ],
+          "a": 0,
+          "e": "The ice supersaturation grows as temperature falls: about 105% at -5 C, 110% at -10 C, 115% at -15 C, 121% at -20 C."
+        },
+        {
+          "q": "Pure water droplets, with no nuclei, freeze only near what temperature?",
+          "c": [
+            "-40 C",
+            "-10 C",
+            "-20 C",
+            "0 C"
+          ],
+          "a": 0,
+          "e": "Without freezing nuclei, droplets stay liquid to about -40 C, so supercooled water is common in cloud."
         }
       ],
       "verified": {
@@ -933,11 +976,13 @@
           "NWS cloud and precipitation training notes: droplet and raindrop sizes, 20 micron threshold, Bergeron mechanism, drizzle under 0.5 mm, hail over 5 mm, graupel under 5 mm",
           "NWS Goodland, Winter weather types: freezing rain and sleet temperature layers",
           "MANOBS 8th ed. Am. 3 (full PDF): 6.6 and 13.2.13 to 13.2.15 (precipitation definitions)",
-          "Wikipedia, Wegener-Bergeron-Findeisen process (secondary source, via fetch summary): attributions and years, mixed-phase mechanism, ice nuclei freezing warmer than about -35 C, droplets must outnumber crystals"
+          "AMS Glossary of Meteorology, Bergeron-Findeisen process: definition, Bergeron 1933 / Findeisen, supercooled drops common 0 to -20 C, ice growth peaks near -12 C",
+          "College of DuPage (Sirvatka), Collision/Coalescence; The Bergeron Process: mechanism, RH wrt ice table 0 to -20 C, freezing nuclei near -10 C, pure water freezes near -40 C",
+          "Wikipedia, Wegener-Bergeron-Findeisen process: Wegener 1911 / Bergeron 1922 attribution"
         ],
         "unverified": [
           "Collision-coalescence dominating in the tropics and needing a deep cloud with strong updraft, and most mid-latitude rain starting as snow: standard teaching, not stated on the pages read.",
-          "WBF process: only a secondary source (Wikipedia) was checked. Not yet confirmed in a Canadian or primary text (MANOBS, MANAIR, CFS course material). The aircraft-icing link and the statement that most mid-latitude rain starts as ice follow standard teaching. Temperature of the largest vapour-pressure difference (commonly quoted near -12 to -15 C) is deliberately not stated until sourced."
+          "WBF process now has two public sources (AMS Glossary, College of DuPage), fetched via summaries. Not confirmed in a Canadian publication or course text. The -12 C peak comes from the AMS page summary; the DuPage page gives no peak temperature. Aircraft-icing link and mid-latitude rain claim remain standard teaching."
         ]
       }
     },
