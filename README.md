@@ -15,7 +15,7 @@ Live at `https://brandonellis-comet.github.io/LearnMet/` once GitHub Pages is en
 | Stats | Attempt history, backup (Export / Import) |
 
 Decoding drills are generated on the fly from random practice reports (not real observations) and do not affect topic levels or the review pool.
-Content: 52 lessons and 895 questions in `content/` (the number per topic varies). A topic quiz draws 6 of the topic's questions, favouring ones you have not seen or have missed.
+Content: 52 lessons and 897 questions in `content/` (the number per topic varies). A topic quiz draws 6 of the topic's questions, favouring ones you have not seen or have missed.
 
 ## How scoring feeds the tracker
 

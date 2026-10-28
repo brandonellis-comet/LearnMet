@@ -30,7 +30,7 @@
         {
           "h": "Modification"
         },
-        "As an air mass moves, it changes. Cold air moving over a warmer surface (k, cold-type) heats from below and becomes unstable: cumuliform cloud, showers, good visibility. Warm air moving over a colder surface (w, warm-type) cools from below and becomes stable: stratus, fog, poor visibility.",
+        "As an air mass moves, it changes. Cold air moving over a warmer surface (k, cold-type) is heated from below and becomes more unstable in its lowest layers, so unsettled weather is more likely (Met Office; Ohio University: cold air over the warm Great Lakes gives lake-effect snow). Warm air moving over a colder surface (w, warm-type) is cooled from below and becomes stable (Met Office; Ohio University), which inhibits uplift. Cumuliform cloud and showers for the unstable case, and stratus and fog for the stable case, are standard teaching not stated on the pages read. US texts mark stability with the suffixes u and s (for example mTu, mTs) rather than k and w.",
         {
           "note": "Think about the surface the air is crossing. Cold over warm = unstable and showery. Warm over cold = stable and foggy."
         }
@@ -176,12 +176,14 @@
         "date": "2026-10-26",
         "sources": [
           "Penn State METEO 3, Air masses and fronts: size, uniformity, five types (cA, cP, mP, cT, mT) and their North American source regions",
-          "Prof. Jin-Yi Yu, ESS 5 Chapter 9: classification symbols; mA does not exist"
+          "Prof. Jin-Yi Yu, ESS 5 Chapter 9: classification symbols; mA does not exist",
+          "Met Office, Air mass modification, and Ohio University, The Physical Environment: cold air over warm surface becomes unstable, warm air over cold surface becomes stable (two sources agree)",
+          "avalanche.ca glossary, Air mass: minimal horizontal variation in temperature and moisture; forms over days or weeks (Canadian, matches definition used)"
         ],
         "unverified": [
-          "Modification (k and w types) and the stability changes they cause: standard teaching, not covered on the pages read.",
           "Effects on the Maritimes (cloud, showers, thunderstorms) were removed or left unconfirmed; the sources are US course texts, not Canadian publications.",
-          "No ECCC page on air mass types was found."
+          "No ECCC page on air mass types was found.",
+          "Stability change under modification now has two sources. The cloud, fog and visibility consequences and the k/w letters were not found in any source read. Maritime effects remain unconfirmed; no ECCC page on air mass types found."
         ]
       }
     },
@@ -216,7 +218,7 @@
         {
           "list": [
             "Stationary front: neither air mass advances. Wind flows parallel to the front. Long periods of cloud and rain are possible.",
-            "Occluded front: a cold front overtakes a warm front, lifting the warm air off the surface. In North America the cold occlusion is the most common type. A cold occlusion has the coldest air behind; a warm occlusion has air behind that is warmer than the air ahead of the warm front."
+            "Occluded front: a cold front overtakes a warm front, lifting the warm air off the surface. In North America the cold occlusion is the most common type. A cold occlusion has the coldest air behind the cold front; a warm occlusion has the coldest air ahead of the warm front (NWS WPC). On US WPC charts both are drawn with the same purple triangle-and-semicircle symbol. The GFA used in Canadian aviation has no occluded symbol (MANAIR)."
           ]
         },
         {
@@ -373,6 +375,17 @@
           ],
           "a": 0,
           "e": "Oklahoma Mesonet and Yu quote 1:100 for a typical cold front and 1:200 for a warm front."
+        },
+        {
+          "q": "On US WPC charts, how is a warm occlusion drawn compared with a cold occlusion?",
+          "c": [
+            "Same purple symbol for both",
+            "Warm is red, cold is blue",
+            "Warm is dashed, cold is solid",
+            "Warm is green, cold is purple"
+          ],
+          "a": 0,
+          "e": "NWS WPC uses one purple symbol for occluded fronts. The difference is where the coldest air lies."
         }
       ],
       "verified": {
@@ -380,12 +393,13 @@
         "sources": [
           "NWS Weather Prediction Center, Surface fronts and boundaries: cold front blue triangles, warm front red semicircles, occluded front purple triangles and semicircles",
           "Oklahoma Mesonet, Fronts: slopes 1:100 and 1:200, cloud sequence distances, cold-type occlusion most common, stationary front behaviour",
-          "University of Alberta EAS 270 lecture 22 and Prof. Yu ESS 5: speeds, warm front freezing rain, cold front passage changes"
+          "University of Alberta EAS 270 lecture 22 and Prof. Yu ESS 5: speeds, warm front freezing rain, cold front passage changes",
+          "University of Northern Iowa, Elements of Weather ch. 9: after warm front passage temperature rises, wind shifts to south or southwest, pressure steadies; after cold front passage temperature drops, wind to northwest, pressure rises (agrees with U of Alberta EAS 270)",
+          "NWS WPC, Surface fronts and boundaries: occluded front symbol purple; cold occlusion coldest air behind cold front, warm occlusion coldest air ahead of warm front"
         ],
         "unverified": [
-          "Weather and wind changes after warm front passage (veering to south or southwest, pressure steadying): not stated on the pages read.",
-          "Warm occlusion description and the stationary front symbol: not on the pages read.",
-          "The earlier slope of 1:50 for cold fronts was removed; sources give about 1:100 (the University of Alberta slide marks it tentative)."
+          "The earlier slope of 1:50 for cold fronts was removed; sources give about 1:100 (the University of Alberta slide marks it tentative).",
+          "Stationary front symbol (alternating blue triangles and red semicircles on opposite sides) is confirmed in MANAIR for the GFA but is not described on the WPC page text."
         ]
       }
     },
@@ -407,14 +421,14 @@
         },
         {
           "list": [
-            "Ana cold front: warm air rises along the frontal surface. Wide cloud and precipitation extend behind the surface front.",
-            "Kata cold front: warm air descends. Weather is weak or confined to a narrow zone."
+            "Ana front: warm air rises up the frontal surface to high altitudes, and precipitation may occur behind the front (AMS Glossary). Wide cloud and precipitation extend behind the surface front.",
+            "Kata front: usually a cold front where the warm air sinks down the frontal surface, probably not in the lowest layers (AMS Glossary). Weather is weak or confined to a narrow zone."
           ]
         },
         {
           "h": "Frontal inversion"
         },
-        "At the frontal surface, temperature increases with height as you pass from cold into warm air. This frontal inversion traps cloud, fog and pollutants in the cold air beneath.",
+        "A frontal inversion is the temperature inversion met when climbing through a sloping front or frontal zone (AMS Glossary). Temperature increases with height as you pass from cold into warm air. It can trap cloud, fog and pollutants in the cold air beneath (standard teaching).",
         {
           "h": "Hazards"
         },
@@ -564,17 +578,29 @@
           ],
           "a": 0,
           "e": "Warm fronts bring low stratus, rain or snow and poor visibility over a wide area."
+        },
+        {
+          "q": "What happens to the warm air in a katafront?",
+          "c": [
+            "It sinks down the frontal surface",
+            "It rises to high altitude",
+            "It stays level",
+            "It stops moving"
+          ],
+          "a": 0,
+          "e": "AMS Glossary: in a katafront the warm air sinks down the frontal surface. In an anafront it rises."
         }
       ],
       "verified": {
         "date": "2026-10-26",
         "sources": [
-          "Oklahoma Mesonet, Fronts and Yu ESS 5: warm front cloud shield and stratiform weather, cold front squall lines, freezing rain with warm fronts"
+          "Oklahoma Mesonet, Fronts and Yu ESS 5: warm front cloud shield and stratiform weather, cold front squall lines, freezing rain with warm fronts",
+          "AMS Glossary, Anafront, Katafront and Frontal inversion definitions"
         ],
         "unverified": [
-          "Frontal cross-section details (nose near the surface), ana and kata fronts, and the frontal inversion: standard teaching, not on the pages read.",
           "Width of the cold front weather band (50 to 100 km): removed as unconfirmed.",
-          "Weather behind a cold front in winter: standard teaching."
+          "Weather behind a cold front in winter: standard teaching.",
+          "Nose of the front near the surface and the detail of cloud trapped under the inversion: standard teaching, not on pages read. Ana and kata definitions now from the AMS Glossary."
         ]
       }
     },
@@ -607,7 +633,7 @@
         {
           "h": "Baroclinic vs barotropic"
         },
-        "Baroclinic air has horizontal temperature gradients, with surfaces of constant pressure and density intersecting. Fronts and jet streams exist in baroclinic zones. Barotropic air has no horizontal temperature gradient on pressure surfaces.",
+        "Barotropic atmosphere (AMS Glossary): density depends only on pressure, so surfaces of constant pressure and constant density coincide and the geostrophic wind does not change with height. Baroclinic is the opposite: those surfaces intersect, which happens where there are horizontal temperature gradients. Fronts and jet streams exist in baroclinic zones.",
         {
           "note": "No temperature gradient, no front. Anything that sharpens the gradient makes frontogenesis."
         }
@@ -775,12 +801,13 @@
         "date": "2026-10-26",
         "sources": [
           "NWS Louisville, Frontogenesis: definition, deformation and the 45 degree rule, shear, tilting, diabatic heating",
-          "EUMETRAIN, Meteorological physical background: deformation as a primary factor; frontogenesis strongest in the confluence zone"
+          "EUMETRAIN, Meteorological physical background: deformation as a primary factor; frontogenesis strongest in the confluence zone",
+          "AMS Glossary, Barotropic atmosphere: density depends only on pressure; Frontolysis: weakening or breakup of a front, lessening of the horizontal contrast of density"
         ],
         "unverified": [
-          "Baroclinic and barotropic definitions, and the winter frontogenesis zone off the US east coast where cold air meets the Gulf Stream: standard teaching, not on the pages read.",
           "Which mechanisms cause frontolysis besides diffluence (mixing away, moving over an even surface): not confirmed.",
-          "Upper jet or trough supporting front activity: not confirmed."
+          "Upper jet or trough supporting front activity: not confirmed.",
+          "Winter frontogenesis zone off the US east coast where cold air meets the Gulf Stream: standard teaching, not on any page read. AMS does not give a baroclinic definition, only the barotropic one. Specific frontolysis mechanisms (mixing away, even surface) are not itemised in AMS."
         ]
       }
     }
