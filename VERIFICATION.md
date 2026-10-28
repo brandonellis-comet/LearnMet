@@ -12,7 +12,7 @@ Standing rule: accuracy notices stay on every page until the owner says otherwis
 
 Study aid only. Crown-copyright and NAV CANADA text is paraphrased and linked, not copied. No controlled or intranet material is used.
 
-## Status (as of 2026-10-27; 894 questions)
+## Status (as of 2026-10-27; 895 questions)
 
 | Domain | Topics | Questions | Status | Last checked |
 |--------|--------|-----------|--------|--------------|
@@ -21,7 +21,7 @@ Study aid only. Crown-copyright and NAV CANADA text is paraphrased and linked, n
 | Severe weather (severe) | 6 | 141 | Turbulence, wind shear, ECCC alerts and Impact Guides checked against AIM, MANAIR and ECCC pages. Others first pass | 2026-10-27 |
 | Moisture (moisture) | 6 | 109 | Icing topic checked against AIM, MANAIR and AIR (incl. carburettor icing). Others first pass | 2026-10-27 |
 | Applied (applied) | 5 | 59 | Aviation minima, flight categories and marine topics updated; others first pass | 2026-10-27 |
-| Foundations (foundations) | 5 | 57 | First pass. Tropopause and pressure-level heights corrected | 2026-10-26 |
+| Foundations (foundations) | 5 | 58 | Partly hardened 2026-10-27: layers (UCAR, SKYbrary), SALR (Haby), pressure-level heights (Navy table). Rest first pass | 2026-10-27 |
 | Wind (wind) | 6 | 68 | First pass. Backing/veering rule was reversed and is fixed | 2026-10-26 |
 | Air masses (airmass) | 4 | 47 | First pass. Frontal slopes and shear role in frontogenesis corrected | 2026-10-26 |
 | Synoptic (synoptic) | 5 | 58 | First pass. Post-tropical, derecho, cyclone life span and long-wave wording corrected | 2026-10-26 |
@@ -167,7 +167,7 @@ Open
 
 Carried from the first pass (2026-10-26), not yet revisited
 - Severe: supercell and mesocyclone definition, microburst size and approach sequence, blizzard numbers, nocturnal low-level jet details.
-- Foundations: troposphere 80% of mass (derived), ozone altitude, ionosphere location, mesopause coldest, pressure-tendency rule, SALR direction, 300 hPa label, ICAO documents (only secondary articles read).
+- Foundations: troposphere mass now 75% (SKYbrary; was 80% derived). Layers, ozone, ionosphere, mesopause, SALR direction and 300 hPa height now have public sources (UCAR, Haby, Navy table). Still open: pressure-tendency rule, Canadian chart label for 300 hPa, ICAO documents (only secondary articles read), physics topics 1, 2 and 4 are textbook-standard.
 - Wind: Coriolis parameter, gradient wind, boundary layer depth, diurnal wind cycle, Ferrel cell, WMO jet definition, jet entrance and exit divergence.
 - Moisture: mixing ratio conservation and wet-bulb ordering, CCN types, lifting mechanisms, cloud appearance descriptions, warm-front cloud sequence, Nova Scotia fog climatology.
 - Air masses: k/w modification and stability, warm front passage changes, warm occlusion, ana and kata fronts, frontal inversion, baroclinic definition, Gulf Stream frontogenesis zone. No Canadian publication on air mass types was found.

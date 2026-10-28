@@ -10,10 +10,10 @@
         },
         {
           "list": [
-            "Troposphere: surface to the tropopause. Temperature falls with height (average about 6.5 C per km). Holds roughly 80% of the atmosphere's mass (derived: NOAA gives 19% for the stratosphere) and nearly all weather.",
-            "Stratosphere: tropopause to about 50 km. Temperature rises with height because of heat released as ozone forms and absorbs ultraviolet radiation. Very stable, little vertical mixing, almost no weather.",
-            "Mesosphere: to about 85 km. Temperature falls again.",
-            "Thermosphere: above about 85 km. Temperature rises sharply. The ionosphere sits here."
+            "Troposphere: surface to the tropopause. Temperature falls with height (average about 6.5 C per km). Holds about 75% of the atmosphere's mass (SKYbrary) and roughly 99% of its water vapour (UCAR), so nearly all weather occurs here.",
+            "Stratosphere: tropopause to about 50 km. Temperature rises with height because of heat released as ozone forms and absorbs ultraviolet radiation. Contains the ozone layer, which absorbs ultraviolet light and converts it to heat (UCAR). Very stable, little vertical mixing, almost no weather.",
+            "Mesosphere: to about 85 km. Temperature falls again. The coldest temperatures in the atmosphere, about -90 C, are found near its top (UCAR), at the mesopause.",
+            "Thermosphere: above about 85 km. Temperature rises sharply. The ionosphere is not a separate layer: it is a series of regions in parts of the mesosphere and thermosphere where solar radiation produces ions (UCAR)."
           ]
         },
         "The boundaries are named after the layer below them: tropopause, stratopause, mesopause. The tropopause height varies with latitude. NOAA gives about 6 km at the poles, about 9 km near 50 degrees latitude and 18 to 20 km at the equator. The ISA uses a single value of 11 km.",
@@ -89,18 +89,18 @@
             "Ionosphere only"
           ],
           "a": 0,
-          "e": "The troposphere has falling temperature with height and holds roughly 80% of the atmosphere's mass."
+          "e": "The troposphere has falling temperature with height and holds about 75% of the atmosphere's mass."
         },
         {
           "q": "About what fraction of the atmosphere's mass lies in the troposphere?",
           "c": [
-            "About 80%",
+            "About 75%",
             "About 50%",
             "About 20%",
             "About 99%"
           ],
           "a": 0,
-          "e": "The troposphere holds roughly 80% of the atmosphere's mass. This is derived: NOAA gives 19% of the gases to the stratosphere."
+          "e": "The troposphere holds about 75% of the atmosphere's mass (SKYbrary)."
         },
         {
           "q": "According to NOAA, about how high does the stratosphere extend?",
@@ -174,11 +174,12 @@
         "sources": [
           "NOAA JetStream, Composition of the atmosphere: gas percentages and water vapour up to about 4%",
           "NOAA JetStream, Layers of the atmosphere: layer boundaries, temperature trends, tropopause height by latitude, stratosphere share of gases",
-          "ISO 2533:1975 / ICAO Doc 7488 (via the International Standard Atmosphere article): 11 km tropopause"
+          "ISO 2533:1975 / ICAO Doc 7488 (via the International Standard Atmosphere article): 11 km tropopause",
+          "UCAR SciEd, Layers of the atmosphere: layer tops, ozone in stratosphere, coldest temperatures (about -90 C) near top of mesosphere, ionosphere in parts of mesosphere and thermosphere, 99% of water vapour in troposphere",
+          "SKYbrary, Troposphere: 75% of atmospheric mass, tropopause about 11 km"
         ],
         "unverified": [
-          "Troposphere share of mass (80%): derived from NOAA's 19% for the stratosphere, not stated directly.",
-          "Ozone concentration in the stratosphere, the ionosphere sitting in the thermosphere, and the mesopause being the coldest region: standard teaching, not confirmed on the pages read.",
+          "Mesopause named explicitly as the coldest region: UCAR says coldest temperatures are near the top of the mesosphere (same place). Lesson now says so.",
           "The earlier claim that the tropopause is lower in winter was removed (not confirmed)."
         ]
       }
@@ -410,7 +411,7 @@
             "700 hPa: about 3,010 m (9,900 ft)",
             "500 hPa: about 5,570 m (18,300 ft)",
             "300 hPa: about 9,160 m (30,100 ft)",
-            "250 hPa: about 10,360 m (34,000 ft). Charts label these levels 5,000, 10,000, 18,000 and 34,000 ft."
+            "250 hPa: about 10,360 m (34,000 ft). Charts label these levels 5,000, 10,000, 18,000 and 34,000 ft. Heights above are the standard-atmosphere values in a public meteorology training table (heights to the nearest foot: 850 hPa 4,781; 700 hPa 9,882; 500 hPa 18,289; 300 hPa 30,065; 250 hPa 33,999)."
           ]
         },
         {
@@ -560,12 +561,13 @@
           "ISO 2533:1975 and ICAO Doc 7488 (International Standard Atmosphere): sea level 15 C and 101,325 Pa, 6.5 C per km, 11 km at -56.5 C, isothermal 11 to 20 km",
           "NOAA NWS Houston training page on thickness (Haby): 540 dam and rain/snow, caveats",
           "Pressure-level heights and 1 hPa per 8 m: computed here from the ISA equations",
-          "NAV CANADA Aviation Weather Services Guide (2017): 5,000, 10,000, 18,000, 34,000 ft chart labels"
+          "NAV CANADA Aviation Weather Services Guide (2017): 5,000, 10,000, 18,000, 34,000 ft chart labels",
+          "Navy meteorology training table (tpub.com), standard atmosphere heights: 850 hPa 1,457 m; 700 hPa 3,012 m; 500 hPa 5,574 m; 300 hPa 9,164 m; 250 hPa 10,363 m"
         ],
         "unverified": [
           "Hydrostatic equation and hypsometric relationship: standard physics, not checked on a Canadian publication.",
-          "300 hPa as 30,000 ft on charts: not confirmed (the 34,000 ft label was).",
-          "Warm/cold column heights at 500 hPa (5,100 m and 5,800 m): rough illustration."
+          "Warm/cold column heights at 500 hPa (5,100 m and 5,800 m): rough illustration.",
+          "300 hPa at 30,065 ft is now sourced to a US Navy training table via fetch summary. Whether Canadian charts label 300 hPa as FL300 or 30,000 ft was not confirmed."
         ]
       }
     },
@@ -579,7 +581,7 @@
         {
           "list": [
             "Dry adiabatic lapse rate (DALR): 9.8 C per km (about 3 C per 1,000 ft). A rising unsaturated parcel cools at this rate.",
-            "Saturated (moist) adiabatic lapse rate (SALR): less than the DALR. A typical value is around 5 C per km, with a range of about 3.6 to 9.2 C per km quoted from ICAO. It varies strongly with temperature. Condensation releases latent heat, which offsets some of the cooling.",
+            "Saturated (moist) adiabatic lapse rate (SALR): less than the DALR. A typical value is around 5 C per km, with a range of about 3.6 to 9.2 C per km quoted from ICAO. It varies strongly with temperature. Condensation releases latent heat, which offsets some of the cooling. In very warm, humid air it is only about 4 to 5 C per km. In cold air it approaches the dry rate, and the wet and dry adiabats are nearly parallel in the upper troposphere (Haby).",
             "Environmental lapse rate (ELR): the actual temperature change with height, measured by soundings. This is the one that varies day to day."
           ]
         },
@@ -739,18 +741,30 @@
           ],
           "a": 0,
           "e": "An ELR smaller than the SALR means a parcel is cooler than its environment in either state: absolutely stable."
+        },
+        {
+          "q": "Compared with the dry adiabatic rate, how does the saturated adiabatic lapse rate behave in very warm, humid air?",
+          "c": [
+            "It is much smaller, about 4 to 5 C per km",
+            "It is larger, above 9.8 C per km",
+            "It equals the dry rate",
+            "It is zero"
+          ],
+          "a": 0,
+          "e": "Latent heat released by condensation offsets cooling. In cold air the rate approaches the dry rate."
         }
       ],
       "verified": {
         "date": "2026-10-26",
         "sources": [
           "Lapse rate article citing ICAO: DALR 9.8 C/km (about 3 C per 1,000 ft), SALR 3.6 to 9.2 C/km (around 5 typical), stability classes",
-          "UBC ATSC 201 course notes: DALR 9.8 C per km"
+          "UBC ATSC 201 course notes: DALR 9.8 C per km",
+          "Haby (theweatherprediction.com), Moist adiabatic lapse rate: varies from about 4 C/km to nearly 9.8 C/km; 4 to 5 C/km in very warm humid air; approaches the dry rate in cold air"
         ],
         "unverified": [
           "Source is a secondary article citing ICAO, not the ICAO document itself.",
-          "Whether the SALR is smaller in warm air or cold air: physics says warm moist air is smaller, but the pages read do not state the direction.",
-          "Weather typical of stable and unstable air: standard teaching, not checked on a Canadian publication."
+          "Weather typical of stable and unstable air: standard teaching, not checked on a Canadian publication.",
+          "SALR direction (smaller in warm air) is now sourced to a US forecaster's page (Haby); the AMS Glossary entry gives the formula but no direction."
         ]
       }
     },
