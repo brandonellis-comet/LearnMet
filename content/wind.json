@@ -727,7 +727,7 @@
     {
       "title": "Jet streams",
       "lesson": [
-        "Jet streams are narrow, fast ribbons of wind near the tropopause. FAA AC 00-6A classifies a jet stream as winds of 50 kt or more and calls that figure arbitrary. The AMS Glossary also marks a jet on upper-level charts where the wind is reliably at least 50 kt. The WMO figure of 30 m/s (about 60 kt) is still not confirmed. FAA gives lengths of 1,000 to 3,000 miles and widths of roughly 100 to 400 miles, in a narrow, shallow stream.",
+        "Jet streams are narrow, fast ribbons of wind near the tropopause. FAA AC 00-6A classifies a jet stream as winds of 50 kt or more and calls that figure arbitrary. The AMS Glossary also marks a jet on upper-level charts where the wind is reliably at least 50 kt. Belgium's national weather service (RMI) gives a minimum of 30 m/s (108 km/h, about 58 kt), the figure usually credited to the WMO, but the WMO document itself was not read. A US Navy text credits the WMO with dimensions of thousands of km long, hundreds of km wide and a few km deep. FAA gives lengths of 1,000 to 3,000 miles and widths of roughly 100 to 400 miles, in a narrow, shallow stream.",
         {
           "list": [
             "Polar front jet: near 50 to 60 degrees latitude and about 10 km up (roughly 250 to 300 hPa). Follows the polar front and shifts north and south. It moves farther south in winter.",
@@ -775,7 +775,7 @@
             "150 kt"
           ],
           "a": 0,
-          "e": "FAA AC 00-6A: 50 knots or greater, which the text calls arbitrary. The WMO figure of 30 m/s (about 60 kt) is not confirmed here."
+          "e": "FAA AC 00-6A: 50 knots or greater, which the text calls arbitrary. Belgium's RMI gives 30 m/s (about 58 kt) as its minimum; the WMO document itself was not read."
         },
         {
           "q": "What is the main cause of jet streams?",
@@ -906,12 +906,13 @@
           "LibreTexts, Jet streams: polar jet near 50 to 60 degrees and about 10 km; subtropical jet near 30 degrees and about 13 km; stronger in winter; cores often above 100 kt",
           "Royal Meteorological Society, Jet streams: about 30,000 ft, average about 110 mph, polar jet strongest in winter, flight times",
           "AMS Glossary, Jet stream: marked on upper-level charts at 50 kt or more (agrees with FAA AC 00-6A)",
-          "NWS Louisville, Jet streaks: upper divergence at the right entrance; MetEd jet streak circulation lab: divergence right entrance and left exit, convergence left entrance and right exit; EUMeTrain: cyclogenesis favoured at left exit and right entrance; University at Albany SHW Ch. 7: same quadrant pattern"
+          "NWS Louisville, Jet streaks: upper divergence at the right entrance; MetEd jet streak circulation lab: divergence right entrance and left exit, convergence left entrance and right exit; EUMeTrain: cyclogenesis favoured at left exit and right entrance; University at Albany SHW Ch. 7: same quadrant pattern",
+          "Royal Meteorological Institute of Belgium (meteo.be), Courant-jet: minimum wind 30 m/s (108 km/h), no WMO attribution on the page; US Navy tpub Aerographer text: 50 kt, WMO dimensions (thousands of km long, hundreds wide, a few km deep)"
         ],
         "unverified": [
-          "WMO 60 kt (30 m/s) definition: not confirmed on any page read. The TC AIM jet stream wording was not found.",
           "Isotachs on 250 and 300 hPa charts: not checked.",
-          "The jet stream entrance and exit pattern now has four agreeing public sources (NWS Louisville, MetEd, EUMeTrain, Albany). Not checked in a Canadian publication. That the polar jet steers storms over Canada: standard teaching."
+          "The jet stream entrance and exit pattern now has four agreeing public sources (NWS Louisville, MetEd, EUMeTrain, Albany). Not checked in a Canadian publication. That the polar jet steers storms over Canada: standard teaching.",
+          "WMO 30 m/s (about 60 kt) threshold: the 30 m/s figure is corroborated by RMI Belgium but no page attributes it to the WMO. The WMO International Meteorological Vocabulary (WMO-No. 182) is a paid publication and was not available. The TC AIM jet stream wording was not found."
         ]
       }
     },

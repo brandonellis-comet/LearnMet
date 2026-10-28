@@ -123,7 +123,7 @@ Every new claim needs two independent sources or is flagged single-source. New c
 |-------|-----|-----|--------|
 | Troposphere share of mass | About 80% (derived) | About 75% | SKYbrary, WCIA Weather 101 (two sources; WCIA is a TV station) |
 | Boundary layer depth | Lowest 1 to 2 km; quiz answer "1 to 2 km" | No fixed depth: tens of metres (stable) to several km (convective); quiz rewritten | AMS Glossary (single source) |
-| Jet stream definition | FAA 50 kt; WMO 60 kt unconfirmed | Unchanged. AMS also marks a jet at 50 kt on charts. WMO 60 kt still not confirmed | FAA AC 00-6A, AMS Glossary |
+| Jet stream definition | FAA 50 kt; WMO 60 kt unconfirmed | Unchanged. AMS also marks a jet at 50 kt on charts. 30 m/s (about 58 kt) found at RMI Belgium, not attributed to the WMO on the page | FAA AC 00-6A, AMS Glossary, RMI |
 | Jet streak quadrants | Right entrance and left exit divergent (one source) | Confirmed by four sources; convergence in left entrance and right exit added | NWS Louisville, MetEd, EUMeTrain, Univ. at Albany |
 | Surface wind turning | About 30 degrees over land (Penn State) | Kept. Albany range 20 to 40 land, 10 to 20 water added; consistent | Penn State, Univ. at Albany |
 | Saturated lapse rate | Direction with temperature unconfirmed | About 4 to 5 C/km in very warm humid air, near dry rate in cold air | Haby (single source; AMS gives only the formula) |
@@ -190,3 +190,7 @@ Carried from the first pass (2026-10-26), not yet revisited
 - CAPE and CIN, CSI formula, lifted index definitions, mandatory pressure level list.
 
 Next accuracy step: a second pass with working Met Techs and the remaining Canadian manuals. All domains other than those marked above were a first pass using many US and university sources.
+
+## WMO resources (checked 2026-10-27)
+- International Meteorological Vocabulary (WMO-No. 182, 1992): paid publication, not read.
+- International Cloud Atlas (cloudatlas.wmo.int): free online; cloud genera descriptions, photometeors, glossary. Use it to harden the cloud classification topic (moisture, topic 2).
