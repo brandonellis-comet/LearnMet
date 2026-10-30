@@ -153,6 +153,17 @@ function progressBar(c) {
     h("span", { class: "b-review", style: `width:${p(c.review)}%` }),
     h("span", { class: "b-learn", style: `width:${p(c.learning)}%` }));
 }
+function domainStats(d) {
+  const c = { none: 0, learning: 0, solid: 0, review: 0, all: 0 };
+  let ans = 0, wrong = 0, seen = 0;
+  d.topics.forEach(t => {
+    c[getP(d.id, t.ti).level]++; c.all++;
+    t.qs.forEach(q => { const st = quiz.q[q.id]; if (st) { seen++; ans += st.s; wrong += st.w; } });
+  });
+  const total = d.topics.reduce((n, t) => n + t.qs.length, 0);
+  const tests = quiz.attempts.filter(x => x.t === "domain" && x.id === d.id);
+  return { c, ans, wrong, seen, total, acc: ans ? Math.round(((ans - wrong) / ans) * 100) : null, best: tests.length ? Math.max(...tests.map(x => x.pct)) : null };
+}
 function topicStats(d, t) {
   let s = 0, w = 0;
   t.qs.forEach(q => { const st = quiz.q[q.id]; if (st) { s += st.s; w += st.w; } });
@@ -182,8 +193,14 @@ function navBar(active) {
   return h("nav", { class: "tabs" }, tabs.map(([href, label]) =>
     h("a", { href: "#/" + href, class: href === active ? "on" : "" }, label)));
 }
+function searchBar(q) {
+  const inp = h("input", { type: "search", class: "sq", placeholder: "Search all lessons and questions", value: q || "", enterkeyhint: "search", "aria-label": "Search", autocomplete: "off", autocapitalize: "off" });
+  const f = h("form", { class: "searchbar", role: "search" }, inp, h("button", { type: "submit", class: "primary", text: "Search" }));
+  f.onsubmit = e => { e.preventDefault(); const v = inp.value.trim(); if (v) location.hash = "#/search/" + encodeURIComponent(v); };
+  return f;
+}
 function shell(active, ...content) {
-  mount(navBar(active), h("div", { id: "msg" }), content);
+  mount(navBar(active), searchBar(), h("div", { id: "msg" }), content);
 }
 
 // ---------- Router ----------
@@ -204,6 +221,7 @@ function route() {
     if (v === "decode") return startRun(decodeRun(a === "taf" ? "taf" : "metar"));
     if (v === "stats") return viewStats();
     if (v === "links") return viewLinks();
+    if (v === "search") return viewSearch(a ? decodeURIComponent(a) : "");
   } catch (e) { console.error(e); }
   viewHome();
 }
@@ -231,6 +249,20 @@ function viewHome() {
         h("span", { text: `Needs review: ${c.review}` }), h("span", { text: `Learning: ${c.learning}` }),
         h("span", { text: `Not started: ${c.none}` }))),
     h("div", { class: "card" },
+      h("h2", { text: "Mastery by domain" }),
+      DATA.map(d => {
+        const s = domainStats(d);
+        const cls = s.acc == null ? "" : s.acc >= PASS ? "ok" : s.acc >= 60 ? "mid" : "low";
+        return h("a", { class: "dom", href: "#/study/" + d.id },
+          h("div", { class: "dom-top" }, h("span", { class: "dom-name", text: d.title }), h("span", { class: "dom-acc " + cls, text: s.acc == null ? "No data" : s.acc + "%" })),
+          progressBar(s.c),
+          h("div", { class: "dom-meta" },
+            h("span", { text: `${s.c.solid}/${s.c.all} topics solid` }),
+            h("span", { text: `${s.seen}/${s.total} questions seen` }),
+            h("span", { text: s.best == null ? "Test: not taken" : `Test best: ${s.best}%` })));
+      }),
+      h("div", { class: "muted small", text: `Accuracy is correct answers over all answers in that domain. Green is ${PASS}% or higher.` })),
+    h("div", { class: "card" },
       h("div", { class: "row" },
         h("div", { class: "grow" },
           h("h2", { text: `${qi.pretty} exam` }),
@@ -256,6 +288,88 @@ function viewHome() {
       weak.slice(0, 5).map(w => h("div", { class: "row", style: "margin-bottom:6px" },
         h("a", { class: "grow", href: `#/topic/${w.d.id}/${w.t.ti}`, text: w.t.title }),
         h("span", { class: "muted small", text: `${Math.round(w.rate * 100)}% missed` })))));
+}
+
+// ---------- Search ----------
+let SEARCH_IDX = null;
+function buildIndex() {
+  const idx = [];
+  DATA.forEach(d => d.topics.forEach(t => {
+    const base = { did: d.id, ti: t.ti, topic: t.title, dom: d.title };
+    let head = "";
+    (t.lesson || []).forEach(b => {
+      if (typeof b === "string") idx.push({ ...base, kind: "lesson", head, text: b, w: 2 });
+      else if (b.h) head = b.h;
+      else if (b.list) b.list.forEach(x => idx.push({ ...base, kind: "lesson", head, text: x, w: 2 }));
+      else if (b.formula) idx.push({ ...base, kind: "lesson", head, text: b.formula, w: 2 });
+      else if (b.note) idx.push({ ...base, kind: "lesson", head, text: b.note, w: 2 });
+    });
+    (t.terms || []).forEach(([k, v]) => idx.push({ ...base, kind: "term", head: k, text: v, w: 4 }));
+    (t.qs || []).forEach(q => idx.push({ ...base, kind: "question", head: q.q, text: q.c[q.a], expl: q.e, w: 1 }));
+  }));
+  idx.forEach(e => { e.hay = (e.head + " " + e.text + " " + (e.expl || "") + " " + e.topic).toLowerCase(); });
+  return idx;
+}
+function runSearch(q) {
+  if (!SEARCH_IDX) SEARCH_IDX = buildIndex();
+  const toks = q.toLowerCase().split(/\s+/).filter(Boolean);
+  if (!toks.length) return [];
+  const res = toks.map(t => new RegExp("(^|[^a-z0-9])" + t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  const out = [];
+  for (const e of SEARCH_IDX) {
+    if (!res.every(r => r.test(e.hay))) continue;
+    let sc = e.w;
+    const hl = e.head.toLowerCase(), tl = e.topic.toLowerCase();
+    toks.forEach(t => { if (hl.includes(t)) sc += 3; if (tl.includes(t)) sc += 1; });
+    if (hl === q.toLowerCase()) sc += 6;
+    out.push({ e, sc });
+  }
+  return out.sort((a, b) => b.sc - a.sc).map(x => x.e);
+}
+function markText(text, toks) {
+  const esc = toks.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  if (!esc.length) return [text];
+  const re = new RegExp("(?<![A-Za-z0-9])(" + esc.join("|") + ")", "ig");
+  return text.split(re).map((part, i) => i % 2 ? h("mark", { text: part }) : part);
+}
+function snippet(text, toks, n = 220) {
+  if (text.length <= n) return text;
+  const low = text.toLowerCase();
+  let at = Math.min(...toks.map(t => low.indexOf(t)).filter(i => i >= 0), text.length);
+  const start = Math.max(0, at - 60);
+  return (start > 0 ? "..." : "") + text.slice(start, start + n) + (start + n < text.length ? "..." : "");
+}
+const KIND_LABEL = { term: "Terms", lesson: "Lessons", question: "Quiz questions (with correct answer)" };
+function viewSearch(q) {
+  const box = h("div");
+  const toks = q.toLowerCase().split(/\s+/).filter(Boolean);
+  const res = runSearch(q);
+  const groups = { term: [], lesson: [], question: [] };
+  res.forEach(e => groups[e.kind].push(e));
+  const LIM = { term: 8, lesson: 10, question: 8 };
+  function render() {
+    const nodes = [h("div", { class: "muted small", text: `${res.length} result${res.length === 1 ? "" : "s"} for "${q}"` })];
+    if (!res.length) nodes.push(h("div", { class: "card" }, h("div", { text: "Nothing found." }), h("div", { class: "muted small", text: "Try fewer or shorter words. All words must match." })));
+    ["term", "lesson", "question"].forEach(k => {
+      const g = groups[k]; if (!g.length) return;
+      const shown = g.slice(0, LIM[k]);
+      const card = h("div", { class: "card" }, h("h2", { text: `${KIND_LABEL[k]} (${g.length})` }),
+        shown.map(e => {
+          const link = `#/topic/${e.did}/${e.ti}`;
+          const where = h("div", { class: "muted small" }, h("a", { href: link, text: e.topic }), " | " + e.dom + (k === "lesson" && e.head ? " | " + e.head : ""));
+          if (k === "term") return h("div", { class: "hit" }, h("div", { class: "hq" }, markText(e.head, toks)), h("div", {}, markText(snippet(e.text, toks, 300), toks)), where);
+          if (k === "lesson") return h("div", { class: "hit" }, h("div", {}, markText(snippet(e.text, toks), toks)), where);
+          return h("div", { class: "hit" }, h("div", { class: "hq" }, markText(e.head, toks)),
+            h("div", {}, h("strong", { text: "Answer: " }), markText(e.text, toks)),
+            e.expl && h("div", { class: "muted small", text: e.expl }), where);
+        }),
+        g.length > shown.length && (() => { const b = h("button", { text: `Show all ${g.length}` }); b.onclick = () => { LIM[k] = 1e9; render(); }; return b; })());
+      nodes.push(card);
+    });
+    box.replaceChildren(...nodes);
+  }
+  mount(navBar("study"), searchBar(q), h("div", { id: "msg" }), h("h1", { text: "Search" }), box);
+  render();
 }
 
 // ---------- Study (tracker) ----------
