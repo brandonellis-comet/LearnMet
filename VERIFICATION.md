@@ -21,7 +21,7 @@ Every new claim needs two independent sources or is flagged single-source. New c
 |--------|--------|-----------|--------|--------------|
 | Observations (obs) | 5 | 91 | Surface observing checked against MANOBS. Radar and satellite re-checked against ECCC, NOAA, NWS and the NAV CANADA guide | 2026-10-27 |
 | Codes (codes) | 10 | 264 | METAR, TAF, SYNOP (MANOBS Part B), GFA/SIGMET/AIRMET/FB, MANAIR Ch. 7 and 8, NAV CANADA product tables, ECCC analysis page. Station model from NOAA only | 2026-10-27 |
-| Severe weather (severe) | 6 | 141 | Turbulence, wind shear, ECCC alerts and Impact Guides checked against AIM, MANAIR and ECCC pages. Others first pass | 2026-10-27 |
+| Severe weather (severe) | 6 | 141 | Turbulence, wind shear, ECCC alerts and Impact Guides checked against AIM, MANAIR and ECCC pages. 2026-10-30: supercell, CAPE, lightning, microburst, winter precipitation profiles, wind chill, Richardson, nocturnal jet cross-checked. Rest first pass | 2026-10-30 |
 | Moisture (moisture) | 6 | 112 | Icing topic checked against AIM, MANAIR and AIR. Cloud genera checked against the WMO Cloud Atlas 2026-10-30; WBF process added 2026-10-27. Others first pass | 2026-10-30 |
 | Applied (applied) | 5 | 59 | Aviation minima, flight categories and marine topics updated; others first pass | 2026-10-27 |
 | Foundations (foundations) | 5 | 58 | Partly hardened 2026-10-27: layers (UCAR, SKYbrary), SALR (Haby), pressure-level heights (Navy table). Rest first pass | 2026-10-27 |
@@ -140,6 +140,14 @@ Every new claim needs two independent sources or is flagged single-source. New c
 | Cirrostratus and altostratus halo | Cs produces a halo; As no halo | Cs 'often' produces halo phenomena; As 'does not show halo phenomena' | WMO Cloud Atlas |
 | Nimbostratus and cumulonimbus level | Listed under Low with a note | WMO: Ns middle level (extends into others); Cb listed as low (base), tops reach middle and high. Ns composition added | WMO Cloud Atlas |
 | Cloud genus definitions | Paraphrased from memory | Rewritten from WMO definitions for Ci, Cs, As, St, Sc, Ns, Cu, Cb | WMO Cloud Atlas |
+| Lightning mechanism | Graupel-ice crystal collisions as the cause | AMS lists four proposed mechanisms and says none is fully satisfactory; ice-graupel evidence strongest | AMS Glossary |
+| Supercell, CAPE | Basic wording | AMS definitions: single quasi-steady rotating updraft lasting over 10 to 20 min; CAPE as maximum buoyancy of an undiluted parcel | AMS Glossary |
+| Microburst | Under about 4 km, short-lived | Under 4 km, peak winds 2 to 5 min (AMS), about 5 to 10 min total (NSSL), AIM 2 to 4 min peak, 15 min life cycle | AMS, NSSL, AIM AIR 2.8 |
+| Blizzard numbers | Unconfirmed | Former ECCC criteria (400 m, 40 km/h, 4 h, 6 h North) reported by CBC 2017; current ECCC page does not list them | CBC |
+| Freezing rain and ice pellets profiles | Standard teaching | Confirmed: ice pellets shallow warm layer plus thick cold layer; freezing rain thick warm layer plus shallow cold layer | EUMeTrain |
+| Wind chill | Thresholds only | Joint US/Canada index (2001/2002); formula added; metric final coefficient not fully read | NWS, McGill copy of Canadian chart |
+| Richardson number | Textbook value 0.25 | 0.25 usual, range 0.2 to 1.0, hysteresis | AMS Glossary |
+| Nocturnal low-level jet | A few hundred metres, early morning | 500 to 1,000 m, peak about 2 a.m., US Great Plains study; Atlantic Canada not sourced | University of Oklahoma text |
 | TAF lesson | BECMG "1 to 4 h"; TEMPO and PROB do not carry wind | BECMG normally 2 h or less, never over 4 h; TEMPO and PROB may carry wind; issue, update and amendment thresholds rewritten | MANAIR Ch. 2 |
 | GFA, SIGMET, AIRMET, FB | No topic | New topic: GFA issue times and domains, SIGMET (WS 4 h, WV and WC 6 h), AIRMET (4 h, to FL240, only if not in GFA), FB code rules | MANAIR Ch. 3 to 6 |
 | Front symbols (surface/GFA) | "Occluded usually purple" | Removed. GFA has no occluded symbol. Colours confirmed: cold blue triangles, warm red semicircles, stationary alternating | MANAIR Appendix C.2 |
@@ -188,7 +196,7 @@ Open
 - Not yet checked against a Canadian source: military and briefing topics (no public source expected), climatology of the Atlantic region against ECCC normals.
 
 Carried from the first pass (2026-10-26), not yet revisited
-- Severe: supercell and mesocyclone definition, microburst size and approach sequence, blizzard numbers, nocturnal low-level jet details.
+- Severe: supercell shear requirements, thunder mechanism, hook echo, snow squall and nor'easter definitions, final wind chill coefficient (0.3965), nocturnal low-level jet in Atlantic Canada, ECCC selected-areas list currency.
 - Foundations: troposphere mass now 75% (SKYbrary; was 80% derived). Layers, ozone, ionosphere, mesopause, SALR direction and 300 hPa height now have public sources (UCAR, Haby, Navy table). Still open: pressure-tendency rule, Canadian chart label for 300 hPa, ICAO documents (only secondary articles read), physics topics 1, 2 and 4 are textbook-standard.
 - Wind: Coriolis parameter, gradient wind, boundary layer depth, diurnal wind cycle, Ferrel cell, WMO jet definition, jet entrance and exit divergence.
 - Moisture: mixing ratio conservation and wet-bulb ordering, CCN types, lifting mechanisms, cloud appearance descriptions, warm-front cloud sequence, Nova Scotia fog climatology.

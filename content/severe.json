@@ -23,7 +23,7 @@
             "Single-cell: weak shear, short-lived, generally 30 to 45 minutes. A pulse storm is a single cell with more instability that can give brief downbursts, small to moderate hail and sometimes a weak tornado.",
             "Multicell cluster: the most common type, with cells at different stages. Each cell lasts about 30 minutes but the cluster can last several hours. New cells form where lift persists (fronts, dry lines, outflow boundaries, higher terrain).",
             "Squall line (multicell line): outflows merge into a continuous gust front, new cells form on the leading edge and the line moves forward. Straight-line wind damage is common and bow echoes can form. The line weakens if the gust front pulls ahead of it.",
-            "Supercell: a rotating updraft (mesocyclone) in strong shear. Long-lived. Textbook source of the most severe storms."
+            "Supercell: a convective storm made up primarily of a single, quasi-steady rotating updraft that lasts far longer than the time a parcel needs to rise through it, often more than 10 to 20 minutes. Most rotating updrafts are cyclonic (a mesocyclone) (AMS Glossary). Strong shear is standard teaching, not stated on the pages read. Long-lived. Textbook source of the most severe storms."
           ]
         },
         {
@@ -31,8 +31,8 @@
         },
         {
           "list": [
-            "CAPE (convective available potential energy): a measure of instability. High CAPE supports strong updrafts and large hail.",
-            "Lightning comes from charge separation, mostly through collisions between graupel and ice crystals in the presence of supercooled water.",
+            "CAPE (convective available potential energy): the maximum buoyancy of an undiluted air parcel, related to the potential updraft strength of thunderstorms (AMS Glossary). It shows on a thermodynamic diagram as the positive area between the lifted parcel path and the environment, from the level of free convection to the level of neutral buoyancy. High CAPE supports strong updrafts and large hail (hail link is standard teaching).",
+            "Lightning comes from charge separation inside the cloud. The AMS Glossary lists four proposed mechanisms (breaking-drop, ion-capture, Workman-Reynolds effect, and bouncing of ice crystals off growing graupel) and says none fully accounts for the charge separation seen in very active storms. The strongest evidence involves ice crystals forming in the presence of graupel in the regions between updrafts and downdrafts.",
             "Thunder is the shock wave from the rapid heating of air along the lightning channel."
           ]
         },
@@ -214,12 +214,12 @@
         "sources": [
           "NOAA National Weather Service, Types of Thunderstorms (weather.gov/spotterguide/types): single cell, pulse, multicell cluster and line, durations",
           "MANOBS 8th ed. Am. 3 (full PDF): 6.4 thunderstorm definition and reporting (thunder heard or overhead lightning; ends after 15 minutes)",
-          "MANOBS 8th ed. Am. 3 (full PDF): 6.4 and 6.5 (thunderstorm and lightning definitions and reporting), 13.2.17"
+          "MANOBS 8th ed. Am. 3 (full PDF): 6.4 and 6.5 (thunderstorm and lightning definitions and reporting), 13.2.17",
+          "AMS Glossary: Supercell; Convective available potential energy; Thunderstorm charge separation (four proposed mechanisms, none entirely satisfactory)"
         ],
         "unverified": [
-          "Supercell and mesocyclone definitions, and shear requirements: the NOAA page does not give them.",
-          "CAPE, charge separation by graupel and ice crystals, thunder, anvil at the tropopause: standard meteorology, not checked against a Canadian publication.",
-          "Cumulus-stage duration was removed (no source found)."
+          "Cumulus-stage duration was removed (no source found).",
+          "Supercell shear requirements and the mesocyclone as a separate definition: AMS Supercell entry only cross-references mesocyclone; the NWS Louisville dynamics page was not retrievable. Thunder as a shock wave from rapid heating, and the anvil at the tropopause: standard meteorology, not checked. Graupel-ice crystal charging is the leading idea in the lesson but the AMS says no mechanism is settled."
         ]
       }
     },
@@ -243,8 +243,8 @@
         "A downburst is a strong downdraft from a thunderstorm that hits the ground and spreads outward in a damaging burst of wind.",
         {
           "list": [
-            "Microburst: a small downburst, textbook size under about 4 km across and short-lived. NOAA notes pulse storms give brief downbursts, usually under 70 mph (about 110 km/h).",
-            "Macroburst: larger than a microburst, lasts longer.",
+            "Microburst: a convective downdraft covering an area less than 4 km along a side, with peak winds lasting 2 to 5 minutes and a differential velocity across the divergence centre above 10 m/s (AMS Glossary). NSSL: under 4 km across, lasts about 5 to 10 minutes, winds sometimes above 100 mph (160 km/h). AIM AIR 2.8: life cycle seldom over 15 minutes, peak winds 2 to 4 minutes. NOAA notes pulse storms give brief downbursts, usually under 70 mph (about 110 km/h).",
+            "Macroburst: a surface outburst of strong wind with a horizontal extent larger than 4 km (2.5 mi) (NSSL).",
             "Wet microburst: with heavy rain. Dry microburst: little or no rain reaches the ground, often with high-based storms."
           ]
         },
@@ -442,11 +442,12 @@
           "ECCC Weather Impact Guides, Tornadoes: effects at moderate, high and extreme levels",
           "NOAA National Weather Service, Types of Thunderstorms: pulse-storm downbursts, bow echo tornadoes weaker than supercell tornadoes",
           "MANOBS 8th ed. Am. 3 (full PDF): 6.3 tornado, waterspout and funnel cloud definitions",
-          "MANOBS 8th ed. Am. 3 (full PDF): 6.3 (tornado, waterspout, funnel cloud definitions and coding), 13.2.5 and 13.2.18 to 13.2.19"
+          "MANOBS 8th ed. Am. 3 (full PDF): 6.3 (tornado, waterspout, funnel cloud definitions and coding), 13.2.5 and 13.2.18 to 13.2.19",
+          "AMS Glossary, Microburst; NSSL Severe Weather 101, Wind types: microburst under 4 km, macroburst over 4 km, peak winds 2 to 5 min (AMS) and about 5 to 10 min lifetime (NSSL); AIM AIR 2.8 agrees (peak 2 to 4 min)"
         ],
         "unverified": [
-          "Microburst size (under 4 km) and the headwind, sink, tailwind sequence: standard teaching, not checked against a Canadian publication. Duration and the 150 km/h figure were removed.",
-          "Hook echo and radar signatures: not checked."
+          "Hook echo and radar signatures: not checked.",
+          "Microburst size (under 4 km) is now confirmed by AMS, NSSL and the AIM. The takeoff sequence of headwind, downdraft, tailwind is stated in AIM AIR 2.8 (earlier read). The AMS page does not describe the sequence. Duration differs by source (AMS 2 to 5 min of peak winds, NSSL 5 to 10 min total, AIM 15 min life cycle): different measures. The 150 km/h figure remains removed."
         ]
       }
     },
@@ -460,17 +461,17 @@
         {
           "list": [
             "Heavy snow: reduces visibility and blocks roads.",
-            "Blizzard: strong wind with snow or blowing snow and very low visibility. ECCC now covers blizzards in its Visibility Impact Guide. The old numeric criteria (wind 40 km/h or more, visibility 400 m or less, 4 hours) are no longer listed on the ECCC page and are not confirmed here.",
+            "Blizzard: strong wind with snow or blowing snow and very low visibility. ECCC now covers blizzards in its Visibility Impact Guide. The old numeric criteria (wind 40 km/h or more, visibility 400 m or less, 4 hours) are no longer listed on the ECCC page and are not confirmed here. A 2017 CBC report quoted the former ECCC criteria as snowfall with visibility under 400 m and sustained wind of at least 40 km/h for 4 hours or more (6 hours in the North). Treat as former criteria, not current.",
             "Freezing rain: supercooled rain freezes on contact. ECCC's Ice guide scales it from ice on power lines and bridges with some outages (moderate), to damaged lines and widespread outages (high), to collapsed poles and towers with long outages (extreme). See precipitation processes.",
             "Ice pellets: stinging pellets, slippery surfaces.",
             "Snow squalls: sudden, short bursts of intense snow with strong wind and whiteout, typically near a front or lake.",
-            "Wind chill (ECCC): -28 to -39, exposed skin can freeze in 10 to 30 minutes. -40 to -47, 5 to 10 minutes. -48 to -54, 2 to 5 minutes. -55 or colder, under 2 minutes. In sustained wind over 50 km/h frostbite can come faster."
+            "Wind chill (ECCC): -28 to -39, exposed skin can freeze in 10 to 30 minutes. -40 to -47, 5 to 10 minutes. -48 to -54, 2 to 5 minutes. -55 or colder, under 2 minutes. In sustained wind over 50 km/h frostbite can come faster. The index is a joint US/Canada formula implemented from the 2001/2002 winter. In metric units it begins 13.12 + 0.6215T - 11.37 V^0.16 (T in degrees C, V in km/h) plus a final term of 0.3965 x T x V^0.16 (final coefficient from the standard published formula; it was cut off on the page read). The US form is 35.74 + 0.6215T - 35.75 V^0.16 + 0.4275 T V^0.16 (F, mph) (NWS)."
           ]
         },
         {
           "h": "Rain versus snow"
         },
-        "Precipitation type depends on the temperature profile through the whole column. A thin warm layer near the surface can turn snow into rain. A thin cold layer at the surface under a warm layer aloft produces freezing rain. Surface temperatures near 0 C often mean a messy mix.",
+        "Precipitation type depends on the temperature profile through the whole column (EUMeTrain). Snow: below freezing all the way down. Rain: above freezing all the way to the ground. Ice pellets: a shallow warm layer aloft melts the snow, then a thick cold layer near the surface refreezes the drops. Freezing rain: a thicker warm layer aloft and a shallow cold layer at the surface, so the drops stay liquid, become supercooled and freeze on impact. Surface temperatures near 0 C often mean a messy mix.",
         {
           "h": "Nor'easter"
         },
@@ -632,12 +633,12 @@
         "sources": [
           "ECCC, Wind chill and the Wind Chill Index (canada.ca): hazard levels and frostbite times",
           "ECCC Weather Impact Guides: Visibility (including blizzards), Ice (freezing rain, freezing drizzle, flash freeze), Snow squall, Winter storm sections",
-          "ECCC, Criteria for public weather alerts: notice that the criteria were replaced by Impact Guides (modified 2025-11-26)"
+          "ECCC, Criteria for public weather alerts: notice that the criteria were replaced by Impact Guides (modified 2025-11-26)",
+          "EUMeTrain, Winter weather simulator intro: temperature profiles for snow, rain, ice pellets, sleet and freezing rain",
+          "CBC (2017), PEI blizzard definition: former ECCC criteria 400 m, 40 km/h, 4 h (6 h North); NWS wind chill page: joint US/Canada index for 2001/2002, US formula; McGill copy of the Canadian chart: metric formula start"
         ],
         "unverified": [
-          "Blizzard numbers (40 km/h, 400 m, 4 hours): not on any current ECCC page that could be read, so treated as unconfirmed. Questions use the Impact Guide wording instead.",
-          "Snow squall, nor'easter, lake-effect snow, and the temperature profiles for freezing rain and ice pellets: standard meteorology, not checked against a Canadian publication.",
-          "Wind chill formula: not given on the ECCC page."
+          "Blizzard numbers are former ECCC criteria reported by CBC (2017); the current ECCC Impact Guide page does not list them. CBC says 'less than 400 m'; older text said '400 m or less'. Snow squall and nor'easter: standard meteorology, not checked. Metric wind chill formula: last coefficient (0.3965) is from the standard published formula, truncated on the page read; verify against the ECCC wind chill page."
         ]
       }
     },
@@ -660,7 +661,7 @@
         {
           "h": "Shear instability"
         },
-        "The Richardson number compares stability to wind shear. When it falls below the textbook critical value of about 0.25, shear overcomes stability and Kelvin-Helmholtz waves form. Strong shear with weak stability produces CAT.",
+        "The Richardson number compares stability to wind shear. The AMS Glossary gives the critical Richardson number as usually 0.25 (literature range 0.2 to 1.0): below it, air becomes dynamically unstable and turbulent. Some sources note hysteresis: it must fall below 0.25 to become turbulent, but turbulence can persist up to about 1.0. Kelvin-Helmholtz waves form on shear layers. Strong shear with weak stability produces CAT.",
         {
           "h": "Avoidance"
         },
@@ -1110,14 +1111,15 @@
           "Transport Canada AIM MET 2.2.2: turbulence intensity wording (light, moderate, severe, extreme) and CAT definition",
           "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.2.2 (turbulence intensity definitions, GFA types, L LVL JET), 5.8.3.2 and D.5 (SIGMET SEV only), 6.8.3.2 and E.5 (AIRMET MOD only)",
           "TC AIM 2026-2 MET (tc.canada.ca, fetched 2026-10-27): 2.2.1, 2.2.2 Table 2.2 (intensity, chop, frequency), 1.3.9.1, 4.12 (GFA labels, L LVL JET)",
-          "TC AIM 2026-2 AIR (screenshots supplied by the user, 2026-10-27): 1.5.6 to 1.5.8, 2.7, 2.9, 2.10 (read from the page images)"
+          "TC AIM 2026-2 AIR (screenshots supplied by the user, 2026-10-27): 1.5.6 to 1.5.8, 2.7, 2.9, 2.10 (read from the page images)",
+          "AMS Glossary, Critical Richardson number: usually 0.25, range 0.2 to 1.0, hysteresis"
         ],
         "unverified": [
           "Rotor cloud description: not in the AIM pages read.",
-          "Richardson number critical value of 0.25: textbook value, not checked.",
           "Mechanical and convective turbulence descriptions: not defined in the AIM pages read.",
           "Mountain wave 'increasing with height and stable layer' conditions: not stated in AIR 1.5.6.",
-          "The TC AIM 'extreme' category is listed but not defined."
+          "The TC AIM 'extreme' category is listed but not defined.",
+          "Richardson number: 0.25 confirmed as the usual value (AMS, single source)."
         ]
       }
     },
@@ -1140,7 +1142,7 @@
         {
           "h": "Nocturnal low-level jet"
         },
-        "After sunset the surface layer decouples from the air above because of a nocturnal inversion. Friction no longer holds back the winds a few hundred metres up, and they accelerate. A wind maximum forms a few hundred metres above the ground, strongest in the early morning. It is common over flat land such as the Great Plains and can also occur near coasts.",
+        "After sunset radiative cooling makes the near-surface layer stable and it decouples from the air above. That air is no longer slowed by daytime turbulent mixing, so it accelerates under the pressure gradient, and Coriolis turns this into an inertial oscillation that produces supergeostrophic winds after several hours (Blackadar 1957, as summarised in a University of Oklahoma text). The wind maximum is typically 500 to 1,000 m above the ground, near the top of the nocturnal inversion, and peaks around 2 a.m. local standard time. It is most common over the US Great Plains in spring and summer. Holton's sloping-terrain mechanism may work alongside it. Whether the same jet occurs near Atlantic Canada coasts is not covered by these sources.",
         {
           "h": "Effects on aircraft"
         },
@@ -1252,7 +1254,7 @@
             "Early evening just after sunset"
           ],
           "a": 0,
-          "e": "The jet strengthens during the night and often peaks near dawn."
+          "e": "The jet strengthens through the night. A University of Oklahoma text puts the typical peak around 2 a.m. local standard time over the US Great Plains, so late night to early morning."
         },
         {
           "q": "Low-level wind shear is the change of wind over:",
@@ -1426,11 +1428,12 @@
           "Transport Canada AIM MET 2.3: wind shear definition and no height limit",
           "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 2.6.9 (WS group and four guidelines), 5.8.3.2 (SIGMET SEV only), 4.8 (legend phrase)",
           "TC AIM 2026-2 MET (tc.canada.ca, fetched 2026-10-27): 2.3 (wind shear)",
-          "TC AIM 2026-2 AIR (screenshots supplied by the user, 2026-10-27): 2.8 (microburst size, intensity, types, duration; recovery)"
+          "TC AIM 2026-2 AIR (screenshots supplied by the user, 2026-10-27): 2.8 (microburst size, intensity, types, duration; recovery)",
+          "University of Oklahoma, Mesoscale meteorology (MM2005, ch. 2.3): nocturnal low-level jet height, timing, inertial oscillation (Blackadar 1957), Holton 1967"
         ],
         "unverified": [
-          "Nocturnal low-level jet height, timing and cause: standard teaching, not checked against a Canadian publication.",
-          "Shear units (knots per 100 ft): not checked."
+          "Shear units (knots per 100 ft): not checked.",
+          "Nocturnal low-level jet: sourced to a US university text about the Great Plains (single source). The earlier lesson wording 'a few hundred metres' is replaced by 500 to 1,000 m. Atlantic Canada occurrence not sourced. The AIM and MANAIR LLWS material is separate and was already sourced."
         ]
       }
     },
