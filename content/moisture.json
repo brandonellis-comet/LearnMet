@@ -366,9 +366,9 @@
         },
         {
           "list": [
-            "Cirrus (Ci): thin, wispy, ice crystals.",
+            "Cirrus (Ci): detached white, delicate filaments, patches or narrow bands with a fibrous (hair-like) appearance or silky sheen (WMO). Made of ice crystals (standard teaching; the WMO definition page does not state composition).",
             "Cirrocumulus (Cc): small white ripples or grains.",
-            "Cirrostratus (Cs): thin veil. Produces a halo around the sun or moon. Often the first sign of an approaching warm front."
+            "Cirrostratus (Cs): transparent, whitish veil of fibrous or smooth appearance, totally or partly covering the sky, often producing halo phenomena (WMO). Often the first sign of an approaching warm front (standard teaching)."
           ]
         },
         {
@@ -377,7 +377,7 @@
         {
           "list": [
             "Altocumulus (Ac): patchy layers or globules.",
-            "Altostratus (As): grey sheet through which the sun appears as a dim disc. No halo. Precipitation may follow."
+            "Altostratus (As): greyish or bluish sheet of striated, fibrous or uniform appearance. Thinner parts show the sun faintly, as through ground glass. It does not show halo phenomena (WMO). Precipitation may follow (standard teaching)."
           ]
         },
         {
@@ -385,11 +385,11 @@
         },
         {
           "list": [
-            "Stratus (St): uniform grey layer, drizzle possible. Fog that has lifted.",
-            "Stratocumulus (Sc): lumpy layer, common over the Atlantic.",
-            "Nimbostratus (Ns): thick, dark layer with steady rain or snow. WMO places it in the middle level, NAV CANADA's guide lists it with low cloud, and it often spans both. MANOBS Table 7-1 gives its base as near the surface to 6,500 ft.",
-            "Cumulus (Cu): heaped, flat base, fair weather to towering.",
-            "Cumulonimbus (Cb): very deep convective cloud from low levels to the tropopause. Thunderstorms, hail, anvil top."
+            "Stratus (St): generally grey layer with a fairly uniform base, which may give drizzle, snow or snow grains. When the sun shows through, its outline is clearly discernible. No halo except possibly at very low temperatures (WMO). Lifted fog: standard teaching, not stated by WMO.",
+            "Stratocumulus (Sc): grey or whitish patch, sheet or layer that almost always has dark parts, made of tessellations, rounded masses or rolls that are non-fibrous (except for virga) (WMO). Common over the Atlantic (standard teaching).",
+            "Nimbostratus (Ns): grey cloud layer, often dark, made diffuse by more or less continuously falling rain or snow, thick enough throughout to blot out the sun (WMO). WMO places it in the middle level (it almost always occurs there but usually extends into the other two). NAV CANADA's guide lists it with low cloud. MANOBS Table 7-1 gives its base as near the surface to 6,500 ft. Composition (WMO): water droplets (sometimes supercooled) and raindrops, snow crystals and snowflakes, or a mixture.",
+            "Cumulus (Cu): detached clouds, generally dense with sharp outlines, developing vertically as rising mounds, domes or towers. The bulging top often resembles a cauliflower and the base is relatively dark and nearly horizontal (WMO).",
+            "Cumulonimbus (Cb): heavy, dense cloud of considerable vertical extent, in the form of a mountain or huge towers. The upper part is usually smooth, fibrous or striated, nearly always flattened, and often spreads into an anvil or vast plume. The base is often very dark, with low ragged cloud beneath, and precipitation sometimes falls as virga (WMO). WMO lists it with the low genera because its base is usually low, but its tops often reach the middle and high levels. Thunder, hail and the tropopause cap are standard teaching, not on the WMO page."
           ]
         },
         {
@@ -588,6 +588,39 @@
           ],
           "a": 0,
           "e": "MANOBS Table 7-1."
+        },
+        {
+          "q": "Which statement matches the WMO Cloud Atlas on halo phenomena?",
+          "c": [
+            "Cirrostratus often produces halos; altostratus does not",
+            "Altostratus often produces halos; cirrostratus does not",
+            "Both always produce halos",
+            "Neither can produce halos"
+          ],
+          "a": 0,
+          "e": "WMO: cirrostratus is 'often producing halo phenomena'; altostratus 'does not show halo phenomena'."
+        },
+        {
+          "q": "What is nimbostratus made of, according to the WMO Cloud Atlas?",
+          "c": [
+            "Water droplets (sometimes supercooled), raindrops, snow crystals and snowflakes, or a mixture",
+            "Only supercooled water droplets",
+            "Only ice crystals",
+            "Only dry dust"
+          ],
+          "a": 0,
+          "e": "WMO physical constitution of nimbostratus: liquid and solid particles, possibly a mixture."
+        },
+        {
+          "q": "At which level does the WMO Cloud Atlas place the cumulonimbus base?",
+          "c": [
+            "Low, though tops often reach the middle and high levels",
+            "High",
+            "Middle only",
+            "It has no level"
+          ],
+          "a": 0,
+          "e": "WMO Table 6 lists Cb with the low genera; its tops often reach the middle and high levels."
         }
       ],
       "verified": {
@@ -595,10 +628,13 @@
         "sources": [
           "WMO International Cloud Atlas, Useful concepts: ten genera and level heights for polar, temperate and tropical regions",
           "NAV CANADA Aviation Weather Services Guide (2017): cloud types grouped by level (Ns listed with low)",
-          "MANOBS 8th ed. Am. 3 (full PDF): Table 7-1 (cloud definitions and base heights), Table 7-3 (abbreviations)"
+          "MANOBS 8th ed. Am. 3 (full PDF): Table 7-1 (cloud definitions and base heights), Table 7-3 (abbreviations)",
+          "WMO International Cloud Atlas (cloudatlas.wmo.int), definition pages for cirrus, cirrostratus, altostratus, stratus, stratocumulus, nimbostratus (including physical constitution), cumulus and cumulonimbus; level table (Table 6); cirrostratus vs altostratus comparison page"
         ],
         "unverified": [
-          "The warm front sequence Ci-Cs-As-Ns, lenticular clouds and cumulus congestus are standard teaching, not checked on a Canadian publication. Cloud definitions for the other genera (halo from cirrostratus, no halo from altostratus, drizzle from stratus) match MANOBS Table 7-1."
+          "Cirrocumulus ('small white ripples or grains') and altocumulus ('patchy layers or globules') were not checked against their WMO definition pages this pass.",
+          "Cirrus being made of ice crystals, thunder and hail with Cb, 'fog that has lifted' for stratus and the warm front cloud sequence: standard teaching, not on the WMO definition pages read.",
+          "WMO cloud definitions are quoted via fetch summaries, not read as full pages. The WMO levels (Table 6) were read earlier from the same site and agree with the lesson."
         ]
       }
     },

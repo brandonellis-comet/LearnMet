@@ -15,14 +15,14 @@ Study aid only. Crown-copyright and NAV CANADA text is paraphrased and linked, n
 ## Cross-check rule (from 2026-10-27)
 Every new claim needs two independent sources or is flagged single-source. New claims are compared with the lesson text and the sources already logged. Conflicts are recorded below, and the more authoritative source wins (Canadian government over US government over university or media).
 
-## Status (as of 2026-10-27; 899 questions)
+## Status (as of 2026-10-27; 902 questions)
 
 | Domain | Topics | Questions | Status | Last checked |
 |--------|--------|-----------|--------|--------------|
 | Observations (obs) | 5 | 91 | Surface observing checked against MANOBS. Radar and satellite re-checked against ECCC, NOAA, NWS and the NAV CANADA guide | 2026-10-27 |
 | Codes (codes) | 10 | 264 | METAR, TAF, SYNOP (MANOBS Part B), GFA/SIGMET/AIRMET/FB, MANAIR Ch. 7 and 8, NAV CANADA product tables, ECCC analysis page. Station model from NOAA only | 2026-10-27 |
 | Severe weather (severe) | 6 | 141 | Turbulence, wind shear, ECCC alerts and Impact Guides checked against AIM, MANAIR and ECCC pages. Others first pass | 2026-10-27 |
-| Moisture (moisture) | 6 | 109 | Icing topic checked against AIM, MANAIR and AIR (incl. carburettor icing). Others first pass | 2026-10-27 |
+| Moisture (moisture) | 6 | 112 | Icing topic checked against AIM, MANAIR and AIR. Cloud genera checked against the WMO Cloud Atlas 2026-10-30; WBF process added 2026-10-27. Others first pass | 2026-10-30 |
 | Applied (applied) | 5 | 59 | Aviation minima, flight categories and marine topics updated; others first pass | 2026-10-27 |
 | Foundations (foundations) | 5 | 58 | Partly hardened 2026-10-27: layers (UCAR, SKYbrary), SALR (Haby), pressure-level heights (Navy table). Rest first pass | 2026-10-27 |
 | Wind (wind) | 6 | 68 | Partly hardened 2026-10-27: jet streak quadrants (4 sources), gradient wind (2), boundary layer depth (AMS), Ferrel/ITCZ, anabatic. Rest first pass | 2026-10-26 |
@@ -137,6 +137,9 @@ Every new claim needs two independent sources or is flagged single-source. New c
 | Storm quadrant | Right-front quadrant most dangerous | Sources say right side of the eyewall relative to motion; explanation flagged standard teaching | Colorado State |
 | PVA and 500 hPa vertical motion | PVA means rising air | PVA is a clue for divergence; at 500 hPa it can go with ascent or descent depending on slope and wind increase | NWS Houston |
 | Saffir-Simpson | Cat 1 start only | Full Cat 1 to 5 ranges added | NHC |
+| Cirrostratus and altostratus halo | Cs produces a halo; As no halo | Cs 'often' produces halo phenomena; As 'does not show halo phenomena' | WMO Cloud Atlas |
+| Nimbostratus and cumulonimbus level | Listed under Low with a note | WMO: Ns middle level (extends into others); Cb listed as low (base), tops reach middle and high. Ns composition added | WMO Cloud Atlas |
+| Cloud genus definitions | Paraphrased from memory | Rewritten from WMO definitions for Ci, Cs, As, St, Sc, Ns, Cu, Cb | WMO Cloud Atlas |
 | TAF lesson | BECMG "1 to 4 h"; TEMPO and PROB do not carry wind | BECMG normally 2 h or less, never over 4 h; TEMPO and PROB may carry wind; issue, update and amendment thresholds rewritten | MANAIR Ch. 2 |
 | GFA, SIGMET, AIRMET, FB | No topic | New topic: GFA issue times and domains, SIGMET (WS 4 h, WV and WC 6 h), AIRMET (4 h, to FL240, only if not in GFA), FB code rules | MANAIR Ch. 3 to 6 |
 | Front symbols (surface/GFA) | "Occluded usually purple" | Removed. GFA has no occluded symbol. Colours confirmed: cold blue triangles, warm red semicircles, stationary alternating | MANAIR Appendix C.2 |
@@ -199,3 +202,5 @@ Next accuracy step: a second pass with working Met Techs and the remaining Canad
 ## WMO resources (checked 2026-10-27)
 - International Meteorological Vocabulary (WMO-No. 182, 1992): paid publication, not read.
 - International Cloud Atlas (cloudatlas.wmo.int): free online; cloud genera descriptions, photometeors, glossary. Use it to harden the cloud classification topic (moisture, topic 2).
+
+- Cloud classification: cirrocumulus and altocumulus not checked against WMO pages this pass; Cb thunder and hail, Ci ice composition, lifted-fog stratus are standard teaching.
