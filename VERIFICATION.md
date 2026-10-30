@@ -194,6 +194,7 @@ Carried from the first pass (2026-10-26), not yet revisited
 - Moisture: mixing ratio conservation and wet-bulb ordering, CCN types, lifting mechanisms, cloud appearance descriptions, warm-front cloud sequence, Nova Scotia fog climatology.
 - Air masses: k/w letters, cloud/fog consequences of modification, Maritimes effects (no ECCC page found), stationary front symbol on a non-MANAIR chart, nose of the front, winter frontogenesis zone off the US east coast, specific frontolysis mechanisms, baroclinic definition (AMS gives only barotropic). All sources so far are US, UK or general; none are Canadian government.
 - Synoptic: block persistence (MeteoSwiss page body not read), long-wave count (derived), absolute vorticity conservation, sea/lake breeze fronts and cold pools, mesoscale scale range, cool water and shear as causes of transition (not on ECCC page), forward-motion explanation for the right-side maximum, tropical storm range 34 to 63 kt. Sources are US, UK, Swiss and Canadian (ECCC, Western University).
+- Cloud classification: cirrocumulus and altocumulus not checked against WMO pages this pass; Cb thunder and hail, Ci ice composition, lifted-fog stratus are standard teaching.
 - Applied: pressure altitude, crosswind trigonometry source, alternate-required rules (CAR 602.121 onward), freezing spray criteria, Strong Wind warning threshold, WBGT, military impact tables, briefing SOP format.
 - CAPE and CIN, CSI formula, lifted index definitions, mandatory pressure level list.
 
@@ -202,5 +203,3 @@ Next accuracy step: a second pass with working Met Techs and the remaining Canad
 ## WMO resources (checked 2026-10-27)
 - International Meteorological Vocabulary (WMO-No. 182, 1992): paid publication, not read.
 - International Cloud Atlas (cloudatlas.wmo.int): free online; cloud genera descriptions, photometeors, glossary. Use it to harden the cloud classification topic (moisture, topic 2).
-
-- Cloud classification: cirrocumulus and altocumulus not checked against WMO pages this pass; Cb thunder and hail, Ci ice composition, lifted-fog stratus are standard teaching.
