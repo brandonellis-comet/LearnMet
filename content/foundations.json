@@ -953,7 +953,8 @@
         ],
         "unverified": [
           "Potential temperature conservation and stability rules from theta: standard theory, not checked on a Canadian publication.",
-          "The LCL formula is an approximation that needs the dew point at the surface."
+          "The LCL formula is an approximation that needs the dew point at the surface.",
+          "Espy's 125 m per degree rule: the AMS Glossary definition of the lifting condensation level (the level at which a lifted parcel becomes saturated) does not give the rule, so the rule remains single-sourced to the Wikipedia LCL article."
         ]
       }
     }

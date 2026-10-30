@@ -9,7 +9,7 @@
           "list": [
             "Vapour pressure (e): the part of total pressure due to water vapour.",
             "Saturation vapour pressure (es): the maximum vapour pressure possible at a given temperature. It rises quickly with temperature, roughly 7% per 1 C.",
-            "Relative humidity (RH) = e / es x 100%. It depends on temperature, so it changes when air is warmed or cooled even if no moisture is added.",
+            "Relative humidity (RH) = e / es x 100%: the ratio of vapour pressure to saturation vapour pressure with respect to a plane surface of pure water (AMS Glossary). It can also be computed as mixing ratio divided by saturation mixing ratio, with nearly identical results. It depends on temperature, so it changes when air is warmed or cooled even if no moisture is added.",
             "Dew point (Td): temperature at which the air would be saturated. It measures the actual moisture content and is not affected by simple warming or cooling.",
             "Mixing ratio (w) and specific humidity (q): mass of vapour per mass of dry air (or of total air), in g/kg. Conserved in an unsaturated rising or sinking parcel.",
             "Wet-bulb temperature (Tw): lowest temperature reachable by evaporating water into the air. Always between the dew point and air temperature."
@@ -169,10 +169,11 @@
         "sources": [
           "Penn State METEO 300: saturation vapour pressure rises about 7% per 1 K; dew point definition",
           "UCSD SIO 217a ch. 6: dew point and frost point as saturation by isobaric cooling",
-          "NWS cloud and precipitation training notes: saturation vapour pressure over ice is less than over liquid water (so the frost point is higher than the dew point below 0 C: derived)"
+          "NWS cloud and precipitation training notes: saturation vapour pressure over ice is less than over liquid water (so the frost point is higher than the dew point below 0 C: derived)",
+          "AMS Glossary, Relative humidity: ratio of vapour pressure to saturation vapour pressure over a plane surface of pure water; also mixing ratio over saturation mixing ratio"
         ],
         "unverified": [
-          "Mixing ratio and specific humidity being conserved in unsaturated parcels, wet-bulb definition and the Td <= Tw <= T ordering, psychrometer description: standard thermodynamics, not stated on the pages read."
+          "Mixing ratio and specific humidity being conserved in unsaturated parcels, wet-bulb definition and the Td <= Tw <= T ordering, psychrometer description: standard thermodynamics, not stated on the pages read. RH definition now from the AMS Glossary (single source)."
         ]
       }
     },
@@ -1240,12 +1241,14 @@
         "sources": [
           "NAV CANADA Aviation Weather Services Guide (2017): FG is visibility under 5/8 SM, BR is 5/8 to 6 SM",
           "NWS Houston/Galveston fog guide: fog types, wind speeds, spread rules, dissipation, ice fog",
-          "MANOBS 8th ed. Am. 3 (full PDF): 6.7 and 6.8 (fog, mist, freezing fog, MIFG, BCFG, PRFG), 13.2.9 (obstructions to vision)"
+          "MANOBS 8th ed. Am. 3 (full PDF): 6.7 and 6.8 (fog, mist, freezing fog, MIFG, BCFG, PRFG), 13.2.9 (obstructions to vision)",
+          "NWS Houston/Galveston fog guide (re-read): radiation fog needs light winds, about 2 to 7 kt thickens it; advection about 3 to 9 kt, above 9 kt lifts to stratus; upslope above 10 to 12 kt gives stratus; dew-point spread under 5 F; frontal, steam and ice fog types"
         ],
         "unverified": [
           "Sea fog being frequent on Nova Scotia's south shore and the Grand Banks in spring and summer, and radiation fog being common inland in fall: climatology, not checked here.",
           "The earlier 15 kt wind figure for converting radiation fog to stratus was removed (no source).",
-          "Description of each fog type is from a US training guide, not a Canadian publication."
+          "Description of each fog type is from a US training guide, not a Canadian publication.",
+          "Fog types, wind ranges and the spread rule come from one NWS Houston guide (single source, US Gulf focus). The ice-fog threshold (-29 C and colder) and steam and frontal fog types are in that guide but not in the lesson text."
         ]
       }
     },

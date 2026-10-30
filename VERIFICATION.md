@@ -15,15 +15,15 @@ Study aid only. Crown-copyright and NAV CANADA text is paraphrased and linked, n
 ## Cross-check rule (from 2026-10-27)
 Every new claim needs two independent sources or is flagged single-source. New claims are compared with the lesson text and the sources already logged. Conflicts are recorded below, and the more authoritative source wins (Canadian government over US government over university or media).
 
-## Status (as of 2026-10-27; 902 questions)
+## Status (as of 2026-10-27; 904 questions)
 
 | Domain | Topics | Questions | Status | Last checked |
 |--------|--------|-----------|--------|--------------|
 | Observations (obs) | 5 | 91 | Surface observing checked against MANOBS. Radar and satellite re-checked against ECCC, NOAA, NWS and the NAV CANADA guide | 2026-10-27 |
 | Codes (codes) | 10 | 264 | METAR, TAF, SYNOP (MANOBS Part B), GFA/SIGMET/AIRMET/FB, MANAIR Ch. 7 and 8, NAV CANADA product tables, ECCC analysis page. Station model from NOAA only | 2026-10-27 |
 | Severe weather (severe) | 6 | 141 | Turbulence, wind shear, ECCC alerts and Impact Guides checked against AIM, MANAIR and ECCC pages. 2026-10-30: supercell, CAPE, lightning, microburst, winter precipitation profiles, wind chill, Richardson, nocturnal jet cross-checked. Rest first pass | 2026-10-30 |
-| Moisture (moisture) | 6 | 112 | Icing topic checked against AIM, MANAIR and AIR. Cloud genera checked against the WMO Cloud Atlas 2026-10-30; WBF process added 2026-10-27. Others first pass | 2026-10-30 |
-| Applied (applied) | 5 | 59 | Aviation minima, flight categories and marine topics updated; others first pass | 2026-10-27 |
+| Moisture (moisture) | 6 | 112 | Icing topic checked against AIM, MANAIR and AIR. Cloud genera checked against the WMO Cloud Atlas 2026-10-30; WBF process added 2026-10-27. RH definition (AMS) and fog guide re-read 2026-10-30. Others first pass | 2026-10-30 |
+| Applied (applied) | 5 | 61 | 2026-10-30: marine warnings and freezing spray (ECCC), waves (NDBC), pressure and density altitude (FAA), CAR 602.122 (archived). Climatology, military and briefing still unsourced | 2026-10-30 |
 | Foundations (foundations) | 5 | 58 | Partly hardened 2026-10-27: layers (UCAR, SKYbrary), SALR (Haby), pressure-level heights (Navy table). Rest first pass | 2026-10-27 |
 | Wind (wind) | 6 | 68 | Partly hardened 2026-10-27: jet streak quadrants (4 sources), gradient wind (2), boundary layer depth (AMS), Ferrel/ITCZ, anabatic. Rest first pass | 2026-10-26 |
 | Air masses (airmass) | 4 | 49 | Partly hardened 2026-10-27: front passage (2 sources), modification stability (2), ana/kata and frontal inversion (AMS), barotropic (AMS), occlusion symbol (WPC). Rest first pass | 2026-10-27 |
@@ -148,6 +148,11 @@ Every new claim needs two independent sources or is flagged single-source. New c
 | Wind chill | Thresholds only | Joint US/Canada index (2001/2002); formula added; metric final coefficient not fully read | NWS, McGill copy of Canadian chart |
 | Richardson number | Textbook value 0.25 | 0.25 usual, range 0.2 to 1.0, hysteresis | AMS Glossary |
 | Nocturnal low-level jet | A few hundred metres, early morning | 500 to 1,000 m, peak about 2 a.m., US Great Plains study; Atlantic Canada not sourced | University of Oklahoma text |
+| Marine strong wind warning | Threshold unconfirmed | 20 to 33 kt, gusts excluded; not issued offshore or for most of Newfoundland and Labrador | ECCC marine warning program ch. 1 |
+| Freezing spray | Conditions only | ECCC warning at 0.7 cm/hr or faster; NWS heavy at 2 cm/hr (differs) | ECCC ch. 2, NWS glossary |
+| Swell and Hs | Standard teaching | Swell is not locally generated, longer period; Hs is mean of highest third; square-root rule | NOAA NDBC |
+| Density altitude | Humid days raise density altitude; propeller efficiency | Humidity not a major factor in the computation; add 10% takeoff distance if humid; propeller removed | FAA P-8740-02 |
+| Relative humidity | Formula only | AMS definition over plane surface of pure water | AMS Glossary |
 | TAF lesson | BECMG "1 to 4 h"; TEMPO and PROB do not carry wind | BECMG normally 2 h or less, never over 4 h; TEMPO and PROB may carry wind; issue, update and amendment thresholds rewritten | MANAIR Ch. 2 |
 | GFA, SIGMET, AIRMET, FB | No topic | New topic: GFA issue times and domains, SIGMET (WS 4 h, WV and WC 6 h), AIRMET (4 h, to FL240, only if not in GFA), FB code rules | MANAIR Ch. 3 to 6 |
 | Front symbols (surface/GFA) | "Occluded usually purple" | Removed. GFA has no occluded symbol. Colours confirmed: cold blue triangles, warm red semicircles, stationary alternating | MANAIR Appendix C.2 |
