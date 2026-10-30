@@ -1,1775 +1,1775 @@
 {
-  "title": "3. Moisture, Clouds and Precipitation",
-  "topics": [
+ "title": "3. Moisture, Clouds and Precipitation",
+ "topics": [
+  {
+   "title": "Humidity measures (dew point, RH, mixing ratio)",
+   "lesson": [
+    "Several quantities describe how much water vapour is in the air. Knowing which ones change with temperature and which do not is a favourite exam question.",
     {
-      "title": "Humidity measures (dew point, RH, mixing ratio)",
-      "lesson": [
-        "Several quantities describe how much water vapour is in the air. Knowing which ones change with temperature and which do not is a favourite exam question.",
-        {
-          "list": [
-            "Vapour pressure (e): the part of total pressure due to water vapour.",
-            "Saturation vapour pressure (es): the maximum vapour pressure possible at a given temperature. It rises quickly with temperature, roughly 7% per 1 C.",
-            "Relative humidity (RH) = e / es x 100%: the ratio of vapour pressure to saturation vapour pressure with respect to a plane surface of pure water (AMS Glossary). It can also be computed as mixing ratio divided by saturation mixing ratio, with nearly identical results. It depends on temperature, so it changes when air is warmed or cooled even if no moisture is added.",
-            "Dew point (Td): temperature at which the air would be saturated. It measures the actual moisture content and is not affected by simple warming or cooling.",
-            "Mixing ratio (w) and specific humidity (q): mass of vapour per mass of dry air (or of total air), in g/kg. Conserved in an unsaturated rising or sinking parcel.",
-            "Wet-bulb temperature (Tw): lowest temperature reachable by evaporating water into the air. Always between the dew point and air temperature."
-          ]
-        },
-        {
-          "formula": "Td <= Tw <= T     (all equal when RH = 100%)"
-        },
-        "A sling or aspirated psychrometer reads dry-bulb and wet-bulb temperatures, from which dew point and RH are found.",
-        {
-          "h": "Frost point"
-        },
-        "Below 0 C the frost point (saturation with respect to ice) is slightly higher than the dew point. This matters for frost and rime formation.",
-        {
-          "note": "Remember: dew point tells you how much moisture there is. RH tells you how close you are to saturation."
-        }
-      ],
-      "terms": [
-        [
-          "Mixing ratio",
-          "Mass of water vapour per unit mass of dry air, usually g/kg."
-        ],
-        [
-          "Wet-bulb temperature",
-          "Temperature a parcel reaches when cooled to saturation by evaporation."
-        ],
-        [
-          "Saturation vapour pressure",
-          "Maximum vapour pressure at a given temperature."
-        ]
-      ],
-      "questions": [
-        {
-          "q": "Which humidity measure stays constant as an unsaturated parcel rises?",
-          "c": [
-            "Mixing ratio",
-            "Relative humidity",
-            "Dew point",
-            "Vapour pressure"
-          ],
-          "a": 0,
-          "e": "Mixing ratio is a mass ratio and is conserved if no vapour is added or removed. RH, vapour pressure and dew point all change with pressure or temperature."
-        },
-        {
-          "q": "What is the correct ordering of temperature, wet-bulb and dew point for unsaturated air?",
-          "c": [
-            "T > Tw > Td",
-            "Td > Tw > T",
-            "Tw > T > Td",
-            "T = Tw = Td"
-          ],
-          "a": 0,
-          "e": "Air temperature is highest, dew point lowest, wet-bulb in between. They are equal only at saturation."
-        },
-        {
-          "q": "How does saturation vapour pressure change with temperature?",
-          "c": [
-            "It increases rapidly (about 7% per C)",
-            "It decreases",
-            "It stays constant",
-            "It changes only with pressure"
-          ],
-          "a": 0,
-          "e": "Warmer air can hold much more water vapour; the relationship is roughly exponential."
-        },
-        {
-          "q": "What is true when relative humidity is 100%?",
-          "c": [
-            "Temperature equals dew point",
-            "Temperature is 0 C",
-            "Dew point is 0 C",
-            "Wet-bulb is below dew point"
-          ],
-          "a": 0,
-          "e": "Saturation means the air temperature has reached the dew point."
-        },
-        {
-          "q": "A room is heated with no moisture added. What happens to the dew point and RH?",
-          "c": [
-            "Dew point stays the same, RH falls",
-            "Dew point rises, RH rises",
-            "Dew point falls, RH rises",
-            "Both stay the same"
-          ],
-          "a": 0,
-          "e": "Dew point reflects moisture content (unchanged). Warmer air has a higher es, so RH drops."
-        },
-        {
-          "q": "The dry-bulb temperature is 12 C and the wet-bulb is 8 C. Where is the dew point most likely?",
-          "c": [
-            "Below 8 C",
-            "Between 8 and 12 C",
-            "Above 12 C",
-            "Exactly 8 C"
-          ],
-          "a": 0,
-          "e": "For unsaturated air Td < Tw < T."
-        },
-        {
-          "q": "What are the usual units of mixing ratio?",
-          "c": [
-            "Grams of vapour per kilogram of dry air",
-            "Hectopascals of vapour pressure per kilometre of height",
-            "Percent of the saturation value at the same temperature",
-            "Degrees Celsius of dew point depression for each metre"
-          ],
-          "a": 0,
-          "e": "Mixing ratio is the mass of vapour per mass of dry air, typically g/kg."
-        },
-        {
-          "q": "Air is warmed at constant pressure with no moisture added. What happens to the vapour pressure?",
-          "c": [
-            "It stays constant",
-            "It increases",
-            "It decreases",
-            "It doubles"
-          ],
-          "a": 0,
-          "e": "Vapour pressure depends on moisture content, not on temperature."
-        },
-        {
-          "q": "Saturated air is cooled further. What happens?",
-          "c": [
-            "Excess vapour condenses into liquid",
-            "Relative humidity drops below 100%",
-            "The dew point rises above the temperature",
-            "Evaporation exceeds condensation"
-          ],
-          "a": 0,
-          "e": "Cooling saturated air removes capacity, so the excess vapour condenses."
-        },
-        {
-          "q": "Which instrument gives dry-bulb and wet-bulb temperatures?",
-          "c": [
-            "A psychrometer",
-            "A barograph",
-            "An anemometer",
-            "A ceilometer"
-          ],
-          "a": 0,
-          "e": "A psychrometer has two thermometers, one with a wetted wick."
-        },
-        {
-          "q": "Below 0 C, how does the frost point compare with the dew point?",
-          "c": [
-            "Slightly higher",
-            "Slightly lower",
-            "Equal",
-            "Far lower"
-          ],
-          "a": 0,
-          "e": "Saturation over ice occurs at a slightly higher temperature than over supercooled water."
-        }
-      ],
-      "verified": {
-        "date": "2026-10-26",
-        "sources": [
-          "Penn State METEO 300: saturation vapour pressure rises about 7% per 1 K; dew point definition",
-          "UCSD SIO 217a ch. 6: dew point and frost point as saturation by isobaric cooling",
-          "NWS cloud and precipitation training notes: saturation vapour pressure over ice is less than over liquid water (so the frost point is higher than the dew point below 0 C: derived)",
-          "AMS Glossary, Relative humidity: ratio of vapour pressure to saturation vapour pressure over a plane surface of pure water; also mixing ratio over saturation mixing ratio"
-        ],
-        "unverified": [
-          "Mixing ratio and specific humidity being conserved in unsaturated parcels, wet-bulb definition and the Td <= Tw <= T ordering, psychrometer description: standard thermodynamics, not stated on the pages read. RH definition now from the AMS Glossary (single source)."
-        ]
-      }
+     "list": [
+      "Vapour pressure (e): the part of total pressure due to water vapour.",
+      "Saturation vapour pressure (es): the maximum vapour pressure possible at a given temperature. It rises quickly with temperature, roughly 7% per 1 C.",
+      "Relative humidity (RH) = e / es x 100%: the ratio of vapour pressure to saturation vapour pressure with respect to a plane surface of pure water (AMS Glossary). It can also be computed as mixing ratio divided by saturation mixing ratio, with nearly identical results. It depends on temperature, so it changes when air is warmed or cooled even if no moisture is added.",
+      "Dew point (Td): temperature at which the air would be saturated. It measures the actual moisture content and is not affected by simple warming or cooling.",
+      "Mixing ratio (w) and specific humidity (q): mass of vapour per mass of dry air (or of total air), in g/kg. Conserved in an unsaturated rising or sinking parcel.",
+      "Wet-bulb temperature (Tw): lowest temperature reachable by evaporating water into the air. Always between the dew point and air temperature."
+     ]
     },
     {
-      "title": "Condensation, saturation and lifting mechanisms",
-      "lesson": [
-        "Cloud forms when air becomes saturated and water vapour condenses onto tiny particles.",
-        {
-          "h": "Getting to saturation"
-        },
-        {
-          "list": [
-            "Cooling is the usual route: adiabatic cooling by lifting (most important), radiational cooling at night, advection over a cold surface, mixing of two nearly saturated air masses.",
-            "Adding moisture: evaporation from rain falling into dry air, air moving over warm water or wet ground."
-          ]
-        },
-        {
-          "h": "Condensation nuclei"
-        },
-        "Pure vapour does not condense easily. Cloud condensation nuclei (CCN) such as sea salt, dust and smoke provide surfaces. Salt-rich maritime air has plenty, which is why sea fog forms readily on the coast.",
-        "Cloud droplets can stay liquid well below 0 C, as low as -40 C (NWS). This supercooled water is the root of aircraft icing.",
-        {
-          "h": "Four lifting mechanisms"
-        },
-        {
-          "list": [
-            "Convection: surface heating produces thermals and cumulus.",
-            "Orographic: air forced up terrain.",
-            "Frontal: warm air rising over or being pushed up by cold air.",
-            "Convergence: horizontal inflow forces air upward, for example around a low or along a sea breeze front."
-          ]
-        },
-        {
-          "note": "Subsidence (sinking air) is not a lifting mechanism. It warms the air, lowers RH, and dissipates cloud."
-        }
-      ],
-      "terms": [
-        [
-          "CCN",
-          "Cloud condensation nuclei: tiny particles on which droplets form."
-        ],
-        [
-          "Supercooled water",
-          "Liquid water at temperatures below 0 C."
-        ],
-        [
-          "Orographic lifting",
-          "Forced ascent over terrain."
-        ]
-      ],
-      "questions": [
-        {
-          "q": "Which of the following is NOT a lifting mechanism?",
-          "c": [
-            "Subsidence",
-            "Convection",
-            "Orographic lift",
-            "Frontal lift"
-          ],
-          "a": 0,
-          "e": "Subsidence is sinking motion, which warms and dries the air."
-        },
-        {
-          "q": "What role do condensation nuclei play?",
-          "c": [
-            "They give water vapour surfaces on which to condense",
-            "They warm the air so that its saturation point is lowered",
-            "They absorb moisture from the cloud and so remove it from the air",
-            "They lower the pressure inside droplets so that droplets evaporate"
-          ],
-          "a": 0,
-          "e": "Particles such as salt and dust allow droplets to form at or near saturation."
-        },
-        {
-          "q": "What is the most important way air is cooled to saturation in cloud formation?",
-          "c": [
-            "Lifting and adiabatic expansion",
-            "Contact with cold ground",
-            "Evaporation of rain",
-            "Radiation from cloud tops"
-          ],
-          "a": 0,
-          "e": "Lifting leads to expansion and cooling, producing most clouds and precipitation."
-        },
-        {
-          "q": "Can liquid cloud droplets exist at temperatures below 0 C?",
-          "c": [
-            "Yes, supercooled droplets can persist to about -40 C",
-            "No, cloud droplets always freeze the moment they pass 0 C",
-            "Yes, but only within a degree or two of the freezing point",
-            "No, liquid water can exist only above 0 C at any height"
-          ],
-          "a": 0,
-          "e": "Supercooled water is common in clouds and is the source of aircraft icing."
-        },
-        {
-          "q": "Convergence as a lifting mechanism occurs when:",
-          "c": [
-            "Horizontal inflow forces air upward",
-            "Air descends the lee slope",
-            "Air is cooled by radiation",
-            "High pressure builds overhead"
-          ],
-          "a": 0,
-          "e": "Converging air has nowhere to go but up."
-        },
-        {
-          "q": "Orographic lifting is air forced to rise over:",
-          "c": [
-            "Hills, mountains or other high terrain",
-            "A sea breeze front",
-            "A layer of colder air at a front",
-            "A region of convergent winds"
-          ],
-          "a": 0,
-          "e": "Orographic means caused by terrain."
-        },
-        {
-          "q": "Which of these cools air to saturation WITHOUT lifting?",
-          "c": [
-            "Radiational cooling at night",
-            "Adiabatic expansion as the air rises over a hill or mountain",
-            "Frontal ascent over a wedge of colder air near the surface",
-            "Orographic ascent along the windward slope of a mountain range"
-          ],
-          "a": 0,
-          "e": "Radiation removes heat from the surface layer without any vertical motion."
-        },
-        {
-          "q": "Why are sea salt particles important in cloud formation?",
-          "c": [
-            "They act as cloud condensation nuclei",
-            "They prevent condensation by keeping the air supersaturated",
-            "They absorb sunlight and warm the surrounding cloud layer",
-            "They cool the sea surface and lower the dew point of the air"
-          ],
-          "a": 0,
-          "e": "Salt particles are hygroscopic and attract water vapour."
-        },
-        {
-          "q": "Convergence of surface winds typically leads to:",
-          "c": [
-            "Upward motion",
-            "Downward motion",
-            "No vertical motion",
-            "Surface cooling only"
-          ],
-          "a": 0,
-          "e": "Mass that flows in must rise."
-        },
-        {
-          "q": "Which lifting mechanism comes from daytime heating of the ground?",
-          "c": [
-            "Convection (thermals)",
-            "Frontal lifting",
-            "Orographic lifting",
-            "Subsidence"
-          ],
-          "a": 0,
-          "e": "Heated ground warms the air above it, which rises as thermals."
-        },
-        {
-          "q": "Why can mixing two nearly saturated air masses produce cloud?",
-          "c": [
-            "The saturation curve is non-linear, so the mixture can exceed saturation",
-            "Mixing always releases latent heat and warms the mixture past saturation",
-            "Mixing lowers the pressure of both parcels below the saturation value",
-            "Mixing removes condensation nuclei so drops grow faster by collision"
-          ],
-          "a": 0,
-          "e": "Because saturation vapour pressure is a curve, the mix can be supersaturated."
-        }
-      ],
-      "verified": {
-        "date": "2026-10-26",
-        "sources": [
-          "NWS cloud and precipitation training notes: liquid water can persist as low as -40 C"
-        ],
-        "unverified": [
-          "Cloud condensation nuclei types (sea salt, dust, smoke) and sea salt making sea fog form readily, the four lifting mechanisms, mixing of nearly saturated air, and subsidence not lifting air: standard teaching, not checked on a Canadian publication.",
-          "The earlier claim that supercooled water is most common between 0 and -20 C was removed (no source)."
-        ]
-      }
+     "formula": "Td <= Tw <= T     (all equal when RH = 100%)"
     },
+    "A sling or aspirated psychrometer reads dry-bulb and wet-bulb temperatures, from which dew point and RH are found.",
     {
-      "title": "Cloud classification and genera",
-      "lesson": [
-        "Clouds are classified by form (stratiform, cumuliform, cirriform) and by height of the base. Ten basic types (genera) cover all clouds. Heights below are the WMO temperate-region levels, which are the heights where each genus occurs most often.",
-        {
-          "h": "High (temperate regions: 5 to 13 km, 16,500 to 45,000 ft)"
-        },
-        {
-          "list": [
-            "Cirrus (Ci): detached white, delicate filaments, patches or narrow bands with a fibrous (hair-like) appearance or silky sheen (WMO). Made of ice crystals (standard teaching; the WMO definition page does not state composition).",
-            "Cirrocumulus (Cc): small white ripples or grains.",
-            "Cirrostratus (Cs): transparent, whitish veil of fibrous or smooth appearance, totally or partly covering the sky, often producing halo phenomena (WMO). Often the first sign of an approaching warm front (standard teaching)."
-          ]
-        },
-        {
-          "h": "Middle (temperate regions: 2 to 7 km, 6,500 to 23,000 ft)"
-        },
-        {
-          "list": [
-            "Altocumulus (Ac): patchy layers or globules.",
-            "Altostratus (As): greyish or bluish sheet of striated, fibrous or uniform appearance. Thinner parts show the sun faintly, as through ground glass. It does not show halo phenomena (WMO). Precipitation may follow (standard teaching)."
-          ]
-        },
-        {
-          "h": "Low (surface to 2 km, 6,500 ft)"
-        },
-        {
-          "list": [
-            "Stratus (St): generally grey layer with a fairly uniform base, which may give drizzle, snow or snow grains. When the sun shows through, its outline is clearly discernible. No halo except possibly at very low temperatures (WMO). Lifted fog: standard teaching, not stated by WMO.",
-            "Stratocumulus (Sc): grey or whitish patch, sheet or layer that almost always has dark parts, made of tessellations, rounded masses or rolls that are non-fibrous (except for virga) (WMO). Common over the Atlantic (standard teaching).",
-            "Nimbostratus (Ns): grey cloud layer, often dark, made diffuse by more or less continuously falling rain or snow, thick enough throughout to blot out the sun (WMO). WMO places it in the middle level (it almost always occurs there but usually extends into the other two). NAV CANADA's guide lists it with low cloud. MANOBS Table 7-1 gives its base as near the surface to 6,500 ft. Composition (WMO): water droplets (sometimes supercooled) and raindrops, snow crystals and snowflakes, or a mixture.",
-            "Cumulus (Cu): detached clouds, generally dense with sharp outlines, developing vertically as rising mounds, domes or towers. The bulging top often resembles a cauliflower and the base is relatively dark and nearly horizontal (WMO).",
-            "Cumulonimbus (Cb): heavy, dense cloud of considerable vertical extent, in the form of a mountain or huge towers. The upper part is usually smooth, fibrous or striated, nearly always flattened, and often spreads into an anvil or vast plume. The base is often very dark, with low ragged cloud beneath, and precipitation sometimes falls as virga (WMO). WMO lists it with the low genera because its base is usually low, but its tops often reach the middle and high levels. Thunder, hail and the tropopause cap are standard teaching, not on the WMO page."
-          ]
-        },
-        {
-          "h": "Approximate cloud base heights (MANOBS Table 7-1)"
-        },
-        {
-          "list": [
-            "Cirrus, cirrocumulus, cirrostratus: 20,000 to 39,000 ft (cirrus averages about 29,000 ft in summer and 26,000 ft in winter).",
-            "Altocumulus, altocumulus castellanus, altostratus: above 6,500 to 20,000 ft (altostratus averages about 8,000 ft when no sun or moon is visible).",
-            "Nimbostratus: near the surface to 6,500 ft.",
-            "Stratocumulus: 500 to 6,500 ft.",
-            "Stratus: near the surface to 1,500 ft, usually below 1,000 ft.",
-            "Cumulus, towering cumulus, cumulonimbus: usually 1,500 to 6,500 ft, up to 10,000 ft or higher. The highest bases occur in summer in very dry air. Cirriform cloud in the high Arctic may be at very low levels."
-          ]
-        },
-        {
-          "note": "Cirrus to cirrostratus to altostratus to nimbostratus is the classic sequence ahead of a warm front."
-        }
-      ],
-      "terms": [
-        [
-          "Stratiform",
-          "Layered cloud."
-        ],
-        [
-          "Cumuliform",
-          "Heaped, vertically developed cloud."
-        ],
-        [
-          "Anvil",
-          "Flat spreading top of a cumulonimbus, usually of ice crystals."
-        ]
-      ],
-      "questions": [
-        {
-          "q": "Which cloud is associated with thunderstorms, hail and a spreading anvil?",
-          "c": [
-            "Cumulonimbus",
-            "Nimbostratus",
-            "Altostratus",
-            "Stratocumulus"
-          ],
-          "a": 0,
-          "e": "Cumulonimbus is the deep convective cloud that produces thunderstorms."
-        },
-        {
-          "q": "A halo around the sun is a sign of which cloud?",
-          "c": [
-            "Cirrostratus",
-            "Altostratus",
-            "Cumulus",
-            "Stratus"
-          ],
-          "a": 0,
-          "e": "Ice crystals in cirrostratus refract light to form halos."
-        },
-        {
-          "q": "Which cloud produces steady, widespread rain or snow from a thick grey layer?",
-          "c": [
-            "Nimbostratus",
-            "Cirrus",
-            "Fair-weather cumulus",
-            "Altocumulus"
-          ],
-          "a": 0,
-          "e": "Nimbostratus is a thick layer cloud associated with continuous precipitation."
-        },
-        {
-          "q": "What is the typical cloud sequence ahead of an approaching warm front?",
-          "c": [
-            "Cirrus, cirrostratus, altostratus, nimbostratus",
-            "Cumulus, cumulonimbus, stratus, cirrus",
-            "Stratus, cirrus, cumulus, altostratus",
-            "Nimbostratus, altostratus, cirrostratus, cirrus"
-          ],
-          "a": 0,
-          "e": "Cloud thickens and lowers as the warm front nears: Ci, Cs, As, Ns."
-        },
-        {
-          "q": "A grey layer cloud lets the sun appear as a dim, watery disc without a halo. What cloud is it?",
-          "c": [
-            "Altostratus",
-            "Cirrostratus",
-            "Nimbostratus",
-            "Cumulus"
-          ],
-          "a": 0,
-          "e": "Altostratus is thick enough to dim the sun but not to hide it completely, and it lacks the halo of cirrostratus."
-        },
-        {
-          "q": "Which of these clouds is made mostly of ice crystals?",
-          "c": [
-            "Cirrus",
-            "Stratus",
-            "Stratocumulus",
-            "Fair-weather cumulus"
-          ],
-          "a": 0,
-          "e": "Cirrus forms at very cold levels, where cloud is made of ice."
-        },
-        {
-          "q": "What is cumulus congestus?",
-          "c": [
-            "A towering cumulus that can grow into cumulonimbus",
-            "A thin, high cloud made of ice crystals that produces halos",
-            "A layer of low stratus formed by cooling in light winds",
-            "A lens-shaped cloud that forms in the crest of a mountain wave"
-          ],
-          "a": 0,
-          "e": "Congestus is a vigorous growing cumulus with great vertical depth."
-        },
-        {
-          "q": "Which cloud commonly produces drizzle?",
-          "c": [
-            "Stratus",
-            "Cirrus",
-            "Altocumulus",
-            "Fair-weather cumulus"
-          ],
-          "a": 0,
-          "e": "Stratus is a low, uniform layer of fine droplets."
-        },
-        {
-          "q": "Altostratus belongs to which level?",
-          "c": [
-            "Middle level",
-            "High level",
-            "Low level",
-            "It is not classified by level"
-          ],
-          "a": 0,
-          "e": "The 'alto' prefix means middle level."
-        },
-        {
-          "q": "Which cloud has a smooth lens shape and marks mountain waves?",
-          "c": [
-            "Altocumulus lenticularis",
-            "Cirrostratus",
-            "Nimbostratus",
-            "Cumulonimbus calvus"
-          ],
-          "a": 0,
-          "e": "Lenticular clouds form at the crests of stationary waves."
-        },
-        {
-          "q": "Which cloud type is common over cold Atlantic water in a moist, stable onshore flow?",
-          "c": [
-            "Stratocumulus or stratus",
-            "Cumulonimbus, because the cold sea heats the air above it",
-            "Cirrus only, because the stable air stops all low cloud forming",
-            "Altocumulus lenticularis, since the sea acts like a mountain range"
-          ],
-          "a": 0,
-          "e": "Stable moist flow over cool water produces low layer cloud."
-        },
-        {
-          "q": "What is the WMO temperate-region height range for high cloud?",
-          "c": [
-            "5 to 13 km (16,500 to 45,000 ft)",
-            "2 to 7 km (6,500 to 23,000 ft)",
-            "Surface to 2 km (0 to 6,500 ft)",
-            "10 to 20 km (33,000 to 65,000 ft)"
-          ],
-          "a": 0,
-          "e": "WMO Cloud Atlas: high 5-13 km, middle 2-7 km, low surface to 2 km in temperate regions."
-        },
-        {
-          "q": "According to MANOBS, stratus bases are usually below:",
-          "c": [
-            "1,000 ft",
-            "5,000 ft",
-            "10,000 ft",
-            "500 ft"
-          ],
-          "a": 0,
-          "e": "MANOBS Table 7-1: stratus base from near the surface to 1,500 ft, usually below 1,000 ft."
-        },
-        {
-          "q": "MANOBS gives the base of nimbostratus as:",
-          "c": [
-            "Near the surface to 6,500 ft",
-            "20,000 to 39,000 ft",
-            "Above 6,500 to 20,000 ft",
-            "1,500 to 6,500 ft only"
-          ],
-          "a": 0,
-          "e": "MANOBS Table 7-1."
-        },
-        {
-          "q": "MANOBS gives the base of cirrus, cirrocumulus and cirrostratus as:",
-          "c": [
-            "20,000 to 39,000 ft",
-            "6,500 to 20,000 ft",
-            "1,500 to 6,500 ft",
-            "Near the surface to 6,500 ft"
-          ],
-          "a": 0,
-          "e": "MANOBS Table 7-1."
-        },
-        {
-          "q": "Which statement matches the WMO Cloud Atlas on halo phenomena?",
-          "c": [
-            "Cirrostratus often produces halos; altostratus does not",
-            "Altostratus often produces halos; cirrostratus does not",
-            "Both always produce halos",
-            "Neither can produce halos"
-          ],
-          "a": 0,
-          "e": "WMO: cirrostratus is 'often producing halo phenomena'; altostratus 'does not show halo phenomena'."
-        },
-        {
-          "q": "What is nimbostratus made of, according to the WMO Cloud Atlas?",
-          "c": [
-            "Water droplets (sometimes supercooled), raindrops, snow crystals and snowflakes, or a mixture",
-            "Only supercooled water droplets",
-            "Only ice crystals",
-            "Only dry dust"
-          ],
-          "a": 0,
-          "e": "WMO physical constitution of nimbostratus: liquid and solid particles, possibly a mixture."
-        },
-        {
-          "q": "At which level does the WMO Cloud Atlas place the cumulonimbus base?",
-          "c": [
-            "Low, though tops often reach the middle and high levels",
-            "High",
-            "Middle only",
-            "It has no level"
-          ],
-          "a": 0,
-          "e": "WMO Table 6 lists Cb with the low genera; its tops often reach the middle and high levels."
-        }
-      ],
-      "verified": {
-        "date": "2026-10-27",
-        "sources": [
-          "WMO International Cloud Atlas, Useful concepts: ten genera and level heights for polar, temperate and tropical regions",
-          "NAV CANADA Aviation Weather Services Guide (2017): cloud types grouped by level (Ns listed with low)",
-          "MANOBS 8th ed. Am. 3 (full PDF): Table 7-1 (cloud definitions and base heights), Table 7-3 (abbreviations)",
-          "WMO International Cloud Atlas (cloudatlas.wmo.int), definition pages for cirrus, cirrostratus, altostratus, stratus, stratocumulus, nimbostratus (including physical constitution), cumulus and cumulonimbus; level table (Table 6); cirrostratus vs altostratus comparison page"
-        ],
-        "unverified": [
-          "Cirrocumulus ('small white ripples or grains') and altocumulus ('patchy layers or globules') were not checked against their WMO definition pages this pass.",
-          "Cirrus being made of ice crystals, thunder and hail with Cb, 'fog that has lifted' for stratus and the warm front cloud sequence: standard teaching, not on the WMO definition pages read.",
-          "WMO cloud definitions are quoted via fetch summaries, not read as full pages. The WMO levels (Table 6) were read earlier from the same site and agree with the lesson."
-        ]
-      }
+     "h": "Frost point"
     },
+    "Below 0 C the frost point (saturation with respect to ice) is slightly higher than the dew point. This matters for frost and rime formation.",
     {
-      "title": "Precipitation processes (warm rain, ice crystal)",
-      "lesson": [
-        "Cloud droplets (about 0.02 mm across) are far too small to fall. A typical raindrop is about 2 mm across, roughly a million times the volume, so droplets must grow enormously by one of two processes (NWS).",
-        {
-          "h": "Collision-coalescence (warm rain)"
-        },
-        "In clouds warmer than 0 C, larger droplets fall faster, collide with smaller ones, and merge. NWS: at least a few droplets must be as large as 20 microns. Needs a deep cloud with strong updraft and lots of liquid water. Dominant in the tropics and in warm maritime clouds.",
-        {
-          "h": "Wegener-Bergeron-Findeisen (WBF) process"
-        },
-        "Mixed-phase cloud: supercooled liquid droplets and ice crystals exist together below 0 C. The WBF process is how the ice crystals grow at the droplets' expense.",
-        {
-          "list": [
-            "1. Saturation vapour pressure over ice is lower than over liquid water at the same temperature.",
-            "2. Air that is just saturated for water is therefore supersaturated for ice.",
-            "3. Ice crystals grow by deposition (vapour to ice, no liquid stage).",
-            "4. Vapour is used up, the air drops below water saturation, and the supercooled droplets evaporate.",
-            "5. Vapour keeps moving from droplets to crystals. The crystals grow large enough to fall as snow (or melt into rain on the way down).",
-            "Result: cloud glaciates and precipitates. Needs far more droplets than ice crystals so each crystal can grow big."
-          ]
-        },
-        "Pure water droplets freeze only near -40 C, but ice nuclei start freezing some droplets at warmer temperatures (most natural nuclei activate near -10 C). Supercooled droplets therefore persist in clouds well below 0 C, commonly from 0 C to about -20 C or colder. That is also why aircraft icing (supercooled liquid) occurs in clouds colder than freezing.",
-        "Origin: Wegener (1911) proposed ice growth at the expense of liquid water, Bergeron (1922, presented 1933) applied it to clouds, Findeisen (late 1930s) refined it.",
-        {
-          "h": "Numbers to know"
-        },
-        {
-          "list": [
-            "Ice crystal growth by this process peaks at about -12 C (AMS Glossary).",
-            "Air just saturated for water is this relative humidity with respect to ice: 0 C 100%, -5 C 105%, -10 C 110%, -15 C 115%, -20 C 121%. The gap widens as it gets colder.",
-            "Droplets must grow about a million times in volume to become raindrops."
-          ]
-        },
-        {
-          "note": "Memory line: ice has lower vapour pressure, so vapour moves to the ice. Crystals grow, droplets shrink."
-        },
-        {
-          "h": "Precipitation types"
-        },
-        {
-          "list": [
-            "Rain, drizzle (drops smaller than 0.5 mm), snow, graupel (rimed snow pellets).",
-            "Hail: layered ice from strong cumulonimbus updrafts, with diameters over 5 mm (NWS). Graupel (snow pellets) is under 5 mm.",
-            "Ice pellets (sleet): snow partly melts in a warm layer aloft, then refreezes in the cold air below (NWS).",
-            "Freezing rain: supercooled raindrops freeze on contact. It needs a deep warm layer aloft over a shallow below-freezing layer at the ground (NWS). Very hazardous."
-          ]
-        },
-        {
-          "h": "Precipitation types (MANOBS glossary 13.2.13 to 13.2.15)"
-        },
-        {
-          "list": [
-            "Drizzle: fine drops under 0.5 mm; rain: drops larger than 0.5 mm, or smaller widely scattered drops.",
-            "Freezing rain and freezing drizzle: drops that freeze on impact with the ground or objects near the surface.",
-            "Snow grains: small white opaque grains under 1 mm that do not bounce, falling in small quantity from stratus or fog, never as a shower.",
-            "Snow pellets: white opaque, brittle, about 2 to 5 mm, bounce and break up, always showery.",
-            "Ice pellets: transparent or translucent, 5 mm or less, frozen raindrops or largely melted snowflakes refrozen near the ground.",
-            "Small hail: under 5 mm, snow pellets encased in ice, always from showers of cumulonimbus. Hail: 5 to 50 mm or more, in layers of clear and translucent ice, generally in severe thunderstorms."
-          ]
-        },
-        {
-          "note": "Ice pellets mean a deep cold layer. Freezing rain means a shallow one. Both come from the same warm-layer-aloft setup."
-        }
-      ],
-      "terms": [
-        [
-          "Coalescence",
-          "Merging of colliding cloud droplets."
-        ],
-        [
-          "Wegener-Bergeron-Findeisen (WBF) process",
-          "Ice crystals grow by deposition at the expense of supercooled droplets in mixed-phase cloud, because saturation vapour pressure is lower over ice than over water. Also called the Bergeron or ice crystal process."
-        ],
-        [
-          "Supercooled water",
-          "Liquid water below 0 C."
-        ],
-        [
-          "Mixed-phase cloud",
-          "Cloud containing both supercooled liquid droplets and ice crystals."
-        ],
-        [
-          "Deposition",
-          "Water vapour changing directly to ice."
-        ],
-        [
-          "Graupel",
-          "Soft pellets formed by supercooled droplets freezing onto snow crystals."
-        ]
-      ],
-      "questions": [
-        {
-          "q": "Why does the Bergeron process work?",
-          "c": [
-            "Saturation vapour pressure over ice is lower than over liquid water",
-            "Saturation vapour pressure over ice is higher than over liquid water",
-            "Ice crystals are heavier than droplets so they collide with them more often",
-            "Supercooled droplets freeze solid as soon as they touch any ice crystal"
-          ],
-          "a": 0,
-          "e": "At the same temperature, air saturated with respect to water is supersaturated with respect to ice, so crystals grow while droplets evaporate."
-        },
-        {
-          "q": "Which process dominates precipitation formation in warm tropical clouds?",
-          "c": [
-            "Collision-coalescence",
-            "Bergeron process",
-            "Aggregation of snow",
-            "Sublimation"
-          ],
-          "a": 0,
-          "e": "Warm clouds lack ice, so droplets grow by colliding and merging."
-        },
-        {
-          "q": "Freezing rain most commonly forms when:",
-          "c": [
-            "Snow melts in a warm layer aloft and falls into a shallow sub-freezing layer at the ground",
-            "Rain falls through a deep layer of sub-freezing air and refreezes completely before landing",
-            "Hail melts in the warm air near the ground and refreezes on cold surfaces below",
-            "Strong updrafts carry raindrops above the freezing level and drop them as clear ice"
-          ],
-          "a": 0,
-          "e": "Drops are liquid when they reach the cold surface layer too briefly to refreeze, then freeze on contact."
-        },
-        {
-          "q": "What distinguishes ice pellets from freezing rain?",
-          "c": [
-            "Ice pellets form where the cold layer near the surface is deep enough to refreeze drops before landing",
-            "Ice pellets form only in thunderstorms with strong updrafts, while freezing rain forms in layer cloud",
-            "Ice pellets are raindrops that freeze on contact with the ground, unlike freezing rain, which freezes in the air",
-            "Ice pellets form when the surface temperature is above 0 C and the whole column is above freezing"
-          ],
-          "a": 0,
-          "e": "In a deeper sub-freezing layer, raindrops refreeze in the air and arrive as ice pellets."
-        },
-        {
-          "q": "Which precipitation type is associated with strong updrafts in cumulonimbus?",
-          "c": [
-            "Hail",
-            "Drizzle",
-            "Ice pellets",
-            "Light snow"
-          ],
-          "a": 0,
-          "e": "Strong updrafts keep stones aloft where they accumulate layers of ice."
-        },
-        {
-          "q": "Drizzle drops have a diameter smaller than about:",
-          "c": [
-            "0.5 mm",
-            "5 mm",
-            "0.05 mm",
-            "2 mm"
-          ],
-          "a": 0,
-          "e": "Drizzle drops are under about 0.5 mm; larger drops are rain."
-        },
-        {
-          "q": "What does hail growth require?",
-          "c": [
-            "Strong updrafts holding stones in supercooled water",
-            "Calm, stable air with a deep layer of warm, moist cloud",
-            "Warm clouds only, with no ice and no supercooled water",
-            "A fog layer at the ground with very light surface winds"
-          ],
-          "a": 0,
-          "e": "Updrafts recycle stones through supercooled water so layers of ice build up."
-        },
-        {
-          "q": "In the Bergeron process, which grow at the expense of which?",
-          "c": [
-            "Ice crystals grow at the expense of supercooled droplets",
-            "Droplets grow at the expense of ice crystals in mixed cloud",
-            "Hailstones grow at the expense of the surrounding rain drops",
-            "Fog droplets grow at the expense of the cloud base layer"
-          ],
-          "a": 0,
-          "e": "Vapour moves from droplets to the lower-pressure environment over ice."
-        },
-        {
-          "q": "What is graupel?",
-          "c": [
-            "A soft ice pellet formed by riming of snow crystals",
-            "A frozen raindrop with a clear, solid ice structure",
-            "A large hailstone that has fallen from a cumulonimbus anvil",
-            "A frost deposit that forms on cold surfaces on clear nights"
-          ],
-          "a": 0,
-          "e": "Supercooled droplets freeze onto a snow crystal and build a pellet."
-        },
-        {
-          "q": "Which precipitation falls as liquid but freezes on contact with the surface?",
-          "c": [
-            "Freezing rain",
-            "Ice pellets",
-            "Snow grains",
-            "Hail"
-          ],
-          "a": 0,
-          "e": "Freezing rain is supercooled liquid that freezes when it hits a cold surface."
-        },
-        {
-          "q": "A deep warm layer aloft above a deep cold layer near the ground typically gives:",
-          "c": [
-            "Ice pellets",
-            "Freezing rain",
-            "Heavy snow only",
-            "Rain"
-          ],
-          "a": 0,
-          "e": "A deep cold layer refreezes the drops before they land."
-        },
-        {
-          "q": "MANOBS defines hail as ice particles with a diameter of:",
-          "c": [
-            "5 mm to 50 mm or more",
-            "Under 2 mm",
-            "1 to 3 mm",
-            "Over 100 mm only"
-          ],
-          "a": 0,
-          "e": "MANOBS 13.2.14: hail 5 mm to 50 mm or sometimes more. Smaller stones are small hail."
-        },
-        {
-          "q": "Which precipitation always occurs in showers and bounces when it hits hard ground?",
-          "c": [
-            "Snow pellets",
-            "Snow grains",
-            "Drizzle",
-            "Ice crystals"
-          ],
-          "a": 0,
-          "e": "MANOBS 13.2.14: snow pellets always occur in showers, are brittle, and bounce and often break up on hard ground."
-        },
-        {
-          "q": "Snow grains are best described as:",
-          "c": [
-            "Very small opaque grains under 1 mm that do not bounce",
-            "Clear frozen raindrops of 5 mm or less",
-            "Branched star-shaped crystals",
-            "Brittle white pellets of 2 to 5 mm"
-          ],
-          "a": 0,
-          "e": "MANOBS 13.2.14: snow grains are fairly flat or elongated, generally under 1 mm, and never fall as a shower."
-        },
-        {
-          "q": "In a mixed-phase cloud, what happens to supercooled droplets under the WBF process?",
-          "c": [
-            "They evaporate while ice crystals grow",
-            "They freeze in place",
-            "They grow by collecting ice crystals",
-            "They are unaffected until 0 C"
-          ],
-          "a": 0,
-          "e": "Air is subsaturated for water but supersaturated for ice, so droplets evaporate and the vapour deposits on crystals."
-        },
-        {
-          "q": "The WBF process requires which cloud condition?",
-          "c": [
-            "Supercooled water and ice crystals together",
-            "Temperatures above 0 C",
-            "Only liquid droplets",
-            "Only ice crystals"
-          ],
-          "a": 0,
-          "e": "It is a mixed-phase process. Without both phases there is no vapour exchange."
-        },
-        {
-          "q": "What is the vapour-to-ice change with no liquid stage called?",
-          "c": [
-            "Deposition",
-            "Condensation",
-            "Sublimation",
-            "Riming"
-          ],
-          "a": 0,
-          "e": "Deposition is vapour to ice. Sublimation is the reverse (ice to vapour)."
-        },
-        {
-          "q": "The three names in the WBF process are:",
-          "c": [
-            "Wegener, Bergeron, Findeisen",
-            "Wegener, Beaufort, Fujita",
-            "Bergeron, Coriolis, Findeisen",
-            "Wegener, Bjerknes, Fahrenheit"
-          ],
-          "a": 0,
-          "e": "Wegener (1911), Bergeron (1922/1933), Findeisen (late 1930s)."
-        },
-        {
-          "q": "Why can the WBF process produce snow that reaches the ground as rain?",
-          "c": [
-            "Crystals grow aloft, then melt falling through warmer air",
-            "Droplets freeze at the surface",
-            "Ice evaporates and recondenses",
-            "It only works in warm clouds"
-          ],
-          "a": 0,
-          "e": "Most mid-latitude rain starts as ice crystals that melt on the way down."
-        },
-        {
-          "q": "Why do crystals need to be few relative to droplets?",
-          "c": [
-            "Each crystal then gets enough vapour to grow large enough to fall",
-            "Droplets would otherwise freeze solid",
-            "Crystals would melt",
-            "Too many crystals warm the cloud"
-          ],
-          "a": 0,
-          "e": "With many crystals the vapour is shared out and none grows large."
-        },
-        {
-          "q": "Which is true of saturation vapour pressure at -10 C?",
-          "c": [
-            "Lower over ice than over water",
-            "Higher over ice than over water",
-            "Equal over ice and water",
-            "Zero over ice"
-          ],
-          "a": 0,
-          "e": "This difference drives the WBF process."
-        },
-        {
-          "q": "Which precipitation process works only in clouds colder than 0 C?",
-          "c": [
-            "WBF (ice crystal) process",
-            "Collision-coalescence",
-            "Condensation",
-            "Evaporation"
-          ],
-          "a": 0,
-          "e": "Collision-coalescence is the warm-cloud process."
-        },
-        {
-          "q": "At about what temperature does ice crystal growth by the Bergeron-Findeisen process peak (AMS Glossary)?",
-          "c": [
-            "-12 C",
-            "-2 C",
-            "-30 C",
-            "-40 C"
-          ],
-          "a": 0,
-          "e": "AMS Glossary: supercooled drops are common between about 0 C and -20 C, and ice crystal growth peaks near -12 C."
-        },
-        {
-          "q": "Air saturated with respect to water at -10 C has about what relative humidity with respect to ice?",
-          "c": [
-            "110%",
-            "100%",
-            "90%",
-            "121%"
-          ],
-          "a": 0,
-          "e": "The ice supersaturation grows as temperature falls: about 105% at -5 C, 110% at -10 C, 115% at -15 C, 121% at -20 C."
-        },
-        {
-          "q": "Pure water droplets, with no nuclei, freeze only near what temperature?",
-          "c": [
-            "-40 C",
-            "-10 C",
-            "-20 C",
-            "0 C"
-          ],
-          "a": 0,
-          "e": "Without freezing nuclei, droplets stay liquid to about -40 C, so supercooled water is common in cloud."
-        }
-      ],
-      "verified": {
-        "date": "2026-10-27",
-        "sources": [
-          "NWS cloud and precipitation training notes: droplet and raindrop sizes, 20 micron threshold, Bergeron mechanism, drizzle under 0.5 mm, hail over 5 mm, graupel under 5 mm",
-          "NWS Goodland, Winter weather types: freezing rain and sleet temperature layers",
-          "MANOBS 8th ed. Am. 3 (full PDF): 6.6 and 13.2.13 to 13.2.15 (precipitation definitions)",
-          "AMS Glossary of Meteorology, Bergeron-Findeisen process: definition, Bergeron 1933 / Findeisen, supercooled drops common 0 to -20 C, ice growth peaks near -12 C",
-          "College of DuPage (Sirvatka), Collision/Coalescence; The Bergeron Process: mechanism, RH wrt ice table 0 to -20 C, freezing nuclei near -10 C, pure water freezes near -40 C",
-          "Wikipedia, Wegener-Bergeron-Findeisen process: Wegener 1911 / Bergeron 1922 attribution"
-        ],
-        "unverified": [
-          "Collision-coalescence dominating in the tropics and needing a deep cloud with strong updraft, and most mid-latitude rain starting as snow: standard teaching, not stated on the pages read.",
-          "WBF process now has two public sources (AMS Glossary, College of DuPage), fetched via summaries. Not confirmed in a Canadian publication or course text. The -12 C peak comes from the AMS page summary; the DuPage page gives no peak temperature. Aircraft-icing link and mid-latitude rain claim remain standard teaching."
-        ]
-      }
-    },
-    {
-      "title": "Fog types and formation",
-      "lesson": [
-        "Fog is cloud at ground level. In Canadian reports it is coded FG when visibility at the surface is 1/2 SM or less. Mist (BR) is a less dense obstruction, 5/8 to 6 SM (MANOBS 6.7).",
-        {
-          "h": "Types"
-        },
-        {
-          "list": [
-            "Radiation fog: clear skies, light winds, moist air, long nights. The ground cools by radiation and chills the air above to the dew point. Forms at night in valleys, burns off after sunrise. Common inland in fall.",
-            "Advection fog: warm moist air moves over a colder surface and is cooled to saturation. Sea fog is the classic case. Over Nova Scotia's south shore and the Grand Banks it is frequent in spring and summer, when warm southerly flow crosses cold ocean water. Can persist day and night.",
-            "Upslope fog: moist air forced up rising terrain cools adiabatically. NWS: upslope winds over about 10 to 12 kt usually give stratus rather than fog.",
-            "Steam fog (sea smoke): very cold air over warm water. Water evaporates into the air and condenses immediately. Seen over lakes and the ocean in winter.",
-            "Precipitation (frontal) fog: rain falling into cooler air evaporates, saturating the layer near the surface. Common ahead of warm fronts.",
-            "Ice fog: forms in extremely cold arctic air, -29 C and colder (NWS)."
-          ]
-        },
-        {
-          "h": "Forecasting clues"
-        },
-        {
-          "list": [
-            "Small temperature-dew point spread: NWS says fog forms when the spread is under 5 F (about 3 C), and sea fog is unlikely if it is over 3 C. Falling temperature also favours fog.",
-            "Light wind (about 2 to 7 kt) thickens radiation fog. A stronger breeze prevents it by mixing in drier air from aloft. Fog lifts to stratus when the lapse rate approaches dry adiabatic (NWS).",
-            "Advection fog requires a warm moist flow over a cold surface, favoured by light winds of about 3 to 9 kt (NWS)."
-          ]
-        },
-        {
-          "h": "Fog terms in METAR (MANOBS 6.7 and 6.8)"
-        },
-        {
-          "list": [
-            "Freezing fog (FZFG): fog at -0.1 to -30.0 C with visibility 1/2 SM or less. Mostly supercooled droplets that deposit rime or glaze.",
-            "Shallow fog (MIFG): low fog that does not obstruct visibility at eye level (1.5 m). Usually with clear sky or thin high cloud.",
-            "Fog patches (BCFG): fog at least 1.5 m deep covering less than 50% of the ground in view.",
-            "Fog covering part of the aerodrome (PRFG): a fog bank covering at least 50% of the ground, with the apparent visibility inside it 1/2 SM or less.",
-            "These three are 'additional phenomena' reported when the prevailing visibility is greater than 6 SM."
-          ]
-        },
-        {
-          "note": "Wind helps separate the types: about 2 to 7 kt for radiation fog and about 3 to 9 kt for advection fog."
-        }
-      ],
-      "terms": [
-        [
-          "Visibility",
-          "In Canadian observations, the greater of the distance a black object near the ground can be recognized and the distance 1,000 candela lights can be seen (MANOBS). See the Observations lesson."
-        ],
-        [
-          "Sea smoke",
-          "Steam fog over open water."
-        ],
-        [
-          "Advection",
-          "Horizontal transport of air properties by wind."
-        ]
-      ],
-      "questions": [
-        {
-          "q": "Which conditions favour radiation fog?",
-          "c": [
-            "Clear skies, light winds, moist air, long nights",
-            "Overcast skies, strong winds, dry air, short days",
-            "Warm moist air flowing over a much colder surface at speed",
-            "Cold dry air moving over relatively warm open water"
-          ],
-          "a": 0,
-          "e": "Clear skies allow strong radiational cooling; light wind prevents mixing from lifting the fog layer."
-        },
-        {
-          "q": "Fog along Nova Scotia's south shore in summer is typically:",
-          "c": [
-            "Advection (sea) fog",
-            "Radiation fog",
-            "Steam fog",
-            "Upslope fog"
-          ],
-          "a": 0,
-          "e": "Warm moist southerly flow over cold coastal water cools to saturation."
-        },
-        {
-          "q": "How does steam fog form?",
-          "c": [
-            "Cold air passes over relatively warm water",
-            "Warm air passes over cold water",
-            "Air is lifted up a slope",
-            "Rain falls into warm air"
-          ],
-          "a": 0,
-          "e": "Evaporation from the warm water saturates the cold air immediately above it."
-        },
-        {
-          "q": "What is the reporting threshold for fog?",
-          "c": [
-            "Visibility 1/2 SM or less",
-            "Visibility 3 SM or less",
-            "Visibility 6 SM or less",
-            "Visibility 1 SM or less"
-          ],
-          "a": 0,
-          "e": "MANOBS 6.7.1.1: fog is reported when prevailing visibility is reduced to 1/2 mi. or less at the surface. Mist is 5/8 to 6 mi."
-        },
-        {
-          "q": "Rain evaporating into cool air below a warm front can produce:",
-          "c": [
-            "Precipitation (frontal) fog",
-            "Radiation (ground) fog",
-            "Steam fog (sea smoke)",
-            "Upslope fog over hills"
-          ],
-          "a": 0,
-          "e": "Rain adds moisture to the air near the surface, which can saturate and form fog."
-        },
-        {
-          "q": "When does radiation fog normally dissipate?",
-          "c": [
-            "Shortly after sunrise as heating warms the surface layer",
-            "As the sun sets and the surface begins to cool again",
-            "When the wind drops to calm and the sky stays clear all day",
-            "When the dew point rises 5 C above the air temperature"
-          ],
-          "a": 0,
-          "e": "Solar heating warms the air and evaporates the fog."
-        },
-        {
-          "q": "Mist is reported when visibility is:",
-          "c": [
-            "Between 5/8 and 6 statute miles",
-            "Less than 5/8 statute mile",
-            "More than 6 statute miles",
-            "Exactly 1 statute mile"
-          ],
-          "a": 0,
-          "e": "In Canadian reports BR is used for visibility from 5/8 SM to 6 SM."
-        },
-        {
-          "q": "What does a stronger breeze do to radiation fog formation?",
-          "c": [
-            "Prevents it, by mixing in drier air from aloft",
-            "Always thickens it into a deeper layer",
-            "Has no effect on radiation fog",
-            "Turns it into steam fog"
-          ],
-          "a": 0,
-          "e": "NWS: a stronger breeze prevents radiation fog because of mixing with drier air aloft."
-        },
-        {
-          "q": "Fog is most likely when the temperature-dew point spread is:",
-          "c": [
-            "About 3 C or less",
-            "5 to 8 C",
-            "10 C or more",
-            "20 C or more"
-          ],
-          "a": 0,
-          "e": "NWS: fog forms when the spread is under 5 F (about 3 C)."
-        },
-        {
-          "q": "Why can advection fog persist as long as the wind continues?",
-          "c": [
-            "Warm moist air keeps flowing over cold water",
-            "Radiational cooling increases at night",
-            "Winds are calm",
-            "The ground cools the air"
-          ],
-          "a": 0,
-          "e": "As long as the air keeps crossing a cold surface it keeps cooling."
-        },
-        {
-          "q": "Sea smoke occurs most often:",
-          "c": [
-            "In winter, when very cold air flows over open water",
-            "On calm summer nights when the sea is cooler than the air",
-            "When warm, moist air crosses a cold sea surface in spring",
-            "Over dry desert areas in the afternoon after strong heating"
-          ],
-          "a": 0,
-          "e": "It needs a large temperature difference with colder air above warmer water."
-        },
-        {
-          "q": "Per NWS, at what temperature does ice fog form?",
-          "c": [
-            "-29 C (-20 F) and colder",
-            "0 C and colder",
-            "-10 C and colder",
-            "-60 C and colder"
-          ],
-          "a": 0,
-          "e": "NWS: ice fog forms in extremely cold, arctic air, -29 C (-20 F) and colder."
-        },
-        {
-          "q": "MIFG in a METAR means:",
-          "c": [
-            "Shallow fog that does not obstruct visibility at eye level",
-            "Fog covering most of the sky",
-            "Freezing fog",
-            "Fog in the vicinity"
-          ],
-          "a": 0,
-          "e": "MANOBS 6.8.1.3: low-lying fog that does not obstruct visibility at 1.5 m."
-        },
-        {
-          "q": "BCFG covers what share of the ground in view?",
-          "c": [
-            "Less than 50%",
-            "50% or more",
-            "All of it",
-            "Exactly one quarter"
-          ],
-          "a": 0,
-          "e": "MANOBS 6.8.1.1: fog at least 1.5 m deep covering less than 50% of the ground normally visible."
-        }
-      ],
-      "verified": {
-        "date": "2026-10-27",
-        "sources": [
-          "NAV CANADA Aviation Weather Services Guide (2017): FG is visibility under 5/8 SM, BR is 5/8 to 6 SM",
-          "NWS Houston/Galveston fog guide: fog types, wind speeds, spread rules, dissipation, ice fog",
-          "MANOBS 8th ed. Am. 3 (full PDF): 6.7 and 6.8 (fog, mist, freezing fog, MIFG, BCFG, PRFG), 13.2.9 (obstructions to vision)",
-          "NWS Houston/Galveston fog guide (re-read): radiation fog needs light winds, about 2 to 7 kt thickens it; advection about 3 to 9 kt, above 9 kt lifts to stratus; upslope above 10 to 12 kt gives stratus; dew-point spread under 5 F; frontal, steam and ice fog types"
-        ],
-        "unverified": [
-          "Sea fog being frequent on Nova Scotia's south shore and the Grand Banks in spring and summer, and radiation fog being common inland in fall: climatology, not checked here.",
-          "The earlier 15 kt wind figure for converting radiation fog to stratus was removed (no source).",
-          "Description of each fog type is from a US training guide, not a Canadian publication.",
-          "Fog types, wind ranges and the spread rule come from one NWS Houston guide (single source, US Gulf focus). The ice-fog threshold (-29 C and colder) and steam and frontal fog types are in that guide but not in the lesson text."
-        ]
-      }
-    },
-    {
-      "title": "Icing and its causes",
-      "lesson": [
-        "Aircraft icing happens when supercooled liquid drops hit an airframe below 0 C and freeze on contact. It increases weight and drag, reduces lift, and can block pitot tubes and engine inlets.",
-        {
-          "h": "Structural icing types"
-        },
-        {
-          "list": [
-            "Rime ice: small supercooled droplets freeze instantly, trapping air. Rough, milky, opaque. Tends to form at low temperatures (below about -10 C) and/or low liquid water content (WMO).",
-            "Clear ice: large supercooled drops freeze relatively slowly. Glossy, clear or translucent, dense and heavy. Tends to form at warmer temperatures (above about -10 C) and/or high liquid water content (WMO). More dangerous.",
-            "Mixed ice: both at the same time."
-          ]
-        },
-        {
-          "h": "Intensity (NAV CANADA guide)"
-        },
-        {
-          "list": [
-            "Trace (AIM Table 2.3): ice becomes perceptible; the rate of accumulation is slightly greater than the rate of sublimation. Not hazardous, even without de-icing or anti-icing, unless encountered for over 1 hour.",
-            "Light: a problem only if flight in it is prolonged (over 1 hour).",
-            "Moderate: de-icing or anti-icing equipment, or diversion, is necessary.",
-            "Severe: immediate diversion is necessary. A SIGMET for icing is issued only for severe."
-          ]
-        },
-        {
-          "h": "Where icing is worst"
-        },
-        {
-          "list": [
-            "Freezing rain and freezing drizzle: severe, and usually the strongest icing threat.",
-            "Cumuliform clouds with strong updrafts and large water content.",
-            "Frontal zones where warm moist air rises over cold air."
-          ]
-        },
-        {
-          "h": "Other forms"
-        },
-        {
-          "list": [
-            "Carburettor icing: can occur well above freezing in humid air, because vaporization and pressure drop cool the carburettor. The AIM chart (Figure 2.2) shows the temperature and relative humidity range that could induce it; its icing zones reach well above 0 C at high humidity.",
-            "Frost on the ground: forms by deposition when the surface is below 0 C. Must be removed before takeoff."
-          ]
-        },
-        {
-          "h": "Deposits (MANOBS 13.2.10)"
-        },
-        {
-          "list": [
-            "Glaze: a coating of ice, generally clear and smooth, formed by freezing of a film of supercooled water from rain, drizzle or fog. Denser, harder and more transparent than rime or frost.",
-            "Rime: a white or milky, opaque, granular deposit from rapid freezing of supercooled drops on contact with an object.",
-            "Hoar frost: interlocking ice crystals formed by direct sublimation when air with a below-freezing dew point is cooled to saturation."
-          ]
-        },
-        {
-          "note": "Anti-icing and de-icing equipment may not handle severe icing. If in doubt, avoid. A change of altitude to warmer air or out of cloud is the standard escape."
-        },
-        {
-          "h": "Forecasting icing (MANAIR)"
-        },
-        {
-          "h": "AIM icing reporting (MET 2.4)"
-        },
-        {
-          "list": [
-            "Report icing to ATS and, if IFR, request a new routing or altitude if icing will be a hazard.",
-            "Include aircraft identification and type, location, UTC time, intensity, icing type, altitude or flight level, and indicated airspeed.",
-            "The AIM defines three types: rime (rough, milky, opaque, instantaneous freezing of small supercooled droplets), clear (glossy, clear or translucent, relatively slow freezing of large supercooled droplets) and mixed (both at once).",
-            "In thunderstorms, the AIM advises limiting critical icing by penetrating below the freezing level or above the -15 C level (AIR 2.7.2, summarised read)."
-          ]
-        },
-        {
-          "h": "AIM airframe icing (AIR 2.12.3)"
-        },
-        {
-          "list": [
-            "For ice to form in flight the OAT must be at or below freezing with visible moisture. The AIM lists three types: rime, clear and frost.",
-            "Rime is commonly found in stratiform cloud: granular, opaque, pebbly, forming at low temperatures with a low concentration of small supercooled droplets. It adheres to leading edges and is easily removed by de-icing systems.",
-            "Clear ice is commonly found in cumuliform cloud: glossy, smooth and hard, spreading back from the impingement area. It forms at or just below 0 C with a high concentration of large supercooled droplets. It is the most serious form because it adheres firmly and is hard to remove.",
-            "In-flight frost can form when descending from below-freezing air into a layer of warm, moist air. It can restrict vision on the windshield.",
-            "Effects: reduced lift, increased drag and weight, higher stall speed, reduced thrust, control restrictions, and possible compressor stall if ice is ingested. A stall can occur before the stall warning activates.",
-            "Freezing rain and drizzle classically come from warm air over cold air, found near warm fronts and trowals. A climb into the warm air is the classic escape.",
-            "Non-classical freezing drizzle has been found at temperatures down to -10 C at altitudes up to 15,000 ft ASL with no warm layer aloft. Climbing remains the preferred escape, but warm air may not be available.",
-            "Clues to large supercooled droplets: ice farther aft than normal on unheated surfaces, ice on non-heated spinners, rivulets on windows, and unexpected differences in airspeed or climb rate."
-          ]
-        },
-        {
-          "h": "Carburettor icing (AIM AIR 2.3)"
-        },
-        {
-          "list": [
-            "A common cause of general aviation accidents. Fuel-injected engines have very few induction system icing accidents.",
-            "Most carburettor icing engine failures happen during normal cruise, possibly because pilots forget it can occur at high power settings as well as in descents with reduced power.",
-            "Most accidents involve a pilot who did not fully understand the aircraft's carburettor heat system. Systems differ, so an AME on type can explain it.",
-            "When carburettor heat is applied, expect a rough-running engine for a minute or so as the ice melts, loosens and is ingested.",
-            "AIM Figure 2.2 intensity key: serious icing at any power; moderate icing at cruise power and serious at descent power; serious icing at descent power; light icing at cruise or descent power.",
-            "The chart is not valid when operating on MOGAS. MOGAS is more volatile and more susceptible to carburettor icing; in severe cases ice may form at OATs up to 20 C higher than with AVGAS."
-          ]
-        },
-        {
-          "h": "Ground icing (AIR 2.12.2)"
-        },
-        {
-          "list": [
-            "Clean aircraft concept: takeoff is prohibited when frost, ice or snow adheres to any critical surface.",
-            "Frost, ice or snow of medium to coarse sandpaper roughness on the leading edge and upper wing can reduce lift by as much as 30% and increase drag by 40%.",
-            "Cold soaking: fuel in the wing tanks can make the wing skin colder than ambient air, so clear ice can form even in drizzle or rain at temperatures from +8 to +14 C.",
-            "Type I fluids: at least 80% glycol, unthickened, very limited anti-icing protection. Type II fluids: at least 50% glycol, minimum freeze point -32 C, thickened and longer holdover; for aircraft with rotation speeds above 100 KIAS. Holdover times are guidelines only."
-          ]
-        },
-        {
-          "list": [
-            "GFA icing types: RIME, MX (mixed) and CLR (clear).",
-            "GFA depicts only moderate or severe non-convective icing, as a blue line with stippling (denser for severe). Light icing goes in the comments box.",
-            "Layers are a fraction: top over base, hundreds of feet ASL.",
-            "Intensity is judged by effect on the aircraft, not measured. Light: prolonged flight (over 1 hour) without de-icing may cause a problem. Moderate: even short encounters are potentially hazardous; de-icing or anti-icing must be used or divert. Severe: de-icing fails to control the hazard; immediate diversion.",
-            "SIGMET: SEV ICE, with or without freezing rain (FZRA). AIRMET: MOD ICE. Neither applies to icing in convective clouds."
-          ]
-        }
-      ],
-      "terms": [
-        [
-          "Rime ice",
-          "Opaque, rough ice formed by small droplets freezing on impact."
-        ],
-        [
-          "Clear ice",
-          "Smooth, transparent, heavy ice formed by large drops."
-        ],
-        [
-          "Carburettor ice",
-          "Ice that forms in a carburettor due to cooling from fuel vaporization and pressure drop."
-        ]
-      ],
-      "questions": [
-        {
-          "q": "What causes clear ice?",
-          "c": [
-            "Large supercooled drops that spread and freeze slowly",
-            "Tiny supercooled droplets that freeze instantly on impact",
-            "Frost deposited on a cold airframe on the ground at night",
-            "Hailstones striking and sticking to the leading edges"
-          ],
-          "a": 0,
-          "e": "Large drops flow back along the surface before freezing, forming a smooth, dense layer."
-        },
-        {
-          "q": "Which condition normally poses the greatest structural icing threat?",
-          "c": [
-            "Freezing rain",
-            "Dry snow",
-            "Cirrus cloud",
-            "Clear sky"
-          ],
-          "a": 0,
-          "e": "Freezing rain has large supercooled drops and a high water content."
-        },
-        {
-          "q": "Carburettor icing can occur:",
-          "c": [
-            "At temperatures well above freezing in humid air",
-            "Only when outside air is below -10 C in dry air",
-            "Only in visible moisture such as freezing rain at 0 C or lower",
-            "Only on the ground before engine start in heavy snow"
-          ],
-          "a": 0,
-          "e": "Cooling in the carburettor can drop temperature below 0 C even when the outside air is as warm as 20 C."
-        },
-        {
-          "q": "How does rime ice look?",
-          "c": [
-            "White, opaque and brittle",
-            "Clear and smooth",
-            "Wet and slushy",
-            "Powdery and light blue"
-          ],
-          "a": 0,
-          "e": "Small drops freeze quickly and trap air bubbles, giving a milky appearance."
-        },
-        {
-          "q": "What is a standard escape from structural icing?",
-          "c": [
-            "Change altitude to warmer air or leave the cloud",
-            "Climb higher where the air is colder and drier",
-            "Increase airspeed and stay in the same layer until clear",
-            "Turn off the anti-ice system to save engine power"
-          ],
-          "a": 0,
-          "e": "Moving out of the supercooled water zone, usually to warmer or clear air, stops further accumulation."
-        },
-        {
-          "q": "According to the NWS, how low can liquid water in a cloud persist?",
-          "c": [
-            "As low as -40 C",
-            "Only down to -10 C",
-            "Only down to -20 C",
-            "Not below 0 C"
-          ],
-          "a": 0,
-          "e": "NWS: supercooled liquid water can persist as low as -40 C."
-        },
-        {
-          "q": "What effect does ice on the wing leading edge have?",
-          "c": [
-            "Lift decreases and drag increases",
-            "Lift increases",
-            "Drag decreases",
-            "There is no effect on lift"
-          ],
-          "a": 0,
-          "e": "Ice disturbs the airflow, reduces lift and increases weight and drag."
-        },
-        {
-          "q": "What does the NAV CANADA guide say is necessary in severe icing?",
-          "c": [
-            "Immediate diversion",
-            "De-icing equipment alone, with no diversion",
-            "Nothing, if flight is under 1 hour",
-            "Only a pilot report after landing"
-          ],
-          "a": 0,
-          "e": "NAV CANADA guide: light, a problem if prolonged over 1 hour; moderate, de-icing or anti-icing or diversion; severe, immediate diversion."
-        },
-        {
-          "q": "Frost on the wings before takeoff must be:",
-          "c": [
-            "Removed completely before takeoff",
-            "Ignored since it does not change airflow",
-            "Left alone because it blows off during the takeoff roll",
-            "Reduced by taxiing slowly"
-          ],
-          "a": 0,
-          "e": "Even thin frost can spoil lift, so it must be removed."
-        },
-        {
-          "q": "Which cloud typically has the highest liquid water content and large drops?",
-          "c": [
-            "Cumulonimbus or towering cumulus",
-            "Cirrus, because high ice crystal clouds hold the most water",
-            "Cirrostratus, because it covers a large area of the sky",
-            "Thin altostratus, because it forms in a stable layer aloft"
-          ],
-          "a": 0,
-          "e": "Strong updrafts carry plenty of liquid water above the freezing level."
-        },
-        {
-          "q": "Where is structural icing least likely?",
-          "c": [
-            "In cloud-free air at temperatures below -40 C",
-            "In freezing rain at the surface at temperatures just below zero",
-            "In supercooled towering cumulus at about -10 C",
-            "In stratocumulus at -8 C with a high liquid water content"
-          ],
-          "a": 0,
-          "e": "Without liquid water there is nothing to freeze on the aircraft."
-        },
-        {
-          "q": "Per the WMO, rime ice tends to form at:",
-          "c": [
-            "Low temperatures (below about -10 C) and/or low liquid water content",
-            "Only in freezing rain with large drops",
-            "Only at temperatures from 0 to -5 C",
-            "Only above 0 C in clear air"
-          ],
-          "a": 0,
-          "e": "WMO: rime forms at low temperatures and/or low liquid water content; clear ice at warmer temperatures and/or high liquid water content."
-        },
-        {
-          "q": "MANOBS describes glaze as a deposit that is:",
-          "c": [
-            "Generally clear and smooth, denser and harder than rime",
-            "White, milky and granular",
-            "Made of interlocking crystals formed by sublimation",
-            "Soft and easily brushed off"
-          ],
-          "a": 0,
-          "e": "MANOBS 13.2.10: glaze is a coating of ice, generally clear and smooth, formed by freezing of supercooled water; rime is milky and granular; hoar frost forms by sublimation."
-        },
-        {
-          "q": "Which are the GFA icing types?",
-          "c": [
-            "RIME, MX and CLR",
-            "LGT, MOD and SEV",
-            "FZRA, FZDZ and PL",
-            "HOAR, GLAZE and RIME"
-          ],
-          "a": 0,
-          "e": "MANAIR 4.9.2.1."
-        },
-        {
-          "q": "Where does the GFA show light icing?",
-          "c": [
-            "In the comments box",
-            "As a blue stippled area",
-            "As a red hatched area",
-            "It is not mentioned anywhere"
-          ],
-          "a": 0,
-          "e": "MANAIR 4.9.2.1."
-        },
-        {
-          "q": "How does MANAIR define severe icing?",
-          "c": [
-            "De-icing or anti-icing equipment fails to reduce or control the hazard; immediate diversion is necessary",
-            "Ice that stays on the wings for more than one hour of flight",
-            "Any ice accretion caused by freezing rain at any rate",
-            "Ice that forms only inside cumulonimbus clouds"
-          ],
-          "a": 0,
-          "e": "MANAIR 4.9.2.1."
-        },
-        {
-          "q": "A SIGMET for icing is issued for:",
-          "c": [
-            "Severe icing, with or without freezing rain",
-            "Light icing in any cloud type",
-            "Moderate icing in layer cloud only",
-            "Frost on the ground before takeoff"
-          ],
-          "a": 0,
-          "e": "MANAIR 5.8.3.2 and D.5."
-        },
-        {
-          "q": "A GFA icing layer depicted as 80 over 20 means:",
-          "c": [
-            "Top 8,000 ft ASL, base 2,000 ft ASL",
-            "Base 8,000 ft, top 2,000 ft",
-            "Top 80 ft, base 20 ft AGL",
-            "Eight to two oktas"
-          ],
-          "a": 0,
-          "e": "MANAIR 4.9.2.1: numerator is the top, denominator the base, hundreds of feet ASL."
-        },
-        {
-          "q": "What is 'trace' icing in the AIM?",
-          "c": [
-            "Ice becomes perceptible; not hazardous unless encountered for over 1 hour",
-            "Ice that needs immediate diversion",
-            "Ice only on the ground",
-            "Ice that never needs reporting"
-          ],
-          "a": 0,
-          "e": "AIM Table 2.3."
-        },
-        {
-          "q": "What should a pilot do if icing will be a hazard under IFR?",
-          "c": [
-            "Report it to ATS and request a new routing or altitude",
-            "Ignore it if light",
-            "Climb into cloud",
-            "Only report it after landing"
-          ],
-          "a": 0,
-          "e": "AIM MET 2.4."
-        },
-        {
-          "q": "Which items belong in an AIM icing report?",
-          "c": [
-            "Aircraft identification and type, location, UTC time, intensity, type, altitude and indicated airspeed",
-            "Pilot name only",
-            "Cloud colour",
-            "Fuel remaining"
-          ],
-          "a": 0,
-          "e": "AIM MET 2.4."
-        },
-        {
-          "q": "In the AIM, which ice type forms at or just below 0 C with large supercooled droplets?",
-          "c": [
-            "Clear ice",
-            "Rime ice",
-            "Hoar frost",
-            "Frost on the ground"
-          ],
-          "a": 0,
-          "e": "AIM AIR 2.12.3.1."
-        },
-        {
-          "q": "In which cloud type is rime ice commonly found, per the AIM?",
-          "c": [
-            "Stratiform",
-            "Cumuliform",
-            "Cirrus",
-            "Only fog"
-          ],
-          "a": 0,
-          "e": "AIM AIR 2.12.3.1. Clear ice is commonly found in cumuliform cloud."
-        },
-        {
-          "q": "Where are freezing rain and drizzle typically found, per the AIM?",
-          "c": [
-            "Near warm fronts and trowals",
-            "Only behind cold fronts",
-            "Only over water",
-            "Only in thunderstorms"
-          ],
-          "a": 0,
-          "e": "AIM AIR 2.12.3.5."
-        },
-        {
-          "q": "What is the classic escape from freezing rain aloft?",
-          "c": [
-            "Climb into the warm air",
-            "Descend",
-            "Turn off anti-icing",
-            "Increase power in the same layer"
-          ],
-          "a": 0,
-          "e": "AIM AIR 2.12.3.5. Non-classical freezing drizzle may lack a warm layer; climbing is still preferred."
-        },
-        {
-          "q": "By how much can frost or ice of coarse sandpaper roughness reduce wing lift?",
-          "c": [
-            "As much as 30%",
-            "About 5%",
-            "About 60%",
-            "It does not affect lift"
-          ],
-          "a": 0,
-          "e": "AIM AIR 2.12.2: reduce lift up to 30% and increase drag by 40%."
-        },
-        {
-          "q": "Why can clear ice form on a wing at +8 to +14 C?",
-          "c": [
-            "Cold-soaked fuel in the wing tanks chills the wing skin",
-            "Supercooled rain at those temperatures",
-            "The AIM says it cannot",
-            "Because of carburettor ice"
-          ],
-          "a": 0,
-          "e": "AIM AIR 2.12.2 cold-soaking phenomenon, in drizzle or rain."
-        },
-        {
-          "q": "Which de-icing fluid has the higher minimum glycol content, per the AIM?",
-          "c": [
-            "Type I (at least 80%)",
-            "Type II (at least 50%)",
-            "Both are equal",
-            "Neither contains glycol"
-          ],
-          "a": 0,
-          "e": "AIM AIR 2.12.2."
-        },
-        {
-          "q": "When do most carburettor icing engine failures happen, per the AIM?",
-          "c": [
-            "During normal cruise",
-            "During takeoff only",
-            "On the ground",
-            "Only in descents"
-          ],
-          "a": 0,
-          "e": "AIM AIR 2.3."
-        },
-        {
-          "q": "What should a pilot expect after selecting carburettor heat with ice present?",
-          "c": [
-            "A rough-running engine for a minute or so",
-            "An immediate smooth engine",
-            "Engine shutdown",
-            "A power increase"
-          ],
-          "a": 0,
-          "e": "AIM AIR 2.3."
-        },
-        {
-          "q": "Which engines have very few induction system icing accidents, per the AIM?",
-          "c": [
-            "Fuel-injected engines",
-            "Carburetted engines",
-            "Piston engines with no heat system",
-            "All engines equally"
-          ],
-          "a": 0,
-          "e": "AIM AIR 2.3."
-        },
-        {
-          "q": "Is the AIM carburettor icing chart valid when operating on MOGAS?",
-          "c": [
-            "No; MOGAS is more susceptible and ice may form at OATs up to 20 C higher than with AVGAS",
-            "Yes, identical to AVGAS",
-            "Only below 0 C",
-            "Only at cruise power"
-          ],
-          "a": 0,
-          "e": "AIM AIR 2.3, note under Figure 2.2."
-        },
-        {
-          "q": "Which fuel is more susceptible to carburettor icing, per the AIM?",
-          "c": [
-            "MOGAS, because of its higher volatility",
-            "AVGAS",
-            "Both equally",
-            "Jet fuel only"
-          ],
-          "a": 0,
-          "e": "AIM AIR 2.3 note."
-        }
-      ],
-      "verified": {
-        "date": "2026-10-27",
-        "sources": [
-          "NAV CANADA Aviation Weather Services Guide (2017): rime, clear and mixed ice definitions; light, moderate, severe wording; SIGMET only for severe",
-          "WMO, Aviation hazards: icing: rime below about -10 C and/or low liquid water; clear above about -10 C and/or high liquid water; freezing drizzle and rain",
-          "NWS cloud and precipitation training notes: liquid water persists as low as -40 C",
-          "MANOBS 8th ed. Am. 3 (full PDF): 13.2.10 (glaze, rime, hoar frost); 6.6.2.3 to 6.6.2.4 (freezing precipitation and ice accretion indicator)",
-          "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.2.1 (GFA icing types, depiction and intensity definitions), 5.8.3.2, D.5 and E.5 (SIGMET SEV, AIRMET MOD)",
-          "TC AIM 2026-2 AIR (screenshots supplied by the user, 2026-10-27): 2.12.2, 2.12.3 (in-flight and ground icing), 2.7 (thunderstorm icing)",
-          "TC AIM 2026-2 AIR 2.3 carburetor icing (screenshot supplied by the user, 2026-10-27)",
-          "TC AIM 2026-2 AIR 2.3, Figure 2.2 and MOGAS note (screenshot supplied by the user, 2026-10-27)"
-        ],
-        "unverified": [
-          "Carburettor icing (outside temperatures up to about 20 C) and frost deposition: standard aviation teaching, not confirmed on the pages read.",
-          "Escape by changing altitude, and which cloud types have the highest liquid water: standard teaching.",
-          "The rime/clear temperature split at about -10 C (WMO) differs in wording from the AIM (low temperature versus at or just below 0 C); both are given.",
-          "Exact temperature and humidity boundaries of the AIM carburettor icing zones: the figure was read visually, not as text; check Figure 2.2 for exact limits."
-        ]
-      }
+     "note": "Remember: dew point tells you how much moisture there is. RH tells you how close you are to saturation."
     }
-  ]
+   ],
+   "terms": [
+    [
+     "Mixing ratio",
+     "Mass of water vapour per unit mass of dry air, usually g/kg."
+    ],
+    [
+     "Wet-bulb temperature",
+     "Temperature a parcel reaches when cooled to saturation by evaporation."
+    ],
+    [
+     "Saturation vapour pressure",
+     "Maximum vapour pressure at a given temperature."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Which humidity measure stays constant as an unsaturated parcel rises?",
+     "c": [
+      "Mixing ratio",
+      "Relative humidity",
+      "Dew point",
+      "Vapour pressure"
+     ],
+     "a": 0,
+     "e": "Mixing ratio is a mass ratio and is conserved if no vapour is added or removed. RH, vapour pressure and dew point all change with pressure or temperature."
+    },
+    {
+     "q": "What is the correct ordering of temperature, wet-bulb and dew point for unsaturated air?",
+     "c": [
+      "T > Tw > Td",
+      "Td > Tw > T",
+      "Tw > T > Td",
+      "T = Tw = Td"
+     ],
+     "a": 0,
+     "e": "Air temperature is highest, dew point lowest, wet-bulb in between. They are equal only at saturation."
+    },
+    {
+     "q": "How does saturation vapour pressure change with temperature?",
+     "c": [
+      "It increases rapidly (about 7% per C)",
+      "It decreases slowly as the air warms up",
+      "It stays constant whatever the temperature",
+      "It changes only when the air pressure changes"
+     ],
+     "a": 0,
+     "e": "Warmer air can hold much more water vapour; the relationship is roughly exponential."
+    },
+    {
+     "q": "What is true when relative humidity is 100%?",
+     "c": [
+      "Temperature equals dew point",
+      "Temperature is 0 C, the freezing point",
+      "Dew point is 0 C, whatever the air temperature",
+      "Wet-bulb temperature is below the dew point"
+     ],
+     "a": 0,
+     "e": "Saturation means the air temperature has reached the dew point."
+    },
+    {
+     "q": "A room is heated with no moisture added. What happens to the dew point and RH?",
+     "c": [
+      "Dew point stays the same, RH falls",
+      "Dew point rises and RH rises as the room warms",
+      "Dew point falls and RH rises as the room warms",
+      "Both dew point and RH stay exactly the same"
+     ],
+     "a": 0,
+     "e": "Dew point reflects moisture content (unchanged). Warmer air has a higher es, so RH drops."
+    },
+    {
+     "q": "The dry-bulb temperature is 12 C and the wet-bulb is 8 C. Where is the dew point most likely?",
+     "c": [
+      "Below 8 C",
+      "Between 8 and 12 C",
+      "Above 12 C",
+      "Exactly 8 C"
+     ],
+     "a": 0,
+     "e": "For unsaturated air Td < Tw < T."
+    },
+    {
+     "q": "What are the usual units of mixing ratio?",
+     "c": [
+      "Grams of vapour per kilogram of dry air",
+      "Hectopascals of vapour pressure per kilometre of height",
+      "Percent of the saturation value at the same temperature",
+      "Degrees Celsius of dew point depression for each metre"
+     ],
+     "a": 0,
+     "e": "Mixing ratio is the mass of vapour per mass of dry air, typically g/kg."
+    },
+    {
+     "q": "Air is warmed at constant pressure with no moisture added. What happens to the vapour pressure?",
+     "c": [
+      "It stays constant",
+      "It increases",
+      "It decreases",
+      "It doubles"
+     ],
+     "a": 0,
+     "e": "Vapour pressure depends on moisture content, not on temperature."
+    },
+    {
+     "q": "Saturated air is cooled further. What happens?",
+     "c": [
+      "Excess vapour condenses into liquid",
+      "Relative humidity drops below 100%",
+      "The dew point rises above the temperature",
+      "Evaporation exceeds condensation"
+     ],
+     "a": 0,
+     "e": "Cooling saturated air removes capacity, so the excess vapour condenses."
+    },
+    {
+     "q": "Which instrument gives dry-bulb and wet-bulb temperatures?",
+     "c": [
+      "A psychrometer",
+      "A barograph",
+      "An anemometer",
+      "A ceilometer"
+     ],
+     "a": 0,
+     "e": "A psychrometer has two thermometers, one with a wetted wick."
+    },
+    {
+     "q": "Below 0 C, how does the frost point compare with the dew point?",
+     "c": [
+      "Slightly higher",
+      "Slightly lower",
+      "Equal",
+      "Far lower"
+     ],
+     "a": 0,
+     "e": "Saturation over ice occurs at a slightly higher temperature than over supercooled water."
+    }
+   ],
+   "verified": {
+    "date": "2026-10-26",
+    "sources": [
+     "Penn State METEO 300: saturation vapour pressure rises about 7% per 1 K; dew point definition",
+     "UCSD SIO 217a ch. 6: dew point and frost point as saturation by isobaric cooling",
+     "NWS cloud and precipitation training notes: saturation vapour pressure over ice is less than over liquid water (so the frost point is higher than the dew point below 0 C: derived)",
+     "AMS Glossary, Relative humidity: ratio of vapour pressure to saturation vapour pressure over a plane surface of pure water; also mixing ratio over saturation mixing ratio"
+    ],
+    "unverified": [
+     "Mixing ratio and specific humidity being conserved in unsaturated parcels, wet-bulb definition and the Td <= Tw <= T ordering, psychrometer description: standard thermodynamics, not stated on the pages read. RH definition now from the AMS Glossary (single source)."
+    ]
+   }
+  },
+  {
+   "title": "Condensation, saturation and lifting mechanisms",
+   "lesson": [
+    "Cloud forms when air becomes saturated and water vapour condenses onto tiny particles.",
+    {
+     "h": "Getting to saturation"
+    },
+    {
+     "list": [
+      "Cooling is the usual route: adiabatic cooling by lifting (most important), radiational cooling at night, advection over a cold surface, mixing of two nearly saturated air masses.",
+      "Adding moisture: evaporation from rain falling into dry air, air moving over warm water or wet ground."
+     ]
+    },
+    {
+     "h": "Condensation nuclei"
+    },
+    "Pure vapour does not condense easily. Cloud condensation nuclei (CCN) such as sea salt, dust and smoke provide surfaces. Salt-rich maritime air has plenty, which is why sea fog forms readily on the coast.",
+    "Cloud droplets can stay liquid well below 0 C, as low as -40 C (NWS). This supercooled water is the root of aircraft icing.",
+    {
+     "h": "Four lifting mechanisms"
+    },
+    {
+     "list": [
+      "Convection: surface heating produces thermals and cumulus.",
+      "Orographic: air forced up terrain.",
+      "Frontal: warm air rising over or being pushed up by cold air.",
+      "Convergence: horizontal inflow forces air upward, for example around a low or along a sea breeze front."
+     ]
+    },
+    {
+     "note": "Subsidence (sinking air) is not a lifting mechanism. It warms the air, lowers RH, and dissipates cloud."
+    }
+   ],
+   "terms": [
+    [
+     "CCN",
+     "Cloud condensation nuclei: tiny particles on which droplets form."
+    ],
+    [
+     "Supercooled water",
+     "Liquid water at temperatures below 0 C."
+    ],
+    [
+     "Orographic lifting",
+     "Forced ascent over terrain."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Which of the following is NOT a lifting mechanism?",
+     "c": [
+      "Subsidence",
+      "Convection",
+      "Orographic lift",
+      "Frontal lift"
+     ],
+     "a": 0,
+     "e": "Subsidence is sinking motion, which warms and dries the air."
+    },
+    {
+     "q": "What role do condensation nuclei play?",
+     "c": [
+      "They give water vapour surfaces on which to condense",
+      "They warm the air so that its saturation point is lowered",
+      "They absorb moisture from the cloud and so remove it from the air",
+      "They lower the pressure inside droplets so that droplets evaporate"
+     ],
+     "a": 0,
+     "e": "Particles such as salt and dust allow droplets to form at or near saturation."
+    },
+    {
+     "q": "What is the most important way air is cooled to saturation in cloud formation?",
+     "c": [
+      "Lifting and adiabatic expansion",
+      "Contact with cold ground at night",
+      "Evaporation of rain falling into the air",
+      "Radiation from the tops of existing cloud"
+     ],
+     "a": 0,
+     "e": "Lifting leads to expansion and cooling, producing most clouds and precipitation."
+    },
+    {
+     "q": "Can liquid cloud droplets exist at temperatures below 0 C?",
+     "c": [
+      "Yes, supercooled droplets can persist to about -40 C",
+      "No, cloud droplets always freeze the moment they pass 0 C",
+      "Yes, but only within a degree or two of the freezing point",
+      "No, liquid water can exist only above 0 C at any height"
+     ],
+     "a": 0,
+     "e": "Supercooled water is common in clouds and is the source of aircraft icing."
+    },
+    {
+     "q": "Convergence as a lifting mechanism occurs when:",
+     "c": [
+      "Horizontal inflow forces air upward",
+      "Air descends the lee slope of a ridge",
+      "Air is cooled by radiation after sunset",
+      "High pressure builds overhead and the air sinks"
+     ],
+     "a": 0,
+     "e": "Converging air has nowhere to go but up."
+    },
+    {
+     "q": "Orographic lifting is air forced to rise over:",
+     "c": [
+      "Hills, mountains or other high terrain",
+      "A sea breeze front along a coastline",
+      "A layer of colder air at a front",
+      "A region of convergent winds near a low"
+     ],
+     "a": 0,
+     "e": "Orographic means caused by terrain."
+    },
+    {
+     "q": "Which of these cools air to saturation WITHOUT lifting?",
+     "c": [
+      "Radiational cooling at night",
+      "Adiabatic expansion as the air rises over a hill or mountain",
+      "Frontal ascent over a wedge of colder air near the surface",
+      "Orographic ascent along the windward slope of a mountain range"
+     ],
+     "a": 0,
+     "e": "Radiation removes heat from the surface layer without any vertical motion."
+    },
+    {
+     "q": "Why are sea salt particles important in cloud formation?",
+     "c": [
+      "They act as cloud condensation nuclei",
+      "They prevent condensation by keeping the air supersaturated",
+      "They absorb sunlight and warm the surrounding cloud layer",
+      "They cool the sea surface and lower the dew point of the air"
+     ],
+     "a": 0,
+     "e": "Salt particles are hygroscopic and attract water vapour."
+    },
+    {
+     "q": "Convergence of surface winds typically leads to:",
+     "c": [
+      "Upward motion",
+      "Downward motion",
+      "No vertical motion",
+      "Surface cooling only"
+     ],
+     "a": 0,
+     "e": "Mass that flows in must rise."
+    },
+    {
+     "q": "Which lifting mechanism comes from daytime heating of the ground?",
+     "c": [
+      "Convection (thermals)",
+      "Frontal lifting",
+      "Orographic lifting",
+      "Subsidence"
+     ],
+     "a": 0,
+     "e": "Heated ground warms the air above it, which rises as thermals."
+    },
+    {
+     "q": "Why can mixing two nearly saturated air masses produce cloud?",
+     "c": [
+      "The saturation curve is non-linear, so the mixture can exceed saturation",
+      "Mixing always releases latent heat and warms the mixture past saturation",
+      "Mixing lowers the pressure of both parcels below the saturation value",
+      "Mixing removes condensation nuclei so drops grow faster by collision"
+     ],
+     "a": 0,
+     "e": "Because saturation vapour pressure is a curve, the mix can be supersaturated."
+    }
+   ],
+   "verified": {
+    "date": "2026-10-26",
+    "sources": [
+     "NWS cloud and precipitation training notes: liquid water can persist as low as -40 C"
+    ],
+    "unverified": [
+     "Cloud condensation nuclei types (sea salt, dust, smoke) and sea salt making sea fog form readily, the four lifting mechanisms, mixing of nearly saturated air, and subsidence not lifting air: standard teaching, not checked on a Canadian publication.",
+     "The earlier claim that supercooled water is most common between 0 and -20 C was removed (no source)."
+    ]
+   }
+  },
+  {
+   "title": "Cloud classification and genera",
+   "lesson": [
+    "Clouds are classified by form (stratiform, cumuliform, cirriform) and by height of the base. Ten basic types (genera) cover all clouds. Heights below are the WMO temperate-region levels, which are the heights where each genus occurs most often.",
+    {
+     "h": "High (temperate regions: 5 to 13 km, 16,500 to 45,000 ft)"
+    },
+    {
+     "list": [
+      "Cirrus (Ci): detached white, delicate filaments, patches or narrow bands with a fibrous (hair-like) appearance or silky sheen (WMO). Made of ice crystals (standard teaching; the WMO definition page does not state composition).",
+      "Cirrocumulus (Cc): small white ripples or grains.",
+      "Cirrostratus (Cs): transparent, whitish veil of fibrous or smooth appearance, totally or partly covering the sky, often producing halo phenomena (WMO). Often the first sign of an approaching warm front (standard teaching)."
+     ]
+    },
+    {
+     "h": "Middle (temperate regions: 2 to 7 km, 6,500 to 23,000 ft)"
+    },
+    {
+     "list": [
+      "Altocumulus (Ac): patchy layers or globules.",
+      "Altostratus (As): greyish or bluish sheet of striated, fibrous or uniform appearance. Thinner parts show the sun faintly, as through ground glass. It does not show halo phenomena (WMO). Precipitation may follow (standard teaching)."
+     ]
+    },
+    {
+     "h": "Low (surface to 2 km, 6,500 ft)"
+    },
+    {
+     "list": [
+      "Stratus (St): generally grey layer with a fairly uniform base, which may give drizzle, snow or snow grains. When the sun shows through, its outline is clearly discernible. No halo except possibly at very low temperatures (WMO). Lifted fog: standard teaching, not stated by WMO.",
+      "Stratocumulus (Sc): grey or whitish patch, sheet or layer that almost always has dark parts, made of tessellations, rounded masses or rolls that are non-fibrous (except for virga) (WMO). Common over the Atlantic (standard teaching).",
+      "Nimbostratus (Ns): grey cloud layer, often dark, made diffuse by more or less continuously falling rain or snow, thick enough throughout to blot out the sun (WMO). WMO places it in the middle level (it almost always occurs there but usually extends into the other two). NAV CANADA's guide lists it with low cloud. MANOBS Table 7-1 gives its base as near the surface to 6,500 ft. Composition (WMO): water droplets (sometimes supercooled) and raindrops, snow crystals and snowflakes, or a mixture.",
+      "Cumulus (Cu): detached clouds, generally dense with sharp outlines, developing vertically as rising mounds, domes or towers. The bulging top often resembles a cauliflower and the base is relatively dark and nearly horizontal (WMO).",
+      "Cumulonimbus (Cb): heavy, dense cloud of considerable vertical extent, in the form of a mountain or huge towers. The upper part is usually smooth, fibrous or striated, nearly always flattened, and often spreads into an anvil or vast plume. The base is often very dark, with low ragged cloud beneath, and precipitation sometimes falls as virga (WMO). WMO lists it with the low genera because its base is usually low, but its tops often reach the middle and high levels. Thunder, hail and the tropopause cap are standard teaching, not on the WMO page."
+     ]
+    },
+    {
+     "h": "Approximate cloud base heights (MANOBS Table 7-1)"
+    },
+    {
+     "list": [
+      "Cirrus, cirrocumulus, cirrostratus: 20,000 to 39,000 ft (cirrus averages about 29,000 ft in summer and 26,000 ft in winter).",
+      "Altocumulus, altocumulus castellanus, altostratus: above 6,500 to 20,000 ft (altostratus averages about 8,000 ft when no sun or moon is visible).",
+      "Nimbostratus: near the surface to 6,500 ft.",
+      "Stratocumulus: 500 to 6,500 ft.",
+      "Stratus: near the surface to 1,500 ft, usually below 1,000 ft.",
+      "Cumulus, towering cumulus, cumulonimbus: usually 1,500 to 6,500 ft, up to 10,000 ft or higher. The highest bases occur in summer in very dry air. Cirriform cloud in the high Arctic may be at very low levels."
+     ]
+    },
+    {
+     "note": "Cirrus to cirrostratus to altostratus to nimbostratus is the classic sequence ahead of a warm front."
+    }
+   ],
+   "terms": [
+    [
+     "Stratiform",
+     "Layered cloud."
+    ],
+    [
+     "Cumuliform",
+     "Heaped, vertically developed cloud."
+    ],
+    [
+     "Anvil",
+     "Flat spreading top of a cumulonimbus, usually of ice crystals."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Which cloud is associated with thunderstorms, hail and a spreading anvil?",
+     "c": [
+      "Cumulonimbus",
+      "Nimbostratus",
+      "Altostratus",
+      "Stratocumulus"
+     ],
+     "a": 0,
+     "e": "Cumulonimbus is the deep convective cloud that produces thunderstorms."
+    },
+    {
+     "q": "A halo around the sun is a sign of which cloud?",
+     "c": [
+      "Cirrostratus",
+      "Altostratus",
+      "Cumulus",
+      "Stratus"
+     ],
+     "a": 0,
+     "e": "Ice crystals in cirrostratus refract light to form halos."
+    },
+    {
+     "q": "Which cloud produces steady, widespread rain or snow from a thick grey layer?",
+     "c": [
+      "Nimbostratus",
+      "Cirrus",
+      "Fair-weather cumulus",
+      "Altocumulus"
+     ],
+     "a": 0,
+     "e": "Nimbostratus is a thick layer cloud associated with continuous precipitation."
+    },
+    {
+     "q": "What is the typical cloud sequence ahead of an approaching warm front?",
+     "c": [
+      "Cirrus, cirrostratus, altostratus, nimbostratus",
+      "Cumulus, cumulonimbus, stratus, cirrus",
+      "Stratus, cirrus, cumulus, altostratus",
+      "Nimbostratus, altostratus, cirrostratus, cirrus"
+     ],
+     "a": 0,
+     "e": "Cloud thickens and lowers as the warm front nears: Ci, Cs, As, Ns."
+    },
+    {
+     "q": "A grey layer cloud lets the sun appear as a dim, watery disc without a halo. What cloud is it?",
+     "c": [
+      "Altostratus",
+      "Cirrostratus",
+      "Nimbostratus",
+      "Cumulus"
+     ],
+     "a": 0,
+     "e": "Altostratus is thick enough to dim the sun but not to hide it completely, and it lacks the halo of cirrostratus."
+    },
+    {
+     "q": "Which of these clouds is made mostly of ice crystals?",
+     "c": [
+      "Cirrus",
+      "Stratus",
+      "Stratocumulus",
+      "Fair-weather cumulus"
+     ],
+     "a": 0,
+     "e": "Cirrus forms at very cold levels, where cloud is made of ice."
+    },
+    {
+     "q": "What is cumulus congestus?",
+     "c": [
+      "A towering cumulus that can grow into cumulonimbus",
+      "A thin, high cloud made of ice crystals that produces halos",
+      "A layer of low stratus formed by cooling in light winds",
+      "A lens-shaped cloud that forms in the crest of a mountain wave"
+     ],
+     "a": 0,
+     "e": "Congestus is a vigorous growing cumulus with great vertical depth."
+    },
+    {
+     "q": "Which cloud commonly produces drizzle?",
+     "c": [
+      "Stratus",
+      "Cirrus",
+      "Altocumulus",
+      "Fair-weather cumulus"
+     ],
+     "a": 0,
+     "e": "Stratus is a low, uniform layer of fine droplets."
+    },
+    {
+     "q": "Altostratus belongs to which level?",
+     "c": [
+      "Middle level",
+      "High level",
+      "Low level",
+      "It is not classified by level"
+     ],
+     "a": 0,
+     "e": "The 'alto' prefix means middle level."
+    },
+    {
+     "q": "Which cloud has a smooth lens shape and marks mountain waves?",
+     "c": [
+      "Altocumulus lenticularis",
+      "Cirrostratus",
+      "Nimbostratus",
+      "Cumulonimbus calvus"
+     ],
+     "a": 0,
+     "e": "Lenticular clouds form at the crests of stationary waves."
+    },
+    {
+     "q": "Which cloud type is common over cold Atlantic water in a moist, stable onshore flow?",
+     "c": [
+      "Stratocumulus or stratus",
+      "Cumulonimbus, because the cold sea heats the air above it",
+      "Cirrus only, because the stable air stops all low cloud forming",
+      "Altocumulus lenticularis, since the sea acts like a mountain range"
+     ],
+     "a": 0,
+     "e": "Stable moist flow over cool water produces low layer cloud."
+    },
+    {
+     "q": "What is the WMO temperate-region height range for high cloud?",
+     "c": [
+      "5 to 13 km (16,500 to 45,000 ft)",
+      "2 to 7 km (6,500 to 23,000 ft)",
+      "Surface to 2 km (0 to 6,500 ft)",
+      "10 to 20 km (33,000 to 65,000 ft)"
+     ],
+     "a": 0,
+     "e": "WMO Cloud Atlas: high 5-13 km, middle 2-7 km, low surface to 2 km in temperate regions."
+    },
+    {
+     "q": "According to MANOBS, stratus bases are usually below:",
+     "c": [
+      "1,000 ft",
+      "5,000 ft",
+      "10,000 ft",
+      "500 ft"
+     ],
+     "a": 0,
+     "e": "MANOBS Table 7-1: stratus base from near the surface to 1,500 ft, usually below 1,000 ft."
+    },
+    {
+     "q": "MANOBS gives the base of nimbostratus as:",
+     "c": [
+      "Near the surface to 6,500 ft",
+      "20,000 to 39,000 ft, in the high level",
+      "Above 6,500 to 20,000 ft, in the middle level",
+      "1,500 to 6,500 ft only, like cumulus and Sc"
+     ],
+     "a": 0,
+     "e": "MANOBS Table 7-1."
+    },
+    {
+     "q": "MANOBS gives the base of cirrus, cirrocumulus and cirrostratus as:",
+     "c": [
+      "20,000 to 39,000 ft",
+      "6,500 to 20,000 ft",
+      "1,500 to 6,500 ft",
+      "Near the surface to 6,500 ft"
+     ],
+     "a": 0,
+     "e": "MANOBS Table 7-1."
+    },
+    {
+     "q": "Which statement matches the WMO Cloud Atlas on halo phenomena?",
+     "c": [
+      "Cirrostratus often produces halos; altostratus does not",
+      "Altostratus often produces halos; cirrostratus does not",
+      "Both always produce halos",
+      "Neither can produce halos"
+     ],
+     "a": 0,
+     "e": "WMO: cirrostratus is 'often producing halo phenomena'; altostratus 'does not show halo phenomena'."
+    },
+    {
+     "q": "What is nimbostratus made of, according to the WMO Cloud Atlas?",
+     "c": [
+      "Water droplets (sometimes supercooled), raindrops, snow crystals and snowflakes, or a mixture",
+      "Only tiny supercooled water droplets, with no ice present at any time, unless a supervisor directs otherwise",
+      "Only ice crystals, because it forms in the upper troposphere, for the period covered by the product",
+      "Only dry dust and smoke particles with a thin film of water"
+     ],
+     "a": 0,
+     "e": "WMO physical constitution of nimbostratus: liquid and solid particles, possibly a mixture."
+    },
+    {
+     "q": "At which level does the WMO Cloud Atlas place the cumulonimbus base?",
+     "c": [
+      "Low, though tops often reach the middle and high levels",
+      "High, since the anvil forms near the tropopause, as agreed locally with the data user",
+      "Middle only, with no part in the low level",
+      "It has no assigned level because it spans them all, for the period covered by the product"
+     ],
+     "a": 0,
+     "e": "WMO Table 6 lists Cb with the low genera; its tops often reach the middle and high levels."
+    }
+   ],
+   "verified": {
+    "date": "2026-10-27",
+    "sources": [
+     "WMO International Cloud Atlas, Useful concepts: ten genera and level heights for polar, temperate and tropical regions",
+     "NAV CANADA Aviation Weather Services Guide (2017): cloud types grouped by level (Ns listed with low)",
+     "MANOBS 8th ed. Am. 3 (full PDF): Table 7-1 (cloud definitions and base heights), Table 7-3 (abbreviations)",
+     "WMO International Cloud Atlas (cloudatlas.wmo.int), definition pages for cirrus, cirrostratus, altostratus, stratus, stratocumulus, nimbostratus (including physical constitution), cumulus and cumulonimbus; level table (Table 6); cirrostratus vs altostratus comparison page"
+    ],
+    "unverified": [
+     "Cirrocumulus ('small white ripples or grains') and altocumulus ('patchy layers or globules') were not checked against their WMO definition pages this pass.",
+     "Cirrus being made of ice crystals, thunder and hail with Cb, 'fog that has lifted' for stratus and the warm front cloud sequence: standard teaching, not on the WMO definition pages read.",
+     "WMO cloud definitions are quoted via fetch summaries, not read as full pages. The WMO levels (Table 6) were read earlier from the same site and agree with the lesson."
+    ]
+   }
+  },
+  {
+   "title": "Precipitation processes (warm rain, ice crystal)",
+   "lesson": [
+    "Cloud droplets (about 0.02 mm across) are far too small to fall. A typical raindrop is about 2 mm across, roughly a million times the volume, so droplets must grow enormously by one of two processes (NWS).",
+    {
+     "h": "Collision-coalescence (warm rain)"
+    },
+    "In clouds warmer than 0 C, larger droplets fall faster, collide with smaller ones, and merge. NWS: at least a few droplets must be as large as 20 microns. Needs a deep cloud with strong updraft and lots of liquid water. Dominant in the tropics and in warm maritime clouds.",
+    {
+     "h": "Wegener-Bergeron-Findeisen (WBF) process"
+    },
+    "Mixed-phase cloud: supercooled liquid droplets and ice crystals exist together below 0 C. The WBF process is how the ice crystals grow at the droplets' expense.",
+    {
+     "list": [
+      "1. Saturation vapour pressure over ice is lower than over liquid water at the same temperature.",
+      "2. Air that is just saturated for water is therefore supersaturated for ice.",
+      "3. Ice crystals grow by deposition (vapour to ice, no liquid stage).",
+      "4. Vapour is used up, the air drops below water saturation, and the supercooled droplets evaporate.",
+      "5. Vapour keeps moving from droplets to crystals. The crystals grow large enough to fall as snow (or melt into rain on the way down).",
+      "Result: cloud glaciates and precipitates. Needs far more droplets than ice crystals so each crystal can grow big."
+     ]
+    },
+    "Pure water droplets freeze only near -40 C, but ice nuclei start freezing some droplets at warmer temperatures (most natural nuclei activate near -10 C). Supercooled droplets therefore persist in clouds well below 0 C, commonly from 0 C to about -20 C or colder. That is also why aircraft icing (supercooled liquid) occurs in clouds colder than freezing.",
+    "Origin: Wegener (1911) proposed ice growth at the expense of liquid water, Bergeron (1922, presented 1933) applied it to clouds, Findeisen (late 1930s) refined it.",
+    {
+     "h": "Numbers to know"
+    },
+    {
+     "list": [
+      "Ice crystal growth by this process peaks at about -12 C (AMS Glossary).",
+      "Air just saturated for water is this relative humidity with respect to ice: 0 C 100%, -5 C 105%, -10 C 110%, -15 C 115%, -20 C 121%. The gap widens as it gets colder.",
+      "Droplets must grow about a million times in volume to become raindrops."
+     ]
+    },
+    {
+     "note": "Memory line: ice has lower vapour pressure, so vapour moves to the ice. Crystals grow, droplets shrink."
+    },
+    {
+     "h": "Precipitation types"
+    },
+    {
+     "list": [
+      "Rain, drizzle (drops smaller than 0.5 mm), snow, graupel (rimed snow pellets).",
+      "Hail: layered ice from strong cumulonimbus updrafts, with diameters over 5 mm (NWS). Graupel (snow pellets) is under 5 mm.",
+      "Ice pellets (sleet): snow partly melts in a warm layer aloft, then refreezes in the cold air below (NWS).",
+      "Freezing rain: supercooled raindrops freeze on contact. It needs a deep warm layer aloft over a shallow below-freezing layer at the ground (NWS). Very hazardous."
+     ]
+    },
+    {
+     "h": "Precipitation types (MANOBS glossary 13.2.13 to 13.2.15)"
+    },
+    {
+     "list": [
+      "Drizzle: fine drops under 0.5 mm; rain: drops larger than 0.5 mm, or smaller widely scattered drops.",
+      "Freezing rain and freezing drizzle: drops that freeze on impact with the ground or objects near the surface.",
+      "Snow grains: small white opaque grains under 1 mm that do not bounce, falling in small quantity from stratus or fog, never as a shower.",
+      "Snow pellets: white opaque, brittle, about 2 to 5 mm, bounce and break up, always showery.",
+      "Ice pellets: transparent or translucent, 5 mm or less, frozen raindrops or largely melted snowflakes refrozen near the ground.",
+      "Small hail: under 5 mm, snow pellets encased in ice, always from showers of cumulonimbus. Hail: 5 to 50 mm or more, in layers of clear and translucent ice, generally in severe thunderstorms."
+     ]
+    },
+    {
+     "note": "Ice pellets mean a deep cold layer. Freezing rain means a shallow one. Both come from the same warm-layer-aloft setup."
+    }
+   ],
+   "terms": [
+    [
+     "Coalescence",
+     "Merging of colliding cloud droplets."
+    ],
+    [
+     "Wegener-Bergeron-Findeisen (WBF) process",
+     "Ice crystals grow by deposition at the expense of supercooled droplets in mixed-phase cloud, because saturation vapour pressure is lower over ice than over water. Also called the Bergeron or ice crystal process."
+    ],
+    [
+     "Supercooled water",
+     "Liquid water below 0 C."
+    ],
+    [
+     "Mixed-phase cloud",
+     "Cloud containing both supercooled liquid droplets and ice crystals."
+    ],
+    [
+     "Deposition",
+     "Water vapour changing directly to ice."
+    ],
+    [
+     "Graupel",
+     "Soft pellets formed by supercooled droplets freezing onto snow crystals."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Why does the Bergeron process work?",
+     "c": [
+      "Saturation vapour pressure over ice is lower than over liquid water",
+      "Saturation vapour pressure over ice is higher than over liquid water",
+      "Ice crystals are heavier than droplets so they collide with them more often",
+      "Supercooled droplets freeze solid as soon as they touch any ice crystal"
+     ],
+     "a": 0,
+     "e": "At the same temperature, air saturated with respect to water is supersaturated with respect to ice, so crystals grow while droplets evaporate."
+    },
+    {
+     "q": "Which process dominates precipitation formation in warm tropical clouds?",
+     "c": [
+      "Collision-coalescence",
+      "Bergeron process",
+      "Aggregation of snow",
+      "Sublimation"
+     ],
+     "a": 0,
+     "e": "Warm clouds lack ice, so droplets grow by colliding and merging."
+    },
+    {
+     "q": "Freezing rain most commonly forms when:",
+     "c": [
+      "Snow melts in a warm layer aloft and falls into a shallow sub-freezing layer at the ground",
+      "Rain falls through a deep layer of sub-freezing air and refreezes completely before landing",
+      "Hail melts in the warm air near the ground and refreezes on cold surfaces below",
+      "Strong updrafts carry raindrops above the freezing level and drop them as clear ice"
+     ],
+     "a": 0,
+     "e": "Drops are liquid when they reach the cold surface layer too briefly to refreeze, then freeze on contact."
+    },
+    {
+     "q": "What distinguishes ice pellets from freezing rain?",
+     "c": [
+      "Ice pellets form where the cold layer near the surface is deep enough to refreeze drops before landing",
+      "Ice pellets form only in thunderstorms with strong updrafts, while freezing rain forms in layer cloud",
+      "Ice pellets are raindrops that freeze on contact with the ground, unlike freezing rain, which freezes in the air",
+      "Ice pellets form when the surface temperature is above 0 C and the whole column is above freezing"
+     ],
+     "a": 0,
+     "e": "In a deeper sub-freezing layer, raindrops refreeze in the air and arrive as ice pellets."
+    },
+    {
+     "q": "Which precipitation type is associated with strong updrafts in cumulonimbus?",
+     "c": [
+      "Hail",
+      "Drizzle",
+      "Ice pellets",
+      "Light snow"
+     ],
+     "a": 0,
+     "e": "Strong updrafts keep stones aloft where they accumulate layers of ice."
+    },
+    {
+     "q": "Drizzle drops have a diameter smaller than about:",
+     "c": [
+      "0.5 mm",
+      "5 mm",
+      "0.05 mm",
+      "2 mm"
+     ],
+     "a": 0,
+     "e": "Drizzle drops are under about 0.5 mm; larger drops are rain."
+    },
+    {
+     "q": "What does hail growth require?",
+     "c": [
+      "Strong updrafts holding stones in supercooled water",
+      "Calm, stable air with a deep layer of warm, moist cloud",
+      "Warm clouds only, with no ice and no supercooled water",
+      "A fog layer at the ground with very light surface winds"
+     ],
+     "a": 0,
+     "e": "Updrafts recycle stones through supercooled water so layers of ice build up."
+    },
+    {
+     "q": "In the Bergeron process, which grow at the expense of which?",
+     "c": [
+      "Ice crystals grow at the expense of supercooled droplets",
+      "Droplets grow at the expense of ice crystals in mixed cloud",
+      "Hailstones grow at the expense of the surrounding rain drops",
+      "Fog droplets grow at the expense of the cloud base layer"
+     ],
+     "a": 0,
+     "e": "Vapour moves from droplets to the lower-pressure environment over ice."
+    },
+    {
+     "q": "What is graupel?",
+     "c": [
+      "A soft ice pellet formed by riming of snow crystals",
+      "A frozen raindrop with a clear, solid ice structure",
+      "A large hailstone that has fallen from a cumulonimbus anvil",
+      "A frost deposit that forms on cold surfaces on clear nights"
+     ],
+     "a": 0,
+     "e": "Supercooled droplets freeze onto a snow crystal and build a pellet."
+    },
+    {
+     "q": "Which precipitation falls as liquid but freezes on contact with the surface?",
+     "c": [
+      "Freezing rain",
+      "Ice pellets",
+      "Snow grains",
+      "Hail"
+     ],
+     "a": 0,
+     "e": "Freezing rain is supercooled liquid that freezes when it hits a cold surface."
+    },
+    {
+     "q": "A deep warm layer aloft above a deep cold layer near the ground typically gives:",
+     "c": [
+      "Ice pellets",
+      "Freezing rain",
+      "Heavy snow only",
+      "Rain"
+     ],
+     "a": 0,
+     "e": "A deep cold layer refreezes the drops before they land."
+    },
+    {
+     "q": "MANOBS defines hail as ice particles with a diameter of:",
+     "c": [
+      "5 mm to 50 mm or more",
+      "Under 2 mm",
+      "1 to 3 mm",
+      "Over 100 mm only"
+     ],
+     "a": 0,
+     "e": "MANOBS 13.2.14: hail 5 mm to 50 mm or sometimes more. Smaller stones are small hail."
+    },
+    {
+     "q": "Which precipitation always occurs in showers and bounces when it hits hard ground?",
+     "c": [
+      "Snow pellets",
+      "Snow grains",
+      "Drizzle",
+      "Ice crystals"
+     ],
+     "a": 0,
+     "e": "MANOBS 13.2.14: snow pellets always occur in showers, are brittle, and bounce and often break up on hard ground."
+    },
+    {
+     "q": "Snow grains are best described as:",
+     "c": [
+      "Very small opaque grains under 1 mm that do not bounce",
+      "Clear frozen raindrops of 5 mm or less that bounce",
+      "Branched star-shaped crystals that fall in light snow",
+      "Brittle white pellets of 2 to 5 mm that fall in showers"
+     ],
+     "a": 0,
+     "e": "MANOBS 13.2.14: snow grains are fairly flat or elongated, generally under 1 mm, and never fall as a shower."
+    },
+    {
+     "q": "In a mixed-phase cloud, what happens to supercooled droplets under the WBF process?",
+     "c": [
+      "They evaporate while ice crystals grow",
+      "They freeze in place as soon as ice appears nearby",
+      "They grow by collecting ice crystals as they fall",
+      "They are unaffected by the ice until 0 C is reached"
+     ],
+     "a": 0,
+     "e": "Air is subsaturated for water but supersaturated for ice, so droplets evaporate and the vapour deposits on crystals."
+    },
+    {
+     "q": "The WBF process requires which cloud condition?",
+     "c": [
+      "Supercooled water and ice crystals together",
+      "Temperatures above 0 C throughout the whole cloud",
+      "Only liquid droplets, with no ice nuclei present",
+      "Only ice crystals, with no liquid water at all"
+     ],
+     "a": 0,
+     "e": "It is a mixed-phase process. Without both phases there is no vapour exchange."
+    },
+    {
+     "q": "What is the vapour-to-ice change with no liquid stage called?",
+     "c": [
+      "Deposition",
+      "Condensation",
+      "Sublimation",
+      "Riming"
+     ],
+     "a": 0,
+     "e": "Deposition is vapour to ice. Sublimation is the reverse (ice to vapour)."
+    },
+    {
+     "q": "The three names in the WBF process are:",
+     "c": [
+      "Wegener, Bergeron, Findeisen",
+      "Wegener, Beaufort, Fujita",
+      "Bergeron, Coriolis, Findeisen",
+      "Wegener, Bjerknes, Fahrenheit"
+     ],
+     "a": 0,
+     "e": "Wegener (1911), Bergeron (1922/1933), Findeisen (late 1930s)."
+    },
+    {
+     "q": "Why can the WBF process produce snow that reaches the ground as rain?",
+     "c": [
+      "Crystals grow aloft, then melt falling through warmer air",
+      "Droplets freeze as they reach the surface",
+      "Ice evaporates and recondenses on the way down, unless a supervisor directs otherwise",
+      "It only works in clouds that are warmer than 0 C, for the period covered by the product"
+     ],
+     "a": 0,
+     "e": "Most mid-latitude rain starts as ice crystals that melt on the way down."
+    },
+    {
+     "q": "Why do crystals need to be few relative to droplets?",
+     "c": [
+      "Each crystal then gets enough vapour to grow large enough to fall",
+      "Droplets would otherwise freeze solid before they could fall, as set out in the governing publication",
+      "Crystals would melt before they could reach the ground, as agreed locally with the data user",
+      "Too many crystals warm the cloud and stop the process"
+     ],
+     "a": 0,
+     "e": "With many crystals the vapour is shared out and none grows large."
+    },
+    {
+     "q": "Which is true of saturation vapour pressure at -10 C?",
+     "c": [
+      "Lower over ice than over water",
+      "Higher over ice than over water",
+      "Equal over ice and water",
+      "Zero over ice"
+     ],
+     "a": 0,
+     "e": "This difference drives the WBF process."
+    },
+    {
+     "q": "Which precipitation process works only in clouds colder than 0 C?",
+     "c": [
+      "WBF (ice crystal) process",
+      "Collision-coalescence of cloud droplets",
+      "Condensation onto cloud condensation nuclei",
+      "Evaporation of falling raindrops"
+     ],
+     "a": 0,
+     "e": "Collision-coalescence is the warm-cloud process."
+    },
+    {
+     "q": "At about what temperature does ice crystal growth by the Bergeron-Findeisen process peak (AMS Glossary)?",
+     "c": [
+      "-12 C",
+      "-2 C",
+      "-30 C",
+      "-40 C"
+     ],
+     "a": 0,
+     "e": "AMS Glossary: supercooled drops are common between about 0 C and -20 C, and ice crystal growth peaks near -12 C."
+    },
+    {
+     "q": "Air saturated with respect to water at -10 C has about what relative humidity with respect to ice?",
+     "c": [
+      "110%",
+      "100%",
+      "90%",
+      "121%"
+     ],
+     "a": 0,
+     "e": "The ice supersaturation grows as temperature falls: about 105% at -5 C, 110% at -10 C, 115% at -15 C, 121% at -20 C."
+    },
+    {
+     "q": "Pure water droplets, with no nuclei, freeze only near what temperature?",
+     "c": [
+      "-40 C",
+      "-10 C",
+      "-20 C",
+      "0 C"
+     ],
+     "a": 0,
+     "e": "Without freezing nuclei, droplets stay liquid to about -40 C, so supercooled water is common in cloud."
+    }
+   ],
+   "verified": {
+    "date": "2026-10-27",
+    "sources": [
+     "NWS cloud and precipitation training notes: droplet and raindrop sizes, 20 micron threshold, Bergeron mechanism, drizzle under 0.5 mm, hail over 5 mm, graupel under 5 mm",
+     "NWS Goodland, Winter weather types: freezing rain and sleet temperature layers",
+     "MANOBS 8th ed. Am. 3 (full PDF): 6.6 and 13.2.13 to 13.2.15 (precipitation definitions)",
+     "AMS Glossary of Meteorology, Bergeron-Findeisen process: definition, Bergeron 1933 / Findeisen, supercooled drops common 0 to -20 C, ice growth peaks near -12 C",
+     "College of DuPage (Sirvatka), Collision/Coalescence; The Bergeron Process: mechanism, RH wrt ice table 0 to -20 C, freezing nuclei near -10 C, pure water freezes near -40 C",
+     "Wikipedia, Wegener-Bergeron-Findeisen process: Wegener 1911 / Bergeron 1922 attribution"
+    ],
+    "unverified": [
+     "Collision-coalescence dominating in the tropics and needing a deep cloud with strong updraft, and most mid-latitude rain starting as snow: standard teaching, not stated on the pages read.",
+     "WBF process now has two public sources (AMS Glossary, College of DuPage), fetched via summaries. Not confirmed in a Canadian publication or course text. The -12 C peak comes from the AMS page summary; the DuPage page gives no peak temperature. Aircraft-icing link and mid-latitude rain claim remain standard teaching."
+    ]
+   }
+  },
+  {
+   "title": "Fog types and formation",
+   "lesson": [
+    "Fog is cloud at ground level. In Canadian reports it is coded FG when visibility at the surface is 1/2 SM or less. Mist (BR) is a less dense obstruction, 5/8 to 6 SM (MANOBS 6.7).",
+    {
+     "h": "Types"
+    },
+    {
+     "list": [
+      "Radiation fog: clear skies, light winds, moist air, long nights. The ground cools by radiation and chills the air above to the dew point. Forms at night in valleys, burns off after sunrise. Common inland in fall.",
+      "Advection fog: warm moist air moves over a colder surface and is cooled to saturation. Sea fog is the classic case. Over Nova Scotia's south shore and the Grand Banks it is frequent in spring and summer, when warm southerly flow crosses cold ocean water. Can persist day and night.",
+      "Upslope fog: moist air forced up rising terrain cools adiabatically. NWS: upslope winds over about 10 to 12 kt usually give stratus rather than fog.",
+      "Steam fog (sea smoke): very cold air over warm water. Water evaporates into the air and condenses immediately. Seen over lakes and the ocean in winter.",
+      "Precipitation (frontal) fog: rain falling into cooler air evaporates, saturating the layer near the surface. Common ahead of warm fronts.",
+      "Ice fog: forms in extremely cold arctic air, -29 C and colder (NWS)."
+     ]
+    },
+    {
+     "h": "Forecasting clues"
+    },
+    {
+     "list": [
+      "Small temperature-dew point spread: NWS says fog forms when the spread is under 5 F (about 3 C), and sea fog is unlikely if it is over 3 C. Falling temperature also favours fog.",
+      "Light wind (about 2 to 7 kt) thickens radiation fog. A stronger breeze prevents it by mixing in drier air from aloft. Fog lifts to stratus when the lapse rate approaches dry adiabatic (NWS).",
+      "Advection fog requires a warm moist flow over a cold surface, favoured by light winds of about 3 to 9 kt (NWS)."
+     ]
+    },
+    {
+     "h": "Fog terms in METAR (MANOBS 6.7 and 6.8)"
+    },
+    {
+     "list": [
+      "Freezing fog (FZFG): fog at -0.1 to -30.0 C with visibility 1/2 SM or less. Mostly supercooled droplets that deposit rime or glaze.",
+      "Shallow fog (MIFG): low fog that does not obstruct visibility at eye level (1.5 m). Usually with clear sky or thin high cloud.",
+      "Fog patches (BCFG): fog at least 1.5 m deep covering less than 50% of the ground in view.",
+      "Fog covering part of the aerodrome (PRFG): a fog bank covering at least 50% of the ground, with the apparent visibility inside it 1/2 SM or less.",
+      "These three are 'additional phenomena' reported when the prevailing visibility is greater than 6 SM."
+     ]
+    },
+    {
+     "note": "Wind helps separate the types: about 2 to 7 kt for radiation fog and about 3 to 9 kt for advection fog."
+    }
+   ],
+   "terms": [
+    [
+     "Visibility",
+     "In Canadian observations, the greater of the distance a black object near the ground can be recognized and the distance 1,000 candela lights can be seen (MANOBS). See the Observations lesson."
+    ],
+    [
+     "Sea smoke",
+     "Steam fog over open water."
+    ],
+    [
+     "Advection",
+     "Horizontal transport of air properties by wind."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Which conditions favour radiation fog?",
+     "c": [
+      "Clear skies, light winds, moist air, long nights",
+      "Overcast skies, strong winds, dry air, short days",
+      "Warm moist air flowing over a much colder surface at speed",
+      "Cold dry air moving over relatively warm open water"
+     ],
+     "a": 0,
+     "e": "Clear skies allow strong radiational cooling; light wind prevents mixing from lifting the fog layer."
+    },
+    {
+     "q": "Fog along Nova Scotia's south shore in summer is typically:",
+     "c": [
+      "Advection (sea) fog",
+      "Radiation fog",
+      "Steam fog",
+      "Upslope fog"
+     ],
+     "a": 0,
+     "e": "Warm moist southerly flow over cold coastal water cools to saturation."
+    },
+    {
+     "q": "How does steam fog form?",
+     "c": [
+      "Cold air passes over relatively warm water",
+      "Warm air passes over a much colder water surface",
+      "Air is lifted up a slope and cooled adiabatically",
+      "Rain falls into warm air and evaporates"
+     ],
+     "a": 0,
+     "e": "Evaporation from the warm water saturates the cold air immediately above it."
+    },
+    {
+     "q": "What is the reporting threshold for fog?",
+     "c": [
+      "Visibility 1/2 SM or less",
+      "Visibility 3 SM or less",
+      "Visibility 6 SM or less",
+      "Visibility 1 SM or less"
+     ],
+     "a": 0,
+     "e": "MANOBS 6.7.1.1: fog is reported when prevailing visibility is reduced to 1/2 mi. or less at the surface. Mist is 5/8 to 6 mi."
+    },
+    {
+     "q": "Rain evaporating into cool air below a warm front can produce:",
+     "c": [
+      "Precipitation (frontal) fog",
+      "Radiation (ground) fog under clear skies",
+      "Steam fog (sea smoke) over warm water",
+      "Upslope fog over rising hills and terrain"
+     ],
+     "a": 0,
+     "e": "Rain adds moisture to the air near the surface, which can saturate and form fog."
+    },
+    {
+     "q": "When does radiation fog normally dissipate?",
+     "c": [
+      "Shortly after sunrise as heating warms the surface layer",
+      "As the sun sets and the surface begins to cool again",
+      "When the wind drops to calm and the sky stays clear all day",
+      "When the dew point rises 5 C above the air temperature"
+     ],
+     "a": 0,
+     "e": "Solar heating warms the air and evaporates the fog."
+    },
+    {
+     "q": "Mist is reported when visibility is:",
+     "c": [
+      "Between 5/8 and 6 statute miles",
+      "Less than 5/8 statute mile, which is fog",
+      "More than 6 statute miles in any haze",
+      "Exactly 1 statute mile, whatever the cause"
+     ],
+     "a": 0,
+     "e": "In Canadian reports BR is used for visibility from 5/8 SM to 6 SM."
+    },
+    {
+     "q": "What does a stronger breeze do to radiation fog formation?",
+     "c": [
+      "Prevents it, by mixing in drier air from aloft",
+      "Always thickens it into a deeper layer, unless a supervisor directs otherwise",
+      "Has no effect at all on radiation fog",
+      "Turns it into steam fog over the ground, as agreed locally with the data user"
+     ],
+     "a": 0,
+     "e": "NWS: a stronger breeze prevents radiation fog because of mixing with drier air aloft."
+    },
+    {
+     "q": "Fog is most likely when the temperature-dew point spread is:",
+     "c": [
+      "About 3 C or less",
+      "5 to 8 C",
+      "10 C or more",
+      "20 C or more"
+     ],
+     "a": 0,
+     "e": "NWS: fog forms when the spread is under 5 F (about 3 C)."
+    },
+    {
+     "q": "Why can advection fog persist as long as the wind continues?",
+     "c": [
+      "Warm moist air keeps flowing over cold water",
+      "Radiational cooling increases through the night",
+      "Winds are calm and the air stays still",
+      "The ground cools the air above it by conduction"
+     ],
+     "a": 0,
+     "e": "As long as the air keeps crossing a cold surface it keeps cooling."
+    },
+    {
+     "q": "Sea smoke occurs most often:",
+     "c": [
+      "In winter, when very cold air flows over open water",
+      "On calm summer nights when the sea is cooler than the air",
+      "When warm, moist air crosses a cold sea surface in spring",
+      "Over dry desert areas in the afternoon after strong heating"
+     ],
+     "a": 0,
+     "e": "It needs a large temperature difference with colder air above warmer water."
+    },
+    {
+     "q": "Per NWS, at what temperature does ice fog form?",
+     "c": [
+      "-29 C (-20 F) and colder",
+      "0 C and colder",
+      "-10 C and colder",
+      "-60 C and colder"
+     ],
+     "a": 0,
+     "e": "NWS: ice fog forms in extremely cold, arctic air, -29 C (-20 F) and colder."
+    },
+    {
+     "q": "MIFG in a METAR means:",
+     "c": [
+      "Shallow fog that does not obstruct visibility at eye level",
+      "Fog covering most of the sky above the station",
+      "Freezing fog depositing rime on exposed objects, under normal operating conditions",
+      "Fog in the vicinity of the aerodrome but not at it, based on the most recent routine report"
+     ],
+     "a": 0,
+     "e": "MANOBS 6.8.1.3: low-lying fog that does not obstruct visibility at 1.5 m."
+    },
+    {
+     "q": "BCFG covers what share of the ground in view?",
+     "c": [
+      "Less than 50%",
+      "50% or more",
+      "All of it",
+      "Exactly one quarter"
+     ],
+     "a": 0,
+     "e": "MANOBS 6.8.1.1: fog at least 1.5 m deep covering less than 50% of the ground normally visible."
+    }
+   ],
+   "verified": {
+    "date": "2026-10-27",
+    "sources": [
+     "NAV CANADA Aviation Weather Services Guide (2017): FG is visibility under 5/8 SM, BR is 5/8 to 6 SM",
+     "NWS Houston/Galveston fog guide: fog types, wind speeds, spread rules, dissipation, ice fog",
+     "MANOBS 8th ed. Am. 3 (full PDF): 6.7 and 6.8 (fog, mist, freezing fog, MIFG, BCFG, PRFG), 13.2.9 (obstructions to vision)",
+     "NWS Houston/Galveston fog guide (re-read): radiation fog needs light winds, about 2 to 7 kt thickens it; advection about 3 to 9 kt, above 9 kt lifts to stratus; upslope above 10 to 12 kt gives stratus; dew-point spread under 5 F; frontal, steam and ice fog types"
+    ],
+    "unverified": [
+     "Sea fog being frequent on Nova Scotia's south shore and the Grand Banks in spring and summer, and radiation fog being common inland in fall: climatology, not checked here.",
+     "The earlier 15 kt wind figure for converting radiation fog to stratus was removed (no source).",
+     "Description of each fog type is from a US training guide, not a Canadian publication.",
+     "Fog types, wind ranges and the spread rule come from one NWS Houston guide (single source, US Gulf focus). The ice-fog threshold (-29 C and colder) and steam and frontal fog types are in that guide but not in the lesson text."
+    ]
+   }
+  },
+  {
+   "title": "Icing and its causes",
+   "lesson": [
+    "Aircraft icing happens when supercooled liquid drops hit an airframe below 0 C and freeze on contact. It increases weight and drag, reduces lift, and can block pitot tubes and engine inlets.",
+    {
+     "h": "Structural icing types"
+    },
+    {
+     "list": [
+      "Rime ice: small supercooled droplets freeze instantly, trapping air. Rough, milky, opaque. Tends to form at low temperatures (below about -10 C) and/or low liquid water content (WMO).",
+      "Clear ice: large supercooled drops freeze relatively slowly. Glossy, clear or translucent, dense and heavy. Tends to form at warmer temperatures (above about -10 C) and/or high liquid water content (WMO). More dangerous.",
+      "Mixed ice: both at the same time."
+     ]
+    },
+    {
+     "h": "Intensity (NAV CANADA guide)"
+    },
+    {
+     "list": [
+      "Trace (AIM Table 2.3): ice becomes perceptible; the rate of accumulation is slightly greater than the rate of sublimation. Not hazardous, even without de-icing or anti-icing, unless encountered for over 1 hour.",
+      "Light: a problem only if flight in it is prolonged (over 1 hour).",
+      "Moderate: de-icing or anti-icing equipment, or diversion, is necessary.",
+      "Severe: immediate diversion is necessary. A SIGMET for icing is issued only for severe."
+     ]
+    },
+    {
+     "h": "Where icing is worst"
+    },
+    {
+     "list": [
+      "Freezing rain and freezing drizzle: severe, and usually the strongest icing threat.",
+      "Cumuliform clouds with strong updrafts and large water content.",
+      "Frontal zones where warm moist air rises over cold air."
+     ]
+    },
+    {
+     "h": "Other forms"
+    },
+    {
+     "list": [
+      "Carburettor icing: can occur well above freezing in humid air, because vaporization and pressure drop cool the carburettor. The AIM chart (Figure 2.2) shows the temperature and relative humidity range that could induce it; its icing zones reach well above 0 C at high humidity.",
+      "Frost on the ground: forms by deposition when the surface is below 0 C. Must be removed before takeoff."
+     ]
+    },
+    {
+     "h": "Deposits (MANOBS 13.2.10)"
+    },
+    {
+     "list": [
+      "Glaze: a coating of ice, generally clear and smooth, formed by freezing of a film of supercooled water from rain, drizzle or fog. Denser, harder and more transparent than rime or frost.",
+      "Rime: a white or milky, opaque, granular deposit from rapid freezing of supercooled drops on contact with an object.",
+      "Hoar frost: interlocking ice crystals formed by direct sublimation when air with a below-freezing dew point is cooled to saturation."
+     ]
+    },
+    {
+     "note": "Anti-icing and de-icing equipment may not handle severe icing. If in doubt, avoid. A change of altitude to warmer air or out of cloud is the standard escape."
+    },
+    {
+     "h": "Forecasting icing (MANAIR)"
+    },
+    {
+     "h": "AIM icing reporting (MET 2.4)"
+    },
+    {
+     "list": [
+      "Report icing to ATS and, if IFR, request a new routing or altitude if icing will be a hazard.",
+      "Include aircraft identification and type, location, UTC time, intensity, icing type, altitude or flight level, and indicated airspeed.",
+      "The AIM defines three types: rime (rough, milky, opaque, instantaneous freezing of small supercooled droplets), clear (glossy, clear or translucent, relatively slow freezing of large supercooled droplets) and mixed (both at once).",
+      "In thunderstorms, the AIM advises limiting critical icing by penetrating below the freezing level or above the -15 C level (AIR 2.7.2, summarised read)."
+     ]
+    },
+    {
+     "h": "AIM airframe icing (AIR 2.12.3)"
+    },
+    {
+     "list": [
+      "For ice to form in flight the OAT must be at or below freezing with visible moisture. The AIM lists three types: rime, clear and frost.",
+      "Rime is commonly found in stratiform cloud: granular, opaque, pebbly, forming at low temperatures with a low concentration of small supercooled droplets. It adheres to leading edges and is easily removed by de-icing systems.",
+      "Clear ice is commonly found in cumuliform cloud: glossy, smooth and hard, spreading back from the impingement area. It forms at or just below 0 C with a high concentration of large supercooled droplets. It is the most serious form because it adheres firmly and is hard to remove.",
+      "In-flight frost can form when descending from below-freezing air into a layer of warm, moist air. It can restrict vision on the windshield.",
+      "Effects: reduced lift, increased drag and weight, higher stall speed, reduced thrust, control restrictions, and possible compressor stall if ice is ingested. A stall can occur before the stall warning activates.",
+      "Freezing rain and drizzle classically come from warm air over cold air, found near warm fronts and trowals. A climb into the warm air is the classic escape.",
+      "Non-classical freezing drizzle has been found at temperatures down to -10 C at altitudes up to 15,000 ft ASL with no warm layer aloft. Climbing remains the preferred escape, but warm air may not be available.",
+      "Clues to large supercooled droplets: ice farther aft than normal on unheated surfaces, ice on non-heated spinners, rivulets on windows, and unexpected differences in airspeed or climb rate."
+     ]
+    },
+    {
+     "h": "Carburettor icing (AIM AIR 2.3)"
+    },
+    {
+     "list": [
+      "A common cause of general aviation accidents. Fuel-injected engines have very few induction system icing accidents.",
+      "Most carburettor icing engine failures happen during normal cruise, possibly because pilots forget it can occur at high power settings as well as in descents with reduced power.",
+      "Most accidents involve a pilot who did not fully understand the aircraft's carburettor heat system. Systems differ, so an AME on type can explain it.",
+      "When carburettor heat is applied, expect a rough-running engine for a minute or so as the ice melts, loosens and is ingested.",
+      "AIM Figure 2.2 intensity key: serious icing at any power; moderate icing at cruise power and serious at descent power; serious icing at descent power; light icing at cruise or descent power.",
+      "The chart is not valid when operating on MOGAS. MOGAS is more volatile and more susceptible to carburettor icing; in severe cases ice may form at OATs up to 20 C higher than with AVGAS."
+     ]
+    },
+    {
+     "h": "Ground icing (AIR 2.12.2)"
+    },
+    {
+     "list": [
+      "Clean aircraft concept: takeoff is prohibited when frost, ice or snow adheres to any critical surface.",
+      "Frost, ice or snow of medium to coarse sandpaper roughness on the leading edge and upper wing can reduce lift by as much as 30% and increase drag by 40%.",
+      "Cold soaking: fuel in the wing tanks can make the wing skin colder than ambient air, so clear ice can form even in drizzle or rain at temperatures from +8 to +14 C.",
+      "Type I fluids: at least 80% glycol, unthickened, very limited anti-icing protection. Type II fluids: at least 50% glycol, minimum freeze point -32 C, thickened and longer holdover; for aircraft with rotation speeds above 100 KIAS. Holdover times are guidelines only."
+     ]
+    },
+    {
+     "list": [
+      "GFA icing types: RIME, MX (mixed) and CLR (clear).",
+      "GFA depicts only moderate or severe non-convective icing, as a blue line with stippling (denser for severe). Light icing goes in the comments box.",
+      "Layers are a fraction: top over base, hundreds of feet ASL.",
+      "Intensity is judged by effect on the aircraft, not measured. Light: prolonged flight (over 1 hour) without de-icing may cause a problem. Moderate: even short encounters are potentially hazardous; de-icing or anti-icing must be used or divert. Severe: de-icing fails to control the hazard; immediate diversion.",
+      "SIGMET: SEV ICE, with or without freezing rain (FZRA). AIRMET: MOD ICE. Neither applies to icing in convective clouds."
+     ]
+    }
+   ],
+   "terms": [
+    [
+     "Rime ice",
+     "Opaque, rough ice formed by small droplets freezing on impact."
+    ],
+    [
+     "Clear ice",
+     "Smooth, transparent, heavy ice formed by large drops."
+    ],
+    [
+     "Carburettor ice",
+     "Ice that forms in a carburettor due to cooling from fuel vaporization and pressure drop."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "What causes clear ice?",
+     "c": [
+      "Large supercooled drops that spread and freeze slowly",
+      "Tiny supercooled droplets that freeze instantly on impact",
+      "Frost deposited on a cold airframe on the ground at night",
+      "Hailstones striking and sticking to the leading edges"
+     ],
+     "a": 0,
+     "e": "Large drops flow back along the surface before freezing, forming a smooth, dense layer."
+    },
+    {
+     "q": "Which condition normally poses the greatest structural icing threat?",
+     "c": [
+      "Freezing rain",
+      "Dry snow",
+      "Cirrus cloud",
+      "Clear sky"
+     ],
+     "a": 0,
+     "e": "Freezing rain has large supercooled drops and a high water content."
+    },
+    {
+     "q": "Carburettor icing can occur:",
+     "c": [
+      "At temperatures well above freezing in humid air",
+      "Only when outside air is below -10 C in dry air",
+      "Only in visible moisture such as freezing rain at 0 C or lower",
+      "Only on the ground before engine start in heavy snow"
+     ],
+     "a": 0,
+     "e": "Cooling in the carburettor can drop temperature below 0 C even when the outside air is as warm as 20 C."
+    },
+    {
+     "q": "How does rime ice look?",
+     "c": [
+      "White, opaque and brittle",
+      "Clear and smooth, like a glass coating",
+      "Wet and slushy, flowing back over the wing",
+      "Powdery and light blue, easily blown away"
+     ],
+     "a": 0,
+     "e": "Small drops freeze quickly and trap air bubbles, giving a milky appearance."
+    },
+    {
+     "q": "What is a standard escape from structural icing?",
+     "c": [
+      "Change altitude to warmer air or leave the cloud",
+      "Climb higher where the air is colder and drier",
+      "Increase airspeed and stay in the same layer until clear",
+      "Turn off the anti-ice system to save engine power"
+     ],
+     "a": 0,
+     "e": "Moving out of the supercooled water zone, usually to warmer or clear air, stops further accumulation."
+    },
+    {
+     "q": "According to the NWS, how low can liquid water in a cloud persist?",
+     "c": [
+      "As low as -40 C",
+      "Only down to -10 C",
+      "Only down to -20 C",
+      "Not below 0 C"
+     ],
+     "a": 0,
+     "e": "NWS: supercooled liquid water can persist as low as -40 C."
+    },
+    {
+     "q": "What effect does ice on the wing leading edge have?",
+     "c": [
+      "Lift decreases and drag increases",
+      "Lift increases because the wing is rougher",
+      "Drag decreases because the surface is smoother",
+      "There is no effect on lift in light icing"
+     ],
+     "a": 0,
+     "e": "Ice disturbs the airflow, reduces lift and increases weight and drag."
+    },
+    {
+     "q": "What does the NAV CANADA guide say is necessary in severe icing?",
+     "c": [
+      "Immediate diversion",
+      "De-icing equipment alone, with no diversion",
+      "Nothing, if flight is under 1 hour",
+      "Only a pilot report after landing"
+     ],
+     "a": 0,
+     "e": "NAV CANADA guide: light, a problem if prolonged over 1 hour; moderate, de-icing or anti-icing or diversion; severe, immediate diversion."
+    },
+    {
+     "q": "Frost on the wings before takeoff must be:",
+     "c": [
+      "Removed completely before takeoff",
+      "Ignored since it does not change airflow",
+      "Left alone because it blows off during the takeoff roll",
+      "Reduced by taxiing slowly"
+     ],
+     "a": 0,
+     "e": "Even thin frost can spoil lift, so it must be removed."
+    },
+    {
+     "q": "Which cloud typically has the highest liquid water content and large drops?",
+     "c": [
+      "Cumulonimbus or towering cumulus",
+      "Cirrus, because high ice crystal clouds hold the most water",
+      "Cirrostratus, because it covers a large area of the sky",
+      "Thin altostratus, because it forms in a stable layer aloft"
+     ],
+     "a": 0,
+     "e": "Strong updrafts carry plenty of liquid water above the freezing level."
+    },
+    {
+     "q": "Where is structural icing least likely?",
+     "c": [
+      "In cloud-free air at temperatures below -40 C",
+      "In freezing rain at the surface at temperatures just below zero",
+      "In supercooled towering cumulus at about -10 C",
+      "In stratocumulus at -8 C with a high liquid water content"
+     ],
+     "a": 0,
+     "e": "Without liquid water there is nothing to freeze on the aircraft."
+    },
+    {
+     "q": "Per the WMO, rime ice tends to form at:",
+     "c": [
+      "Low temperatures (below about -10 C) and/or low liquid water content",
+      "Only in freezing rain with large drops at 0 C, as set out in the governing publication",
+      "Only at temperatures from 0 to -5 C in clear air, unless a supervisor directs otherwise",
+      "Only above 0 C in clear air near the ground"
+     ],
+     "a": 0,
+     "e": "WMO: rime forms at low temperatures and/or low liquid water content; clear ice at warmer temperatures and/or high liquid water content."
+    },
+    {
+     "q": "MANOBS describes glaze as a deposit that is:",
+     "c": [
+      "Generally clear and smooth, denser and harder than rime",
+      "White, milky and granular, like rime ice",
+      "Made of interlocking crystals formed by sublimation, under normal operating conditions",
+      "Soft and easily brushed off with the hand, as set out in the governing publication"
+     ],
+     "a": 0,
+     "e": "MANOBS 13.2.10: glaze is a coating of ice, generally clear and smooth, formed by freezing of supercooled water; rime is milky and granular; hoar frost forms by sublimation."
+    },
+    {
+     "q": "Which are the GFA icing types?",
+     "c": [
+      "RIME, MX and CLR",
+      "LGT, MOD and SEV",
+      "FZRA, FZDZ and PL",
+      "HOAR, GLAZE and RIME"
+     ],
+     "a": 0,
+     "e": "MANAIR 4.9.2.1."
+    },
+    {
+     "q": "Where does the GFA show light icing?",
+     "c": [
+      "In the comments box",
+      "As a blue stippled area",
+      "As a red hatched area",
+      "It is not mentioned anywhere"
+     ],
+     "a": 0,
+     "e": "MANAIR 4.9.2.1."
+    },
+    {
+     "q": "How does MANAIR define severe icing?",
+     "c": [
+      "De-icing or anti-icing equipment fails to reduce or control the hazard; immediate diversion is necessary",
+      "Ice that stays on the wings for more than one hour of flight, whatever the rate, under normal operating conditions",
+      "Any ice accretion caused by freezing rain, even a thin film, at any rate, as agreed locally with the data user",
+      "Ice that forms only inside cumulonimbus clouds in the summer months"
+     ],
+     "a": 0,
+     "e": "MANAIR 4.9.2.1."
+    },
+    {
+     "q": "A SIGMET for icing is issued for:",
+     "c": [
+      "Severe icing, with or without freezing rain",
+      "Light icing in any cloud type over the area",
+      "Moderate icing in layer cloud only, below FL100",
+      "Frost on the ground before takeoff at the airport"
+     ],
+     "a": 0,
+     "e": "MANAIR 5.8.3.2 and D.5."
+    },
+    {
+     "q": "A GFA icing layer depicted as 80 over 20 means:",
+     "c": [
+      "Top 8,000 ft ASL, base 2,000 ft ASL",
+      "Base 8,000 ft ASL, top 2,000 ft ASL",
+      "Top 80 ft AGL, base 20 ft AGL, near the surface",
+      "Eight oktas over two oktas, giving the cloud cover"
+     ],
+     "a": 0,
+     "e": "MANAIR 4.9.2.1: numerator is the top, denominator the base, hundreds of feet ASL."
+    },
+    {
+     "q": "What is 'trace' icing in the AIM?",
+     "c": [
+      "Ice becomes perceptible; not hazardous unless encountered for over 1 hour",
+      "Ice that needs immediate diversion from the route",
+      "Ice only on the ground before the aircraft takes off, for the period covered by the product",
+      "Ice that never needs reporting to air traffic services, under normal operating conditions"
+     ],
+     "a": 0,
+     "e": "AIM Table 2.3."
+    },
+    {
+     "q": "What should a pilot do if icing will be a hazard under IFR?",
+     "c": [
+      "Report it to ATS and request a new routing or altitude",
+      "Ignore it if it is only light, and carry on, unless a supervisor directs otherwise",
+      "Climb into the cloud to dry out the airframe, unless a supervisor directs otherwise",
+      "Report it only after landing, by telephone"
+     ],
+     "a": 0,
+     "e": "AIM MET 2.4."
+    },
+    {
+     "q": "Which items belong in an AIM icing report?",
+     "c": [
+      "Aircraft identification and type, location, UTC time, intensity, type, altitude and indicated airspeed",
+      "Pilot name and licence number only, with nothing else, under normal operating conditions and unless a supervisor directs otherwise",
+      "Cloud colour and the position of the sun",
+      "Fuel remaining and the number of passengers on board, unless a supervisor directs otherwise and as set out in the governing publication"
+     ],
+     "a": 0,
+     "e": "AIM MET 2.4."
+    },
+    {
+     "q": "In the AIM, which ice type forms at or just below 0 C with large supercooled droplets?",
+     "c": [
+      "Clear ice",
+      "Rime ice",
+      "Hoar frost",
+      "Frost on the ground"
+     ],
+     "a": 0,
+     "e": "AIM AIR 2.12.3.1."
+    },
+    {
+     "q": "In which cloud type is rime ice commonly found, per the AIM?",
+     "c": [
+      "Stratiform",
+      "Cumuliform",
+      "Cirrus",
+      "Only fog"
+     ],
+     "a": 0,
+     "e": "AIM AIR 2.12.3.1. Clear ice is commonly found in cumuliform cloud."
+    },
+    {
+     "q": "Where are freezing rain and drizzle typically found, per the AIM?",
+     "c": [
+      "Near warm fronts and trowals",
+      "Only behind cold fronts, in the clear air",
+      "Only over water, never over land",
+      "Only in thunderstorms and squall lines"
+     ],
+     "a": 0,
+     "e": "AIM AIR 2.12.3.5."
+    },
+    {
+     "q": "What is the classic escape from freezing rain aloft?",
+     "c": [
+      "Climb into the warm air",
+      "Descend",
+      "Turn off anti-icing",
+      "Increase power in the same layer"
+     ],
+     "a": 0,
+     "e": "AIM AIR 2.12.3.5. Non-classical freezing drizzle may lack a warm layer; climbing is still preferred."
+    },
+    {
+     "q": "By how much can frost or ice of coarse sandpaper roughness reduce wing lift?",
+     "c": [
+      "As much as 30%",
+      "About 5%",
+      "About 60%",
+      "It does not affect lift"
+     ],
+     "a": 0,
+     "e": "AIM AIR 2.12.2: reduce lift up to 30% and increase drag by 40%."
+    },
+    {
+     "q": "Why can clear ice form on a wing at +8 to +14 C?",
+     "c": [
+      "Cold-soaked fuel in the wing tanks chills the wing skin",
+      "Supercooled rain falling at those temperatures",
+      "The AIM says clear ice cannot form at those temperatures",
+      "Carburettor ice spreading from the engine to the wing"
+     ],
+     "a": 0,
+     "e": "AIM AIR 2.12.2 cold-soaking phenomenon, in drizzle or rain."
+    },
+    {
+     "q": "Which de-icing fluid has the higher minimum glycol content, per the AIM?",
+     "c": [
+      "Type I (at least 80%)",
+      "Type II (at least 50%)",
+      "Both are equal",
+      "Neither contains glycol"
+     ],
+     "a": 0,
+     "e": "AIM AIR 2.12.2."
+    },
+    {
+     "q": "When do most carburettor icing engine failures happen, per the AIM?",
+     "c": [
+      "During normal cruise",
+      "During takeoff only",
+      "On the ground",
+      "Only in descents"
+     ],
+     "a": 0,
+     "e": "AIM AIR 2.3."
+    },
+    {
+     "q": "What should a pilot expect after selecting carburettor heat with ice present?",
+     "c": [
+      "A rough-running engine for a minute or so",
+      "An immediate and smooth-running engine",
+      "Complete engine shutdown after a few seconds",
+      "An instant increase in power from the engine"
+     ],
+     "a": 0,
+     "e": "AIM AIR 2.3."
+    },
+    {
+     "q": "Which engines have very few induction system icing accidents, per the AIM?",
+     "c": [
+      "Fuel-injected engines",
+      "Carburetted engines",
+      "Piston engines with no heat system",
+      "All engines equally"
+     ],
+     "a": 0,
+     "e": "AIM AIR 2.3."
+    },
+    {
+     "q": "Is the AIM carburettor icing chart valid when operating on MOGAS?",
+     "c": [
+      "No; MOGAS is more susceptible and ice may form at OATs up to 20 C higher than with AVGAS",
+      "Yes; the chart applies equally to AVGAS and MOGAS in all conditions, based on the most recent routine report",
+      "Yes, but only when the outside air temperature is below 0 C, unless a supervisor directs otherwise",
+      "Yes, but only at cruise power with the mixture leaned"
+     ],
+     "a": 0,
+     "e": "AIM AIR 2.3, note under Figure 2.2."
+    },
+    {
+     "q": "Which fuel is more susceptible to carburettor icing, per the AIM?",
+     "c": [
+      "MOGAS, because of its higher volatility",
+      "AVGAS, because of its higher lead content",
+      "Both are equally susceptible in the same conditions",
+      "Jet fuel only, because of its high freezing point"
+     ],
+     "a": 0,
+     "e": "AIM AIR 2.3 note."
+    }
+   ],
+   "verified": {
+    "date": "2026-10-27",
+    "sources": [
+     "NAV CANADA Aviation Weather Services Guide (2017): rime, clear and mixed ice definitions; light, moderate, severe wording; SIGMET only for severe",
+     "WMO, Aviation hazards: icing: rime below about -10 C and/or low liquid water; clear above about -10 C and/or high liquid water; freezing drizzle and rain",
+     "NWS cloud and precipitation training notes: liquid water persists as low as -40 C",
+     "MANOBS 8th ed. Am. 3 (full PDF): 13.2.10 (glaze, rime, hoar frost); 6.6.2.3 to 6.6.2.4 (freezing precipitation and ice accretion indicator)",
+     "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.2.1 (GFA icing types, depiction and intensity definitions), 5.8.3.2, D.5 and E.5 (SIGMET SEV, AIRMET MOD)",
+     "TC AIM 2026-2 AIR (screenshots supplied by the user, 2026-10-27): 2.12.2, 2.12.3 (in-flight and ground icing), 2.7 (thunderstorm icing)",
+     "TC AIM 2026-2 AIR 2.3 carburetor icing (screenshot supplied by the user, 2026-10-27)",
+     "TC AIM 2026-2 AIR 2.3, Figure 2.2 and MOGAS note (screenshot supplied by the user, 2026-10-27)"
+    ],
+    "unverified": [
+     "Carburettor icing (outside temperatures up to about 20 C) and frost deposition: standard aviation teaching, not confirmed on the pages read.",
+     "Escape by changing altitude, and which cloud types have the highest liquid water: standard teaching.",
+     "The rime/clear temperature split at about -10 C (WMO) differs in wording from the AIM (low temperature versus at or just below 0 C); both are given.",
+     "Exact temperature and humidity boundaries of the AIM carburettor icing zones: the figure was read visually, not as text; check Figure 2.2 for exact limits."
+    ]
+   }
+  }
+ ]
 }

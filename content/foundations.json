@@ -471,9 +471,9 @@
           "q": "What does hydrostatic balance mean?",
           "c": [
             "The vertical pressure gradient force balances gravity",
-            "Horizontal pressure and Coriolis forces balance",
-            "Pressure is the same at all heights",
-            "Air never moves vertically"
+            "The horizontal pressure gradient force balances the Coriolis force",
+            "Pressure stays the same at every height in the column",
+            "Air in the atmosphere can never move up or down"
           ],
           "a": 0,
           "e": "In hydrostatic balance the upward pressure gradient force equals the downward force of gravity."
@@ -482,9 +482,9 @@
           "q": "About how high is the 500 hPa level in the standard atmosphere?",
           "c": [
             "About 5,570 m (18,300 ft)",
-            "1,500 m (5,000 ft)",
-            "9,000 m (30,000 ft)",
-            "3,000 m (10,000 ft)"
+            "About 1,500 m (5,000 ft)",
+            "About 9,000 m (30,000 ft)",
+            "About 3,000 m (10,000 ft)"
           ],
           "a": 0,
           "e": "500 hPa sits near 5,570 m in the ISA (computed from the ISA equations), which is why it is treated as the mid-troposphere level."
@@ -747,9 +747,9 @@
           "q": "Compared with the dry adiabatic rate, how does the saturated adiabatic lapse rate behave in very warm, humid air?",
           "c": [
             "It is much smaller, about 4 to 5 C per km",
-            "It is larger, above 9.8 C per km",
-            "It equals the dry rate",
-            "It is zero"
+            "It is larger than the dry rate, well above 9.8 C per km in this air",
+            "It is exactly equal to the dry adiabatic rate at every temperature",
+            "It drops to zero as soon as the air becomes saturated"
           ],
           "a": 0,
           "e": "Latent heat released by condensation offsets cooling. In cold air the rate approaches the dry rate."
@@ -903,9 +903,9 @@
           "q": "Which description fits an adiabatic process?",
           "c": [
             "No heat is exchanged with the surroundings",
-            "Temperature stays constant throughout",
-            "Pressure stays constant throughout",
-            "Volume stays constant throughout"
+            "Temperature stays constant throughout the whole process",
+            "Pressure stays constant while the volume changes freely",
+            "Volume stays constant while heat flows in and out"
           ],
           "a": 0,
           "e": "Adiabatic means no heat exchange with the surroundings."

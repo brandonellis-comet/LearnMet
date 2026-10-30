@@ -1,1404 +1,1404 @@
 {
-  "title": "7. Observations and Instruments",
-  "topics": [
+ "title": "7. Observations and Instruments",
+ "topics": [
+  {
+   "title": "Surface observing (temperature, pressure, wind, visibility)",
+   "lesson": [
+    "Surface observations are the base data for analysis, forecasts and verification. Standard exposure rules make observations comparable between stations.",
     {
-      "title": "Surface observing (temperature, pressure, wind, visibility)",
-      "lesson": [
-        "Surface observations are the base data for analysis, forecasts and verification. Standard exposure rules make observations comparable between stations.",
-        {
-          "list": [
-            "Temperature and humidity: thermometer bulbs 1.25 to 2 m above ground level, in a white double-louvered screen (Stevenson screen) over short grass. The screen shields them from direct sunlight, precipitation and heat radiated from the ground, while letting air flow through.",
-            "Wind: wind measurements must be representative of winds 10 m above level terrain. METAR and SPECI report a two-minute mean. Direction is the direction the wind comes FROM, in degrees true to the nearest 10 (MANOBS 3.2.3), and instruments must work up to at least 100 kt. Siting: at least 10 times the height of any obstruction away.",
-            "Pressure: barometer. Station pressure is the pressure at the instrument. Mean sea level pressure (MSLP) is the station pressure reduced to sea level, so stations at different heights can be compared on a chart.",
-            "Visibility (aeronautical): the greater of (1) the greatest distance a black object near the ground can be easily recognized, and (2) the greatest distance lights of about 1,000 candela can be seen and identified against an unlit background. It is observed at eye level, 1.5 m above the ground. Canadian land stations report it in statute miles; if the observed value falls between two reportable values the lower one is reported, and 15 SM is the maximum reportable value.",
-            "Precipitation: rain gauges (tipping bucket or weighing), snow depth and water equivalent.",
-            "Cloud: observer estimates, or a laser ceilometer that measures cloud base height (AWOS ceilometers report cloud bases up to 25,000 ft). At airports, heights are measured from the official aerodrome level; elsewhere from ground level at the station."
-          ]
-        },
-        {
-          "h": "Altimeter settings"
-        },
-        {
-          "list": [
-            "QNH: sea level pressure setting. With QNH set, the altimeter reads aerodrome elevation when on the ground and altitude above mean sea level in flight. In North America this is the altimeter setting in inches of mercury (for example A2992).",
-            "QFE: setting that makes the altimeter read zero on the aerodrome.",
-            "Standard setting 29.92 inHg (1013.2 hPa): set after entering the standard pressure region, so all aircraft share one reference. In the altimeter setting region the station altimeter setting is used instead (Canadian Aviation Regulations, s. 602.37).",
-            "Reporting temperature and dew point (MANOBS 8.3): rounded to the nearest whole degree Celsius; a value ending in 0.5 rounds up to the warmer degree; single digits are written with a leading 0 (06); below 0 C the value is preceded by M (M02).",
-            "Pressure units (MANOBS 9.1.3): station and sea level pressure are in hPa; altimeter setting is in hundredths of inches of mercury.",
-            "Altimeter setting (MANOBS 9.2): QNH is rounded DOWN to the nearest hundredth of an inch of mercury and reported as four digits after the letter A. Sensors are accurate to within 0.02 inHg and aviation barometers have two or more independent sensors.",
-            "Sea level pressure (SLP) is reported as the last three digits of the hPa value including tenths. Remarks PRESRR or PRESFR are used when station pressure is rising or falling by 2.0 hPa per hour or more."
-          ]
-        },
-        {
-          "note": "Automated stations report a limited set of elements. An LWIS reports only wind, altimeter setting, temperature and dew point. A METAR AUTO adds visibility, cloud height and coverage, precipitation and obstructions to vision. Systems outside lightning-detection coverage cannot report thunderstorms."
-        }
-      ],
-      "terms": [
-        [
-          "Stevenson screen",
-          "Ventilated white box for housing thermometers."
-        ],
-        [
-          "MSLP",
-          "Mean sea level pressure: station pressure reduced to sea level."
-        ],
-        [
-          "QNH",
-          "Altimeter setting that makes an altimeter read elevation above sea level."
-        ]
-      ],
-      "questions": [
-        {
-          "q": "What is the standard height of an anemometer?",
-          "c": [
-            "10 m above open, level ground",
-            "2 m above the ground",
-            "30 m",
-            "On the roof of any building"
-          ],
-          "a": 0,
-          "e": "MANOBS 3.2.2: wind measurements are representative of winds 10 m above level terrain."
-        },
-        {
-          "q": "Why are thermometers housed in a ventilated screen?",
-          "c": [
-            "To shield them from sun and rain while allowing air flow",
-            "To keep them warm so readings stay above freezing at night",
-            "To make the readings equal to the temperature of the ground",
-            "To reduce wind speed so the thermometer is not blown over"
-          ],
-          "a": 0,
-          "e": "A Stevenson screen is a white double-louvered box. It shields thermometers from direct sunlight, precipitation and ground heat radiation while air flows through (MANCLIM)."
-        },
-        {
-          "q": "What does an altimeter read on the ground when QNH is set?",
-          "c": [
-            "The aerodrome elevation",
-            "Zero",
-            "The pressure altitude",
-            "The density altitude"
-          ],
-          "a": 0,
-          "e": "QNH is the pressure setting that makes the altimeter read elevation above mean sea level."
-        },
-        {
-          "q": "What is mean sea level pressure?",
-          "c": [
-            "Station pressure reduced to sea level",
-            "Pressure measured on a ship only",
-            "Pressure at 500 hPa",
-            "Average of all stations"
-          ],
-          "a": 0,
-          "e": "MSLP allows comparison of stations at different elevations."
-        },
-        {
-          "q": "Which instrument measures cloud base height automatically?",
-          "c": [
-            "Ceilometer",
-            "Psychrometer",
-            "Anemometer",
-            "Pyranometer"
-          ],
-          "a": 0,
-          "e": "A ceilometer uses a laser pulse and timing to measure cloud base height."
-        },
-        {
-          "q": "A Stevenson screen protects thermometers from:",
-          "c": [
-            "Direct sunlight, precipitation and ground reflection",
-            "Wind and pressure changes, while allowing sunlight to reach them",
-            "Humidity and wind, but it must be sealed from the air",
-            "Only wind and snow, leaving the sunlight to warm them"
-          ],
-          "a": 0,
-          "e": "The screen shields the thermometers from direct sunlight, precipitation and heat radiated from the ground, while air still flows through it (MANCLIM)."
-        },
-        {
-          "q": "Standard anemometer height for surface wind is:",
-          "c": [
-            "10 m above ground",
-            "2 m above the ground, level with a standard thermometer",
-            "50 m above the ground, clear of nearby obstacles",
-            "1 m above the ground, in the middle of the screen"
-          ],
-          "a": 0,
-          "e": "MANOBS 3.2.2: wind measurements are representative of winds 10 m above level terrain."
-        },
-        {
-          "q": "Wind direction is reported as the direction the wind is blowing:",
-          "c": [
-            "From",
-            "To",
-            "Across",
-            "Around"
-          ],
-          "a": 0,
-          "e": "Wind direction is the direction the wind comes from, in degrees true (MANOBS 3.2.1 and 3.2.3)."
-        },
-        {
-          "q": "For aeronautical purposes, how does MANOBS define visibility?",
-          "c": [
-            "The greater of the daytime distance a black object is recognized and the night distance lights are identified",
-            "The distance to the farthest cloud base that can be seen from the station",
-            "The average of the distances to the four nearest visibility markers",
-            "The distance at which a white object just blends into the background"
-          ],
-          "a": 0,
-          "e": "MANOBS 4.1.1: the greater of the greatest distance a black object near the ground can be easily recognized, and the greatest distance lights of about 1,000 candela can be seen and identified against an unlit background."
-        },
-        {
-          "q": "Barometric pressure is reduced to sea level to:",
-          "c": [
-            "Allow comparison between stations at different elevations",
-            "Make the readings more accurate at each individual station",
-            "Remove the effect of temperature error in the barometer",
-            "Measure the wind speed at the surface more reliably"
-          ],
-          "a": 0,
-          "e": "Reduction removes the effect of station elevation."
-        },
-        {
-          "q": "A ceilometer measures:",
-          "c": [
-            "Cloud base height",
-            "Wind speed",
-            "Visibility only",
-            "Rainfall"
-          ],
-          "a": 0,
-          "e": "Laser or light pulses detect the cloud base."
-        },
-        {
-          "q": "How is the altimeter setting rounded in a Canadian METAR?",
-          "c": [
-            "Down to the nearest hundredth of an inch of mercury",
-            "Up to the nearest tenth of an inch",
-            "To the nearest whole hPa",
-            "To the nearest 0.5 inHg"
-          ],
-          "a": 0,
-          "e": "MANOBS 9.2: QNH is rounded down to the nearest whole hundredth of an inch of mercury."
-        },
-        {
-          "q": "An observed temperature of 4.5 C is reported as:",
-          "c": [
-            "05",
-            "04",
-            "4",
-            "M05"
-          ],
-          "a": 0,
-          "e": "MANOBS 8.3: values involving 0.5 C round up to the warmer degree, and single digits take a leading 0."
-        },
-        {
-          "q": "Which remark is used when station pressure falls by 2.0 hPa per hour or more?",
-          "c": [
-            "PRESFR",
-            "PRESRR",
-            "PRESFAL",
-            "LOWPRES"
-          ],
-          "a": 0,
-          "e": "MANOBS 9.2.1: PRESFR for falling, PRESRR for rising at 2.0 hPa per hour or more."
-        },
-        {
-          "q": "How far from an obstruction should wind instruments be sited if possible?",
-          "c": [
-            "At least 10 times the height of the obstruction",
-            "At least twice the height",
-            "At least 100 m regardless of height",
-            "Directly beside it for shelter"
-          ],
-          "a": 0,
-          "e": "MANOBS 3.2.2: representative of winds 10 m above level terrain at a distance equal to at least 10 times the height of any object from that object."
-        },
-        {
-          "q": "Wind direction in a METAR is rounded to the nearest:",
-          "c": [
-            "10 degrees",
-            "1 degree",
-            "5 degrees",
-            "45 degrees"
-          ],
-          "a": 0,
-          "e": "MANOBS 3.2.1 and 3.2.3: the nearest ten degrees, three digits, true."
-        }
-      ],
-      "verified": {
-        "date": "2026-10-27",
-        "sources": [
-          "MANOBS 8th ed. Amendment 3: 3.2.1 and 3.2.2 (wind), 4.1.1, 4.2 and 4.5.1 (visibility), 7.3.1 (cloud reference level)",
-          "ECCC MANCLIM, Temperature: screen and thermometer exposure",
-          "NAV CANADA Aviation Weather Services Guide (2017): laser ceilometer, AWOS and LWIS",
-          "Transport Canada AIM MET 1.2.4 to 1.2.6: automated systems",
-          "Canadian Aviation Regulations s. 602.37: altimeter setting and standard pressure region",
-          "MANOBS 8th ed. Amendment 3 (full PDF): 8.3 (temperature and dew point reporting), 9.1.3 and 9.2 (pressure units, QNH rounding, PRESRR/PRESFR, SLP)",
-          "MANOBS 8th ed. Am. 3 (full PDF): 3.2.1 to 3.2.3 (wind reporting and siting), 13.2.1 and 13.2.8 (altimeter setting and mean sea level pressure glossary)"
-        ],
-        "unverified": [
-          "QFE and the standard-setting wording are standard aviation teaching and are not in MANOBS; the Canadian altimeter setting rules in CAR 602.37 were checked earlier. The MSLP reduction method is not described in MANOBS 9.2."
-        ]
-      }
+     "list": [
+      "Temperature and humidity: thermometer bulbs 1.25 to 2 m above ground level, in a white double-louvered screen (Stevenson screen) over short grass. The screen shields them from direct sunlight, precipitation and heat radiated from the ground, while letting air flow through.",
+      "Wind: wind measurements must be representative of winds 10 m above level terrain. METAR and SPECI report a two-minute mean. Direction is the direction the wind comes FROM, in degrees true to the nearest 10 (MANOBS 3.2.3), and instruments must work up to at least 100 kt. Siting: at least 10 times the height of any obstruction away.",
+      "Pressure: barometer. Station pressure is the pressure at the instrument. Mean sea level pressure (MSLP) is the station pressure reduced to sea level, so stations at different heights can be compared on a chart.",
+      "Visibility (aeronautical): the greater of (1) the greatest distance a black object near the ground can be easily recognized, and (2) the greatest distance lights of about 1,000 candela can be seen and identified against an unlit background. It is observed at eye level, 1.5 m above the ground. Canadian land stations report it in statute miles; if the observed value falls between two reportable values the lower one is reported, and 15 SM is the maximum reportable value.",
+      "Precipitation: rain gauges (tipping bucket or weighing), snow depth and water equivalent.",
+      "Cloud: observer estimates, or a laser ceilometer that measures cloud base height (AWOS ceilometers report cloud bases up to 25,000 ft). At airports, heights are measured from the official aerodrome level; elsewhere from ground level at the station."
+     ]
     },
     {
-      "title": "Upper-air soundings and radiosondes",
-      "lesson": [
-        "Upper-air soundings measure the atmosphere above ground. Almost all of the world's upper-air data comes from radiosondes: small instrument packages carried aloft by a hydrogen or helium balloon.",
-        {
-          "list": [
-            "Standard launch times are 00 and 12 UTC. This gives models and forecasters a simultaneous snapshot of the atmosphere.",
-            "A radiosonde measures pressure, temperature and humidity. Wind is derived by tracking the balloon's position, now usually by GPS.",
-            "The balloon expands as the pressure falls and eventually bursts, then the instrument parachutes back. NOAA says sondes can reach over 115,000 ft (about 35 km) and flights can last more than two hours.",
-            "Data are reported at mandatory pressure levels (for example 1000, 925, 850, 700, 500, 400, 300, 250, 200, 150, 100 hPa) plus significant levels where the profile changes."
-          ]
-        },
-        {
-          "h": "Uses"
-        },
-        {
-          "list": [
-            "Plot on a skew-T log-P to assess stability, cloud layers, freezing level and inversions.",
-            "Initialize and verify numerical weather prediction models.",
-            "Determine winds aloft and jet streams.",
-            "Calibrate and cross-check satellite measurements."
-          ]
-        },
-        {
-          "h": "Limitations"
-        },
-        "Stations are far apart (hundreds of km) and launch only twice a day, so small features such as thunderstorm outflows are missed. Balloons drift downwind, and the profile is not strictly vertical.",
-        {
-          "note": "Aircraft reports (AMDAR), wind profilers and satellite retrievals fill gaps between launches."
-        }
-      ],
-      "terms": [
-        [
-          "Radiosonde",
-          "Instrument package carried by balloon that transmits profiles of pressure, temperature, humidity and wind."
-        ],
-        [
-          "Mandatory level",
-          "Standard pressure level at which every sounding reports data."
-        ],
-        [
-          "Significant level",
-          "Level where the profile changes character, reported in addition to mandatory levels."
-        ]
-      ],
-      "questions": [
-        {
-          "q": "At which times are routine radiosonde launches made?",
-          "c": [
-            "00 and 12 UTC",
-            "06 and 18 UTC only",
-            "Every hour",
-            "Only when storms approach"
-          ],
-          "a": 0,
-          "e": "NOAA: most upper-air observations are taken daily at 00Z and 12Z."
-        },
-        {
-          "q": "Which variables does a radiosonde provide?",
-          "c": [
-            "Pressure, temperature, humidity and wind",
-            "Temperature and wind only, without humidity",
-            "Cloud height, visibility and precipitation type",
-            "Radar reflectivity and lightning strike counts"
-          ],
-          "a": 0,
-          "e": "A radiosonde measures pressure, temperature and humidity, and wind is derived from tracking."
-        },
-        {
-          "q": "Why does the balloon eventually burst?",
-          "c": [
-            "It expands as outside pressure drops until it ruptures",
-            "Its gas freezes solid in the cold air near the tropopause",
-            "It is struck by lightning inside high thunderstorm cloud",
-            "The gas leaks out gradually and the balloon cannot rise higher"
-          ],
-          "a": 0,
-          "e": "The gas expands at lower pressure until the balloon reaches its limit."
-        },
-        {
-          "q": "Which of these are standard (mandatory) pressure levels?",
-          "c": [
-            "850 and 500 hPa",
-            "875 and 525 hPa",
-            "950 and 450 hPa",
-            "1100 and 20 hPa"
-          ],
-          "a": 0,
-          "e": "850 and 500 hPa are among the standard mandatory levels."
-        },
-        {
-          "q": "What is a major limitation of radiosonde coverage?",
-          "c": [
-            "Stations are widely spaced and launch only twice a day",
-            "They can measure surface values only and not the upper air",
-            "They are launched only over water and not over land",
-            "They cannot measure temperature in clear air or in cloud"
-          ],
-          "a": 0,
-          "e": "Small, fast-evolving features can occur between stations and launch times."
-        },
-        {
-          "q": "A radiosonde is carried aloft by:",
-          "c": [
-            "A balloon",
-            "An aircraft",
-            "A rocket",
-            "A satellite"
-          ],
-          "a": 0,
-          "e": "Weather balloons lift the instrument package."
-        },
-        {
-          "q": "Radiosondes are normally released at:",
-          "c": [
-            "00 and 12 UTC",
-            "06 and 18 local only",
-            "Noon only",
-            "Every hour"
-          ],
-          "a": 0,
-          "e": "NOAA: most upper-air observations are taken daily at 00Z and 12Z."
-        },
-        {
-          "q": "A radiosonde measures:",
-          "c": [
-            "Pressure, temperature and humidity, with wind from tracking",
-            "Rainfall and snowfall only, with wind from the ground station",
-            "Visibility and cloud base only, from a laser on the balloon",
-            "Lightning strikes and ozone, with wind taken from the ground"
-          ],
-          "a": 0,
-          "e": "Wind is derived from tracking the balloon."
-        },
-        {
-          "q": "A balloon bursts at about:",
-          "c": [
-            "30 km or higher",
-            "3 km, where the air is too thin for the balloon to float",
-            "1 km, once the first cloud layer is reached",
-            "About 100 m, where the surface inversion ends"
-          ],
-          "a": 0,
-          "e": "NOAA: sondes can reach over 115,000 ft (about 35 km). The balloon bursts as it expands in the thin air."
-        },
-        {
-          "q": "Why are upper-air observations important for forecasting?",
-          "c": [
-            "They provide initial conditions for models and stability data",
-            "They measure the ground temperature at each station only",
-            "They only support the military and have no use for models",
-            "They measure visibility and cloud for the next hour only"
-          ],
-          "a": 0,
-          "e": "Soundings give the vertical structure used in analyses."
-        },
-        {
-          "q": "How is the wind measured by a modern radiosonde?",
-          "c": [
-            "By tracking the position of the sonde with GPS",
-            "By a cup anemometer carried on the balloon",
-            "By the balloon's rate of rise alone",
-            "By a separate aircraft flying alongside it"
-          ],
-          "a": 0,
-          "e": "NOAA: wind speed and direction are derived by tracking the sonde's position with GPS."
-        }
-      ],
-      "verified": {
-        "date": "2026-10-26",
-        "sources": [
-          "NOAA JetStream, Radiosondes: launch times 00Z and 12Z, measurements, GPS wind, hydrogen or helium balloon, over 115,000 ft, flight over two hours"
-        ],
-        "unverified": [
-          "The list of mandatory pressure levels (1000, 925, 850, 700, 500, 400, 300, 250, 200, 150, 100 hPa) is standard WMO practice from general knowledge, not checked in a fetched source.",
-          "The balloon ascent rate is not given by the NOAA page, so it was removed."
-        ]
-      }
+     "h": "Altimeter settings"
     },
     {
-      "title": "Weather radar principles and interpretation",
-      "lesson": [
-        "A weather radar sends out short pulses of microwave energy and listens for the part scattered back by raindrops, snow, hail and other particles. Time delay gives range. Signal strength gives reflectivity.",
-        {
-          "h": "Reflectivity"
-        },
-        "Reflectivity (Z) is measured in mm6/m3. Because raw values vary so widely, radar applies a logarithmic scale, giving dBZ. The scale runs from about -35 to +85 dBZ. Higher values mean more or larger targets. ECCC public radar maps show precipitation rate instead: mm/h for rain and cm/h for snow.",
-        {
-          "list": [
-            "NOAA JetStream guide (US, not ECCC): above 65 dBZ extremely heavy precipitation including water-coated hail. 50 to 65: heavy precipitation, possibly some hail. 40 to 50: moderate. 20 to 40: light. 0 to 20: very light precipitation or general clutter. -35 to 0: extremely light (drizzle or snow).",
-            "NOAA marks the 20 to 40 and 40 to 50 rows as general guidelines: heavy rainfall does not always match them. Warm tropical rain contains little or no hail, so reflectivity is often lower than the rain rate suggests."
-          ]
-        },
-        {
-          "h": "Doppler"
-        },
-        "Doppler radar measures the radial velocity: the part of the target motion toward or away from the radar. It cannot see motion across the beam. A tight pair of strong inbound and outbound velocities next to each other suggests rotation, such as a mesocyclone.",
-        {
-          "h": "Dual-polarization"
-        },
-        "Dual-pol radars send and receive both horizontal and vertical pulses. ECCC says its S-band dual-pol radars help distinguish precipitation types, reduce false echoes from birds and insects, improve quantitative precipitation estimates and help detect icing conditions for aircraft. ECCC's surface precipitation type product classifies rain, snow, freezing rain, hail and mixed.",
-        {
-          "list": [
-            "Differential reflectivity (ZDR, dB): compares horizontal and vertical power. Near 0 dB suggests round or tumbling targets such as hail. Above 0 suggests flattened drops such as large raindrops. Below 0 suggests vertically elongated particles such as ice crystals or snowflakes (NOAA).",
-            "Correlation coefficient (CC, 0 to 1): how similar the sampled targets are. Low is below 0.80, moderate 0.80 to 0.97, high above 0.97. Birds, insects, buildings, smoke and mixed precipitation give lower CC than uniform rain or snow (NOAA).",
-            "Tornado debris signature: a significant drop in CC at the same place as a strong rotational velocity couplet. Debris must be lofted high enough to be sampled, so no CC drop does not rule a tornado out (NOAA)."
-          ]
-        },
-        {
-          "h": "Limitations"
-        },
-        {
-          "list": [
-            "Beam height rises with range. NOAA examples: about 1,300 ft above ground at 20 miles and about 11,600 ft at 98 miles for the radars cited. The beam also widens by about 1,000 ft per 10 miles, nearly 2 miles wide at 100 miles. Distant low-level precipitation can be overshot.",
-            "Subrefraction: the beam bends less than normal, so the radar overshoots objects it would normally detect and may under-report intensity.",
-            "Superrefraction: the beam is closer to the ground than normal and storm intensity can be overestimated. Extreme superrefraction causes ducting and false echoes called anomalous propagation (AP), for example roads or railways showing up on the display.",
-            "Ground clutter: stationary echoes near the radar from terrain and buildings.",
-            "Bright band: melting snowflakes appear as a ring of high reflectivity at the melting level, overestimating rain rate.",
-            "Attenuation: heavy rain can weaken the signal, especially for shorter wavelengths."
-          ]
-        },
-        {
-          "h": "NAV CANADA Aviation Weather Services Guide (radar page)"
-        },
-        {
-          "list": [
-            "Radar helps identify areas of precipitation. It does not show cloud cover. Pilots unfamiliar with radar products are advised to contact an FIC for NAV CANADA assistance.",
-            "Imagery comes in two formats: a precipitation intensity product and an echo tops product.",
-            "Precipitation intensity is a rate of fall in mm/h or cm/h at a specific altitude (example given: 1.5 km). Two scales: rain up to 300 mm/h, snow up to 40 cm/h.",
-            "Echo tops give an indication of the vertical extent of the precipitation area. Cloud tops could extend much higher.",
-            "Each radar site has a detection range of about 150 NM. Composites join several radar images into one; their advantage is that anomalies such as attenuation and masking are reduced, because adjacent sites see the precipitation from other directions.",
-            "The guide's network map (MSC's Weather Radar Network) shows 32 operational radars. Composite and single-site images are available in colour on the CFPS website."
-          ]
-        },
-        {
-          "h": "ECCC network (About Canadian weather radar)"
-        },
-        {
-          "list": [
-            "Older C-band radars are being replaced by more powerful S-band dual-pol radars (Canadian Weather Radar Replacement Program, launched 2017). C-band: single polarization, Doppler coverage 113 km, maximum coverage 256 km, new product every 10 minutes, 24 scans. S-band: dual polarization, Doppler coverage 240 km, maximum 330 km (raw data only), every 6 minutes, 17 scans.",
-            "The precipitation-rate mosaic covers Canada and the US at 1 km resolution, updates every 6 minutes and can merge up to 200 radars. Palettes come in 8 or 14 colours.",
-            "DPQPE (dual-pol quantitative precipitation estimate) uses the lowest sweep, 0.4 degrees for most S-band radars. SPTP (surface precipitation type) has five classes: rain, snow, freezing rain, hail, mixed.",
-            "ECCC cautions: do not compare intensity and SPTP pixel by pixel; the intensity composite uses a maximum-value approach where radars overlap; interpolated values should not be treated as real observations; SPTP uses only the nearest radar plus model data, so some echoes may be removed."
-          ]
-        },
-        {
-          "note": "Always check beam height at distance before trusting low-level echoes."
-        }
-      ],
-      "terms": [
-        [
-          "dBZ",
-          "Logarithmic unit of radar reflectivity."
-        ],
-        [
-          "Radial velocity",
-          "Component of motion toward or away from the radar."
-        ],
-        [
-          "Bright band",
-          "Enhanced reflectivity at the melting layer."
-        ],
-        [
-          "Anomalous propagation",
-          "Radar beam bent toward the ground, producing false echoes."
-        ],
-        [
-          "ZDR",
-          "Differential reflectivity: power comparison between horizontal and vertical channels, in dB."
-        ],
-        [
-          "Correlation coefficient",
-          "Unitless 0 to 1 measure of how similar the sampled targets are."
-        ],
-        [
-          "DPQPE",
-          "ECCC dual-pol quantitative precipitation estimate."
-        ],
-        [
-          "SPTP",
-          "ECCC surface precipitation type composite."
-        ]
-      ],
-      "questions": [
-        {
-          "q": "What does a Doppler radar measure that a conventional radar does not?",
-          "c": [
-            "Radial velocity",
-            "Cloud colour",
-            "Temperature",
-            "Air pressure"
-          ],
-          "a": 0,
-          "e": "Doppler radars detect motion toward or away from the radar."
-        },
-        {
-          "q": "As a rule of thumb, what reflectivity is usually associated with heavy rain and possible hail?",
-          "c": [
-            "About 50 to 65 dBZ, extremely heavy above 65",
-            "Below 10 dBZ",
-            "Around 20 dBZ",
-            "Zero dBZ"
-          ],
-          "a": 0,
-          "e": "NOAA JetStream table (US guidance): 50 to 65 heavy, possibly some hail; above 65 extremely heavy including water-coated hail. ECCC public maps use rain rate."
-        },
-        {
-          "q": "Why might a radar miss shallow precipitation at long range?",
-          "c": [
-            "The beam rises above it due to Earth's curvature",
-            "Rain evaporates completely before the beam reaches it",
-            "The radar signal is absorbed by dry air at long range",
-            "Distant echoes are too bright and saturate the receiver"
-          ],
-          "a": 0,
-          "e": "The beam height increases with distance and can overshoot low clouds and rain."
-        },
-        {
-          "q": "What is the radar 'bright band'?",
-          "c": [
-            "A ring of enhanced reflectivity at the melting level",
-            "A band of heavy snow falling at the edge of the beam",
-            "A thunderstorm signature shown at the radar's maximum range",
-            "A false echo created by ground clutter near the radar"
-          ],
-          "a": 0,
-          "e": "Melting snowflakes are coated in water and reflect strongly."
-        },
-        {
-          "q": "What is a main benefit of dual-polarization radar?",
-          "c": [
-            "It helps identify precipitation type and non-weather targets",
-            "It extends the range of the radar to well over 1000 km",
-            "It measures lightning strikes inside the radar coverage area",
-            "It gives the surface air temperature under each radar echo"
-          ],
-          "a": 0,
-          "e": "Dual-pol variables give particle shape and type information."
-        },
-        {
-          "q": "Radar reflectivity is expressed in:",
-          "c": [
-            "dBZ",
-            "hPa",
-            "kt",
-            "mm"
-          ],
-          "a": 0,
-          "e": "dBZ is a logarithmic measure of returned power."
-        },
-        {
-          "q": "The Doppler effect allows radar to measure:",
-          "c": [
-            "Radial velocity toward or away from the radar",
-            "Temperature and humidity along the beam path from the antenna",
-            "Pressure and cloud type in the sample volume",
-            "Cloud colour and drop size distribution of the echo"
-          ],
-          "a": 0,
-          "e": "Frequency shift gives motion along the beam."
-        },
-        {
-          "q": "Ground clutter appears as:",
-          "c": [
-            "Stationary echoes near the radar",
-            "Moving bands that travel with the wind across the display",
-            "Hook shapes on the edge of a rotating storm cell",
-            "Clear air patterns that appear on calm, clear days"
-          ],
-          "a": 0,
-          "e": "Terrain and buildings return signals."
-        },
-        {
-          "q": "The radar beam rises with distance because of:",
-          "c": [
-            "Earth's curvature and beam elevation",
-            "Wind blowing the beam upward as it travels away",
-            "Cloud layers refracting the beam toward the sky",
-            "Temperature of the air at the radar antenna only"
-          ],
-          "a": 0,
-          "e": "The beam rises above the ground as it travels."
-        },
-        {
-          "q": "Bright band on radar marks:",
-          "c": [
-            "The melting layer",
-            "Hail",
-            "Ground clutter",
-            "Birds"
-          ],
-          "a": 0,
-          "e": "Melting snow coats with water and gives high reflectivity."
-        },
-        {
-          "q": "Higher dBZ values generally indicate:",
-          "c": [
-            "Heavier precipitation or larger hydrometeors",
-            "Lighter precipitation or smaller drops in the beam",
-            "No precipitation, since the echo is only clutter",
-            "Only snow, since rain always gives a low reading"
-          ],
-          "a": 0,
-          "e": "Stronger returns mean larger or more numerous targets."
-        },
-        {
-          "q": "Approximately what range does the dBZ scale cover?",
-          "c": [
-            "-35 to +85 dBZ",
-            "0 to 20 dBZ",
-            "0 to 1000 dBZ",
-            "-5 to +10 dBZ"
-          ],
-          "a": 0,
-          "e": "NOAA JetStream, Radar Images: Reflectivity."
-        },
-        {
-          "q": "Using the NOAA table, 20 to 40 dBZ corresponds to:",
-          "c": [
-            "Light precipitation",
-            "Moderate precipitation",
-            "Heavy precipitation",
-            "Hail only"
-          ],
-          "a": 0,
-          "e": "NOAA: 40 to 50 moderate, 50 to 65 heavy. Guidelines only."
-        },
-        {
-          "q": "ZDR near 0 dB suggests targets that are:",
-          "c": [
-            "Round or tumbling, such as hail",
-            "Flattened, such as large raindrops",
-            "Vertically elongated, such as snowflakes",
-            "Non-existent"
-          ],
-          "a": 0,
-          "e": "NOAA: above 0 flattened drops; below 0 vertically elongated particles."
-        },
-        {
-          "q": "A low correlation coefficient (below 0.80) most suggests:",
-          "c": [
-            "Non-meteorological echoes or mixed precipitation",
-            "Uniform light rain",
-            "Uniform snow",
-            "Clear air"
-          ],
-          "a": 0,
-          "e": "NOAA: birds, buildings, insects, smoke and mixed precipitation lower CC."
-        },
-        {
-          "q": "A tornado debris signature is a CC drop that coincides with:",
-          "c": [
-            "A strong rotational velocity couplet",
-            "A bright band",
-            "A high ZDR value",
-            "A radar blind spot"
-          ],
-          "a": 0,
-          "e": "NOAA: a significant CC drop with a strong rotational velocity couplet. CC confirms, but does not predict, tornadoes."
-        },
-        {
-          "q": "Superrefraction causes the radar beam to:",
-          "c": [
-            "Travel closer to the ground and may cause AP",
-            "Bend upward and overshoot storms",
-            "Stop transmitting",
-            "Widen to nothing"
-          ],
-          "a": 0,
-          "e": "NOAA, Radar Beams. Subrefraction causes overshooting."
-        },
-        {
-          "q": "About how much does a radar beam widen per 10 miles of travel (NOAA)?",
-          "c": [
-            "About 1,000 ft",
-            "About 100 ft",
-            "About 10,000 ft",
-            "About 10 ft"
-          ],
-          "a": 0,
-          "e": "NOAA: nearly 2 miles wide at 100 miles."
-        },
-        {
-          "q": "How often does the ECCC S-band radar produce a new product, compared with the old C-band?",
-          "c": [
-            "Every 6 minutes versus every 10 minutes",
-            "Every 10 minutes versus every 6 minutes",
-            "Hourly versus every 30 minutes",
-            "Both every 30 minutes"
-          ],
-          "a": 0,
-          "e": "ECCC, About Canadian weather radar comparison table."
-        },
-        {
-          "q": "What Doppler coverage range does ECCC give for S-band radars?",
-          "c": [
-            "240 km",
-            "113 km",
-            "330 km",
-            "50 km"
-          ],
-          "a": 0,
-          "e": "ECCC: C-band Doppler coverage 113 km; S-band 240 km; 330 km is the maximum raw-data coverage."
-        },
-        {
-          "q": "ECCC's DPQPE product is based on:",
-          "c": [
-            "The lowest sweep (0.4 degrees for most S-band radars)",
-            "The highest sweep",
-            "An average of all sweeps",
-            "Satellite rain rates"
-          ],
-          "a": 0,
-          "e": "ECCC, About Canadian weather radar."
-        },
-        {
-          "q": "How many precipitation types does ECCC's SPTP classify?",
-          "c": [
-            "Five",
-            "Two",
-            "Three",
-            "Nine"
-          ],
-          "a": 0,
-          "e": "ECCC: rain, snow, freezing rain, hail, mixed."
-        },
-        {
-          "q": "ECCC says interpolated values on the radar composite:",
-          "c": [
-            "Should not be treated as real observations",
-            "Are verified by satellite",
-            "Are accurate to 1 mm/h",
-            "Replace raw data"
-          ],
-          "a": 0,
-          "e": "ECCC, About Canadian weather radar, limitations."
-        },
-        {
-          "q": "How does ECCC show snow on its precipitation-rate maps?",
-          "c": [
-            "cm/h",
-            "mm/h",
-            "dBZ",
-            "hPa"
-          ],
-          "a": 0,
-          "e": "ECCC: rain in mm/h, snow in cm/h, using two reflectivity-to-rate relationships."
-        },
-        {
-          "q": "According to the NAV CANADA guide, weather radar does not show:",
-          "c": [
-            "Cloud cover",
-            "Precipitation",
-            "Echo tops",
-            "Rain rate"
-          ],
-          "a": 0,
-          "e": "NAV CANADA Aviation Weather Services Guide, Weather Radar page."
-        },
-        {
-          "q": "What are the two radar imagery formats in the NAV CANADA guide?",
-          "c": [
-            "Precipitation intensity and echo tops",
-            "Reflectivity and velocity",
-            "Visible and infrared",
-            "CAPPI and SPTP"
-          ],
-          "a": 0,
-          "e": "NAV CANADA guide."
-        },
-        {
-          "q": "In the NAV CANADA guide, the rain scale on radar intensity products goes up to:",
-          "c": [
-            "300 mm/h",
-            "40 mm/h",
-            "300 cm/h",
-            "30 mm/h"
-          ],
-          "a": 0,
-          "e": "NAV CANADA guide: rain up to 300 mm/h, snow up to 40 cm/h."
-        },
-        {
-          "q": "What snow rate does the NAV CANADA guide give as the top of the snow scale?",
-          "c": [
-            "40 cm/h",
-            "300 cm/h",
-            "4 cm/h",
-            "400 mm/h"
-          ],
-          "a": 0,
-          "e": "NAV CANADA guide."
-        },
-        {
-          "q": "The NAV CANADA guide gives each weather radar site a detection range of about:",
-          "c": [
-            "150 NM",
-            "50 NM",
-            "500 NM",
-            "15 NM"
-          ],
-          "a": 0,
-          "e": "NAV CANADA guide. ECCC quotes km figures for S-band (240 km Doppler)."
-        },
-        {
-          "q": "Why do radar composites reduce attenuation and masking problems?",
-          "c": [
-            "Adjacent radar sites see the precipitation from other directions",
-            "They use only the nearest radar",
-            "They remove all weak echoes",
-            "They are updated hourly"
-          ],
-          "a": 0,
-          "e": "NAV CANADA guide, composite products."
-        }
-      ],
-      "verified": {
-        "date": "2026-10-27",
-        "sources": [
-          "ECCC, About Canadian weather radar: C-band replaced by S-band dual-pol, six-minute composite, up to 200 radars, mm/h and cm/h scales, surface precipitation type classes",
-          "NAV CANADA Aviation Weather Services Guide (2017): radar scales and update interval for the older network",
-          "ECCC, About Canadian weather radar (canada.ca, page last modified 2026-07-24): network table, update interval, products, limitations",
-          "NOAA JetStream: Radar Images: Reflectivity (dBZ table, scale), Dual Polarization (ZDR, CC, debris), Radar Beams (beam height, refraction, AP) (US source, fetched 2026-10-27)",
-          "NAV CANADA Aviation Weather Services Guide, Weather Radar page (guide pages 24 and 25; screenshots supplied by the user, 2026-10-27): confirms radar intensity and echo tops products, rain 300 mm/h and snow 40 cm/h scales, about 150 NM range, composite advantage, does not show cloud cover",
-          "NAV CANADA guide Weather Imagery and Supplementary Products table (screenshot, 2026-10-27): radar imagery updated every 10 minutes"
-        ],
-        "unverified": [
-          "dBZ ranges are from a US NOAA table and apply to US radars. ECCC publishes rain rate, not dBZ ranges; Canadian radar wavelength is not stated on the ECCC page.",
-          "Doppler radial velocity, the cross-beam limit and mesocyclone velocity couplet appearance: not confirmed in a fetched source (the NOAA velocity page fetched did not cover it).",
-          "Bright band and attenuation statements are standard radar meteorology, not confirmed in a fetched source. The anomalous propagation cause 'strong inversion' was removed because the source describes density decrease with height instead.",
-          "The NAV CANADA product table gives radar images every 10 minutes (guide page 13), while ECCC says the S-band composite is every 6 minutes; the 10-minute figure may describe the older network. The guide's 150 NM range and ECCC's km ranges are different measures and were not reconciled."
-        ]
-      }
+     "list": [
+      "QNH: sea level pressure setting. With QNH set, the altimeter reads aerodrome elevation when on the ground and altitude above mean sea level in flight. In North America this is the altimeter setting in inches of mercury (for example A2992).",
+      "QFE: setting that makes the altimeter read zero on the aerodrome.",
+      "Standard setting 29.92 inHg (1013.2 hPa): set after entering the standard pressure region, so all aircraft share one reference. In the altimeter setting region the station altimeter setting is used instead (Canadian Aviation Regulations, s. 602.37).",
+      "Reporting temperature and dew point (MANOBS 8.3): rounded to the nearest whole degree Celsius; a value ending in 0.5 rounds up to the warmer degree; single digits are written with a leading 0 (06); below 0 C the value is preceded by M (M02).",
+      "Pressure units (MANOBS 9.1.3): station and sea level pressure are in hPa; altimeter setting is in hundredths of inches of mercury.",
+      "Altimeter setting (MANOBS 9.2): QNH is rounded DOWN to the nearest hundredth of an inch of mercury and reported as four digits after the letter A. Sensors are accurate to within 0.02 inHg and aviation barometers have two or more independent sensors.",
+      "Sea level pressure (SLP) is reported as the last three digits of the hPa value including tenths. Remarks PRESRR or PRESFR are used when station pressure is rising or falling by 2.0 hPa per hour or more."
+     ]
     },
     {
-      "title": "Satellite imagery (visible, IR, water vapour)",
-      "lesson": [
-        "Satellites provide global coverage, including oceans where there are few surface observations.",
-        {
-          "h": "Orbits"
-        },
-        {
-          "list": [
-            "Geostationary: about 35,786 km (22,236 mi) above the equator, fixed over one spot. Frequent images of the same region. Poor viewing at high latitudes. The GOES satellites are geostationary.",
-            "Polar-orbiting: about 833 km up per NOAA; the NAV CANADA guide says about 850 km for POES satellites with HRPT (High-Resolution Picture Transfer), one orbit every 105 minutes, 14 orbits a day. Because the Earth rotates, each orbit shifts west by about 2 time zones. Higher resolution and good polar coverage, but fewer passes of a given spot."
-          ]
-        },
-        {
-          "h": "Channels"
-        },
-        {
-          "list": [
-            "Visible: reflected sunlight, daytime only. Clouds appear white, the ground grey and water dark. Snow-covered ground also looks white and can be mistaken for cloud or fog; looping helps because clouds move and snow does not. Visible can show low fog and stratus that IR misses, if higher cloud does not cover them. It shows developing thunderstorms in their earliest stages, before radar detects them (NWS).",
-            "Infrared (IR): heat radiated by clouds and the surface. Day and night. Clouds are colder than land and water, so they stand out. Strong to severe thunderstorms normally have very cold tops. Colder temperatures are often enhanced with colours. Low stratus and fog are often hard to identify in IR.",
-            "Water vapour: moisture in the upper atmosphere. Brightest or whitest areas are the most humid and dark areas are dry. Looped imagery shows jet streams and upper troughs even in clear areas, and a stream of water vapour crossing a mountain range at a near right angle may indicate mountain wave turbulence (NWS).",
-            "GOES water vapour bands: 6.2 micrometres (upper level), 6.9 (mid level), 7.3 (lower level, senses down to about 500 to 750 hPa in cloud-free areas). Each senses the mean temperature of a layer of moisture; layer height varies with the temperature and moisture profile. Optically dense cloud blocks the view of lower moisture."
-          ]
-        },
-        {
-          "h": "NAV CANADA Aviation Weather Services Guide (satellite page)"
-        },
-        {
-          "list": [
-            "Visible and infrared imagery are the two most common types on the CFPS website, from geostationary or polar-orbiting satellites. The guide's example is a GOES-East IR (C13) image dated 2026-05-15, with a temperature scale in degrees C.",
-            "Visible: a photo of the clouds during daylight hours. Infrared: measures the heat (thermal) footprint of cloud or of the Earth's surface if clouds are thin or absent, day and night.",
-            "GOES: about 36,000 km above the equator, position fixed relative to a point on the surface.",
-            "Owing to the complexity of interpreting satellite imagery, most pilots should consider consulting a briefer when using satellite products for flight planning."
-          ]
-        },
-        {
-          "h": "Interpretation tips"
-        },
-        {
-          "list": [
-            "Very cold, bright cloud tops fit strong to severe thunderstorms. A textured anvil is a common deep-convection sign (anvil appearance not confirmed in the sources used).",
-            "A comma-shaped cloud pattern marks a developing mid-latitude cyclone (standard practice, not confirmed in the sources used).",
-            "Low cloud and fog are hard to separate from the ground in IR because they are close to surface temperature. Compare visible and IR, or use the night fog product, which combines two IR channels and shows fog and low cloud as dark areas.",
-            "NAV CANADA advises most pilots to consult a briefer before using satellite products for flight planning."
-          ]
-        },
-        {
-          "note": "Visible shows reflected sunlight (daytime only). IR shows radiated heat, so cloud-top temperature, day and night. Water vapour shows upper-level moisture."
-        }
-      ],
-      "terms": [
-        [
-          "Geostationary",
-          "Orbit that keeps a satellite over a fixed point on the equator."
-        ],
-        [
-          "Brightness temperature",
-          "Temperature a blackbody would have to emit the observed IR radiance."
-        ],
-        [
-          "Dry slot",
-          "Dark wedge of dry air in water vapour imagery wrapping into a cyclone."
-        ]
-      ],
-      "questions": [
-        {
-          "q": "At about what altitude is a geostationary satellite?",
-          "c": [
-            "About 36,000 km",
-            "About 800 km",
-            "About 100 km",
-            "About 3,600 km"
-          ],
-          "a": 0,
-          "e": "Geostationary orbit is about 35,786 km above the equator."
-        },
-        {
-          "q": "Which satellite channel works only in daylight?",
-          "c": [
-            "Visible",
-            "Infrared",
-            "Water vapour",
-            "All of them"
-          ],
-          "a": 0,
-          "e": "Visible imagery depends on reflected sunlight."
-        },
-        {
-          "q": "In standard IR imagery, what do bright cold cloud tops usually indicate?",
-          "c": [
-            "High cloud, possibly deep convection",
-            "Fog or low stratus near the surface",
-            "Warm land with no cloud cover at all",
-            "Open ocean without cloud in the daytime"
-          ],
-          "a": 0,
-          "e": "Colder tops are higher in the atmosphere."
-        },
-        {
-          "q": "What does water vapour imagery show?",
-          "c": [
-            "Moisture in the mid and upper troposphere and flow patterns",
-            "Surface temperature and low-level fog patterns on the ground",
-            "Lightning strikes and the location of tornadoes on the surface",
-            "Cloud thickness and reflected sunlight from daytime clouds"
-          ],
-          "a": 0,
-          "e": "Dark areas are dry and bright areas are moist aloft, which reveals upper-level features."
-        },
-        {
-          "q": "Why is low cloud or fog hard to see in IR imagery?",
-          "c": [
-            "Its temperature is close to the ground's",
-            "It reflects too much sunlight for the sensor",
-            "It is always thinner than the satellite can detect",
-            "Infrared cannot detect water droplets inside cloud"
-          ],
-          "a": 0,
-          "e": "Low cloud tops are nearly as warm as the surface so the contrast is small."
-        },
-        {
-          "q": "In IR satellite imagery, colder cloud tops appear:",
-          "c": [
-            "Brighter or whiter (enhanced)",
-            "Darker, because the cold tops emit more radiation to space",
-            "Invisible, since cold cloud does not show up in infrared",
-            "The same shade as the warm surface beneath them"
-          ],
-          "a": 0,
-          "e": "Cold tops emit less radiation and show as bright in standard IR."
-        },
-        {
-          "q": "Visible imagery is available:",
-          "c": [
-            "Only during daylight",
-            "At night only",
-            "Always",
-            "Only in winter"
-          ],
-          "a": 0,
-          "e": "Visible light needs sunshine."
-        },
-        {
-          "q": "Water vapour imagery shows:",
-          "c": [
-            "Moisture in the upper and middle troposphere",
-            "Ground temperature and sea ice cover over polar regions",
-            "Cloud colour and drop size at the cloud tops",
-            "Sea ice only, with no information on the atmosphere"
-          ],
-          "a": 0,
-          "e": "It highlights dry and moist regions aloft."
-        },
-        {
-          "q": "Which imagery best identifies fog at night?",
-          "c": [
-            "Fog/low cloud IR difference products",
-            "Visible imagery, since it shows low cloud best at night",
-            "Water vapour imagery, since fog is full of vapour",
-            "Radar imagery, since fog returns a strong echo"
-          ],
-          "a": 0,
-          "e": "Night microphysics channels distinguish fog."
-        },
-        {
-          "q": "Geostationary satellites orbit at roughly:",
-          "c": [
-            "36,000 km",
-            "800 km",
-            "1,000 km",
-            "400 km"
-          ],
-          "a": 0,
-          "e": "They hover over the equator at about 35,786 km."
-        },
-        {
-          "q": "A bright, textured cloud in visible imagery often indicates:",
-          "c": [
-            "Thick, tall convective cloud",
-            "Thin cirrus, which looks smooth and dark in visible imagery",
-            "Clear sky over a dark ocean with no cloud at all",
-            "Fog only, which looks smooth and flat in the image"
-          ],
-          "a": 0,
-          "e": "Bright, lumpy tops signal deep convection."
-        },
-        {
-          "q": "Which GOES ABI band is the upper-level water vapour band?",
-          "c": [
-            "6.2 micrometres",
-            "7.3 micrometres",
-            "10.3 micrometres",
-            "0.64 micrometres"
-          ],
-          "a": 0,
-          "e": "NOAA/NESDIS quick guides: Band 8 is 6.2, Band 9 is 6.9, Band 10 is 7.3 micrometres."
-        },
-        {
-          "q": "Which water vapour band can sense farthest down into the mid-troposphere (about 500 to 750 hPa) in cloud-free areas?",
-          "c": [
-            "7.3 micrometres",
-            "6.2 micrometres",
-            "6.9 micrometres",
-            "3.9 micrometres"
-          ],
-          "a": 0,
-          "e": "NOAA/NESDIS Band 10 quick guide."
-        },
-        {
-          "q": "On water vapour imagery, the whitest areas show:",
-          "c": [
-            "The highest humidity",
-            "The driest air",
-            "The warmest surface",
-            "The thickest ice"
-          ],
-          "a": 0,
-          "e": "NWS: highest humidities are the whitest, dry regions dark."
-        },
-        {
-          "q": "Why can visible imagery confuse snow cover with cloud?",
-          "c": [
-            "Snow-covered ground also looks white",
-            "Snow emits infrared like cloud",
-            "Snow is invisible",
-            "Snow is darker than cloud"
-          ],
-          "a": 0,
-          "e": "NWS: looping helps because clouds move and snow does not."
-        },
-        {
-          "q": "Roughly how high is a polar-orbiting weather satellite per NOAA?",
-          "c": [
-            "About 833 km",
-            "About 35,786 km",
-            "About 100 km",
-            "About 3,000 km"
-          ],
-          "a": 0,
-          "e": "NOAA JetStream: about 520 miles, 14.1 orbits a day. NAV CANADA gives 850 km."
-        },
-        {
-          "q": "A stream of water vapour crossing a mountain range at a near right angle may indicate:",
-          "c": [
-            "Potential mountain wave turbulence",
-            "A thunderstorm",
-            "Fog",
-            "Freezing rain"
-          ],
-          "a": 0,
-          "e": "NWS, Satellite Imagery Overview for Pilots."
-        },
-        {
-          "q": "Satellite imagery can show developing thunderstorms:",
-          "c": [
-            "Before radar detects them",
-            "Only after radar does",
-            "Only at night",
-            "Never"
-          ],
-          "a": 0,
-          "e": "NWS: satellite sees developing thunderstorms in their earliest stages, before radar."
-        },
-        {
-          "q": "In the NWS description, strong to severe thunderstorms normally have tops that are:",
-          "c": [
-            "Very cold",
-            "Warmer than the ground",
-            "The same as the ground",
-            "Invisible in IR"
-          ],
-          "a": 0,
-          "e": "NWS, Three types of satellite imagery."
-        },
-        {
-          "q": "Per the NAV CANADA guide, how often does a POES satellite orbit the Earth?",
-          "c": [
-            "Every 105 minutes",
-            "Every 24 hours",
-            "Every 30 minutes",
-            "Every 6 hours"
-          ],
-          "a": 0,
-          "e": "NAV CANADA guide: 14 orbits a day."
-        },
-        {
-          "q": "Because of the Earth's rotation, a POES orbit shifts west by about:",
-          "c": [
-            "2 time zones",
-            "1 time zone",
-            "6 time zones",
-            "No shift"
-          ],
-          "a": 0,
-          "e": "NAV CANADA guide satellite page."
-        },
-        {
-          "q": "How does the NAV CANADA guide describe infrared satellite imagery?",
-          "c": [
-            "Measures the heat footprint of cloud or the surface, day and night",
-            "A photo of the clouds in daylight",
-            "Moisture in the upper air only",
-            "Lightning detection"
-          ],
-          "a": 0,
-          "e": "NAV CANADA guide table: Visual is a daylight photo; Infra-red measures heat."
-        },
-        {
-          "q": "What does the NAV CANADA guide advise about using satellite products for flight planning?",
-          "c": [
-            "Most pilots should consider consulting a briefer",
-            "They replace the GFA",
-            "They are valid for 24 hours",
-            "They are required by regulation"
-          ],
-          "a": 0,
-          "e": "NAV CANADA guide."
-        }
-      ],
-      "verified": {
-        "date": "2026-10-27",
-        "sources": [
-          "NAV CANADA Aviation Weather Services Guide (2017): GOES about 36,000 km over the equator; POES about 850 km, 105 minutes per orbit, 14 orbits per day",
-          "NOAA JetStream, Weather Satellites: geostationary 35,786 km, polar about 833 km, 14.1 orbits per day",
-          "NOAA/NESDIS ABI Quick Guides, Bands 8, 9 and 10 (6.2, 6.9, 7.3 micrometres; layers sensed; uses)",
-          "NWS, Three types of satellite imagery and Satellite Imagery Overview for Pilots (Front, Oct 2008): visible, IR and water vapour interpretation (US sources)",
-          "NAV CANADA Aviation Weather Services Guide, Satellite Imagery page (guide page 25 to 26; screenshots supplied by the user, 2026-10-27): GOES about 36,000 km, POES with HRPT about 850 km, 105 minutes, 14 orbits a day, west shift about 2 time zones, VIS and IR table, consult a briefer; example image GOES-East IR C13 dated 2026-05-15",
-          "NAV CANADA guide Weather Imagery and Supplementary Products table (screenshot, 2026-10-27): GOES images every 30 minutes, POES about every 6 hours"
-        ],
-        "unverified": [
-          "Sources for channel interpretation are US NWS pages. A Canadian source for visible, IR and water vapour interpretation (ECCC, NAV CANADA guide pages 30 and 31) is not yet confirmed.",
-          "Which GOES satellites currently cover Canada: the guide's own example is a GOES-East image (2026-05-15), but coverage of western Canada is not confirmed. The NOAA page fetched was dated 2023. The standard greyscale convention (white is cold in IR) and the comma cloud and anvil statements are standard practice, not confirmed.",
-          "The upper-level water vapour layer height differs between NWS sources (about 15,000 to 30,000 ft; above 20,000 ft MSL); a single figure is not given here."
-        ]
-      }
-    },
-    {
-      "title": "Reading and plotting a skew-T log-P",
-      "lesson": [
-        "A skew-T log-P diagram plots a sounding. Pressure is the vertical axis on a log scale. Isotherms are skewed to the right at about 45 degrees. Three families of reference lines are drawn on it.",
-        {
-          "list": [
-            "Isotherms: lines of constant temperature, sloping up to the right.",
-            "Dry adiabats: curved lines sloping up to the left. A lifted unsaturated parcel follows these.",
-            "Moist (saturated) adiabats: curved lines that lean toward the dry adiabats at high levels. Saturated parcels follow these.",
-            "Mixing ratio lines: dashed lines that slope up to the right."
-          ]
-        },
-        {
-          "h": "What to read"
-        },
-        {
-          "list": [
-            "Temperature (right line) and dew point (left line) profiles. When they are close or touch, the layer is moist or in cloud. A wide spread means dry air.",
-            "Inversion: temperature increases with height (the line moves right as you go up).",
-            "Freezing level: where the temperature line crosses 0 C.",
-            "Wind barbs along the side give winds aloft.",
-            "Lifted condensation level (LCL): lift a surface parcel along its dry adiabat and its mixing ratio line from the dew point. They meet at the LCL.",
-            "Level of free convection (LFC): where the lifted parcel becomes warmer than the environment. Equilibrium level (EL): where it is again equal to the environment, near the expected cloud top."
-          ]
-        },
-        {
-          "h": "Instability indices"
-        },
-        {
-          "list": [
-            "CAPE: area between the parcel path and the environment where the parcel is warmer. More area means stronger updrafts.",
-            "CIN: area where the parcel is colder. A cap that inhibits convection.",
-            "Lifted index (LI): environment temperature at 500 hPa minus parcel temperature at 500 hPa. Negative values mean unstable."
-          ]
-        },
-        {
-          "note": "Quick read: dew point near temperature means moisture. Temperature crossing back to the right means an inversion. Large positive area means storms if lift exists."
-        }
-      ],
-      "terms": [
-        [
-          "CAPE",
-          "Positive area on a sounding between the parcel curve and environment."
-        ],
-        [
-          "CIN",
-          "Convective inhibition: negative area that must be overcome for convection."
-        ],
-        [
-          "LFC",
-          "Level of free convection."
-        ],
-        [
-          "EL",
-          "Equilibrium level."
-        ]
-      ],
-      "questions": [
-        {
-          "q": "On a skew-T, CAPE is represented by:",
-          "c": [
-            "The area where the lifted parcel is warmer than the environment",
-            "The area where the parcel is colder than the environment",
-            "The distance between T and Td at the surface",
-            "The slope of isotherms"
-          ],
-          "a": 0,
-          "e": "CAPE is the positive buoyancy area between the parcel path and environment curve."
-        },
-        {
-          "q": "If the dew point line is very close to the temperature line over a layer, that layer is:",
-          "c": [
-            "Moist or in cloud",
-            "Very dry",
-            "An inversion",
-            "Unrelated to moisture"
-          ],
-          "a": 0,
-          "e": "A small spread means near-saturation."
-        },
-        {
-          "q": "How is the LCL found on a skew-T?",
-          "c": [
-            "Where the dry adiabat through the surface temperature meets the mixing ratio line through the surface dew point",
-            "Where the isotherm through the surface dew point meets the moist adiabat at 500 hPa",
-            "Where the temperature line first crosses the 0 C isotherm above the surface",
-            "At the pressure level where the dew point line reaches the left edge of the chart"
-          ],
-          "a": 0,
-          "e": "A lifted unsaturated parcel saturates where those two lines intersect."
-        },
-        {
-          "q": "A negative lifted index indicates:",
-          "c": [
-            "Unstable conditions",
-            "Stable conditions",
-            "No moisture",
-            "A strong inversion"
-          ],
-          "a": 0,
-          "e": "A negative LI means the parcel is warmer than its environment at 500 hPa."
-        },
-        {
-          "q": "How does an inversion appear on a skew-T?",
-          "c": [
-            "The temperature line shifts to the right with increasing height",
-            "The temperature line follows a dry adiabat to the left with height",
-            "The dew point line crosses to the right of the temperature line",
-            "The temperature line is exactly vertical from the surface to 500 hPa"
-          ],
-          "a": 0,
-          "e": "Temperature increasing with height makes the profile lean back toward higher temperatures."
-        },
-        {
-          "q": "On a skew-T, isotherms are drawn:",
-          "c": [
-            "Slanting from lower left to upper right",
-            "Vertically, from the bottom of the chart to the top",
-            "Horizontally, from the left side to the right side",
-            "As curved lines that follow the moist adiabats upward"
-          ],
-          "a": 0,
-          "e": "The skew gives the diagram its name."
-        },
-        {
-          "q": "The dewpoint curve lying close to the temperature curve indicates:",
-          "c": [
-            "Moist, near saturated layers",
-            "Very dry air with a large temperature-dew point spread",
-            "A strong inversion capping a layer of warm air",
-            "A cold front passing through the sounding level"
-          ],
-          "a": 0,
-          "e": "Small spread means near saturation."
-        },
-        {
-          "q": "The LCL on a skew-T is found where:",
-          "c": [
-            "Dry adiabat from the surface temp meets the mixing ratio line from surface dew point",
-            "Where two isotherms cross on the chart at the surface",
-            "Where the dry adiabat meets the freezing level",
-            "Where the isobars cross the surface temperature line"
-          ],
-          "a": 0,
-          "e": "Lifted parcel reaches saturation at that intersection."
-        },
-        {
-          "q": "An area of positive buoyancy on a skew-T lies:",
-          "c": [
-            "Between the parcel curve and the environment, parcel warmer",
-            "Where the parcel curve is colder than the environment curve",
-            "Below the surface, between the two isotherm lines",
-            "Between two isotherms drawn at the same pressure"
-          ],
-          "a": 0,
-          "e": "Positive area gives CAPE."
-        },
-        {
-          "q": "An inversion on a skew-T appears as:",
-          "c": [
-            "A section where temperature increases with height",
-            "A vertical line where temperature does not change with height",
-            "A steep drop in temperature with height at the surface",
-            "A closed loop on the right side of the diagram"
-          ],
-          "a": 0,
-          "e": "The temperature curve leans right with height."
-        },
-        {
-          "q": "A sounding with temperature below 0 C through a deep layer and warm layer above indicates:",
-          "c": [
-            "Potential for freezing rain or ice pellets",
-            "Hot, dry weather with a deep well-mixed boundary layer",
-            "Fog only, with no precipitation and a shallow stable layer",
-            "Nothing useful, since the temperature curve is not significant"
-          ],
-          "a": 0,
-          "e": "Warm nose aloft over sub-zero surface layer."
-        }
-      ],
-      "verified": {
-        "date": "2026-10-26",
-        "sources": [
-          "NWS skew-T log-P guide (weather.gov): isotherms at 45 degrees, dry and moist adiabats slanting lower right to upper left, dashed mixing ratio lines slanting lower left to upper right, definitions of LCL, EL and CAPE"
-        ],
-        "unverified": [
-          "The definitions of CIN, LFC and the lifted index, and the 'warm nose' freezing-rain pattern, are standard meteorology, not checked in a fetched source."
-        ]
-      }
+     "note": "Automated stations report a limited set of elements. An LWIS reports only wind, altimeter setting, temperature and dew point. A METAR AUTO adds visibility, cloud height and coverage, precipitation and obstructions to vision. Systems outside lightning-detection coverage cannot report thunderstorms."
     }
-  ]
+   ],
+   "terms": [
+    [
+     "Stevenson screen",
+     "Ventilated white box for housing thermometers."
+    ],
+    [
+     "MSLP",
+     "Mean sea level pressure: station pressure reduced to sea level."
+    ],
+    [
+     "QNH",
+     "Altimeter setting that makes an altimeter read elevation above sea level."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "What is the standard height of an anemometer?",
+     "c": [
+      "10 m above open, level ground",
+      "2 m above the ground, as for the thermometer screen",
+      "30 m above the ground, as on a tower",
+      "On the roof of any nearby building"
+     ],
+     "a": 0,
+     "e": "MANOBS 3.2.2: wind measurements are representative of winds 10 m above level terrain."
+    },
+    {
+     "q": "Why are thermometers housed in a ventilated screen?",
+     "c": [
+      "To shield them from sun and rain while allowing air flow",
+      "To keep them warm so readings stay above freezing at night",
+      "To make the readings equal to the temperature of the ground",
+      "To reduce wind speed so the thermometer is not blown over"
+     ],
+     "a": 0,
+     "e": "A Stevenson screen is a white double-louvered box. It shields thermometers from direct sunlight, precipitation and ground heat radiation while air flows through (MANCLIM)."
+    },
+    {
+     "q": "What does an altimeter read on the ground when QNH is set?",
+     "c": [
+      "The aerodrome elevation",
+      "Zero",
+      "The pressure altitude",
+      "The density altitude"
+     ],
+     "a": 0,
+     "e": "QNH is the pressure setting that makes the altimeter read elevation above mean sea level."
+    },
+    {
+     "q": "What is mean sea level pressure?",
+     "c": [
+      "Station pressure reduced to sea level",
+      "Pressure measured on a ship at sea only",
+      "The pressure at the 500 hPa level aloft",
+      "The average pressure of all stations in the region"
+     ],
+     "a": 0,
+     "e": "MSLP allows comparison of stations at different elevations."
+    },
+    {
+     "q": "Which instrument measures cloud base height automatically?",
+     "c": [
+      "Ceilometer",
+      "Psychrometer",
+      "Anemometer",
+      "Pyranometer"
+     ],
+     "a": 0,
+     "e": "A ceilometer uses a laser pulse and timing to measure cloud base height."
+    },
+    {
+     "q": "A Stevenson screen protects thermometers from:",
+     "c": [
+      "Direct sunlight, precipitation and ground reflection",
+      "Wind and pressure changes, while allowing sunlight to reach them",
+      "Humidity and wind, but it must be sealed from the air",
+      "Only wind and snow, leaving the sunlight to warm them"
+     ],
+     "a": 0,
+     "e": "The screen shields the thermometers from direct sunlight, precipitation and heat radiated from the ground, while air still flows through it (MANCLIM)."
+    },
+    {
+     "q": "Standard anemometer height for surface wind is:",
+     "c": [
+      "10 m above ground",
+      "2 m above the ground, level with a standard thermometer",
+      "50 m above the ground, clear of nearby obstacles",
+      "1 m above the ground, in the middle of the screen"
+     ],
+     "a": 0,
+     "e": "MANOBS 3.2.2: wind measurements are representative of winds 10 m above level terrain."
+    },
+    {
+     "q": "Wind direction is reported as the direction the wind is blowing:",
+     "c": [
+      "From",
+      "To",
+      "Across",
+      "Around"
+     ],
+     "a": 0,
+     "e": "Wind direction is the direction the wind comes from, in degrees true (MANOBS 3.2.1 and 3.2.3)."
+    },
+    {
+     "q": "For aeronautical purposes, how does MANOBS define visibility?",
+     "c": [
+      "The greater of the daytime distance a black object is recognized and the night distance lights are identified",
+      "The distance to the farthest cloud base that can be seen from the station, unless a supervisor directs otherwise",
+      "The average of the distances to the four nearest visibility markers",
+      "The distance at which a white object just blends into the background sky, based on the most recent routine report"
+     ],
+     "a": 0,
+     "e": "MANOBS 4.1.1: the greater of the greatest distance a black object near the ground can be easily recognized, and the greatest distance lights of about 1,000 candela can be seen and identified against an unlit background."
+    },
+    {
+     "q": "Barometric pressure is reduced to sea level to:",
+     "c": [
+      "Allow comparison between stations at different elevations",
+      "Make the readings more accurate at each individual station",
+      "Remove the effect of temperature error in the barometer",
+      "Measure the wind speed at the surface more reliably"
+     ],
+     "a": 0,
+     "e": "Reduction removes the effect of station elevation."
+    },
+    {
+     "q": "A ceilometer measures:",
+     "c": [
+      "Cloud base height",
+      "Wind speed",
+      "Visibility only",
+      "Rainfall"
+     ],
+     "a": 0,
+     "e": "Laser or light pulses detect the cloud base."
+    },
+    {
+     "q": "How is the altimeter setting rounded in a Canadian METAR?",
+     "c": [
+      "Down to the nearest hundredth of an inch of mercury",
+      "Up to the nearest tenth of an inch of mercury, unless a supervisor directs otherwise",
+      "To the nearest whole hPa, with no decimals, unless a supervisor directs otherwise",
+      "To the nearest 0.5 inHg on the dial"
+     ],
+     "a": 0,
+     "e": "MANOBS 9.2: QNH is rounded down to the nearest whole hundredth of an inch of mercury."
+    },
+    {
+     "q": "An observed temperature of 4.5 C is reported as:",
+     "c": [
+      "05",
+      "04",
+      "4",
+      "M05"
+     ],
+     "a": 0,
+     "e": "MANOBS 8.3: values involving 0.5 C round up to the warmer degree, and single digits take a leading 0."
+    },
+    {
+     "q": "Which remark is used when station pressure falls by 2.0 hPa per hour or more?",
+     "c": [
+      "PRESFR",
+      "PRESRR",
+      "PRESFAL",
+      "LOWPRES"
+     ],
+     "a": 0,
+     "e": "MANOBS 9.2.1: PRESFR for falling, PRESRR for rising at 2.0 hPa per hour or more."
+    },
+    {
+     "q": "How far from an obstruction should wind instruments be sited if possible?",
+     "c": [
+      "At least 10 times the height of the obstruction",
+      "At least twice the height of the obstruction",
+      "At least 100 m regardless of the obstruction's height",
+      "Directly beside it, for shelter from the wind"
+     ],
+     "a": 0,
+     "e": "MANOBS 3.2.2: representative of winds 10 m above level terrain at a distance equal to at least 10 times the height of any object from that object."
+    },
+    {
+     "q": "Wind direction in a METAR is rounded to the nearest:",
+     "c": [
+      "10 degrees",
+      "1 degree",
+      "5 degrees",
+      "45 degrees"
+     ],
+     "a": 0,
+     "e": "MANOBS 3.2.1 and 3.2.3: the nearest ten degrees, three digits, true."
+    }
+   ],
+   "verified": {
+    "date": "2026-10-27",
+    "sources": [
+     "MANOBS 8th ed. Amendment 3: 3.2.1 and 3.2.2 (wind), 4.1.1, 4.2 and 4.5.1 (visibility), 7.3.1 (cloud reference level)",
+     "ECCC MANCLIM, Temperature: screen and thermometer exposure",
+     "NAV CANADA Aviation Weather Services Guide (2017): laser ceilometer, AWOS and LWIS",
+     "Transport Canada AIM MET 1.2.4 to 1.2.6: automated systems",
+     "Canadian Aviation Regulations s. 602.37: altimeter setting and standard pressure region",
+     "MANOBS 8th ed. Amendment 3 (full PDF): 8.3 (temperature and dew point reporting), 9.1.3 and 9.2 (pressure units, QNH rounding, PRESRR/PRESFR, SLP)",
+     "MANOBS 8th ed. Am. 3 (full PDF): 3.2.1 to 3.2.3 (wind reporting and siting), 13.2.1 and 13.2.8 (altimeter setting and mean sea level pressure glossary)"
+    ],
+    "unverified": [
+     "QFE and the standard-setting wording are standard aviation teaching and are not in MANOBS; the Canadian altimeter setting rules in CAR 602.37 were checked earlier. The MSLP reduction method is not described in MANOBS 9.2."
+    ]
+   }
+  },
+  {
+   "title": "Upper-air soundings and radiosondes",
+   "lesson": [
+    "Upper-air soundings measure the atmosphere above ground. Almost all of the world's upper-air data comes from radiosondes: small instrument packages carried aloft by a hydrogen or helium balloon.",
+    {
+     "list": [
+      "Standard launch times are 00 and 12 UTC. This gives models and forecasters a simultaneous snapshot of the atmosphere.",
+      "A radiosonde measures pressure, temperature and humidity. Wind is derived by tracking the balloon's position, now usually by GPS.",
+      "The balloon expands as the pressure falls and eventually bursts, then the instrument parachutes back. NOAA says sondes can reach over 115,000 ft (about 35 km) and flights can last more than two hours.",
+      "Data are reported at mandatory pressure levels (for example 1000, 925, 850, 700, 500, 400, 300, 250, 200, 150, 100 hPa) plus significant levels where the profile changes."
+     ]
+    },
+    {
+     "h": "Uses"
+    },
+    {
+     "list": [
+      "Plot on a skew-T log-P to assess stability, cloud layers, freezing level and inversions.",
+      "Initialize and verify numerical weather prediction models.",
+      "Determine winds aloft and jet streams.",
+      "Calibrate and cross-check satellite measurements."
+     ]
+    },
+    {
+     "h": "Limitations"
+    },
+    "Stations are far apart (hundreds of km) and launch only twice a day, so small features such as thunderstorm outflows are missed. Balloons drift downwind, and the profile is not strictly vertical.",
+    {
+     "note": "Aircraft reports (AMDAR), wind profilers and satellite retrievals fill gaps between launches."
+    }
+   ],
+   "terms": [
+    [
+     "Radiosonde",
+     "Instrument package carried by balloon that transmits profiles of pressure, temperature, humidity and wind."
+    ],
+    [
+     "Mandatory level",
+     "Standard pressure level at which every sounding reports data."
+    ],
+    [
+     "Significant level",
+     "Level where the profile changes character, reported in addition to mandatory levels."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "At which times are routine radiosonde launches made?",
+     "c": [
+      "00 and 12 UTC",
+      "06 and 18 UTC only",
+      "Every hour",
+      "Only when storms approach"
+     ],
+     "a": 0,
+     "e": "NOAA: most upper-air observations are taken daily at 00Z and 12Z."
+    },
+    {
+     "q": "Which variables does a radiosonde provide?",
+     "c": [
+      "Pressure, temperature, humidity and wind",
+      "Temperature and wind only, without humidity",
+      "Cloud height, visibility and precipitation type",
+      "Radar reflectivity and lightning strike counts"
+     ],
+     "a": 0,
+     "e": "A radiosonde measures pressure, temperature and humidity, and wind is derived from tracking."
+    },
+    {
+     "q": "Why does the balloon eventually burst?",
+     "c": [
+      "It expands as outside pressure drops until it ruptures",
+      "Its gas freezes solid in the cold air near the tropopause",
+      "It is struck by lightning inside high thunderstorm cloud",
+      "The gas leaks out gradually and the balloon cannot rise higher"
+     ],
+     "a": 0,
+     "e": "The gas expands at lower pressure until the balloon reaches its limit."
+    },
+    {
+     "q": "Which of these are standard (mandatory) pressure levels?",
+     "c": [
+      "850 and 500 hPa",
+      "875 and 525 hPa",
+      "950 and 450 hPa",
+      "1100 and 20 hPa"
+     ],
+     "a": 0,
+     "e": "850 and 500 hPa are among the standard mandatory levels."
+    },
+    {
+     "q": "What is a major limitation of radiosonde coverage?",
+     "c": [
+      "Stations are widely spaced and launch only twice a day",
+      "They can measure surface values only and not the upper air",
+      "They are launched only over water and not over land",
+      "They cannot measure temperature in clear air or in cloud"
+     ],
+     "a": 0,
+     "e": "Small, fast-evolving features can occur between stations and launch times."
+    },
+    {
+     "q": "A radiosonde is carried aloft by:",
+     "c": [
+      "A balloon",
+      "An aircraft",
+      "A rocket",
+      "A satellite"
+     ],
+     "a": 0,
+     "e": "Weather balloons lift the instrument package."
+    },
+    {
+     "q": "Radiosondes are normally released at:",
+     "c": [
+      "00 and 12 UTC",
+      "06 and 18 local only",
+      "Noon only",
+      "Every hour"
+     ],
+     "a": 0,
+     "e": "NOAA: most upper-air observations are taken daily at 00Z and 12Z."
+    },
+    {
+     "q": "A radiosonde measures:",
+     "c": [
+      "Pressure, temperature and humidity, with wind from tracking",
+      "Rainfall and snowfall only, with wind from the ground station",
+      "Visibility and cloud base only, from a laser on the balloon",
+      "Lightning strikes and ozone, with wind taken from the ground"
+     ],
+     "a": 0,
+     "e": "Wind is derived from tracking the balloon."
+    },
+    {
+     "q": "A balloon bursts at about:",
+     "c": [
+      "30 km or higher",
+      "3 km, where the air is too thin for the balloon to float",
+      "1 km, once the first cloud layer is reached",
+      "About 100 m, where the surface inversion ends"
+     ],
+     "a": 0,
+     "e": "NOAA: sondes can reach over 115,000 ft (about 35 km). The balloon bursts as it expands in the thin air."
+    },
+    {
+     "q": "Why are upper-air observations important for forecasting?",
+     "c": [
+      "They provide initial conditions for models and stability data",
+      "They measure the ground temperature at each station only",
+      "They only support the military and have no use for models",
+      "They measure visibility and cloud for the next hour only"
+     ],
+     "a": 0,
+     "e": "Soundings give the vertical structure used in analyses."
+    },
+    {
+     "q": "How is the wind measured by a modern radiosonde?",
+     "c": [
+      "By tracking the position of the sonde with GPS",
+      "By a cup anemometer carried on the balloon",
+      "By the balloon's rate of rise alone",
+      "By a separate aircraft flying alongside the balloon"
+     ],
+     "a": 0,
+     "e": "NOAA: wind speed and direction are derived by tracking the sonde's position with GPS."
+    }
+   ],
+   "verified": {
+    "date": "2026-10-26",
+    "sources": [
+     "NOAA JetStream, Radiosondes: launch times 00Z and 12Z, measurements, GPS wind, hydrogen or helium balloon, over 115,000 ft, flight over two hours"
+    ],
+    "unverified": [
+     "The list of mandatory pressure levels (1000, 925, 850, 700, 500, 400, 300, 250, 200, 150, 100 hPa) is standard WMO practice from general knowledge, not checked in a fetched source.",
+     "The balloon ascent rate is not given by the NOAA page, so it was removed."
+    ]
+   }
+  },
+  {
+   "title": "Weather radar principles and interpretation",
+   "lesson": [
+    "A weather radar sends out short pulses of microwave energy and listens for the part scattered back by raindrops, snow, hail and other particles. Time delay gives range. Signal strength gives reflectivity.",
+    {
+     "h": "Reflectivity"
+    },
+    "Reflectivity (Z) is measured in mm6/m3. Because raw values vary so widely, radar applies a logarithmic scale, giving dBZ. The scale runs from about -35 to +85 dBZ. Higher values mean more or larger targets. ECCC public radar maps show precipitation rate instead: mm/h for rain and cm/h for snow.",
+    {
+     "list": [
+      "NOAA JetStream guide (US, not ECCC): above 65 dBZ extremely heavy precipitation including water-coated hail. 50 to 65: heavy precipitation, possibly some hail. 40 to 50: moderate. 20 to 40: light. 0 to 20: very light precipitation or general clutter. -35 to 0: extremely light (drizzle or snow).",
+      "NOAA marks the 20 to 40 and 40 to 50 rows as general guidelines: heavy rainfall does not always match them. Warm tropical rain contains little or no hail, so reflectivity is often lower than the rain rate suggests."
+     ]
+    },
+    {
+     "h": "Doppler"
+    },
+    "Doppler radar measures the radial velocity: the part of the target motion toward or away from the radar. It cannot see motion across the beam. A tight pair of strong inbound and outbound velocities next to each other suggests rotation, such as a mesocyclone.",
+    {
+     "h": "Dual-polarization"
+    },
+    "Dual-pol radars send and receive both horizontal and vertical pulses. ECCC says its S-band dual-pol radars help distinguish precipitation types, reduce false echoes from birds and insects, improve quantitative precipitation estimates and help detect icing conditions for aircraft. ECCC's surface precipitation type product classifies rain, snow, freezing rain, hail and mixed.",
+    {
+     "list": [
+      "Differential reflectivity (ZDR, dB): compares horizontal and vertical power. Near 0 dB suggests round or tumbling targets such as hail. Above 0 suggests flattened drops such as large raindrops. Below 0 suggests vertically elongated particles such as ice crystals or snowflakes (NOAA).",
+      "Correlation coefficient (CC, 0 to 1): how similar the sampled targets are. Low is below 0.80, moderate 0.80 to 0.97, high above 0.97. Birds, insects, buildings, smoke and mixed precipitation give lower CC than uniform rain or snow (NOAA).",
+      "Tornado debris signature: a significant drop in CC at the same place as a strong rotational velocity couplet. Debris must be lofted high enough to be sampled, so no CC drop does not rule a tornado out (NOAA)."
+     ]
+    },
+    {
+     "h": "Limitations"
+    },
+    {
+     "list": [
+      "Beam height rises with range. NOAA examples: about 1,300 ft above ground at 20 miles and about 11,600 ft at 98 miles for the radars cited. The beam also widens by about 1,000 ft per 10 miles, nearly 2 miles wide at 100 miles. Distant low-level precipitation can be overshot.",
+      "Subrefraction: the beam bends less than normal, so the radar overshoots objects it would normally detect and may under-report intensity.",
+      "Superrefraction: the beam is closer to the ground than normal and storm intensity can be overestimated. Extreme superrefraction causes ducting and false echoes called anomalous propagation (AP), for example roads or railways showing up on the display.",
+      "Ground clutter: stationary echoes near the radar from terrain and buildings.",
+      "Bright band: melting snowflakes appear as a ring of high reflectivity at the melting level, overestimating rain rate.",
+      "Attenuation: heavy rain can weaken the signal, especially for shorter wavelengths."
+     ]
+    },
+    {
+     "h": "NAV CANADA Aviation Weather Services Guide (radar page)"
+    },
+    {
+     "list": [
+      "Radar helps identify areas of precipitation. It does not show cloud cover. Pilots unfamiliar with radar products are advised to contact an FIC for NAV CANADA assistance.",
+      "Imagery comes in two formats: a precipitation intensity product and an echo tops product.",
+      "Precipitation intensity is a rate of fall in mm/h or cm/h at a specific altitude (example given: 1.5 km). Two scales: rain up to 300 mm/h, snow up to 40 cm/h.",
+      "Echo tops give an indication of the vertical extent of the precipitation area. Cloud tops could extend much higher.",
+      "Each radar site has a detection range of about 150 NM. Composites join several radar images into one; their advantage is that anomalies such as attenuation and masking are reduced, because adjacent sites see the precipitation from other directions.",
+      "The guide's network map (MSC's Weather Radar Network) shows 32 operational radars. Composite and single-site images are available in colour on the CFPS website."
+     ]
+    },
+    {
+     "h": "ECCC network (About Canadian weather radar)"
+    },
+    {
+     "list": [
+      "Older C-band radars are being replaced by more powerful S-band dual-pol radars (Canadian Weather Radar Replacement Program, launched 2017). C-band: single polarization, Doppler coverage 113 km, maximum coverage 256 km, new product every 10 minutes, 24 scans. S-band: dual polarization, Doppler coverage 240 km, maximum 330 km (raw data only), every 6 minutes, 17 scans.",
+      "The precipitation-rate mosaic covers Canada and the US at 1 km resolution, updates every 6 minutes and can merge up to 200 radars. Palettes come in 8 or 14 colours.",
+      "DPQPE (dual-pol quantitative precipitation estimate) uses the lowest sweep, 0.4 degrees for most S-band radars. SPTP (surface precipitation type) has five classes: rain, snow, freezing rain, hail, mixed.",
+      "ECCC cautions: do not compare intensity and SPTP pixel by pixel; the intensity composite uses a maximum-value approach where radars overlap; interpolated values should not be treated as real observations; SPTP uses only the nearest radar plus model data, so some echoes may be removed."
+     ]
+    },
+    {
+     "note": "Always check beam height at distance before trusting low-level echoes."
+    }
+   ],
+   "terms": [
+    [
+     "dBZ",
+     "Logarithmic unit of radar reflectivity."
+    ],
+    [
+     "Radial velocity",
+     "Component of motion toward or away from the radar."
+    ],
+    [
+     "Bright band",
+     "Enhanced reflectivity at the melting layer."
+    ],
+    [
+     "Anomalous propagation",
+     "Radar beam bent toward the ground, producing false echoes."
+    ],
+    [
+     "ZDR",
+     "Differential reflectivity: power comparison between horizontal and vertical channels, in dB."
+    ],
+    [
+     "Correlation coefficient",
+     "Unitless 0 to 1 measure of how similar the sampled targets are."
+    ],
+    [
+     "DPQPE",
+     "ECCC dual-pol quantitative precipitation estimate."
+    ],
+    [
+     "SPTP",
+     "ECCC surface precipitation type composite."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "What does a Doppler radar measure that a conventional radar does not?",
+     "c": [
+      "Radial velocity",
+      "Cloud colour",
+      "Temperature",
+      "Air pressure"
+     ],
+     "a": 0,
+     "e": "Doppler radars detect motion toward or away from the radar."
+    },
+    {
+     "q": "As a rule of thumb, what reflectivity is usually associated with heavy rain and possible hail?",
+     "c": [
+      "About 50 to 65 dBZ, extremely heavy above 65",
+      "Below 10 dBZ, which is only drizzle or haze",
+      "Around 20 dBZ, which is light rain at most",
+      "Zero dBZ, which means no echo at all"
+     ],
+     "a": 0,
+     "e": "NOAA JetStream table (US guidance): 50 to 65 heavy, possibly some hail; above 65 extremely heavy including water-coated hail. ECCC public maps use rain rate."
+    },
+    {
+     "q": "Why might a radar miss shallow precipitation at long range?",
+     "c": [
+      "The beam rises above it due to Earth's curvature",
+      "Rain evaporates completely before the beam reaches it",
+      "The radar signal is absorbed by dry air at long range",
+      "Distant echoes are too bright and saturate the receiver"
+     ],
+     "a": 0,
+     "e": "The beam height increases with distance and can overshoot low clouds and rain."
+    },
+    {
+     "q": "What is the radar 'bright band'?",
+     "c": [
+      "A ring of enhanced reflectivity at the melting level",
+      "A band of heavy snow falling at the edge of the beam",
+      "A thunderstorm signature shown at the radar's maximum range",
+      "A false echo created by ground clutter near the radar"
+     ],
+     "a": 0,
+     "e": "Melting snowflakes are coated in water and reflect strongly."
+    },
+    {
+     "q": "What is a main benefit of dual-polarization radar?",
+     "c": [
+      "It helps identify precipitation type and non-weather targets",
+      "It extends the range of the radar to well over 1000 km",
+      "It measures lightning strikes inside the radar coverage area",
+      "It gives the surface air temperature under each radar echo"
+     ],
+     "a": 0,
+     "e": "Dual-pol variables give particle shape and type information."
+    },
+    {
+     "q": "Radar reflectivity is expressed in:",
+     "c": [
+      "dBZ",
+      "hPa",
+      "kt",
+      "mm"
+     ],
+     "a": 0,
+     "e": "dBZ is a logarithmic measure of returned power."
+    },
+    {
+     "q": "The Doppler effect allows radar to measure:",
+     "c": [
+      "Radial velocity toward or away from the radar",
+      "Temperature and humidity along the beam path from the antenna",
+      "Pressure and cloud type in the sample volume",
+      "Cloud colour and drop size distribution of the echo"
+     ],
+     "a": 0,
+     "e": "Frequency shift gives motion along the beam."
+    },
+    {
+     "q": "Ground clutter appears as:",
+     "c": [
+      "Stationary echoes near the radar",
+      "Moving bands that travel with the wind across the display",
+      "Hook shapes on the edge of a rotating storm cell",
+      "Clear air patterns that appear on calm, clear days"
+     ],
+     "a": 0,
+     "e": "Terrain and buildings return signals."
+    },
+    {
+     "q": "The radar beam rises with distance because of:",
+     "c": [
+      "Earth's curvature and beam elevation",
+      "Wind blowing the beam upward as it travels away",
+      "Cloud layers refracting the beam toward the sky",
+      "Temperature of the air at the radar antenna only"
+     ],
+     "a": 0,
+     "e": "The beam rises above the ground as it travels."
+    },
+    {
+     "q": "Bright band on radar marks:",
+     "c": [
+      "The melting layer",
+      "Hail",
+      "Ground clutter",
+      "Birds"
+     ],
+     "a": 0,
+     "e": "Melting snow coats with water and gives high reflectivity."
+    },
+    {
+     "q": "Higher dBZ values generally indicate:",
+     "c": [
+      "Heavier precipitation or larger hydrometeors",
+      "Lighter precipitation or smaller drops in the beam",
+      "No precipitation, since the echo is only clutter",
+      "Only snow, since rain always gives a low reading"
+     ],
+     "a": 0,
+     "e": "Stronger returns mean larger or more numerous targets."
+    },
+    {
+     "q": "Approximately what range does the dBZ scale cover?",
+     "c": [
+      "-35 to +85 dBZ",
+      "0 to 20 dBZ",
+      "0 to 1000 dBZ",
+      "-5 to +10 dBZ"
+     ],
+     "a": 0,
+     "e": "NOAA JetStream, Radar Images: Reflectivity."
+    },
+    {
+     "q": "Using the NOAA table, 20 to 40 dBZ corresponds to:",
+     "c": [
+      "Light precipitation",
+      "Moderate precipitation",
+      "Heavy precipitation",
+      "Hail only"
+     ],
+     "a": 0,
+     "e": "NOAA: 40 to 50 moderate, 50 to 65 heavy. Guidelines only."
+    },
+    {
+     "q": "ZDR near 0 dB suggests targets that are:",
+     "c": [
+      "Round or tumbling, such as hail",
+      "Flattened, such as large raindrops",
+      "Vertically elongated, such as snowflakes",
+      "Non-existent"
+     ],
+     "a": 0,
+     "e": "NOAA: above 0 flattened drops; below 0 vertically elongated particles."
+    },
+    {
+     "q": "A low correlation coefficient (below 0.80) most suggests:",
+     "c": [
+      "Non-meteorological echoes or mixed precipitation",
+      "Uniform light rain falling over the whole area",
+      "Uniform snow falling from a stratiform layer",
+      "Clear air with no echoes of any kind"
+     ],
+     "a": 0,
+     "e": "NOAA: birds, buildings, insects, smoke and mixed precipitation lower CC."
+    },
+    {
+     "q": "A tornado debris signature is a CC drop that coincides with:",
+     "c": [
+      "A strong rotational velocity couplet",
+      "A bright band at the melting level",
+      "A high ZDR value from large raindrops",
+      "A radar blind spot behind a hill"
+     ],
+     "a": 0,
+     "e": "NOAA: a significant CC drop with a strong rotational velocity couplet. CC confirms, but does not predict, tornadoes."
+    },
+    {
+     "q": "Superrefraction causes the radar beam to:",
+     "c": [
+      "Travel closer to the ground and may cause AP",
+      "Bend upward and overshoot the storms, unless a supervisor directs otherwise",
+      "Stop transmitting until the layer breaks, as set out in the governing publication",
+      "Widen to nothing at long range"
+     ],
+     "a": 0,
+     "e": "NOAA, Radar Beams. Subrefraction causes overshooting."
+    },
+    {
+     "q": "About how much does a radar beam widen per 10 miles of travel (NOAA)?",
+     "c": [
+      "About 1,000 ft",
+      "About 100 ft",
+      "About 10,000 ft",
+      "About 10 ft"
+     ],
+     "a": 0,
+     "e": "NOAA: nearly 2 miles wide at 100 miles."
+    },
+    {
+     "q": "How often does the ECCC S-band radar produce a new product, compared with the old C-band?",
+     "c": [
+      "Every 6 minutes versus every 10 minutes",
+      "Every 10 minutes versus every 6 minutes",
+      "Hourly versus every 30 minutes",
+      "Both every 30 minutes"
+     ],
+     "a": 0,
+     "e": "ECCC, About Canadian weather radar comparison table."
+    },
+    {
+     "q": "What Doppler coverage range does ECCC give for S-band radars?",
+     "c": [
+      "240 km",
+      "113 km",
+      "330 km",
+      "50 km"
+     ],
+     "a": 0,
+     "e": "ECCC: C-band Doppler coverage 113 km; S-band 240 km; 330 km is the maximum raw-data coverage."
+    },
+    {
+     "q": "ECCC's DPQPE product is based on:",
+     "c": [
+      "The lowest sweep (0.4 degrees for most S-band radars)",
+      "The highest sweep available at each site",
+      "An average of all sweeps, weighted by height, for the period covered by the product",
+      "Satellite rain rates blended with the radar, unless a supervisor directs otherwise"
+     ],
+     "a": 0,
+     "e": "ECCC, About Canadian weather radar."
+    },
+    {
+     "q": "How many precipitation types does ECCC's SPTP classify?",
+     "c": [
+      "Five",
+      "Two",
+      "Three",
+      "Nine"
+     ],
+     "a": 0,
+     "e": "ECCC: rain, snow, freezing rain, hail, mixed."
+    },
+    {
+     "q": "ECCC says interpolated values on the radar composite:",
+     "c": [
+      "Should not be treated as real observations",
+      "Are verified by satellite data at each update",
+      "Are accurate to within 1 mm/h of the true rate",
+      "Replace the raw radar data in the composite"
+     ],
+     "a": 0,
+     "e": "ECCC, About Canadian weather radar, limitations."
+    },
+    {
+     "q": "How does ECCC show snow on its precipitation-rate maps?",
+     "c": [
+      "cm/h",
+      "mm/h",
+      "dBZ",
+      "hPa"
+     ],
+     "a": 0,
+     "e": "ECCC: rain in mm/h, snow in cm/h, using two reflectivity-to-rate relationships."
+    },
+    {
+     "q": "According to the NAV CANADA guide, weather radar does not show:",
+     "c": [
+      "Cloud cover",
+      "Precipitation",
+      "Echo tops",
+      "Rain rate"
+     ],
+     "a": 0,
+     "e": "NAV CANADA Aviation Weather Services Guide, Weather Radar page."
+    },
+    {
+     "q": "What are the two radar imagery formats in the NAV CANADA guide?",
+     "c": [
+      "Precipitation intensity and echo tops",
+      "Reflectivity and Doppler velocity",
+      "Visible and infrared satellite views",
+      "CAPPI and SPTP products from the radar"
+     ],
+     "a": 0,
+     "e": "NAV CANADA guide."
+    },
+    {
+     "q": "In the NAV CANADA guide, the rain scale on radar intensity products goes up to:",
+     "c": [
+      "300 mm/h",
+      "40 mm/h",
+      "300 cm/h",
+      "30 mm/h"
+     ],
+     "a": 0,
+     "e": "NAV CANADA guide: rain up to 300 mm/h, snow up to 40 cm/h."
+    },
+    {
+     "q": "What snow rate does the NAV CANADA guide give as the top of the snow scale?",
+     "c": [
+      "40 cm/h",
+      "300 cm/h",
+      "4 cm/h",
+      "400 mm/h"
+     ],
+     "a": 0,
+     "e": "NAV CANADA guide."
+    },
+    {
+     "q": "The NAV CANADA guide gives each weather radar site a detection range of about:",
+     "c": [
+      "150 NM",
+      "50 NM",
+      "500 NM",
+      "15 NM"
+     ],
+     "a": 0,
+     "e": "NAV CANADA guide. ECCC quotes km figures for S-band (240 km Doppler)."
+    },
+    {
+     "q": "Why do radar composites reduce attenuation and masking problems?",
+     "c": [
+      "Adjacent radar sites see the precipitation from other directions",
+      "They use only the nearest radar to each point, unless a supervisor directs otherwise",
+      "They remove all weak echoes from the display",
+      "They are updated hourly instead of every 10 minutes, as set out in the governing publication"
+     ],
+     "a": 0,
+     "e": "NAV CANADA guide, composite products."
+    }
+   ],
+   "verified": {
+    "date": "2026-10-27",
+    "sources": [
+     "ECCC, About Canadian weather radar: C-band replaced by S-band dual-pol, six-minute composite, up to 200 radars, mm/h and cm/h scales, surface precipitation type classes",
+     "NAV CANADA Aviation Weather Services Guide (2017): radar scales and update interval for the older network",
+     "ECCC, About Canadian weather radar (canada.ca, page last modified 2026-07-24): network table, update interval, products, limitations",
+     "NOAA JetStream: Radar Images: Reflectivity (dBZ table, scale), Dual Polarization (ZDR, CC, debris), Radar Beams (beam height, refraction, AP) (US source, fetched 2026-10-27)",
+     "NAV CANADA Aviation Weather Services Guide, Weather Radar page (guide pages 24 and 25; screenshots supplied by the user, 2026-10-27): confirms radar intensity and echo tops products, rain 300 mm/h and snow 40 cm/h scales, about 150 NM range, composite advantage, does not show cloud cover",
+     "NAV CANADA guide Weather Imagery and Supplementary Products table (screenshot, 2026-10-27): radar imagery updated every 10 minutes"
+    ],
+    "unverified": [
+     "dBZ ranges are from a US NOAA table and apply to US radars. ECCC publishes rain rate, not dBZ ranges; Canadian radar wavelength is not stated on the ECCC page.",
+     "Doppler radial velocity, the cross-beam limit and mesocyclone velocity couplet appearance: not confirmed in a fetched source (the NOAA velocity page fetched did not cover it).",
+     "Bright band and attenuation statements are standard radar meteorology, not confirmed in a fetched source. The anomalous propagation cause 'strong inversion' was removed because the source describes density decrease with height instead.",
+     "The NAV CANADA product table gives radar images every 10 minutes (guide page 13), while ECCC says the S-band composite is every 6 minutes; the 10-minute figure may describe the older network. The guide's 150 NM range and ECCC's km ranges are different measures and were not reconciled."
+    ]
+   }
+  },
+  {
+   "title": "Satellite imagery (visible, IR, water vapour)",
+   "lesson": [
+    "Satellites provide global coverage, including oceans where there are few surface observations.",
+    {
+     "h": "Orbits"
+    },
+    {
+     "list": [
+      "Geostationary: about 35,786 km (22,236 mi) above the equator, fixed over one spot. Frequent images of the same region. Poor viewing at high latitudes. The GOES satellites are geostationary.",
+      "Polar-orbiting: about 833 km up per NOAA; the NAV CANADA guide says about 850 km for POES satellites with HRPT (High-Resolution Picture Transfer), one orbit every 105 minutes, 14 orbits a day. Because the Earth rotates, each orbit shifts west by about 2 time zones. Higher resolution and good polar coverage, but fewer passes of a given spot."
+     ]
+    },
+    {
+     "h": "Channels"
+    },
+    {
+     "list": [
+      "Visible: reflected sunlight, daytime only. Clouds appear white, the ground grey and water dark. Snow-covered ground also looks white and can be mistaken for cloud or fog; looping helps because clouds move and snow does not. Visible can show low fog and stratus that IR misses, if higher cloud does not cover them. It shows developing thunderstorms in their earliest stages, before radar detects them (NWS).",
+      "Infrared (IR): heat radiated by clouds and the surface. Day and night. Clouds are colder than land and water, so they stand out. Strong to severe thunderstorms normally have very cold tops. Colder temperatures are often enhanced with colours. Low stratus and fog are often hard to identify in IR.",
+      "Water vapour: moisture in the upper atmosphere. Brightest or whitest areas are the most humid and dark areas are dry. Looped imagery shows jet streams and upper troughs even in clear areas, and a stream of water vapour crossing a mountain range at a near right angle may indicate mountain wave turbulence (NWS).",
+      "GOES water vapour bands: 6.2 micrometres (upper level), 6.9 (mid level), 7.3 (lower level, senses down to about 500 to 750 hPa in cloud-free areas). Each senses the mean temperature of a layer of moisture; layer height varies with the temperature and moisture profile. Optically dense cloud blocks the view of lower moisture."
+     ]
+    },
+    {
+     "h": "NAV CANADA Aviation Weather Services Guide (satellite page)"
+    },
+    {
+     "list": [
+      "Visible and infrared imagery are the two most common types on the CFPS website, from geostationary or polar-orbiting satellites. The guide's example is a GOES-East IR (C13) image dated 2026-05-15, with a temperature scale in degrees C.",
+      "Visible: a photo of the clouds during daylight hours. Infrared: measures the heat (thermal) footprint of cloud or of the Earth's surface if clouds are thin or absent, day and night.",
+      "GOES: about 36,000 km above the equator, position fixed relative to a point on the surface.",
+      "Owing to the complexity of interpreting satellite imagery, most pilots should consider consulting a briefer when using satellite products for flight planning."
+     ]
+    },
+    {
+     "h": "Interpretation tips"
+    },
+    {
+     "list": [
+      "Very cold, bright cloud tops fit strong to severe thunderstorms. A textured anvil is a common deep-convection sign (anvil appearance not confirmed in the sources used).",
+      "A comma-shaped cloud pattern marks a developing mid-latitude cyclone (standard practice, not confirmed in the sources used).",
+      "Low cloud and fog are hard to separate from the ground in IR because they are close to surface temperature. Compare visible and IR, or use the night fog product, which combines two IR channels and shows fog and low cloud as dark areas.",
+      "NAV CANADA advises most pilots to consult a briefer before using satellite products for flight planning."
+     ]
+    },
+    {
+     "note": "Visible shows reflected sunlight (daytime only). IR shows radiated heat, so cloud-top temperature, day and night. Water vapour shows upper-level moisture."
+    }
+   ],
+   "terms": [
+    [
+     "Geostationary",
+     "Orbit that keeps a satellite over a fixed point on the equator."
+    ],
+    [
+     "Brightness temperature",
+     "Temperature a blackbody would have to emit the observed IR radiance."
+    ],
+    [
+     "Dry slot",
+     "Dark wedge of dry air in water vapour imagery wrapping into a cyclone."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "At about what altitude is a geostationary satellite?",
+     "c": [
+      "About 36,000 km",
+      "About 800 km",
+      "About 100 km",
+      "About 3,600 km"
+     ],
+     "a": 0,
+     "e": "Geostationary orbit is about 35,786 km above the equator."
+    },
+    {
+     "q": "Which satellite channel works only in daylight?",
+     "c": [
+      "Visible",
+      "Infrared",
+      "Water vapour",
+      "All of them"
+     ],
+     "a": 0,
+     "e": "Visible imagery depends on reflected sunlight."
+    },
+    {
+     "q": "In standard IR imagery, what do bright cold cloud tops usually indicate?",
+     "c": [
+      "High cloud, possibly deep convection",
+      "Fog or low stratus near the surface",
+      "Warm land with no cloud cover at all",
+      "Open ocean without cloud in the daytime"
+     ],
+     "a": 0,
+     "e": "Colder tops are higher in the atmosphere."
+    },
+    {
+     "q": "What does water vapour imagery show?",
+     "c": [
+      "Moisture in the mid and upper troposphere and flow patterns",
+      "Surface temperature and low-level fog patterns on the ground",
+      "Lightning strikes and the location of tornadoes on the surface",
+      "Cloud thickness and reflected sunlight from daytime clouds"
+     ],
+     "a": 0,
+     "e": "Dark areas are dry and bright areas are moist aloft, which reveals upper-level features."
+    },
+    {
+     "q": "Why is low cloud or fog hard to see in IR imagery?",
+     "c": [
+      "Its temperature is close to the ground's",
+      "It reflects too much sunlight for the sensor",
+      "It is always thinner than the satellite can detect",
+      "Infrared cannot detect water droplets inside cloud"
+     ],
+     "a": 0,
+     "e": "Low cloud tops are nearly as warm as the surface so the contrast is small."
+    },
+    {
+     "q": "In IR satellite imagery, colder cloud tops appear:",
+     "c": [
+      "Brighter or whiter (enhanced)",
+      "Darker, because the cold tops emit more radiation to space",
+      "Invisible, since cold cloud does not show up in infrared",
+      "The same shade as the warm surface beneath them"
+     ],
+     "a": 0,
+     "e": "Cold tops emit less radiation and show as bright in standard IR."
+    },
+    {
+     "q": "Visible imagery is available:",
+     "c": [
+      "Only during daylight",
+      "At night only",
+      "Always",
+      "Only in winter"
+     ],
+     "a": 0,
+     "e": "Visible light needs sunshine."
+    },
+    {
+     "q": "Water vapour imagery shows:",
+     "c": [
+      "Moisture in the upper and middle troposphere",
+      "Ground temperature and sea ice cover over polar regions",
+      "Cloud colour and drop size at the cloud tops",
+      "Sea ice only, with no information on the atmosphere"
+     ],
+     "a": 0,
+     "e": "It highlights dry and moist regions aloft."
+    },
+    {
+     "q": "Which imagery best identifies fog at night?",
+     "c": [
+      "Fog/low cloud IR difference products",
+      "Visible imagery, since it shows low cloud best at night",
+      "Water vapour imagery, since fog is full of vapour",
+      "Radar imagery, since fog returns a strong echo"
+     ],
+     "a": 0,
+     "e": "Night microphysics channels distinguish fog."
+    },
+    {
+     "q": "Geostationary satellites orbit at roughly:",
+     "c": [
+      "36,000 km",
+      "800 km",
+      "1,000 km",
+      "400 km"
+     ],
+     "a": 0,
+     "e": "They hover over the equator at about 35,786 km."
+    },
+    {
+     "q": "A bright, textured cloud in visible imagery often indicates:",
+     "c": [
+      "Thick, tall convective cloud",
+      "Thin cirrus, which looks smooth and dark in visible imagery",
+      "Clear sky over a dark ocean with no cloud at all",
+      "Fog only, which looks smooth and flat in the image"
+     ],
+     "a": 0,
+     "e": "Bright, lumpy tops signal deep convection."
+    },
+    {
+     "q": "Which GOES ABI band is the upper-level water vapour band?",
+     "c": [
+      "6.2 micrometres",
+      "7.3 micrometres",
+      "10.3 micrometres",
+      "0.64 micrometres"
+     ],
+     "a": 0,
+     "e": "NOAA/NESDIS quick guides: Band 8 is 6.2, Band 9 is 6.9, Band 10 is 7.3 micrometres."
+    },
+    {
+     "q": "Which water vapour band can sense farthest down into the mid-troposphere (about 500 to 750 hPa) in cloud-free areas?",
+     "c": [
+      "7.3 micrometres",
+      "6.2 micrometres",
+      "6.9 micrometres",
+      "3.9 micrometres"
+     ],
+     "a": 0,
+     "e": "NOAA/NESDIS Band 10 quick guide."
+    },
+    {
+     "q": "On water vapour imagery, the whitest areas show:",
+     "c": [
+      "The highest humidity",
+      "The driest air",
+      "The warmest surface",
+      "The thickest ice"
+     ],
+     "a": 0,
+     "e": "NWS: highest humidities are the whitest, dry regions dark."
+    },
+    {
+     "q": "Why can visible imagery confuse snow cover with cloud?",
+     "c": [
+      "Snow-covered ground also looks white",
+      "Snow emits infrared like cloud does",
+      "Snow is invisible from space in daylight",
+      "Snow is darker than cloud in the image"
+     ],
+     "a": 0,
+     "e": "NWS: looping helps because clouds move and snow does not."
+    },
+    {
+     "q": "Roughly how high is a polar-orbiting weather satellite per NOAA?",
+     "c": [
+      "About 833 km",
+      "About 35,786 km",
+      "About 100 km",
+      "About 3,000 km"
+     ],
+     "a": 0,
+     "e": "NOAA JetStream: about 520 miles, 14.1 orbits a day. NAV CANADA gives 850 km."
+    },
+    {
+     "q": "A stream of water vapour crossing a mountain range at a near right angle may indicate:",
+     "c": [
+      "Potential mountain wave turbulence",
+      "A developing thunderstorm over the range",
+      "Fog forming in the valley below",
+      "Freezing rain on the windward slopes"
+     ],
+     "a": 0,
+     "e": "NWS, Satellite Imagery Overview for Pilots."
+    },
+    {
+     "q": "Satellite imagery can show developing thunderstorms:",
+     "c": [
+      "Before radar detects them",
+      "Only after radar has already detected them",
+      "Only at night, in the infrared imagery",
+      "Never, because radar always sees them first"
+     ],
+     "a": 0,
+     "e": "NWS: satellite sees developing thunderstorms in their earliest stages, before radar."
+    },
+    {
+     "q": "In the NWS description, strong to severe thunderstorms normally have tops that are:",
+     "c": [
+      "Very cold",
+      "Warmer than the ground",
+      "The same as the ground",
+      "Invisible in IR"
+     ],
+     "a": 0,
+     "e": "NWS, Three types of satellite imagery."
+    },
+    {
+     "q": "Per the NAV CANADA guide, how often does a POES satellite orbit the Earth?",
+     "c": [
+      "Every 105 minutes",
+      "Every 24 hours",
+      "Every 30 minutes",
+      "Every 6 hours"
+     ],
+     "a": 0,
+     "e": "NAV CANADA guide: 14 orbits a day."
+    },
+    {
+     "q": "Because of the Earth's rotation, a POES orbit shifts west by about:",
+     "c": [
+      "2 time zones",
+      "1 time zone",
+      "6 time zones",
+      "No shift"
+     ],
+     "a": 0,
+     "e": "NAV CANADA guide satellite page."
+    },
+    {
+     "q": "How does the NAV CANADA guide describe infrared satellite imagery?",
+     "c": [
+      "Measures the heat footprint of cloud or the surface, day and night",
+      "A photo of the clouds taken in daylight only, under normal operating conditions",
+      "Moisture in the upper air only, not the clouds, as set out in the governing publication",
+      "Lightning detection from the satellite"
+     ],
+     "a": 0,
+     "e": "NAV CANADA guide table: Visual is a daylight photo; Infra-red measures heat."
+    },
+    {
+     "q": "What does the NAV CANADA guide advise about using satellite products for flight planning?",
+     "c": [
+      "Most pilots should consider consulting a briefer",
+      "They replace the GFA for flight planning",
+      "They are valid for 24 hours after the image time",
+      "They are required by regulation before flight"
+     ],
+     "a": 0,
+     "e": "NAV CANADA guide."
+    }
+   ],
+   "verified": {
+    "date": "2026-10-27",
+    "sources": [
+     "NAV CANADA Aviation Weather Services Guide (2017): GOES about 36,000 km over the equator; POES about 850 km, 105 minutes per orbit, 14 orbits per day",
+     "NOAA JetStream, Weather Satellites: geostationary 35,786 km, polar about 833 km, 14.1 orbits per day",
+     "NOAA/NESDIS ABI Quick Guides, Bands 8, 9 and 10 (6.2, 6.9, 7.3 micrometres; layers sensed; uses)",
+     "NWS, Three types of satellite imagery and Satellite Imagery Overview for Pilots (Front, Oct 2008): visible, IR and water vapour interpretation (US sources)",
+     "NAV CANADA Aviation Weather Services Guide, Satellite Imagery page (guide page 25 to 26; screenshots supplied by the user, 2026-10-27): GOES about 36,000 km, POES with HRPT about 850 km, 105 minutes, 14 orbits a day, west shift about 2 time zones, VIS and IR table, consult a briefer; example image GOES-East IR C13 dated 2026-05-15",
+     "NAV CANADA guide Weather Imagery and Supplementary Products table (screenshot, 2026-10-27): GOES images every 30 minutes, POES about every 6 hours"
+    ],
+    "unverified": [
+     "Sources for channel interpretation are US NWS pages. A Canadian source for visible, IR and water vapour interpretation (ECCC, NAV CANADA guide pages 30 and 31) is not yet confirmed.",
+     "Which GOES satellites currently cover Canada: the guide's own example is a GOES-East image (2026-05-15), but coverage of western Canada is not confirmed. The NOAA page fetched was dated 2023. The standard greyscale convention (white is cold in IR) and the comma cloud and anvil statements are standard practice, not confirmed.",
+     "The upper-level water vapour layer height differs between NWS sources (about 15,000 to 30,000 ft; above 20,000 ft MSL); a single figure is not given here."
+    ]
+   }
+  },
+  {
+   "title": "Reading and plotting a skew-T log-P",
+   "lesson": [
+    "A skew-T log-P diagram plots a sounding. Pressure is the vertical axis on a log scale. Isotherms are skewed to the right at about 45 degrees. Three families of reference lines are drawn on it.",
+    {
+     "list": [
+      "Isotherms: lines of constant temperature, sloping up to the right.",
+      "Dry adiabats: curved lines sloping up to the left. A lifted unsaturated parcel follows these.",
+      "Moist (saturated) adiabats: curved lines that lean toward the dry adiabats at high levels. Saturated parcels follow these.",
+      "Mixing ratio lines: dashed lines that slope up to the right."
+     ]
+    },
+    {
+     "h": "What to read"
+    },
+    {
+     "list": [
+      "Temperature (right line) and dew point (left line) profiles. When they are close or touch, the layer is moist or in cloud. A wide spread means dry air.",
+      "Inversion: temperature increases with height (the line moves right as you go up).",
+      "Freezing level: where the temperature line crosses 0 C.",
+      "Wind barbs along the side give winds aloft.",
+      "Lifted condensation level (LCL): lift a surface parcel along its dry adiabat and its mixing ratio line from the dew point. They meet at the LCL.",
+      "Level of free convection (LFC): where the lifted parcel becomes warmer than the environment. Equilibrium level (EL): where it is again equal to the environment, near the expected cloud top."
+     ]
+    },
+    {
+     "h": "Instability indices"
+    },
+    {
+     "list": [
+      "CAPE: area between the parcel path and the environment where the parcel is warmer. More area means stronger updrafts.",
+      "CIN: area where the parcel is colder. A cap that inhibits convection.",
+      "Lifted index (LI): environment temperature at 500 hPa minus parcel temperature at 500 hPa. Negative values mean unstable."
+     ]
+    },
+    {
+     "note": "Quick read: dew point near temperature means moisture. Temperature crossing back to the right means an inversion. Large positive area means storms if lift exists."
+    }
+   ],
+   "terms": [
+    [
+     "CAPE",
+     "Positive area on a sounding between the parcel curve and environment."
+    ],
+    [
+     "CIN",
+     "Convective inhibition: negative area that must be overcome for convection."
+    ],
+    [
+     "LFC",
+     "Level of free convection."
+    ],
+    [
+     "EL",
+     "Equilibrium level."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "On a skew-T, CAPE is represented by:",
+     "c": [
+      "The area where the lifted parcel is warmer than the environment",
+      "The area where the lifted parcel is colder than the environment",
+      "The distance between T and Td at the surface",
+      "The slope of the isotherms on the diagram"
+     ],
+     "a": 0,
+     "e": "CAPE is the positive buoyancy area between the parcel path and environment curve."
+    },
+    {
+     "q": "If the dew point line is very close to the temperature line over a layer, that layer is:",
+     "c": [
+      "Moist or in cloud",
+      "Very dry",
+      "An inversion",
+      "Unrelated to moisture"
+     ],
+     "a": 0,
+     "e": "A small spread means near-saturation."
+    },
+    {
+     "q": "How is the LCL found on a skew-T?",
+     "c": [
+      "Where the dry adiabat through the surface temperature meets the mixing ratio line through the surface dew point",
+      "Where the isotherm through the surface dew point meets the moist adiabat at 500 hPa, unless a supervisor directs otherwise",
+      "Where the temperature line first crosses the 0 C isotherm above the surface",
+      "At the pressure level where the dew point line reaches the left edge of the chart, under normal operating conditions"
+     ],
+     "a": 0,
+     "e": "A lifted unsaturated parcel saturates where those two lines intersect."
+    },
+    {
+     "q": "A negative lifted index indicates:",
+     "c": [
+      "Unstable conditions",
+      "Stable conditions",
+      "No moisture",
+      "A strong inversion"
+     ],
+     "a": 0,
+     "e": "A negative LI means the parcel is warmer than its environment at 500 hPa."
+    },
+    {
+     "q": "How does an inversion appear on a skew-T?",
+     "c": [
+      "The temperature line shifts to the right with increasing height",
+      "The temperature line follows a dry adiabat to the left with height",
+      "The dew point line crosses to the right of the temperature line",
+      "The temperature line is exactly vertical from the surface to 500 hPa"
+     ],
+     "a": 0,
+     "e": "Temperature increasing with height makes the profile lean back toward higher temperatures."
+    },
+    {
+     "q": "On a skew-T, isotherms are drawn:",
+     "c": [
+      "Slanting from lower left to upper right",
+      "Vertically, from the bottom of the chart to the top",
+      "Horizontally, from the left side to the right side",
+      "As curved lines that follow the moist adiabats upward"
+     ],
+     "a": 0,
+     "e": "The skew gives the diagram its name."
+    },
+    {
+     "q": "The dewpoint curve lying close to the temperature curve indicates:",
+     "c": [
+      "Moist, near saturated layers",
+      "Very dry air with a large temperature-dew point spread",
+      "A strong inversion capping a layer of warm air",
+      "A cold front passing through the sounding level"
+     ],
+     "a": 0,
+     "e": "Small spread means near saturation."
+    },
+    {
+     "q": "The LCL on a skew-T is found where:",
+     "c": [
+      "Dry adiabat from the surface temperature meets the mixing ratio line from the dew point",
+      "Where two isotherms cross on the chart at the surface",
+      "Where the dry adiabat from the surface meets the freezing level, under normal operating conditions",
+      "Where the isobars cross the surface temperature line on the chart, as set out in the governing publication"
+     ],
+     "a": 0,
+     "e": "Lifted parcel reaches saturation at that intersection."
+    },
+    {
+     "q": "An area of positive buoyancy on a skew-T lies:",
+     "c": [
+      "Between the parcel curve and the environment, parcel warmer",
+      "Where the parcel curve is colder than the environment curve",
+      "Below the surface, between the two isotherm lines",
+      "Between two isotherms drawn at the same pressure"
+     ],
+     "a": 0,
+     "e": "Positive area gives CAPE."
+    },
+    {
+     "q": "An inversion on a skew-T appears as:",
+     "c": [
+      "A section where temperature increases with height",
+      "A vertical line where temperature does not change with height",
+      "A steep drop in temperature with height at the surface",
+      "A closed loop on the right side of the diagram"
+     ],
+     "a": 0,
+     "e": "The temperature curve leans right with height."
+    },
+    {
+     "q": "A sounding with temperature below 0 C through a deep layer and warm layer above indicates:",
+     "c": [
+      "Potential for freezing rain or ice pellets",
+      "Hot, dry weather with a deep well-mixed boundary layer",
+      "Fog only, with no precipitation and a shallow stable layer",
+      "Nothing useful, since the temperature curve is not significant"
+     ],
+     "a": 0,
+     "e": "Warm nose aloft over sub-zero surface layer."
+    }
+   ],
+   "verified": {
+    "date": "2026-10-26",
+    "sources": [
+     "NWS skew-T log-P guide (weather.gov): isotherms at 45 degrees, dry and moist adiabats slanting lower right to upper left, dashed mixing ratio lines slanting lower left to upper right, definitions of LCL, EL and CAPE"
+    ],
+    "unverified": [
+     "The definitions of CIN, LFC and the lifted index, and the 'warm nose' freezing-rain pattern, are standard meteorology, not checked in a fetched source."
+    ]
+   }
+  }
+ ]
 }

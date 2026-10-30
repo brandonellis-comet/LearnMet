@@ -216,3 +216,9 @@ Next accuracy step: a second pass with working Met Techs and the remaining Canad
 ## WMO resources (checked 2026-10-27)
 - International Meteorological Vocabulary (WMO-No. 182, 1992): paid publication, not read.
 - International Cloud Atlas (cloudatlas.wmo.int): free online; cloud genera descriptions, photometeors, glossary. Use it to harden the cloud classification topic (moisture, topic 2).
+
+## Quiz answer-length rebalance (2026-10-30)
+Problem: the correct choice was the longest in 49% of questions, so length gave the answer away.
+Method: rewrote distractors (about 270 questions by hand) and lengthened two distractors where the correct answer still stood out. Correct answers and explanations are unchanged; no facts were changed.
+Result: correct-is-longest 49% to 28% (about 25% is chance). Length tells (correct is 25+ chars, strictly longest, 15%+ above the mean distractor) 24% to 0%. Checked by `check.py`.
+Note: some padded distractors carry generic qualifiers ("as agreed locally"). They are wrong by design; do not read them as source content.

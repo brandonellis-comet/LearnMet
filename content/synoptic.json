@@ -67,9 +67,9 @@
           "q": "Which upper-air feature typically supports surface cyclogenesis?",
           "c": [
             "A trough aloft with divergence ahead of it",
-            "A ridge aloft",
-            "A cut-off high",
-            "Uniform zonal flow with no gradient"
+            "A ridge aloft with sinking air beneath it",
+            "A cut-off high with weak winds around it",
+            "Uniform zonal flow with no height gradient"
           ],
           "a": 0,
           "e": "Upper divergence removes mass from the column and lowers surface pressure."
@@ -89,9 +89,9 @@
           "q": "In the dissipation stage, an extratropical cyclone:",
           "c": [
             "Is cut off from its warm air supply and weakens",
-            "Strengthens rapidly",
-            "Becomes a tropical cyclone",
-            "Develops a warm core"
+            "Strengthens rapidly as the occlusion grows",
+            "Becomes a tropical cyclone over warm water",
+            "Develops a warm core as the fronts weaken"
           ],
           "a": 0,
           "e": "The warm, rising air is cut off from the centre; cold air lies on both sides of the occluded front."
@@ -236,7 +236,7 @@
           "c": [
             "A slow-moving closed low detached from the westerly flow, often with persistent unsettled weather",
             "A fast-moving ridge embedded in the westerlies that brings short spells of clear weather",
-            "A weak surface high that stays over the same area and brings steady clear skies",
+            "A weak surface high that stays over the same area and brings steady clear skies for days",
             "A stationary front at the surface that separates two air masses for several days"
           ],
           "a": 0,
@@ -246,9 +246,9 @@
           "q": "What conditions go with an upper-level ridge?",
           "c": [
             "Warm air, sinking motion, fair weather",
-            "Cold air, strong ascent, heavy rain",
-            "Strong jet streaks only",
-            "Tropical cyclones"
+            "Cold air, strong ascent and heavy rain",
+            "Strong jet streaks and widespread cloud only",
+            "Tropical cyclones forming along the axis"
           ],
           "a": 0,
           "e": "Ridges are associated with anticyclonic curvature, subsidence and mostly dry weather."
@@ -290,9 +290,9 @@
           "q": "A ridge in the upper flow is generally associated with:",
           "c": [
             "Warm air, fair weather and subsidence",
-            "Cold air and storms",
-            "Frontogenesis and heavy rain",
-            "Strong convergence at the surface"
+            "Cold air, deep cloud and storms",
+            "Frontogenesis and heavy rain along the axis",
+            "Strong convergence at the surface under the ridge"
           ],
           "a": 0,
           "e": "Ridges support high pressure and drier, sinking air."
@@ -428,9 +428,9 @@
           "q": "What does positive relative vorticity represent in the Northern Hemisphere?",
           "c": [
             "Cyclonic (counterclockwise) rotation",
-            "Anticyclonic (clockwise) rotation",
-            "No rotation",
-            "Strong sinking"
+            "Anticyclonic (clockwise) rotation about the point",
+            "No rotation at all about the vertical",
+            "Strong sinking motion through the layer"
           ],
           "a": 0,
           "e": "Positive vorticity is counterclockwise spin in the Northern Hemisphere."
@@ -683,7 +683,7 @@
         {
           "q": "What is a bow echo on radar?",
           "c": [
-            "A bow-shaped line of storms associated with damaging straight-line winds",
+            "A bow-shaped line of storms with damaging straight-line winds",
             "A circular rain band spiralling around the centre of a hurricane",
             "A hail signature showing large stones inside a single cell",
             "A tornado hook echo at the rear flank of a supercell"
@@ -728,9 +728,9 @@
           "q": "Under the revised (2025) derecho definition, how long must the wind swath be?",
           "c": [
             "At least 400 km (250 miles)",
-            "At least 40 km",
-            "At least 4,000 km",
-            "At least 1 km"
+            "At least 40 km, about the width of a thunderstorm",
+            "At least 4,000 km, across a whole continent",
+            "At least 1 km, the width of a downburst"
           ],
           "a": 0,
           "e": "NOAA SPC: a swath at least 400 km (250 miles) long, gusts of at least 93 km/h (58 mph) along it, and an MCS moving faster than the mean wind."
@@ -924,9 +924,9 @@
           "q": "Per ECCC, why did Canada adopt the term post-tropical in 1998?",
           "c": [
             "So potentially dangerous storms could keep their names",
-            "To rank hurricanes by central pressure",
-            "To replace the Saffir-Simpson scale",
-            "To label storms that have fully dissipated"
+            "To rank hurricanes by their central pressure readings",
+            "To replace the Saffir-Simpson wind scale in Canada",
+            "To label storms that have fully dissipated at sea"
           ],
           "a": 0,
           "e": "ECCC: the term lets potentially dangerous storms keep their names."

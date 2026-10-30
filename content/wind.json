@@ -295,9 +295,9 @@
           "q": "Around a high-pressure centre the gradient wind compared with the geostrophic wind (same gradient) is:",
           "c": [
             "Faster (supergeostrophic)",
-            "Slower (subgeostrophic)",
-            "Equal",
-            "Zero"
+            "Slower (subgeostrophic), as around a low",
+            "Equal to the geostrophic wind in every case",
+            "Zero, because the centrifugal force cancels the wind"
           ],
           "a": 0,
           "e": "Around highs the force balance allows a stronger wind for the same pressure gradient."
@@ -479,9 +479,9 @@
           "q": "Which statement about the depth of the atmospheric boundary layer is correct?",
           "c": [
             "It varies from tens of metres when stable to several km when convective",
-            "It is a fixed 1 to 2 km layer everywhere at all times",
-            "It is always about 100 m deep because friction is limited to that",
-            "It extends up to the tropopause at all latitudes and seasons"
+            "It is a fixed layer 1 to 2 km deep everywhere and at all times",
+            "It is always about 100 m deep because friction stops at that height",
+            "It always reaches the tropopause at every latitude and season"
           ],
           "a": 0,
           "e": "AMS Glossary: the top of the layer, the inversion height, changes with time and place, from tens of metres in strongly stable conditions to several km in convective ones."
@@ -501,9 +501,9 @@
           "q": "Surface convergence beneath a low leads to:",
           "c": [
             "Rising air, cloud and precipitation",
-            "Sinking air and clear skies",
-            "No vertical motion",
-            "A strong subsidence inversion"
+            "Sinking air that gives clear skies and no precipitation",
+            "No vertical motion at all, only horizontal inflow",
+            "A strong subsidence inversion aloft over the low"
           ],
           "a": 0,
           "e": "Air that flows inward has nowhere to go but up."
@@ -512,9 +512,9 @@
           "q": "A pilot descends toward the surface in the Northern Hemisphere through the friction layer. How does the wind direction usually change?",
           "c": [
             "It backs (turns counterclockwise) as height decreases",
-            "It veers (turns clockwise) as height decreases",
-            "It stays exactly the same",
-            "It reverses by 180 degrees"
+            "It veers (turns clockwise) as height decreases toward the ground",
+            "It stays exactly the same through the whole friction layer",
+            "It reverses by 180 degrees close to the ground"
           ],
           "a": 0,
           "e": "Friction turns the wind toward low pressure, which means backing as you approach the ground."
@@ -825,9 +825,9 @@
           "q": "At about which pressure level is the polar front jet usually strongest?",
           "c": [
             "250 to 300 hPa",
-            "850 hPa",
-            "700 hPa",
-            "1000 hPa"
+            "About 850 hPa",
+            "About 700 hPa",
+            "About 1000 hPa"
           ],
           "a": 0,
           "e": "The polar front jet is near the tropopause, around 250 to 300 hPa (about 10 km)."
@@ -847,9 +847,9 @@
           "q": "Where is clear-air turbulence most likely?",
           "c": [
             "Near jet cores and strong shear zones",
-            "In the middle of a stable high",
-            "Near the surface in fog",
-            "Above 30 km in the stratosphere"
+            "In the middle of a stable high, where winds are light",
+            "Near the surface in dense fog and calm conditions",
+            "Above 30 km in the stratosphere, well above the jet"
           ],
           "a": 0,
           "e": "CAT is associated with strong vertical and horizontal wind shear near jets."
@@ -968,9 +968,9 @@
           "q": "What is a katabatic wind?",
           "c": [
             "Cold, dense air flowing downslope",
-            "Warm air flowing upslope",
-            "A wind from the sea",
-            "A wind caused by thunderstorms"
+            "Warm air flowing upslope in the afternoon",
+            "A wind blowing from the sea toward the land",
+            "A gust front produced by a thunderstorm"
           ],
           "a": 0,
           "e": "Katabatic winds are gravity-driven drainage flows of cold air down slopes."
@@ -1022,7 +1022,7 @@
         {
           "q": "When are sea breezes strongest?",
           "c": [
-            "When the land-sea temperature contrast is large and the gradient wind is weak",
+            "When the land-sea contrast is large and the gradient wind is weak",
             "When it is cloudy and windy and the land is cooler than the sea",
             "When a strong offshore gradient wind blows against the coast",
             "When the land-sea temperature contrast is small and the sky is overcast"
@@ -1034,9 +1034,9 @@
           "q": "A mountain breeze at night blows:",
           "c": [
             "Downslope and down-valley",
-            "Upslope and up-valley",
-            "Always from the sea",
-            "Parallel to the coast"
+            "Upslope and up-valley, as in the daytime",
+            "Always from the sea toward the land",
+            "Parallel to the coast, whatever the terrain"
           ],
           "a": 0,
           "e": "Cooled slope air drains downhill at night."
@@ -1078,9 +1078,9 @@
           "q": "Per NWS training notes, how do katabatic winds compare with mountain breezes?",
           "c": [
             "Stronger, and can exceed 100 knots",
-            "Weaker, never above 10 knots",
-            "The same strength",
-            "Found only over open water"
+            "Weaker, and never above 10 knots",
+            "About the same strength as mountain breezes",
+            "Found only over open water, never on slopes"
           ],
           "a": 0,
           "e": "NWS: katabatic winds are driven by cold air flowing down a slope, stronger than mountain breezes, and can exceed 100 knots."

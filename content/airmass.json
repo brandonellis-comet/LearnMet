@@ -1,815 +1,815 @@
 {
-  "title": "4. Air Masses and Fronts",
-  "topics": [
+ "title": "4. Air Masses and Fronts",
+ "topics": [
+  {
+   "title": "Air mass classification and source regions",
+   "lesson": [
+    "An air mass is a large body of air, with horizontal dimensions of several hundred to a couple of thousand miles (Penn State) and fairly uniform temperature and moisture in the horizontal, but not in the vertical. It takes on the character of the region where it sits for an extended period (the source region). A uniform surface, light winds and a stable high-pressure pattern are the classic conditions (not confirmed).",
     {
-      "title": "Air mass classification and source regions",
-      "lesson": [
-        "An air mass is a large body of air, with horizontal dimensions of several hundred to a couple of thousand miles (Penn State) and fairly uniform temperature and moisture in the horizontal, but not in the vertical. It takes on the character of the region where it sits for an extended period (the source region). A uniform surface, light winds and a stable high-pressure pattern are the classic conditions (not confirmed).",
-        {
-          "h": "Classification"
-        },
-        {
-          "list": [
-            "By latitude: Arctic (A), Polar (P), Tropical (T).",
-            "By surface: continental (c, dry) or maritime (m, moist).",
-            "Combined: cA, cP, mP, cT, mT. Arctic air is usually continental."
-          ]
-        },
-        {
-          "h": "Typical source regions and character"
-        },
-        {
-          "list": [
-            "cA: the coldest and driest air masses. Sources include Siberia and northern Canada (Penn State).",
-            "cP: forms over cold land and has low dew points. Canada is the most common source for North America (Penn State). Very cold, dry and stable at the source in winter.",
-            "mP: forms over high-latitude cold water (North Atlantic and North Pacific). Chilly and moist, with dew points close to the air temperature. Can bring fog to coastal New England (Penn State).",
-            "mT: Gulf of Mexico, Caribbean and the tropical western Atlantic. Warm and humid, with high dew points.",
-            "cT: southwestern US and northern Mexico (deserts). Hot and dry."
-          ]
-        },
-        {
-          "h": "Modification"
-        },
-        "As an air mass moves, it changes. Cold air moving over a warmer surface (k, cold-type) is heated from below and becomes more unstable in its lowest layers, so unsettled weather is more likely (Met Office; Ohio University: cold air over the warm Great Lakes gives lake-effect snow). Warm air moving over a colder surface (w, warm-type) is cooled from below and becomes stable (Met Office; Ohio University), which inhibits uplift. Cumuliform cloud and showers for the unstable case, and stratus and fog for the stable case, are standard teaching not stated on the pages read. US texts mark stability with the suffixes u and s (for example mTu, mTs) rather than k and w.",
-        {
-          "note": "Think about the surface the air is crossing. Cold over warm = unstable and showery. Warm over cold = stable and foggy."
-        }
-      ],
-      "terms": [
-        [
-          "Source region",
-          "Area where an air mass acquires its temperature and moisture characteristics."
-        ],
-        [
-          "Maritime / continental",
-          "Moist (formed over water) / dry (formed over land)."
-        ],
-        [
-          "Modification",
-          "Change in an air mass's properties as it moves away from its source."
-        ]
-      ],
-      "questions": [
-        {
-          "q": "What are the characteristics of continental polar (cP) air at its source?",
-          "c": [
-            "Cold, dry and stable",
-            "Warm and humid",
-            "Cool and moist",
-            "Hot and dry"
-          ],
-          "a": 0,
-          "e": "cP forms over cold land, with Canada the most common North American source, and has low dew points."
-        },
-        {
-          "q": "Which air mass source region produces warm, humid air for Atlantic Canada's summer thunderstorms?",
-          "c": [
-            "Gulf of Mexico (mT)",
-            "Hudson Bay (cP)",
-            "Arctic Ocean (cA)",
-            "Sahara (cT)"
-          ],
-          "a": 0,
-          "e": "Maritime tropical air from the Gulf of Mexico and the western Atlantic is warm and moist."
-        },
-        {
-          "q": "What happens when cold air flows over a warmer surface?",
-          "c": [
-            "It becomes unstable, with cumuliform cloud and showers",
-            "It becomes stable, with stratus cloud and fog banks",
-            "It stays unchanged because air masses never modify",
-            "It dries out completely and produces cloud-free skies"
-          ],
-          "a": 0,
-          "e": "Heating from below steepens the lapse rate and promotes convection."
-        },
-        {
-          "q": "What happens when warm moist air flows over a colder surface?",
-          "c": [
-            "It becomes stable, with stratus and fog",
-            "It becomes unstable with thunderstorms",
-            "It rises rapidly",
-            "It dries out"
-          ],
-          "a": 0,
-          "e": "Cooling from below creates a stable layer where stratus and fog form."
-        },
-        {
-          "q": "What does the 'm' in mP indicate?",
-          "c": [
-            "Maritime",
-            "Mountain",
-            "Modified",
-            "Mixed"
-          ],
-          "a": 0,
-          "e": "m means maritime (moist). mP is cool, moist polar air from oceans."
-        },
-        {
-          "q": "Which air mass symbol describes cold, dry air formed over northern Canada in winter?",
-          "c": [
-            "cP (continental polar)",
-            "mT (maritime tropical)",
-            "cT (continental tropical)",
-            "mP (maritime polar)"
-          ],
-          "a": 0,
-          "e": "Continental polar air forms over cold land and is cold and dry."
-        },
-        {
-          "q": "A maritime tropical air mass moving over the Maritimes in summer typically brings:",
-          "c": [
-            "Warm, humid air with fog, stratus or thunderstorms",
-            "Cold, dry air with clear skies and strong radiation inversions",
-            "Strong subsidence, a dry atmosphere and unlimited visibility",
-            "Arctic outflow with blowing snow and very cold temperatures"
-          ],
-          "a": 0,
-          "e": "mT air carries abundant warm moisture from the subtropical Atlantic."
-        },
-        {
-          "q": "A cold air mass moves over a warmer surface and is heated from below. The air mass is called:",
-          "c": [
-            "Cold (k) type, usually unstable",
-            "Warm (w) type, usually stable",
-            "Neutral type with no change",
-            "Always stable with low stratus"
-          ],
-          "a": 0,
-          "e": "A 'k' air mass is colder than the surface beneath it, so it tends to be unstable."
-        },
-        {
-          "q": "Which source region characteristic makes an air mass uniform?",
-          "c": [
-            "A large, flat area with light winds and uniform surface",
-            "A mountainous region with strong winds and many different surfaces",
-            "A narrow coastal strip with changing winds between land and sea",
-            "A region crossed by many fronts and frequent cyclones"
-          ],
-          "a": 0,
-          "e": "Air mass properties come from long residence over a uniform surface."
-        },
-        {
-          "q": "Arctic air (A) differs from continental polar air mainly in being:",
-          "c": [
-            "Colder, from the Arctic basin or ice-covered regions",
-            "Warmer and more humid, forming over the warm Gulf Stream",
-            "Formed only over the ocean, carrying large amounts of moisture",
-            "Associated with the subtropical high near 30 degrees latitude"
-          ],
-          "a": 0,
-          "e": "Arctic air comes from ice-covered high latitudes and is the coldest air mass type."
-        },
-        {
-          "q": "Which statement about modification of an air mass is true?",
-          "c": [
-            "It changes as it moves over surfaces unlike its source region",
-            "It never changes while it travels, whatever surface lies below it",
-            "It changes only in summer, when the surface is warm",
-            "It changes only when it crosses a mountain range or a coast"
-          ],
-          "a": 0,
-          "e": "Heating, cooling and moisture exchange with the new surface modify the air mass."
-        }
-      ],
-      "verified": {
-        "date": "2026-10-26",
-        "sources": [
-          "Penn State METEO 3, Air masses and fronts: size, uniformity, five types (cA, cP, mP, cT, mT) and their North American source regions",
-          "Prof. Jin-Yi Yu, ESS 5 Chapter 9: classification symbols; mA does not exist",
-          "Met Office, Air mass modification, and Ohio University, The Physical Environment: cold air over warm surface becomes unstable, warm air over cold surface becomes stable (two sources agree)",
-          "avalanche.ca glossary, Air mass: minimal horizontal variation in temperature and moisture; forms over days or weeks (Canadian, matches definition used)"
-        ],
-        "unverified": [
-          "Effects on the Maritimes (cloud, showers, thunderstorms) were removed or left unconfirmed; the sources are US course texts, not Canadian publications.",
-          "No ECCC page on air mass types was found.",
-          "Stability change under modification now has two sources. The cloud, fog and visibility consequences and the k/w letters were not found in any source read. Maritime effects remain unconfirmed; no ECCC page on air mass types found."
-        ]
-      }
+     "h": "Classification"
     },
     {
-      "title": "Cold, warm, stationary and occluded fronts",
-      "lesson": [
-        "A front is the boundary between two air masses of different density. Fronts are named for the air that is advancing.",
-        {
-          "h": "Warm front"
-        },
-        {
-          "list": [
-            "Warm air advances and rides up over retreating cold air along a gentle slope (about 1:200). Warm fronts move slowly, about 20 km/h.",
-            "Cloud lowers in sequence: Ci, Cs, As, Ns. Cirrus can appear about 1,000 km ahead and altostratus about 500 km ahead (Oklahoma Mesonet). Wide area of steady rain or snow ahead of the surface front.",
-            "Fog and freezing rain are possible ahead of the front.",
-            "After passage: warmer, winds veer (for example from southeast to south or southwest), pressure steadies."
-          ]
-        },
-        {
-          "h": "Cold front"
-        },
-        {
-          "list": [
-            "Cold air advances and wedges under warm air on a steeper slope (about 1:100). Cold fronts move faster, up to about 50 km/h.",
-            "Narrow belt of showers, thunderstorms, gusty winds and squalls at or just ahead of the front.",
-            "After passage: temperature falls, pressure rises, wind veers (for example from southwest to northwest), skies clear and visibility improves."
-          ]
-        },
-        {
-          "h": "Stationary and occluded"
-        },
-        {
-          "list": [
-            "Stationary front: neither air mass advances. Wind flows parallel to the front. Long periods of cloud and rain are possible.",
-            "Occluded front: a cold front overtakes a warm front, lifting the warm air off the surface. In North America the cold occlusion is the most common type. A cold occlusion has the coldest air behind the cold front; a warm occlusion has the coldest air ahead of the warm front (NWS WPC). On US WPC charts both are drawn with the same purple triangle-and-semicircle symbol. The GFA used in Canadian aviation has no occluded symbol (MANAIR)."
-          ]
-        },
-        {
-          "note": "Northern Hemisphere: winds typically veer (turn clockwise) with the passage of a warm or cold front."
-        }
-      ],
-      "terms": [
-        [
-          "Warm front",
-          "Boundary where warm air replaces cold air."
-        ],
-        [
-          "Cold front",
-          "Boundary where cold air replaces warm air."
-        ],
-        [
-          "Occlusion",
-          "Front formed when a cold front overtakes a warm front."
-        ],
-        [
-          "Veer",
-          "Wind shifts clockwise."
-        ]
-      ],
-      "questions": [
-        {
-          "q": "Which front has the shallower slope and a wider area of cloud and precipitation?",
-          "c": [
-            "Warm front",
-            "Cold front",
-            "Both are the same",
-            "Stationary front"
-          ],
-          "a": 0,
-          "e": "Warm fronts slope about 1:200, spreading cloud and precipitation over a large area ahead of the surface line."
-        },
-        {
-          "q": "What changes accompany the passage of a cold front in the Northern Hemisphere?",
-          "c": [
-            "Temperature falls, pressure rises, wind veers",
-            "Temperature rises, pressure falls, wind backs",
-            "Temperature rises, pressure rises, wind backs",
-            "No change in wind"
-          ],
-          "a": 0,
-          "e": "Colder, denser air arrives, pressure rises, and the wind turns clockwise (for example SW to NW)."
-        },
-        {
-          "q": "What weather is typical along a fast-moving cold front?",
-          "c": [
-            "A narrow band of showers, thunderstorms and squalls",
-            "A wide shield of steady drizzle and low stratus cloud",
-            "A broad area of fog with very light winds throughout",
-            "Several hundred kilometres of continuous steady snow ahead"
-          ],
-          "a": 0,
-          "e": "The steeper slope gives vigorous lifting and convection in a narrow zone."
-        },
-        {
-          "q": "How does an occluded front form?",
-          "c": [
-            "A cold front overtakes a warm front",
-            "Two cold fronts collide",
-            "A warm front stops moving",
-            "A cold front stalls"
-          ],
-          "a": 0,
-          "e": "Cold fronts move faster than warm fronts and eventually catch up, lifting the warm air aloft."
-        },
-        {
-          "q": "Which cloud sequence is associated with the approach of a warm front?",
-          "c": [
-            "Cirrus, cirrostratus, altostratus, nimbostratus",
-            "Cumulus, cumulonimbus, stratocumulus, stratus, cirrus",
-            "Stratus, altocumulus, cirrocumulus, cirrus, cumulonimbus",
-            "Nimbostratus, altostratus, cirrostratus, cirrus, clear sky"
-          ],
-          "a": 0,
-          "e": "Cloud thickens and lowers as the warm front approaches."
-        },
-        {
-          "q": "The wind shifts from southwest to northwest, temperature drops and pressure rises sharply. What passed?",
-          "c": [
-            "A cold front",
-            "A warm front",
-            "An occluded front",
-            "A stationary front"
-          ],
-          "a": 0,
-          "e": "Wind veer, falling temperature and rising pressure mark a cold front passage."
-        },
-        {
-          "q": "Which front typically moves slower than the other, with gentle slope and widespread stratiform cloud?",
-          "c": [
-            "Warm front",
-            "Cold front",
-            "Squall line",
-            "Dry line"
-          ],
-          "a": 0,
-          "e": "A warm front slopes at roughly 1:200 and brings layered cloud ahead of it."
-        },
-        {
-          "q": "A stationary front is a boundary that:",
-          "c": [
-            "Shows little or no movement",
-            "Moves at 40 kt",
-            "Always produces tornadoes",
-            "Is found only over water"
-          ],
-          "a": 0,
-          "e": "Neither air mass is replacing the other along a stationary front."
-        },
-        {
-          "q": "In a cold occlusion, the air behind the cold front is:",
-          "c": [
-            "Colder than the air ahead of the warm front",
-            "Warmer than the air ahead of the warm front",
-            "Equal in temperature to the air ahead",
-            "Always dry"
-          ],
-          "a": 0,
-          "e": "In a cold occlusion the colder air undercuts the cool air ahead of the warm front."
-        },
-        {
-          "q": "On a surface analysis a cold front is drawn with:",
-          "c": [
-            "Blue line with triangles",
-            "Red line with semicircles",
-            "Purple line with triangles and semicircles",
-            "Alternating red and blue line"
-          ],
-          "a": 0,
-          "e": "Cold fronts are blue with triangles pointing in the direction of motion."
-        },
-        {
-          "q": "Typical speeds quoted for fronts are:",
-          "c": [
-            "Cold fronts up to about 50 km/h, warm fronts about 20 km/h",
-            "Cold fronts about 20 km/h, warm fronts up to about 50 km/h",
-            "Both about 100 km/h",
-            "Both about 5 km/h"
-          ],
-          "a": 0,
-          "e": "University of Alberta EAS 270 and Yu (ESS 5): warm fronts about 20 km/h, cold fronts up to 50 km/h."
-        },
-        {
-          "q": "What cold front slope do several sources give as typical?",
-          "c": [
-            "About 1:100",
-            "About 1:200",
-            "About 1:10",
-            "About 1:1,000"
-          ],
-          "a": 0,
-          "e": "Oklahoma Mesonet and Yu quote 1:100 for a typical cold front and 1:200 for a warm front."
-        },
-        {
-          "q": "On US WPC charts, how is a warm occlusion drawn compared with a cold occlusion?",
-          "c": [
-            "Same purple symbol for both",
-            "Warm is red, cold is blue",
-            "Warm is dashed, cold is solid",
-            "Warm is green, cold is purple"
-          ],
-          "a": 0,
-          "e": "NWS WPC uses one purple symbol for occluded fronts. The difference is where the coldest air lies."
-        }
-      ],
-      "verified": {
-        "date": "2026-10-26",
-        "sources": [
-          "NWS Weather Prediction Center, Surface fronts and boundaries: cold front blue triangles, warm front red semicircles, occluded front purple triangles and semicircles",
-          "Oklahoma Mesonet, Fronts: slopes 1:100 and 1:200, cloud sequence distances, cold-type occlusion most common, stationary front behaviour",
-          "University of Alberta EAS 270 lecture 22 and Prof. Yu ESS 5: speeds, warm front freezing rain, cold front passage changes",
-          "University of Northern Iowa, Elements of Weather ch. 9: after warm front passage temperature rises, wind shifts to south or southwest, pressure steadies; after cold front passage temperature drops, wind to northwest, pressure rises (agrees with U of Alberta EAS 270)",
-          "NWS WPC, Surface fronts and boundaries: occluded front symbol purple; cold occlusion coldest air behind cold front, warm occlusion coldest air ahead of warm front"
-        ],
-        "unverified": [
-          "The earlier slope of 1:50 for cold fronts was removed; sources give about 1:100 (the University of Alberta slide marks it tentative).",
-          "Stationary front symbol (alternating blue triangles and red semicircles on opposite sides) is confirmed in MANAIR for the GFA but is not described on the WPC page text."
-        ]
-      }
+     "list": [
+      "By latitude: Arctic (A), Polar (P), Tropical (T).",
+      "By surface: continental (c, dry) or maritime (m, moist).",
+      "Combined: cA, cP, mP, cT, mT. Arctic air is usually continental."
+     ]
     },
     {
-      "title": "Frontal cross-sections and associated weather",
-      "lesson": [
-        "A cross-section shows the cold air as a wedge under the warm air. The sloping boundary is the frontal surface. Friction slows the cold air near the ground, so the front is steepest near the surface (a nose).",
-        {
-          "h": "Weather band widths"
-        },
-        {
-          "list": [
-            "Warm front: cloud shield extends hundreds of km ahead of the surface front. Steady precipitation covers a large area.",
-            "Cold front: active weather is usually a narrow belt along and just ahead of the front (a 50 to 100 km width was not confirmed). Squall lines can accompany cold fronts."
-          ]
-        },
-        {
-          "h": "Ana and kata fronts"
-        },
-        {
-          "list": [
-            "Ana front: warm air rises up the frontal surface to high altitudes, and precipitation may occur behind the front (AMS Glossary). Wide cloud and precipitation extend behind the surface front.",
-            "Kata front: usually a cold front where the warm air sinks down the frontal surface, probably not in the lowest layers (AMS Glossary). Weather is weak or confined to a narrow zone."
-          ]
-        },
-        {
-          "h": "Frontal inversion"
-        },
-        "A frontal inversion is the temperature inversion met when climbing through a sloping front or frontal zone (AMS Glossary). Temperature increases with height as you pass from cold into warm air. It can trap cloud, fog and pollutants in the cold air beneath (standard teaching).",
-        {
-          "h": "Hazards"
-        },
-        {
-          "list": [
-            "Freezing rain: warm air overrunning sub-freezing air at the surface, typical of warm fronts and stationary fronts in winter.",
-            "Turbulence and wind shear across the frontal surface, especially with fast fronts.",
-            "Low ceiling and visibility in the cold air mass: fog, stratus, drizzle."
-          ]
-        },
-        {
-          "note": "Any time a sounding shows a warm layer above 0 C over a sub-freezing layer at the ground, expect freezing rain or ice pellets."
-        }
-      ],
-      "terms": [
-        [
-          "Frontal surface",
-          "Sloping boundary between two air masses."
-        ],
-        [
-          "Frontal inversion",
-          "Temperature inversion at the boundary where warm air overlies cold air."
-        ],
-        [
-          "Ana / kata",
-          "Fronts with rising / sinking warm air."
-        ]
-      ],
-      "questions": [
-        {
-          "q": "Which front type commonly produces the widest precipitation shield?",
-          "c": [
-            "Warm front",
-            "Cold front",
-            "Dry line",
-            "Sea breeze front"
-          ],
-          "a": 0,
-          "e": "The shallow slope of the warm front lifts air gradually over a wide area."
-        },
-        {
-          "q": "In an ana cold front, warm air:",
-          "c": [
-            "Rises along the frontal surface",
-            "Descends along the frontal surface",
-            "Stays stationary",
-            "Moves parallel only"
-          ],
-          "a": 0,
-          "e": "Ana means ascending; cloud and rain extend behind the surface front."
-        },
-        {
-          "q": "What is the typical hazard when warm air overruns sub-freezing air at the ground?",
-          "c": [
-            "Freezing rain",
-            "Hail",
-            "Dust storms",
-            "Sea breeze"
-          ],
-          "a": 0,
-          "e": "Rain falls through the cold surface layer and freezes on contact."
-        },
-        {
-          "q": "A frontal inversion is:",
-          "c": [
-            "Temperature increasing with height across the frontal surface",
-            "Temperature decreasing with height across the frontal surface",
-            "A surface high-pressure area",
-            "A pressure rise behind a front"
-          ],
-          "a": 0,
-          "e": "Passing from cold air to warm air above produces an inversion at the front."
-        },
-        {
-          "q": "Where is the active weather of a fast-moving cold front typically concentrated?",
-          "c": [
-            "Near and just ahead of the front",
-            "Hundreds of km behind",
-            "Far ahead in a wide shield",
-            "Nowhere in particular"
-          ],
-          "a": 0,
-          "e": "Steep frontal slope concentrates lifting into a narrow band."
-        },
-        {
-          "q": "Which cloud sequence is typical ahead of an approaching warm front?",
-          "c": [
-            "Cirrus, cirrostratus, altostratus, nimbostratus",
-            "Cumulonimbus then cirrus then clear sky with gusty winds",
-            "Stratus first, then cirrus, then fair-weather cumulus",
-            "Altocumulus lenticularis, then cirrus, then clear sky"
-          ],
-          "a": 0,
-          "e": "Warm frontal lifting progressively lowers the cloud base."
-        },
-        {
-          "q": "Which weather is typical right behind a fast-moving cold front in winter?",
-          "c": [
-            "Gusty northwest winds, flurries and rapidly clearing sky",
-            "Steady warm-sector drizzle with low stratus and poor visibility",
-            "Dense fog and calm winds with a falling temperature",
-            "Widespread freezing rain falling from altostratus cloud"
-          ],
-          "a": 0,
-          "e": "Cold post-frontal air brings gusts and scattered convective cloud."
-        },
-        {
-          "q": "The slope of a typical cold front is steeper than a warm front's. This leads to:",
-          "c": [
-            "A narrower band of weather",
-            "A wider band of weather",
-            "No difference in the width of weather",
-            "Weather only after the front passes"
-          ],
-          "a": 0,
-          "e": "A steeper slope concentrates lifting in a narrow zone."
-        },
-        {
-          "q": "Freezing rain ahead of a warm front requires:",
-          "c": [
-            "A warm layer aloft over a shallow sub-zero layer at the surface",
-            "A deep layer of cold air from the ground up to 5 km",
-            "Dry air with no cloud and a strong surface inversion",
-            "A surface temperature above 5 C with rain reaching the ground"
-          ],
-          "a": 0,
-          "e": "Snow melts in the warm layer and freezes on contact below."
-        },
-        {
-          "q": "The warm sector of a mid-latitude cyclone lies:",
-          "c": [
-            "Between the cold and warm fronts",
-            "North of the warm front",
-            "West of the cold front",
-            "At the centre of the occlusion"
-          ],
-          "a": 0,
-          "e": "The warm sector is the wedge of warm air between the two fronts."
-        },
-        {
-          "q": "Which phenomenon is a typical hazard to aviation at a warm front?",
-          "c": [
-            "Low ceilings and poor visibility in widespread precipitation",
-            "Only clear-air turbulence, with no cloud or precipitation at all",
-            "Severe thunderstorms and tornadoes in every case",
-            "Dust storms and very strong winds with unlimited visibility"
-          ],
-          "a": 0,
-          "e": "Warm fronts bring low stratus, rain or snow and poor visibility over a wide area."
-        },
-        {
-          "q": "What happens to the warm air in a katafront?",
-          "c": [
-            "It sinks down the frontal surface",
-            "It rises to high altitude",
-            "It stays level",
-            "It stops moving"
-          ],
-          "a": 0,
-          "e": "AMS Glossary: in a katafront the warm air sinks down the frontal surface. In an anafront it rises."
-        }
-      ],
-      "verified": {
-        "date": "2026-10-26",
-        "sources": [
-          "Oklahoma Mesonet, Fronts and Yu ESS 5: warm front cloud shield and stratiform weather, cold front squall lines, freezing rain with warm fronts",
-          "AMS Glossary, Anafront, Katafront and Frontal inversion definitions"
-        ],
-        "unverified": [
-          "Width of the cold front weather band (50 to 100 km): removed as unconfirmed.",
-          "Weather behind a cold front in winter: standard teaching.",
-          "Nose of the front near the surface and the detail of cloud trapped under the inversion: standard teaching, not on pages read. Ana and kata definitions now from the AMS Glossary."
-        ]
-      }
+     "h": "Typical source regions and character"
     },
     {
-      "title": "Frontogenesis and frontolysis",
-      "lesson": [
-        "Fronts are not permanent. They form, strengthen, weaken and disappear.",
-        {
-          "list": [
-            "Frontogenesis: formation or strengthening of a front, meaning an increase in the horizontal temperature gradient.",
-            "Frontolysis: weakening or dissipation of a front, meaning a decrease in the temperature gradient."
-          ]
-        },
-        {
-          "h": "What drives frontogenesis"
-        },
-        {
-          "list": [
-            "Horizontal confluence in a deformation field: air from warm and cold sides is squeezed together. NWS: the flow is frontogenetic when the isotherms lie within 45 degrees of the axis of dilatation, and frontolytic beyond 45 degrees.",
-            "Horizontal wind shear alone only rotates the isotherms and does not change the gradient (NWS), so it matters when combined with deformation.",
-            "Differential vertical motion (tilting), which can strengthen or weaken the horizontal gradient.",
-            "Differential heating (diabatic), for example cloud cover warming one air mass faster than the other."
-          ]
-        },
-        "Frontolysis happens when the air flow becomes diffluent (spreading), when the temperature difference is mixed away, or when the front moves over a surface that evens out temperatures.",
-        {
-          "h": "Where it happens"
-        },
-        "In winter, the east coast of North America is a frontogenesis zone: cold continental air meets the relatively warm Gulf Stream. The strong baroclinic zone there supports rapid storm development that affects Atlantic Canada.",
-        {
-          "h": "Baroclinic vs barotropic"
-        },
-        "Barotropic atmosphere (AMS Glossary): density depends only on pressure, so surfaces of constant pressure and constant density coincide and the geostrophic wind does not change with height. Baroclinic is the opposite: those surfaces intersect, which happens where there are horizontal temperature gradients. Fronts and jet streams exist in baroclinic zones.",
-        {
-          "note": "No temperature gradient, no front. Anything that sharpens the gradient makes frontogenesis."
-        }
-      ],
-      "terms": [
-        [
-          "Frontogenesis",
-          "Intensification of a horizontal temperature gradient to form or strengthen a front."
-        ],
-        [
-          "Frontolysis",
-          "Weakening of a front."
-        ],
-        [
-          "Baroclinic zone",
-          "Region with strong horizontal temperature gradient."
-        ]
-      ],
-      "questions": [
-        {
-          "q": "What is frontogenesis?",
-          "c": [
-            "Formation or strengthening of a front",
-            "Weakening of a front",
-            "Movement of a front over mountains",
-            "Thunderstorm formation on a front"
-          ],
-          "a": 0,
-          "e": "Frontogenesis sharpens the horizontal temperature gradient."
-        },
-        {
-          "q": "Which wind pattern favours frontogenesis?",
-          "c": [
-            "Confluence that squeezes warm and cold air together",
-            "Diffluence that spreads warm and cold air farther apart",
-            "Calm winds with no horizontal variation across the region",
-            "Vertical sinking over a large area without any horizontal flow"
-          ],
-          "a": 0,
-          "e": "Confluent flow along the axis of dilatation concentrates temperature contrasts."
-        },
-        {
-          "q": "A baroclinic atmosphere is one where:",
-          "c": [
-            "There are horizontal temperature gradients on pressure surfaces",
-            "Temperature is uniform in the horizontal on all pressure surfaces",
-            "Wind speed is constant with height at every point in the column",
-            "Pressure is the same everywhere on each constant-height surface"
-          ],
-          "a": 0,
-          "e": "Baroclinic conditions go with fronts and jet streams."
-        },
-        {
-          "q": "What is frontolysis?",
-          "c": [
-            "Weakening or dissipation of a front",
-            "Strengthening of a front",
-            "Cyclone formation",
-            "Cloud formation along a front"
-          ],
-          "a": 0,
-          "e": "Lysis means dissolving; the temperature gradient decreases."
-        },
-        {
-          "q": "Why is the US east coast a favoured area for winter frontogenesis?",
-          "c": [
-            "Cold continental air meets the warm Gulf Stream waters",
-            "Mountains in the region block the cold air from reaching the coast",
-            "Tropical cyclones form there every month and create frontal zones",
-            "Ocean and land temperatures are the same, producing uniform air masses"
-          ],
-          "a": 0,
-          "e": "The strong land-sea temperature contrast sharpens the gradient."
-        },
-        {
-          "q": "Frontogenesis refers to:",
-          "c": [
-            "The formation or strengthening of a front",
-            "The weakening of a front",
-            "The movement of a front over mountains",
-            "The occlusion process"
-          ],
-          "a": 0,
-          "e": "Frontogenesis intensifies the temperature gradient."
-        },
-        {
-          "q": "Convergence of flow with a temperature gradient across the flow causes:",
-          "c": [
-            "Frontogenesis",
-            "Frontolysis",
-            "No change in the gradient",
-            "Immediate occlusion"
-          ],
-          "a": 0,
-          "e": "Confluence squeezes isotherms together and strengthens the gradient."
-        },
-        {
-          "q": "Diffluent flow over a front typically leads to:",
-          "c": [
-            "Frontolysis",
-            "Frontogenesis",
-            "Tornadoes",
-            "Fog formation only"
-          ],
-          "a": 0,
-          "e": "Diffluence spreads isotherms apart and weakens the front."
-        },
-        {
-          "q": "Where do fronts often become more active?",
-          "c": [
-            "Where a jet stream or upper trough provides lift",
-            "Under a strong surface high with sinking air and clear skies",
-            "Under a subsidence inversion in light winds and clear air",
-            "Over a calm, cold sea with a shallow stable layer"
-          ],
-          "a": 0,
-          "e": "Upper-level support enhances vertical motion along the front."
-        },
-        {
-          "q": "An analyst sees tightly packed isotherms across a frontal zone. This indicates:",
-          "c": [
-            "A strong temperature gradient",
-            "A weak temperature gradient",
-            "No air mass contrast",
-            "A decaying cyclone"
-          ],
-          "a": 0,
-          "e": "Close isotherms mean a large change in temperature over a short distance."
-        },
-        {
-          "q": "Frontolysis commonly occurs when:",
-          "c": [
-            "A front moves into a region with a weak temperature contrast",
-            "A front meets a strong thermal gradient and a converging flow",
-            "A trough deepens quickly and pulls cold air toward the front",
-            "A jet stream strengthens over the front and adds upper lift"
-          ],
-          "a": 0,
-          "e": "A weakening gradient means the front fades."
-        },
-        {
-          "q": "Per NWS, the flow is frontogenetic when the angle between the isotherms and the axis of dilatation is:",
-          "c": [
-            "Less than 45 degrees",
-            "More than 45 degrees",
-            "Exactly 90 degrees only",
-            "It does not depend on the angle"
-          ],
-          "a": 0,
-          "e": "NWS: under 45 degrees is frontogenetic; over 45 degrees is frontolytic."
-        },
-        {
-          "q": "On its own, horizontal shear (pure vorticity) does what to the isotherms?",
-          "c": [
-            "Rotates them without changing the gradient",
-            "Squeezes them together to strengthen the front",
-            "Spreads them apart to weaken the front",
-            "Removes the temperature gradient entirely"
-          ],
-          "a": 0,
-          "e": "NWS: pure vorticity acts to rotate isotherms and does not change the gradient's magnitude."
-        }
-      ],
-      "verified": {
-        "date": "2026-10-26",
-        "sources": [
-          "NWS Louisville, Frontogenesis: definition, deformation and the 45 degree rule, shear, tilting, diabatic heating",
-          "EUMETRAIN, Meteorological physical background: deformation as a primary factor; frontogenesis strongest in the confluence zone",
-          "AMS Glossary, Barotropic atmosphere: density depends only on pressure; Frontolysis: weakening or breakup of a front, lessening of the horizontal contrast of density"
-        ],
-        "unverified": [
-          "Which mechanisms cause frontolysis besides diffluence (mixing away, moving over an even surface): not confirmed.",
-          "Upper jet or trough supporting front activity: not confirmed.",
-          "Winter frontogenesis zone off the US east coast where cold air meets the Gulf Stream: standard teaching, not on any page read. AMS does not give a baroclinic definition, only the barotropic one. Specific frontolysis mechanisms (mixing away, even surface) are not itemised in AMS."
-        ]
-      }
+     "list": [
+      "cA: the coldest and driest air masses. Sources include Siberia and northern Canada (Penn State).",
+      "cP: forms over cold land and has low dew points. Canada is the most common source for North America (Penn State). Very cold, dry and stable at the source in winter.",
+      "mP: forms over high-latitude cold water (North Atlantic and North Pacific). Chilly and moist, with dew points close to the air temperature. Can bring fog to coastal New England (Penn State).",
+      "mT: Gulf of Mexico, Caribbean and the tropical western Atlantic. Warm and humid, with high dew points.",
+      "cT: southwestern US and northern Mexico (deserts). Hot and dry."
+     ]
+    },
+    {
+     "h": "Modification"
+    },
+    "As an air mass moves, it changes. Cold air moving over a warmer surface (k, cold-type) is heated from below and becomes more unstable in its lowest layers, so unsettled weather is more likely (Met Office; Ohio University: cold air over the warm Great Lakes gives lake-effect snow). Warm air moving over a colder surface (w, warm-type) is cooled from below and becomes stable (Met Office; Ohio University), which inhibits uplift. Cumuliform cloud and showers for the unstable case, and stratus and fog for the stable case, are standard teaching not stated on the pages read. US texts mark stability with the suffixes u and s (for example mTu, mTs) rather than k and w.",
+    {
+     "note": "Think about the surface the air is crossing. Cold over warm = unstable and showery. Warm over cold = stable and foggy."
     }
-  ]
+   ],
+   "terms": [
+    [
+     "Source region",
+     "Area where an air mass acquires its temperature and moisture characteristics."
+    ],
+    [
+     "Maritime / continental",
+     "Moist (formed over water) / dry (formed over land)."
+    ],
+    [
+     "Modification",
+     "Change in an air mass's properties as it moves away from its source."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "What are the characteristics of continental polar (cP) air at its source?",
+     "c": [
+      "Cold, dry and stable",
+      "Warm, humid and unstable",
+      "Cool, moist and unstable",
+      "Hot, dry and unstable"
+     ],
+     "a": 0,
+     "e": "cP forms over cold land, with Canada the most common North American source, and has low dew points."
+    },
+    {
+     "q": "Which air mass source region produces warm, humid air for Atlantic Canada's summer thunderstorms?",
+     "c": [
+      "Gulf of Mexico (mT)",
+      "Hudson Bay (cP)",
+      "Arctic Ocean (cA)",
+      "Sahara (cT)"
+     ],
+     "a": 0,
+     "e": "Maritime tropical air from the Gulf of Mexico and the western Atlantic is warm and moist."
+    },
+    {
+     "q": "What happens when cold air flows over a warmer surface?",
+     "c": [
+      "It becomes unstable, with cumuliform cloud and showers",
+      "It becomes stable, with stratus cloud and fog banks",
+      "It stays unchanged because air masses never modify",
+      "It dries out completely and produces cloud-free skies"
+     ],
+     "a": 0,
+     "e": "Heating from below steepens the lapse rate and promotes convection."
+    },
+    {
+     "q": "What happens when warm moist air flows over a colder surface?",
+     "c": [
+      "It becomes stable, with stratus and fog",
+      "It becomes unstable, with showers and thunderstorms",
+      "It rises rapidly and builds towering cumulus",
+      "It dries out as it crosses the cold surface"
+     ],
+     "a": 0,
+     "e": "Cooling from below creates a stable layer where stratus and fog form."
+    },
+    {
+     "q": "What does the 'm' in mP indicate?",
+     "c": [
+      "Maritime",
+      "Mountain",
+      "Modified",
+      "Mixed"
+     ],
+     "a": 0,
+     "e": "m means maritime (moist). mP is cool, moist polar air from oceans."
+    },
+    {
+     "q": "Which air mass symbol describes cold, dry air formed over northern Canada in winter?",
+     "c": [
+      "cP (continental polar)",
+      "mT (maritime tropical)",
+      "cT (continental tropical)",
+      "mP (maritime polar)"
+     ],
+     "a": 0,
+     "e": "Continental polar air forms over cold land and is cold and dry."
+    },
+    {
+     "q": "A maritime tropical air mass moving over the Maritimes in summer typically brings:",
+     "c": [
+      "Warm, humid air with fog, stratus or thunderstorms",
+      "Cold, dry air with clear skies and strong radiation inversions",
+      "Strong subsidence, a dry atmosphere and unlimited visibility",
+      "Arctic outflow with blowing snow and very cold temperatures"
+     ],
+     "a": 0,
+     "e": "mT air carries abundant warm moisture from the subtropical Atlantic."
+    },
+    {
+     "q": "A cold air mass moves over a warmer surface and is heated from below. The air mass is called:",
+     "c": [
+      "Cold (k) type, usually unstable",
+      "Warm (w) type, usually stable",
+      "Neutral type with no change",
+      "Always stable with low stratus"
+     ],
+     "a": 0,
+     "e": "A 'k' air mass is colder than the surface beneath it, so it tends to be unstable."
+    },
+    {
+     "q": "Which source region characteristic makes an air mass uniform?",
+     "c": [
+      "A large, flat area with light winds and uniform surface",
+      "A mountainous region with strong winds and many different surfaces",
+      "A narrow coastal strip with changing winds between land and sea",
+      "A region crossed by many fronts and frequent cyclones"
+     ],
+     "a": 0,
+     "e": "Air mass properties come from long residence over a uniform surface."
+    },
+    {
+     "q": "Arctic air (A) differs from continental polar air mainly in being:",
+     "c": [
+      "Colder, from the Arctic basin or ice-covered regions",
+      "Warmer and more humid, forming over the warm Gulf Stream",
+      "Formed only over the ocean, carrying large amounts of moisture",
+      "Associated with the subtropical high near 30 degrees latitude"
+     ],
+     "a": 0,
+     "e": "Arctic air comes from ice-covered high latitudes and is the coldest air mass type."
+    },
+    {
+     "q": "Which statement about modification of an air mass is true?",
+     "c": [
+      "It changes as it moves over surfaces unlike its source region",
+      "It never changes while it travels, whatever surface lies below it",
+      "It changes only in summer, when the surface is warm",
+      "It changes only when it crosses a mountain range or a coast"
+     ],
+     "a": 0,
+     "e": "Heating, cooling and moisture exchange with the new surface modify the air mass."
+    }
+   ],
+   "verified": {
+    "date": "2026-10-26",
+    "sources": [
+     "Penn State METEO 3, Air masses and fronts: size, uniformity, five types (cA, cP, mP, cT, mT) and their North American source regions",
+     "Prof. Jin-Yi Yu, ESS 5 Chapter 9: classification symbols; mA does not exist",
+     "Met Office, Air mass modification, and Ohio University, The Physical Environment: cold air over warm surface becomes unstable, warm air over cold surface becomes stable (two sources agree)",
+     "avalanche.ca glossary, Air mass: minimal horizontal variation in temperature and moisture; forms over days or weeks (Canadian, matches definition used)"
+    ],
+    "unverified": [
+     "Effects on the Maritimes (cloud, showers, thunderstorms) were removed or left unconfirmed; the sources are US course texts, not Canadian publications.",
+     "No ECCC page on air mass types was found.",
+     "Stability change under modification now has two sources. The cloud, fog and visibility consequences and the k/w letters were not found in any source read. Maritime effects remain unconfirmed; no ECCC page on air mass types found."
+    ]
+   }
+  },
+  {
+   "title": "Cold, warm, stationary and occluded fronts",
+   "lesson": [
+    "A front is the boundary between two air masses of different density. Fronts are named for the air that is advancing.",
+    {
+     "h": "Warm front"
+    },
+    {
+     "list": [
+      "Warm air advances and rides up over retreating cold air along a gentle slope (about 1:200). Warm fronts move slowly, about 20 km/h.",
+      "Cloud lowers in sequence: Ci, Cs, As, Ns. Cirrus can appear about 1,000 km ahead and altostratus about 500 km ahead (Oklahoma Mesonet). Wide area of steady rain or snow ahead of the surface front.",
+      "Fog and freezing rain are possible ahead of the front.",
+      "After passage: warmer, winds veer (for example from southeast to south or southwest), pressure steadies."
+     ]
+    },
+    {
+     "h": "Cold front"
+    },
+    {
+     "list": [
+      "Cold air advances and wedges under warm air on a steeper slope (about 1:100). Cold fronts move faster, up to about 50 km/h.",
+      "Narrow belt of showers, thunderstorms, gusty winds and squalls at or just ahead of the front.",
+      "After passage: temperature falls, pressure rises, wind veers (for example from southwest to northwest), skies clear and visibility improves."
+     ]
+    },
+    {
+     "h": "Stationary and occluded"
+    },
+    {
+     "list": [
+      "Stationary front: neither air mass advances. Wind flows parallel to the front. Long periods of cloud and rain are possible.",
+      "Occluded front: a cold front overtakes a warm front, lifting the warm air off the surface. In North America the cold occlusion is the most common type. A cold occlusion has the coldest air behind the cold front; a warm occlusion has the coldest air ahead of the warm front (NWS WPC). On US WPC charts both are drawn with the same purple triangle-and-semicircle symbol. The GFA used in Canadian aviation has no occluded symbol (MANAIR)."
+     ]
+    },
+    {
+     "note": "Northern Hemisphere: winds typically veer (turn clockwise) with the passage of a warm or cold front."
+    }
+   ],
+   "terms": [
+    [
+     "Warm front",
+     "Boundary where warm air replaces cold air."
+    ],
+    [
+     "Cold front",
+     "Boundary where cold air replaces warm air."
+    ],
+    [
+     "Occlusion",
+     "Front formed when a cold front overtakes a warm front."
+    ],
+    [
+     "Veer",
+     "Wind shifts clockwise."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Which front has the shallower slope and a wider area of cloud and precipitation?",
+     "c": [
+      "Warm front",
+      "Cold front",
+      "Both are the same",
+      "Stationary front"
+     ],
+     "a": 0,
+     "e": "Warm fronts slope about 1:200, spreading cloud and precipitation over a large area ahead of the surface line."
+    },
+    {
+     "q": "What changes accompany the passage of a cold front in the Northern Hemisphere?",
+     "c": [
+      "Temperature falls, pressure rises, wind veers",
+      "Temperature rises, pressure falls, wind backs",
+      "Temperature rises, pressure rises, wind backs",
+      "No change in wind"
+     ],
+     "a": 0,
+     "e": "Colder, denser air arrives, pressure rises, and the wind turns clockwise (for example SW to NW)."
+    },
+    {
+     "q": "What weather is typical along a fast-moving cold front?",
+     "c": [
+      "A narrow band of showers, thunderstorms and squalls",
+      "A wide shield of steady drizzle and low stratus cloud",
+      "A broad area of fog with very light winds throughout",
+      "Several hundred kilometres of continuous steady snow ahead"
+     ],
+     "a": 0,
+     "e": "The steeper slope gives vigorous lifting and convection in a narrow zone."
+    },
+    {
+     "q": "How does an occluded front form?",
+     "c": [
+      "A cold front overtakes a warm front",
+      "Two cold fronts collide head on",
+      "A warm front stops moving entirely",
+      "A cold front stalls over the sea"
+     ],
+     "a": 0,
+     "e": "Cold fronts move faster than warm fronts and eventually catch up, lifting the warm air aloft."
+    },
+    {
+     "q": "Which cloud sequence is associated with the approach of a warm front?",
+     "c": [
+      "Cirrus, cirrostratus, altostratus, nimbostratus",
+      "Cumulus, cumulonimbus, stratocumulus, stratus, cirrus",
+      "Stratus, altocumulus, cirrocumulus, cirrus, cumulonimbus",
+      "Nimbostratus, altostratus, cirrostratus, cirrus, clear sky"
+     ],
+     "a": 0,
+     "e": "Cloud thickens and lowers as the warm front approaches."
+    },
+    {
+     "q": "The wind shifts from southwest to northwest, temperature drops and pressure rises sharply. What passed?",
+     "c": [
+      "A cold front",
+      "A warm front",
+      "An occluded front",
+      "A stationary front"
+     ],
+     "a": 0,
+     "e": "Wind veer, falling temperature and rising pressure mark a cold front passage."
+    },
+    {
+     "q": "Which front typically moves slower than the other, with gentle slope and widespread stratiform cloud?",
+     "c": [
+      "Warm front",
+      "Cold front",
+      "Squall line",
+      "Dry line"
+     ],
+     "a": 0,
+     "e": "A warm front slopes at roughly 1:200 and brings layered cloud ahead of it."
+    },
+    {
+     "q": "A stationary front is a boundary that:",
+     "c": [
+      "Shows little or no movement",
+      "Moves steadily at about 40 kt toward the east",
+      "Always produces tornadoes along its length",
+      "Is found only over water, never over land"
+     ],
+     "a": 0,
+     "e": "Neither air mass is replacing the other along a stationary front."
+    },
+    {
+     "q": "In a cold occlusion, the air behind the cold front is:",
+     "c": [
+      "Colder than the air ahead of the warm front",
+      "Warmer than the air ahead of the warm front",
+      "Equal in temperature to the air ahead",
+      "Always dry"
+     ],
+     "a": 0,
+     "e": "In a cold occlusion the colder air undercuts the cool air ahead of the warm front."
+    },
+    {
+     "q": "On a surface analysis a cold front is drawn with:",
+     "c": [
+      "Blue line with triangles",
+      "Red line with semicircles",
+      "Purple line with triangles and semicircles",
+      "Alternating red and blue line"
+     ],
+     "a": 0,
+     "e": "Cold fronts are blue with triangles pointing in the direction of motion."
+    },
+    {
+     "q": "Typical speeds quoted for fronts are:",
+     "c": [
+      "Cold fronts up to about 50 km/h, warm fronts about 20 km/h",
+      "Cold fronts about 20 km/h, warm fronts up to about 50 km/h",
+      "Both about 100 km/h",
+      "Both about 5 km/h"
+     ],
+     "a": 0,
+     "e": "University of Alberta EAS 270 and Yu (ESS 5): warm fronts about 20 km/h, cold fronts up to 50 km/h."
+    },
+    {
+     "q": "What cold front slope do several sources give as typical?",
+     "c": [
+      "About 1:100",
+      "About 1:200",
+      "About 1:10",
+      "About 1:1,000"
+     ],
+     "a": 0,
+     "e": "Oklahoma Mesonet and Yu quote 1:100 for a typical cold front and 1:200 for a warm front."
+    },
+    {
+     "q": "On US WPC charts, how is a warm occlusion drawn compared with a cold occlusion?",
+     "c": [
+      "Same purple symbol for both",
+      "Warm is red, cold is blue",
+      "Warm is dashed, cold is solid",
+      "Warm is green, cold is purple"
+     ],
+     "a": 0,
+     "e": "NWS WPC uses one purple symbol for occluded fronts. The difference is where the coldest air lies."
+    }
+   ],
+   "verified": {
+    "date": "2026-10-26",
+    "sources": [
+     "NWS Weather Prediction Center, Surface fronts and boundaries: cold front blue triangles, warm front red semicircles, occluded front purple triangles and semicircles",
+     "Oklahoma Mesonet, Fronts: slopes 1:100 and 1:200, cloud sequence distances, cold-type occlusion most common, stationary front behaviour",
+     "University of Alberta EAS 270 lecture 22 and Prof. Yu ESS 5: speeds, warm front freezing rain, cold front passage changes",
+     "University of Northern Iowa, Elements of Weather ch. 9: after warm front passage temperature rises, wind shifts to south or southwest, pressure steadies; after cold front passage temperature drops, wind to northwest, pressure rises (agrees with U of Alberta EAS 270)",
+     "NWS WPC, Surface fronts and boundaries: occluded front symbol purple; cold occlusion coldest air behind cold front, warm occlusion coldest air ahead of warm front"
+    ],
+    "unverified": [
+     "The earlier slope of 1:50 for cold fronts was removed; sources give about 1:100 (the University of Alberta slide marks it tentative).",
+     "Stationary front symbol (alternating blue triangles and red semicircles on opposite sides) is confirmed in MANAIR for the GFA but is not described on the WPC page text."
+    ]
+   }
+  },
+  {
+   "title": "Frontal cross-sections and associated weather",
+   "lesson": [
+    "A cross-section shows the cold air as a wedge under the warm air. The sloping boundary is the frontal surface. Friction slows the cold air near the ground, so the front is steepest near the surface (a nose).",
+    {
+     "h": "Weather band widths"
+    },
+    {
+     "list": [
+      "Warm front: cloud shield extends hundreds of km ahead of the surface front. Steady precipitation covers a large area.",
+      "Cold front: active weather is usually a narrow belt along and just ahead of the front (a 50 to 100 km width was not confirmed). Squall lines can accompany cold fronts."
+     ]
+    },
+    {
+     "h": "Ana and kata fronts"
+    },
+    {
+     "list": [
+      "Ana front: warm air rises up the frontal surface to high altitudes, and precipitation may occur behind the front (AMS Glossary). Wide cloud and precipitation extend behind the surface front.",
+      "Kata front: usually a cold front where the warm air sinks down the frontal surface, probably not in the lowest layers (AMS Glossary). Weather is weak or confined to a narrow zone."
+     ]
+    },
+    {
+     "h": "Frontal inversion"
+    },
+    "A frontal inversion is the temperature inversion met when climbing through a sloping front or frontal zone (AMS Glossary). Temperature increases with height as you pass from cold into warm air. It can trap cloud, fog and pollutants in the cold air beneath (standard teaching).",
+    {
+     "h": "Hazards"
+    },
+    {
+     "list": [
+      "Freezing rain: warm air overrunning sub-freezing air at the surface, typical of warm fronts and stationary fronts in winter.",
+      "Turbulence and wind shear across the frontal surface, especially with fast fronts.",
+      "Low ceiling and visibility in the cold air mass: fog, stratus, drizzle."
+     ]
+    },
+    {
+     "note": "Any time a sounding shows a warm layer above 0 C over a sub-freezing layer at the ground, expect freezing rain or ice pellets."
+    }
+   ],
+   "terms": [
+    [
+     "Frontal surface",
+     "Sloping boundary between two air masses."
+    ],
+    [
+     "Frontal inversion",
+     "Temperature inversion at the boundary where warm air overlies cold air."
+    ],
+    [
+     "Ana / kata",
+     "Fronts with rising / sinking warm air."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Which front type commonly produces the widest precipitation shield?",
+     "c": [
+      "Warm front",
+      "Cold front",
+      "Dry line",
+      "Sea breeze front"
+     ],
+     "a": 0,
+     "e": "The shallow slope of the warm front lifts air gradually over a wide area."
+    },
+    {
+     "q": "In an ana cold front, warm air:",
+     "c": [
+      "Rises along the frontal surface",
+      "Descends along the frontal surface",
+      "Stays stationary",
+      "Moves parallel only"
+     ],
+     "a": 0,
+     "e": "Ana means ascending; cloud and rain extend behind the surface front."
+    },
+    {
+     "q": "What is the typical hazard when warm air overruns sub-freezing air at the ground?",
+     "c": [
+      "Freezing rain",
+      "Hail",
+      "Dust storms",
+      "Sea breeze"
+     ],
+     "a": 0,
+     "e": "Rain falls through the cold surface layer and freezes on contact."
+    },
+    {
+     "q": "A frontal inversion is:",
+     "c": [
+      "Temperature increasing with height across the frontal surface",
+      "Temperature decreasing with height across the frontal surface",
+      "A surface high-pressure area",
+      "A pressure rise behind a front"
+     ],
+     "a": 0,
+     "e": "Passing from cold air to warm air above produces an inversion at the front."
+    },
+    {
+     "q": "Where is the active weather of a fast-moving cold front typically concentrated?",
+     "c": [
+      "Near and just ahead of the front",
+      "Hundreds of km behind the front",
+      "Far ahead in a wide cloud shield",
+      "Spread evenly across the whole air mass"
+     ],
+     "a": 0,
+     "e": "Steep frontal slope concentrates lifting into a narrow band."
+    },
+    {
+     "q": "Which cloud sequence is typical ahead of an approaching warm front?",
+     "c": [
+      "Cirrus, cirrostratus, altostratus, nimbostratus",
+      "Cumulonimbus then cirrus then clear sky with gusty winds",
+      "Stratus first, then cirrus, then fair-weather cumulus",
+      "Altocumulus lenticularis, then cirrus, then clear sky"
+     ],
+     "a": 0,
+     "e": "Warm frontal lifting progressively lowers the cloud base."
+    },
+    {
+     "q": "Which weather is typical right behind a fast-moving cold front in winter?",
+     "c": [
+      "Gusty northwest winds, flurries and rapidly clearing sky",
+      "Steady warm-sector drizzle with low stratus and poor visibility",
+      "Dense fog and calm winds with a falling temperature",
+      "Widespread freezing rain falling from altostratus cloud"
+     ],
+     "a": 0,
+     "e": "Cold post-frontal air brings gusts and scattered convective cloud."
+    },
+    {
+     "q": "The slope of a typical cold front is steeper than a warm front's. This leads to:",
+     "c": [
+      "A narrower band of weather",
+      "A wider band of weather",
+      "No difference in the width of weather",
+      "Weather only after the front passes"
+     ],
+     "a": 0,
+     "e": "A steeper slope concentrates lifting in a narrow zone."
+    },
+    {
+     "q": "Freezing rain ahead of a warm front requires:",
+     "c": [
+      "A warm layer aloft over a shallow sub-zero layer at the surface",
+      "A deep layer of cold air from the ground up to 5 km",
+      "Dry air with no cloud and a strong surface inversion, for the period covered by the product",
+      "A surface temperature above 5 C with rain reaching the ground, based on the most recent routine report"
+     ],
+     "a": 0,
+     "e": "Snow melts in the warm layer and freezes on contact below."
+    },
+    {
+     "q": "The warm sector of a mid-latitude cyclone lies:",
+     "c": [
+      "Between the cold and warm fronts",
+      "North of the warm front, in the cold air",
+      "West of the cold front, behind the system",
+      "At the centre of the occluded front"
+     ],
+     "a": 0,
+     "e": "The warm sector is the wedge of warm air between the two fronts."
+    },
+    {
+     "q": "Which phenomenon is a typical hazard to aviation at a warm front?",
+     "c": [
+      "Low ceilings and poor visibility in widespread precipitation",
+      "Only clear-air turbulence, with no cloud or precipitation at all",
+      "Severe thunderstorms and tornadoes in every case",
+      "Dust storms and very strong winds with unlimited visibility"
+     ],
+     "a": 0,
+     "e": "Warm fronts bring low stratus, rain or snow and poor visibility over a wide area."
+    },
+    {
+     "q": "What happens to the warm air in a katafront?",
+     "c": [
+      "It sinks down the frontal surface",
+      "It rises to a high altitude along the frontal surface",
+      "It stays level and slides along the surface",
+      "It stops moving as soon as the front stalls"
+     ],
+     "a": 0,
+     "e": "AMS Glossary: in a katafront the warm air sinks down the frontal surface. In an anafront it rises."
+    }
+   ],
+   "verified": {
+    "date": "2026-10-26",
+    "sources": [
+     "Oklahoma Mesonet, Fronts and Yu ESS 5: warm front cloud shield and stratiform weather, cold front squall lines, freezing rain with warm fronts",
+     "AMS Glossary, Anafront, Katafront and Frontal inversion definitions"
+    ],
+    "unverified": [
+     "Width of the cold front weather band (50 to 100 km): removed as unconfirmed.",
+     "Weather behind a cold front in winter: standard teaching.",
+     "Nose of the front near the surface and the detail of cloud trapped under the inversion: standard teaching, not on pages read. Ana and kata definitions now from the AMS Glossary."
+    ]
+   }
+  },
+  {
+   "title": "Frontogenesis and frontolysis",
+   "lesson": [
+    "Fronts are not permanent. They form, strengthen, weaken and disappear.",
+    {
+     "list": [
+      "Frontogenesis: formation or strengthening of a front, meaning an increase in the horizontal temperature gradient.",
+      "Frontolysis: weakening or dissipation of a front, meaning a decrease in the temperature gradient."
+     ]
+    },
+    {
+     "h": "What drives frontogenesis"
+    },
+    {
+     "list": [
+      "Horizontal confluence in a deformation field: air from warm and cold sides is squeezed together. NWS: the flow is frontogenetic when the isotherms lie within 45 degrees of the axis of dilatation, and frontolytic beyond 45 degrees.",
+      "Horizontal wind shear alone only rotates the isotherms and does not change the gradient (NWS), so it matters when combined with deformation.",
+      "Differential vertical motion (tilting), which can strengthen or weaken the horizontal gradient.",
+      "Differential heating (diabatic), for example cloud cover warming one air mass faster than the other."
+     ]
+    },
+    "Frontolysis happens when the air flow becomes diffluent (spreading), when the temperature difference is mixed away, or when the front moves over a surface that evens out temperatures.",
+    {
+     "h": "Where it happens"
+    },
+    "In winter, the east coast of North America is a frontogenesis zone: cold continental air meets the relatively warm Gulf Stream. The strong baroclinic zone there supports rapid storm development that affects Atlantic Canada.",
+    {
+     "h": "Baroclinic vs barotropic"
+    },
+    "Barotropic atmosphere (AMS Glossary): density depends only on pressure, so surfaces of constant pressure and constant density coincide and the geostrophic wind does not change with height. Baroclinic is the opposite: those surfaces intersect, which happens where there are horizontal temperature gradients. Fronts and jet streams exist in baroclinic zones.",
+    {
+     "note": "No temperature gradient, no front. Anything that sharpens the gradient makes frontogenesis."
+    }
+   ],
+   "terms": [
+    [
+     "Frontogenesis",
+     "Intensification of a horizontal temperature gradient to form or strengthen a front."
+    ],
+    [
+     "Frontolysis",
+     "Weakening of a front."
+    ],
+    [
+     "Baroclinic zone",
+     "Region with strong horizontal temperature gradient."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "What is frontogenesis?",
+     "c": [
+      "Formation or strengthening of a front",
+      "Weakening or dissipation of a front over time",
+      "Movement of a front over mountainous terrain",
+      "Thunderstorm formation along a frontal boundary"
+     ],
+     "a": 0,
+     "e": "Frontogenesis sharpens the horizontal temperature gradient."
+    },
+    {
+     "q": "Which wind pattern favours frontogenesis?",
+     "c": [
+      "Confluence that squeezes warm and cold air together",
+      "Diffluence that spreads warm and cold air farther apart",
+      "Calm winds with no horizontal variation across the region",
+      "Vertical sinking over a large area without any horizontal flow"
+     ],
+     "a": 0,
+     "e": "Confluent flow along the axis of dilatation concentrates temperature contrasts."
+    },
+    {
+     "q": "A baroclinic atmosphere is one where:",
+     "c": [
+      "There are horizontal temperature gradients on pressure surfaces",
+      "Temperature is uniform in the horizontal on all pressure surfaces",
+      "Wind speed is constant with height at every point in the column",
+      "Pressure is the same everywhere on each constant-height surface"
+     ],
+     "a": 0,
+     "e": "Baroclinic conditions go with fronts and jet streams."
+    },
+    {
+     "q": "What is frontolysis?",
+     "c": [
+      "Weakening or dissipation of a front",
+      "Strengthening or formation of a front over time",
+      "Formation of a new cyclone on the polar front",
+      "Cloud formation along a frontal boundary"
+     ],
+     "a": 0,
+     "e": "Lysis means dissolving; the temperature gradient decreases."
+    },
+    {
+     "q": "Why is the US east coast a favoured area for winter frontogenesis?",
+     "c": [
+      "Cold continental air meets the warm Gulf Stream waters",
+      "Mountains in the region block the cold air from reaching the coast",
+      "Tropical cyclones form there every month and create frontal zones",
+      "Ocean and land temperatures are the same, producing uniform air masses"
+     ],
+     "a": 0,
+     "e": "The strong land-sea temperature contrast sharpens the gradient."
+    },
+    {
+     "q": "Frontogenesis refers to:",
+     "c": [
+      "The formation or strengthening of a front",
+      "The weakening or dissipation of a front over time",
+      "The movement of a front across mountainous terrain",
+      "The process of occlusion in a mature cyclone"
+     ],
+     "a": 0,
+     "e": "Frontogenesis intensifies the temperature gradient."
+    },
+    {
+     "q": "Convergence of flow with a temperature gradient across the flow causes:",
+     "c": [
+      "Frontogenesis",
+      "Frontolysis",
+      "No change in the gradient",
+      "Immediate occlusion"
+     ],
+     "a": 0,
+     "e": "Confluence squeezes isotherms together and strengthens the gradient."
+    },
+    {
+     "q": "Diffluent flow over a front typically leads to:",
+     "c": [
+      "Frontolysis",
+      "Frontogenesis",
+      "Tornadoes",
+      "Fog formation only"
+     ],
+     "a": 0,
+     "e": "Diffluence spreads isotherms apart and weakens the front."
+    },
+    {
+     "q": "Where do fronts often become more active?",
+     "c": [
+      "Where a jet stream or upper trough provides lift",
+      "Under a strong surface high with sinking air and clear skies",
+      "Under a subsidence inversion in light winds and clear air",
+      "Over a calm, cold sea with a shallow stable layer"
+     ],
+     "a": 0,
+     "e": "Upper-level support enhances vertical motion along the front."
+    },
+    {
+     "q": "An analyst sees tightly packed isotherms across a frontal zone. This indicates:",
+     "c": [
+      "A strong temperature gradient",
+      "A weak temperature gradient across the zone",
+      "No contrast between the two air masses",
+      "A decaying cyclone with a filling centre"
+     ],
+     "a": 0,
+     "e": "Close isotherms mean a large change in temperature over a short distance."
+    },
+    {
+     "q": "Frontolysis commonly occurs when:",
+     "c": [
+      "A front moves into a region with a weak temperature contrast",
+      "A front meets a strong thermal gradient and a converging flow",
+      "A trough deepens quickly and pulls cold air toward the front",
+      "A jet stream strengthens over the front and adds upper lift"
+     ],
+     "a": 0,
+     "e": "A weakening gradient means the front fades."
+    },
+    {
+     "q": "Per NWS, the flow is frontogenetic when the angle between the isotherms and the axis of dilatation is:",
+     "c": [
+      "Less than 45 degrees",
+      "More than 45 degrees",
+      "Exactly 90 degrees only",
+      "It does not depend on the angle"
+     ],
+     "a": 0,
+     "e": "NWS: under 45 degrees is frontogenetic; over 45 degrees is frontolytic."
+    },
+    {
+     "q": "On its own, horizontal shear (pure vorticity) does what to the isotherms?",
+     "c": [
+      "Rotates them without changing the gradient",
+      "Squeezes them together to strengthen the front",
+      "Spreads them apart to weaken the front",
+      "Removes the temperature gradient entirely"
+     ],
+     "a": 0,
+     "e": "NWS: pure vorticity acts to rotate isotherms and does not change the gradient's magnitude."
+    }
+   ],
+   "verified": {
+    "date": "2026-10-26",
+    "sources": [
+     "NWS Louisville, Frontogenesis: definition, deformation and the 45 degree rule, shear, tilting, diabatic heating",
+     "EUMETRAIN, Meteorological physical background: deformation as a primary factor; frontogenesis strongest in the confluence zone",
+     "AMS Glossary, Barotropic atmosphere: density depends only on pressure; Frontolysis: weakening or breakup of a front, lessening of the horizontal contrast of density"
+    ],
+    "unverified": [
+     "Which mechanisms cause frontolysis besides diffluence (mixing away, moving over an even surface): not confirmed.",
+     "Upper jet or trough supporting front activity: not confirmed.",
+     "Winter frontogenesis zone off the US east coast where cold air meets the Gulf Stream: standard teaching, not on any page read. AMS does not give a baroclinic definition, only the barotropic one. Specific frontolysis mechanisms (mixing away, even surface) are not itemised in AMS."
+    ]
+   }
+  }
+ ]
 }
