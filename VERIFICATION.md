@@ -15,7 +15,7 @@ Study aid only. Crown-copyright and NAV CANADA text is paraphrased and linked, n
 ## Cross-check rule (from 2026-10-27)
 Every new claim needs two independent sources or is flagged single-source. New claims are compared with the lesson text and the sources already logged. Conflicts are recorded below, and the more authoritative source wins (Canadian government over US government over university or media).
 
-## Status (as of 2026-10-27; 897 questions)
+## Status (as of 2026-10-27; 899 questions)
 
 | Domain | Topics | Questions | Status | Last checked |
 |--------|--------|-----------|--------|--------------|
@@ -27,7 +27,7 @@ Every new claim needs two independent sources or is flagged single-source. New c
 | Foundations (foundations) | 5 | 58 | Partly hardened 2026-10-27: layers (UCAR, SKYbrary), SALR (Haby), pressure-level heights (Navy table). Rest first pass | 2026-10-27 |
 | Wind (wind) | 6 | 68 | Partly hardened 2026-10-27: jet streak quadrants (4 sources), gradient wind (2), boundary layer depth (AMS), Ferrel/ITCZ, anabatic. Rest first pass | 2026-10-26 |
 | Air masses (airmass) | 4 | 49 | Partly hardened 2026-10-27: front passage (2 sources), modification stability (2), ana/kata and frontal inversion (AMS), barotropic (AMS), occlusion symbol (WPC). Rest first pass | 2026-10-27 |
-| Synoptic (synoptic) | 5 | 58 | First pass. Post-tropical, derecho, cyclone life span and long-wave wording corrected | 2026-10-26 |
+| Synoptic (synoptic) | 5 | 60 | Partly hardened 2026-10-30: cyclone life cycle (2), vorticity (NWS Houston), MCC/polar low/lake-effect (AMS), derecho (NOAA SPC + Western University), Saffir-Simpson (NHC), post-tropical transition (ECCC). Rest first pass | 2026-10-30 |
 
 ## Corrections made on 2026-10-26
 
@@ -132,6 +132,11 @@ Every new claim needs two independent sources or is flagged single-source. New c
 | Frontal inversion, ana and kata fronts | Standard teaching | Definitions confirmed; kata note added (probably not in lowest layers) | AMS Glossary |
 | Barotropic and baroclinic | Temperature-gradient wording only | Barotropic: density depends only on pressure, geostrophic wind constant with height | AMS Glossary |
 | Air mass modification | Cloud and fog consequences stated as fact | Stability change confirmed by two sources; cloud, fog and k/w letters flagged as not found | Met Office, Ohio University |
+| Derecho wording | 2025 NOAA/ECCC definition | NOAA SPC revised definition (2025); Western University gives detailed criteria; ECCC role not confirmed | NOAA SPC, Western University NTP |
+| Post-tropical transition | Cause and structure not confirmed on ECCC page | Warm to cold core, front-like features, baroclinic energy, wind and rain shifts added from ECCC | ECCC archived page |
+| Storm quadrant | Right-front quadrant most dangerous | Sources say right side of the eyewall relative to motion; explanation flagged standard teaching | Colorado State |
+| PVA and 500 hPa vertical motion | PVA means rising air | PVA is a clue for divergence; at 500 hPa it can go with ascent or descent depending on slope and wind increase | NWS Houston |
+| Saffir-Simpson | Cat 1 start only | Full Cat 1 to 5 ranges added | NHC |
 | TAF lesson | BECMG "1 to 4 h"; TEMPO and PROB do not carry wind | BECMG normally 2 h or less, never over 4 h; TEMPO and PROB may carry wind; issue, update and amendment thresholds rewritten | MANAIR Ch. 2 |
 | GFA, SIGMET, AIRMET, FB | No topic | New topic: GFA issue times and domains, SIGMET (WS 4 h, WV and WC 6 h), AIRMET (4 h, to FL240, only if not in GFA), FB code rules | MANAIR Ch. 3 to 6 |
 | Front symbols (surface/GFA) | "Occluded usually purple" | Removed. GFA has no occluded symbol. Colours confirmed: cold blue triangles, warm red semicircles, stationary alternating | MANAIR Appendix C.2 |
@@ -185,7 +190,7 @@ Carried from the first pass (2026-10-26), not yet revisited
 - Wind: Coriolis parameter, gradient wind, boundary layer depth, diurnal wind cycle, Ferrel cell, WMO jet definition, jet entrance and exit divergence.
 - Moisture: mixing ratio conservation and wet-bulb ordering, CCN types, lifting mechanisms, cloud appearance descriptions, warm-front cloud sequence, Nova Scotia fog climatology.
 - Air masses: k/w letters, cloud/fog consequences of modification, Maritimes effects (no ECCC page found), stationary front symbol on a non-MANAIR chart, nose of the front, winter frontogenesis zone off the US east coast, specific frontolysis mechanisms, baroclinic definition (AMS gives only barotropic). All sources so far are US, UK or general; none are Canadian government.
-- Synoptic: vorticity definitions and conservation, PVA link to upper divergence, MCS and MCC size criteria, polar lows, lake-effect snow, 5 degree Coriolis limit, warm core, right-front quadrant, Saffir-Simpson categories, why post-tropical transition happens, Fiona details.
+- Synoptic: block persistence (MeteoSwiss page body not read), long-wave count (derived), absolute vorticity conservation, sea/lake breeze fronts and cold pools, mesoscale scale range, cool water and shear as causes of transition (not on ECCC page), forward-motion explanation for the right-side maximum, tropical storm range 34 to 63 kt. Sources are US, UK, Swiss and Canadian (ECCC, Western University).
 - Applied: pressure altitude, crosswind trigonometry source, alternate-required rules (CAR 602.121 onward), freezing spray criteria, Strong Wind warning threshold, WBGT, military impact tables, briefing SOP format.
 - CAPE and CIN, CSI formula, lifted index definitions, mandatory pressure level list.
 
