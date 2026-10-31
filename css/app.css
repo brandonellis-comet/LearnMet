@@ -109,6 +109,18 @@ th { color: var(--muted); font-weight: 600; }
 .srcs { margin: 4px 0 8px; padding-left: 20px; font-size: .9rem; }
 .unver { border-left: 4px solid var(--learn-fg); background: var(--bg); padding: 8px 12px; border-radius: 0 8px 8px 0; font-size: .9rem; }
 
+/* ---- Verification badge ---- */
+.vbadge { display: block; width: 100%; text-align: left; margin: 4px 0 10px; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--line); font-size: .9rem; line-height: 1.35; }
+.vbadge.vok { background: var(--good-bg); color: var(--good-fg); border-color: var(--good-fg); }
+.vbadge.vpart { background: var(--review-bg); color: var(--review-fg); border-color: var(--review-fg); }
+.vbadge.vsingle { background: var(--learn-bg); color: var(--learn-fg); border-color: var(--learn-fg); }
+.vbadge.vnone { background: var(--bad-bg); color: var(--bad-fg); border-color: var(--bad-fg); }
+.vchip { display: inline-block; font-size: .72rem; font-weight: 700; border-radius: 5px; padding: 1px 6px; vertical-align: middle; white-space: nowrap; }
+.vchip.vok { background: var(--good-bg); color: var(--good-fg); }
+.vchip.vpart { background: var(--review-bg); color: var(--review-fg); }
+.vchip.vsingle { background: var(--learn-bg); color: var(--learn-fg); }
+.vchip.vnone { background: var(--bad-bg); color: var(--bad-fg); }
+
 /* ---- Search ---- */
 .searchbar { display: flex; gap: 8px; margin: 0 0 12px; }
 .searchbar input { flex: 1; min-width: 0; min-height: 44px; font-size: 16px; }

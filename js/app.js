@@ -164,6 +164,14 @@ function domainStats(d) {
   const tests = quiz.attempts.filter(x => x.t === "domain" && x.id === d.id);
   return { c, ans, wrong, seen, total, acc: ans ? Math.round(((ans - wrong) / ans) * 100) : null, best: tests.length ? Math.max(...tests.map(x => x.pct)) : null };
 }
+function verifyInfo(t) {
+  const v = t.verified;
+  if (!v || !v.sources || !v.sources.length) return { cls: "vnone", label: "Not yet source-checked", short: "Unchecked", n: 0, u: 0 };
+  const n = v.sources.length, u = (v.unverified || []).length;
+  if (n < 2) return { cls: "vsingle", label: `Single source${u ? `, ${u} item${u === 1 ? "" : "s"} unconfirmed` : ""}`, short: "1 source", n, u };
+  if (u) return { cls: "vpart", label: `Partly verified: ${n} sources, ${u} item${u === 1 ? "" : "s"} unconfirmed`, short: `${u} unconfirmed`, n, u };
+  return { cls: "vok", label: `Verified: ${n} sources, nothing unconfirmed`, short: "Verified", n, u };
+}
 function topicStats(d, t) {
   let s = 0, w = 0;
   t.qs.forEach(q => { const st = quiz.q[q.id]; if (st) { s += st.s; w += st.w; } });
@@ -194,7 +202,7 @@ function navBar(active) {
     h("a", { href: "#/" + href, class: href === active ? "on" : "" }, label)));
 }
 function searchBar(q) {
-  const inp = h("input", { type: "search", class: "sq", placeholder: "Search all lessons and questions", value: q || "", enterkeyhint: "search", "aria-label": "Search", autocomplete: "off", autocapitalize: "off" });
+  const inp = h("input", { type: "search", class: "sq", placeholder: "Search everything", value: q || "", enterkeyhint: "search", "aria-label": "Search", autocomplete: "off", autocapitalize: "off" });
   const f = h("form", { class: "searchbar", role: "search" }, inp, h("button", { type: "submit", class: "primary", text: "Search" }));
   f.onsubmit = e => { e.preventDefault(); const v = inp.value.trim(); if (v) location.hash = "#/search/" + encodeURIComponent(v); };
   return f;
@@ -409,7 +417,7 @@ function viewStudy(openId) {
         ta.onchange = () => setP(d.id, t.ti, { note: ta.value });
         det.append(h("div", { class: "topic" },
           h("div", { class: "row" },
-            h("div", { class: "tname" }, h("a", { href: `#/topic/${d.id}/${t.ti}`, text: t.title })),
+            h("div", { class: "tname" }, h("a", { href: `#/topic/${d.id}/${t.ti}`, text: t.title }), " ", h("span", { class: "vchip " + verifyInfo(t).cls, text: verifyInfo(t).short })),
             h("a", { class: "btn small", href: `#/quiz/${d.id}/${t.ti}`, text: "Quiz" }), btn),
           ta));
       });
@@ -471,10 +479,17 @@ function viewTopic(did, ti) {
     h("div", { class: "split" }, toc, h("div", { class: "main" },
     h("div", { class: "small" }, h("a", { href: "#/study/" + did, text: "Study" }), " / ", d.title),
     h("h1", { text: t.title }),
+    (() => {
+      const v = verifyInfo(t);
+      const b = h("button", { class: "vbadge " + v.cls, type: "button", title: "Jump to sources" },
+        h("strong", { text: v.label }), t.verified ? ` | checked ${t.verified.date}` : "");
+      b.onclick = () => { const el = document.getElementById("sources"); if (el) el.scrollIntoView({ behavior: "smooth", block: "start" }); };
+      return b;
+    })(),
     h("div", { class: "row", style: "margin-bottom:10px" },
       h("span", { class: "muted small", text: stats.s ? `Quiz history: ${stats.s - stats.w}/${stats.s} correct` : "No quiz taken yet" }), btn),
     h("div", { class: "card" }, lesson),
-    t.verified && h("div", { class: "card" }, h("h2", { text: "Sources checked " + t.verified.date }),
+    t.verified && h("div", { class: "card", id: "sources" }, h("h2", { text: "Sources checked " + t.verified.date }),
       h("ul", { class: "srcs" }, t.verified.sources.map(x => h("li", { text: x }))),
       t.verified.unverified && t.verified.unverified.length > 0 && h("div", { class: "unver" }, h("strong", { text: "Not confirmed against a source: " }),
         h("ul", { class: "srcs" }, t.verified.unverified.map(x => h("li", { text: x }))))),

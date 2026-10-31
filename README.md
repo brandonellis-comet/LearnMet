@@ -89,3 +89,4 @@ Never add links to DWAN or intranet pages, CFS Met course material, or anything 
 - Search bar on every page (words match from the start of a word; all words must match). Results group into terms, lessons and quiz questions with the correct answer.
 - Home page: Mastery by domain (topic levels, accuracy, questions seen, best domain test).
 - Phone layout: larger tap targets, safe-area padding, no wrapped counts.
+- Verification badge on every lesson (colour-coded, taps to the sources list) and a chip beside each topic in Study. States: Verified (2+ sources, nothing unconfirmed), Partly verified, Single source, Not yet source-checked.
