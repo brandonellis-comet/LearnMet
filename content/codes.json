@@ -1166,17 +1166,18 @@
     }
    ],
    "verified": {
-    "date": "2026-10-27",
+    "date": "2026-10-31",
     "sources": [
      "NAV CANADA Aviation Weather Services Guide (2017): isobars at 4 hPa from 1000 hPa, analysis times, cold and warm front symbols, SLP decoding rule",
      "MANAIR 8th ed. Am. 3 (March 2024, full PDF): 4.9.1.4 (GFA isobars solid black, every 4 hPa from 1000 hPa)",
      "MANAIR 8th ed. Am. 3 Appendix C.2 and C.3 symbol pages (rendered and read as images, 2026-10-27)",
      "NAV CANADA Aviation Weather Services Guide, Surface Analysis Chart page (screenshot supplied by the user, 2026-10-27): 4 times daily at 00, 06, 12, 18Z; isobars 4 hPa from 1000 hPa; winds above 3,000 ft AGL roughly parallel to isobars; trowal definition. Example chart dated 2003.",
      "ECCC Analysis charts page, weather.gc.ca (screenshots supplied by the user, 2026-10-27): four daily analyses, product list, decommissioning notice. The page is an index; it does not show the chart legend.",
-     "NOAA JetStream, Surface Weather Plots (2026-10-27 fetch): station plot positions and pressure coding. NOAA JetStream, Surface Air Pressure Map: isobars traditionally labelled with the last two digits (examples 24, 08, 92)."
+     "NOAA JetStream, Surface Weather Plots (2026-10-27 fetch): station plot positions and pressure coding. NOAA JetStream, Surface Air Pressure Map: isobars traditionally labelled with the last two digits (examples 24, 08, 92).",
+     "Avalanche Canada glossary, Occluded front (2026-10-31 fetch; publisher not named on the page, images credited to NOAA): purple line on international maps; Canadian surface maps typically do not analyse occluded fronts and use a trowal instead"
     ],
     "unverified": [
-     "Occluded fronts do not appear in the GFA symbol list; colours for occluded fronts on other analysis charts are not confirmed here.",
+     "Occluded fronts do not appear in the GFA symbol list. One non-government Canadian page says Canadian surface maps typically use a trowal instead and that the international colour is purple; no ECCC or NAV CANADA legend was found to confirm the colour on national analysis charts.",
      "The national surface analysis symbols may differ from GFA symbols; only GFA symbols were read.",
      "Station model layout and the two-digit isobar labels are confirmed from US NOAA sources only. A Canadian source (ECCC or NAV CANADA) showing the same layout and units (C) was not found."
     ]
@@ -1425,17 +1426,17 @@
     {
      "list": [
       "GEM (Global Environmental Multiscale model): ECCC's atmospheric model. The Global Deterministic Prediction System (GDPS) runs at about 15 km out to 10 days, twice a day. The High Resolution Deterministic Prediction System (HRDPS Continental) runs at about 2.5 km over most of Canada out to 48 hours, up to four times a day.",
-      "GFS: the US National Weather Service global model.",
-      "ECMWF: the European Centre for Medium-Range Weather Forecasts. Widely regarded as one of the most skillful global models."
+      "GFS: the US global model run by NOAA's National Centers for Environmental Prediction (NWS). About 13 km resolution, forecasts out to 16 days, four times a day.",
+      "ECMWF: the European Centre for Medium-Range Weather Forecasts. Its medium-range ensemble (ENS) reaches 15 days at about 9 km with 51 members (one control and 50 perturbed). Widely regarded as one of the most skillful global models."
      ]
     },
-    "Resolutions and run schedules change as models are upgraded. The ECCC figures above were read from ECCC's data catalogue on 2026-10-26. Check the current documentation.",
+    "Resolutions and run schedules change as models are upgraded. The ECCC figures were read from ECCC's data catalogue on 2026-10-26; the GFS figures from the NOAA EMC page and the ECMWF figures from the ECMWF medium-range forecasts page on 2026-10-31. Check current documentation.",
     {
      "h": "Limitations"
     },
     {
      "list": [
-      "Chaos: tiny errors in the starting state grow over time, so forecast skill falls with lead time. Little skill is expected beyond about two weeks.",
+      "Chaos: tiny errors in the starting state grow over time, so forecast skill falls with lead time. Research supports a day-to-day predictability limit of about two weeks on average, even with a perfect model and perfect starting state.",
       "Parameterization: processes smaller than the grid (convection, cloud microphysics, turbulence) are approximated.",
       "Resolution: coarse models smooth out small features. A high-resolution model can resolve thunderstorms, terrain effects and sea breezes better, but it can also be wrong in more detail.",
       "Initial conditions: observations are limited, especially over oceans."
@@ -1587,13 +1588,18 @@
     }
    ],
    "verified": {
-    "date": "2026-10-26",
+    "date": "2026-10-31",
     "sources": [
      "ECCC data catalogue (WIS2), HRDPS Continental: about 2.5 km, up to 48 h, up to four runs per day",
-     "ECCC data catalogue (WIS2), GDPS: 15 km, 10 days, twice a day, GEM as the atmosphere component"
+     "ECCC data catalogue (WIS2), GDPS: 15 km, 10 days, twice a day, GEM as the atmosphere component",
+     "NOAA NCEP Environmental Modeling Center, GFS page (2026-10-31 fetch): about 13 km, up to 16 days, four times a day",
+     "ECMWF, Medium-range forecasts page (2026-10-31 fetch): ENS 15 days, about 9 km, 51 members (1 control + 50 perturbed)",
+     "Penn State news release on the Zhang, Sun, Emanuel et al. predictability study (2026-10-31 fetch): day-to-day weather limit about two weeks on average; supports Lorenz's 1960s limit. University source, not the paper itself"
     ],
     "unverified": [
-     "GFS and ECMWF descriptions, the ensemble and limitation points, and the 'about two weeks' predictability limit are general knowledge, not checked in a fetched source."
+     "ECMWF HRES (deterministic) specifications were not on the page read and are not stated in the lesson.",
+     "The 'regarded as one of the most skillful' ranking is general consensus, not a fetched statement; a verification score source (ECMWF or WMO lead-centre scores) was not read.",
+     "The predictability study is cited through a university news release; the journal paper was not read."
     ]
    }
   },
@@ -1787,12 +1793,13 @@
     }
    ],
    "verified": {
-    "date": "2026-10-26",
+    "date": "2026-10-31",
     "sources": [
-     "NWS Glossary of Forecast Verification Metrics: POD, FAR, bias, MAE, RMSE, skill score, persistence and climatology as reference forecasts"
+     "NWS Glossary of Forecast Verification Metrics: POD, FAR, bias, MAE, RMSE, skill score, persistence and climatology as reference forecasts",
+     "EUMETRAIN verification resource (resources.eumetrain.org, 2026-10-31 fetch): CSI = hits / (hits + false alarms + misses), range 0 to 1, 1 is perfect. The page names no publisher, so it is treated as an educational source; the NWS glossary above is the primary reference"
     ],
     "unverified": [
-     "The CSI formula (hits / (hits + misses + false alarms)) is standard but was not stated in the source that was read."
+     "The CSI formula is confirmed by an EUMETRAIN educational page whose publisher is not named on the page; no government or WMO source stating CSI was read."
     ]
    }
   },
@@ -3369,15 +3376,16 @@
     }
    ],
    "verified": {
-    "date": "2026-10-27",
+    "date": "2026-10-31",
     "sources": [
-     "NAV CANADA Aviation Weather Services Guide, Aviation Weather Information, Weather Product Summary, Aviation Weather Observation Products, AWOS and LWIS, and missing-data remarks pages (guide pages 7 to 12; screenshots supplied by the user, 2026-10-27)"
+     "NAV CANADA Aviation Weather Services Guide, Aviation Weather Information, Weather Product Summary, Aviation Weather Observation Products, AWOS and LWIS, and missing-data remarks pages (guide pages 7 to 12; screenshots supplied by the user, 2026-10-27)",
+     "NAV CANADA AWOS FAQ (2026-10-31 fetch; no date on the page): AWOS reports thunderstorm activity within the Canadian Lightning Detection Network; sensor limits listed (no tornado, hail or ice pellets, smoke, shallow fog)"
     ],
     "unverified": [
      "The guide's FB entry (twice daily, 00Z or 12Z data, valid 24 hours) differs from MANAIR Ch. 3 (four times daily, FBCN31, 33, 35 as 6, 12, 24 hour forecasts). MANAIR is treated as the standard.",
      "The guide's Upper Level Wind and Temperature chart and Turbulence Forecast chart rows list valid times inconsistently ('twice daily' with four or two valid times); the issue pattern is not taught as fact.",
      "The guide edition date is not shown. The AWOS enhancement table's Y marks were read from a screenshot.",
-     "AWOS lightning distances (6, 10, 30 SM) are from this guide only and have not been compared with MANOBS."
+     "AWOS lightning distances (6, 10, 30 SM) are from the NAV CANADA guide only. The NAV CANADA AWOS FAQ confirms lightning reporting through the Canadian Lightning Detection Network but gives no distances, and MANOBS was not compared."
     ]
    }
   },
@@ -4100,12 +4108,13 @@
     }
    ],
    "verified": {
-    "date": "2026-10-27",
+    "date": "2026-10-31",
     "sources": [
-     "MANOBS 8th ed. Am. 3 (September 2026, full PDF), Part B: Chapter 14 (synoptic code general description) and Chapter 15 (detailed description) read in full for the groups taught; Chapter 1 note on Part B status"
+     "MANOBS 8th ed. Am. 3 (September 2026, full PDF), Part B: Chapter 14 (synoptic code general description) and Chapter 15 (detailed description) read in full for the groups taught; Chapter 1 note on Part B status",
+     "WMO codes registry (codes.wmo.int, 2026-10-31 fetch): FM 12 - SYNOP, report of surface observation from a fixed land station, defined in Manual on Codes (WMO-No. 306), Volume I.1"
     ],
     "unverified": [
-     "Part B is described as referencing WMO Manual on Codes No. 306 Volume I.1; the WMO manual itself was not consulted.",
+     "The WMO registry confirms FM 12 SYNOP is defined in WMO-No. 306 Volume I.1, matching what MANOBS Part B references; the manual itself (code tables) was not read.",
      "MANOBS names the code FM 12-XIV Ext. SYNOP in chapters 14 and 15 but FM 12-XI SYNOP in chapter 1.3.1. Treated as an internal inconsistency in the manual.",
      "Table 15-8 has a note that dd = 99 (variable) cannot be used, while 15.3.4.2 says 99 is not used when wind speed is above 5 kt. The two statements were not reconciled.",
      "Not taught: full present weather list (only key codes), full CL, CM and CH code tables and their priority lists (only the CL priority order is summarized), the example weather sequences (15.3.12.3.5), the Section 3 rainfall details beyond the groups listed, and the codes for Section 2 (MANMAR).",

@@ -222,3 +222,16 @@ Problem: the correct choice was the longest in 49% of questions, so length gave 
 Method: rewrote distractors (about 270 questions by hand) and lengthened two distractors where the correct answer still stood out. Correct answers and explanations are unchanged; no facts were changed.
 Result: correct-is-longest 49% to 28% (about 25% is chance). Length tells (correct is 25+ chars, strictly longest, 15%+ above the mean distractor) 24% to 0%. Checked by `check.py`.
 Note: some padded distractors carry generic qualifiers ("as agreed locally"). They are wrong by design; do not read them as source content.
+
+## Codes domain pass (2026-10-31)
+Confirmed or narrowed with public sources:
+| Item | Result | Source type |
+|---|---|---|
+| GFS ~13 km, 16 days, four runs a day | Confirmed, added to lesson | NOAA NCEP EMC |
+| ECMWF ENS 15 days, ~9 km, 51 members | Confirmed, added to lesson | ECMWF |
+| Predictability limit about two weeks | Confirmed (average, even with perfect model) | Penn State release on peer-reviewed study; paper not read |
+| CSI = hits / (hits + misses + false alarms) | Confirmed | EUMETRAIN educational page, publisher not named on page |
+| FM 12 SYNOP defined in WMO-No. 306 Vol I.1 | Confirmed by registry; code tables not read | WMO codes registry |
+| AWOS lightning via Canadian Lightning Detection Network | Confirmed; 6/10/30 SM distances still guide-only | NAV CANADA FAQ |
+| Occluded fronts absent from GFA; trowal used in Canada | Supported by one non-government page; ECCC legend not found | Avalanche Canada glossary |
+Still open: ECMWF HRES specs, "most skillful" ranking, Canadian station-model layout, MANOBS table 15-8 vs 15.3.4.2 (dd = 99), MANAIR vs ICAO Annex 3 definitions, NAV CANADA guide edition date.
