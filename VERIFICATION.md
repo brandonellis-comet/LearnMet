@@ -15,7 +15,7 @@ Study aid only. Crown-copyright and NAV CANADA text is paraphrased and linked, n
 ## Cross-check rule (from 2026-10-27)
 Every new claim needs two independent sources or is flagged single-source. New claims are compared with the lesson text and the sources already logged. Conflicts are recorded below, and the more authoritative source wins (Canadian government over US government over university or media).
 
-## Status (as of 2026-10-27; 904 questions)
+## Status (as of 2026-11-02; 947 questions)
 
 | Domain | Topics | Questions | Status | Last checked |
 |--------|--------|-----------|--------|--------------|
@@ -235,3 +235,9 @@ Confirmed or narrowed with public sources:
 | AWOS lightning via Canadian Lightning Detection Network | Confirmed; 6/10/30 SM distances still guide-only | NAV CANADA FAQ |
 | Occluded fronts absent from GFA; trowal used in Canada | Supported by one non-government page; ECCC legend not found | Avalanche Canada glossary |
 Still open: ECMWF HRES specs, "most skillful" ranking, Canadian station-model layout, MANOBS table 15-8 vs 15.3.4.2 (dd = 99), MANAIR vs ICAO Annex 3 definitions, NAV CANADA guide edition date.
+
+## Observer practice domain added (2026-11-02)
+New domain `observer` (10. Observer practice): PIREPs, Obstructions to vision, Sky condition and cloud height reporting. 3 topics, 43 questions, all Partly verified.
+Sources: Transport Canada (AIM MET, PIREP page, TP 2228E-9), MANOBS 8th ed. Am. 3 chapters 6 and 7 (read through the canada.ca HTML edition via a fetch summary; the shell cannot reach canada.ca), FAA JO 7110.10X (US) for the PIREP element order, NWS ASOS sky page (US, archived, 1990s figures) for ceilometer behaviour.
+Cross-check status: PIREP content and handling confirmed by two Canadian sources plus the FAA; MANOBS thresholds single-source (the manual itself), flagged to confirm against the PDF.
+Not yet done: present weather code tables and the full synoptic cloud code tables (CL, CM, CH), weather watch and non-routine observation duties, observer instrument use, and observer methods for estimating cloud height when no instrument is available. The fetch tool could not return those MANOBS sections.

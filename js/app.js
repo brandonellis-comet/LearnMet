@@ -2,7 +2,7 @@
 "use strict";
 
 // ---------- Config ----------
-const DOMAINS = ["foundations", "wind", "moisture", "airmass", "synoptic", "severe", "obs", "codes", "applied"];
+const DOMAINS = ["foundations", "wind", "moisture", "airmass", "synoptic", "severe", "obs", "codes", "applied", "observer"];
 const PASS = 75;            // pass mark, percent
 const TOPIC_QUIZ_LEN = 6;
 const DOMAIN_TEST_LEN = 15; // questions per domain test

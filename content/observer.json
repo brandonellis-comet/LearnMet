@@ -1,0 +1,713 @@
+{
+ "title": "10. Observer practice",
+ "topics": [
+  {
+   "title": "PIREPs (pilot weather reports)",
+   "lesson": [
+    "A pilot weather report (PIREP) is an observation made by a pilot in flight. Transport Canada calls PIREPs the only direct source of information on cloud heights, turbulence, visibility, winds and icing between weather stations. They matter most on flights below 10,000 ft. Reports of conditions worse than forecast are the most valuable.",
+    {
+     "h": "What a PIREP should contain"
+    },
+    {
+     "list": [
+      "Location and altitude (heights are normally above sea level), UTC time and aircraft type.",
+      "Cloud tops and upper layers, cruising-level winds, and anything that differs significantly from the forecast.",
+      "Low cloud, reduced visibility, icing, and convective activity such as wind shear, squall lines, turbulence, thunderstorms and cumulonimbus.",
+      "Turbulence: intensity, whether in or near cloud, altitude and duration if it applies. Icing: intensity and type, altitude and indicated airspeed. Wind shear: the loss or gain of airspeed and the altitude where it happened."
+     ]
+    },
+    {
+     "h": "Regular and urgent"
+    },
+    {
+     "list": [
+      "Regular PIREPs carry the heading UACN10. Urgent PIREPs (heading UACN01, or UUA) are for atmospheric conditions that are an immediate hazard for all aviation users.",
+      "Examples the AIM names as urgent: clear air turbulence encountered, and volcanic ash detected.",
+      "A hazardous PIREP under one hour old is broadcast at once to aircraft in the affected area and repeated in later scheduled broadcasts. It may also lead to a SIGMET."
+     ]
+    },
+    {
+     "h": "Filing and handling"
+    },
+    "Pilots file with a flight information centre (FIC) on an en route frequency, or by toll-free call after landing. Flight service passes the report at once on meteorological circuits to air traffic services units and the Canadian Meteorological Aviation Centres (CMAC). ECCC meteorologists use PIREPs to confirm or amend forecasts.",
+    {
+     "h": "Intensity wording (Transport Canada TP 2228)"
+    },
+    {
+     "list": [
+      "Turbulence. Light: momentary, slight, erratic changes in altitude or attitude. Moderate: like light but more intense. Severe: large, abrupt changes in altitude or attitude.",
+      "Icing. Light: the accumulation rate could become a problem over a long flight. Moderate: even a short exposure could be a hazard, so de-icing equipment or a diversion is needed. Severe: de-icing or anti-icing equipment fails to reduce or control the hazard."
+     ]
+    },
+    {
+     "h": "Format (element indicators)"
+    },
+    "The element order in the US FAA format is: message type (UA or UUA), /OV location, /TM time (UTC), /FL altitude or flight level, /TP aircraft type, /SK sky condition, /WX flight visibility and weather, /TA temperature, /WV wind, /TB turbulence, /IC icing, /RM remarks. The Canadian example in the AIM shows the same fields. Altitude may be given as DURD, DURC or UNKN.",
+    {
+     "note": "Study the Canadian outline on the back cover of the Canada Flight Supplement for the exact layout. This lesson takes the full element order from the FAA, so confirm it against the Canadian source."
+    }
+   ],
+   "terms": [
+    [
+     "PIREP",
+     "Pilot weather report: an in-flight observation of weather by a pilot."
+    ],
+    [
+     "UUA / UACN01",
+     "Urgent PIREP heading, for conditions that are an immediate hazard to all aviation users."
+    ],
+    [
+     "UACN10",
+     "Heading of a regular PIREP in the AIM example."
+    ],
+    [
+     "FIC",
+     "Flight information centre. Takes PIREPs by radio or phone and passes them on."
+    ],
+    [
+     "CMAC",
+     "Canadian Meteorological Aviation Centres. Receive PIREPs from flight service."
+    ],
+    [
+     "/TB, /IC",
+     "Turbulence and icing elements of the PIREP."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "According to Transport Canada, why are PIREPs important?",
+     "c": [
+      "They are the only direct source of cloud height, turbulence, visibility, wind and icing data between weather stations",
+      "They replace the hourly METAR at any aerodrome that has no observer, so no other report is needed there",
+      "They are the main source of surface pressure for the numerical models that ECCC runs every day, which makes them vital",
+      "They are filed by every aircraft on every flight, whatever the weather, so every flight has a complete record"
+     ],
+     "a": 0,
+     "e": "Transport Canada PIREP page and TP 2228E-9."
+    },
+    {
+     "q": "Which PIREPs does Transport Canada call the most valuable?",
+     "c": [
+      "Reports of conditions worse than forecast",
+      "Reports that match the forecast exactly",
+      "Reports of smooth air and clear sky only, from any level",
+      "Reports filed only by airline crews above FL250, since they fly the highest and see the most weather"
+     ],
+     "a": 0,
+     "e": "Transport Canada: clear reports on worse-than-forecast conditions are vital."
+    },
+    {
+     "q": "PIREPs are particularly important on flights below:",
+     "c": [
+      "10,000 ft",
+      "18,000 ft",
+      "5,000 ft",
+      "FL250, because heavy jet traffic rarely stops to report anything above that level"
+     ],
+     "a": 0,
+     "e": "Transport Canada PIREP page."
+    },
+    {
+     "q": "Which headings mark a regular and an urgent PIREP in the AIM?",
+     "c": [
+      "UACN10 regular; UACN01 or UUA urgent",
+      "UACN01 regular; UACN10 urgent",
+      "UACN10 for both, with the urgency shown only in the remarks section",
+      "SACN10 regular and SACN01 urgent, using the same headings as the surface observation bulletins"
+     ],
+     "a": 0,
+     "e": "TC AIM MET 1.1.6.1 and Table 2.1."
+    },
+    {
+     "q": "An urgent PIREP is issued for conditions that are:",
+     "c": [
+      "An immediate hazard for all aviation users",
+      "Merely different from the forecast",
+      "Reported by a pilot with more than 5,000 hours",
+      "Expected to occur within the next 24 hours, whether or not any aircraft has met them yet"
+     ],
+     "a": 0,
+     "e": "TC AIM MET 2.1."
+    },
+    {
+     "q": "What happens to a hazardous PIREP less than one hour old?",
+     "c": [
+      "It is broadcast at once to aircraft in the affected area and repeated in later broadcasts",
+      "It is held until the next scheduled METAR, then sent with it",
+      "It is stored for the monthly climate summary and not broadcast",
+      "It is passed on only to the pilot who filed it, who must relay it to any other aircraft by radio"
+     ],
+     "a": 0,
+     "e": "TC AIM MET 1.1.6.1."
+    },
+    {
+     "q": "How does a pilot file a PIREP?",
+     "c": [
+      "With a FIC on an en route frequency, or by toll-free call after landing",
+      "Only by mailing the report to the nearest MWO after the flight",
+      "Only through the aircraft's flight data recorder after landing, at the home base of the operator",
+      "By sending a TAF amendment request to the aerodrome"
+     ],
+     "a": 0,
+     "e": "TC AIM MET 2.1."
+    },
+    {
+     "q": "Where do PIREPs received by flight service go next?",
+     "c": [
+      "Straight onto meteorological circuits, and to ATS units and the CMAC",
+      "Into a paper file that is reviewed at the end of each month by the regional office",
+      "Only to the aerodrome that the pilot departed from",
+      "To the airline dispatcher, and to no one else"
+     ],
+     "a": 0,
+     "e": "TC AIM MET 2.1."
+    },
+    {
+     "q": "PIREP heights in the AIM are normally stated as:",
+     "c": [
+      "Height above sea level",
+      "Height above the ground at the aerodrome of departure",
+      "Pressure altitude in millibars",
+      "Flight levels only, even when the aircraft is below the transition altitude near the ground"
+     ],
+     "a": 0,
+     "e": "TC AIM MET 1.2.2."
+    },
+    {
+     "q": "In the FAA PIREP format, which element comes directly after /TM?",
+     "c": [
+      "/FL, altitude or flight level",
+      "/OV, location",
+      "/TP, aircraft type",
+      "/WX, because flight visibility must be known before the aircraft altitude is stated"
+     ],
+     "a": 0,
+     "e": "FAA JO 7110.10X, Ch. 9 Sec. 2 (2014): order is UA/UUA, /OV, /TM, /FL, /TP, /SK, /WX, /TA, /WV, /TB, /IC, /RM. US source."
+    },
+    {
+     "q": "Transport Canada defines light turbulence as:",
+     "c": [
+      "Momentary, slight, erratic changes in altitude or attitude",
+      "Large, abrupt changes in altitude or attitude",
+      "Turbulence like moderate but weaker, felt only in cloud",
+      "Steady, smooth bumps that last for several minutes and never change the attitude of the aircraft"
+     ],
+     "a": 0,
+     "e": "Transport Canada TP 2228E-9."
+    },
+    {
+     "q": "Transport Canada defines moderate icing as:",
+     "c": [
+      "Even a short exposure could be a hazard, so de-icing equipment or a diversion is needed",
+      "The accumulation rate may become a problem over a long flight",
+      "De-icing or anti-icing equipment fails to control the hazard",
+      "Ice that forms only on the propeller or the windshield and never builds up on the wings or tail"
+     ],
+     "a": 0,
+     "e": "Transport Canada TP 2228E-9."
+    },
+    {
+     "q": "Transport Canada defines severe icing as:",
+     "c": [
+      "De-icing or anti-icing equipment fails to reduce or control the hazard",
+      "The rate of accumulation may become a problem on a long flight",
+      "Even a short exposure could be a hazard",
+      "Any ice accumulation above 5 mm on the wings, whether or not the aircraft can still be controlled"
+     ],
+     "a": 0,
+     "e": "Transport Canada TP 2228E-9."
+    },
+    {
+     "q": "What can a hazardous PIREP lead to?",
+     "c": [
+      "A SIGMET issued by an MWO",
+      "A change to the climate normals",
+      "A new METAR code table",
+      "An automatic amendment of every TAF in the same FIR, since forecasters must copy any report they receive"
+     ],
+     "a": 0,
+     "e": "TC AIM MET 2.1 and Table 3.1."
+    },
+    {
+     "q": "A pilot detects volcanic ash. What should the pilot do?",
+     "c": [
+      "File an urgent PIREP with the nearest ATS unit",
+      "Wait and report it with the post-flight paperwork",
+      "Report it only if the ash reaches the cabin",
+      "Climb above the layer and report it after landing, to avoid delaying the flight with radio calls"
+     ],
+     "a": 0,
+     "e": "TC AIM MET 2.5."
+    }
+   ],
+   "verified": {
+    "date": "2026-11-02",
+    "sources": [
+     "Transport Canada, Pilot reports (PIREPs) page (2026-11-02 fetch): purpose, below 10,000 ft, worse-than-forecast, content list",
+     "Transport Canada TP 2228E-9, PIREPs (2026-11-02 fetch): turbulence and icing intensity wording; format outline is on the Canada Flight Supplement back cover and was not read",
+     "Transport Canada AIM 2023-1 MET (2026-11-02 fetch, first 100,000 characters): MET 1.1.6.1, 1.2.2, 2.1, 2.2, 2.3, 2.4, 2.5, Table 2.1",
+     "FAA Order JO 7110.10X Ch. 9 Sec. 2 (2014, US): PIREP element order and urgent criteria (TC wording confirms the same field set)"
+    ],
+    "unverified": [
+     "The AIM edition read is 2023-1; later editions were not checked, and the last 6,800 characters of the document were not read.",
+     "The /WX element and the full element order are confirmed from the FAA source only. The Canadian table was seen in summary and lists /TM, /FL, /TP, /SK, /TA, /WV, /TB, /IC, /RM.",
+     "The US list of urgent criteria (tornado, severe turbulence or icing, hail, low-level wind shear, volcanic activity) is not taught as Canadian practice; the AIM names only clear air turbulence and volcanic ash in the part read.",
+     "Wording of the intensity definitions is paraphrased from TP 2228E-9; the AIM's own turbulence and icing tables were not compared."
+    ]
+   }
+  },
+  {
+   "title": "Obstructions to vision",
+   "lesson": [
+    "An obstruction to vision is a phenomenon other than precipitation (the weather class) that can reduce horizontal visibility near the ground. The US observing manual lists fog, ground fog, ice fog, haze, smoke, dust, blowing snow, blowing sand, blowing dust and blowing spray. Canadian observers report them with the rules below.",
+    {
+     "h": "MANOBS reporting criteria (Chapter 6)"
+    },
+    {
+     "list": [
+      "General (6.7.1): an obstruction is recorded only when the prevailing visibility is 6 SM or less.",
+      "Fog (6.7.1.1): reported when visibility at the earth's surface is reduced to 1/2 SM or less.",
+      "Mist (6.7.1.3): reported when visibility is reduced to between 5/8 and 6 SM inclusive.",
+      "Haze, dust haze and smoke (6.7.1.6): reported when prevailing visibility is 6 SM or less.",
+      "Blowing snow, blowing dust and blowing sand (6.7.1.4): reported when visibility is 6 SM or less and the phenomenon is the only factor reducing it.",
+      "Dust storm and sandstorm (6.7.1.5): reported when visibility is 6 SM or less and the phenomenon is the only factor reducing it. They are heavy at 1/4 SM or less.",
+      "Freezing fog (6.7.1.2): fog with temperature from -0.1 to -30.0 C and visibility 1/2 SM or less.",
+      "Shallow fog (MIFG), fog patches (BCFG) and fog covering part of the aerodrome (PRFG) are reported when visibility is greater than 6 SM (6.8.1)."
+     ]
+    },
+    {
+     "h": "Fog or mist"
+    },
+    "The visibility value separates them. At 1/2 SM or less the report is fog. From 5/8 to 6 SM it is mist. Both are produced by water droplets or ice crystals suspended in the air at the surface; haze, smoke and dust are solid particles. See the Fog types topic for formation.",
+    {
+     "h": "Link to sky condition"
+    },
+    "Smoke can also be reported as an obscuring layer: surface-based, aloft, or both (MANOBS 7.2.3.1). A sky that is completely obscured is reported with vertical visibility instead of cloud amount, type and height.",
+    {
+     "note": "Check the current MANOBS chapter 6 for the full list, intensity rules and METAR codes. This lesson covers the criteria read on 2026-11-02."
+    }
+   ],
+   "terms": [
+    [
+     "Obstruction to vision",
+     "Non-precipitation phenomenon that reduces horizontal visibility near the ground, such as fog, haze, smoke, dust or blowing snow."
+    ],
+    [
+     "Mist",
+     "Obstruction reported when visibility is 5/8 to 6 SM inclusive (MANOBS)."
+    ],
+    [
+     "Fog",
+     "Obstruction reported when visibility is 1/2 SM or less at the surface (MANOBS)."
+    ],
+    [
+     "MIFG, BCFG, PRFG",
+     "Shallow fog, fog patches, and fog covering part of the aerodrome; used when visibility is above 6 SM."
+    ],
+    [
+     "Obscuring layer",
+     "Non-cloud layer that wholly or partly blocks the view of the sky or higher clouds."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "What is an obstruction to vision?",
+     "c": [
+      "A non-precipitation phenomenon that may reduce horizontal visibility near the ground",
+      "Any precipitation that falls to the ground and reduces visibility",
+      "A cloud layer that has a base below 1,000 ft above the aerodrome level",
+      "A measurement error that arises when the visibility sensor is dirty or its lens is covered in frost"
+     ],
+     "a": 0,
+     "e": "US observing practice (Federal Meteorological Handbook / Circular N definition, via the AMS glossary page)."
+    },
+    {
+     "q": "Which of these is an obstruction to vision?",
+     "c": [
+      "Haze",
+      "Rain",
+      "Snow",
+      "Thunderstorm"
+     ],
+     "a": 0,
+     "e": "US list: fog, ground fog, ice fog, blowing snow, sand, dust and spray, haze, smoke, dust. Precipitation is weather-class."
+    },
+    {
+     "q": "MANOBS records an obstruction to vision only when prevailing visibility is:",
+     "c": [
+      "6 SM or less",
+      "3 SM or less",
+      "1 SM or less",
+      "15 SM or less, which is the maximum value that a Canadian station can report"
+     ],
+     "a": 0,
+     "e": "MANOBS 6.7.1."
+    },
+    {
+     "q": "Fog is reported when the visibility at the surface is reduced to:",
+     "c": [
+      "1/2 SM or less",
+      "3/4 SM or less",
+      "1 SM or less",
+      "6 SM or less, provided that the sky overhead is completely obscured at the same time"
+     ],
+     "a": 0,
+     "e": "MANOBS 6.7.1.1."
+    },
+    {
+     "q": "Mist is reported when visibility is reduced to:",
+     "c": [
+      "5/8 to 6 SM inclusive",
+      "1/2 SM or less",
+      "Below 1/4 SM only",
+      "Between 7 and 15 SM, so long as the humidity is above 90 percent"
+     ],
+     "a": 0,
+     "e": "MANOBS 6.7.1.3."
+    },
+    {
+     "q": "Suspended water droplets cut the prevailing visibility to 3/8 SM. What is reported?",
+     "c": [
+      "Fog",
+      "Mist",
+      "Haze",
+      "Blowing spray, because water is the only cause of the reduction in visibility"
+     ],
+     "a": 0,
+     "e": "MANOBS 6.7.1.1: fog at 1/2 SM or less."
+    },
+    {
+     "q": "Suspended water droplets cut the prevailing visibility to 3 SM. What is reported?",
+     "c": [
+      "Mist",
+      "Fog",
+      "Freezing fog",
+      "Fog patches, because the visibility is more than 1/2 SM and the cause is the same"
+     ],
+     "a": 0,
+     "e": "MANOBS 6.7.1.3: 5/8 to 6 SM."
+    },
+    {
+     "q": "When is blowing snow reported?",
+     "c": [
+      "Visibility 6 SM or less, and blowing snow is the only factor reducing it",
+      "Any time snow is on the ground and the wind is above 10 kt",
+      "Only when visibility is below 1/4 SM",
+      "Whenever snow is falling and the wind speed is more than 15 kt, no matter what the visibility is"
+     ],
+     "a": 0,
+     "e": "MANOBS 6.7.1.4."
+    },
+    {
+     "q": "A dust storm or sandstorm is heavy when visibility is:",
+     "c": [
+      "1/4 SM or less",
+      "1/2 SM or less",
+      "3/4 SM or less",
+      "6 SM or less, which is the limit for reporting any dust phenomenon at all"
+     ],
+     "a": 0,
+     "e": "MANOBS 6.7.1.5."
+    },
+    {
+     "q": "When is haze or smoke reported?",
+     "c": [
+      "When prevailing visibility is 6 SM or less",
+      "Only when visibility is below 1/2 SM",
+      "Only when visibility is below 3 SM",
+      "Only when smoke is seen overhead at the station, whatever the prevailing visibility is"
+     ],
+     "a": 0,
+     "e": "MANOBS 6.7.1.6."
+    },
+    {
+     "q": "Freezing fog is reported at temperatures of:",
+     "c": [
+      "-0.1 to -30.0 C, with visibility 1/2 SM or less",
+      "Any temperature below 5 C, with visibility 1 SM or less",
+      "0 to 5 C, with visibility 1/2 SM or less",
+      "Below -30 C only, because ice fog forms at a lower temperature and replaces it"
+     ],
+     "a": 0,
+     "e": "MANOBS 6.7.1.2."
+    },
+    {
+     "q": "MIFG, BCFG and PRFG are used when visibility is:",
+     "c": [
+      "Greater than 6 SM",
+      "1/2 SM or less",
+      "Exactly 1/4 SM",
+      "Between 5/8 and 6 SM, in the same range as mist"
+     ],
+     "a": 0,
+     "e": "MANOBS 6.8.1."
+    },
+    {
+     "q": "Is rain an obstruction to vision?",
+     "c": [
+      "No. It is precipitation, which belongs to the weather class",
+      "Yes, whenever it reduces visibility below 6 SM",
+      "Yes, but only when it is heavy",
+      "Yes, but only when it freezes on contact, at which point it is reclassified as an obstruction"
+     ],
+     "a": 0,
+     "e": "US definition: obstructions are phenomena other than the weather class."
+    },
+    {
+     "q": "How can smoke be reported in the sky condition?",
+     "c": [
+      "As a surface-based obscuring layer, a layer aloft, or both",
+      "Only as a layer aloft",
+      "Never. It belongs only in present weather",
+      "Only as low cloud, using the cloud type that has the nearest base height"
+     ],
+     "a": 0,
+     "e": "MANOBS 7.2.3.1."
+    }
+   ],
+   "verified": {
+    "date": "2026-11-02",
+    "sources": [
+     "MANOBS 8th ed. Am. 3, Chapter 6 sections 6.7.1 to 6.7.1.6 and 6.8.1 (2026-11-02 fetch of the canada.ca HTML edition, summarized by the fetch tool): thresholds",
+     "MANOBS 7.2.3, 7.2.3.1 (obscuring layer, smoke) from the same fetch",
+     "US definition and list of obstructions to vision: glossary page that cites the US Manual of Surface Observations (WBAN), Circular N (2026-11-02 fetch); the page does not attribute it to the AMS"
+    ],
+    "unverified": [
+     "The threshold values were read through the fetch tool's summary of the MANOBS web page, not from a direct page image. Confirm the section numbers and values against the PDF.",
+     "Intensity rules for each obstruction, METAR/SPECI codes (BR, FG, HZ, FU, DU, BLSN and so on) and sub-types were not read in this pass.",
+     "Fog versus haze cause (droplets versus solid particles) is general knowledge, not a fetched statement.",
+     "The obstruction list is the US list; MANOBS's own list in Chapter 6 was not read in full."
+    ]
+   }
+  },
+  {
+   "title": "Sky condition and cloud height reporting",
+   "lesson": [
+    "Sky condition is the observer's description of cloud layers and obscuring phenomena above the station. Each layer is reported with its amount and the height of its base. All heights are in feet (1 ft is exactly 0.3048 m).",
+    {
+     "h": "MANOBS reporting rules (Chapter 7)"
+    },
+    {
+     "list": [
+      "Reference level (7.3.1): at airports, heights are measured from the official aerodrome level. Elsewhere they are measured from ground level at the observing station.",
+      "Increments (7.3): heights of layers and vertical visibility are reported in 100 ft steps up to and including 10,000 ft, and in 1,000 ft steps above that.",
+      "If a layer height falls between two reportable values, report the lower one. If a cloud amount falls between two reportable values, report the greater one.",
+      "If the sky is completely obscured, report vertical visibility instead of cloud amount, type and height.",
+      "Ceiling (7.2.7): the lowest layer aloft reported as broken or overcast, or the vertical visibility.",
+      "Obscuring layer (7.2.3): a non-cloud layer, such as smoke, that wholly or partly blocks the view of the sky or higher clouds."
+     ]
+    },
+    {
+     "h": "Typical base heights"
+    },
+    "MANOBS Table 7-1 is the guide to the approximate base height of each cloud type. It is in the Cloud classification topic. Use it as a guide, not as a measurement.",
+    {
+     "h": "Measuring height with a ceilometer"
+    },
+    {
+     "list": [
+      "A laser ceilometer points a pulse straight up and times the light scattered back from the cloud base. It sees only what is overhead.",
+      "US ASOS example (NWS page, archived, about 1990s figures): the sensor reports layers up to 12,000 ft, uses 30-second samples, and every minute processes the last 30 minutes of data with the latest 10 minutes counted twice, so it follows current changes. It can report up to three layers.",
+      "Canadian AWOS ceilometers report cloud bases up to 25,000 ft (Surface observing topic).",
+      "Limits: it does not see cap clouds over distant mountains or low cloud over nearby water. Fog or precipitation can mask the signal and give a false layer. Thin layers such as virga or scud may be reported when a human would ignore them. It lags in rapid change, so check later reports."
+     ]
+    },
+    {
+     "note": "Heights above the reference level, in feet, rounded down. Amounts rounded up. Keep those two rules apart."
+    }
+   ],
+   "terms": [
+    [
+     "Ceiling",
+     "Lowest layer aloft reported as broken or overcast, or the vertical visibility (MANOBS 7.2.7)."
+    ],
+    [
+     "Vertical visibility",
+     "Reported instead of cloud when the sky is completely obscured."
+    ],
+    [
+     "Reference level",
+     "Official aerodrome level at airports; ground level at the station elsewhere."
+    ],
+    [
+     "Ceilometer",
+     "Instrument that measures cloud base height, usually with a laser pointed up."
+    ],
+    [
+     "Obscuring layer",
+     "Non-cloud layer that blocks the view of the sky or of higher clouds."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "At an airport, cloud heights are measured from:",
+     "c": [
+      "The official aerodrome level",
+      "Mean sea level",
+      "The level of the observer's eyes",
+      "The highest terrain within 5 SM, whichever is the greatest"
+     ],
+     "a": 0,
+     "e": "MANOBS 7.3.1."
+    },
+    {
+     "q": "At a non-airport station, cloud heights are measured from:",
+     "c": [
+      "Ground level at the observing station",
+      "The official aerodrome level of the nearest airport",
+      "Mean sea level",
+      "The roof of the station building, since that is where the observer's instruments are mounted"
+     ],
+     "a": 0,
+     "e": "MANOBS 7.3.1."
+    },
+    {
+     "q": "Cloud heights up to and including 10,000 ft are reported in steps of:",
+     "c": [
+      "100 ft",
+      "500 ft",
+      "1,000 ft",
+      "50 ft, the finest step that the aviation observing standard allows for any height"
+     ],
+     "a": 0,
+     "e": "MANOBS 7.3 item 12."
+    },
+    {
+     "q": "Cloud heights above 10,000 ft are reported in steps of:",
+     "c": [
+      "1,000 ft",
+      "100 ft",
+      "500 ft",
+      "5,000 ft, which is the step used for high cloud at every observing station in Canada"
+     ],
+     "a": 0,
+     "e": "MANOBS 7.3 item 12."
+    },
+    {
+     "q": "A layer base is between two reportable heights. Which value is reported?",
+     "c": [
+      "The lower one",
+      "The higher one",
+      "The average of the two",
+      "Whichever is nearer to the next flight level that the pilot has filed for the route"
+     ],
+     "a": 0,
+     "e": "MANOBS 7.3 item 8."
+    },
+    {
+     "q": "A cloud amount falls between two reportable values. Which is reported?",
+     "c": [
+      "The greater one",
+      "The smaller one",
+      "The average, rounded to the nearest eighth",
+      "Whichever is closer to the amount seen at the previous observation on the hour"
+     ],
+     "a": 0,
+     "e": "MANOBS 7.3 item 9."
+    },
+    {
+     "q": "What is reported when the sky is completely obscured?",
+     "c": [
+      "Vertical visibility, in place of cloud amount, type and height",
+      "Overcast at 0 ft",
+      "The height of the highest cloud seen on the last report",
+      "Clear sky, because no cloud can be identified, together with the visibility"
+     ],
+     "a": 0,
+     "e": "MANOBS 7.3 item 11."
+    },
+    {
+     "q": "How does MANOBS define the ceiling?",
+     "c": [
+      "The lowest layer aloft reported as broken or overcast, or the vertical visibility",
+      "The lowest cloud of any amount",
+      "The highest overcast layer in the sky",
+      "The height of the lowest scattered layer or the vertical visibility, whichever is the greater of the two"
+     ],
+     "a": 0,
+     "e": "MANOBS 7.2.7."
+    },
+    {
+     "q": "What is an obscuring layer?",
+     "c": [
+      "A non-cloud layer that wholly or partly blocks the view of the sky or higher clouds",
+      "A cloud layer with a base below 500 ft that is reported as the ceiling at the aerodrome",
+      "A cloud layer seen only on satellite images",
+      "Any cloud layer that covers more than 4/8 of the sky, whatever its height or type"
+     ],
+     "a": 0,
+     "e": "MANOBS 7.2.3."
+    },
+    {
+     "q": "How does a laser ceilometer find a cloud base?",
+     "c": [
+      "It sends pulses straight up and times the light scattered back",
+      "It measures the temperature at which the cloud forms, then calculates the height",
+      "It uses the dew point depression at the surface to estimate the height",
+      "It scans the horizon with a rotating beam and measures the angle to the base of the cloud"
+     ],
+     "a": 0,
+     "e": "NWS ASOS sky page (archived): laser pulses, backscatter sorted into height bins."
+    },
+    {
+     "q": "In the ASOS example, why are the last 10 minutes of data counted twice?",
+     "c": [
+      "So the report follows current changes in the sky",
+      "So the sensor can see layers above 12,000 ft",
+      "To remove the effect of precipitation on the signal",
+      "To make up for the sensor's inability to see layers more than 3 SM away from the station"
+     ],
+     "a": 0,
+     "e": "NWS ASOS sky page (archived, US, undated, 1990s figures)."
+    },
+    {
+     "q": "A ceilometer is a poor sensor for which situation?",
+     "c": [
+      "Cap cloud over distant mountains",
+      "Overcast cloud directly over the sensor",
+      "A solid overcast with a base at 800 ft",
+      "A broken layer at 3,000 ft passing overhead, because the sensor loses the signal beyond 2,000 ft"
+     ],
+     "a": 0,
+     "e": "NWS ASOS sky page: it reports only weather that passes over the sensor."
+    },
+    {
+     "q": "Where do you find the approximate base heights by cloud type?",
+     "c": [
+      "MANOBS Table 7-1",
+      "The standard atmosphere table",
+      "The station plot",
+      "The TAF validity period, since forecasters list base heights there for each cloud type"
+     ],
+     "a": 0,
+     "e": "MANOBS 7.3.1; see the Cloud classification topic."
+    },
+    {
+     "q": "Cloud base heights in MANOBS are given in:",
+     "c": [
+      "Feet",
+      "Metres",
+      "Hectopascals",
+      "Flight levels, from the surface up to the top of the highest layer reported"
+     ],
+     "a": 0,
+     "e": "MANOBS conventions: references for cloud base height are in feet (0.3048 m)."
+    }
+   ],
+   "verified": {
+    "date": "2026-11-02",
+    "sources": [
+     "MANOBS 8th ed. Am. 3, Chapter 7: 7.2.2, 7.2.3, 7.2.3.1, 7.2.7, 7.3 (items 8, 9, 11, 12), 7.3.1, conventions on feet (2026-11-02 fetch of the canada.ca HTML edition, summarized by the fetch tool)",
+     "NWS ASOS Sky Condition page (US, archived 2008, figures from the 1990s) for the ceilometer principle, sampling and limits",
+     "Cloud classification topic (Moisture 2) for MANOBS Table 7-1 heights, verified earlier"
+    ],
+    "unverified": [
+     "The 7.3 rules were read through a fetch-tool summary of the MANOBS web page; confirm the wording against the PDF.",
+     "ASOS figures (12,000 ft, 30-minute window) are historical US data. Canadian AWOS specifications come from the Surface observing topic and were not rechecked here.",
+     "How a Canadian observer estimates height without an instrument (Table 7-1 use, pilot reports, reference objects) was not read: the fetch returned only the start of Table 7-1.",
+     "Cloud amount categories (FEW, SCT, BKN, OVC) and the 45-degree obstruction note in 7.3 were not taught."
+    ]
+   }
+  }
+ ]
+}
