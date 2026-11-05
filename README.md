@@ -8,14 +8,14 @@ Live at `https://brandonellis-comet.github.io/LearnMet/` once GitHub Pages is en
 | Tab | Purpose |
 |-----|---------|
 | Home | Overall progress, exam status, next lesson, missed-question review |
-| Study | 10 domains, 55 topics. Open a lesson, take a quiz, set your level, keep notes |
+| Study | 11 domains, 59 topics. Open a lesson, take a quiz, set your level, keep notes |
 | Tests | Weak-area drill (15 questions from your weakest topics, missed ones first), decoding drills (10 generated METAR or TAF questions, answers after each) and one test per domain. 15 questions, answers shown at the end. Pass mark 75% |
 | Exam | Quarterly exam. 40 questions across all domains, weighted by domain size. Timed (elapsed). Pass mark 75% |
 | Links | Verified free public sources (ECCC, NAV CANADA, Transport Canada, WMO, NOAA, MetEd). Also shown as Further reading on each lesson |
 | Stats | Attempt history, backup (Export / Import) |
 
 Decoding drills are generated on the fly from random practice reports (not real observations) and do not affect topic levels or the review pool.
-Content: 55 lessons and 947 questions in `content/` (the number per topic varies). A topic quiz draws 6 of the topic's questions, favouring ones you have not seen or have missed.
+Content: 59 lessons and 998 questions in `content/` (the number per topic varies). A topic quiz draws 6 of the topic's questions, favouring ones you have not seen or have missed.
 
 ## How scoring feeds the tracker
 

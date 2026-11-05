@@ -1,0 +1,884 @@
+{
+ "title": "11. Theory extras",
+ "topics": [
+  {
+   "title": "Earth–Sun relationship and heating",
+   "lesson": [
+    "The Sun is the energy source for the atmosphere. How much of that energy reaches a place depends on the angle of the Sun's rays and the length of day, and both are set by Earth's axial tilt.",
+    {
+     "h": "Why there are seasons"
+    },
+    {
+     "list": [
+      "Earth's axis is tilted by an average of 23.5 degrees (NWS). NOAA/NESDIS gives 23.45 degrees from the perpendicular to the orbital plane. The tilt varies between about 22 and 24.5 degrees over long periods.",
+      "The axis keeps pointing the same way as Earth orbits, so each hemisphere leans toward the Sun for part of the year.",
+      "Distance is not the cause. Earth is closest to the Sun (perihelion) in January and farthest (aphelion) in July, when the Northern Hemisphere has summer. The distance difference is too small to explain the seasons.",
+      "Summer: the Sun's rays strike more directly, there is less atmospheric scattering, and days are long. Winter: the Sun is lower, and days are short."
+     ]
+    },
+    {
+     "h": "Solstices and equinoxes (approximate dates)"
+    },
+    {
+     "list": [
+      "June 21, summer solstice (Northern Hemisphere): the Sun is directly over the Tropic of Cancer, 23.5 N.",
+      "September 21 and March 21, equinoxes: the Sun is directly over the equator. Energy is balanced between hemispheres.",
+      "December 21, winter solstice (Northern Hemisphere): the Sun is directly over the Tropic of Capricorn, 23.5 S."
+     ]
+    },
+    {
+     "h": "Day length (NWS)"
+    },
+    {
+     "list": [
+      "Equator: about 12 hours all year.",
+      "Mid-latitudes, such as South Dakota: about 15 hours near the summer solstice and about 9 near the winter solstice.",
+      "Arctic Circle (66.5 N): the Sun does not set from early June to early July, and there are only about 2 hours of daylight near the winter solstice.",
+      "North Pole: six months of daylight and six of darkness."
+     ]
+    },
+    {
+     "h": "How the atmosphere is heated"
+    },
+    {
+     "list": [
+      "Radiation: transfer of heat through space by electromagnetic radiation. Sunlight warms the surface, and the surface radiates heat back into the atmosphere.",
+      "Conduction: transfer of heat from one substance to another or within a substance. Air conducts heat poorly.",
+      "Convection: transfer of heat in a fluid. Warmed surface air rises as a bubble warmer than its surroundings, cools as it rises, and cooler, denser air moves in below. That flow is felt as wind.",
+      "Dark surfaces such as asphalt absorb energy faster but also radiate it faster."
+     ]
+    },
+    {
+     "note": "The NOAA heat transfer page does not cover advection (horizontal transport of heat by the wind) or latent heat. See the Wind and Moisture topics."
+    }
+   ],
+   "terms": [
+    [
+     "Axial tilt",
+     "Angle between Earth's rotation axis and the perpendicular to its orbital plane: about 23.5 degrees."
+    ],
+    [
+     "Perihelion",
+     "Closest approach to the Sun. Early January."
+    ],
+    [
+     "Aphelion",
+     "Farthest point from the Sun. Early July."
+    ],
+    [
+     "Solstice",
+     "Date when the Sun is directly over 23.5 N or 23.5 S (about June 21 and December 21)."
+    ],
+    [
+     "Equinox",
+     "Date when the Sun is directly over the equator (about March 21 and September 21)."
+    ],
+    [
+     "Convection",
+     "Heat transfer within a fluid by its movement."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "What causes the seasons?",
+     "c": [
+      "Earth's axis is tilted about 23.5 degrees",
+      "Earth is closer to the Sun in summer",
+      "Changes in the Sun's output from one month to the next, which follow a yearly cycle",
+      "The Moon's gravity pulls the Northern Hemisphere closer to the Sun for half of each year"
+     ],
+     "a": 0,
+     "e": "NWS Sioux Falls seasons page; NOAA/NESDIS (NASA Space Place)."
+    },
+    {
+     "q": "When is Earth closest to the Sun?",
+     "c": [
+      "Early January",
+      "Early July",
+      "The June solstice",
+      "The September equinox, when the Sun is directly over the equator and the days are equal"
+     ],
+     "a": 0,
+     "e": "NWS and NESDIS: perihelion in January, aphelion in July."
+    },
+    {
+     "q": "Why is distance from the Sun not the cause of the seasons?",
+     "c": [
+      "Earth is farthest from the Sun in July, during Northern Hemisphere summer",
+      "Earth is closest to the Sun in July",
+      "Earth's orbit is a perfect circle, so the distance never changes at all",
+      "The distance changes by about half each year, but it only affects the Southern Hemisphere"
+     ],
+     "a": 0,
+     "e": "NWS Sioux Falls and NESDIS."
+    },
+    {
+     "q": "At the June solstice the Sun is directly over:",
+     "c": [
+      "The Tropic of Cancer, 23.5 N",
+      "The equator",
+      "The Tropic of Capricorn, 23.5 S",
+      "The Arctic Circle, 66.5 N, which is the latitude where the day is longest of all"
+     ],
+     "a": 0,
+     "e": "NWS Sioux Falls seasons page."
+    },
+    {
+     "q": "At the equinoxes the Sun is directly over:",
+     "c": [
+      "The equator",
+      "The Tropic of Cancer",
+      "The Tropic of Capricorn",
+      "The poles, where the Sun then stays on the horizon for about a day and a half"
+     ],
+     "a": 0,
+     "e": "NWS Sioux Falls seasons page."
+    },
+    {
+     "q": "At the December solstice the Sun is directly over:",
+     "c": [
+      "The Tropic of Capricorn, 23.5 S",
+      "The Tropic of Cancer, 23.5 N",
+      "The equator",
+      "The Antarctic Circle, 66.5 S, because the Southern Hemisphere is tilted toward the Sun"
+     ],
+     "a": 0,
+     "e": "NWS Sioux Falls seasons page."
+    },
+    {
+     "q": "Roughly how long is the day at the equator?",
+     "c": [
+      "About 12 hours, all year",
+      "About 15 hours in June and 9 in December",
+      "About 18 hours in June",
+      "Six hours in winter and 18 in summer, with a steady change over the months between the two"
+     ],
+     "a": 0,
+     "e": "NWS Sioux Falls seasons page."
+    },
+    {
+     "q": "The Sun does not set at the Arctic Circle (66.5 N) from:",
+     "c": [
+      "Early June to early July",
+      "Early March to early April",
+      "Early September to early October",
+      "December to February, when the polar night is at its longest and the Sun stays up all day"
+     ],
+     "a": 0,
+     "e": "NWS Sioux Falls seasons page."
+    },
+    {
+     "q": "Why does summer sunlight heat a region more?",
+     "c": [
+      "The rays strike more directly, with less scattering in the atmosphere, and the days are long",
+      "The Sun is closer to Earth in summer and so gives off more energy to the Northern Hemisphere over the whole season",
+      "The atmosphere is thinner in summer, so it lets more heat escape to space during the day",
+      "Earth rotates more slowly in summer, which gives each place more hours of daylight"
+     ],
+     "a": 0,
+     "e": "NWS Sioux Falls seasons page; NESDIS says the rays hit more directly."
+    },
+    {
+     "q": "How is heat transferred through space by electromagnetic waves?",
+     "c": [
+      "Radiation",
+      "Conduction",
+      "Convection",
+      "Advection, because the waves have to be carried by the wind to reach the surface"
+     ],
+     "a": 0,
+     "e": "NOAA JetStream, The Transfer of Heat Energy: radiation transfers heat through space by electromagnetic radiation."
+    },
+    {
+     "q": "Which statement about conduction in air is correct?",
+     "c": [
+      "Air conducts heat poorly",
+      "Air is the best conductor of heat in the atmosphere",
+      "Conduction is the main way heat moves from the surface up to the jet stream",
+      "Conduction only happens in liquids, never in solids or gases of any kind"
+     ],
+     "a": 0,
+     "e": "NOAA JetStream: air conducts heat poorly."
+    },
+    {
+     "q": "What does the NOAA page say happens to a bubble of warmed air near the surface?",
+     "c": [
+      "It rises, cools, and cooler denser air replaces it",
+      "It stays at the surface until the wind carries it away",
+      "It sinks, because warm air is denser than cold air at the same pressure",
+      "It radiates all of its heat back to the surface within a few seconds, then it dissolves into the air"
+     ],
+     "a": 0,
+     "e": "NOAA JetStream: convection."
+    },
+    {
+     "q": "The tilt of Earth's axis averages about:",
+     "c": [
+      "23.5 degrees",
+      "12 degrees",
+      "45 degrees",
+      "66.5 degrees, which is the angle between the axis and the plane of the orbit"
+     ],
+     "a": 0,
+     "e": "NWS (23.5); NESDIS (23.45 from the perpendicular). 66.5 is the Arctic Circle latitude."
+    }
+   ],
+   "verified": {
+    "date": "2026-11-05",
+    "sources": [
+     "NWS Sioux Falls, Seasons page (2026-11-05 fetch; dated 2015): tilt 23.5 (22 to 24.5), distance not the cause, solstice and equinox positions, day length",
+     "NOAA/NESDIS, Why does Earth have seasons (2026-11-05 fetch; dated 2025, written by NASA Space Place): tilt 23.45, perihelion/aphelion, direct sunlight",
+     "NOAA JetStream, The Transfer of Heat Energy (2026-11-05 fetch; updated 2024-01-02): radiation, conduction, convection"
+    ],
+    "unverified": [
+     "Advection and latent heat are not covered by the NOAA page and are not taught here.",
+     "The tilt varying between 22 and 24.5 degrees is a NWS statement; its timescale (about 41,000 years) was not read.",
+     "Exact solstice and equinox dates change by a day from year to year; the dates are the NWS's approximate ones.",
+     "Albedo and the Earth energy budget were not read in this pass.",
+     "No Canadian (ECCC or NRCan) source was read for the seasons topic; both Earth–Sun sources are US."
+    ]
+   }
+  },
+  {
+   "title": "Dew point and relative humidity calculations",
+   "lesson": [
+    "Dew point and relative humidity both describe how close the air is to saturation. This topic shows how to move between them. The Moisture and Foundations topics give the physical picture.",
+    {
+     "h": "Definitions (NPL)"
+    },
+    {
+     "list": [
+      "Dew point: the temperature at which dew, or condensation, forms as a gas is cooled. If the condensate is ice it is called the frost point.",
+      "Relative humidity (RH): the ratio of the water vapour actually in the air (vapour pressure e) to the amount at saturation (es) at the same temperature and pressure. RH (%) = e / es x 100.",
+      "Dew point depression: air temperature minus dew point. Zero means the air is saturated (RH 100%)."
+     ]
+    },
+    {
+     "h": "Converting between them"
+    },
+    "There is no simple, direct formula to convert dew point to RH. You go through vapour pressures: the vapour pressure of the air is the saturation vapour pressure at the dew point, and RH compares that with the saturation vapour pressure at the air temperature.",
+    {
+     "formula": "RH = 100 x es(Td) / es(T)"
+    },
+    {
+     "h": "Magnus formula (over liquid water)"
+    },
+    {
+     "formula": "ln es(t) = ln 611.2 + 17.62 t / (243.12 + t), t in degrees C, es in Pa"
+    },
+    "Worked results from this formula (rounded): at 20 C, es is about 23.3 hPa. T 20 and Td 10: RH about 53%. T 15 and Td 15: RH 100%. T 10 and Td 5: RH about 71%. T 25 and Td 20: RH about 74%.",
+    {
+     "h": "Accuracy"
+    },
+    "The Magnus formula is an approximation. NPL also gives the more accurate Sonntag (1990) equations, which need iteration when going from vapour pressure back to dew point. Over ice the Magnus constants are 22.46 and 272.62.",
+    {
+     "note": "At a given dew point, RH rises as the air cools and falls as it warms, because es falls as the temperature falls. In practice the observer reads a psychrometer or a hygrometer and uses tables; this is the underlying calculation."
+    }
+   ],
+   "terms": [
+    [
+     "Dew point",
+     "Temperature to which air must be cooled for condensation to begin."
+    ],
+    [
+     "Frost point",
+     "Dew point when the condensate is ice."
+    ],
+    [
+     "Relative humidity",
+     "Ratio of actual vapour pressure to saturation vapour pressure at the same temperature and pressure, in percent."
+    ],
+    [
+     "Dew point depression",
+     "Air temperature minus dew point."
+    ],
+    [
+     "Magnus formula",
+     "Approximation for saturation vapour pressure as a function of temperature."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "How does NPL define dew point?",
+     "c": [
+      "The temperature at which dew or condensation forms as a gas is cooled",
+      "The temperature at which relative humidity is 50%",
+      "The air temperature at the time of the coldest reading in the previous 24 hours",
+      "The temperature of the ground surface during the night, measured by a thermometer that is laid on the grass"
+     ],
+     "a": 0,
+     "e": "NPL (UK National Physical Laboratory), Dew point and relative humidity Q&A."
+    },
+    {
+     "q": "What is the dew point called when the condensate is ice?",
+     "c": [
+      "The frost point",
+      "The freezing level",
+      "The wet-bulb temperature",
+      "The ice point, which is the temperature at which pure water freezes at standard pressure"
+     ],
+     "a": 0,
+     "e": "NPL."
+    },
+    {
+     "q": "Relative humidity is the ratio of:",
+     "c": [
+      "Actual vapour pressure to saturation vapour pressure at the same temperature and pressure",
+      "Mass of vapour in the air to the mass of dry air",
+      "Dew point to air temperature",
+      "Actual vapour pressure to the total pressure of the air, expressed as a percentage of one atmosphere"
+     ],
+     "a": 0,
+     "e": "NPL: RH = e / es x 100."
+    },
+    {
+     "q": "What is the RH when the air temperature equals the dew point?",
+     "c": [
+      "100%",
+      "50%",
+      "0%",
+      "Between 90% and 99%, since the air is close to saturation but not yet saturated"
+     ],
+     "a": 0,
+     "e": "Follows from the definitions: es(Td) = es(T)."
+    },
+    {
+     "q": "Does NPL give a simple direct formula to convert dew point to RH?",
+     "c": [
+      "No. The conversion goes through vapour pressures",
+      "Yes. RH is dew point divided by temperature",
+      "Yes. RH is 100 minus five times the dew point depression, for any temperature",
+      "Yes, but only for temperatures below freezing, where the ice formula applies"
+     ],
+     "a": 0,
+     "e": "NPL: there is no simple, direct formula."
+    },
+    {
+     "q": "Which expression gives RH from temperature and dew point?",
+     "c": [
+      "100 x es(Td) / es(T)",
+      "100 x es(T) / es(Td)",
+      "100 x (Td / T)",
+      "100 x (T - Td) / es(T), where the dew point depression is measured in degrees Celsius"
+     ],
+     "a": 0,
+     "e": "RH = e/es x 100, with e = es(Td)."
+    },
+    {
+     "q": "A parcel of air has T = 15 C and Td = 15 C. RH is about:",
+     "c": [
+      "100%",
+      "71%",
+      "53%",
+      "90%, because a reading in whole degrees may hide a small difference"
+     ],
+     "a": 0,
+     "e": "Magnus: es(Td) = es(T)."
+    },
+    {
+     "q": "T = 20 C and Td = 10 C. RH is about:",
+     "c": [
+      "53%",
+      "71%",
+      "74%",
+      "50%, since the dew point is exactly half the temperature"
+     ],
+     "a": 0,
+     "e": "Magnus formula: es(10) about 12.3 hPa, es(20) about 23.3 hPa."
+    },
+    {
+     "q": "T = 10 C and Td = 5 C. RH is about:",
+     "c": [
+      "71%",
+      "53%",
+      "50%",
+      "80%, because a drop of 5 C in the dew point depression gives about 10% less than saturation"
+     ],
+     "a": 0,
+     "e": "Magnus formula."
+    },
+    {
+     "q": "The Magnus formula gives:",
+     "c": [
+      "Saturation vapour pressure as a function of temperature",
+      "The lifting condensation level",
+      "The wet-bulb potential temperature",
+      "The pressure at which a parcel becomes saturated when it is lifted dry adiabatically"
+     ],
+     "a": 0,
+     "e": "NPL Equation 2."
+    },
+    {
+     "q": "In the Magnus formula (NPL), the temperature t is in:",
+     "c": [
+      "Degrees Celsius",
+      "Kelvin",
+      "Degrees Fahrenheit",
+      "Hectopascals"
+     ],
+     "a": 0,
+     "e": "NPL: t in degrees C, result in Pa."
+    },
+    {
+     "q": "Which equations does NPL give as more accurate than Magnus?",
+     "c": [
+      "Sonntag (1990)",
+      "Boyle's law",
+      "Clausius–Clapeyron in its simplest form, with a constant latent heat",
+      "The hypsometric equation, which gives the thickness between two pressure levels"
+     ],
+     "a": 0,
+     "e": "NPL Equations 4 and 5."
+    },
+    {
+     "q": "Air cools and the vapour pressure stays the same. What happens to RH?",
+     "c": [
+      "It rises",
+      "It falls",
+      "It stays the same",
+      "It rises until the air reaches 50%, then it stays steady"
+     ],
+     "a": 0,
+     "e": "es falls with temperature, so e/es rises (follows from the definition)."
+    }
+   ],
+   "verified": {
+    "date": "2026-11-05",
+    "sources": [
+     "NPL (UK National Physical Laboratory), Q&A, Dew point and relative humidity (2026-11-05 fetch): definitions, RH = e/es x 100, Magnus and Sonntag equations",
+     "Worked values computed here from the Magnus equation with the NPL constants (arithmetic checked by script, not taken from a source)"
+    ],
+    "unverified": [
+     "Single source (NPL, a UK national measurement laboratory). The OSTI paper on the improved Magnus form (Alduchov and Eskridge, 1996) was found but not read.",
+     "No ECCC or MANOBS table was read for how Canadian observers get RH and dew point from a psychrometer; the Observations topic covers the instruments.",
+     "Magnus constants for ice are quoted from NPL; the worked examples use the liquid-water form only.",
+     "Rounded RH values depend on the constants used; a different formula can differ by about 1%."
+    ]
+   }
+  },
+  {
+   "title": "Illumination: sunrise, sunset and twilight",
+   "lesson": [
+    "Illumination data tells you when it is light or dark. It matters for observing, flying and tactical planning.",
+    {
+     "h": "Sunrise and sunset"
+    },
+    "Conventionally, sunrise and sunset are the times when the upper edge of the Sun's disk is on the horizon (US Naval Observatory). The calculation allows for the average atmospheric refraction at the horizon, 34 arcminutes. Refraction means the Sun is still visible after it has geometrically set.",
+    {
+     "h": "Twilight"
+    },
+    {
+     "list": [
+      "Civil twilight: the centre of the Sun is geometrically 6 degrees below the horizon. The brightest stars and planets are visible, you can see the horizon and landscape, and artificial light is often not needed.",
+      "Nautical twilight: 12 degrees below. The horizon is still visible, so sailors can take star sightings. Detailed outdoor work needs artificial light.",
+      "Astronomical twilight: 18 degrees below. The sky is dark for most people. Faint extended objects such as galaxies need a fully dark sky."
+     ]
+    },
+    "Morning twilight starts when the Sun is at these angles below the horizon on its way up. Evening twilight ends when it reaches them on its way down.",
+    {
+     "h": "Moonrise and moonset"
+    },
+    "Moonrise and moonset occur when the Moon's upper limb is tangent to a level, unobstructed horizon. The USNO definition uses the geometric zenith distance of the Moon's centre, 90.5666 degrees plus the Moon's apparent angular radius minus its horizontal parallax.",
+    {
+     "note": "Check your own authority for what counts as night in an operational or flying rule. This topic gives the astronomical definitions only."
+    }
+   ],
+   "terms": [
+    [
+     "Sunrise / sunset",
+     "Upper edge of the Sun's disk on the horizon."
+    ],
+    [
+     "Civil twilight",
+     "Sun's centre 6 degrees below the horizon."
+    ],
+    [
+     "Nautical twilight",
+     "Sun's centre 12 degrees below the horizon."
+    ],
+    [
+     "Astronomical twilight",
+     "Sun's centre 18 degrees below the horizon."
+    ],
+    [
+     "Refraction (at the horizon)",
+     "Bending of light by the atmosphere. Average 34 arcminutes."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "Sunrise and sunset are conventionally defined as the time when:",
+     "c": [
+      "The upper edge of the Sun's disk is on the horizon",
+      "The centre of the Sun is on the horizon",
+      "The lower edge of the Sun's disk is on the horizon",
+      "The Sun is 6 degrees below the horizon and the sky is still bright enough to read by"
+     ],
+     "a": 0,
+     "e": "US Naval Observatory definitions page (archived)."
+    },
+    {
+     "q": "How much atmospheric refraction does the sunrise calculation assume at the horizon?",
+     "c": [
+      "34 arcminutes",
+      "6 degrees",
+      "90.5666 degrees",
+      "12 degrees, the angle used for the nautical twilight"
+     ],
+     "a": 0,
+     "e": "USNO: average refraction at the horizon, 34 arcminutes."
+    },
+    {
+     "q": "Civil twilight begins or ends when the Sun's centre is how far below the horizon?",
+     "c": [
+      "6 degrees",
+      "12 degrees",
+      "18 degrees",
+      "3 degrees, which is the point at which the upper edge of the disk has fully set"
+     ],
+     "a": 0,
+     "e": "NWS Sioux Falls and USNO."
+    },
+    {
+     "q": "Nautical twilight corresponds to a Sun depression of:",
+     "c": [
+      "12 degrees",
+      "6 degrees",
+      "18 degrees",
+      "9 degrees, halfway between civil and nautical, where the horizon is no longer visible at sea"
+     ],
+     "a": 0,
+     "e": "NWS Sioux Falls and USNO."
+    },
+    {
+     "q": "Astronomical twilight corresponds to a Sun depression of:",
+     "c": [
+      "18 degrees",
+      "6 degrees",
+      "12 degrees",
+      "24 degrees, which is the point where the sky is as dark as it ever gets at night"
+     ],
+     "a": 0,
+     "e": "NWS Sioux Falls and USNO."
+    },
+    {
+     "q": "During civil twilight:",
+     "c": [
+      "The brightest stars and planets are visible and the horizon can be seen",
+      "The sky is fully dark for everyone",
+      "Sailors cannot see the horizon",
+      "Only a few stars are visible and artificial light is required for any outdoor work at all"
+     ],
+     "a": 0,
+     "e": "NWS Sioux Falls twilight page."
+    },
+    {
+     "q": "Why can sailors take star sightings in nautical twilight?",
+     "c": [
+      "The horizon is still visible",
+      "The sky is completely dark",
+      "The Moon is always above the horizon",
+      "The stars are brightest at that time, because the atmosphere has cooled enough to stop scattering"
+     ],
+     "a": 0,
+     "e": "NWS Sioux Falls twilight page."
+    },
+    {
+     "q": "During astronomical twilight:",
+     "c": [
+      "Most people would call the sky fully dark",
+      "The brightest stars and planets are the only objects visible",
+      "Detailed outdoor work needs no artificial light",
+      "The horizon is clearly visible and sailors can still use it for taking star sightings"
+     ],
+     "a": 0,
+     "e": "NWS Sioux Falls: the horizon is not visible; faint extended objects still need a fully dark sky."
+    },
+    {
+     "q": "Why is the Sun still visible after it has geometrically set?",
+     "c": [
+      "Atmospheric refraction bends the light over the horizon",
+      "The Sun's disk is larger than the Earth",
+      "The Earth is flat near the horizon",
+      "The sunlight reflects off the Moon and clouds to the observer after the sun sets"
+     ],
+     "a": 0,
+     "e": "USNO: refraction of 34 arcminutes at the horizon."
+    },
+    {
+     "q": "Which depression angle is used for the Sun's centre at the start or end of civil twilight in the USNO definition?",
+     "c": [
+      "6 degrees, measured geometrically",
+      "6 degrees, measured with refraction included",
+      "34 arcminutes",
+      "90.5666 degrees"
+     ],
+     "a": 0,
+     "e": "USNO: geometric depression of the Sun's centre."
+    },
+    {
+     "q": "Moonrise and moonset occur when:",
+     "c": [
+      "The Moon's upper limb is tangent to a level, unobstructed horizon",
+      "The Moon's centre is exactly on the horizon",
+      "The Moon is 6 degrees below the horizon",
+      "The Moon's lower limb touches the horizon, when its horizontal parallax is zero"
+     ],
+     "a": 0,
+     "e": "USNO definitions page."
+    },
+    {
+     "q": "Which three quantities appear in the USNO moonrise and moonset formula?",
+     "c": [
+      "90.5666 degrees, the Moon's apparent angular radius and its horizontal parallax",
+      "The Moon's phase, its age and its declination at the time that the observer's local midnight occurs",
+      "The Sun's depression, the refraction and the latitude",
+      "The Moon's altitude, its azimuth and the local sidereal time of the observer"
+     ],
+     "a": 0,
+     "e": "USNO: 90.5666 + apparent angular radius - horizontal parallax."
+    }
+   ],
+   "verified": {
+    "date": "2026-11-05",
+    "sources": [
+     "NWS Sioux Falls, Twilight page (2026-11-05 fetch): 6, 12, 18 degrees and what is visible",
+     "US Naval Observatory, Rise, Set and Transit definitions (archived web copy from 2013, 2026-11-05 fetch; the fetch tool gave no publisher or date): upper limb, 34 arcminutes, twilight angles, Moon formula"
+    ],
+    "unverified": [
+     "Both sources are US. No NRC, ECCC or Canadian aviation source was read; Canadian rules for night (for example in aviation regulations) were not checked.",
+     "Moon phase and illumination percentage were not covered.",
+     "The USNO page came from a 2013 web archive; the definitions are standard but current USNO wording was not checked.",
+     "Sources agree on civil, nautical and astronomical twilight angles; the 34 arcminute refraction is USNO only."
+    ]
+   }
+  },
+  {
+   "title": "Space weather",
+   "lesson": [
+    "Space weather is changes in the space environment and geomagnetic storms caused by eruptions on the Sun (Natural Resources Canada). It affects technology on Earth and in space. Canada is among the countries most exposed, because it is close to the north magnetic pole and the auroral zone.",
+    {
+     "h": "Solar features (NRCan)"
+    },
+    {
+     "list": [
+      "Solar flare: an intense burst of radiation from released magnetic energy.",
+      "Coronal mass ejection (CME): a large explosion that throws superheated plasma into interplanetary space.",
+      "Coronal hole: a region that releases high-speed plasma, which strengthens the solar wind.",
+      "Solar wind: a constant stream of charged particles moving at more than 1.5 million km/h, carrying part of the Sun's magnetic field.",
+      "Solar cycle: activity rises and falls on a roughly 11-year cycle. Geomagnetic storms are more frequent near solar maximum."
+     ]
+    },
+    {
+     "h": "Effects"
+    },
+    {
+     "list": [
+      "Geomagnetic storms disturb Earth's magnetosphere and induce electric currents in long conductors such as power lines and pipelines. In extreme cases, power grids can black out or collapse.",
+      "Charged particles guided by Earth's magnetic field produce the aurora.",
+      "HF radio fades or blacks out, and satellite and navigation systems can be degraded (NOAA scales)."
+     ]
+    },
+    {
+     "h": "NOAA space weather scales (levels 1 to 5)"
+    },
+    {
+     "list": [
+      "G scale, geomagnetic storms, from the Kp index: G1 Kp 5, G2 Kp 6, G3 Kp 7, G4 Kp 8, G5 Kp 9.",
+      "S scale, solar radiation storms, from the flux of particles at 10 MeV or more: S1 is 10 and each level is ten times greater, up to S5 at 100,000.",
+      "R scale, radio blackouts, from the X-ray flare class: R1 M1, R2 M5, R3 X1, R4 X10, R5 X20."
+     ]
+    },
+    "Example effects: G1 gives weak grid fluctuations, minor satellite effects and aurora at high latitudes. G2 can bring high-latitude voltage alarms, HF fading and aurora down to New York and Idaho. G5 can mean grid collapse, transformer damage and HF unusable for one to two days. R3 is a wide-area HF blackout of about an hour on the sunlit side. R5 is a complete HF blackout on the whole sunlit side for hours. S3 to S5 affect high-latitude HF and navigation and endanger astronauts and satellites.",
+    {
+     "note": "The G, S and R scales are NOAA's (US). Check Space Weather Canada for the Canadian products."
+    }
+   ],
+   "terms": [
+    [
+     "Space weather",
+     "Changes in the space environment and geomagnetic storms caused by solar eruptions."
+    ],
+    [
+     "CME",
+     "Coronal mass ejection: explosion that hurls plasma into space."
+    ],
+    [
+     "Solar flare",
+     "Intense burst of radiation from the Sun."
+    ],
+    [
+     "Solar wind",
+     "Constant stream of charged particles from the Sun."
+    ],
+    [
+     "Kp index",
+     "Planetary index of geomagnetic activity used for the G scale."
+    ],
+    [
+     "R scale",
+     "NOAA radio blackout scale, by X-ray flare class."
+    ]
+   ],
+   "questions": [
+    {
+     "q": "How does Natural Resources Canada define space weather?",
+     "c": [
+      "Changes in the space environment and geomagnetic storms resulting from eruptions on the Sun",
+      "Changes in the stratosphere and mesosphere that are caused by the ozone layer and by seasonal temperature swings",
+      "Changes in cloud and temperature over the polar regions",
+      "The effect of the Moon's gravity on tides and on the weather at the surface of the Earth"
+     ],
+     "a": 0,
+     "e": "NRCan, What is space weather (2012)."
+    },
+    {
+     "q": "Why is Canada one of the countries most affected by geomagnetic storms?",
+     "c": [
+      "It is close to the north magnetic pole and the auroral zone",
+      "It has more power lines than any other country",
+      "It is closer to the Sun than other countries",
+      "Its high latitude means that it gets more solar wind particles than the tropics, due to the rotation of the Earth"
+     ],
+     "a": 0,
+     "e": "NRCan, What is space weather."
+    },
+    {
+     "q": "A coronal mass ejection is:",
+     "c": [
+      "A large explosion that hurls superheated plasma into interplanetary space",
+      "A constant stream of particles from the Sun",
+      "A region that releases high-speed plasma",
+      "An intense burst of radiation caused by the release of magnetic energy, which travels at the speed of light"
+     ],
+     "a": 0,
+     "e": "NRCan, What is space weather."
+    },
+    {
+     "q": "How fast does the solar wind travel, per NRCan?",
+     "c": [
+      "More than 1.5 million km/h",
+      "About 1,500 km/h",
+      "About 15,000 km/h",
+      "About 150 million km/h, close to the speed of light that the flare radiation travels at"
+     ],
+     "a": 0,
+     "e": "NRCan, What is space weather."
+    },
+    {
+     "q": "How long is the solar cycle?",
+     "c": [
+      "About 11 years",
+      "About 1 year",
+      "About 100 years",
+      "About 27 days, which is one rotation of the Sun, with a peak at the end of each rotation"
+     ],
+     "a": 0,
+     "e": "NRCan: roughly 11-year cycle."
+    },
+    {
+     "q": "Geomagnetic storms are expected to be more frequent:",
+     "c": [
+      "Near solar maximum",
+      "Near solar minimum",
+      "In summer only",
+      "During the equinoxes only, because of the Earth's tilt relative to the solar wind"
+     ],
+     "a": 0,
+     "e": "NRCan, What is space weather."
+    },
+    {
+     "q": "What can a geomagnetic storm induce in power lines and pipelines?",
+     "c": [
+      "Electric currents",
+      "Ice accretion",
+      "Pressure waves",
+      "Heavy rain and strong winds at the surface, because of the sudden heating of the upper atmosphere"
+     ],
+     "a": 0,
+     "e": "NRCan, What is space weather."
+    },
+    {
+     "q": "Which NOAA scale rates geomagnetic storms?",
+     "c": [
+      "G, from the Kp index",
+      "S, from the X-ray flare class",
+      "R, from the particle flux",
+      "K, from the sunspot number of the previous solar cycle"
+     ],
+     "a": 0,
+     "e": "NOAA SWPC scales: G is geomagnetic storms, S solar radiation storms, R radio blackouts."
+    },
+    {
+     "q": "Which Kp value corresponds to a G3 (strong) storm?",
+     "c": [
+      "7",
+      "5",
+      "9",
+      "3"
+     ],
+     "a": 0,
+     "e": "NOAA SWPC: G1 Kp 5, G2 6, G3 7, G4 8, G5 9."
+    },
+    {
+     "q": "Which NOAA scale rates radio blackouts?",
+     "c": [
+      "R, from the X-ray flare class",
+      "G, from the Kp index",
+      "S, from the particle flux",
+      "D, from the absorption of HF signals on the daylight side of the Earth"
+     ],
+     "a": 0,
+     "e": "NOAA SWPC scales."
+    },
+    {
+     "q": "An R3 (strong) radio blackout corresponds to a flare of class:",
+     "c": [
+      "X1",
+      "M1",
+      "X10",
+      "C5"
+     ],
+     "a": 0,
+     "e": "NOAA SWPC: R1 M1, R2 M5, R3 X1, R4 X10, R5 X20."
+    },
+    {
+     "q": "What does a solar radiation storm (S scale) measure?",
+     "c": [
+      "The flux of particles at 10 MeV or more",
+      "The Kp index of the geomagnetic field",
+      "The X-ray flare class",
+      "The brightness of the aurora as seen from the ground at high latitudes at night"
+     ],
+     "a": 0,
+     "e": "NOAA SWPC scales."
+    },
+    {
+     "q": "Which effect is listed for a G5 (extreme) storm?",
+     "c": [
+      "Grid collapse and transformer damage possible; HF unusable for one to two days",
+      "Weak power grid fluctuations only",
+      "Aurora visible at high latitudes only",
+      "Minor satellite effects and a brief HF fade on the sunlit side of the Earth, lasting for a few minutes"
+     ],
+     "a": 0,
+     "e": "NOAA SWPC scales."
+    }
+   ],
+   "verified": {
+    "date": "2026-11-05",
+    "sources": [
+     "Natural Resources Canada, What is space weather (spaceweather.gc.ca PDF, copyright 2012; 2026-11-05 fetch): definition, solar features, effects, Canada's exposure",
+     "NOAA Space Weather Prediction Center, NOAA scales explanation (2026-11-05 fetch): G, S and R levels, Kp and flare thresholds, example effects"
+    ],
+    "unverified": [
+     "The scale thresholds and effects are from NOAA only (US); no Canadian scale or product page was read. The NRCan document is dated 2012.",
+     "The fetch output for G4 was garbled; Kp 8 is taken from the pattern (G1 5, G2 6, G3 7, G5 9). NOAA's G4 is Kp 8 including 9-, which should be confirmed on the page.",
+     "The S-scale units (particles per square centimetre per second per steradian, pfu) were not shown in the fetch.",
+     "The NRCan document says nothing on HF, GPS, satellites or aviation; those effects come from the NOAA scale text.",
+     "NRCan's document describes a forecast for 2013 that is out of date."
+    ]
+   }
+  }
+ ]
+}

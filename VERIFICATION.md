@@ -15,7 +15,7 @@ Study aid only. Crown-copyright and NAV CANADA text is paraphrased and linked, n
 ## Cross-check rule (from 2026-10-27)
 Every new claim needs two independent sources or is flagged single-source. New claims are compared with the lesson text and the sources already logged. Conflicts are recorded below, and the more authoritative source wins (Canadian government over US government over university or media).
 
-## Status (as of 2026-11-02; 947 questions)
+## Status (as of 2026-11-05; 998 questions)
 
 | Domain | Topics | Questions | Status | Last checked |
 |--------|--------|-----------|--------|--------------|
@@ -241,3 +241,10 @@ New domain `observer` (10. Observer practice): PIREPs, Obstructions to vision, S
 Sources: Transport Canada (AIM MET, PIREP page, TP 2228E-9), MANOBS 8th ed. Am. 3 chapters 6 and 7 (read through the canada.ca HTML edition via a fetch summary; the shell cannot reach canada.ca), FAA JO 7110.10X (US) for the PIREP element order, NWS ASOS sky page (US, archived, 1990s figures) for ceilometer behaviour.
 Cross-check status: PIREP content and handling confirmed by two Canadian sources plus the FAA; MANOBS thresholds single-source (the manual itself), flagged to confirm against the PDF.
 Not yet done: present weather code tables and the full synoptic cloud code tables (CL, CM, CH), weather watch and non-routine observation duties, observer instrument use, and observer methods for estimating cloud height when no instrument is available. The fetch tool could not return those MANOBS sections.
+
+## Theory extras domain added (2026-11-05)
+New domain `extras` (11. Theory extras): Earth-Sun relationship and heating, Dew point and RH calculations, Illumination (sunrise, sunset, twilight), Space weather. 4 topics, 51 questions, all Partly verified.
+Sources: NWS Sioux Falls (seasons, twilight), NOAA/NESDIS (seasons), NOAA JetStream (heat transfer), US Naval Observatory definitions (archived 2013), NPL UK (dew point and RH), Natural Resources Canada (What is space weather, 2012), NOAA SWPC (G, S, R scales).
+Cross-check: seasons confirmed by NWS and NESDIS; twilight angles by NWS and USNO. Dew point and RH rely on NPL only. Space weather scales rely on NOAA only; the NRCan document confirms the general science.
+Open: Canadian sources for seasons and twilight; aviation night definition; advection, latent heat and albedo; G4 threshold wording; S-scale units.
+Still not built: radar and satellite interpretation depth, tephigram, marine and ocean waves, climatological brief, the MANOBS code tables, weather watch, instruments.
